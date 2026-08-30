@@ -35,6 +35,13 @@ export function writeStagingDebug(name: string, value: unknown): void {
   writeFileSync(resolve(STAGING_DIR, name), JSON.stringify(value, null, 2));
 }
 
+/** Which credential the underlying CLI will resolve (API key outranks OAuth token). */
+export function authMode(): string {
+  if (process.env.ANTHROPIC_API_KEY) return 'metered API key (ANTHROPIC_API_KEY)';
+  if (process.env.CLAUDE_CODE_OAUTH_TOKEN) return 'Claude subscription (CLAUDE_CODE_OAUTH_TOKEN)';
+  return 'ambient CLI credentials';
+}
+
 /** Signal to GitHub Actions (and humans) whether data changed. */
 export function signalChanged(changed: boolean): void {
   console.log(changed ? '::notice::globenews data changed' : 'No data change this run.');

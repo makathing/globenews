@@ -23,11 +23,22 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Configure Anthropic auth (API key or subscription token)
+        run: |
+          if [ -n "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" ]; then
+            echo "CLAUDE_CODE_OAUTH_TOKEN=${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" >> "$GITHUB_ENV"
+            echo "Using Claude subscription auth (CLAUDE_CODE_OAUTH_TOKEN)."
+          elif [ -n "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" >> "$GITHUB_ENV"
+            echo "Using metered API key auth (ANTHROPIC_API_KEY)."
+          else
+            echo "::error::Add a CLAUDE_CODE_OAUTH_TOKEN (subscription) or ANTHROPIC_API_KEY repo secret."
+            exit 1
+          fi
       - name: Hourly breaking-news sweep (Haiku)
         id: monitor
         run: npm run monitor -w pipeline
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MONITOR_MAX_BUDGET_USD: '0.5'
           ESCALATION_MAX_BUDGET_USD: '3'
       - name: Commit breaking update

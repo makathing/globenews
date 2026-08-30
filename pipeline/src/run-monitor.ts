@@ -8,6 +8,7 @@ import { finalizeDataset } from './finalize.ts';
 import { parseStagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
+  authMode,
   readCurrentDataset,
   signalChanged,
   writeDataset,
@@ -71,6 +72,7 @@ async function main(): Promise<void> {
 
   const ledger = new RunLedger();
   const hooks = buildHooks(ledger) as never;
+  console.log(`[monitor] auth: ${authMode()}`);
 
   const verdictText = await runQueryToText(MONITOR_PROMPT, {
     model: 'haiku',

@@ -9,6 +9,7 @@ import { finalizeDataset } from './finalize.ts';
 import { parseStagedOutput, validateDataset, type StagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
+  authMode,
   readCurrentDataset,
   signalChanged,
   writeDataset,
@@ -78,6 +79,7 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
 
 async function main(): Promise<void> {
   const ledger = new RunLedger();
+  if (!MOCK) console.log(`[daily] auth: ${authMode()}`);
   let staged: StagedOutput;
 
   if (MOCK) {

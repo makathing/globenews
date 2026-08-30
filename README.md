@@ -64,15 +64,34 @@ per-event panel with trust meter and per-source bias spectrum.
 
 ## Setup (one time, after merging to `main`)
 
-1. **Add the API key**: repo → Settings → Secrets and variables → Actions →
-   `ANTHROPIC_API_KEY`.
+1. **Add ONE auth secret** (repo → Settings → Secrets and variables → Actions) — see
+   *Billing options* below:
+   - `CLAUDE_CODE_OAUTH_TOKEN` to bill your **Claude subscription** (Pro/Max/Team), **or**
+   - `ANTHROPIC_API_KEY` to bill a **metered API key**.
 2. **Enable Pages**: repo → Settings → Pages → Source: **GitHub Actions**.
 3. Optionally trigger the first real dataset: Actions → *Daily news batch* → Run workflow.
    Until then the site shows the bundled sample dataset.
 
-Cron workflows only run on the default branch. Budget caps default to ~$8/daily batch,
+### Billing options: subscription vs API key
+
+**Claude subscription (recommended if you have Pro/Max):** run `claude setup-token` on your
+own machine (one-time browser login; requires an active subscription), copy the printed
+token into a `CLAUDE_CODE_OAUTH_TOKEN` repo secret. Scheduled runs then draw from your
+plan's usage instead of metered dollars. Notes:
+
+- The token lasts **one year** and doesn't auto-refresh — when runs start failing with auth
+  errors, regenerate with `claude setup-token` and update the secret.
+- Pipeline runs consume your plan's rate limits alongside your normal Claude usage; the
+  daily batch is a substantial run, so Max is a comfortable fit, Pro will feel it.
+- If both secrets exist, the workflows deliberately export **only** the subscription token
+  (in the raw credential chain `ANTHROPIC_API_KEY` would otherwise win).
+
+**API key:** add `ANTHROPIC_API_KEY` instead. Budget caps default to ~$8/daily batch,
 $0.50/monitor sweep, $3/escalation (`PIPELINE_MAX_BUDGET_USD` etc.) — roughly $1–4/day in
-typical operation.
+typical operation. (The `maxBudgetUsd` caps are enforced against estimated cost either way,
+but only translate to real dollars on a metered key.)
+
+Cron workflows only run on the default branch. Each run logs which auth mode it resolved.
 
 ## Local development
 

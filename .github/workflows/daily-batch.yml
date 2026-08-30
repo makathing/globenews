@@ -24,10 +24,21 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Configure Anthropic auth (API key or subscription token)
+        run: |
+          if [ -n "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" ]; then
+            echo "CLAUDE_CODE_OAUTH_TOKEN=${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" >> "$GITHUB_ENV"
+            echo "Using Claude subscription auth (CLAUDE_CODE_OAUTH_TOKEN)."
+          elif [ -n "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" >> "$GITHUB_ENV"
+            echo "Using metered API key auth (ANTHROPIC_API_KEY)."
+          else
+            echo "::error::Add a CLAUDE_CODE_OAUTH_TOKEN (subscription) or ANTHROPIC_API_KEY repo secret."
+            exit 1
+          fi
       - name: Run multi-agent news pipeline
         run: npm run daily -w pipeline
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PIPELINE_MAX_BUDGET_USD: '8'
       - name: Commit updated dataset
         run: |
