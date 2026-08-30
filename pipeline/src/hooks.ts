@@ -22,8 +22,10 @@ export interface HookInputLike {
   hook_event_name?: string;
   tool_name?: string;
   tool_input?: Record<string, unknown>;
-  tool_output?: unknown;
+  /** What the SDK actually sends for PostToolUse (verified live). */
   tool_response?: unknown;
+  /** Legacy/alternate field name, kept as fallback. */
+  tool_output?: unknown;
 }
 
 const TRACKING_PARAMS = [
@@ -109,7 +111,7 @@ export function postToolUseLogic(
   input: HookInputLike,
   ledger: RunLedger,
 ): { additionalContext?: string } {
-  const output = input.tool_output ?? input.tool_response;
+  const output = input.tool_response ?? input.tool_output;
   const domains = new Set<string>(extractDomains(output));
 
   if (input.tool_name === 'WebFetch') {

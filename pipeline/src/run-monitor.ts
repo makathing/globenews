@@ -5,7 +5,7 @@ import { MONITOR_PROMPT, SUBAGENTS } from './agents.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { finalizeDataset } from './finalize.ts';
-import { StagedOutputSchema } from './schema.ts';
+import { parseStagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
   readCurrentDataset,
@@ -34,11 +34,20 @@ const MONITOR_BUDGET_USD = Number(process.env.MONITOR_MAX_BUDGET_USD ?? 0.5);
 const ESCALATION_BUDGET_USD = Number(process.env.ESCALATION_MAX_BUDGET_USD ?? 3);
 
 function parseVerdict(text: string): MonitorVerdict {
-  const match = text.match(/\{[\s\S]*\}/);
-  if (!match) throw new Error(`Monitor returned no JSON: ${text.slice(0, 200)}`);
-  const parsed = JSON.parse(match[0]) as MonitorVerdict;
-  if (typeof parsed.breaking !== 'boolean') throw new Error('Monitor verdict missing "breaking"');
-  return parsed;
+  // strip code fences, then try the widest and the narrowest brace spans —
+  // models occasionally wrap the JSON in prose or emit trailing notes
+  const cleaned = text.replace(/```(?:json)?/g, '');
+  for (const pattern of [/\{[\s\S]*\}/, /\{[\s\S]*?\}/]) {
+    const match = cleaned.match(pattern);
+    if (!match) continue;
+    try {
+      const parsed = JSON.parse(match[0]) as MonitorVerdict;
+      if (typeof parsed.breaking === 'boolean') return parsed;
+    } catch {
+      // fall through to the next pattern
+    }
+  }
+  throw new Error(`Monitor returned no parsable JSON verdict: ${text.slice(0, 200)}`);
 }
 
 async function runQueryToText(prompt: string, options: Record<string, unknown>): Promise<string> {
@@ -66,8 +75,7 @@ async function main(): Promise<void> {
   const verdictText = await runQueryToText(MONITOR_PROMPT, {
     model: 'haiku',
     allowedTools: ['WebSearch'],
-    permissionMode: 'bypassPermissions',
-    allowDangerouslySkipPermissions: true,
+    permissionMode: 'dontAsk',
     maxTurns: 10,
     maxBudgetUsd: MONITOR_BUDGET_USD,
     settingSources: [],
@@ -105,8 +113,7 @@ REASON: ${verdict.reason}
       synthesizer: SUBAGENTS.synthesizer,
     },
     allowedTools: ['Agent', 'Read', 'Write', 'WebSearch', 'WebFetch'],
-    permissionMode: 'bypassPermissions',
-    allowDangerouslySkipPermissions: true,
+    permissionMode: 'dontAsk',
     maxTurns: 40,
     maxBudgetUsd: ESCALATION_BUDGET_USD,
     settingSources: [],
@@ -119,7 +126,7 @@ REASON: ${verdict.reason}
     return;
   }
 
-  const staged = StagedOutputSchema.parse(JSON.parse(readFileSync(STAGING_PATH, 'utf8')));
+  const { staged } = parseStagedOutput(readFileSync(STAGING_PATH, 'utf8'));
   const previous = readCurrentDataset();
   const breakingDataset = finalizeDataset(staged, previous, 'breaking', { markBreaking: true });
 

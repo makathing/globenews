@@ -58,6 +58,14 @@ describe('computeTrustScore', () => {
     expect(junk).toBeLessThan(60);
   });
 
+  it('rates government domains high even when not in the table', async () => {
+    const { rateDomain } = await import('../src/source-ratings.ts');
+    expect(rateDomain('weather.gov')).toMatchObject({ reliability: 85, unrated: false });
+    expect(rateDomain('www.metoffice.gov.uk')).toMatchObject({ reliability: 85, unrated: false });
+    expect(rateDomain('reliefweb.int').reliability).toBeGreaterThanOrEqual(85);
+    expect(rateDomain('random-blog.example')).toMatchObject({ reliability: 50, unrated: true });
+  });
+
   it('stays within 0-100', () => {
     const many = computeTrustScore([
       src('reuters.com', 95, 'center'),

@@ -6,7 +6,7 @@ import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_STAGED } from './mock-data.ts';
 import { finalizeDataset } from './finalize.ts';
-import { StagedOutputSchema, validateDataset, type StagedOutput } from './schema.ts';
+import { parseStagedOutput, validateDataset, type StagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
   readCurrentDataset,
@@ -18,6 +18,15 @@ import {
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
 const MAX_BUDGET_USD = Number(process.env.PIPELINE_MAX_BUDGET_USD ?? 8);
 const STAGING_PATH = resolve(STAGING_DIR, 'events.raw.json');
+
+class PipelineError extends Error {
+  constructor(
+    message: string,
+    readonly retryable: boolean,
+  ) {
+    super(message);
+  }
+}
 
 async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<StagedOutput> {
   if (existsSync(STAGING_PATH)) rmSync(STAGING_PATH);
@@ -33,8 +42,9 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
       model: 'sonnet',
       agents: SUBAGENTS as never,
       allowedTools: ['Agent', 'Read', 'Write', 'WebSearch', 'WebFetch'],
-      permissionMode: 'bypassPermissions',
-      allowDangerouslySkipPermissions: true,
+      // least-privilege: everything outside allowedTools is denied
+      // (bypassPermissions also refuses to run as root, e.g. in containers)
+      permissionMode: 'dontAsk',
       maxTurns: 100,
       maxBudgetUsd: MAX_BUDGET_USD,
       settingSources: [],
@@ -47,7 +57,9 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
       const cost = 'total_cost_usd' in message ? message.total_cost_usd : undefined;
       console.log(`[daily] coordinator finished: ${message.subtype}, cost=$${cost?.toFixed?.(2)}`);
       if (message.subtype !== 'success') {
-        throw new Error(`Coordinator run failed: ${message.subtype}`);
+        // budget exhaustion must never trigger a retry — that doubles the spend
+        const retryable = !/budget/i.test(message.subtype);
+        throw new PipelineError(`Coordinator run failed: ${message.subtype}`, retryable);
       }
     }
   }
@@ -56,7 +68,12 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
     throw new Error('Synthesizer never wrote the staging file.');
   }
   const raw = readFileSync(STAGING_PATH, 'utf8');
-  return StagedOutputSchema.parse(JSON.parse(raw));
+  const { staged, dropped, repaired } = parseStagedOutput(raw);
+  if (repaired > 0) console.log(`[daily] repaired ${repaired} event(s) (truncation/clamping)`);
+  for (const drop of dropped) {
+    console.warn(`[daily] dropped staged event #${drop.index}: ${drop.reason}`);
+  }
+  return staged;
 }
 
 async function main(): Promise<void> {
@@ -74,6 +91,7 @@ async function main(): Promise<void> {
         staged = await runCoordinator(ledger, feedback);
         break;
       } catch (error) {
+        if (error instanceof PipelineError && !error.retryable) throw error;
         attempt += 1;
         if (attempt > 2) throw error;
         feedback = error instanceof Error ? error.message : String(error);

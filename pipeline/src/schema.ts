@@ -60,3 +60,76 @@ export type StagedOutput = z.infer<typeof StagedOutputSchema>;
 export function validateDataset(data: unknown): NewsDataset {
   return NewsDatasetSchema.parse(data) as NewsDataset;
 }
+
+/** Truncate at a sentence (preferred) or word boundary, with ellipsis. */
+export function truncateText(text: string, max: number): string {
+  const trimmed = text.trim();
+  if (trimmed.length <= max) return trimmed;
+  const slice = trimmed.slice(0, max - 1);
+  const sentenceEnd = Math.max(slice.lastIndexOf('. '), slice.lastIndexOf('! '), slice.lastIndexOf('? '));
+  if (sentenceEnd > max * 0.6) return slice.slice(0, sentenceEnd + 1);
+  const wordEnd = slice.lastIndexOf(' ');
+  return (wordEnd > max * 0.6 ? slice.slice(0, wordEnd) : slice) + '…';
+}
+
+export interface SalvageResult {
+  staged: StagedOutput;
+  dropped: { index: number; reason: string }[];
+  repaired: number;
+}
+
+/**
+ * Salvage parser for the synthesizer's staging file. Verified need from live
+ * runs: models occasionally overflow a length limit or malform one event —
+ * failing the whole (expensive) batch for that is wasteful. Trivial issues
+ * are repaired (over-long text truncated, severity clamped, countryCode
+ * defaulted); events that still fail validation are dropped individually.
+ */
+export function parseStagedOutput(raw: string): SalvageResult {
+  const json = JSON.parse(raw) as { events?: unknown[] };
+  if (!Array.isArray(json.events)) throw new Error('Staged output has no "events" array');
+
+  const staged: StagedOutput = { events: [] };
+  const dropped: SalvageResult['dropped'] = [];
+  let repaired = 0;
+
+  for (let index = 0; index < json.events.length; index++) {
+    const rawEvent = json.events[index];
+    const direct = StagedEventSchema.safeParse(rawEvent);
+    if (direct.success) {
+      staged.events.push(direct.data);
+      continue;
+    }
+
+    if (typeof rawEvent === 'object' && rawEvent !== null) {
+      const fixed: Record<string, unknown> = { ...(rawEvent as Record<string, unknown>) };
+      if (typeof fixed.summary === 'string') fixed.summary = truncateText(fixed.summary, 590);
+      if (typeof fixed.headline === 'string') fixed.headline = truncateText(fixed.headline, 195);
+      if (typeof fixed.severity === 'number') {
+        fixed.severity = Math.min(5, Math.max(1, Math.round(fixed.severity)));
+      }
+      if (typeof fixed.countryCode !== 'string' || fixed.countryCode.length !== 2) {
+        fixed.countryCode = 'XX';
+      }
+      const retry = StagedEventSchema.safeParse(fixed);
+      if (retry.success) {
+        staged.events.push(retry.data);
+        repaired += 1;
+        continue;
+      }
+      dropped.push({
+        index,
+        reason: retry.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ').slice(0, 300),
+      });
+    } else {
+      dropped.push({ index, reason: 'not an object' });
+    }
+  }
+
+  if (staged.events.length === 0) {
+    throw new Error(
+      `No staged events survived validation (${dropped.length} dropped). First reason: ${dropped[0]?.reason}`,
+    );
+  }
+  return { staged, dropped, repaired };
+}

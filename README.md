@@ -38,6 +38,20 @@ the **entire US**) happens.
   `[source-intel] reuters.com reliability=95/100 bias=center` context back into the agents, and
   records everything in a run ledger.
 
+**Hardened against real-world failure modes** (all found via live test runs):
+
+- Subagents are pinned to `background: false` — background subagents run outside the session's
+  permission/hook context (tools get denied, source-intel never fires).
+- `permissionMode: 'dontAsk'` + an explicit tool allowlist instead of `bypassPermissions`
+  (least privilege, and bypass refuses to run as root in containers).
+- The synthesizer's staging file goes through a **salvage parser** (`parseStagedOutput`):
+  over-long text is truncated, severity clamped, and broken events dropped individually —
+  one malformed event never fails (and re-bills) a whole batch.
+- Budget-exhaustion errors are never retried; the monitor's JSON verdict parsing tolerates
+  fences and surrounding prose.
+- Unrated `.gov` / `.int` domains get a high-reliability default; the ratings table covers
+  the regional and state-linked outlets that real runs actually surfaced.
+
 **Trust is computed, not vibes** — `pipeline/src/trust.ts` scores each event deterministically from
 corroboration count, average source reliability, and a cross-spectrum bonus (left + right outlets
 agreeing). Single-source stories are capped at 40 ("unverified"). The synthesizer never invents
@@ -71,6 +85,19 @@ npm test                           # pipeline unit tests (hooks, trust math, fin
 
 Run the real pipeline locally with `ANTHROPIC_API_KEY` set:
 `npm run pipeline:daily` / `npm run pipeline:monitor`.
+
+### Live diagnostics (small, cheap, real API runs)
+
+```bash
+cd pipeline
+npx tsx src/smoke.ts                 # auth check (~$0.04); --search adds a WebSearch probe
+npx tsx src/probe-hooks.ts           # verifies hook wiring against the live SDK (~$0.20)
+npx tsx src/probe-hooks.ts --subagent#  …and that hooks fire inside subagents
+npx tsx src/probe-pipeline.ts        # scoped 1-region explorer→researcher→synthesizer run (~$2)
+```
+
+The probes log to `pipeline/.staging/` and print a findings report — use them after SDK
+upgrades or prompt changes before trusting a full batch.
 
 ## Repo layout
 

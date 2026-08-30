@@ -40,6 +40,15 @@ export const SOURCE_RATINGS: Record<string, SourceRating> = {
   'japantimes.co.jp': { reliability: 82, bias: 'center' },
   'scmp.com': { reliability: 76, bias: 'center' },
   'straitstimes.com': { reliability: 78, bias: 'center' },
+  'nikkei.com': { reliability: 85, bias: 'center' },
+  'lefigaro.fr': { reliability: 78, bias: 'center-right' },
+  'welt.de': { reliability: 76, bias: 'center-right' },
+  'nypost.com': { reliability: 58, bias: 'right' },
+  'washingtontimes.com': { reliability: 58, bias: 'right' },
+  'washingtonexaminer.com': { reliability: 60, bias: 'center-right' },
+  'nationalreview.com': { reliability: 66, bias: 'right' },
+  'reason.com': { reliability: 70, bias: 'center-right' },
+  'semafor.com': { reliability: 78, bias: 'center' },
   'timesofindia.com': { reliability: 70, bias: 'center' },
   'thehindu.com': { reliability: 80, bias: 'center-left' },
   'haaretz.com': { reliability: 80, bias: 'center-left' },
@@ -56,6 +65,7 @@ export const SOURCE_RATINGS: Record<string, SourceRating> = {
   'abcnews.go.com': { reliability: 82, bias: 'center' },
   'cbsnews.com': { reliability: 82, bias: 'center' },
   'nbcnews.com': { reliability: 81, bias: 'center-left' },
+  'abcnews.com': { reliability: 82, bias: 'center' },
   'aljazeera.com': { reliability: 78, bias: 'center-left' },
   'dw.com': { reliability: 86, bias: 'center' },
   'france24.com': { reliability: 84, bias: 'center' },
@@ -98,7 +108,27 @@ export const SOURCE_RATINGS: Record<string, SourceRating> = {
   'usgs.gov': { reliability: 95, bias: 'center' },
   'reliefweb.int': { reliability: 88, bias: 'center' },
 
+  // Regional outlets frequently seen in live runs
+  'wionews.com': { reliability: 65, bias: 'center' },
+  'focustaiwan.tw': { reliability: 75, bias: 'center' },
+  'taipeitimes.com': { reliability: 72, bias: 'center' },
+  'inquirer.net': { reliability: 72, bias: 'center' },
+  'japantoday.com': { reliability: 70, bias: 'center' },
+  'gulfnews.com': { reliability: 66, bias: 'center' },
+  'arabnews.com': { reliability: 64, bias: 'center' },
+  'jpost.com': { reliability: 72, bias: 'center-right' },
+  'foreignpolicy.com': { reliability: 80, bias: 'center' },
+  'usnews.com': { reliability: 75, bias: 'center' },
+  'yahoo.com': { reliability: 60, bias: 'center' },
+  'news.yahoo.com': { reliability: 60, bias: 'center' },
+  'caixinglobal.com': { reliability: 74, bias: 'center' },
+  'bernama.com': { reliability: 68, bias: 'center' },
+  'thedailystar.net': { reliability: 70, bias: 'center' },
+  'tribune.com.pk': { reliability: 68, bias: 'center' },
+
   // State-linked (lower reliability on contested topics)
+  'theepochtimes.com': { reliability: 32, bias: 'right' },
+  'cgtn.com': { reliability: 38, bias: 'unknown' },
   'rt.com': { reliability: 30, bias: 'unknown' },
   'sputniknews.com': { reliability: 28, bias: 'unknown' },
   'presstv.ir': { reliability: 30, bias: 'unknown' },
@@ -145,6 +175,15 @@ export function rateDomain(domain: string): SourceRating & { unrated: boolean } 
   const normalized = normalizeDomain(domain);
   const known = SOURCE_RATINGS[normalized] ?? SOURCE_RATINGS[domain.toLowerCase()];
   if (known) return { ...known, unrated: false };
+  // Government / intergovernmental primary sources: high factual reliability
+  // even when the specific agency isn't in the table (verified need in live
+  // runs: weather.gov, usgs feeds, EU bodies, etc. kept coming back unrated).
+  if (/\.(gov|mil)$/.test(normalized) || /\.(gov|gob|gouv|go)\.[a-z]{2}$/.test(normalized)) {
+    return { reliability: 85, bias: 'center', unrated: false };
+  }
+  if (/\.int$/.test(normalized) || /\.europa\.eu$/.test(domain.toLowerCase())) {
+    return { reliability: 85, bias: 'center', unrated: false };
+  }
   return { reliability: UNRATED_RELIABILITY, bias: 'unknown', unrated: true };
 }
 

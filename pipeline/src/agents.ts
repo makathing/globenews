@@ -13,6 +13,10 @@ export const SUBAGENTS = {
     description:
       'Scans world news for candidate events. Use once per world region to discover what happened in the last 24 hours.',
     model: 'sonnet',
+    // background subagents run outside the session's permission/hook context
+    // (verified live: tools get denied and source-intel hooks never fire),
+    // so every pipeline agent must run in-session.
+    background: false,
     tools: ['WebSearch'],
     prompt: `You are the EXPLORER agent for a global news radar.
 
@@ -31,6 +35,7 @@ Return a concise markdown list of 5-10 candidate events, each as:
     description:
       'Verifies candidate news events against multiple independent sources. Use for each batch of candidate events from the explorer.',
     model: 'sonnet',
+    background: false,
     tools: ['WebSearch', 'WebFetch'],
     prompt: `You are the RESEARCHER agent for a global news radar. You receive candidate events
 and must VERIFY each one before it can appear on the map.
@@ -43,6 +48,10 @@ For each candidate:
 2. Cross-check the core facts: what happened, where exactly (best city/country), when, scale/casualties/figures.
 3. Discard events you cannot corroborate with 2+ independent sources, and say so.
 4. Never rely on a single low-reliability (<60) or UNRATED source for any factual claim.
+5. Many news sites block automated fetches — if a WebFetch fails or returns nothing,
+   do NOT retry the same URL; corroborate through another targeted WebSearch (e.g.
+   "<event keywords> site:apnews.com" or adding the location and date) and use the
+   result snippets/URLs as sources.
 
 Return for each VERIFIED event:
 - HEADLINE (neutral, factual wording)
@@ -56,6 +65,7 @@ And a DISCARDED list with one-line reasons.`,
     description:
       'Merges verified research into the final standardized event dataset. Use exactly once, at the end, with all verified events.',
     model: 'opus',
+    background: false,
     tools: ['Read', 'Write'],
     prompt: `You are the SYNTHESIZER agent for a global news radar. You receive all verified events
 from the researcher and produce the final standardized dataset.
@@ -65,7 +75,7 @@ Tasks:
 2. STANDARDIZE each event to exactly this JSON shape:
    {
      "headline": string (<= 140 chars, neutral),
-     "summary": string (2-3 sentences, factual, 20-600 chars),
+     "summary": string (2-3 sentences, factual — HARD LIMIT 550 characters, longer summaries get machine-truncated),
      "category": one of [${CATEGORY_LIST}],
      "severity": 1-5,
      "lat": number, "lon": number  (precise coordinates of the event location),

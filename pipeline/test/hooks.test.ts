@@ -53,6 +53,19 @@ describe('PreToolUse hook', () => {
 });
 
 describe('PostToolUse hook', () => {
+  it('reads the tool_response field the SDK actually sends (verified live)', () => {
+    const ledger = new RunLedger();
+    const result = postToolUseLogic(
+      {
+        tool_name: 'WebSearch',
+        tool_input: { query: 'x' },
+        tool_response: 'Results: https://www.reuters.com/a',
+      },
+      ledger,
+    );
+    expect(result.additionalContext).toContain('reuters.com');
+  });
+
   it('injects source-intel context and records the ledger', () => {
     const ledger = new RunLedger();
     const result = postToolUseLogic(
