@@ -6,6 +6,7 @@ import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_STAGED } from './mock-data.ts';
 import { finalizeDataset } from './finalize.ts';
+import { enrichImages } from './enrich-images.ts';
 import { parseStagedOutput, validateDataset, type StagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
@@ -104,6 +105,19 @@ async function main(): Promise<void> {
 
   const previous = readCurrentDataset();
   const dataset = finalizeDataset(staged, previous, 'daily');
+  if (MOCK) {
+    // placeholder previews on a handful of events so the UI (and its
+    // no-image fallback) can both be exercised in development
+    for (const event of dataset.events.slice(0, 6)) {
+      event.image = {
+        url: `https://picsum.photos/seed/${event.id}/640/360`,
+        domain: event.sources[0].domain,
+      };
+    }
+  } else {
+    const { resolved } = await enrichImages(dataset);
+    console.log(`[daily] resolved ${resolved} article preview image(s)`);
+  }
   validateDataset(dataset);
   writeDataset(dataset, { archive: true });
   writeStagingDebug('ledger.json', ledger.toJSON());

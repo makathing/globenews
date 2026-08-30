@@ -78,9 +78,13 @@ const fragmentShader = /* glsl */ `
       color = base + grat * vec3(0.11, 0.24, 0.38);
     }
 
-    // subtle inner rim only — the outer glow shell is gone by design
+    // subtle inner rim, sun-modulated: a crescent highlight on the lit limb
+    // that fades to almost nothing on the dark limb — ties the globe to the sun
     float fresnel = pow(1.0 - max(dot(normal, viewDir), 0.0), 3.0);
-    color += fresnel * uRimColor * uRimStrength;
+    float litSide = 0.2 + 0.8 * smoothstep(-0.35, 0.55, dot(normal, sunDir));
+    color += fresnel * uRimColor * uRimStrength * litSide;
+    // warm kiss right at the lit limb
+    color += fresnel * vec3(1.0, 0.85, 0.6) * 0.10 * smoothstep(0.25, 0.9, dot(normal, sunDir));
 
     gl_FragColor = vec4(color, 1.0);
   }

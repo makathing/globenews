@@ -5,6 +5,7 @@ import { MONITOR_PROMPT, SUBAGENTS } from './agents.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { finalizeDataset } from './finalize.ts';
+import { enrichImages } from './enrich-images.ts';
 import { parseStagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
@@ -141,6 +142,8 @@ REASON: ${verdict.reason}
     signalChanged(false);
     return;
   }
+
+  await enrichImages(breakingDataset);
 
   // Merge: breaking events first, then existing events (minus superseded ids).
   const breakingIds = new Set(breakingDataset.events.map((event) => event.id));

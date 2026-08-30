@@ -1,5 +1,6 @@
 import { CATEGORIES, CATEGORY_COLORS, CATEGORY_LABELS } from '../../../shared/news';
 import { useGlobeStore } from '../store';
+import { CategoryIcon, SignatureGlyph } from './icons';
 
 export function Legend() {
   const hidden = useGlobeStore((s) => s.hidden);
@@ -23,9 +24,14 @@ export function Legend() {
               className={`legend-chip ${off ? 'off' : ''}`}
               style={{ ['--chip-color' as string]: CATEGORY_COLORS[category] }}
               onClick={() => toggleCategory(category)}
-              title={`${off ? 'Show' : 'Hide'} ${CATEGORY_LABELS[category]}`}
+              title={`${off ? 'Show' : 'Hide'} ${CATEGORY_LABELS[category]} — globe signature shown left`}
             >
-              <span className="chip-dot" />
+              <span className="chip-signature" aria-hidden>
+                <SignatureGlyph category={category} size={17} />
+              </span>
+              <span className="chip-icon" aria-hidden>
+                <CategoryIcon category={category} size={13} />
+              </span>
               {CATEGORY_LABELS[category]}
               <span className="chip-count">{counts.get(category) ?? 0}</span>
             </button>

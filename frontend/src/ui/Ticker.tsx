@@ -1,5 +1,6 @@
 import { CATEGORY_COLORS } from '../../../shared/news';
 import { useGlobeStore } from '../store';
+import { CategoryIcon } from './icons';
 
 export function Ticker() {
   const dataset = useGlobeStore((s) => s.dataset);
@@ -23,9 +24,11 @@ export function Ticker() {
               onClick={() => select(event.id)}
             >
               <span
-                className="ticker-dot"
-                style={{ background: event.isBreaking ? '#ffffff' : CATEGORY_COLORS[event.category] }}
-              />
+                className="ticker-icon"
+                style={{ color: event.isBreaking ? '#ffffff' : CATEGORY_COLORS[event.category] }}
+              >
+                <CategoryIcon category={event.category} size={13} />
+              </span>
               {event.isBreaking && <span className="ticker-breaking">Breaking</span>}
               {event.headline}
             </button>

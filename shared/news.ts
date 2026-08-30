@@ -61,6 +61,13 @@ export interface NewsSource {
   unrated?: boolean;
 }
 
+/** Article preview image (hotlinked Open Graph image from one of the sources). */
+export interface NewsImage {
+  url: string;
+  /** Registrable domain of the article the image came from. */
+  domain: string;
+}
+
 export interface NewsEvent {
   id: string;
   headline: string;
@@ -74,6 +81,8 @@ export interface NewsEvent {
   /** ISO 3166-1 alpha-2, or 'XX' for international waters / multi-country events. */
   countryCode: string;
   sources: NewsSource[];
+  /** Optional article preview image, resolved by the pipeline's enrichment step. */
+  image?: NewsImage;
   /** 0-100, computed deterministically from corroboration + source reliability + bias spread. */
   trustScore: number;
   /** ISO timestamp of when this event first appeared in the dataset. */

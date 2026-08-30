@@ -70,6 +70,8 @@ export function finalizeDataset(
       locationName: stagedEvent.locationName,
       countryCode: (coords.cc ?? stagedEvent.countryCode ?? 'XX').toUpperCase(),
       sources,
+      // carry a previously-resolved preview image forward; enrichment fills gaps
+      ...(prev?.image ? { image: prev.image } : {}),
       trustScore: computeTrustScore(sources),
       firstSeen: prev?.firstSeen ?? now,
       lastUpdated: now,

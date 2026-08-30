@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import type { NewsEvent } from '../../../shared/news';
 import { CATEGORY_COLORS } from '../../../shared/news';
 import { latLonToVec3, GLOBE_RADIUS } from '../lib/geo';
+import { CATEGORY_PATTERN } from '../lib/signatures';
 import { useGlobeStore, useTheme, useVisibleEvents } from '../store';
 
 const vertexShader = /* glsl */ `
@@ -21,24 +22,72 @@ const fragmentShader = /* glsl */ `
   uniform float uBreaking;  // 1.0 for breaking events
   uniform float uBoost;     // hover/selection emphasis
   uniform float uAlphaBoost; // >1 on light surfaces (normal blending needs denser alpha)
+  uniform int uPattern;     // category signature (see lib/signatures.ts)
   varying vec2 vUv;
 
-  float ring(float r, float phase, float width) {
-    float ringR = phase * 0.48;
-    float d = abs(r - ringR);
+  float sdBox(vec2 p, vec2 b) {
+    vec2 q = abs(p) - b;
+    return length(max(q, 0.0)) + min(max(q.x, q.y), 0.0);
+  }
+
+  // distance from p to the boundary of the expanding signature shape of size s
+  float shapeDist(vec2 p, float s, float t) {
+    float r = length(p);
+    if (uPattern == 3) return abs(abs(p.x) + abs(p.y) - s);          // economy: diamond
+    if (uPattern == 4) {                                              // health: plus
+      float w = s * 0.4;
+      return abs(min(sdBox(p, vec2(s * 0.92, w)), sdBox(p, vec2(w, s * 0.92))));
+    }
+    if (uPattern == 5) {                                              // science: hexagon
+      vec2 q = abs(p);
+      return abs(max(q.x * 0.866025 + q.y * 0.5, q.y) - s * 0.92);
+    }
+    if (uPattern == 6) {                                              // climate: ripple
+      float a = atan(p.y, p.x);
+      return abs(r - s * (1.0 + 0.09 * sin(a * 6.0 + t * 2.0)));
+    }
+    return abs(r - s);                                                // circle (default)
+  }
+
+  float ring(vec2 p, float phase, float width, float t) {
+    float d = shapeDist(p, phase * 0.48, t);
     float a = smoothstep(width, 0.0, d);
     return a * (1.0 - phase) * (1.0 - phase);
   }
 
   void main() {
-    float r = length(vUv - 0.5);
+    vec2 p = vUv - 0.5;
+    float r = length(p);
     if (r > 0.5) discard;
 
+    float width = 0.014 + 0.01 * uBoost;
     float alpha = 0.0;
-    // three staggered expanding radar rings
+    // three staggered expanding signature rings
     for (int k = 0; k < 3; k++) {
       float phase = fract(uTime * uRate + float(k) / 3.0);
-      alpha += ring(r, phase, 0.014 + 0.01 * uBoost);
+      alpha += ring(p, phase, width, uTime);
+      // disaster: each pulse is a double shockwave — a trailing twin ring
+      if (uPattern == 1) alpha += ring(p, fract(phase + 0.905), width, uTime) * 0.65;
+    }
+
+    // society: segmented ring — angular dashes (slowly rotating)
+    if (uPattern == 7) {
+      float a = atan(p.y, p.x);
+      float dash = step(0.32, fract(a * 1.90986 + uTime * 0.12));
+      alpha *= mix(0.12, 1.0, dash);
+    }
+
+    // conflict: four radial spikes over the rings
+    if (uPattern == 0) {
+      float axis = min(abs(p.x), abs(p.y));
+      float spike = smoothstep(0.013, 0.0, axis) * smoothstep(0.46, 0.08, r);
+      alpha += spike * (0.5 + 0.35 * sin(uTime * 3.0));
+    }
+
+    // politics: small satellite dot orbiting the core
+    if (uPattern == 2) {
+      vec2 orbit = vec2(cos(uTime * 1.5), sin(uTime * 1.5)) * 0.3;
+      alpha += smoothstep(0.05, 0.0, distance(p, orbit));
     }
 
     // glowing core
@@ -50,7 +99,7 @@ const fragmentShader = /* glsl */ `
     // breaking: fast white strobe ring on top
     if (uBreaking > 0.5) {
       float strobePhase = fract(uTime * 1.6);
-      float strobe = ring(r, strobePhase, 0.02);
+      float strobe = ring(p, strobePhase, 0.02, uTime);
       float blink = step(0.5, fract(uTime * 2.5));
       color = mix(color, vec3(1.0), strobe * 0.9 + blink * core * 0.4);
       alpha += strobe * 1.2;
@@ -95,6 +144,7 @@ function Blip({ event }: { event: NewsEvent }) {
           uBreaking: { value: event.isBreaking ? 1 : 0 },
           uBoost: { value: 0 },
           uAlphaBoost: { value: theme.blipAdditive ? 1 : 1.9 },
+          uPattern: { value: CATEGORY_PATTERN[event.category] },
         },
       }),
     [event.category, event.severity, event.isBreaking, theme.blipAdditive],

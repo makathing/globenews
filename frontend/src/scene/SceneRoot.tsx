@@ -4,6 +4,8 @@ import { Earth } from './Earth';
 import { Clouds } from './Clouds';
 import { CountryBorders } from './CountryBorders';
 import { Starfield } from './Starfield';
+import { Sun } from './Sun';
+import { SpaceBackground } from './SpaceBackground';
 import { Blips } from './Blips';
 import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
@@ -23,7 +25,9 @@ export function SceneRoot() {
       style={{ position: 'absolute', inset: 0, background: '#04070d' }}
     >
       <color attach="background" args={['#04070d']} />
+      <SpaceBackground />
       <Starfield />
+      <Sun />
       <Suspense fallback={null}>
         <Earth />
         {theme.clouds && <Clouds />}

@@ -9,6 +9,11 @@ export const NewsSourceSchema = z.object({
   unrated: z.boolean().optional(),
 });
 
+export const NewsImageSchema = z.object({
+  url: z.url(),
+  domain: z.string().min(3),
+});
+
 export const NewsEventSchema = z.object({
   id: z.string().min(4),
   headline: z.string().min(8).max(200),
@@ -20,6 +25,7 @@ export const NewsEventSchema = z.object({
   locationName: z.string().min(2),
   countryCode: z.string().length(2),
   sources: z.array(NewsSourceSchema).min(1).max(10),
+  image: NewsImageSchema.optional(),
   trustScore: z.number().min(0).max(100),
   firstSeen: z.iso.datetime({ offset: true }),
   lastUpdated: z.iso.datetime({ offset: true }),

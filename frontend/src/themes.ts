@@ -17,6 +17,8 @@ export interface GlobeTheme {
   /** Additive blips wash out on light surfaces; use normal blending there. */
   blipAdditive: boolean;
   starBrightness: number;
+  /** Visible sun glow strength (0 disables the sun billboard). */
+  sunIntensity: number;
 }
 
 export const THEMES: Record<ThemeId, GlobeTheme> = {
@@ -31,6 +33,7 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     clouds: true,
     blipAdditive: true,
     starBrightness: 1,
+    sunIntensity: 1.0,
   },
   minimal: {
     id: 'minimal',
@@ -43,6 +46,7 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     clouds: false,
     blipAdditive: true,
     starBrightness: 0.8,
+    sunIntensity: 0.55,
   },
   light: {
     id: 'light',
@@ -55,6 +59,7 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     clouds: false,
     blipAdditive: false,
     starBrightness: 0.55,
+    sunIntensity: 0.4,
   },
   night: {
     id: 'night',
@@ -67,6 +72,7 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     clouds: false,
     blipAdditive: true,
     starBrightness: 1,
+    sunIntensity: 1.0,
   },
   grid: {
     id: 'grid',
@@ -79,6 +85,7 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     clouds: false,
     blipAdditive: true,
     starBrightness: 0.7,
+    sunIntensity: 0.5,
   },
 };
 

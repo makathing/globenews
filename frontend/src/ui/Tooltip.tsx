@@ -1,5 +1,6 @@
 import { CATEGORY_COLORS, CATEGORY_LABELS } from '../../../shared/news';
 import { useGlobeStore } from '../store';
+import { CategoryIcon } from './icons';
 
 export function Tooltip() {
   const hovered = useGlobeStore((s) => s.hovered);
@@ -16,7 +17,13 @@ export function Tooltip() {
         top: hovered.y + 14,
       }}
     >
-      <span className="tooltip-chip" style={{ background: CATEGORY_COLORS[event.category] }}>
+      {event.image && (
+        <div className="tooltip-thumb">
+          <img src={event.image.url} alt="" loading="lazy" referrerPolicy="no-referrer" />
+        </div>
+      )}
+      <span className="tooltip-chip" style={{ color: CATEGORY_COLORS[event.category] }}>
+        <CategoryIcon category={event.category} size={11} />
         {CATEGORY_LABELS[event.category]}
       </span>
       <div className="tooltip-headline">{event.headline}</div>
