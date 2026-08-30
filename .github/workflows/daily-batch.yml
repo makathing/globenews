@@ -1,0 +1,43 @@
+name: Daily news batch
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # once a day, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# never let the daily batch and the hourly monitor commit at the same time
+concurrency:
+  group: globenews-data
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run multi-agent news pipeline
+        run: npm run daily -w pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PIPELINE_MAX_BUDGET_USD: '8'
+      - name: Commit updated dataset
+        run: |
+          git config user.name "globenews-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No dataset changes to commit."
+          else
+            git commit -m "data: daily news batch $(date -u +%Y-%m-%d)"
+            git push origin main
+          fi

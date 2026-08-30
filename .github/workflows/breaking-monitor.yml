@@ -1,0 +1,45 @@
+name: Breaking news monitor
+
+on:
+  schedule:
+    - cron: '30 * * * *' # hourly, offset from the daily batch
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: globenews-data
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Hourly breaking-news sweep (Haiku)
+        id: monitor
+        run: npm run monitor -w pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MONITOR_MAX_BUDGET_USD: '0.5'
+          ESCALATION_MAX_BUDGET_USD: '3'
+      - name: Commit breaking update
+        if: steps.monitor.outputs.changed == 'true'
+        run: |
+          git config user.name "globenews-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "data: breaking news update $(date -u +%Y-%m-%dT%H:%M)"
+            git push origin main
+          fi
