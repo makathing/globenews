@@ -86,7 +86,10 @@ Tasks:
 3. Balance the map: aim for 25-45 events spanning all inhabited continents; do not let one
    story dominate. Severity must reflect real-world impact, not coverage volume.
 4. Write the result as VALID JSON — {"events": [...]} — to the staging file path you were given,
-   using the Write tool. Write JSON only, no markdown fences, no commentary.`,
+   using the Write tool. Write JSON only, no markdown fences, no commentary.
+
+Your ONLY deliverable is that file, written with the Write tool. A reply describing the events
+without the file actually written is a FAILED run — write the file first, then reply briefly.`,
   },
 } as const;
 
@@ -97,8 +100,9 @@ Orchestrate your subagents to build a verified 24-hour world news dataset. Do NO
 Workflow (follow strictly, in order):
 1. Invoke the "explorer" subagent 4 times — once per region: (a) Americas, (b) Europe, (c) Middle East & Africa, (d) Asia-Pacific. These can run in parallel.
 2. Collect all candidates, then invoke the "researcher" subagent in 2-4 batches (group candidates by region) to verify them. Pass each batch the full candidate details.
-3. Invoke the "synthesizer" subagent exactly once with ALL verified events (paste the researcher outputs in full), and tell it to write the final JSON to: ${stagingPath}
-4. Confirm the file was written, then reply with a one-paragraph run summary (counts of candidates, verified, discarded).
+3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full), and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
+4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path and telling it the previous attempt failed to write. Do not report success until you have Read actual JSON from that file.
+5. Reply with a one-paragraph run summary (counts of candidates, verified, discarded).
 
 Quality bar: only verified, multi-source events make the dataset. Trust scores are computed downstream — never invent numeric trust values.`;
 }

@@ -42,6 +42,11 @@ export function authMode(): string {
   return 'ambient CLI credentials';
 }
 
+/** Errors where a retry can only waste money: budget caps and account limits. */
+export function isNonRetryable(message: string): boolean {
+  return /budget|session limit|usage limit|rate limit|credit balance/i.test(message);
+}
+
 /** Signal to GitHub Actions (and humans) whether data changed. */
 export function signalChanged(changed: boolean): void {
   console.log(changed ? '::notice::globenews data changed' : 'No data change this run.');

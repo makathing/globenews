@@ -11,6 +11,7 @@ import { parseStagedOutput, validateDataset, type StagedOutput } from './schema.
 import {
   STAGING_DIR,
   authMode,
+  isNonRetryable,
   readCurrentDataset,
   signalChanged,
   writeDataset,
@@ -29,6 +30,7 @@ class PipelineError extends Error {
     super(message);
   }
 }
+
 
 async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<StagedOutput> {
   if (existsSync(STAGING_PATH)) rmSync(STAGING_PATH);
@@ -54,16 +56,27 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
     },
   });
 
-  for await (const message of run) {
-    if (message.type === 'result') {
-      const cost = 'total_cost_usd' in message ? message.total_cost_usd : undefined;
-      console.log(`[daily] coordinator finished: ${message.subtype}, cost=$${cost?.toFixed?.(2)}`);
-      if (message.subtype !== 'success') {
-        // budget exhaustion must never trigger a retry — that doubles the spend
-        const retryable = !/budget/i.test(message.subtype);
-        throw new PipelineError(`Coordinator run failed: ${message.subtype}`, retryable);
+  try {
+    for await (const message of run) {
+      if (message.type === 'result') {
+        const cost = 'total_cost_usd' in message ? message.total_cost_usd : undefined;
+        console.log(`[daily] coordinator finished: ${message.subtype}, cost=$${cost?.toFixed?.(2)}`);
+        if (message.subtype !== 'success') {
+          throw new PipelineError(
+            `Coordinator run failed: ${message.subtype}`,
+            !isNonRetryable(message.subtype),
+          );
+        }
       }
     }
+  } catch (error) {
+    // SDK-thrown errors (e.g. "You've hit your session limit") must be
+    // classified too — retrying an exhausted account burns attempts for $0
+    if (!(error instanceof PipelineError)) {
+      const message = error instanceof Error ? error.message : String(error);
+      throw new PipelineError(message, !isNonRetryable(message));
+    }
+    throw error;
   }
 
   if (!existsSync(STAGING_PATH)) {

@@ -70,3 +70,13 @@ describe('parseStagedOutput (salvage)', () => {
     expect(() => parseStagedOutput('{"notEvents": []}')).toThrow(/no "events" array/);
   });
 });
+
+describe('isNonRetryable (live-run regression)', () => {
+  it('classifies account/limit errors as non-retryable, transient ones as retryable', async () => {
+    const { isNonRetryable } = await import('../src/io.ts');
+    expect(isNonRetryable("You've hit your session limit · resets 7:50pm (UTC)")).toBe(true);
+    expect(isNonRetryable('error_max_budget_usd')).toBe(true);
+    expect(isNonRetryable('rate limit exceeded')).toBe(true);
+    expect(isNonRetryable('Synthesizer never wrote the staging file.')).toBe(false);
+  });
+});
