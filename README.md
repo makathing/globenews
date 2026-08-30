@@ -10,7 +10,7 @@ the **entire US**) happens.
 ```
                        ┌────────────────────────────────────────────┐
                        │        pipeline/ (Claude Agent SDK)        │
-  GitHub Actions cron  │                                            │
+  Claude cloud Routine │                                            │
   daily 06:00 UTC ──▶  │  COORDINATOR (sonnet)                      │
                        │   ├─ explorer ×4 regions (sonnet, search)  │
                        │   ├─ researcher batches (sonnet, verify    │
@@ -62,36 +62,38 @@ Natural Earth country outlines, a starfield whose stars streak with camera veloc
 full-frame motion smear), bloom, and a game-console HUD: legend filters, priority ticker,
 per-event panel with trust meter and per-source bias spectrum.
 
+## Scheduling & billing: tokenless Claude cloud Routines
+
+The pipeline is scheduled as **Claude Code cloud Routines** on the repo owner's Claude
+account — no API key, no tokens stored in GitHub, usage billed to the owner's Claude
+subscription:
+
+- **GlobeNews daily news batch** — every day at 06:00 UTC: full multi-agent batch, commits
+  `data/` to the branch it ran on.
+- **GlobeNews breaking-news monitor** — hourly at :30: cheap sweep, commits only when a
+  global-scale / entire-US event is verified.
+
+Each firing spawns a fresh cloud session in this repo's environment that checks out `main`
+(falling back to the feature branch pre-merge), runs the pipeline with the session's own
+account credentials, and pushes only `data/` changes. A data push to `main` triggers the
+Pages deploy workflow. Manage the Routines (pause, edit schedule, view run history) from
+the Routines panel on claude.ai / the Claude app.
+
+There are intentionally **no scheduled GitHub Actions workflows** — only `deploy.yml`
+remains, which needs no Anthropic credentials. If you ever prefer GitHub-hosted scheduling,
+restore the workflows from git history (`daily-batch.yml` / `breaking-monitor.yml`,
+removed in the "tokenless scheduling" commit); they support `CLAUDE_CODE_OAUTH_TOKEN`
+(subscription, via `claude setup-token`) or `ANTHROPIC_API_KEY` secrets.
+
+Budget caps (`PIPELINE_MAX_BUDGET_USD` ~$8/batch, `MONITOR_MAX_BUDGET_USD` $0.50,
+`ESCALATION_MAX_BUDGET_USD` $3) act as estimated-cost circuit breakers in every mode.
+
 ## Setup (one time, after merging to `main`)
 
-1. **Add ONE auth secret** (repo → Settings → Secrets and variables → Actions) — see
-   *Billing options* below:
-   - `CLAUDE_CODE_OAUTH_TOKEN` to bill your **Claude subscription** (Pro/Max/Team), **or**
-   - `ANTHROPIC_API_KEY` to bill a **metered API key**.
-2. **Enable Pages**: repo → Settings → Pages → Source: **GitHub Actions**.
-3. Optionally trigger the first real dataset: Actions → *Daily news batch* → Run workflow.
-   Until then the site shows the bundled sample dataset.
-
-### Billing options: subscription vs API key
-
-**Claude subscription (recommended if you have Pro/Max):** run `claude setup-token` on your
-own machine (one-time browser login; requires an active subscription), copy the printed
-token into a `CLAUDE_CODE_OAUTH_TOKEN` repo secret. Scheduled runs then draw from your
-plan's usage instead of metered dollars. Notes:
-
-- The token lasts **one year** and doesn't auto-refresh — when runs start failing with auth
-  errors, regenerate with `claude setup-token` and update the secret.
-- Pipeline runs consume your plan's rate limits alongside your normal Claude usage; the
-  daily batch is a substantial run, so Max is a comfortable fit, Pro will feel it.
-- If both secrets exist, the workflows deliberately export **only** the subscription token
-  (in the raw credential chain `ANTHROPIC_API_KEY` would otherwise win).
-
-**API key:** add `ANTHROPIC_API_KEY` instead. Budget caps default to ~$8/daily batch,
-$0.50/monitor sweep, $3/escalation (`PIPELINE_MAX_BUDGET_USD` etc.) — roughly $1–4/day in
-typical operation. (The `maxBudgetUsd` caps are enforced against estimated cost either way,
-but only translate to real dollars on a metered key.)
-
-Cron workflows only run on the default branch. Each run logs which auth mode it resolved.
+1. **Enable Pages**: repo → Settings → Pages → Source: **GitHub Actions**.
+2. The Routines above are already scheduled; the first daily batch replaces the bundled
+   sample dataset. To force one now, fire the "GlobeNews daily news batch" Routine from
+   the Routines panel.
 
 ## Local development
 
@@ -132,4 +134,4 @@ upgrades or prompt changes before trusting a full batch.
 | `frontend/src/scene/` | Earth, clouds, atmosphere, borders, starfield, blips, effects |
 | `frontend/src/ui/` | HUD: top bar, legend, ticker, event panel, tooltip, boot |
 | `data/events.json` | The dataset the globe renders (committed by the pipeline) |
-| `.github/workflows/` | `daily-batch`, `breaking-monitor`, `deploy` |
+| `.github/workflows/` | `deploy` (Pages build; scheduling lives in cloud Routines) |
