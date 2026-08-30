@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { BIAS_RATINGS, CATEGORIES, type NewsDataset } from '../../shared/news.ts';
+import { lookupPlace } from './gazetteer.ts';
 
 export const NewsSourceSchema = z.object({
   url: z.url(),
@@ -142,6 +143,35 @@ export function parseStagedOutput(raw: string): SalvageResult {
 
     if (typeof rawEvent === 'object' && rawEvent !== null) {
       const fixed: Record<string, unknown> = { ...(rawEvent as Record<string, unknown>) };
+
+      // field aliases — live runs produced title/description/location dialects
+      if (typeof fixed.headline !== 'string' && typeof fixed.title === 'string') {
+        fixed.headline = fixed.title;
+      }
+      if (typeof fixed.summary !== 'string' && typeof fixed.description === 'string') {
+        fixed.summary = fixed.description;
+      }
+      if (typeof fixed.locationName !== 'string') {
+        if (typeof fixed.location === 'string') fixed.locationName = fixed.location;
+        else if (typeof fixed.place === 'string') fixed.locationName = fixed.place;
+      }
+      if (typeof fixed.severity !== 'number') {
+        fixed.severity = typeof fixed.impact === 'number' ? fixed.impact : 3;
+      }
+      // missing coordinates: resolve from the gazetteer by location name
+      if (typeof fixed.lat !== 'number' || typeof fixed.lon !== 'number') {
+        const name = typeof fixed.locationName === 'string' ? fixed.locationName : '';
+        for (const part of name.split(/[,/]/).map((p) => p.trim())) {
+          const place = lookupPlace(part);
+          if (place) {
+            fixed.lat = place.lat;
+            fixed.lon = place.lon;
+            if (typeof fixed.countryCode !== 'string') fixed.countryCode = place.cc;
+            break;
+          }
+        }
+      }
+
       if (typeof fixed.summary === 'string') fixed.summary = truncateText(fixed.summary, 590);
       if (typeof fixed.headline === 'string') fixed.headline = truncateText(fixed.headline, 195);
       if (typeof fixed.severity === 'number') {
