@@ -78,6 +78,39 @@ export function truncateText(text: string, max: number): string {
   return (wordEnd > max * 0.6 ? slice.slice(0, wordEnd) : slice) + '…';
 }
 
+/**
+ * Coerce whatever the synthesizer wrote for `sources` into [{url}] —
+ * live runs produced strings, protocol-less domains, markdown links, and
+ * objects keyed `link`/`href` instead of `url`.
+ */
+export function normalizeStagedSources(value: unknown): { url: string }[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const urls: string[] = [];
+  const push = (raw: unknown) => {
+    if (typeof raw !== 'string') return;
+    const match = raw.match(/https?:\/\/[^\s"'<>\\)\]]+/);
+    let candidate = match?.[0] ?? raw.trim();
+    if (!/^https?:\/\//.test(candidate) && /^[\w-]+(\.[\w-]+)+(\/|$)/.test(candidate)) {
+      candidate = `https://${candidate}`;
+    }
+    try {
+      const url = new URL(candidate);
+      if (url.protocol === 'https:' || url.protocol === 'http:') urls.push(url.toString());
+    } catch {
+      // not a URL — skip
+    }
+  };
+  for (const entry of value) {
+    if (typeof entry === 'string') push(entry);
+    else if (entry && typeof entry === 'object') {
+      const record = entry as Record<string, unknown>;
+      push(record.url ?? record.link ?? record.href ?? record.source);
+    }
+  }
+  const unique = [...new Set(urls)].map((url) => ({ url }));
+  return unique.length > 0 ? unique.slice(0, 10) : undefined;
+}
+
 export interface SalvageResult {
   staged: StagedOutput;
   dropped: { index: number; reason: string }[];
@@ -117,6 +150,8 @@ export function parseStagedOutput(raw: string): SalvageResult {
       if (typeof fixed.countryCode !== 'string' || fixed.countryCode.length !== 2) {
         fixed.countryCode = 'XX';
       }
+      const sources = normalizeStagedSources(fixed.sources);
+      if (sources) fixed.sources = sources;
       const retry = StagedEventSchema.safeParse(fixed);
       if (retry.success) {
         staged.events.push(retry.data);

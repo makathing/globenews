@@ -80,3 +80,46 @@ describe('isNonRetryable (live-run regression)', () => {
     expect(isNonRetryable('Synthesizer never wrote the staging file.')).toBe(false);
   });
 });
+
+describe('normalizeStagedSources (live-run regression)', () => {
+  it('coerces strings, markdown links, and alt-keyed objects to {url}', async () => {
+    const { normalizeStagedSources } = await import('../src/schema.ts');
+    expect(
+      normalizeStagedSources([
+        'https://www.reuters.com/a',
+        '[Reuters](https://www.reuters.com/b)',
+        'apnews.com/article/x',
+        { link: 'https://www.bbc.com/c' },
+        { href: 'https://www.dw.com/d' },
+        { source: 'Reuters' },
+        42,
+      ]),
+    ).toEqual([
+      { url: 'https://www.reuters.com/a' },
+      { url: 'https://www.reuters.com/b' },
+      { url: 'https://apnews.com/article/x' },
+      { url: 'https://www.bbc.com/c' },
+      { url: 'https://www.dw.com/d' },
+    ]);
+    expect(normalizeStagedSources(['not a url at all'])).toBeUndefined();
+    expect(normalizeStagedSources('nope')).toBeUndefined();
+  });
+
+  it('salvages an event whose sources are bare URL strings', async () => {
+    const { parseStagedOutput } = await import('../src/schema.ts');
+    const event = {
+      headline: 'A perfectly valid headline about a real place',
+      summary: 'A verified multi-source event summary that is comfortably within limits and factual.',
+      category: 'economy',
+      severity: 2,
+      lat: 1,
+      lon: 2,
+      locationName: 'Testville, Testland',
+      countryCode: 'TL',
+      sources: ['https://www.reuters.com/x', 'www.ft.com/y'],
+    };
+    const result = parseStagedOutput(JSON.stringify({ events: [event] }));
+    expect(result.staged.events).toHaveLength(1);
+    expect(result.staged.events[0].sources).toHaveLength(2);
+  });
+});
