@@ -100,6 +100,10 @@ export function coordinatorPrompt(stagingPath: string): string {
   return `You are the COORDINATOR of a multi-agent global news radar pipeline. Today is ${new Date().toISOString().slice(0, 10)}.
 Orchestrate your subagents to build a verified 24-hour world news dataset. Do NOT do the research yourself — delegate.
 
+CRITICAL: every Agent tool invocation MUST pass run_in_background: false and you MUST wait
+for each subagent's actual returned result before moving on. Never launch subagents async —
+a "launched in background" response means you did it wrong; re-invoke synchronously.
+
 Workflow (follow strictly, in order):
 1. Invoke the "explorer" subagent 4 times — once per region: (a) Americas, (b) Europe, (c) Middle East & Africa, (d) Asia-Pacific. These can run in parallel.
 2. Collect all candidates, then invoke the "researcher" subagent in 2-4 batches (group candidates by region) to verify them. Pass each batch the full candidate details.

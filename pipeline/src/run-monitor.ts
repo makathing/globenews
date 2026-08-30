@@ -12,9 +12,13 @@ import {
   authMode,
   readCurrentDataset,
   signalChanged,
+  stripHarnessBackgroundEnv,
+  waitForFile,
   writeDataset,
   writeStagingDebug,
 } from './io.ts';
+
+stripHarnessBackgroundEnv();
 import { MIN_SOURCES_FOR_BREAKING } from './trust.ts';
 
 /**
@@ -97,7 +101,9 @@ async function main(): Promise<void> {
   console.log('[monitor] ESCALATING — running scoped verification pass');
   if (existsSync(STAGING_PATH)) rmSync(STAGING_PATH);
 
-  const escalationPrompt = `A breaking-news monitor flagged this potential event:
+  const escalationPrompt = `Every Agent tool invocation MUST pass run_in_background: false — wait for each subagent's actual result.
+
+A breaking-news monitor flagged this potential event:
 HEADLINE: ${verdict.headline}
 LOCATION: ${verdict.location}
 REASON: ${verdict.reason}
@@ -123,7 +129,7 @@ REASON: ${verdict.reason}
     hooks,
   });
 
-  if (!existsSync(STAGING_PATH)) {
+  if (!(await waitForFile(STAGING_PATH, 120_000))) {
     console.log(`[monitor] escalation did not verify the event: ${escalationResult.slice(0, 300)}`);
     signalChanged(false);
     return;

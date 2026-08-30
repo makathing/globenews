@@ -42,6 +42,27 @@ export function authMode(): string {
   return 'ambient CLI credentials';
 }
 
+/**
+ * Harness environments can force the Agent tool to auto-background subagents,
+ * racing file writes against the end of the query stream (verified live:
+ * "Async agent launched" despite background:false). Strip the override.
+ */
+export function stripHarnessBackgroundEnv(): void {
+  delete process.env.CLAUDE_AUTO_BACKGROUND_TASKS;
+}
+
+const sleep = (ms: number) => new Promise((resolveSleep) => setTimeout(resolveSleep, ms));
+
+/** Wait out a late background-subagent write before declaring a file missing. */
+export async function waitForFile(path: string, timeoutMs = 150_000): Promise<boolean> {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    if (existsSync(path)) return true;
+    await sleep(5_000);
+  }
+  return existsSync(path);
+}
+
 /** Errors where a retry can only waste money: budget caps and account limits. */
 export function isNonRetryable(message: string): boolean {
   return /budget|session limit|usage limit|rate limit|credit balance/i.test(message);

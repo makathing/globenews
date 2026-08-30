@@ -14,13 +14,16 @@ import {
   isNonRetryable,
   readCurrentDataset,
   signalChanged,
+  stripHarnessBackgroundEnv,
+  waitForFile,
   writeDataset,
   writeStagingDebug,
 } from './io.ts';
 
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
 const MAX_BUDGET_USD = Number(process.env.PIPELINE_MAX_BUDGET_USD ?? 8);
-const STAGING_PATH = resolve(STAGING_DIR, 'events.raw.json');
+
+stripHarnessBackgroundEnv();
 
 class PipelineError extends Error {
   constructor(
@@ -32,10 +35,17 @@ class PipelineError extends Error {
 }
 
 
-async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<StagedOutput> {
-  if (existsSync(STAGING_PATH)) rmSync(STAGING_PATH);
+async function runCoordinator(
+  ledger: RunLedger,
+  attempt: number,
+  feedback?: string,
+): Promise<StagedOutput> {
+  // per-attempt filename: a late background write from a previous attempt can
+  // neither satisfy nor corrupt this one
+  const stagingPath = resolve(STAGING_DIR, `events.raw.attempt${attempt}.json`);
+  if (existsSync(stagingPath)) rmSync(stagingPath);
 
-  let prompt = coordinatorPrompt(STAGING_PATH);
+  let prompt = coordinatorPrompt(stagingPath);
   if (feedback) {
     prompt += `\n\nIMPORTANT — the previous attempt produced invalid output. Fix these problems this time:\n${feedback}`;
   }
@@ -82,11 +92,10 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
   }
 
   let raw: string;
-  if (existsSync(STAGING_PATH)) {
-    raw = readFileSync(STAGING_PATH, 'utf8');
+  if (await waitForFile(stagingPath)) {
+    raw = readFileSync(stagingPath, 'utf8');
   } else {
-    // recovery path: the synthesizer's Write has proven flaky in live runs —
-    // fall back to JSON embedded in the coordinator's final reply
+    // recovery path: fall back to JSON embedded in the coordinator's final reply
     const embedded = finalReply.match(/\{[\s\S]*"events"[\s\S]*\}/);
     if (!embedded) throw new Error('Synthesizer never wrote the staging file.');
     console.warn('[daily] staging file missing — recovering JSON from coordinator reply');
@@ -113,7 +122,7 @@ async function main(): Promise<void> {
     let feedback: string | undefined;
     for (;;) {
       try {
-        staged = await runCoordinator(ledger, feedback);
+        staged = await runCoordinator(ledger, attempt + 1, feedback);
         break;
       } catch (error) {
         if (error instanceof PipelineError && !error.retryable) throw error;
