@@ -40,6 +40,7 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
     prompt += `\n\nIMPORTANT — the previous attempt produced invalid output. Fix these problems this time:\n${feedback}`;
   }
 
+  let finalReply = '';
   const run = query({
     prompt,
     options: {
@@ -67,6 +68,7 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
             !isNonRetryable(message.subtype),
           );
         }
+        if ('result' in message) finalReply = String(message.result);
       }
     }
   } catch (error) {
@@ -79,10 +81,17 @@ async function runCoordinator(ledger: RunLedger, feedback?: string): Promise<Sta
     throw error;
   }
 
-  if (!existsSync(STAGING_PATH)) {
-    throw new Error('Synthesizer never wrote the staging file.');
+  let raw: string;
+  if (existsSync(STAGING_PATH)) {
+    raw = readFileSync(STAGING_PATH, 'utf8');
+  } else {
+    // recovery path: the synthesizer's Write has proven flaky in live runs —
+    // fall back to JSON embedded in the coordinator's final reply
+    const embedded = finalReply.match(/\{[\s\S]*"events"[\s\S]*\}/);
+    if (!embedded) throw new Error('Synthesizer never wrote the staging file.');
+    console.warn('[daily] staging file missing — recovering JSON from coordinator reply');
+    raw = embedded[0];
   }
-  const raw = readFileSync(STAGING_PATH, 'utf8');
   const { staged, dropped, repaired } = parseStagedOutput(raw);
   if (repaired > 0) console.log(`[daily] repaired ${repaired} event(s) (truncation/clamping)`);
   for (const drop of dropped) {
