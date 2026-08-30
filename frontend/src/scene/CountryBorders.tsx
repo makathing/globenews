@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { latLonToVec3, GLOBE_RADIUS } from '../lib/geo';
+import { useTheme } from '../store';
 
 type Ring = [number, number][];
 
@@ -20,6 +21,7 @@ function ringsOf(feature: GeoFeature): Ring[] {
  * floating just above the surface — the holo-map layer of the game look.
  */
 export function CountryBorders() {
+  const theme = useTheme();
   const [geometry, setGeometry] = useState<THREE.BufferGeometry | null>(null);
 
   useEffect(() => {
@@ -54,10 +56,10 @@ export function CountryBorders() {
   return (
     <lineSegments geometry={geometry}>
       <lineBasicMaterial
-        color="#3de8ff"
+        color={theme.borderColor}
         transparent
-        opacity={0.34}
-        blending={THREE.AdditiveBlending}
+        opacity={theme.borderOpacity}
+        blending={theme.blipAdditive ? THREE.AdditiveBlending : THREE.NormalBlending}
         depthWrite={false}
       />
     </lineSegments>

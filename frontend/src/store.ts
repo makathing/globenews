@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import type { Category, NewsDataset, NewsEvent } from '../../shared/news';
+import { loadStoredTheme, storeTheme, THEMES, type GlobeTheme, type ThemeId } from './themes';
 
 interface HoverState {
   id: string;
@@ -9,12 +10,12 @@ interface HoverState {
 
 interface GlobeStore {
   dataset: NewsDataset | null;
-  booted: boolean;
+  theme: ThemeId;
   hidden: Set<Category>;
   hovered: HoverState | null;
   selectedId: string | null;
   setDataset: (dataset: NewsDataset) => void;
-  setBooted: () => void;
+  setTheme: (theme: ThemeId) => void;
   toggleCategory: (category: Category) => void;
   setHovered: (hover: HoverState | null) => void;
   select: (id: string | null) => void;
@@ -22,12 +23,15 @@ interface GlobeStore {
 
 export const useGlobeStore = create<GlobeStore>((set) => ({
   dataset: null,
-  booted: false,
+  theme: loadStoredTheme(),
   hidden: new Set<Category>(),
   hovered: null,
   selectedId: null,
   setDataset: (dataset) => set({ dataset }),
-  setBooted: () => set({ booted: true }),
+  setTheme: (theme) => {
+    storeTheme(theme);
+    set({ theme });
+  },
   toggleCategory: (category) =>
     set((state) => {
       const hidden = new Set(state.hidden);
@@ -38,6 +42,10 @@ export const useGlobeStore = create<GlobeStore>((set) => ({
   setHovered: (hovered) => set({ hovered }),
   select: (selectedId) => set({ selectedId }),
 }));
+
+export function useTheme(): GlobeTheme {
+  return THEMES[useGlobeStore((s) => s.theme)];
+}
 
 export function useVisibleEvents(): NewsEvent[] {
   const dataset = useGlobeStore((s) => s.dataset);

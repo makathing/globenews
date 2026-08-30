@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import type { NewsEvent } from '../../../shared/news';
 import { CATEGORY_COLORS } from '../../../shared/news';
 import { latLonToVec3, GLOBE_RADIUS } from '../lib/geo';
-import { useGlobeStore, useVisibleEvents } from '../store';
+import { useGlobeStore, useTheme, useVisibleEvents } from '../store';
 
 const vertexShader = /* glsl */ `
   varying vec2 vUv;
@@ -20,6 +20,7 @@ const fragmentShader = /* glsl */ `
   uniform float uRate;      // pulse rate (severity-scaled)
   uniform float uBreaking;  // 1.0 for breaking events
   uniform float uBoost;     // hover/selection emphasis
+  uniform float uAlphaBoost; // >1 on light surfaces (normal blending needs denser alpha)
   varying vec2 vUv;
 
   float ring(float r, float phase, float width) {
@@ -55,7 +56,7 @@ const fragmentShader = /* glsl */ `
       alpha += strobe * 1.2;
     }
 
-    alpha *= 0.9 + uBoost * 0.8;
+    alpha *= (0.9 + uBoost * 0.8) * uAlphaBoost;
     if (alpha < 0.015) discard;
     gl_FragColor = vec4(color * (1.0 + uBoost * 0.6), min(alpha, 1.0));
   }
@@ -64,6 +65,7 @@ const fragmentShader = /* glsl */ `
 const FORWARD = new THREE.Vector3(0, 0, 1);
 
 function Blip({ event }: { event: NewsEvent }) {
+  const theme = useTheme();
   const setHovered = useGlobeStore((s) => s.setHovered);
   const select = useGlobeStore((s) => s.select);
   const selectedId = useGlobeStore((s) => s.selectedId);
@@ -84,16 +86,18 @@ function Blip({ event }: { event: NewsEvent }) {
         fragmentShader,
         transparent: true,
         depthWrite: false,
-        blending: THREE.AdditiveBlending,
+        // additive glow washes out on the light theme's near-white surface
+        blending: theme.blipAdditive ? THREE.AdditiveBlending : THREE.NormalBlending,
         uniforms: {
           uColor: { value: new THREE.Color(CATEGORY_COLORS[event.category]) },
           uTime: { value: Math.random() * 20 },
           uRate: { value: 0.28 + event.severity * 0.16 },
           uBreaking: { value: event.isBreaking ? 1 : 0 },
           uBoost: { value: 0 },
+          uAlphaBoost: { value: theme.blipAdditive ? 1 : 1.9 },
         },
       }),
-    [event.category, event.severity, event.isBreaking],
+    [event.category, event.severity, event.isBreaking, theme.blipAdditive],
   );
 
   useFrame((state, delta) => {

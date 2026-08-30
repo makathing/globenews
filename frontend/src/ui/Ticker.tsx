@@ -13,7 +13,7 @@ export function Ticker() {
 
   return (
     <div className="ticker" aria-label="Breaking and high-severity headlines">
-      <div className="ticker-tag">▲ PRIORITY</div>
+      <div className="ticker-tag">Top stories</div>
       <div className="ticker-viewport">
         <div className="ticker-track" style={{ animationDuration: `${items.length * 9}s` }}>
           {loop.map((event, i) => (
@@ -26,7 +26,7 @@ export function Ticker() {
                 className="ticker-dot"
                 style={{ background: event.isBreaking ? '#ffffff' : CATEGORY_COLORS[event.category] }}
               />
-              {event.isBreaking && <span className="ticker-breaking">BREAKING</span>}
+              {event.isBreaking && <span className="ticker-breaking">Breaking</span>}
               {event.headline}
             </button>
           ))}

@@ -78,8 +78,8 @@ export function CameraRig() {
       dampingFactor={0.07}
       rotateSpeed={0.45}
       autoRotateSpeed={0.4}
-      minDistance={1.45}
-      maxDistance={4.6}
+      minDistance={1.5}
+      maxDistance={6.5}
       zoomSpeed={0.7}
       onStart={() => {
         // fires on user input only (not on damping/auto-rotate frames)

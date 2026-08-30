@@ -1,7 +1,7 @@
 import { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { cameraMotion, prefersReducedMotion } from '../store';
+import { cameraMotion, prefersReducedMotion, useTheme } from '../store';
 
 const STAR_COUNT = prefersReducedMotion ? 2500 : 7000;
 
@@ -26,6 +26,7 @@ const vertexShader = /* glsl */ `
 const fragmentShader = /* glsl */ `
   uniform vec2 uVelocity;   // smoothed screen-space camera velocity
   uniform float uSpeed;
+  uniform float uBrightness;
   varying float vTwinkle;
   varying float vSize;
   void main() {
@@ -47,6 +48,7 @@ const fragmentShader = /* glsl */ `
     // fade the streak toward its ends
     alpha *= 1.0 - smoothstep(0.35, 0.5, abs(along) / max(halfLen, 0.001)) * 0.4;
 
+    alpha *= uBrightness;
     if (alpha < 0.01) discard;
     vec3 color = mix(vec3(0.75, 0.85, 1.0), vec3(1.0, 0.98, 0.9), fract(vSize * 13.7));
     gl_FragColor = vec4(color, alpha);
@@ -54,6 +56,7 @@ const fragmentShader = /* glsl */ `
 `;
 
 export function Starfield() {
+  const theme = useTheme();
   const materialRef = useRef<THREE.ShaderMaterial | null>(null);
 
   const { geometry, material } = useMemo(() => {
@@ -88,6 +91,7 @@ export function Starfield() {
         uTime: { value: 0 },
         uSpeed: { value: 0 },
         uVelocity: { value: new THREE.Vector2(1, 0) },
+        uBrightness: { value: 1 },
       },
     });
     return { geometry: geo, material: mat };
@@ -98,6 +102,7 @@ export function Starfield() {
     if (!uniforms) return;
     uniforms.uTime.value = state.clock.elapsedTime;
     uniforms.uSpeed.value = prefersReducedMotion ? 0 : cameraMotion.speed;
+    uniforms.uBrightness.value = theme.starBrightness;
     (uniforms.uVelocity.value as THREE.Vector2).set(cameraMotion.vx, cameraMotion.vy);
   });
 

@@ -8,10 +8,10 @@ function trustColor(score: number): string {
 }
 
 function trustLabel(score: number): string {
-  if (score >= 75) return 'HIGH CONFIDENCE';
-  if (score >= 50) return 'CORROBORATED';
-  if (score >= 41) return 'PARTIAL';
-  return 'UNVERIFIED';
+  if (score >= 75) return 'High confidence';
+  if (score >= 50) return 'Corroborated';
+  if (score >= 41) return 'Partial';
+  return 'Unverified';
 }
 
 function BiasSpectrum({ source }: { source: NewsSource }) {
@@ -36,27 +36,27 @@ export function EventPanel() {
   if (!event) return null;
 
   return (
-    <aside className="hud-panel event-panel" aria-label="Event details">
+    <aside className="panel event-panel" aria-label="Event details">
       <div className="event-panel-head">
         <span className="category-badge" style={{ ['--chip-color' as string]: CATEGORY_COLORS[event.category] }}>
           {CATEGORY_LABELS[event.category]}
         </span>
         <span className="severity-badge" title="Severity 1-5">
-          SEV {event.severity}
+          Severity {event.severity}
         </span>
-        {event.isBreaking && <span className="breaking-badge">BREAKING</span>}
+        {event.isBreaking && <span className="breaking-badge">Breaking</span>}
         <button className="close-btn" onClick={() => select(null)} aria-label="Close panel">
           ✕
         </button>
       </div>
 
       <h2 className="event-headline">{event.headline}</h2>
-      <div className="event-location">◈ {event.locationName}</div>
+      <div className="event-location">{event.locationName}</div>
       <p className="event-summary">{event.summary}</p>
 
       <div className="trust-block">
         <div className="trust-row">
-          <span className="panel-heading">TRUST SCORE</span>
+          <span className="panel-heading">Trust score</span>
           <span className="trust-value" style={{ color: trustColor(event.trustScore) }}>
             {event.trustScore}/100 · {trustLabel(event.trustScore)}
           </span>
@@ -74,7 +74,7 @@ export function EventPanel() {
       </div>
 
       <div className="sources-block">
-        <div className="panel-heading">SOURCES</div>
+        <div className="panel-heading">Sources</div>
         {event.sources.map((source) => (
           <a
             key={source.url}
@@ -102,7 +102,7 @@ export function EventPanel() {
       </div>
 
       <div className="event-meta">
-        first seen {new Date(event.firstSeen).toISOString().slice(0, 16).replace('T', ' ')} UTC
+        First seen {new Date(event.firstSeen).toISOString().slice(0, 16).replace('T', ' ')} UTC
       </div>
     </aside>
   );

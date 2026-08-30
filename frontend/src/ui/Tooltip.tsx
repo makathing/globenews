@@ -20,7 +20,7 @@ export function Tooltip() {
         {CATEGORY_LABELS[event.category]}
       </span>
       <div className="tooltip-headline">{event.headline}</div>
-      <div className="tooltip-hint">click to inspect</div>
+      <div className="tooltip-hint">Click for details</div>
     </div>
   );
 }

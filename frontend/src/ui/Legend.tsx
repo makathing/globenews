@@ -12,8 +12,8 @@ export function Legend() {
   }
 
   return (
-    <aside className="hud-panel legend" aria-label="Category filters">
-      <div className="panel-heading">SIGNAL TYPES</div>
+    <aside className="panel legend" aria-label="Category filters">
+      <div className="panel-heading">Categories</div>
       <div className="legend-chips">
         {CATEGORIES.map((category) => {
           const off = hidden.has(category);
@@ -33,7 +33,7 @@ export function Legend() {
         })}
       </div>
       <div className="severity-scale" title="Blip size and pulse rate scale with severity">
-        <span className="scale-label">SEV</span>
+        <span className="scale-label">Severity</span>
         {[1, 2, 3, 4, 5].map((s) => (
           <span key={s} className="scale-dot" style={{ width: 4 + s * 2, height: 4 + s * 2 }} />
         ))}

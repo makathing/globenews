@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
-import { EffectComposer, Bloom, ChromaticAberration, Noise, Vignette } from '@react-three/postprocessing';
+import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { BlendFunction, Effect } from 'postprocessing';
 import * as THREE from 'three';
-import { cameraMotion, prefersReducedMotion } from '../store';
+import { cameraMotion, prefersReducedMotion, useTheme } from '../store';
 
 const smearFragment = /* glsl */ `
   uniform vec2 uVelocity;
@@ -52,25 +52,21 @@ class MotionSmearEffect extends Effect {
 
 export function Effects() {
   const smear = useMemo(() => new MotionSmearEffect(), []);
+  const theme = useTheme();
+  // the light theme's near-white globe would bloom wholesale at a low threshold
+  const light = theme.id === 'light';
 
   return (
     <EffectComposer multisampling={0}>
       <Bloom
-        intensity={0.85}
-        luminanceThreshold={0.18}
+        intensity={light ? 0.18 : 0.85}
+        luminanceThreshold={light ? 0.97 : 0.18}
         luminanceSmoothing={0.3}
         mipmapBlur
         radius={0.75}
       />
       <primitive object={smear} />
-      <ChromaticAberration
-        blendFunction={BlendFunction.NORMAL}
-        offset={new THREE.Vector2(0.0008, 0.0005)}
-        radialModulation
-        modulationOffset={0.4}
-      />
-      <Noise premultiply blendFunction={BlendFunction.ADD} opacity={0.35} />
-      <Vignette eskil={false} offset={0.22} darkness={0.82} />
+      <Vignette eskil={false} offset={0.16} darkness={0.55} />
     </EffectComposer>
   );
 }

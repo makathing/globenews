@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 import type { NewsDataset } from '../../shared/news';
 import { SceneRoot } from './scene/SceneRoot';
-import { TopBar } from './ui/TopBar';
 import { Legend } from './ui/Legend';
 import { Ticker } from './ui/Ticker';
 import { EventPanel } from './ui/EventPanel';
 import { Tooltip } from './ui/Tooltip';
-import { Boot } from './ui/Boot';
+import { StatusPanel } from './ui/StatusPanel';
 import { useGlobeStore } from './store';
 
 export function App() {
@@ -27,15 +26,14 @@ export function App() {
   return (
     <div className="app">
       <SceneRoot />
-      <TopBar />
-      <Legend />
+      <div className="brand">GlobeNews</div>
       <Ticker />
+      <Legend />
+      <StatusPanel />
       <EventPanel />
       <Tooltip />
-      <Boot />
-      <div className="scanlines" aria-hidden />
-      {!dataset && !error && <div className="data-status">ACQUIRING SIGNAL FEED…</div>}
-      {error && <div className="data-status">SIGNAL FEED OFFLINE — {error}</div>}
+      {!dataset && !error && <div className="data-status">Loading events…</div>}
+      {error && <div className="data-status">Couldn’t load events — {error}</div>}
     </div>
   );
 }
