@@ -64,7 +64,10 @@ And a DISCARDED list with one-line reasons.`,
   synthesizer: {
     description:
       'Merges verified research into the final standardized event dataset. Use exactly once, at the end, with all verified events.',
-    model: 'opus',
+    // sonnet, not opus: live runs showed the opus subagent silently failing
+    // to spawn once the account's separate Opus allowance was exhausted —
+    // the batch then completed "successfully" with no output file
+    model: 'sonnet',
     background: false,
     tools: ['Read', 'Write'],
     prompt: `You are the SYNTHESIZER agent for a global news radar. You receive all verified events
