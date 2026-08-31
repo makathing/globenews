@@ -2,7 +2,7 @@ import { useEffect, useMemo } from 'react';
 import { useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 import { GLOBE_RADIUS } from '../lib/geo';
-import { useTheme } from '../store';
+import { useCountryTint, useTheme } from '../store';
 
 /** Fixed sun direction: keeps a dramatic terminator with glowing night-side cities in view. */
 export const SUN_DIRECTION = new THREE.Vector3(-2.2, 0.9, 1.6).normalize();
@@ -24,6 +24,8 @@ const fragmentShader = /* glsl */ `
   uniform sampler2D dayMap;
   uniform sampler2D nightMap;
   uniform sampler2D waterMap;
+  uniform sampler2D tintMap;
+  uniform float uTintOpacity;
   uniform vec3 sunDir;
   uniform int uMode;          // 0 satellite, 1 minimal, 2 light, 3 night, 4 grid
   uniform vec3 uRimColor;
@@ -78,6 +80,10 @@ const fragmentShader = /* glsl */ `
       color = base + grat * vec3(0.11, 0.24, 0.38);
     }
 
+    // country tint: dominant-category wash over countries carrying events
+    vec4 tint = texture2D(tintMap, vUv);
+    color = mix(color, tint.rgb, tint.a * uTintOpacity);
+
     // subtle inner rim, sun-modulated: a crescent highlight on the lit limb
     // that fades to almost nothing on the dark limb — ties the globe to the sun
     float fresnel = pow(1.0 - max(dot(normal, viewDir), 0.0), 3.0);
@@ -90,8 +96,16 @@ const fragmentShader = /* glsl */ `
   }
 `;
 
+/** 1x1 transparent fallback so the shader always has a valid tint sampler. */
+const EMPTY_TINT = (() => {
+  const texture = new THREE.DataTexture(new Uint8Array([0, 0, 0, 0]), 1, 1);
+  texture.needsUpdate = true;
+  return texture;
+})();
+
 export function Earth() {
   const theme = useTheme();
+  const tint = useCountryTint();
   const [dayMap, nightMap, waterMap] = useTexture([
     `${import.meta.env.BASE_URL}textures/earth-day.jpg`,
     `${import.meta.env.BASE_URL}textures/earth-night.jpg`,
@@ -112,6 +126,8 @@ export function Earth() {
         dayMap: { value: dayMap },
         nightMap: { value: nightMap },
         waterMap: { value: waterMap },
+        tintMap: { value: EMPTY_TINT },
+        uTintOpacity: { value: 0 },
         sunDir: { value: SUN_DIRECTION.clone() },
         uMode: { value: 0 },
         uRimColor: { value: new THREE.Color('#3a7bd5') },
@@ -119,6 +135,11 @@ export function Earth() {
       },
     });
   }, [dayMap, nightMap, waterMap]);
+
+  useEffect(() => {
+    material.uniforms.tintMap.value = tint ?? EMPTY_TINT;
+    material.uniforms.uTintOpacity.value = tint ? theme.tintOpacity : 0;
+  }, [material, tint, theme]);
 
   useEffect(() => {
     material.uniforms.uMode.value = theme.mode;

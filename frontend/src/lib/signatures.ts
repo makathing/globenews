@@ -2,7 +2,7 @@ import type { Category } from '../../../shared/news';
 
 /**
  * On-globe radar signature per category — index into the blip fragment
- * shader's pattern branches. Keep in sync with the shader in Blips.tsx and
+ * shader's pattern branches. Keep in sync with the shaft shader in Beams.tsx and
  * the legend's SignatureGlyph set in ui/icons.tsx.
  */
 export const CATEGORY_PATTERN: Record<Category, number> = {

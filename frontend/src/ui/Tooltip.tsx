@@ -7,7 +7,8 @@ export function Tooltip() {
   const dataset = useGlobeStore((s) => s.dataset);
 
   const event = hovered ? dataset?.events.find((e) => e.id === hovered.id) : undefined;
-  if (!hovered || !event) return null;
+  // rail hovers carry no cursor position (x = -1) — no floating card for those
+  if (!hovered || !event || hovered.x < 0) return null;
 
   return (
     <div

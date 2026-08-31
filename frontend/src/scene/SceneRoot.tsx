@@ -6,7 +6,7 @@ import { CountryBorders } from './CountryBorders';
 import { Starfield } from './Starfield';
 import { Sun } from './Sun';
 import { SpaceBackground } from './SpaceBackground';
-import { Blips } from './Blips';
+import { Beams } from './Beams';
 import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
 import { useGlobeStore, useTheme } from '../store';
@@ -33,7 +33,7 @@ export function SceneRoot() {
         {theme.clouds && <Clouds />}
       </Suspense>
       <CountryBorders />
-      <Blips />
+      <Beams />
       <CameraRig />
       <Effects />
     </Canvas>

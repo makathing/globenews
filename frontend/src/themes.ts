@@ -19,6 +19,10 @@ export interface GlobeTheme {
   starBrightness: number;
   /** Visible sun glow strength (0 disables the sun billboard). */
   sunIntensity: number;
+  /** Multiplier on beam brightness — dialled down where the surface is bright. */
+  beamIntensity: number;
+  /** Strength of the dominant-category country wash. */
+  tintOpacity: number;
 }
 
 export const THEMES: Record<ThemeId, GlobeTheme> = {
@@ -34,6 +38,8 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     blipAdditive: true,
     starBrightness: 1,
     sunIntensity: 1.0,
+    beamIntensity: 1.0,
+    tintOpacity: 0.16,
   },
   minimal: {
     id: 'minimal',
@@ -47,6 +53,8 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     blipAdditive: true,
     starBrightness: 0.8,
     sunIntensity: 0.55,
+    beamIntensity: 0.95,
+    tintOpacity: 0.3,
   },
   light: {
     id: 'light',
@@ -60,6 +68,8 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     blipAdditive: false,
     starBrightness: 0.55,
     sunIntensity: 0.4,
+    beamIntensity: 0.85,
+    tintOpacity: 0.26,
   },
   night: {
     id: 'night',
@@ -73,6 +83,8 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     blipAdditive: true,
     starBrightness: 1,
     sunIntensity: 1.0,
+    beamIntensity: 1.0,
+    tintOpacity: 0.22,
   },
   grid: {
     id: 'grid',
@@ -86,6 +98,8 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     blipAdditive: true,
     starBrightness: 0.7,
     sunIntensity: 0.5,
+    beamIntensity: 0.9,
+    tintOpacity: 0.34,
   },
 };
 
