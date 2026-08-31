@@ -7,16 +7,20 @@ import { GLOBE_RADIUS } from './geo';
  */
 
 /**
- * Severity heat ramp. Beams share one warm family rather than eight category
- * hues: from orbit the question people scan for is "how bad, and where", which
- * is ordinal — category is answered by the rail icons once you're reading.
+ * Severity ramp. Beams share one cool family rather than eight category hues:
+ * from orbit the question people scan for is "how bad, and where", which is
+ * ordinal — category is answered by the rail icons once you're reading.
+ *
+ * The ramp climbs in luminance as well as saturation, so the most severe
+ * events are also the most visible against a dark globe. It stops short of
+ * white at the top, leaving pure white free for the breaking-news strobe.
  */
 export const SEVERITY_COLORS: Record<number, string> = {
-  1: '#ffe3a3', // pale gold
-  2: '#ffc860', // gold
-  3: '#ffa02e', // amber
-  4: '#ff6a2a', // orange
-  5: '#ff2f2f', // deep red
+  1: '#2d6ba3', // deep blue
+  2: '#3d92cf', // steel blue
+  3: '#45b3e8', // azure
+  4: '#52d3f7', // bright cyan
+  5: '#8fe8ff', // icy cyan
 };
 
 export function beamColor(event: Pick<NewsEvent, 'severity'>): string {
