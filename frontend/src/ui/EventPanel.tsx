@@ -6,7 +6,8 @@ import {
   type NewsSource,
 } from '../../../shared/news';
 import { useGlobeStore } from '../store';
-import { CategoryIcon, ClockIcon, ShieldIcon } from './icons';
+import { CategoryIcon, ClockIcon, LinkIcon, ShieldIcon } from './icons';
+import { shareUrlForEvent } from '../lib/urlState';
 
 /**
  * Trust is neutral until it's a problem: a green/amber/red scale spends colour
@@ -77,6 +78,30 @@ function SeverityTicks({ severity }: { severity: number }) {
   );
 }
 
+function CopyLinkButton({ eventId }: { eventId: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <button
+      className="copy-link"
+      onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(shareUrlForEvent(eventId));
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1800);
+        } catch {
+          // clipboard blocked (insecure context / denied) — the URL bar already
+          // carries the link, so this is a convenience, not the only route
+          setCopied(false);
+        }
+      }}
+      aria-label="Copy link to this story"
+    >
+      <LinkIcon size={12} />
+      {copied ? 'Copied' : 'Copy link'}
+    </button>
+  );
+}
+
 export function EventPanel() {
   const dataset = useGlobeStore((s) => s.dataset);
   const selectedId = useGlobeStore((s) => s.selectedId);
@@ -94,6 +119,7 @@ export function EventPanel() {
         </span>
         <SeverityTicks severity={event.severity} />
         {event.isBreaking && <span className="breaking-badge">Breaking</span>}
+        <CopyLinkButton eventId={event.id} />
         <button className="close-btn" onClick={() => select(null)} aria-label="Close panel">
           ✕
         </button>

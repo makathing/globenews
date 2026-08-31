@@ -6,12 +6,14 @@ import { Timeline } from './ui/Timeline';
 import { EventPanel } from './ui/EventPanel';
 import { Tooltip } from './ui/Tooltip';
 import { useGlobeStore } from './store';
+import { useUrlSync } from './lib/urlState';
 
 export function App() {
   const setDataset = useGlobeStore((s) => s.setDataset);
   const dataset = useGlobeStore((s) => s.dataset);
   const [error, setError] = useState<string | null>(null);
   const [railOpen, setRailOpen] = useState(false);
+  useUrlSync();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/events.json`)
