@@ -123,3 +123,29 @@ describe('normalizeStagedSources (live-run regression)', () => {
     expect(result.staged.events[0].sources).toHaveLength(2);
   });
 });
+
+describe('severity coercion (live-run regression)', () => {
+  it('maps word and numeric-string severities onto 1-5', async () => {
+    const { parseStagedOutput } = await import('../src/schema.ts');
+    const base = {
+      headline: 'A perfectly valid headline about a real place',
+      summary: 'A verified multi-source event summary that is comfortably within limits and factual.',
+      category: 'conflict',
+      lat: 1,
+      lon: 2,
+      locationName: 'Testville, Testland',
+      countryCode: 'TL',
+      sources: [{ url: 'https://www.reuters.com/x' }],
+    };
+    const result = parseStagedOutput(
+      JSON.stringify({
+        events: [
+          { ...base, severity: 'high' },
+          { ...base, headline: base.headline + ' two', severity: '2' },
+          { ...base, headline: base.headline + ' three', severity: 'catastrophic-unknown' },
+        ],
+      }),
+    );
+    expect(result.staged.events.map((e) => e.severity)).toEqual([4, 2, 3]);
+  });
+});

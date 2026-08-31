@@ -156,7 +156,28 @@ export function parseStagedOutput(raw: string): SalvageResult {
         else if (typeof fixed.place === 'string') fixed.locationName = fixed.place;
       }
       if (typeof fixed.severity !== 'number') {
-        fixed.severity = typeof fixed.impact === 'number' ? fixed.impact : 3;
+        const SEVERITY_WORDS: Record<string, number> = {
+          critical: 5,
+          extreme: 5,
+          severe: 4,
+          high: 4,
+          major: 4,
+          moderate: 3,
+          medium: 3,
+          significant: 3,
+          low: 2,
+          minor: 1,
+        };
+        const rawSeverity = fixed.severity ?? fixed.impact;
+        if (typeof rawSeverity === 'string') {
+          fixed.severity =
+            SEVERITY_WORDS[rawSeverity.trim().toLowerCase()] ??
+            (Number.isFinite(Number(rawSeverity)) ? Number(rawSeverity) : 3);
+        } else if (typeof rawSeverity === 'number') {
+          fixed.severity = rawSeverity;
+        } else {
+          fixed.severity = 3;
+        }
       }
       // missing coordinates: resolve from the gazetteer by location name
       if (typeof fixed.lat !== 'number' || typeof fixed.lon !== 'number') {
