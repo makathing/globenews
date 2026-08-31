@@ -1,0 +1,40 @@
+import { CATEGORY_COLORS } from '../../../shared/news';
+import { useGlobeStore } from '../store';
+import { CategoryIcon } from './icons';
+
+export function Ticker() {
+  const dataset = useGlobeStore((s) => s.dataset);
+  const select = useGlobeStore((s) => s.select);
+
+  const items = (dataset?.events ?? []).filter((e) => e.isBreaking || e.severity >= 4);
+  if (items.length === 0) return null;
+
+  // duplicated list = seamless CSS marquee loop
+  const loop = [...items, ...items];
+
+  return (
+    <div className="ticker" aria-label="Breaking and high-severity headlines">
+      <div className="ticker-tag">Top stories</div>
+      <div className="ticker-viewport">
+        <div className="ticker-track" style={{ animationDuration: `${items.length * 9}s` }}>
+          {loop.map((event, i) => (
+            <button
+              key={`${event.id}-${i}`}
+              className="ticker-item"
+              onClick={() => select(event.id)}
+            >
+              <span
+                className="ticker-icon"
+                style={{ color: event.isBreaking ? '#ffffff' : CATEGORY_COLORS[event.category] }}
+              >
+                <CategoryIcon category={event.category} size={13} />
+              </span>
+              {event.isBreaking && <span className="ticker-breaking">Breaking</span>}
+              {event.headline}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
