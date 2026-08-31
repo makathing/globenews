@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import {
   BIAS_RATINGS,
-  CATEGORY_COLORS,
   CATEGORY_LABELS,
   type NewsEvent,
   type NewsSource,
@@ -9,10 +8,13 @@ import {
 import { useGlobeStore } from '../store';
 import { CategoryIcon, ClockIcon, ShieldIcon } from './icons';
 
+/**
+ * Trust is neutral until it's a problem: a green/amber/red scale spends colour
+ * on every value, when the only reading that needs to interrupt you is a story
+ * we could not corroborate.
+ */
 function trustColor(score: number): string {
-  if (score >= 75) return '#57e39f';
-  if (score >= 50) return '#ffd60a';
-  return '#ff5c5c';
+  return score >= 41 ? 'var(--text)' : '#ff8b6b';
 }
 
 function trustLabel(score: number): string {
@@ -39,16 +41,12 @@ function BiasSpectrum({ source }: { source: NewsSource }) {
 
 function PreviewCard({ event }: { event: NewsEvent }) {
   const [failed, setFailed] = useState(false);
-  const color = CATEGORY_COLORS[event.category];
 
   if (!event.image || failed) {
     return (
       <div
         className="preview-card preview-fallback"
-        style={{
-          background: `linear-gradient(135deg, color-mix(in srgb, ${color} 26%, #10141b), #10141b 78%)`,
-          color,
-        }}
+        style={{ color: 'var(--text-dim)' }}
       >
         <CategoryIcon category={event.category} size={40} strokeWidth={1.2} />
       </div>
@@ -90,10 +88,7 @@ export function EventPanel() {
   return (
     <aside className="panel event-panel" aria-label="Event details">
       <div className="event-panel-head">
-        <span
-          className="category-badge"
-          style={{ ['--chip-color' as string]: CATEGORY_COLORS[event.category] }}
-        >
+        <span className="category-badge">
           <CategoryIcon category={event.category} size={12} />
           {CATEGORY_LABELS[event.category]}
         </span>

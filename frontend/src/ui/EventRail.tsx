@@ -1,10 +1,5 @@
 import { useEffect, useMemo, useRef } from 'react';
-import {
-  CATEGORIES,
-  CATEGORY_COLORS,
-  CATEGORY_LABELS,
-  type NewsEvent,
-} from '../../../shared/news';
+import { CATEGORIES, CATEGORY_LABELS, type NewsEvent } from '../../../shared/news';
 import { SEVERITY_COLORS, freshness, isNew, relativeTime } from '../lib/beams';
 import { useGlobeStore, useVisibleEvents } from '../store';
 import { CategoryIcon } from './icons';
@@ -39,7 +34,6 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
   const hoverId = useGlobeStore((s) => s.hoverId);
   const select = useGlobeStore((s) => s.select);
   const hoveredId = useGlobeStore((s) => s.hovered?.id ?? null);
-  const color = CATEGORY_COLORS[event.category];
   const ref = useRef<HTMLButtonElement>(null);
   const scrollToId = useGlobeStore((s) => s.scrollToId);
   const clearScrollTo = useGlobeStore((s) => s.clearScrollTo);
@@ -57,7 +51,6 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
       ref={ref}
       className={`event-card ${selected ? 'selected' : ''} ${hoveredId === event.id ? 'hovered' : ''}`}
       style={{
-        ['--chip-color' as string]: color,
         // older stories recede, matching their beams
         opacity: 0.6 + freshness(event) * 0.4,
       }}
@@ -67,7 +60,7 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
       title={CATEGORY_LABELS[event.category]}
     >
       <div className="card-head">
-        <span className="card-icon" style={{ color }}>
+        <span className="card-icon">
           <CategoryIcon category={event.category} size={14} />
         </span>
         <span className="card-headline">{event.headline}</span>
@@ -128,12 +121,10 @@ export function EventRail() {
               <button
                 key={category}
                 className={`filter-chip ${off ? 'off' : ''}`}
-                style={{ ['--chip-color' as string]: CATEGORY_COLORS[category] }}
                 onClick={() => toggleCategory(category)}
                 title={`${off ? 'Show' : 'Hide'} ${CATEGORY_LABELS[category]} (${counts.get(category) ?? 0})`}
                 aria-pressed={!off}
               >
-                <span className="filter-dot" />
                 <CategoryIcon category={category} size={12} />
                 <span className="filter-count">{counts.get(category) ?? 0}</span>
               </button>
