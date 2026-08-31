@@ -1,12 +1,12 @@
 /** Globe render themes. `mode` selects the branch inside the Earth shader. */
 
-export const THEME_IDS = ['satellite', 'minimal', 'light', 'night', 'grid'] as const;
+export const THEME_IDS = ['obsidian', 'halftone', 'slate', 'blueprint', 'paper', 'relief'] as const;
 export type ThemeId = (typeof THEME_IDS)[number];
 
 export interface GlobeTheme {
   id: ThemeId;
   label: string;
-  /** Shader branch: 0 satellite, 1 minimal, 2 light, 3 night, 4 grid */
+  /** Shader branch: 0 obsidian, 1 halftone, 2 slate, 3 blueprint, 4 paper, 5 relief */
   mode: number;
   /** Inner rim (fresnel) tint + strength — kept subtle everywhere. */
   rimColor: string;
@@ -14,7 +14,7 @@ export interface GlobeTheme {
   borderColor: string;
   borderOpacity: number;
   clouds: boolean;
-  /** Additive blips wash out on light surfaces; use normal blending there. */
+  /** Additive glow washes out on light surfaces; use normal blending there. */
   blipAdditive: boolean;
   starBrightness: number;
   /** Visible sun glow strength (0 disables the sun billboard). */
@@ -25,81 +25,100 @@ export interface GlobeTheme {
   tintOpacity: number;
 }
 
+/**
+ * Every globe is deliberately neutral: the news beams are the only saturated
+ * colour in the scene, so the map never competes with the data.
+ */
 export const THEMES: Record<ThemeId, GlobeTheme> = {
-  satellite: {
-    id: 'satellite',
-    label: 'Satellite',
+  obsidian: {
+    id: 'obsidian',
+    label: 'Obsidian',
     mode: 0,
-    rimColor: '#3a7bd5',
-    rimStrength: 0.22,
-    borderColor: '#7dd2e8',
-    borderOpacity: 0.22,
-    clouds: true,
-    blipAdditive: true,
-    starBrightness: 1,
-    sunIntensity: 1.0,
-    beamIntensity: 1.0,
-    tintOpacity: 0.16,
-  },
-  minimal: {
-    id: 'minimal',
-    label: 'Minimal',
-    mode: 1,
-    rimColor: '#38547a',
+    rimColor: '#4a6a92',
     rimStrength: 0.16,
-    borderColor: '#6fa4d8',
-    borderOpacity: 0.45,
-    clouds: false,
-    blipAdditive: true,
-    starBrightness: 0.8,
-    sunIntensity: 0.55,
-    beamIntensity: 0.95,
-    tintOpacity: 0.3,
-  },
-  light: {
-    id: 'light',
-    label: 'Light',
-    mode: 2,
-    rimColor: '#ffffff',
-    rimStrength: 0.1,
-    borderColor: '#7c8aa0',
-    borderOpacity: 0.55,
-    clouds: false,
-    blipAdditive: false,
-    starBrightness: 0.55,
-    sunIntensity: 0.4,
-    beamIntensity: 0.85,
-    tintOpacity: 0.26,
-  },
-  night: {
-    id: 'night',
-    label: 'Night',
-    mode: 3,
-    rimColor: '#2c4a8a',
-    rimStrength: 0.18,
-    borderColor: '#4d6d96',
-    borderOpacity: 0.3,
+    borderColor: '#71839c',
+    borderOpacity: 0.4,
     clouds: false,
     blipAdditive: true,
     starBrightness: 1,
-    sunIntensity: 1.0,
-    beamIntensity: 1.0,
-    tintOpacity: 0.22,
+    sunIntensity: 0.5,
+    beamIntensity: 1,
+    tintOpacity: 0.14,
   },
-  grid: {
-    id: 'grid',
-    label: 'Grid',
-    mode: 4,
+  halftone: {
+    id: 'halftone',
+    label: 'Halftone',
+    mode: 1,
+    rimColor: '#3f5f88',
+    rimStrength: 0.12,
+    borderColor: '#5b7a9c',
+    borderOpacity: 0,
+    clouds: false,
+    blipAdditive: true,
+    starBrightness: 1,
+    sunIntensity: 0.45,
+    beamIntensity: 1,
+    tintOpacity: 0.1,
+  },
+  slate: {
+    id: 'slate',
+    label: 'Slate',
+    mode: 2,
+    rimColor: '#5b7a9c',
+    rimStrength: 0.14,
+    borderColor: '#8fa2b8',
+    borderOpacity: 0.22,
+    clouds: false,
+    blipAdditive: true,
+    starBrightness: 0.9,
+    sunIntensity: 0.6,
+    beamIntensity: 1,
+    tintOpacity: 0.13,
+  },
+  blueprint: {
+    id: 'blueprint',
+    label: 'Blueprint',
+    mode: 3,
     rimColor: '#2f6ea8',
     rimStrength: 0.14,
-    borderColor: '#5fb0ff',
-    borderOpacity: 0.7,
+    borderColor: '#6fb4e8',
+    borderOpacity: 0.5,
     clouds: false,
     blipAdditive: true,
-    starBrightness: 0.7,
+    starBrightness: 0.85,
+    sunIntensity: 0.45,
+    beamIntensity: 0.95,
+    tintOpacity: 0.16,
+  },
+  paper: {
+    id: 'paper',
+    label: 'Paper',
+    mode: 4,
+    rimColor: '#ffffff',
+    rimStrength: 0.08,
+    borderColor: '#6b7686',
+    borderOpacity: 0.5,
+    clouds: false,
+    blipAdditive: false,
+    starBrightness: 0.5,
+    sunIntensity: 0.3,
+    beamIntensity: 0.85,
+    tintOpacity: 0.2,
+  },
+  relief: {
+    id: 'relief',
+    label: 'Relief',
+    mode: 5,
+    rimColor: '#54708f',
+    rimStrength: 0.14,
+    borderColor: '#93a3b6',
+    borderOpacity: 0.26,
+    clouds: false,
+    blipAdditive: true,
+    starBrightness: 0.9,
     sunIntensity: 0.5,
-    beamIntensity: 0.9,
-    tintOpacity: 0.34,
+    beamIntensity: 1,
+    tintOpacity: 0.13,
   },
 };
 
@@ -112,7 +131,7 @@ export function loadStoredTheme(): ThemeId {
   } catch {
     // storage unavailable
   }
-  return 'satellite';
+  return 'obsidian';
 }
 
 export function storeTheme(id: ThemeId): void {

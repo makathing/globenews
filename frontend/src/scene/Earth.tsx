@@ -24,6 +24,7 @@ const fragmentShader = /* glsl */ `
   uniform sampler2D dayMap;
   uniform sampler2D nightMap;
   uniform sampler2D waterMap;
+  uniform sampler2D topoMap;
   uniform sampler2D tintMap;
   uniform float uTintOpacity;
   uniform vec3 sunDir;
@@ -50,34 +51,39 @@ const fragmentShader = /* glsl */ `
     vec3 color;
 
     if (uMode == 0) {
-      // — satellite: day/night blend, city lights, ocean specular —
-      float sunDot = dot(normal, sunDir);
-      float dayAmount = smoothstep(-0.12, 0.25, sunDot);
-      vec3 dayColor = texture2D(dayMap, vUv).rgb * vec3(0.85, 0.93, 1.05);
-      vec3 nightColor = texture2D(nightMap, vUv).rgb;
-      vec3 cityGlow = pow(nightColor, vec3(1.4)) * vec3(1.4, 1.1, 0.65) * 2.2;
-      vec3 nightSide = cityGlow + nightColor * 0.08;
-      color = mix(nightSide, dayColor * (0.35 + 0.85 * clamp(sunDot, 0.0, 1.0)), dayAmount);
-      vec3 halfDir = normalize(sunDir + viewDir);
-      float spec = pow(max(dot(normal, halfDir), 0.0), 48.0) * waterMask * dayAmount;
-      color += spec * vec3(0.5, 0.7, 0.9) * 0.6;
+      // — Obsidian: matte near-black planet, land lifted a touch —
+      color = mix(vec3(0.105, 0.115, 0.132), vec3(0.019, 0.024, 0.032), waterMask) * shade;
     } else if (uMode == 1) {
-      // — minimal: flat two-tone, dark ocean / slate land —
-      color = mix(vec3(0.14, 0.21, 0.31), vec3(0.043, 0.078, 0.125), waterMask) * shade;
+      // — Halftone: land rendered as a dot matrix —
+      vec2 grid = vUv * vec2(340.0, 170.0);
+      vec2 cell = fract(grid) - 0.5;
+      // shrink dots toward the coast so edges feather instead of clipping
+      float density = smoothstep(0.25, 0.75, land);
+      float dotMask = smoothstep(0.42, 0.16, length(cell)) * density;
+      color = vec3(0.014, 0.02, 0.03) + dotMask * vec3(0.52, 0.60, 0.70) * shade;
     } else if (uMode == 2) {
-      // — light: clean platform look, slate ocean / near-white land —
-      color = mix(vec3(0.96, 0.968, 0.975), vec3(0.62, 0.695, 0.79), waterMask) * (0.9 + 0.1 * shade);
+      // — Slate: the real satellite imagery, desaturated to greys —
+      vec3 day = texture2D(dayMap, vUv).rgb;
+      float luma = dot(day, vec3(0.299, 0.587, 0.114));
+      color = vec3(pow(luma, 1.15)) * (0.42 + 0.58 * shade);
     } else if (uMode == 3) {
-      // — night: city lights only —
-      vec3 nightColor = texture2D(nightMap, vUv).rgb;
-      vec3 cityGlow = pow(nightColor, vec3(1.3)) * vec3(1.5, 1.2, 0.7) * 2.6;
-      vec3 base = mix(vec3(0.05, 0.075, 0.115), vec3(0.016, 0.027, 0.05), waterMask);
-      color = base * shade + cityGlow;
+      // — Blueprint: deep navy with a cyan graticule over land plates —
+      vec3 base = mix(vec3(0.055, 0.085, 0.14), vec3(0.014, 0.028, 0.055), waterMask);
+      float grat = max(gridLine(vUv.x, 24.0, 0.010), gridLine(vUv.y, 12.0, 0.010));
+      color = base * shade + grat * vec3(0.08, 0.17, 0.26);
+    } else if (uMode == 4) {
+      // — Paper: warm atlas stock, land pale, ocean a soft grey —
+      color = mix(vec3(0.93, 0.918, 0.888), vec3(0.70, 0.735, 0.775), waterMask);
+      color *= 0.9 + 0.1 * shade;
     } else {
-      // — grid: dark holo sphere with graticule + faint land plates —
-      vec3 base = mix(vec3(0.05, 0.09, 0.14), vec3(0.012, 0.024, 0.045), waterMask) * shade;
-      float grat = max(gridLine(vUv.x, 24.0, 0.012), gridLine(vUv.y, 12.0, 0.012));
-      color = base + grat * vec3(0.11, 0.24, 0.38);
+      // — Relief: grayscale terrain shading from the topography map —
+      float elev = texture2D(topoMap, vUv).r;
+      // cheap slope estimate for a sense of ridges
+      float dx = texture2D(topoMap, vUv + vec2(0.0016, 0.0)).r - elev;
+      float dy = texture2D(topoMap, vUv + vec2(0.0, 0.0016)).r - elev;
+      float relief = clamp(0.5 + (dx + dy) * 7.0, 0.0, 1.0);
+      vec3 terrain = mix(vec3(0.10, 0.105, 0.115), vec3(0.60, 0.60, 0.605), elev * 0.85 + relief * 0.35);
+      color = mix(terrain, vec3(0.028, 0.036, 0.05), waterMask) * shade;
     }
 
     // country tint: dominant-category wash over countries carrying events
@@ -106,10 +112,11 @@ const EMPTY_TINT = (() => {
 export function Earth() {
   const theme = useTheme();
   const tint = useCountryTint();
-  const [dayMap, nightMap, waterMap] = useTexture([
+  const [dayMap, nightMap, waterMap, topoMap] = useTexture([
     `${import.meta.env.BASE_URL}textures/earth-day.jpg`,
     `${import.meta.env.BASE_URL}textures/earth-night.jpg`,
     `${import.meta.env.BASE_URL}textures/earth-water.png`,
+    `${import.meta.env.BASE_URL}textures/earth-topology.png`,
   ]);
 
   const material = useMemo(() => {
@@ -117,8 +124,10 @@ export function Earth() {
       map.colorSpace = THREE.SRGBColorSpace;
       map.anisotropy = 8;
     }
-    waterMap.colorSpace = THREE.NoColorSpace;
-    waterMap.anisotropy = 8;
+    for (const map of [waterMap, topoMap]) {
+      map.colorSpace = THREE.NoColorSpace;
+      map.anisotropy = 8;
+    }
     return new THREE.ShaderMaterial({
       vertexShader,
       fragmentShader,
@@ -126,6 +135,7 @@ export function Earth() {
         dayMap: { value: dayMap },
         nightMap: { value: nightMap },
         waterMap: { value: waterMap },
+        topoMap: { value: topoMap },
         tintMap: { value: EMPTY_TINT },
         uTintOpacity: { value: 0 },
         sunDir: { value: SUN_DIRECTION.clone() },
@@ -134,7 +144,7 @@ export function Earth() {
         uRimStrength: { value: 0.22 },
       },
     });
-  }, [dayMap, nightMap, waterMap]);
+  }, [dayMap, nightMap, waterMap, topoMap]);
 
   useEffect(() => {
     material.uniforms.tintMap.value = tint ?? EMPTY_TINT;

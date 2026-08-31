@@ -41,7 +41,7 @@ const fragmentShader = /* glsl */ `
     float along = clamp(dot(p, dir), -halfLen, halfLen);
     float dist = length(p - dir * along);
 
-    float core = smoothstep(0.08, 0.0, dist);
+    float core = smoothstep(0.09, 0.0, dist);
     float glow = smoothstep(0.22, 0.0, dist) * 0.35;
     float alpha = (core + glow) * vTwinkle;
 
@@ -73,7 +73,7 @@ export function Starfield() {
       positions[i * 3] = r * s * Math.cos(theta);
       positions[i * 3 + 1] = r * u;
       positions[i * 3 + 2] = r * s * Math.sin(theta);
-      sizes[i] = 0.5 + Math.pow(rng(), 3.0) * 2.4;
+      sizes[i] = 0.6 + Math.pow(rng(), 2.6) * 2.6;
       phases[i] = rng();
     }
     const geo = new THREE.BufferGeometry();

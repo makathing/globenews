@@ -130,7 +130,8 @@ export function EventRail() {
                 title={`${off ? 'Show' : 'Hide'} ${CATEGORY_LABELS[category]} (${counts.get(category) ?? 0})`}
                 aria-pressed={!off}
               >
-                <CategoryIcon category={category} size={13} />
+                <span className="filter-dot" />
+                <CategoryIcon category={category} size={12} />
                 <span className="filter-count">{counts.get(category) ?? 0}</span>
               </button>
             );

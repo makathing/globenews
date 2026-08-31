@@ -38,17 +38,11 @@ const fragmentShader = /* glsl */ `
   }
 
   void main() {
-    vec3 base = vec3(0.012, 0.02, 0.038);
-
-    // directional lift toward the sun — the sky carries the light
-    float sunward = pow(max(dot(vDir, uSunDir), 0.0), 2.2);
-    vec3 sunTint = vec3(0.10, 0.085, 0.07) * sunward;
-
-    // very faint large-scale nebula variation, slightly blue
-    float neb = noise(vDir * 3.0) * 0.5 + noise(vDir * 7.0) * 0.5;
-    vec3 nebula = vec3(0.015, 0.025, 0.05) * smoothstep(0.45, 0.85, neb);
-
-    gl_FragColor = vec4(base + sunTint + nebula, 1.0);
+    // deep space is black — only the faintest lift toward the sun so the
+    // sphere isn't a flat void, and nothing that greys out the stars
+    vec3 base = vec3(0.004, 0.005, 0.008);
+    float sunward = pow(max(dot(vDir, uSunDir), 0.0), 6.0);
+    gl_FragColor = vec4(base + vec3(0.03, 0.026, 0.022) * sunward, 1.0);
   }
 `;
 

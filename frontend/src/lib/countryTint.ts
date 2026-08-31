@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import type { Category, NewsEvent } from '../../../shared/news';
-import { CATEGORY_COLORS } from '../../../shared/news';
 
 /**
  * Paints an equirectangular tint texture: every country carrying events is
@@ -121,7 +120,12 @@ export function buildCountryTint(events: NewsEvent[], geojson: { features: Count
         dominant = category;
       }
     }
-    const color = CATEGORY_COLORS[dominant];
+    // Neutral wash: the beams already carry category colour, so tinting by
+    // category too just doubles the palette. Intensity encodes how much is
+    // happening there instead.
+    const weight = [...weights.values()].reduce((sum, w) => sum + w, 0);
+    const strength = Math.min(1, 0.35 + weight / 14);
+    const color = '#cfe0f5';
     tinted.push(`${key}:${dominant}`);
 
     for (const ring of polygonsOf(feature)) {
@@ -129,9 +133,9 @@ export function buildCountryTint(events: NewsEvent[], geojson: { features: Count
       for (const shift of [-WIDTH, 0, WIDTH]) {
         tracePolygon(ctx, ring, shift);
         ctx.fillStyle = color;
-        ctx.globalAlpha = 0.38;
+        ctx.globalAlpha = 0.30 * strength;
         ctx.fill();
-        ctx.globalAlpha = 0.55;
+        ctx.globalAlpha = 0.5 * strength;
         ctx.strokeStyle = color;
         ctx.lineWidth = 2;
         ctx.stroke();

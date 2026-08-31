@@ -53,8 +53,8 @@ class MotionSmearEffect extends Effect {
 export function Effects() {
   const smear = useMemo(() => new MotionSmearEffect(), []);
   const theme = useTheme();
-  // the light theme's near-white globe would bloom wholesale at a low threshold
-  const light = theme.id === 'light';
+  // a bright globe would bloom wholesale at a low threshold
+  const light = theme.id === 'paper';
 
   return (
     <EffectComposer multisampling={0}>
@@ -66,7 +66,7 @@ export function Effects() {
         radius={0.75}
       />
       <primitive object={smear} />
-      <Vignette eskil={false} offset={0.16} darkness={0.55} />
+      <Vignette eskil={false} offset={0.25} darkness={0.4} />
     </EffectComposer>
   );
 }

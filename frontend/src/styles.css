@@ -413,7 +413,7 @@ body,
   left: 0;
   bottom: 0;
   z-index: 22;
-  width: 312px;
+  width: 288px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to right, rgba(10, 13, 18, 0.94), rgba(10, 13, 18, 0.82));
@@ -421,7 +421,7 @@ body,
   backdrop-filter: blur(12px);
 }
 .rail-head {
-  padding: 16px 16px 12px;
+  padding: 14px 14px 11px;
   border-bottom: 1px solid var(--hairline);
   flex: none;
 }
@@ -451,26 +451,33 @@ body,
 .filter-chip {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  background: color-mix(in srgb, var(--chip-color) 14%, transparent);
-  border: 1px solid color-mix(in srgb, var(--chip-color) 34%, transparent);
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--panel-border);
   border-radius: 999px;
-  color: var(--chip-color);
+  color: var(--text-secondary);
   font-family: var(--font);
   font-size: 11px;
   font-weight: 600;
   padding: 3px 8px 3px 6px;
   cursor: pointer;
-  transition: opacity 0.15s, filter 0.15s;
+  transition: background 0.15s, opacity 0.15s;
+}
+.filter-chip .filter-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--chip-color);
+  flex: none;
 }
 .filter-chip:hover {
-  filter: brightness(1.25);
+  background: rgba(255, 255, 255, 0.1);
 }
 .filter-chip.off {
-  background: transparent;
-  border-color: var(--panel-border);
-  color: var(--text-dim);
-  opacity: 0.6;
+  opacity: 0.4;
+}
+.filter-chip.off .filter-dot {
+  background: var(--text-dim);
 }
 .filter-count {
   font-variant-numeric: tabular-nums;
@@ -483,7 +490,7 @@ body,
   padding: 8px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 3px;
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
 }
@@ -504,14 +511,14 @@ body,
 /* ————— event card ————— */
 .event-card {
   display: grid;
-  grid-template-columns: 76px 1fr;
-  gap: 10px;
+  grid-template-columns: 44px 1fr;
+  gap: 9px;
   width: 100%;
   text-align: left;
   background: none;
   border: 1px solid transparent;
   border-radius: var(--radius-sm);
-  padding: 7px;
+  padding: 6px 7px;
   cursor: pointer;
   font-family: var(--font);
   color: var(--text);
@@ -529,7 +536,7 @@ body,
 }
 .card-thumb {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   border-radius: 5px;
   overflow: hidden;
   display: flex;
@@ -544,14 +551,14 @@ body,
 }
 .card-sev {
   position: absolute;
-  left: 4px;
-  bottom: 4px;
+  left: 3px;
+  bottom: 3px;
   display: flex;
-  gap: 1.5px;
+  gap: 1px;
 }
 .card-sev-tick {
-  width: 3px;
-  height: 4px;
+  width: 2.5px;
+  height: 3px;
   border-radius: 1px;
   background: rgba(255, 255, 255, 0.25);
 }
@@ -571,7 +578,7 @@ body,
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 650;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -599,9 +606,9 @@ body,
   color: var(--text-secondary);
 }
 .card-headline {
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 550;
-  line-height: 1.34;
+  line-height: 1.3;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
@@ -612,8 +619,8 @@ body,
   display: flex;
   align-items: center;
   gap: 7px;
-  margin-top: 4px;
-  font-size: 10.5px;
+  margin-top: 3px;
+  font-size: 10px;
   color: var(--text-dim);
 }
 .card-location {
@@ -649,7 +656,7 @@ body,
 /* ————— timeline ————— */
 .timeline {
   position: absolute;
-  left: 328px;
+  left: 304px;
   right: 16px;
   bottom: 16px;
   z-index: 21;
