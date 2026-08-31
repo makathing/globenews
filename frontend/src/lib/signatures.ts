@@ -1,17 +1,18 @@
 import type { Category } from '../../../shared/news';
 
 /**
- * On-globe radar signature per category — index into the blip fragment
- * shader's pattern branches. Keep in sync with the shaft shader in Beams.tsx and
- * the legend's SignatureGlyph set in ui/icons.tsx.
+ * Per-category beam variation — index into the shaft shader's pattern
+ * branches in Beams.tsx. Most categories share the default shaft and are
+ * distinguished by colour and by the rail's icons; only the two loudest
+ * categories get a distinct shaft behaviour.
  */
 export const CATEGORY_PATTERN: Record<Category, number> = {
-  conflict: 0, // rings + radial spikes
-  disaster: 1, // double shockwave
-  politics: 2, // ring + orbiting satellite dot
-  economy: 3, // diamond ring
-  health: 4, // plus-shaped ring
-  science: 5, // hexagonal ring
-  climate: 6, // sinusoidal ripple
-  society: 7, // dashed/segmented ring
+  conflict: 0, // split/doubled shaft
+  disaster: 1, // trailing twin pulse
+  politics: 2,
+  economy: 3,
+  health: 4,
+  science: 5,
+  climate: 6,
+  society: 7,
 };
