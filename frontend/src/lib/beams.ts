@@ -6,6 +6,23 @@ import { GLOBE_RADIUS } from './geo';
  * data maps onto its light shaft, shared by the scene and the UI rail.
  */
 
+/**
+ * Severity heat ramp. Beams share one warm family rather than eight category
+ * hues: from orbit the question people scan for is "how bad, and where", which
+ * is ordinal — category is answered by the rail icons once you're reading.
+ */
+export const SEVERITY_COLORS: Record<number, string> = {
+  1: '#ffe3a3', // pale gold
+  2: '#ffc860', // gold
+  3: '#ffa02e', // amber
+  4: '#ff6a2a', // orange
+  5: '#ff2f2f', // deep red
+};
+
+export function beamColor(event: Pick<NewsEvent, 'severity'>): string {
+  return SEVERITY_COLORS[event.severity] ?? SEVERITY_COLORS[3];
+}
+
 /** Severity 1-5 -> beam height in globe radii. Height encodes severity ONLY. */
 export function beamHeight(severity: number): number {
   return GLOBE_RADIUS * (0.05 + severity * 0.049);

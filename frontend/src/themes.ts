@@ -1,12 +1,12 @@
 /** Globe render themes. `mode` selects the branch inside the Earth shader. */
 
-export const THEME_IDS = ['obsidian', 'halftone', 'slate', 'blueprint', 'paper', 'relief'] as const;
+export const THEME_IDS = ['obsidian', 'halftone', 'slate', 'blueprint', 'atlas', 'relief'] as const;
 export type ThemeId = (typeof THEME_IDS)[number];
 
 export interface GlobeTheme {
   id: ThemeId;
   label: string;
-  /** Shader branch: 0 obsidian, 1 halftone, 2 slate, 3 blueprint, 4 paper, 5 relief */
+  /** Shader branch: 0 obsidian, 1 halftone, 2 slate, 3 blueprint, 4 atlas, 5 relief */
   mode: number;
   /** Inner rim (fresnel) tint + strength — kept subtle everywhere. */
   rimColor: string;
@@ -90,20 +90,20 @@ export const THEMES: Record<ThemeId, GlobeTheme> = {
     beamIntensity: 0.95,
     tintOpacity: 0.16,
   },
-  paper: {
-    id: 'paper',
-    label: 'Paper',
+  atlas: {
+    id: 'atlas',
+    label: 'Atlas',
     mode: 4,
-    rimColor: '#ffffff',
-    rimStrength: 0.08,
-    borderColor: '#6b7686',
-    borderOpacity: 0.5,
+    rimColor: '#5fa8e0',
+    rimStrength: 0.16,
+    borderColor: '#cfe4f2',
+    borderOpacity: 0.3,
     clouds: false,
-    blipAdditive: false,
-    starBrightness: 0.5,
-    sunIntensity: 0.3,
-    beamIntensity: 0.85,
-    tintOpacity: 0.2,
+    blipAdditive: true,
+    starBrightness: 0.9,
+    sunIntensity: 0.55,
+    beamIntensity: 1,
+    tintOpacity: 0.14,
   },
   relief: {
     id: 'relief',

@@ -72,9 +72,13 @@ const fragmentShader = /* glsl */ `
       float grat = max(gridLine(vUv.x, 24.0, 0.010), gridLine(vUv.y, 12.0, 0.010));
       color = base * shade + grat * vec3(0.08, 0.17, 0.26);
     } else if (uMode == 4) {
-      // — Paper: warm atlas stock, land pale, ocean a soft grey —
-      color = mix(vec3(0.93, 0.918, 0.888), vec3(0.70, 0.735, 0.775), waterMask);
-      color *= 0.9 + 0.1 * shade;
+      // — Atlas: the classic globe, flat ocean blue against land green —
+      vec3 ocean = vec3(0.106, 0.310, 0.490);
+      vec3 landColor = vec3(0.247, 0.490, 0.298);
+      // lift the shelf where the mask feathers along coastlines
+      float shelf = smoothstep(0.35, 0.75, waterMask) * (1.0 - smoothstep(0.75, 1.0, waterMask));
+      color = mix(landColor, ocean, waterMask) + shelf * vec3(0.05, 0.09, 0.11);
+      color *= 0.72 + 0.38 * shade;
     } else {
       // — Relief: grayscale terrain shading from the topography map —
       float elev = texture2D(topoMap, vUv).r;

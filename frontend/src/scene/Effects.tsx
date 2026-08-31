@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { BlendFunction, Effect } from 'postprocessing';
 import * as THREE from 'three';
-import { cameraMotion, prefersReducedMotion, useTheme } from '../store';
+import { cameraMotion, prefersReducedMotion } from '../store';
 
 const smearFragment = /* glsl */ `
   uniform vec2 uVelocity;
@@ -52,15 +52,11 @@ class MotionSmearEffect extends Effect {
 
 export function Effects() {
   const smear = useMemo(() => new MotionSmearEffect(), []);
-  const theme = useTheme();
-  // a bright globe would bloom wholesale at a low threshold
-  const light = theme.id === 'paper';
-
   return (
     <EffectComposer multisampling={0}>
       <Bloom
-        intensity={light ? 0.18 : 0.85}
-        luminanceThreshold={light ? 0.97 : 0.18}
+        intensity={0.85}
+        luminanceThreshold={0.18}
         luminanceSmoothing={0.3}
         mipmapBlur
         radius={0.75}

@@ -5,7 +5,7 @@ import {
   CATEGORY_LABELS,
   type NewsEvent,
 } from '../../../shared/news';
-import { freshness, isNew, relativeTime } from '../lib/beams';
+import { SEVERITY_COLORS, freshness, isNew, relativeTime } from '../lib/beams';
 import { useGlobeStore, useVisibleEvents } from '../store';
 import { CategoryIcon } from './icons';
 import { StatusPanel } from './StatusPanel';
@@ -48,7 +48,7 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
       onMouseLeave={() => hoverId(null)}
       onClick={() => select(event.id)}
     >
-      <div className="card-thumb" style={{ background: `linear-gradient(140deg, ${color}33, #0d1117 70%)` }}>
+      <div className="card-thumb">
         {event.image ? (
           <img src={event.image.url} alt="" loading="lazy" referrerPolicy="no-referrer" />
         ) : (
@@ -136,6 +136,15 @@ export function EventRail() {
               </button>
             );
           })}
+        </div>
+        <div className="severity-key" title="Beam colour and height encode severity">
+          <span className="severity-key-label">Minor</span>
+          <span className="severity-key-ramp">
+            {[1, 2, 3, 4, 5].map((level) => (
+              <span key={level} style={{ background: SEVERITY_COLORS[level] }} />
+            ))}
+          </span>
+          <span className="severity-key-label">Historic</span>
         </div>
       </header>
 

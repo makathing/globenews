@@ -2,9 +2,8 @@ import { useMemo, useRef } from 'react';
 import { useFrame, type ThreeEvent } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { NewsEvent } from '../../../shared/news';
-import { CATEGORY_COLORS } from '../../../shared/news';
 import { latLonToVec3, GLOBE_RADIUS } from '../lib/geo';
-import { beamHeight, beamRate, beamWidth, freshness } from '../lib/beams';
+import { beamColor, beamHeight, beamRate, beamWidth, freshness } from '../lib/beams';
 import { CATEGORY_PATTERN } from '../lib/signatures';
 import { useGlobeStore, useTheme, useVisibleEvents } from '../store';
 
@@ -161,7 +160,7 @@ function Beam({ event }: { event: NewsEvent }) {
   }, [event.lat, event.lon]);
 
   const { shaft, pool } = useMemo(() => {
-    const color = new THREE.Color(CATEGORY_COLORS[event.category]);
+    const color = new THREE.Color(beamColor(event));
     const shared = () => ({
       uColor: { value: color.clone() },
       uTime: { value: Math.random() * 30 },
