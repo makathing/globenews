@@ -512,7 +512,7 @@ body,
   padding: 8px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
 }
@@ -530,17 +530,16 @@ body,
   text-align: center;
 }
 
-/* ————— event card ————— */
+/* ————— event card: icon + headline, then source previews ————— */
 .event-card {
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 9px;
+  display: block;
   width: 100%;
   text-align: left;
   background: none;
   border: 1px solid transparent;
+  border-left: 2px solid transparent;
   border-radius: var(--radius-sm);
-  padding: 6px 7px;
+  padding: 8px 9px;
   cursor: pointer;
   font-family: var(--font);
   color: var(--text);
@@ -549,65 +548,86 @@ body,
 .event-card:hover,
 .event-card.hovered {
   background: rgba(255, 255, 255, 0.05);
-  border-color: var(--panel-border);
 }
 .event-card.selected {
-  background: color-mix(in srgb, var(--chip-color) 12%, transparent);
-  border-color: color-mix(in srgb, var(--chip-color) 45%, transparent);
+  background: rgba(255, 255, 255, 0.07);
+  border-left-color: var(--chip-color);
   opacity: 1 !important;
 }
-.card-thumb {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 5px;
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+.card-icon {
+  flex: none;
+  display: inline-flex;
+  margin-top: 1px;
+}
+.card-headline {
+  font-size: 12.5px;
+  font-weight: 550;
+  line-height: 1.33;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* one tile per source, up to three */
+.card-sources {
+  display: flex;
+  gap: 4px;
+  margin-top: 7px;
+  padding-left: 21px;
+}
+.card-source {
+  flex: 1;
+  aspect-ratio: 16 / 10;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.055);
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
 }
-.card-thumb img {
+.card-source img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.card-sev {
-  position: absolute;
-  left: 3px;
-  bottom: 3px;
-  display: flex;
-  gap: 1px;
-}
-.card-sev-tick {
-  width: 2.5px;
-  height: 3px;
-  border-radius: 1px;
-  background: rgba(255, 255, 255, 0.25);
-}
-.card-sev-tick.on {
-  background: var(--chip-color);
-}
-.card-body {
-  min-width: 0;
-}
-.card-meta {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 3px;
-}
-.card-category {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 9.5px;
-  font-weight: 650;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
+.card-source-name {
+  font-size: 9px;
+  font-weight: 550;
+  letter-spacing: 0.01em;
+  color: var(--text-dim);
+  padding: 0 4px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-foot {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 6px;
+  padding-left: 21px;
+  font-size: 10px;
+  color: var(--text-dim);
+}
+.card-time {
+  font-variant-numeric: tabular-nums;
+}
+.card-trust {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 .card-breaking,
 .card-new {
@@ -625,55 +645,8 @@ body,
   animation: pulse 1.2s ease-in-out infinite;
 }
 .card-new {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.12);
   color: var(--text-secondary);
-}
-.card-headline {
-  font-size: 12px;
-  font-weight: 550;
-  line-height: 1.3;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.card-foot {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: 3px;
-  font-size: 10px;
-  color: var(--text-dim);
-}
-.card-location {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex: 1;
-}
-.card-trust {
-  font-variant-numeric: tabular-nums;
-  font-weight: 650;
-  border-radius: 3px;
-  padding: 0 4px;
-  flex: none;
-}
-.card-trust.high {
-  color: #57e39f;
-  background: rgba(87, 227, 159, 0.12);
-}
-.card-trust.mid {
-  color: #ffd60a;
-  background: rgba(255, 214, 10, 0.1);
-}
-.card-trust.low {
-  color: #ff8b8b;
-  background: rgba(255, 92, 92, 0.12);
-}
-.card-time {
-  flex: none;
-  font-variant-numeric: tabular-nums;
 }
 
 /* ————— timeline ————— */

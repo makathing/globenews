@@ -59,6 +59,8 @@ export interface NewsSource {
   bias: BiasRating;
   /** True when the domain was not in the ratings table. */
   unrated?: boolean;
+  /** This article's own preview image (og:image), when resolvable. */
+  image?: string;
 }
 
 /** Article preview image (hotlinked Open Graph image from one of the sources). */

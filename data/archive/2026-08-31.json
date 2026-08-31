@@ -1,1153 +1,704 @@
 {
-  "generatedAt": "2026-08-31T00:08:39.179Z",
+  "generatedAt": "2026-08-31T01:46:27.092Z",
   "mode": "daily",
   "events": [
     {
-      "id": "d892a20df64a",
-      "headline": "Ferry carrying nearly 270 people capsizes and sinks off northern Cyprus, killing several, dozens missing",
-      "summary": "The passenger ferry Filo Jet, carrying 259 passengers and 8 crew, capsized in rough weather roughly 15 minutes after departing Kyrenia (Girne) for Taşucu, Turkey, on August 30, 2026. At least 7-8 people were confirmed dead, around 24 remained missing, and 237 were rescued; the captain and crew were detained pending investigation.",
-      "category": "disaster",
-      "severity": 5,
-      "lat": 35.34,
-      "lon": 33.32,
-      "locationName": "Off Kyrenia (Girne), Northern Cyprus",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/news/ferry-passengers-capsizes-northern-cyprus/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/europe/ferry-carrying-260-passengers-capsizes-northern-cyprus-rcna595101",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnn.com/2026/08/30/europe/cyprus-boat-capsizes-turkey-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.france24.com/en/europe/20260830-ferry-carrying-more-than-250-passengers-capsizes-off-northern-cyprus",
-          "domain": "france24.com",
-          "reliability": 84,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 80,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "8bc03d64bf0f",
-      "headline": "US forces strike Iranian rocket launchers on Larak Island; IRGC vows retaliation",
-      "summary": "US CENTCOM struck two Iranian rocket launchers on Larak Island in the Strait of Hormuz on Sunday, August 30, 2026, after observing IRGC forces preparing to fire rockets fitted with sea mines into the strait. Iranian state media reported casualties (unconfirmed toll) and the IRGC vowed \"retribution.\"",
+      "id": "593cda79e3bf",
+      "headline": "Ceasefire negotiations resume amid renewed shelling in eastern frontline towns",
+      "summary": "Delegations returned to the negotiating table as artillery exchanges continued near contested frontline towns. Mediators said talks would focus on humanitarian corridors and prisoner exchanges.",
       "category": "conflict",
-      "severity": 5,
-      "lat": 26.87,
-      "lon": 56.35,
-      "locationName": "Larak Island, Hormozgan Province, Iran",
-      "countryCode": "IR",
+      "severity": 4,
+      "lat": 48.4,
+      "lon": 31.2,
+      "locationName": "Ukraine",
+      "countryCode": "UA",
       "sources": [
         {
-          "url": "https://www.cnbc.com/2026/08/30/us-iran-strikes-strait-hormuz.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
+          "url": "https://www.reuters.com/world/europe/sample-ceasefire-talks",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/593cda79e3bf0/320/200"
         },
         {
-          "url": "https://www.cnn.com/2026/08/30/politics/us-iran-strikes-larak-island",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
+          "url": "https://www.bbc.com/news/world-europe-sample",
+          "domain": "bbc.com",
+          "reliability": 90,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/593cda79e3bf1/320/200"
         },
         {
-          "url": "https://www.timesofisrael.com/liveblog-august-30-2026/",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
-        },
-        {
-          "url": "https://thehill.com/policy/defense/6060116-us-strikes-iranian-rocket-launchers/",
-          "domain": "thehill.com",
-          "reliability": 76,
-          "bias": "center"
+          "url": "https://apnews.com/article/sample-ceasefire",
+          "domain": "apnews.com",
+          "reliability": 95,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/593cda79e3bf2/320/200"
         }
       ],
       "trustScore": 79,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false,
+      "image": {
+        "url": "https://picsum.photos/seed/593cda79e3bf0/320/200",
+        "domain": "reuters.com"
+      }
     },
     {
-      "id": "7b507c451530",
-      "headline": "DR Congo begins Ebola vaccination campaign as world's deadliest outbreak on record deepens",
-      "summary": "DRC's health minister launched an ERVEBO vaccination campaign for frontline workers in Kisangani on August 27, 2026, using compassionate-use protocol since the outbreak is caused by the Bundibugyo strain. As of August 26, 2026, the outbreak had 5,794 confirmed cases and 2,786 deaths (48% case fatality rate) — the deadliest Ebola outbreak on record.",
-      "category": "health",
-      "severity": 5,
-      "lat": 0.51,
-      "lon": 25.19,
-      "locationName": "Kisangani, Tshopo Province, DR Congo",
-      "countryCode": "XX",
+      "id": "141ebfa6162c",
+      "headline": "Typhoon makes landfall with record winds; hundreds of thousands evacuated",
+      "summary": "A powerful typhoon came ashore with sustained winds among the strongest recorded for the region. Mass evacuations were credited with limiting casualties, though flooding cut off several coastal towns.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 14.6,
+      "lon": 120.98,
+      "locationName": "Manila, Philippines",
+      "countryCode": "PH",
       "sources": [
         {
-          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON616",
+          "url": "https://www.channelnewsasia.com/asia/sample-typhoon",
+          "domain": "channelnewsasia.com",
+          "reliability": 80,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/141ebfa6162c0/320/200"
+        },
+        {
+          "url": "https://apnews.com/article/sample-typhoon",
+          "domain": "apnews.com",
+          "reliability": 95,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/141ebfa6162c1/320/200"
+        },
+        {
+          "url": "https://www.bbc.com/news/world-asia-sample-typhoon",
+          "domain": "bbc.com",
+          "reliability": 90,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/141ebfa6162c2/320/200"
+        }
+      ],
+      "trustScore": 76,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false,
+      "image": {
+        "url": "https://picsum.photos/seed/141ebfa6162c0/320/200",
+        "domain": "channelnewsasia.com"
+      }
+    },
+    {
+      "id": "47b594861b0a",
+      "headline": "Reusable heavy-lift rocket completes first fully successful orbital flight test",
+      "summary": "The uncrewed test flight reached orbit and both stages were recovered intact for the first time. The milestone is expected to cut launch costs for planned lunar cargo missions.",
+      "category": "science",
+      "severity": 3,
+      "lat": 39.8,
+      "lon": -98.6,
+      "locationName": "Boca Chica, United States",
+      "countryCode": "US",
+      "sources": [
+        {
+          "url": "https://www.nasa.gov/news/sample-launch",
+          "domain": "nasa.gov",
+          "reliability": 94,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/47b594861b0a0/320/200"
+        },
+        {
+          "url": "https://www.reuters.com/technology/space/sample-launch",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/47b594861b0a1/320/200"
+        },
+        {
+          "url": "https://www.bbc.com/news/science-environment-sample",
+          "domain": "bbc.com",
+          "reliability": 90,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/47b594861b0a2/320/200"
+        }
+      ],
+      "trustScore": 79,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false,
+      "image": {
+        "url": "https://picsum.photos/seed/47b594861b0a0/320/200",
+        "domain": "nasa.gov"
+      }
+    },
+    {
+      "id": "079786b52227",
+      "headline": "Central bank surprises with half-point rate cut as inflation cools faster than forecast",
+      "summary": "Policymakers delivered a larger-than-expected rate cut, citing rapidly cooling inflation and softening labor data. Equity indexes rallied while the currency slid against major peers.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 38.9,
+      "lon": -77.04,
+      "locationName": "Washington, D.C., United States",
+      "countryCode": "US",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/sample-rate-cut",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/079786b522270/320/200"
+        },
+        {
+          "url": "https://www.wsj.com/economy/sample-rate-cut",
+          "domain": "wsj.com",
+          "reliability": 87,
+          "bias": "center-right",
+          "image": "https://picsum.photos/seed/079786b522271/320/200"
+        },
+        {
+          "url": "https://www.reuters.com/markets/us/sample-rate-cut",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/079786b522272/320/200"
+        }
+      ],
+      "trustScore": 77,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false,
+      "image": {
+        "url": "https://picsum.photos/seed/079786b522270/320/200",
+        "domain": "bloomberg.com"
+      }
+    },
+    {
+      "id": "5357fa3a0171",
+      "headline": "Record marine heatwave bleaches large sections of northern reef systems",
+      "summary": "Scientists reported the most extensive coral bleaching event on record for the region after months of elevated sea temperatures. Emergency assessments of reef resilience are underway.",
+      "category": "climate",
+      "severity": 3,
+      "lat": -25.3,
+      "lon": 133.8,
+      "locationName": "Great Barrier Reef, Australia",
+      "countryCode": "AU",
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/sample-bleaching",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/5357fa3a01710/320/200"
+        },
+        {
+          "url": "https://www.theguardian.com/environment/sample-bleaching",
+          "domain": "theguardian.com",
+          "reliability": 84,
+          "bias": "center-left",
+          "image": "https://picsum.photos/seed/5357fa3a01711/320/200"
+        },
+        {
+          "url": "https://www.noaa.gov/news/sample-bleaching",
+          "domain": "noaa.gov",
+          "reliability": 94,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/5357fa3a01712/320/200"
+        }
+      ],
+      "trustScore": 76,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false,
+      "image": {
+        "url": "https://picsum.photos/seed/5357fa3a01710/320/200",
+        "domain": "abc.net.au"
+      }
+    },
+    {
+      "id": "efdd76e88029",
+      "headline": "Coalition talks collapse, pushing bloc toward snap elections",
+      "summary": "Weeks of coalition negotiations ended without agreement, raising the likelihood of snap elections within months. Markets reacted with mild losses as investors weighed policy uncertainty.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 52.52,
+      "lon": 13.41,
+      "locationName": "Berlin, Germany",
+      "countryCode": "DE",
+      "sources": [
+        {
+          "url": "https://www.spiegel.de/politik/sample-koalition",
+          "domain": "spiegel.de",
+          "reliability": 83,
+          "bias": "center-left",
+          "image": "https://picsum.photos/seed/efdd76e880290/320/200"
+        },
+        {
+          "url": "https://www.ft.com/content/sample-coalition",
+          "domain": "ft.com",
+          "reliability": 90,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/efdd76e880291/320/200"
+        },
+        {
+          "url": "https://www.politico.eu/article/sample-coalition",
+          "domain": "politico.eu",
+          "reliability": 79,
+          "bias": "center",
+          "image": "https://picsum.photos/seed/efdd76e880292/320/200"
+        }
+      ],
+      "trustScore": 74,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false,
+      "image": {
+        "url": "https://picsum.photos/seed/efdd76e880290/320/200",
+        "domain": "spiegel.de"
+      }
+    },
+    {
+      "id": "0ca0fdfa0d61",
+      "headline": "Mpox vaccination drive expands as new variant detected in border provinces",
+      "summary": "Health authorities expanded vaccination to border provinces after genomic surveillance flagged a new variant. The WHO said current vaccines are expected to remain effective.",
+      "category": "health",
+      "severity": 3,
+      "lat": -4.44,
+      "lon": 15.27,
+      "locationName": "Kinshasa, Democratic Republic of the Congo",
+      "countryCode": "CD",
+      "sources": [
+        {
+          "url": "https://www.who.int/news/sample-mpox",
           "domain": "who.int",
           "reliability": 92,
           "bias": "center"
         },
         {
-          "url": "https://www.un.org/en/dr-congo-receives-70000-ebola-vaccine-doses-bundibugyo-outbreak-spreads",
-          "domain": "un.org",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/sample-mpox",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 71,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false
+    },
+    {
+      "id": "32fc1d960d42",
+      "headline": "Magnitude 6.3 earthquake shakes northern Honshu; tsunami advisory briefly issued",
+      "summary": "A strong offshore earthquake rattled northern Japan, briefly triggering a tsunami advisory that was later lifted. Authorities reported minor injuries and localized power outages.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 38.3,
+      "lon": 141,
+      "locationName": "Sendai, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.nhk.or.jp/news/sample-earthquake",
+          "domain": "nhk.or.jp",
           "reliability": 88,
           "bias": "center"
         },
         {
-          "url": "https://www.usnews.com/news/health-news/articles/2026-08-27/congo-begins-ebola-vaccinations-to-fight-countrys-worst-outbreak-on-record-health-minister-says",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 75,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "765fab31de95",
-      "headline": "Death toll from Nepal-Tibet border flash flood surpasses 669, thousands still missing",
-      "summary": "A glacier collapse near Langtang Lirung triggered flash floods and mudslides along the Trishuli/Bhotekoshi river system on Aug 26, 2026, devastating multiple districts in Nepal and the Gyirong border crossing into Tibet. As of Aug 29, Nepal reported 669 dead and 2,362 missing (including ~499 foreign nationals), with Tibet reporting additional dead and hundreds missing.",
-      "category": "disaster",
-      "severity": 5,
-      "lat": 28.15,
-      "lon": 85.53,
-      "locationName": "Rasuwa District / Bhotekoshi-Trishuli River, Nepal",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.cnn.com/2026/08/29/world/live-news/nepal-china-flood",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/nepal-flash-flood-death-missing-americans-rescue/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://abcnews.com/International/hundreds-dead-1000-remain-missing-massive-nepal-tibet/story?id=136022919",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 72,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "be004b4b8cf1",
-      "headline": "Colombia Earthquake Death Toll Continues to Climb as Recovery Continues in Chocó",
-      "summary": "The magnitude 7.4 earthquake that struck near San José del Palmar, Chocó on August 10, 2026, has an evolving death toll — PAHO's August 14 situation report recorded 287 deaths, 378 missing, and over 13,000 homes destroyed (79,108 damaged) across 15 departments. The Colombian government declared a state of national disaster and deployed troops amid nearly 100 aftershocks.",
-      "category": "disaster",
-      "severity": 5,
-      "lat": 4.98,
-      "lon": -76.24,
-      "locationName": "San José del Palmar, Chocó, Colombia",
-      "countryCode": "CO",
-      "sources": [
-        {
-          "url": "https://abcnews.com/International/colombia-earthquake-rescue-operations-continue-224-dead/story?id=135571163",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-14-august-2026",
-          "domain": "paho.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2/executive",
-          "domain": "usgs.gov",
+          "url": "https://www.reuters.com/world/asia-pacific/sample-quake",
+          "domain": "reuters.com",
           "reliability": 95,
           "bias": "center"
         }
       ],
       "trustScore": 70,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "28261f10c14f",
-      "headline": "Gunmen kill dozens, kidnap scores in mass attack on four Borgu villages, Niger State",
-      "summary": "Gunmen attacked four communities in Borgu LGA, Niger State on August 21, 2026, abducting worshippers from mosques and residents from homes; scores were killed and abducted. President Tinubu ordered a security manhunt; as of late August the government reported ongoing efforts to secure victims' release.",
-      "category": "conflict",
-      "severity": 5,
-      "lat": 9.9,
-      "lon": 4.5,
-      "locationName": "Borgu Local Government Area, Niger State, Nigeria",
-      "countryCode": "NG",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/national/2026/08/22/nigeria-kidnappings-spree-villages-niger/54254158-9e56-11f1-9cc4-2dc9b46e2d5c_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://abcnews.com/International/wireStory/scores-people-kidnapped-mosque-armed-groups-attacked-multiple-135870436",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.africanews.com/2026/08/26/nigeria-orders-manhunt-after-deadly-mass-kidnapping/",
-          "domain": "africanews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 60,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "43ffdfe9b7d2",
-      "headline": "Heavy flooding in Tawila, North Darfur destroys homes, displaces families amid worsening crisis",
-      "summary": "Heavy rainfall in the week before August 19, 2026 destroyed or damaged nearly 1,350 homes in Tawila, North Darfur, displacing over 1,000 families. Tawila hosts more than 700,000 displaced people who fled violence in El Fasher; flooding has compounded disease outbreaks in overcrowded camps.",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 15.97,
-      "lon": 25.02,
-      "locationName": "Tawila, North Darfur, Sudan",
-      "countryCode": "SD",
-      "sources": [
-        {
-          "url": "https://www.iom.int/news/sudan-200000-newly-displaced-fighting-and-floods-intensify-closure-red-sea-and-strait-hormuz-threatens-critical-aid",
-          "domain": "iom.int",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://news.un.org/en/story/2026/08/1168165",
-          "domain": "un.org",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/8/20/over-200000-people-newly-displaced-in-sudans-kordofan-as-fighting-rages",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 74,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ee4b101a8489",
-      "headline": "Trump Administration Announces \"Public-Private Partnership\" Giving US Equity Stake in Venezuelan Oil Fields",
-      "summary": "The Trump administration announced a deal securing majority US control (55% JV share) of 17 strategic Venezuelan oil fields holding roughly 65 billion barrels of proven reserves (~21% of Venezuela's total), with the Pentagon's Office of Strategic Capital holding a 35% non-voting stake in North American Blue Energy Partners. Venezuelan Vice President/acting leader Delcy Rodríguez said the deal, involving over $100 billion in investment, would generate $209 billion in added tax revenue for Venezuela over its term.",
+      "id": "e13d988fa5d2",
+      "headline": "Grain export corridor reopens after month-long blockade, easing food price fears",
+      "summary": "The maritime grain corridor resumed operations after a negotiated end to a month-long blockade. Wheat futures fell sharply on the news, easing pressure on import-dependent economies.",
       "category": "economy",
-      "severity": 4,
-      "lat": 10.48,
-      "lon": -66.9,
-      "locationName": "Caracas, Venezuela / Washington, DC, US",
-      "countryCode": "VE",
+      "severity": 3,
+      "lat": 46.48,
+      "lon": 30.73,
+      "locationName": "Odesa, Ukraine",
+      "countryCode": "UA",
       "sources": [
         {
-          "url": "https://www.axios.com/2026/08/29/trump-venezuela-oil-deal",
-          "domain": "axios.com",
-          "reliability": 80,
+          "url": "https://www.reuters.com/markets/commodities/sample-grain",
+          "domain": "reuters.com",
+          "reliability": 95,
           "bias": "center"
         },
         {
-          "url": "https://abcnews.com/International/trump-announces-historic-us-venezuela-oil-deal-lower/story?id=136046002",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://thehill.com/policy/international/6059462-venezuela-us-oil-deal/",
-          "domain": "thehill.com",
-          "reliability": 76,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 72,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9608df92fd84",
-      "headline": "Two Killed, Nine Wounded in Overnight Trenton, New Jersey Shooting at Large Gathering",
-      "summary": "Gunmen opened fire on an unauthorized gathering of roughly 200 people on the 100 block of Locust Street in Trenton around 12:25 a.m. Sunday, killing two and wounding nine; more than 50 shell casings were recovered at the scene.",
-      "category": "society",
-      "severity": 4,
-      "lat": 40.2206,
-      "lon": -74.7495,
-      "locationName": "Locust Street, Trenton, New Jersey, US",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/philadelphia/news/trenton-new-jersey-mass-shooting-locust-street/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/2-dead-9-hurt-trenton-mass-shooting-rcna595106",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.newsweek.com/two-dead-nine-injured-in-new-jersey-mass-shooting-12385072",
-          "domain": "newsweek.com",
-          "reliability": 62,
+          "url": "https://www.bloomberg.com/news/articles/sample-grain",
+          "domain": "bloomberg.com",
+          "reliability": 88,
           "bias": "center"
         }
       ],
       "trustScore": 70,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "21973b3b872c",
-      "headline": "Israeli settlers and soldiers attack West Bank village of Al-Mughayyir, four wounded",
-      "summary": "Israeli settlers raided the village of Al-Mughayyir northeast of Ramallah on August 30, 2026, attacking residents and vehicles; accompanying Israeli soldiers then fired live ammunition and tear gas at Palestinians, wounding four. Israeli forces sealed the village's only entrance for more than 20 hours.",
+      "id": "9be0234052c8",
+      "headline": "Cross-border shelling escalates along disputed mountain frontier",
+      "summary": "Exchanges of artillery fire were reported along the disputed frontier for a third consecutive day. Both governments summoned ambassadors while regional powers urged restraint.",
       "category": "conflict",
-      "severity": 4,
-      "lat": 31.98,
-      "lon": 35.34,
-      "locationName": "Al-Mughayyir, West Bank",
-      "countryCode": "XX",
+      "severity": 3,
+      "lat": 21,
+      "lon": 78,
+      "locationName": "Kashmir, India",
+      "countryCode": "IN",
       "sources": [
         {
-          "url": "https://www.timesofisrael.com/topic/al-mughayyir/",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
+          "url": "https://www.thehindu.com/news/sample-loc",
+          "domain": "thehindu.com",
+          "reliability": 80,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/8/30/whats-behind-netanyahus-condemnation-of-this-weekends-settler-pogroms",
+          "url": "https://www.aljazeera.com/news/sample-loc",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.arabnews.com/node/2656361/middle-east",
-          "domain": "arabnews.com",
-          "reliability": 64,
+          "url": "https://www.reuters.com/world/asia-pacific/sample-loc",
+          "domain": "reuters.com",
+          "reliability": 95,
           "bias": "center"
         }
       ],
-      "trustScore": 69,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "trustScore": 66,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "4badc0b65cf2",
-      "headline": "Measles Outbreaks Surge to Highest Levels in Decades Across the Americas, Threatening US and Mexico Elimination Status",
-      "summary": "PAHO reports the Americas region lost its measles-elimination-free status in November 2025 after endemic transmission was reestablished in Canada. As of August 20, 2026, the CDC reported 2,777 confirmed US measles cases across 36 outbreaks — the highest US total since 1991 — with the US measles-elimination status review scheduled for November 2026 and Mexico also at risk.",
-      "category": "health",
-      "severity": 4,
-      "lat": 39.8,
-      "lon": -98.6,
-      "locationName": "United States / Americas region",
-      "countryCode": "US",
+      "id": "b3192316f3a6",
+      "headline": "Opposition claims victory in disputed presidential vote as observers cite irregularities",
+      "summary": "Both leading candidates declared victory after a tense election marked by delayed results. International observers reported procedural irregularities in several regions and called for transparency.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 10.48,
+      "lon": -66.9,
+      "locationName": "Caracas, Venezuela",
+      "countryCode": "VE",
       "sources": [
         {
-          "url": "https://www.cdc.gov/measles/data-research/index.html",
-          "domain": "cdc.gov",
-          "reliability": 85,
+          "url": "https://www.reuters.com/world/americas/sample-election",
+          "domain": "reuters.com",
+          "reliability": 95,
           "bias": "center"
         },
         {
-          "url": "https://abcnews.com/Health/us-measles-cases-hit-2318-2026-surpassing-years/story?id=134813573",
-          "domain": "abcnews.com",
+          "url": "https://elpais.com/internacional/sample-eleccion",
+          "domain": "elpais.com",
           "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.paho.org/en/news/16-1-2026-measles-elimination-status-united-states-and-mexico",
-          "domain": "paho.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "bd2651017db6",
-      "headline": "Woman killed, five injured in shooting at techno rave in Aarau, Switzerland",
-      "summary": "A 22-year-old woman died and five people were injured after shots were fired around 2:30 a.m. at the Schachen racecourse during the \"Aargau Rave,\" attended by roughly 3,500 people. Police launched a manhunt for one or more suspects; authorities have not ruled out terrorism as a motive.",
-      "category": "society",
-      "severity": 4,
-      "lat": 47.39,
-      "lon": 8.04,
-      "locationName": "Schachen racetrack, Aarau, Switzerland",
-      "countryCode": "CH",
-      "sources": [
-        {
-          "url": "https://www.pbs.org/newshour/amp/world/1-dead-and-5-wounded-in-a-shooting-at-a-rave-in-switzerland",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-08-30/several-victims-reported-in-swiss-rave-shooting-blick-says",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.swissinfo.ch/eng/various/woman-dies-after-shooting-at-aarau-rave/91976126",
-          "domain": "swissinfo.ch",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 67,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "cdea3a670ac0",
-      "headline": "One Killed, Nine Wounded in Mass Shooting at Chicago's Washington Park",
-      "summary": "Gunfire erupted into a large late-night gathering in Washington Park on Chicago's South Side around 11:37 p.m. Saturday, striking 10 people; a 35-year-old man later died at University of Chicago Medical Center. Police recovered shell casings from multiple firearm types, including rifle rounds.",
-      "category": "society",
-      "severity": 4,
-      "lat": 41.7943,
-      "lon": -87.6118,
-      "locationName": "Washington Park, Chicago, Illinois, US",
-      "countryCode": "US",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/chicago/news/1-killed-9-wounded-in-mass-shooting-in-chicagos-washington-park/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/chicago-mass-shooting-rcna595122",
-          "domain": "nbcnews.com",
-          "reliability": 81,
           "bias": "center-left"
-        },
-        {
-          "url": "https://chicago.suntimes.com/crime/2026/08/30/mass-shooting-kills-1-injures-9-large-gathering-washington-park",
-          "domain": "suntimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
       "trustScore": 60,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "8582d3e9ee30",
-      "headline": "Xi Jinping's military purge ousts top loyalists Zhang Youxia and Zhong Shaojun from China's legislature",
-      "summary": "China's National People's Congress removed several senior officials from their lawmaker positions, announced Aug 28, 2026. The move leaves the Central Military Commission functionally reduced to Xi and one other member, extending a purge that has swept up 100+ senior PLA officers since 2022-23.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 39.9,
-      "lon": 116.4,
-      "locationName": "Beijing, China",
-      "countryCode": "CN",
+      "id": "080a74d8d166",
+      "headline": "Cholera outbreak spreads to third province as aid agencies warn of funding gap",
+      "summary": "Health officials confirmed cholera cases in a third province, with aid agencies warning that treatment centers are underfunded. Vaccination campaigns are being accelerated in affected districts.",
+      "category": "health",
+      "severity": 3,
+      "lat": 15.5,
+      "lon": 32.56,
+      "locationName": "Khartoum, Sudan",
+      "countryCode": "SD",
       "sources": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-08-28/xi-s-military-purge-sees-loyalists-ousted-from-china-legislature",
-          "domain": "bloomberg.com",
-          "reliability": 88,
+          "url": "https://www.who.int/emergencies/sample-cholera",
+          "domain": "who.int",
+          "reliability": 92,
           "bias": "center"
         },
         {
-          "url": "https://www.washingtonpost.com/world/2026/08/29/beijing-expands-purge-top-generals/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
+          "url": "https://www.aljazeera.com/news/sample-cholera",
+          "domain": "aljazeera.com",
+          "reliability": 78,
           "bias": "center-left"
         }
       ],
       "trustScore": 59,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "3926e92010c5",
-      "headline": "Haiti Postpones August 30 General Election to December 13 Amid Gang Violence",
-      "summary": "Haiti's electoral council (CEP), backed by acting PM Alix Didier Fils-Aimé, postponed the country's first presidential/legislative elections in a decade — originally set for August 30 — to December 13, 2026, with a runoff planned for late February, citing an insufficient security environment. The decision follows continued gang warfare from the Viv Ansanm coalition, including an attack in Kenscoff, and displacement of over a million people nationwide.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 18.53,
-      "lon": -72.34,
-      "locationName": "Port-au-Prince, Haiti",
-      "countryCode": "HT",
+      "id": "7e2b0c0b2ebd",
+      "headline": "Peace deal signed ending decade-long insurgency in northern provinces",
+      "summary": "Government negotiators and rebel leaders signed a comprehensive peace accord ending a decade of insurgency. Disarmament is set to begin within 90 days under international monitoring.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 12.37,
+      "lon": -1.53,
+      "locationName": "Ouagadougou, Burkina Faso",
+      "countryCode": "BF",
       "sources": [
         {
-          "url": "https://www.france24.com/en/americas/20260727-haiti-sets-december-presidential-election-despite-security-concerns",
+          "url": "https://www.france24.com/en/africa/sample-peace",
           "domain": "france24.com",
           "reliability": 84,
           "bias": "center"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/5/11/hundreds-displaced-medical-services-suspended-amid-gang-violence-in-haiti",
+          "url": "https://www.aljazeera.com/news/sample-peace-deal",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         }
       ],
       "trustScore": 57,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "55df2f717dae",
-      "headline": "2026 wildfire season among the worst on record for Spain and France; over 300,000 evacuated",
-      "summary": "Wildfires across Spain and France in July-August 2026 forced roughly 330,000 people to evacuate, including a peacetime-record evacuation of ~197,000 people near Bordeaux, France. Fires around Madrid, Ávila and Toledo merged into the worst blaze in Madrid region history; French officials described nearly 98,000 hectares burned as a \"historic record.\"",
+      "id": "794e9c05db00",
+      "headline": "AI safety summit ends with 40-nation agreement on frontier model testing",
+      "summary": "Delegates from more than 40 countries agreed to a shared framework for pre-deployment testing of frontier AI models. Implementation details were deferred to a technical working group.",
+      "category": "science",
+      "severity": 2,
+      "lat": 51.51,
+      "lon": -0.13,
+      "locationName": "London, United Kingdom",
+      "countryCode": "GB",
+      "sources": [
+        {
+          "url": "https://www.ft.com/content/sample-ai-summit",
+          "domain": "ft.com",
+          "reliability": 90,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.theguardian.com/technology/sample-ai-summit",
+          "domain": "theguardian.com",
+          "reliability": 84,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.reuters.com/technology/sample-ai-summit",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 77,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b05bced72b3c",
+      "headline": "Historic port district fire displaces thousands; cause under investigation",
+      "summary": "A fast-moving fire swept through a dense historic port district overnight, displacing thousands of residents. Investigators are examining an electrical fault as a possible cause.",
       "category": "disaster",
-      "severity": 4,
-      "lat": 40.46,
-      "lon": -3.75,
-      "locationName": "Spain (Madrid/Ávila/Toledo) and France (Bordeaux/Gironde)",
-      "countryCode": "XX",
+      "severity": 2,
+      "lat": 6.52,
+      "lon": 3.38,
+      "locationName": "Lagos, Nigeria",
+      "countryCode": "NG",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/07/25/nx-s1-5907963/wildfires-spain-france-evacuations",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/7/25/wildfires-in-spain-and-france-force-evacuation-of-200000-people",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5f3e64f02606",
-      "headline": "Israeli strike destroys Gaza aid warehouse, kills seven amid ongoing ceasefire violations",
-      "summary": "An Israeli strike hit a warehouse holding humanitarian supplies along with a water desalination plant and a mosque in Gaza around August 24-25, 2026, killing at least seven people. The strikes are part of a pattern of violations of the ceasefire in effect since October 2025.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 31.5,
-      "lon": 34.47,
-      "locationName": "Gaza Strip",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/8/25/seven-killed-in-gaza-as-israeli-strike-destroys-aid-supply-warehouse",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.npr.org/2026/08/27/g-s1-140400/israel-gaza-ceasefire",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "da90a3526682",
-      "headline": "Typhoon Saudel makes double landfall in Zhejiang, China, forcing evacuation of over 800,000",
-      "summary": "Typhoon Saudel made its first landfall near Yuhuan, Taizhou, Zhejiang around 8:05am local time on Aug 28, 2026, then a second landfall at Wenzhou. Wenzhou ordered evacuation of over 820,000 people, Taizhou relocated 500,000+; ports and flights across the region were disrupted.",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 35.9,
-      "lon": 104.2,
-      "locationName": "Yuhuan/Wenzhou, Zhejiang, China",
-      "countryCode": "CN",
-      "sources": [
-        {
-          "url": "https://www.scmp.com/news/china/article/3365546/storm-travel-chaos-typhoon-saudel-makes-double-landfall-china",
-          "domain": "scmp.com",
-          "reliability": 76,
+          "url": "https://www.bbc.com/news/world-africa-sample-fire",
+          "domain": "bbc.com",
+          "reliability": 90,
           "bias": "center"
         },
         {
-          "url": "https://english.news.cn/20260828/fb4b922af09f4b2980fe3a72630b5a13/c.html",
-          "domain": "news.cn",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 48,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c13756113fce",
-      "headline": "Iceland rejects reopening EU accession talks in close referendum",
-      "summary": "Icelanders voted 52.8% to 47.2% against reopening negotiations to join the European Union, with turnout of 82.5%. Prime Minister Kristrún Frostadóttir said her government would honor the result and not revisit the issue during her current mandate.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 64.96,
-      "lon": -19.02,
-      "locationName": "Iceland (nationwide referendum)",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.abc.net.au/news/2026-08-30/iceland-eu-referendum-result/107095748",
-          "domain": "abc.net.au",
-          "reliability": 86,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/08/30/iceland-eu-accession-referendum-result.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/8/30/iceland-votes-to-reject-eu-accession-talks-what-happens-next",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 73,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a2b285221633",
-      "headline": "Remnants of Tropical Storm Dolly Bring Heavy Rain, Flash Flood Risk to Leeward Islands",
-      "summary": "Dolly weakened to an open tropical wave/post-tropical remnant by Friday, August 28, but its moisture plume was forecast to move into the Leeward Islands overnight Saturday into Sunday, bringing heavy rain and flash flood risk. The remnant moisture was also expected to affect the Virgin Islands, Puerto Rico, the Dominican Republic, and Haiti into Monday.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 17.5,
-      "lon": -62,
-      "locationName": "Leeward Islands, Eastern Caribbean",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.nhc.noaa.gov/mobile/text/refresh/MIATCPAT4+html/271447.shtml",
-          "domain": "noaa.gov",
-          "reliability": 94,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/tropical-storm-dolly-forms-atlantic-ocean/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
+          "url": "https://apnews.com/article/sample-lagos-fire",
+          "domain": "apnews.com",
+          "reliability": 95,
           "bias": "center"
         }
       ],
-      "trustScore": 68,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "trustScore": 70,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "6e2412ef4f11",
-      "headline": "Two Frankfurt Airport workers die after contracting \"airport malaria\"",
-      "summary": "Six employees at Frankfurt Airport contracted malaria believed transmitted by an Anopheles mosquito that arrived on an incoming flight; two of the six died, with the death toll reaching two by August 27, 2026. Germany's Robert Koch Institute is investigating the mosquito's origin.",
-      "category": "health",
-      "severity": 3,
-      "lat": 50.0379,
-      "lon": 8.5622,
-      "locationName": "Frankfurt Airport, Germany",
-      "countryCode": "DE",
+      "id": "dd05a3608005",
+      "headline": "Arctic shipping lane sees record early opening as sea ice retreats",
+      "summary": "The northern shipping route opened weeks earlier than the historical average as sea-ice extent hit a seasonal record low. Shipping firms are weighing expanded transits against safety and insurance concerns.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 60,
+      "lon": 90,
+      "locationName": "Arctic Ocean, Russia",
+      "countryCode": "RU",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/8/26/german-airport-workers-die-from-malaria-caught-from-plane-riding-mosquito",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnn.com/2026/08/27/europe/germany-frankfurt-airport-malaria-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.foxnews.com/travel/2-airport-workers-dead-after-malaria-cases-shock-officials-major-travel-hub",
-          "domain": "foxnews.com",
-          "reliability": 62,
-          "bias": "right"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "f7de81b2518e",
-      "headline": "Argentina's Economic Recovery Loses Momentum as Milei Faces 2027 Election Headwinds",
-      "summary": "Economists cut Argentina's 2026 growth forecast to 2.7%; mass consumption fell 3.7% year-on-year in Q2 2026. Inflation is expected to end 2026 near 29-30%, and President Javier Milei's approval rating has slipped to around 37%, complicating his path to reelection in 2027.",
-      "category": "economy",
-      "severity": 3,
-      "lat": -34.6,
-      "lon": -58.38,
-      "locationName": "Buenos Aires, Argentina",
-      "countryCode": "AR",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-08-26/argentina-economy-milei-magic-fades-on-slowing-recovery",
+          "url": "https://www.bloomberg.com/news/articles/sample-arctic",
           "domain": "bloomberg.com",
           "reliability": 88,
           "bias": "center"
         },
         {
-          "url": "https://www.upi.com/Top_News/World-News/2026/08/24/latam-argentina-Milei-reelection-chances/6211787589884/",
-          "domain": "upi.com",
-          "reliability": 82,
+          "url": "https://www.reuters.com/business/environment/sample-arctic",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d2fd87a0183a",
+      "headline": "Fusion experiment sustains net-positive reaction for record duration",
+      "summary": "Researchers reported sustaining a net-energy-positive fusion reaction for a record duration, a step toward practical fusion power. Independent verification of the results is pending peer review.",
+      "category": "science",
+      "severity": 2,
+      "lat": 43.7,
+      "lon": 5.77,
+      "locationName": "Cadarache, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.nature.com/articles/sample-fusion",
+          "domain": "nature.com",
+          "reliability": 95,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.newscientist.com/article/sample-fusion",
+          "domain": "newscientist.com",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a423b5910b39",
+      "headline": "Chip manufacturing giant announces largest-ever foundry expansion",
+      "summary": "The company unveiled plans for a multibillion-dollar expansion of advanced chip production capacity, citing surging AI demand. Governments in three countries are competing to host the new fabs.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 24.77,
+      "lon": 120.99,
+      "locationName": "Hsinchu, Taiwan",
+      "countryCode": "TW",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/sample-fab",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nikkei.com/article/sample-fab",
+          "domain": "nikkei.com",
+          "reliability": 85,
           "bias": "center"
         }
       ],
       "trustScore": 67,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "a92115d14c68",
-      "headline": "US-Canada Trade Talks Collapse; 50% US Tariffs and Canadian Retaliation Take Effect",
-      "summary": "US-Canada trade negotiations collapsed the night of August 21-22, 2026, just before 50% US tariffs on roughly $20 billion of Canadian goods took effect. PM Mark Carney blamed \"unfair\" US demands; Canada announced retaliatory tariffs effective September 8.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 45.42,
-      "lon": -75.7,
-      "locationName": "Ottawa, Canada / Washington, DC, US",
-      "countryCode": "CA",
+      "id": "effc3aa8c753",
+      "headline": "Amazon deforestation hits lowest level in a decade, satellite data shows",
+      "summary": "New satellite monitoring data showed annual deforestation falling to its lowest level in ten years. Officials credited stepped-up enforcement, while scientists cautioned degraded areas remain vulnerable.",
+      "category": "climate",
+      "severity": 2,
+      "lat": -14.2,
+      "lon": -51.9,
+      "locationName": "Amazonas, Brazil",
+      "countryCode": "BR",
       "sources": [
         {
-          "url": "https://www.washingtonpost.com/business/2026/08/23/us-canada-breakdown-shows-limits-trumps-aggressive-trade-strategy/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.nbcnews.com/business/economy/trump-canada-tariffs-carney-rcna593510",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 66,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4a4b6bdcfce3",
-      "headline": "US Treasury intensifies Iran sanctions campaign, plans new bank designation",
-      "summary": "Treasury Secretary Scott Bessent unveiled a sweeping new sanctions campaign against Iran in late August 2026, targeting shipping, oil, crypto, gold and aviation sectors, and announced plans to sanction another bank. Bessent said President Trump is personally calling world leaders to press for coordinated economic isolation of Iran.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 38.9072,
-      "lon": -77.0369,
-      "locationName": "Washington, D.C., United States",
-      "countryCode": "US",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/business/2026/08/24/bessent-unveil-economic-d-day-sanctions-against-iran/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/08/23/treasury-secretary-bessent-iran-sanctions-press-conference.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 66,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "19e2f2a9a419",
-      "headline": "Taiwan confirms first two locally-acquired mpox clade Ib cases",
-      "summary": "Taiwan's CDC confirmed two locally-acquired mpox clade Ib infections around Aug 26, 2026 — the first local transmission of this clade in Taiwan. Nine total clade Ib cases have been recorded since May 2026 (7 imported, 2 local).",
-      "category": "health",
-      "severity": 3,
-      "lat": 23.7,
-      "lon": 121,
-      "locationName": "Taiwan",
-      "countryCode": "TW",
-      "sources": [
-        {
-          "url": "https://focustaiwan.tw/society/202608260014",
-          "domain": "focustaiwan.tw",
-          "reliability": 75,
+          "url": "https://www.reuters.com/sustainability/sample-amazon",
+          "domain": "reuters.com",
+          "reliability": 95,
           "bias": "center"
         },
         {
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/08/27/2003863199",
-          "domain": "taipeitimes.com",
-          "reliability": 72,
-          "bias": "center"
+          "url": "https://www.theguardian.com/environment/sample-amazon",
+          "domain": "theguardian.com",
+          "reliability": 84,
+          "bias": "center-left"
         }
       ],
       "trustScore": 61,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     },
     {
-      "id": "2f72ed63788d",
-      "headline": "Kim Yo Jong warns of \"counteraction\" as US, South Korea, Japan plan trilateral drill",
-      "summary": "North Korea's Kim Yo Jong criticized planned US-South Korea-Japan trilateral nuclear/missile-defense exercise set for Sept 9-11, 2026, accusing Japan of building preemptive-strike capability. North Korea had conducted several ballistic missile tests earlier in August (Aug 6, 11-12, and ~10 short-range missiles around Aug 20).",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 39.15,
-      "lon": 127.44,
-      "locationName": "North Korea (Wonsan area)",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.npr.org/2026/08/28/g-s1-140849/us-south-korea-japan-drill-north-korea",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/8/20/north-korea-launches-ballistic-missiles-as-us-south-korea-drills-end",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e8ceba9ebaaf",
-      "headline": "Uganda's military chief Muhoozi Kainerugaba declares bid for 2031 presidency",
-      "summary": "General Muhoozi Kainerugaba, Uganda's Chief of Defence Forces and son of President Yoweri Museveni, announced via X on August 25, 2026 that he will run for president in 2031, saying he expects to win 90% of the vote with his father's backing.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 0.35,
-      "lon": 32.58,
-      "locationName": "Kampala, Uganda",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-08-25/ugandan-army-head-museveni-s-son-declares-2031-presidential-bid",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.africanews.com/2026/08/26/uganda-presidents-son-muhoozi-announces-2031-presidential-bid/",
-          "domain": "africanews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "aecf6e3f0946",
-      "headline": "Tadej Pogačar suffers concussion, broken collarbone and neck fracture in Vuelta a España crash",
-      "summary": "Race leader Tadej Pogačar crashed with roughly 32-33 km remaining in stage 8 of the Vuelta a España on August 29, 2026, and abandoned the race. His team confirmed a concussion, a displaced fracture of the left collarbone, and a stable C7 cervical fracture; he was transferred to a hospital in Barcelona.",
-      "category": "society",
-      "severity": 3,
-      "lat": 41.39,
-      "lon": 2.16,
-      "locationName": "Barcelona, Spain",
-      "countryCode": "ES",
-      "sources": [
-        {
-          "url": "https://www.euronews.com/2026/08/29/pogacar-abandons-la-vuelta-after-heavy-crash-33km-from-finish",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cyclingnews.com/pro-cycling/teams-riders/tadej-pogacar-abandons-the-vuelta-a-espana-after-crash-on-stage-8/",
-          "domain": "cyclingnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6f6dc3a62a5c",
-      "headline": "Chinese stocks slip as US threatens tariffs, sanctions on banks over Iran ties",
-      "summary": "The Shanghai Composite fell 0.11% to 3,952.2 and the Shenzhen Component dropped 0.68% on Aug 28, 2026, as investors grew cautious over reports of a possible 7.5% US tariff on Chinese goods and Treasury warnings on Chinese banks facilitating Iran-linked transactions.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 31.23,
-      "lon": 121.47,
-      "locationName": "Shanghai, China",
-      "countryCode": "CN",
-      "sources": [
-        {
-          "url": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.business-standard.com/markets/capital-market-news/chinese-stocks-end-lower-as-us-china-tensions-weigh-on-sentiment-126082800912_1.html",
-          "domain": "business-standard.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "76e4a7794abf",
-      "headline": "Protesters clash with police outside Indonesian parliament demanding corruption asset-forfeiture bill",
-      "summary": "Groups rallied at the Senayan parliamentary complex in Jakarta on Aug 27, 2026, demanding passage of the Asset Forfeiture Bill. Police deployed roughly 18,500 officers, used water cannon and tear gas after nightfall clashes, and detained dozens.",
-      "category": "politics",
-      "severity": 3,
-      "lat": -6.21,
-      "lon": 106.85,
-      "locationName": "Senayan, Jakarta, Indonesia",
-      "countryCode": "ID",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/8/28/indonesians-march-on-parliament-to-demand-crackdown-on-corruption",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "http://www.thejakartapost.com/indonesia/2026/08/27/protesters-swarm-house-to-demand-asset-forfeiture-end-to-graft",
-          "domain": "thejakartapost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 48,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e71027dbbb1c",
-      "headline": "Malian musician Salif Keïta cancels South Africa Macufe Festival show over xenophobic violence",
-      "summary": "Malian Afro-pop star Salif Keïta announced he is cancelling his planned September 12, 2026 performance at South Africa's Macufe festival in Bloemfontein, citing reports of xenophobic violence against African migrants, amid nationwide anti-migrant protests in South Africa.",
-      "category": "society",
-      "severity": 3,
-      "lat": -29.12,
-      "lon": 26.21,
-      "locationName": "Bloemfontein, Free State, South Africa",
-      "countryCode": "ZA",
-      "sources": [
-        {
-          "url": "https://mg.co.za/friday/2026-08-26-salif-keita-cancels-sa-performance-in-response-to-xenophobic-violence/",
-          "domain": "mg.co.za",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.okayafrica.com/today-in-africa-august-28-2026-ugandas-boy-king-oyo-dies-at-34-salif-keta-cancels-south-africa-tour-over-xenophobia/1438922",
-          "domain": "okayafrica.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "cc365e3103a2",
-      "headline": "Pakistan's human rights body faults \"disproportionate\" force against PoK protesters, questions election credibility",
-      "summary": "The Human Rights Commission of Pakistan, in a report released around Aug 29-30, 2026, said state security forces used disproportionate force against protesters in Pakistan-administered Kashmir and raised concerns about election credibility amid allegations of rigging.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 34.37,
-      "lon": 73.47,
-      "locationName": "Muzaffarabad, Pakistan-administered Kashmir",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.dawn.com/news/2026027/disproportionate-use-of-force-deepened-polarisation-in-ajk",
-          "domain": "dawn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://aninews.in/news/world/asia/human-rights-panel-faults-pakistans-response-to-pojk-unrest-warns-of-excessive-force-shrinking-civic-space20260830140639/",
-          "domain": "aninews.in",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "545cfe68bc1a",
-      "headline": "Uganda's Toro Kingdom \"Boy King\" Oyo dies at 34",
-      "summary": "Oyo Nyimba Kabamba Iguru Rukidi IV, monarch of the Toro Kingdom in western Uganda who was crowned at age 3 in 1995, died on August 27, 2026 while receiving medical treatment in the United States. Toro Kingdom's prime minister confirmed the death.",
+      "id": "1ace2a39b9da",
+      "headline": "Mass protests over pension reform draw hundreds of thousands nationwide",
+      "summary": "Unions said hundreds of thousands marched in cities nationwide against proposed pension changes. The government signaled openness to amendments while defending the reform’s core provisions.",
       "category": "society",
       "severity": 2,
-      "lat": 0.67,
-      "lon": 30.28,
-      "locationName": "Fort Portal, Toro Kingdom, Uganda",
-      "countryCode": "XX",
+      "lat": -33.45,
+      "lon": -70.67,
+      "locationName": "Santiago, Chile",
+      "countryCode": "CL",
       "sources": [
         {
-          "url": "https://www.upi.com/Top_News/World-News/2026/08/28/uganda-king-oyo-dies/2121787937505/",
-          "domain": "upi.com",
+          "url": "https://www.reuters.com/world/americas/sample-protests",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center"
+        },
+        {
+          "url": "https://elpais.com/america/sample-protestas",
+          "domain": "elpais.com",
           "reliability": 82,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 60,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
+      "isBreaking": false
+    },
+    {
+      "id": "377af759da72",
+      "headline": "Nationwide teachers strike enters second week as talks stall",
+      "summary": "Schools remained closed across much of the country as unions and the government failed to reach a pay deal. Parents groups called for arbitration while both sides blamed each other for the impasse.",
+      "category": "society",
+      "severity": 2,
+      "lat": 48.86,
+      "lon": 2.35,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.lemonde.fr/societe/sample-greve",
+          "domain": "lemonde.fr",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.france24.com/en/sample-strike",
+          "domain": "france24.com",
+          "reliability": 84,
           "bias": "center"
-        },
-        {
-          "url": "https://www.cp24.com/news/world/2026/08/28/oyo-nyimba-ugandan-boy-king-who-mesmerized-world-leaders-dies-at-34/",
-          "domain": "cp24.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
-      "trustScore": 49,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e6727353a26a",
-      "headline": "Measles outbreak linked to Swedish music festival grows to 35 cases",
-      "summary": "A measles outbreak traced to the Ukult (Urkult) festival held July 30-August 2, 2026, had grown to 35 confirmed cases across nine Swedish regions by August 27, mostly among unvaccinated children and adolescents. Stockholm and other regions began offering free measles vaccination in response.",
-      "category": "health",
-      "severity": 2,
-      "lat": 59.33,
-      "lon": 18.07,
-      "locationName": "Sweden (nationwide)",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-34-2026.pdf",
-          "domain": "europa.eu",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thelocal.com/20260826/stockholm-makes-measles-vaccine-free-following-festival-outbreak",
-          "domain": "thelocal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
-      "isBreaking": false
-    },
-    {
-      "id": "89335e8751fb",
-      "headline": "Pacific Islands Forum leadership presses US, World Bank and UN for Pacific Resilience Facility funding",
-      "summary": "The Pacific Islands Forum chair and secretary-general met UN Secretary-General António Guterres in the week of Aug 20-26, 2026, seeking support to close the funding gap for the Pacific Resilience Facility, a $500 million climate adaptation fund that has raised only about $116-137 million to date.",
-      "category": "politics",
-      "severity": 2,
-      "lat": -18.14,
-      "lon": 178.44,
-      "locationName": "Suva, Fiji",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://pireport.org/2026/08/27/pacific-islands-news-roundup-august-20-august-26-2026/",
-          "domain": "pireport.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.rnz.co.nz/international/pacific-news/524422/pacific-resilience-fund-needs-us-380m-in-2yrs-years-to-reach-half-billion-dollars-goal",
-          "domain": "rnz.co.nz",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-08-31T00:08:39.179Z",
-      "lastUpdated": "2026-08-31T00:08:39.179Z",
+      "trustScore": 58,
+      "firstSeen": "2026-08-31T01:46:27.092Z",
+      "lastUpdated": "2026-08-31T01:46:27.092Z",
       "isBreaking": false
     }
   ]

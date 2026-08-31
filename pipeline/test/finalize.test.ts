@@ -53,3 +53,19 @@ describe('finalizeDataset', () => {
     expect(stableEventId('Some Headline', 10.2, 20.4)).toBe(stableEventId('Some Headline', 10.2, 20.4));
   });
 });
+
+describe('per-source preview images', () => {
+  it('carries resolved source images forward by URL across runs', () => {
+    const first = finalizeDataset(MOCK_STAGED, null, 'daily');
+    // simulate enrichment having resolved images for two of the first event's sources
+    first.events[0].sources[0].image = 'https://cdn.example.com/a.jpg';
+    first.events[0].sources[1].image = 'https://cdn.example.com/b.jpg';
+
+    const second = finalizeDataset(MOCK_STAGED, first, 'daily');
+    const carried = second.events.find((e) => e.id === first.events[0].id)!;
+    expect(carried.sources[0].image).toBe('https://cdn.example.com/a.jpg');
+    expect(carried.sources[1].image).toBe('https://cdn.example.com/b.jpg');
+    // sources that never had one stay empty
+    expect(carried.sources[2]?.image).toBeUndefined();
+  });
+});

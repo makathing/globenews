@@ -10,11 +10,29 @@ import { useGlobeStore, useVisibleEvents } from '../store';
 import { CategoryIcon } from './icons';
 import { StatusPanel } from './StatusPanel';
 
-function trustTier(score: number): { label: string; className: string } {
-  if (score >= 75) return { label: 'High', className: 'high' };
-  if (score >= 50) return { label: 'Corroborated', className: 'mid' };
-  if (score >= 41) return { label: 'Partial', className: 'low' };
-  return { label: 'Unverified', className: 'low' };
+/** Short outlet name for a preview tile when no image resolved: "reuters.com" -> "reuters". */
+function outletName(domain: string): string {
+  return domain.replace(/^www\./, '').split('.')[0];
+}
+
+function SourcePreviews({ event }: { event: NewsEvent }) {
+  // one tile per source, up to three — images where we have them, the outlet
+  // name where we don't, so the row still says who is carrying the story
+  const previews = event.sources.slice(0, 3);
+  if (previews.length === 0) return null;
+  return (
+    <div className="card-sources">
+      {previews.map((source) => (
+        <span key={source.url} className="card-source" title={source.domain}>
+          {source.image ? (
+            <img src={source.image} alt="" loading="lazy" referrerPolicy="no-referrer" />
+          ) : (
+            <span className="card-source-name">{outletName(source.domain)}</span>
+          )}
+        </span>
+      ))}
+    </div>
+  );
 }
 
 function EventCard({ event, selected }: { event: NewsEvent; selected: boolean }) {
@@ -22,7 +40,6 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
   const select = useGlobeStore((s) => s.select);
   const hoveredId = useGlobeStore((s) => s.hovered?.id ?? null);
   const color = CATEGORY_COLORS[event.category];
-  const tier = trustTier(event.trustScore);
   const ref = useRef<HTMLButtonElement>(null);
   const scrollToId = useGlobeStore((s) => s.scrollToId);
   const clearScrollTo = useGlobeStore((s) => s.clearScrollTo);
@@ -42,43 +59,29 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
       style={{
         ['--chip-color' as string]: color,
         // older stories recede, matching their beams
-        opacity: 0.55 + freshness(event) * 0.45,
+        opacity: 0.6 + freshness(event) * 0.4,
       }}
       onMouseEnter={() => hoverId(event.id)}
       onMouseLeave={() => hoverId(null)}
       onClick={() => select(event.id)}
+      title={CATEGORY_LABELS[event.category]}
     >
-      <div className="card-thumb">
-        {event.image ? (
-          <img src={event.image.url} alt="" loading="lazy" referrerPolicy="no-referrer" />
-        ) : (
-          <span style={{ color }}>
-            <CategoryIcon category={event.category} size={20} />
-          </span>
-        )}
-        <span className="card-sev" title={`Severity ${event.severity} of 5`}>
-          {Array.from({ length: 5 }, (_, i) => (
-            <span key={i} className={`card-sev-tick ${i < event.severity ? 'on' : ''}`} />
-          ))}
+      <div className="card-head">
+        <span className="card-icon" style={{ color }}>
+          <CategoryIcon category={event.category} size={14} />
         </span>
+        <span className="card-headline">{event.headline}</span>
       </div>
-      <div className="card-body">
-        <div className="card-meta">
-          <span className="card-category" style={{ color }}>
-            <CategoryIcon category={event.category} size={11} />
-            {CATEGORY_LABELS[event.category]}
-          </span>
-          {event.isBreaking && <span className="card-breaking">Breaking</span>}
-          {isNew(event) && !event.isBreaking && <span className="card-new">New</span>}
-        </div>
-        <div className="card-headline">{event.headline}</div>
-        <div className="card-foot">
-          <span className="card-location">{event.locationName}</span>
-          <span className={`card-trust ${tier.className}`} title={`Trust ${event.trustScore}/100 — ${tier.label}`}>
-            {event.trustScore}
-          </span>
-          <span className="card-time">{relativeTime(event.firstSeen)}</span>
-        </div>
+
+      <SourcePreviews event={event} />
+
+      <div className="card-foot">
+        {event.isBreaking && <span className="card-breaking">Breaking</span>}
+        {isNew(event) && !event.isBreaking && <span className="card-new">New</span>}
+        <span className="card-time">{relativeTime(event.firstSeen)}</span>
+        <span className="card-trust" title={`Trust ${event.trustScore}/100`}>
+          {event.trustScore}
+        </span>
       </div>
     </button>
   );
