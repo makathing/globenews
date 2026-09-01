@@ -9,6 +9,7 @@ export const NewsSourceSchema = z.object({
   bias: z.enum(BIAS_RATINGS),
   unrated: z.boolean().optional(),
   image: z.url().optional(),
+  icon: z.url().optional(),
 });
 
 export const NewsImageSchema = z.object({
@@ -34,10 +35,20 @@ export const NewsEventSchema = z.object({
   isBreaking: z.boolean(),
 });
 
+export const RunStatsSchema = z.object({
+  imagesResolved: z.number().min(0),
+  sourcesWithImages: z.number().min(0),
+  multiSource: z.number().min(0),
+  enrichedAt: z.iso.datetime({ offset: true }).optional(),
+});
+
 export const NewsDatasetSchema = z.object({
   generatedAt: z.iso.datetime({ offset: true }),
   mode: z.enum(['daily', 'breaking']),
   events: z.array(NewsEventSchema).max(100),
+  // zod strips unknown keys rather than rejecting them, so anything absent
+  // here is silently dropped on read — stats have to be declared to survive
+  stats: RunStatsSchema.optional(),
 });
 
 /**

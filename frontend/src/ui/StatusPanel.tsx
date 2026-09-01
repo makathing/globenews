@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { isStale, relativeTime } from '../lib/beams';
 import { useGlobeStore } from '../store';
 import { THEME_IDS, THEMES } from '../themes';
 
@@ -27,11 +28,18 @@ export function StatusPanel() {
   }, []);
 
   const hasBreaking = dataset?.events.some((e) => e.isBreaking) ?? false;
+  // a feed that stopped updating is the failure worth showing: the dot was
+  // green regardless of age, which made a two-day-old file look healthy
+  const stale = dataset ? isStale(dataset.generatedAt, now.getTime()) : false;
+  const dotState = stale ? 'stale' : hasBreaking ? 'alert' : 'ok';
 
   return (
     <aside className="panel status-panel" aria-label="Status and theme">
       <div className="status-row">
-        <span className={`status-dot ${hasBreaking ? 'alert' : 'ok'}`} />
+        <span
+          className={`status-dot ${dotState}`}
+          title={stale ? 'Feed has not updated recently' : undefined}
+        />
         <span className="status-main">
           {dataset ? `${dataset.events.length} signals` : 'loading…'}
           {hasBreaking && <em className="status-breaking"> · breaking</em>}
@@ -39,7 +47,11 @@ export function StatusPanel() {
         <span className="status-clock">{formatUtc(now)} UTC</span>
       </div>
       {dataset && (
-        <div className="status-sub">Last scan {formatScan(dataset.generatedAt)}</div>
+        <div className={`status-sub ${stale ? 'is-stale' : ''}`}>
+          Last scan {formatScan(dataset.generatedAt)} ·{' '}
+          {relativeTime(dataset.generatedAt, now.getTime())}
+          {dataset.stats && ` · ${dataset.stats.imagesResolved} with art`}
+        </div>
       )}
       <div className="theme-picker" role="radiogroup" aria-label="Globe theme">
         {THEME_IDS.map((id) => (

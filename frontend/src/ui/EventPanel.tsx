@@ -43,6 +43,8 @@ function BiasSpectrum({ source }: { source: NewsSource }) {
 function PreviewCard({ event }: { event: NewsEvent }) {
   const [failed, setFailed] = useState(false);
 
+  // the hero is the article's own art; when it is missing or the publisher
+  // refuses the hotlink, the category glyph says more than a stretched favicon
   if (!event.image || failed) {
     return (
       <div
@@ -64,6 +66,22 @@ function PreviewCard({ event }: { event: NewsEvent }) {
       />
       <span className="preview-credit">via {event.image.domain}</span>
     </div>
+  );
+}
+
+/** Outlet mark beside a source row, dropping out silently if it won't load. */
+function SourceMark({ source }: { source: NewsSource }) {
+  const [failed, setFailed] = useState(false);
+  if (!source.icon || failed) return <span className="source-mark is-blank" />;
+  return (
+    <img
+      className="source-mark"
+      src={source.icon}
+      alt=""
+      loading="lazy"
+      referrerPolicy="no-referrer"
+      onError={() => setFailed(true)}
+    />
   );
 }
 
@@ -164,7 +182,10 @@ export function EventPanel() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="source-domain">{source.domain}</span>
+            <span className="source-domain">
+              <SourceMark source={source} />
+              {source.domain}
+            </span>
             <span className="source-rel" title="Reliability (0-100)">
               {source.reliability}
               {source.unrated ? '*' : ''}

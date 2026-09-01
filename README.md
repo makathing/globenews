@@ -79,7 +79,21 @@ account credentials, and pushes only `data/` changes. A data push to `main` trig
 Pages deploy workflow. Manage the Routines (pause, edit schedule, view run history) from
 the Routines panel on claude.ai / the Claude app.
 
-There are intentionally **no scheduled GitHub Actions workflows** — only `deploy.yml`
+### Why image enrichment runs in GitHub Actions
+
+Resolving article previews needs **internet, not intelligence**: it is `fetch`
+plus a regex, with no model call and no API key in the path. The agent pipeline
+runs on the owner's Claude subscription in an environment that cannot reach news
+publishers, so that half was resolving nothing and — by design — saying nothing
+about it. `enrich-images.yml` runs the same `enrichImages` pass on a runner with
+open egress, using only the default `GITHUB_TOKEN`. The thinking stays tokenless;
+only the fetching moved.
+
+Each run records what it produced in `data/events.json` under `stats`, and the
+UI shows dataset age rather than an unconditional LIVE badge — a run that
+resolves nothing should not look like a run that had nothing to resolve.
+
+Aside from that, there are **no scheduled GitHub Actions workflows** — only `deploy.yml`
 remains, which needs no Anthropic credentials. If you ever prefer GitHub-hosted scheduling,
 restore the workflows from git history (`daily-batch.yml` / `breaking-monitor.yml`,
 removed in the "tokenless scheduling" commit); they support `CLAUDE_CODE_OAUTH_TOKEN`

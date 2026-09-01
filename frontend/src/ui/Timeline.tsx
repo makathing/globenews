@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { FRESHNESS_WINDOW_HOURS } from '../lib/beams';
+import { FRESHNESS_WINDOW_HOURS, isStale } from '../lib/beams';
 import { useGlobeStore } from '../store';
 
 const BUCKETS = FRESHNESS_WINDOW_HOURS; // one bar per hour
@@ -74,9 +74,15 @@ export function Timeline() {
 
   if (!dataset) return null;
 
+  // Parked at the right edge means "showing everything we have" — which is
+  // only LIVE if what we have is current. This badge read LIVE over a
+  // two-day-old file, which is the one thing it must never do.
+  const stale = isStale(dataset.generatedAt);
   const label =
     timeCursor === null
-      ? 'LIVE'
+      ? stale
+        ? 'STALE'
+        : 'LIVE'
       : new Date(timeCursor).toISOString().slice(11, 16) + ' UTC';
 
   return (
@@ -115,9 +121,20 @@ export function Timeline() {
       </div>
 
       <div className="timeline-labels">
-        <span className={`timeline-now ${timeCursor === null ? 'live' : ''}`}>{label}</span>
+        <span
+          className={`timeline-now ${timeCursor === null && !stale ? 'live' : ''} ${
+            timeCursor === null && stale ? 'stale' : ''
+          }`}
+          title={stale ? 'The feed has not updated in over a day' : undefined}
+        >
+          {label}
+        </span>
         <span className="timeline-span">
-          {filled <= 1 ? 'collecting history — 24h window' : 'last 24h'}
+          {stale
+            ? 'feed not updating'
+            : filled <= 1
+              ? 'collecting history — 24h window'
+              : 'last 24h'}
         </span>
       </div>
     </div>

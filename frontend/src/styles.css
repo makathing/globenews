@@ -102,6 +102,12 @@ body,
 .status-dot.ok {
   background: #3ecf8e;
 }
+.status-dot.stale {
+  background: #d8973c;
+}
+.status-sub.is-stale {
+  color: #d8973c;
+}
 .status-dot.alert {
   background: var(--danger);
   animation: pulse 1.2s ease-in-out infinite;
@@ -245,6 +251,25 @@ body,
   padding: 2px 7px;
   backdrop-filter: blur(4px);
 }
+/* An outlet mark is a logo, not a photograph: contain it and give it room,
+   or a square favicon gets cropped into an unrecognisable smear. */
+.card-source.is-icon {
+  background: rgba(255, 255, 255, 0.04);
+}
+.card-source.is-icon img {
+  object-fit: contain;
+  padding: 22%;
+}
+.source-mark {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+.source-mark.is-blank {
+  background: rgba(255, 255, 255, 0.06);
+}
 .preview-fallback {
   display: flex;
   align-items: center;
@@ -363,6 +388,9 @@ body,
   border-radius: var(--radius-sm);
 }
 .source-domain {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   font-size: 12.5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -760,6 +788,9 @@ body,
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   color: var(--text-secondary);
+}
+.timeline-now.stale {
+  color: #d8973c;
 }
 .timeline-now.live {
   color: #3ecf8e;

@@ -1,5 +1,10 @@
-import { useEffect, useMemo, useRef } from 'react';
-import { CATEGORIES, CATEGORY_LABELS, type NewsEvent } from '../../../shared/news';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import {
+  CATEGORIES,
+  CATEGORY_LABELS,
+  type NewsEvent,
+  type NewsSource,
+} from '../../../shared/news';
 import { SEVERITY_COLORS, freshness, isNew, relativeTime } from '../lib/beams';
 import { useGlobeStore, useVisibleEvents } from '../store';
 import { CategoryIcon } from './icons';
@@ -10,21 +15,43 @@ function outletName(domain: string): string {
   return domain.replace(/^www\./, '').split('.')[0];
 }
 
+/**
+ * Article art, then the outlet's own mark, then its name. Each step is also
+ * the recovery path for the one before it: publishers routinely 403 a
+ * hotlinked og:image, so `onError` walks down rather than straight to text.
+ */
+function SourceTile({ source }: { source: NewsSource }) {
+  const [step, setStep] = useState<'image' | 'icon' | 'name'>(
+    source.image ? 'image' : source.icon ? 'icon' : 'name',
+  );
+  const src = step === 'image' ? source.image : step === 'icon' ? source.icon : undefined;
+
+  return (
+    <span className={`card-source ${step === 'icon' ? 'is-icon' : ''}`} title={source.domain}>
+      {src ? (
+        <img
+          src={src}
+          alt=""
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          onError={() => setStep(step === 'image' && source.icon ? 'icon' : 'name')}
+        />
+      ) : (
+        <span className="card-source-name">{outletName(source.domain)}</span>
+      )}
+    </span>
+  );
+}
+
 function SourcePreviews({ event }: { event: NewsEvent }) {
-  // one tile per source, up to three — images where we have them, the outlet
-  // name where we don't, so the row still says who is carrying the story
+  // one tile per source, up to three, so the row always says who is carrying
+  // the story even when nobody's art is reachable
   const previews = event.sources.slice(0, 3);
   if (previews.length === 0) return null;
   return (
     <div className="card-sources">
       {previews.map((source) => (
-        <span key={source.url} className="card-source" title={source.domain}>
-          {source.image ? (
-            <img src={source.image} alt="" loading="lazy" referrerPolicy="no-referrer" />
-          ) : (
-            <span className="card-source-name">{outletName(source.domain)}</span>
-          )}
-        </span>
+        <SourceTile key={source.url} source={source} />
       ))}
     </div>
   );

@@ -9,6 +9,7 @@ export const REPO_ROOT = resolve(here, '..', '..');
 export const DATA_DIR = resolve(REPO_ROOT, 'data');
 export const EVENTS_PATH = resolve(DATA_DIR, 'events.json');
 export const ARCHIVE_DIR = resolve(DATA_DIR, 'archive');
+export const OUTLET_ICONS_PATH = resolve(DATA_DIR, 'outlet-icons.json');
 export const STAGING_DIR = resolve(REPO_ROOT, 'pipeline', '.staging');
 
 export function readCurrentDataset(): NewsDataset | null {
@@ -28,6 +29,34 @@ export function writeDataset(dataset: NewsDataset, { archive = false } = {}): vo
     mkdirSync(ARCHIVE_DIR, { recursive: true });
     writeFileSync(resolve(ARCHIVE_DIR, `${dataset.generatedAt.slice(0, 10)}.json`), json);
   }
+}
+
+/**
+ * Domain -> outlet icon URL, committed so a domain resolved on one run keeps
+ * working on a later run whose fetch failed. Never fatal: a missing or corrupt
+ * cache just means every icon gets rediscovered.
+ */
+export function readOutletIcons(): Record<string, string> {
+  if (!existsSync(OUTLET_ICONS_PATH)) return {};
+  try {
+    const parsed: unknown = JSON.parse(readFileSync(OUTLET_ICONS_PATH, 'utf8'));
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return {};
+    return Object.fromEntries(
+      Object.entries(parsed as Record<string, unknown>).filter(
+        ([, value]) => typeof value === 'string' && value.startsWith('https://'),
+      ),
+    ) as Record<string, string>;
+  } catch {
+    return {};
+  }
+}
+
+export function writeOutletIcons(icons: Record<string, string>): void {
+  mkdirSync(DATA_DIR, { recursive: true });
+  // sorted so a run that discovers nothing produces a byte-identical file and
+  // the workflow's "did anything change" check stays meaningful
+  const sorted = Object.fromEntries(Object.entries(icons).sort(([a], [b]) => a.localeCompare(b)));
+  writeFileSync(OUTLET_ICONS_PATH, JSON.stringify(sorted, null, 2) + '\n');
 }
 
 export function writeStagingDebug(name: string, value: unknown): void {

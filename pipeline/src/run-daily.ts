@@ -5,7 +5,7 @@ import { SUBAGENTS, coordinatorPrompt } from './agents.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_STAGED } from './mock-data.ts';
-import { finalizeDataset } from './finalize.ts';
+import { finalizeDataset, computeStats } from './finalize.ts';
 import { enrichImages } from './enrich-images.ts';
 import { parseStagedOutput, validateDataset, type StagedOutput } from './schema.ts';
 import {
@@ -18,6 +18,8 @@ import {
   waitForFile,
   writeDataset,
   writeStagingDebug,
+  readOutletIcons,
+  writeOutletIcons,
 } from './io.ts';
 
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
@@ -146,9 +148,15 @@ async function main(): Promise<void> {
       event.image = { url: event.sources[0].image!, domain: event.sources[0].domain };
     }
   } else {
-    const { resolved } = await enrichImages(dataset);
+    const icons = readOutletIcons();
+    const { resolved } = await enrichImages(dataset, icons);
+    writeOutletIcons(icons);
     console.log(`[daily] resolved ${resolved} article preview image(s)`);
   }
+  // recorded in the file, not just the log: enrichment fails silently by
+  // design, so a run that resolved nothing has to leave a trace somewhere
+  // the site can read
+  dataset.stats = computeStats(dataset);
   validateDataset(dataset);
   writeDataset(dataset, { archive: true });
   writeStagingDebug('ledger.json', ledger.toJSON());
