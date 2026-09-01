@@ -15,6 +15,10 @@
   --radius-sm: 7px;
   --font: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
   --shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+  /* one place to say "clear of the OS chrome", for everything edge-anchored;
+     these resolve to 0 unless index.html asks for viewport-fit=cover */
+  --inset-bottom: env(safe-area-inset-bottom, 0px);
+  --inset-top: env(safe-area-inset-top, 0px);
 }
 
 * {
@@ -37,6 +41,16 @@ body,
 .app {
   position: fixed;
   inset: 0;
+  /* dvh tracks the iOS toolbar as it collapses; 100vh would leave the globe
+     cropped behind it for the whole scroll gesture */
+  height: 100dvh;
+}
+
+/* The globe owns every drag, or a vertical swipe fires pull-to-refresh instead
+   of rotating the earth. !important is load-bearing here: react-three-fiber
+   sets touch-action:auto inline on the canvas, which a plain rule can't beat. */
+.app canvas {
+  touch-action: none !important;
 }
 
 /* ————— shared panel ————— */
@@ -139,9 +153,6 @@ body,
     background 0.15s,
     color 0.15s;
 }
-.theme-btn:hover {
-  color: var(--text-secondary);
-}
 .theme-btn.active {
   background: rgba(255, 255, 255, 0.12);
   color: var(--text);
@@ -151,7 +162,7 @@ body,
 .event-panel {
   top: 16px;
   right: 16px;
-  bottom: 78px;
+  bottom: calc(78px + var(--inset-bottom));
   width: min(368px, calc(100vw - 32px));
   padding: 16px 18px;
   overflow-y: auto;
@@ -265,10 +276,6 @@ body,
   cursor: pointer;
   font-size: 13px;
 }
-.close-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text);
-}
 .event-headline {
   font-size: 17px;
   font-weight: 650;
@@ -336,9 +343,6 @@ body,
   text-decoration: none;
   color: var(--text);
   border-radius: var(--radius-sm);
-}
-.source-row:hover {
-  background: rgba(255, 255, 255, 0.06);
 }
 .source-domain {
   font-size: 12.5px;
@@ -466,9 +470,6 @@ body,
   cursor: pointer;
   transition: background 0.15s, opacity 0.15s;
 }
-.filter-chip:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
 .filter-chip.off {
   opacity: 0.4;
 }
@@ -542,7 +543,6 @@ body,
   color: var(--text);
   transition: background 0.15s, border-color 0.15s, opacity 0.2s;
 }
-.event-card:hover,
 .event-card.hovered {
   background: rgba(255, 255, 255, 0.05);
 }
@@ -563,7 +563,6 @@ body,
   margin-top: 1px;
   color: var(--text-dim);
 }
-.event-card:hover .card-icon,
 .event-card.hovered .card-icon,
 .event-card.selected .card-icon {
   color: var(--text-secondary);
@@ -657,7 +656,7 @@ body,
   position: absolute;
   left: 304px;
   right: 16px;
-  bottom: 16px;
+  bottom: calc(16px + var(--inset-bottom));
   z-index: 21;
   height: 48px;
   display: flex;
@@ -684,7 +683,6 @@ body,
   align-items: center;
   justify-content: center;
 }
-.timeline-play:hover,
 .timeline-play.on {
   color: var(--text);
   background: rgba(255, 255, 255, 0.12);
@@ -758,7 +756,7 @@ body,
 .rail-toggle {
   display: none;
   position: absolute;
-  top: 14px;
+  top: calc(14px + var(--inset-top));
   left: 14px;
   z-index: 24;
   width: 36px;
@@ -849,19 +847,93 @@ body,
     left: 16px;
   }
 
-
   .event-panel {
     top: auto;
     left: 16px;
     right: 16px;
-    bottom: 78px;
+    bottom: calc(78px + var(--inset-bottom));
     width: auto;
-    max-height: 52vh;
+    max-height: 60dvh;
   }
 }
+
+/* ————— phones —————
+   Below the tablet tier the timeline has to share a narrow bar with the live
+   status, so the descriptive half goes and the essentials stay. */
+@media (max-width: 560px) {
+  .timeline {
+    left: 10px;
+    right: 10px;
+    gap: 9px;
+    padding: 0 11px;
+  }
+  .timeline-span {
+    display: none;
+  }
+  .event-panel {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+/* ————— touch —————
+   Pointer-sized targets are a miss on a fingertip, and :hover on a touch
+   screen sticks after the tap because nothing ever moves away. */
+@media (pointer: coarse) {
+  .rail-toggle {
+    width: 44px;
+    height: 44px;
+  }
+  .timeline-play {
+    width: 34px;
+    height: 34px;
+  }
+  .timeline-track {
+    height: 38px;
+  }
+  .close-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .filter-chip,
+  .theme-btn {
+    min-height: 34px;
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .status-dot.alert {
     animation: none;
+  }
+}
+
+/* ————— hover —————
+   A touch screen has no pointer to move away, so :hover latches on after a tap
+   and the row stays lit. Every rule here has a non-hover companion (.hovered,
+   .on, .selected) that still drives the same state from the app. */
+@media (hover: hover) {
+  .theme-btn:hover {
+    color: var(--text-secondary);
+  }
+  .close-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+  }
+  .source-row:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .filter-chip:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .event-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .event-card:hover .card-icon {
+    color: var(--text-secondary);
+  }
+  .timeline-play:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.12);
   }
 }

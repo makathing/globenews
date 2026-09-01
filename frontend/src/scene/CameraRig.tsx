@@ -38,6 +38,11 @@ export function CameraRig() {
     const controls = controlsRef.current;
     if (!controls) return;
 
+    // — idle auto-rotate —
+    const idle = performance.now() - lastInteraction.current > IDLE_BEFORE_AUTOROTATE_MS;
+    const drifting = !prefersReducedMotion && idle && !selectedId;
+    controls.autoRotate = drifting;
+
     // — angular velocity for motion streaks —
     const az = controls.getAzimuthalAngle();
     const pol = controls.getPolarAngle();
@@ -45,18 +50,19 @@ export function CameraRig() {
     let dAz = az - prevAngles.current.az;
     if (dAz > Math.PI) dAz -= Math.PI * 2;
     if (dAz < -Math.PI) dAz += Math.PI * 2;
-    const instVx = dAz / dt;
-    const instVy = (pol - prevAngles.current.pol) / dt;
+    const dPol = pol - prevAngles.current.pol;
     prevAngles.current = { az, pol };
+
+    // Auto-rotate is camera motion too, so measuring it blindly leaves the sky
+    // permanently streaked on an untouched globe. Streaks belong to *your*
+    // motion: drag and the damped fling after it. Idle drift decays to still.
+    const instVx = drifting ? 0 : dAz / dt;
+    const instVy = drifting ? 0 : dPol / dt;
 
     const smoothing = Math.min(dt * 7, 1);
     cameraMotion.vx += (instVx - cameraMotion.vx) * smoothing;
     cameraMotion.vy += (instVy - cameraMotion.vy) * smoothing;
     cameraMotion.speed = Math.hypot(cameraMotion.vx, cameraMotion.vy);
-
-    // — idle auto-rotate —
-    const idle = performance.now() - lastInteraction.current > IDLE_BEFORE_AUTOROTATE_MS;
-    controls.autoRotate = !prefersReducedMotion && idle && !selectedId;
 
     // — fly to selected blip —
     if (flyTarget.current) {
