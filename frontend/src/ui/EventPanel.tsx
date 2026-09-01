@@ -6,7 +6,7 @@ import {
   type NewsSource,
 } from '../../../shared/news';
 import { useGlobeStore } from '../store';
-import { CategoryIcon, ClockIcon, LinkIcon, ShieldIcon } from './icons';
+import { CategoryIcon, CheckIcon, ClockIcon, LinkIcon, ShieldIcon } from './icons';
 import { shareUrlForEvent } from '../lib/urlState';
 
 /**
@@ -94,10 +94,12 @@ function CopyLinkButton({ eventId }: { eventId: string }) {
           setCopied(false);
         }
       }}
-      aria-label="Copy link to this story"
+      aria-label={copied ? 'Link copied' : 'Copy link to this story'}
     >
-      <LinkIcon size={12} />
-      {copied ? 'Copied' : 'Copy link'}
+      {copied ? <CheckIcon size={12} /> : <LinkIcon size={12} />}
+      {/* the label is dropped on a phone, where the row can't afford it — the
+          icon carries the state instead, which is why it changes on copy */}
+      <span className="copy-link-label">{copied ? 'Copied' : 'Copy link'}</span>
     </button>
   );
 }

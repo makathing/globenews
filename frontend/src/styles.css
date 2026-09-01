@@ -19,6 +19,8 @@
      these resolve to 0 unless index.html asks for viewport-fit=cover */
   --inset-bottom: env(safe-area-inset-bottom, 0px);
   --inset-top: env(safe-area-inset-top, 0px);
+  /* drawer width, shared by the rail and whatever has to sit beside it */
+  --rail-w: min(312px, 86vw);
 }
 
 * {
@@ -264,6 +266,22 @@ body,
   background: var(--danger);
   border-radius: 999px;
   padding: 3px 9px;
+}
+/* shares the pill language of the badges beside it, rather than the
+   user-agent button it was rendering as */
+.copy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  cursor: pointer;
 }
 .close-btn {
   margin-left: auto;
@@ -835,16 +853,33 @@ body,
   .rail {
     transform: translateX(-100%);
     transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.25, 1);
-    width: min(312px, 86vw);
+    width: var(--rail-w);
+    /* the rail runs to the bottom edge, so its own footer needs the inset */
+    padding-bottom: var(--inset-bottom);
   }
   .app.rail-open .rail {
     transform: none;
   }
   .rail-toggle {
     display: block;
+    transition: left 0.25s cubic-bezier(0.2, 0.9, 0.25, 1);
+  }
+  /* Open, the toggle would sit on top of the rail's own wordmark. Ride the
+     drawer's edge instead, where it reads as the thing that closes it. */
+  .app.rail-open .rail-toggle {
+    /* beside the drawer, but never past the screen edge: on a 320px phone the
+       rail alone is 275px wide and a naive offset would push this off-screen */
+    left: min(calc(var(--rail-w) + 8px), calc(100vw - 58px));
+  }
+  /* The drawer is modal on a phone: full height and over the globe. Leaving
+     the timeline under it means tapping the scrubber hits the rail instead. */
+  .app.rail-open .timeline {
+    opacity: 0;
+    pointer-events: none;
   }
   .timeline {
     left: 16px;
+    transition: opacity 0.2s;
   }
 
   .event-panel {
@@ -874,6 +909,14 @@ body,
     left: 10px;
     right: 10px;
   }
+  /* the panel head is 10px over budget at this width, and the label is the
+     part that can go — the icon still says "link", and now says "copied" too */
+  .copy-link-label {
+    display: none;
+  }
+  .copy-link {
+    padding: 3px 9px;
+  }
 }
 
 /* ————— touch —————
@@ -896,7 +939,8 @@ body,
     height: 36px;
   }
   .filter-chip,
-  .theme-btn {
+  .theme-btn,
+  .copy-link {
     min-height: 34px;
   }
 }
@@ -935,5 +979,9 @@ body,
   .timeline-play:hover {
     color: var(--text);
     background: rgba(255, 255, 255, 0.12);
+  }
+  .copy-link:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.1);
   }
 }
