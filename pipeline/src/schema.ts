@@ -8,6 +8,7 @@ export const NewsSourceSchema = z.object({
   reliability: z.number().min(0).max(100),
   bias: z.enum(BIAS_RATINGS),
   unrated: z.boolean().optional(),
+  image: z.url().optional(),
 });
 
 export const NewsImageSchema = z.object({

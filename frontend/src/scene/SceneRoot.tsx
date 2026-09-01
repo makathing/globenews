@@ -6,7 +6,7 @@ import { CountryBorders } from './CountryBorders';
 import { Starfield } from './Starfield';
 import { Sun } from './Sun';
 import { SpaceBackground } from './SpaceBackground';
-import { Blips } from './Blips';
+import { Beams } from './Beams';
 import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
 import { useGlobeStore, useTheme } from '../store';
@@ -19,12 +19,12 @@ export function SceneRoot() {
     <Canvas
       dpr={[1, 1.75]}
       // start well back so the whole planet reads as "Earth in space"
-      camera={{ position: [1.0, 0.85, 3.3], fov: 45, near: 0.1, far: 120 }}
+      camera={{ position: [1.15, 0.95, 4.3], fov: 45, near: 0.1, far: 120 }}
       gl={{ antialias: false, powerPreference: 'high-performance' }}
       onPointerMissed={() => select(null)}
-      style={{ position: 'absolute', inset: 0, background: '#04070d' }}
+      style={{ position: 'absolute', inset: 0, background: '#010204' }}
     >
-      <color attach="background" args={['#04070d']} />
+      <color attach="background" args={['#010204']} />
       <SpaceBackground />
       <Starfield />
       <Sun />
@@ -33,7 +33,7 @@ export function SceneRoot() {
         {theme.clouds && <Clouds />}
       </Suspense>
       <CountryBorders />
-      <Blips />
+      <Beams />
       <CameraRig />
       <Effects />
     </Canvas>

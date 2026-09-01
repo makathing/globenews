@@ -1,6 +1,10 @@
 /**
  * Shared vocabulary between the agent pipeline (producer) and the globe frontend (consumer).
- * This file is the single source of truth for categories, colors, and the dataset shape.
+ * This file is the single source of truth for categories and the dataset shape.
+ *
+ * Colour lives in the frontend: severity drives the beam ramp
+ * (frontend/src/lib/beams.ts) and the interface is otherwise monochrome, so
+ * there is deliberately no per-category palette here.
  * It must stay dependency-free so both workspaces can import it directly.
  */
 
@@ -16,18 +20,6 @@ export const CATEGORIES = [
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
-
-/** Neon palette tuned for additive glow on a dark globe. */
-export const CATEGORY_COLORS: Record<Category, string> = {
-  conflict: '#ff3b3b',
-  disaster: '#ff9f1c',
-  politics: '#b14aff',
-  economy: '#ffd60a',
-  health: '#2ec4b6',
-  science: '#4cc9f0',
-  climate: '#57e39f',
-  society: '#7aa2ff',
-};
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   conflict: 'Conflict & Security',
@@ -59,6 +51,8 @@ export interface NewsSource {
   bias: BiasRating;
   /** True when the domain was not in the ratings table. */
   unrated?: boolean;
+  /** This article's own preview image (og:image), when resolvable. */
+  image?: string;
 }
 
 /** Article preview image (hotlinked Open Graph image from one of the sources). */

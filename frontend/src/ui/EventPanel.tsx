@@ -1,18 +1,21 @@
 import { useState } from 'react';
 import {
   BIAS_RATINGS,
-  CATEGORY_COLORS,
   CATEGORY_LABELS,
   type NewsEvent,
   type NewsSource,
 } from '../../../shared/news';
 import { useGlobeStore } from '../store';
-import { CategoryIcon, ClockIcon, ShieldIcon } from './icons';
+import { CategoryIcon, ClockIcon, LinkIcon, ShieldIcon } from './icons';
+import { shareUrlForEvent } from '../lib/urlState';
 
+/**
+ * Trust is neutral until it's a problem: a green/amber/red scale spends colour
+ * on every value, when the only reading that needs to interrupt you is a story
+ * we could not corroborate.
+ */
 function trustColor(score: number): string {
-  if (score >= 75) return '#57e39f';
-  if (score >= 50) return '#ffd60a';
-  return '#ff5c5c';
+  return score >= 41 ? 'var(--text)' : '#ff8b6b';
 }
 
 function trustLabel(score: number): string {
@@ -39,16 +42,12 @@ function BiasSpectrum({ source }: { source: NewsSource }) {
 
 function PreviewCard({ event }: { event: NewsEvent }) {
   const [failed, setFailed] = useState(false);
-  const color = CATEGORY_COLORS[event.category];
 
   if (!event.image || failed) {
     return (
       <div
         className="preview-card preview-fallback"
-        style={{
-          background: `linear-gradient(135deg, color-mix(in srgb, ${color} 26%, #10141b), #10141b 78%)`,
-          color,
-        }}
+        style={{ color: 'var(--text-dim)' }}
       >
         <CategoryIcon category={event.category} size={40} strokeWidth={1.2} />
       </div>
@@ -79,6 +78,30 @@ function SeverityTicks({ severity }: { severity: number }) {
   );
 }
 
+function CopyLinkButton({ eventId }: { eventId: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <button
+      className="copy-link"
+      onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(shareUrlForEvent(eventId));
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1800);
+        } catch {
+          // clipboard blocked (insecure context / denied) — the URL bar already
+          // carries the link, so this is a convenience, not the only route
+          setCopied(false);
+        }
+      }}
+      aria-label="Copy link to this story"
+    >
+      <LinkIcon size={12} />
+      {copied ? 'Copied' : 'Copy link'}
+    </button>
+  );
+}
+
 export function EventPanel() {
   const dataset = useGlobeStore((s) => s.dataset);
   const selectedId = useGlobeStore((s) => s.selectedId);
@@ -90,15 +113,13 @@ export function EventPanel() {
   return (
     <aside className="panel event-panel" aria-label="Event details">
       <div className="event-panel-head">
-        <span
-          className="category-badge"
-          style={{ ['--chip-color' as string]: CATEGORY_COLORS[event.category] }}
-        >
+        <span className="category-badge">
           <CategoryIcon category={event.category} size={12} />
           {CATEGORY_LABELS[event.category]}
         </span>
         <SeverityTicks severity={event.severity} />
         {event.isBreaking && <span className="breaking-badge">Breaking</span>}
+        <CopyLinkButton eventId={event.id} />
         <button className="close-btn" onClick={() => select(null)} aria-label="Close panel">
           ✕
         </button>

@@ -11,6 +11,8 @@ import { normalizeDomain } from './source-ratings.ts';
 const FETCH_TIMEOUT_MS = 8_000;
 const MAX_HTML_BYTES = 200_000;
 const CONCURRENCY = 6;
+/** How many sources per event get their own preview image. */
+const MAX_PREVIEWS = 3;
 const UA =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
@@ -65,23 +67,32 @@ async function fetchHtml(url: string): Promise<string | null> {
   }
 }
 
-async function resolveEventImage(event: NewsEvent): Promise<NewsImage | undefined> {
+/**
+ * Resolve a preview image per source (up to MAX_PREVIEWS), so the UI can show
+ * several outlets' art side by side rather than one hero. Sets `source.image`
+ * in place and returns the first hit for the event-level hero.
+ */
+async function resolveEventImages(event: NewsEvent): Promise<NewsImage | undefined> {
   // best sources first; skip low-reliability outlets — their preview art
   // shouldn't front a verified story
   const candidates = [...event.sources]
-    .filter((source) => source.reliability >= 50)
+    .filter((source) => source.reliability >= 50 && !source.image)
     .sort((a, b) => b.reliability - a.reliability)
-    .slice(0, 3);
+    .slice(0, MAX_PREVIEWS);
 
-  for (const source of candidates) {
-    const html = await fetchHtml(source.url);
-    if (!html) continue;
-    const imageUrl = extractOgImage(html);
-    if (imageUrl) {
-      return { url: imageUrl, domain: normalizeDomain(new URL(source.url).hostname) };
-    }
-  }
-  return undefined;
+  await Promise.all(
+    candidates.map(async (source) => {
+      const html = await fetchHtml(source.url);
+      if (!html) return;
+      const imageUrl = extractOgImage(html);
+      if (imageUrl) source.image = imageUrl;
+    }),
+  );
+
+  const hero = event.sources.find((source) => source.image);
+  return hero?.image
+    ? { url: hero.image, domain: normalizeDomain(new URL(hero.url).hostname) }
+    : undefined;
 }
 
 /** Mutates the dataset in place, attaching preview images where resolvable. */
@@ -92,9 +103,8 @@ export async function enrichImages(dataset: NewsDataset): Promise<{ resolved: nu
     for (;;) {
       const event = queue.shift();
       if (!event) return;
-      if (event.image) continue; // carried over from a previous run
-      const image = await resolveEventImage(event);
-      if (image) {
+      const image = await resolveEventImages(event);
+      if (image && !event.image) {
         event.image = image;
         resolved += 1;
       }

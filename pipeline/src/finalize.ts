@@ -59,6 +59,15 @@ export function finalizeDataset(
     const id = stableEventId(stagedEvent.headline, coords.lat, coords.lon);
     const prev = prevById.get(id);
 
+    // reuse preview images already resolved for the same article URLs
+    const previousImages = new Map(
+      (prev?.sources ?? []).filter((s) => s.image).map((s) => [s.url, s.image!]),
+    );
+    for (const source of sources) {
+      const carried = previousImages.get(source.url);
+      if (carried) source.image = carried;
+    }
+
     events.push({
       id,
       headline: stagedEvent.headline,

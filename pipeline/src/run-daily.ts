@@ -140,10 +140,10 @@ async function main(): Promise<void> {
     // placeholder previews on a handful of events so the UI (and its
     // no-image fallback) can both be exercised in development
     for (const event of dataset.events.slice(0, 6)) {
-      event.image = {
-        url: `https://picsum.photos/seed/${event.id}/640/360`,
-        domain: event.sources[0].domain,
-      };
+      event.sources.slice(0, 3).forEach((source, index) => {
+        source.image = `https://picsum.photos/seed/${event.id}${index}/320/200`;
+      });
+      event.image = { url: event.sources[0].image!, domain: event.sources[0].domain };
     }
   } else {
     const { resolved } = await enrichImages(dataset);

@@ -1,4 +1,4 @@
-import { CATEGORY_COLORS, CATEGORY_LABELS } from '../../../shared/news';
+import { CATEGORY_LABELS } from '../../../shared/news';
 import { useGlobeStore } from '../store';
 import { CategoryIcon } from './icons';
 
@@ -7,7 +7,8 @@ export function Tooltip() {
   const dataset = useGlobeStore((s) => s.dataset);
 
   const event = hovered ? dataset?.events.find((e) => e.id === hovered.id) : undefined;
-  if (!hovered || !event) return null;
+  // rail hovers carry no cursor position (x = -1) — no floating card for those
+  if (!hovered || !event || hovered.x < 0) return null;
 
   return (
     <div
@@ -22,7 +23,7 @@ export function Tooltip() {
           <img src={event.image.url} alt="" loading="lazy" referrerPolicy="no-referrer" />
         </div>
       )}
-      <span className="tooltip-chip" style={{ color: CATEGORY_COLORS[event.category] }}>
+      <span className="tooltip-chip">
         <CategoryIcon category={event.category} size={11} />
         {CATEGORY_LABELS[event.category]}
       </span>

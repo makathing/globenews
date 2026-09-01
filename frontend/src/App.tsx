@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react';
 import type { NewsDataset } from '../../shared/news';
 import { SceneRoot } from './scene/SceneRoot';
-import { Legend } from './ui/Legend';
-import { Ticker } from './ui/Ticker';
+import { EventRail } from './ui/EventRail';
+import { Timeline } from './ui/Timeline';
 import { EventPanel } from './ui/EventPanel';
 import { Tooltip } from './ui/Tooltip';
-import { StatusPanel } from './ui/StatusPanel';
 import { useGlobeStore } from './store';
+import { useUrlSync } from './lib/urlState';
 
 export function App() {
   const setDataset = useGlobeStore((s) => s.setDataset);
   const dataset = useGlobeStore((s) => s.dataset);
   const [error, setError] = useState<string | null>(null);
+  const [railOpen, setRailOpen] = useState(false);
+  useUrlSync();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/events.json`)
@@ -24,14 +26,19 @@ export function App() {
   }, [setDataset]);
 
   return (
-    <div className="app">
+    <div className={`app ${railOpen ? 'rail-open' : ''}`}>
       <SceneRoot />
-      <div className="brand">GlobeNews</div>
-      <Ticker />
-      <Legend />
-      <StatusPanel />
+      <EventRail />
+      <Timeline />
       <EventPanel />
       <Tooltip />
+      <button
+        className="rail-toggle"
+        onClick={() => setRailOpen((open) => !open)}
+        aria-label={railOpen ? 'Hide event list' : 'Show event list'}
+      >
+        {railOpen ? '✕' : '☰'}
+      </button>
       {!dataset && !error && <div className="data-status">Loading events…</div>}
       {error && <div className="data-status">Couldn’t load events — {error}</div>}
     </div>
