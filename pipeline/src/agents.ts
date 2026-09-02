@@ -109,7 +109,12 @@ Workflow (follow strictly, in order):
 2. Collect all candidates, then invoke the "researcher" subagent in 2-4 batches (group candidates by region) to verify them. Pass each batch the full candidate details.
 3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full), and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
 4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path and telling it the previous attempt failed to write. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
-5. Reply with a one-paragraph run summary (counts of candidates, verified, discarded). If for any reason the file could not be written at all, your reply must instead contain the complete final JSON ({"events": [...]}) so the caller can recover it.
+5. RE-READ the file you just wrote and verify EVERY event object has all of:
+   headline, summary, category, severity (integer 1-5), lat, lon, locationName,
+   countryCode, sources. Rewrite the file fixing any that are missing a field —
+   a run has shipped where every event omitted "severity", which silently
+   flattened the whole dataset. Do not report done until that check passes.
+6. Reply with a one-paragraph run summary (counts of candidates, verified, discarded). If for any reason the file could not be written at all, your reply must instead contain the complete final JSON ({"events": [...]}) so the caller can recover it.
 
 Quality bar: only verified, multi-source events make the dataset. Trust scores are computed downstream — never invent numeric trust values.`;
 }

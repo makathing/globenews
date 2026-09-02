@@ -8,7 +8,8 @@
     "monitor": "tsx src/run-monitor.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "enrich": "tsx src/enrich-existing.ts"
+    "enrich": "tsx src/enrich-existing.ts",
+    "backfill-severity": "tsx src/backfill-severity.ts"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.3.0",

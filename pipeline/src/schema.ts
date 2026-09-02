@@ -40,6 +40,8 @@ export const RunStatsSchema = z.object({
   sourcesWithImages: z.number().min(0),
   multiSource: z.number().min(0),
   enrichedAt: z.iso.datetime({ offset: true }).optional(),
+  severityDefaulted: z.number().min(0).optional(),
+  severityBackfilled: z.number().min(0).optional(),
 });
 
 export const NewsDatasetSchema = z.object({
@@ -128,6 +130,13 @@ export interface SalvageResult {
   staged: StagedOutput;
   dropped: { index: number; reason: string }[];
   repaired: number;
+  /**
+   * How many events had no usable severity and took the default. A live run
+   * once produced 19 of 19 here: the synthesizer omitted the field entirely,
+   * every event silently became a 3, and the globe's whole severity encoding
+   * went flat with nothing in the logs to say so. Counted so it can be seen.
+   */
+  severityDefaulted: number;
 }
 
 /**
@@ -144,6 +153,7 @@ export function parseStagedOutput(raw: string): SalvageResult {
   const staged: StagedOutput = { events: [] };
   const dropped: SalvageResult['dropped'] = [];
   let repaired = 0;
+  let severityDefaulted = 0;
 
   for (let index = 0; index < json.events.length; index++) {
     const rawEvent = json.events[index];
@@ -189,6 +199,7 @@ export function parseStagedOutput(raw: string): SalvageResult {
           fixed.severity = rawSeverity;
         } else {
           fixed.severity = 3;
+          severityDefaulted += 1;
         }
       }
       // missing coordinates: resolve from the gazetteer by location name
@@ -235,5 +246,5 @@ export function parseStagedOutput(raw: string): SalvageResult {
       `No staged events survived validation (${dropped.length} dropped). First reason: ${dropped[0]?.reason}`,
     );
   }
-  return { staged, dropped, repaired };
+  return { staged, dropped, repaired, severityDefaulted };
 }

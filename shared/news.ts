@@ -101,6 +101,13 @@ export interface RunStats {
   multiSource: number;
   /** When the image enrichment pass last ran, if it has. */
   enrichedAt?: string;
+  /**
+   * Events whose severity was not supplied by the synthesizer and fell back to
+   * the default. A high number means the beam encoding is largely fabricated.
+   */
+  severityDefaulted?: number;
+  /** Events whose severity was assigned afterwards by the backfill pass. */
+  severityBackfilled?: number;
 }
 
 export interface NewsDataset {

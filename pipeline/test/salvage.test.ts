@@ -149,3 +149,42 @@ describe('severity coercion (live-run regression)', () => {
     expect(result.staged.events.map((e) => e.severity)).toEqual([4, 2, 3]);
   });
 });
+
+describe('severity defaulting is reported, not silent', () => {
+  // The bug this guards: a live run's synthesizer omitted `severity` on every
+  // event. Each one quietly became a 3, the run reported success, and the
+  // globe rendered 19 identical beams. The default is fine; being unable to
+  // see that it fired is not.
+  const event = (extra: Record<string, unknown> = {}) => ({
+    headline: 'A sufficiently long and neutral headline for validation',
+    summary:
+      'A factual two sentence summary that comfortably clears the minimum length the schema asks for. It says what happened and where.',
+    category: 'politics',
+    lat: 51.5,
+    lon: -0.12,
+    locationName: 'London, United Kingdom',
+    countryCode: 'GB',
+    sources: [{ url: 'https://www.bbc.co.uk/news/example-1' }],
+    ...extra,
+  });
+
+  it('counts an event that had no usable severity', () => {
+    const raw = JSON.stringify({ events: [event()] });
+    const result = parseStagedOutput(raw);
+    expect(result.staged.events).toHaveLength(1);
+    expect(result.staged.events[0].severity).toBe(3);
+    expect(result.severityDefaulted).toBe(1);
+  });
+
+  it('does not count events that carried their own severity', () => {
+    const raw = JSON.stringify({ events: [event({ severity: 5 }), event({ severity: 'high' })] });
+    const result = parseStagedOutput(raw);
+    expect(result.staged.events.map((e) => e.severity)).toEqual([5, 4]);
+    expect(result.severityDefaulted).toBe(0);
+  });
+
+  it('reports the whole batch when the field is missing everywhere', () => {
+    const raw = JSON.stringify({ events: [event(), event(), event()] });
+    expect(parseStagedOutput(raw).severityDefaulted).toBe(3);
+  });
+});
