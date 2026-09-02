@@ -79,24 +79,37 @@ account credentials, and pushes only `data/` changes. A data push to `main` trig
 Pages deploy workflow. Manage the Routines (pause, edit schedule, view run history) from
 the Routines panel on claude.ai / the Claude app.
 
-### Why image enrichment runs in GitHub Actions
+### Why image enrichment happens at deploy time
 
 Resolving article previews needs **internet, not intelligence**: it is `fetch`
 plus a regex, with no model call and no API key in the path. The agent pipeline
 runs on the owner's Claude subscription in an environment that cannot reach news
-publishers, so that half was resolving nothing and — by design — saying nothing
-about it. `enrich-images.yml` runs the same `enrichImages` pass on a runner with
-open egress, using only the default `GITHUB_TOKEN`. The thinking stays tokenless;
-only the fetching moved.
+publishers, so that half resolves nothing and — by design — says nothing about
+it. `deploy.yml` runs the same `enrichImages` pass on a runner with open egress.
+The thinking stays tokenless; only the fetching moved.
 
-Each run records what it produced in `data/events.json` under `stats`, and the
-UI shows dataset age rather than an unconditional LIVE badge — a run that
-resolves nothing should not look like a run that had nothing to resolve.
+It runs **in the build, and never commits**. Preview images are presentation,
+not data: derived, best-effort, re-derivable at any time. `prebuild`'s
+`copy-data.mjs` copies the enriched file into `public/`, and `vite-plugin-seo`
+reads the same file for per-story `og:image`. The repo holds news; the build
+adds art.
 
-The enrichment commit cannot trigger the deploy through `on: push`: GitHub
-blocks workflow triggering for pushes made with `GITHUB_TOKEN`, to prevent
-recursion. `deploy.yml` therefore also listens on `workflow_run` for that
-workflow completing — without it, resolved images sit on `main` undeployed.
+That boundary is load-bearing. Enrichment used to be its own workflow that
+committed to `data/`, which collided with every pull request touching the
+dataset — and since GitHub refuses to trigger workflows from a `GITHUB_TOKEN`
+push, it also needed a `workflow_run` trigger on `deploy.yml` just to reach the
+site. Both problems were caused by writing derived output back into the repo.
+Neither exists now.
+
+The tradeoff: builds are not byte-identical, since publisher availability
+varies between deploys. The UI already degrades article image → outlet icon →
+outlet name, so absence is handled; two deploys of one commit can simply differ
+in how much art they carry.
+
+Each pipeline run still records what it produced in `data/events.json` under
+`stats`, and the UI shows dataset age rather than an unconditional LIVE badge —
+a run that resolves nothing should not look like a run that had nothing to
+resolve.
 
 Aside from that, there are **no scheduled GitHub Actions workflows** — only `deploy.yml`
 remains, which needs no Anthropic credentials. If you ever prefer GitHub-hosted scheduling,

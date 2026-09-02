@@ -14,9 +14,13 @@ import { validateDataset } from './schema.ts';
  * This exists because resolving previews needs internet, not intelligence:
  * it is `fetch` plus a regex, with no model call and no API key anywhere in
  * the path. The agent pipeline runs on the owner's Claude subscription in an
- * environment that cannot reach news publishers, so the fetching half is
- * split out to run where egress exists (GitHub Actions) while the thinking
- * half stays tokenless.
+ * environment that cannot reach news publishers, so the fetching half runs
+ * where egress exists — a step in `deploy.yml`, against the ephemeral CI
+ * checkout — while the thinking half stays tokenless.
+ *
+ * It deliberately does not commit what it writes. Images are presentation,
+ * not data: derived, best-effort and re-derivable. Writing them back into the
+ * repo collided with every pull request that touched the dataset.
  *
  * Exits 0 whether or not anything resolved — nothing here is worth failing a
  * workflow over. The counts it prints are the actual signal.
