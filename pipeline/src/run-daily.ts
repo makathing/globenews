@@ -103,13 +103,38 @@ async function runCoordinator(
     console.warn('[daily] staging file missing — recovering JSON from coordinator reply');
     raw = embedded[0];
   }
-  const { staged, dropped, repaired } = parseStagedOutput(raw);
+  const { staged, dropped, repaired, severityDefaulted } = parseStagedOutput(raw);
   if (repaired > 0) console.log(`[daily] repaired ${repaired} event(s) (truncation/clamping)`);
   for (const drop of dropped) {
     console.warn(`[daily] dropped staged event #${drop.index}: ${drop.reason}`);
   }
+
+  // Severity drives beam height and colour, so a batch where nobody supplied
+  // one renders every event identically — the encoding silently dies. Worth a
+  // retry: the loop already feeds the reason back to the coordinator, it just
+  // never knew about this. On the last attempt take the flat data anyway;
+  // current news with poor severity still beats no news.
+  if (severityDefaulted > 0) {
+    console.warn(
+      `[daily] ${severityDefaulted}/${staged.events.length} event(s) had no severity and took the default`,
+    );
+  }
+  if (severityDefaulted === staged.events.length && attempt < MAX_ATTEMPTS) {
+    throw new PipelineError(
+      `No staged event carried a "severity" field (${staged.events.length} events). ` +
+        'Every event object MUST include "severity": an integer 1-5, alongside ' +
+        'headline, summary, category, lat, lon, locationName and countryCode.',
+      true,
+    );
+  }
+  lastSeverityDefaulted = severityDefaulted;
   return staged;
 }
+
+/** Attempts before the run takes whatever it has. */
+const MAX_ATTEMPTS = 3;
+/** Carried from the winning attempt into the dataset's stats. */
+let lastSeverityDefaulted = 0;
 
 async function main(): Promise<void> {
   const ledger = new RunLedger();
@@ -129,7 +154,7 @@ async function main(): Promise<void> {
       } catch (error) {
         if (error instanceof PipelineError && !error.retryable) throw error;
         attempt += 1;
-        if (attempt > 2) throw error;
+        if (attempt >= MAX_ATTEMPTS) throw error;
         feedback = error instanceof Error ? error.message : String(error);
         console.warn(`[daily] attempt ${attempt} failed, retrying with feedback: ${feedback}`);
       }
@@ -156,7 +181,7 @@ async function main(): Promise<void> {
   // recorded in the file, not just the log: enrichment fails silently by
   // design, so a run that resolved nothing has to leave a trace somewhere
   // the site can read
-  dataset.stats = computeStats(dataset);
+  dataset.stats = { ...computeStats(dataset), severityDefaulted: lastSeverityDefaulted };
   validateDataset(dataset);
   writeDataset(dataset, { archive: true });
   writeStagingDebug('ledger.json', ledger.toJSON());

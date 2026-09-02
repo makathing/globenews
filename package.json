@@ -2,7 +2,7 @@
   "name": "globenews",
   "private": true,
   "version": "0.1.0",
-  "description": "3D news radar globe — Earth from space with pulsing hotspot blips, fed by a multi-agent Claude news pipeline",
+  "description": "3D news radar globe \u2014 Earth from space with pulsing hotspot blips, fed by a multi-agent Claude news pipeline",
   "workspaces": [
     "frontend",
     "pipeline"
@@ -13,7 +13,8 @@
     "test": "npm run test -w pipeline",
     "pipeline:daily": "npm run daily -w pipeline",
     "pipeline:monitor": "npm run monitor -w pipeline",
-    "pipeline:enrich": "npm run enrich -w pipeline"
+    "pipeline:enrich": "npm run enrich -w pipeline",
+    "pipeline:backfill-severity": "npm run backfill-severity -w pipeline"
   },
   "engines": {
     "node": ">=20"
