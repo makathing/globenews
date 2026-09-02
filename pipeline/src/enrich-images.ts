@@ -38,6 +38,38 @@ export function extractOgImage(html: string): string | null {
   return null;
 }
 
+/**
+ * Pull the site's own icon out of an HTML head, absolute-ised against the page
+ * it came from. This is the fallback art for a story whose article has no
+ * og:image, or whose publisher refuses a hotlinked one — taken from the same
+ * fetch rather than a third-party favicon service, which would hand every
+ * viewer's reading list to another host.
+ */
+export function extractIconHref(html: string, pageUrl: string): string | null {
+  const head = html.slice(0, MAX_HTML_BYTES);
+  // apple-touch-icon first: it is a real bitmap at a useful size, where
+  // rel="icon" is often a 16px .ico that looks like mud in a preview tile
+  const patterns = [
+    /<link[^>]+rel=["'][^"']*apple-touch-icon[^"']*["'][^>]*href=["']([^"']+)["']/i,
+    /<link[^>]+href=["']([^"']+)["'][^>]*rel=["'][^"']*apple-touch-icon[^"']*["']/i,
+    /<link[^>]+rel=["'](?:shortcut )?icon["'][^>]*href=["']([^"']+)["']/i,
+    /<link[^>]+href=["']([^"']+)["'][^>]*rel=["'](?:shortcut )?icon["']/i,
+  ];
+  for (const pattern of patterns) {
+    const match = head.match(pattern);
+    if (!match) continue;
+    const raw = match[1].replace(/&amp;/g, '&').trim();
+    try {
+      const url = new URL(raw, pageUrl);
+      if (url.protocol !== 'https:') continue;
+      return url.toString();
+    } catch {
+      continue;
+    }
+  }
+  return null;
+}
+
 async function fetchHtml(url: string): Promise<string | null> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
@@ -72,7 +104,10 @@ async function fetchHtml(url: string): Promise<string | null> {
  * several outlets' art side by side rather than one hero. Sets `source.image`
  * in place and returns the first hit for the event-level hero.
  */
-async function resolveEventImages(event: NewsEvent): Promise<NewsImage | undefined> {
+async function resolveEventImages(
+  event: NewsEvent,
+  icons: OutletIcons,
+): Promise<NewsImage | undefined> {
   // best sources first; skip low-reliability outlets — their preview art
   // shouldn't front a verified story
   const candidates = [...event.sources]
@@ -86,8 +121,21 @@ async function resolveEventImages(event: NewsEvent): Promise<NewsImage | undefin
       if (!html) return;
       const imageUrl = extractOgImage(html);
       if (imageUrl) source.image = imageUrl;
+      // one fetch, two answers: the article's art and the outlet's mark
+      const domain = normalizeDomain(new URL(source.url).hostname);
+      if (!icons[domain]) {
+        const icon = extractIconHref(html, source.url);
+        if (icon) icons[domain] = icon;
+      }
     }),
   );
+
+  // stamp every source from the cache, including ones we never fetched and
+  // ones whose fetch failed today but succeeded on an earlier run
+  for (const source of event.sources) {
+    const domain = normalizeDomain(new URL(source.url).hostname);
+    if (icons[domain]) source.icon = icons[domain];
+  }
 
   const hero = event.sources.find((source) => source.image);
   return hero?.image
@@ -95,15 +143,21 @@ async function resolveEventImages(event: NewsEvent): Promise<NewsImage | undefin
     : undefined;
 }
 
+/** Domain -> the outlet's own icon URL, cached across runs in data/outlet-icons.json. */
+export type OutletIcons = Record<string, string>;
+
 /** Mutates the dataset in place, attaching preview images where resolvable. */
-export async function enrichImages(dataset: NewsDataset): Promise<{ resolved: number }> {
+export async function enrichImages(
+  dataset: NewsDataset,
+  icons: OutletIcons = {},
+): Promise<{ resolved: number; icons: OutletIcons }> {
   let resolved = 0;
   const queue = [...dataset.events];
   const workers = Array.from({ length: CONCURRENCY }, async () => {
     for (;;) {
       const event = queue.shift();
       if (!event) return;
-      const image = await resolveEventImages(event);
+      const image = await resolveEventImages(event, icons);
       if (image && !event.image) {
         event.image = image;
         resolved += 1;
@@ -111,5 +165,5 @@ export async function enrichImages(dataset: NewsDataset): Promise<{ resolved: nu
     }
   });
   await Promise.all(workers);
-  return { resolved };
+  return { resolved, icons };
 }

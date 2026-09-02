@@ -5,6 +5,18 @@ import { cameraMotion, prefersReducedMotion, useTheme } from '../store';
 
 const STAR_COUNT = prefersReducedMotion ? 2500 : 7000;
 
+/**
+ * How much a star elongates at a given camera speed. The deadzone matters:
+ * damping, a nudge, or any slow drift should leave the sky perfectly still —
+ * only a deliberate drag earns streaks. Shared by both stages so the sprite
+ * can never grow without the fragment drawing a streak inside it.
+ */
+const streakAmount = /* glsl */ `
+  float streakAmount(float speed) {
+    return min(max(speed - 0.06, 0.0) * 7.0, 2.2);
+  }
+`;
+
 const vertexShader = /* glsl */ `
   attribute float aSize;
   attribute float aPhase;
@@ -12,11 +24,12 @@ const vertexShader = /* glsl */ `
   uniform float uSpeed;
   varying float vTwinkle;
   varying float vSize;
+  ${streakAmount}
   void main() {
     vTwinkle = 0.72 + 0.28 * sin(uTime * (0.6 + aPhase * 2.2) + aPhase * 40.0);
     vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
     // stars grow slightly while the camera is moving so streaks have room
-    float stretch = 1.0 + min(uSpeed * 18.0, 5.0);
+    float stretch = 1.0 + streakAmount(uSpeed) * 0.75;
     vSize = aSize;
     gl_PointSize = aSize * stretch * (240.0 / -mvPosition.z);
     gl_Position = projectionMatrix * mvPosition;
@@ -29,11 +42,12 @@ const fragmentShader = /* glsl */ `
   uniform float uBrightness;
   varying float vTwinkle;
   varying float vSize;
+  ${streakAmount}
   void main() {
     vec2 p = gl_PointCoord - 0.5;
 
-    float streak = min(uSpeed * 18.0, 5.0);
-    vec2 dir = uSpeed > 0.0005 ? normalize(uVelocity) : vec2(1.0, 0.0);
+    float streak = streakAmount(uSpeed);
+    vec2 dir = streak > 0.0 ? normalize(uVelocity) : vec2(1.0, 0.0);
 
     // distance to a line segment through the sprite center along the motion
     // direction: still = round star, moving = elongated streak

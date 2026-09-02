@@ -112,6 +112,14 @@ export function LinkIcon(props: IconProps) {
   );
 }
 
+export function CheckIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M4.8 12.6 9.6 17.4 19.2 6.9" />
+    </Svg>
+  );
+}
+
 export function ClockIcon(props: IconProps) {
   return (
     <Svg {...props}>

@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import type { NewsDataset, NewsEvent, NewsSource } from '../../shared/news.ts';
+import type { NewsDataset, NewsEvent, NewsSource, RunStats } from '../../shared/news.ts';
 import { normalizeDomain, rateDomain } from './source-ratings.ts';
 import { reconcileCoordinates } from './gazetteer.ts';
 import { computeTrustScore } from './trust.ts';
@@ -93,5 +93,20 @@ export function finalizeDataset(
     generatedAt: now,
     mode,
     events: events.slice(0, opts.maxEvents ?? 60),
+  };
+}
+
+/**
+ * Recount a dataset's headline numbers from the dataset itself, so what the
+ * file claims can never drift from what it contains. Recorded on every run
+ * because image enrichment fails silently by design: without this, a run that
+ * resolved nothing looks exactly like one that had nothing to resolve.
+ */
+export function computeStats(dataset: NewsDataset): RunStats {
+  const sources = dataset.events.flatMap((event) => event.sources);
+  return {
+    imagesResolved: dataset.events.filter((event) => event.image).length,
+    sourcesWithImages: sources.filter((source) => source.image).length,
+    multiSource: dataset.events.filter((event) => event.sources.length >= 2).length,
   };
 }

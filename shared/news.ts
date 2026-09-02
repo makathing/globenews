@@ -53,6 +53,8 @@ export interface NewsSource {
   unrated?: boolean;
   /** This article's own preview image (og:image), when resolvable. */
   image?: string;
+  /** The outlet's own icon, used as preview art when the article has none. */
+  icon?: string;
 }
 
 /** Article preview image (hotlinked Open Graph image from one of the sources). */
@@ -85,8 +87,25 @@ export interface NewsEvent {
   isBreaking: boolean;
 }
 
+/**
+ * What a run actually produced. Recorded because image enrichment fails
+ * silently by design: without this, a run that resolved nothing is
+ * indistinguishable from one that had nothing to resolve.
+ */
+export interface RunStats {
+  /** Events carrying a hero preview image. */
+  imagesResolved: number;
+  /** Sources carrying their own article image. */
+  sourcesWithImages: number;
+  /** Events corroborated by two or more independent sources. */
+  multiSource: number;
+  /** When the image enrichment pass last ran, if it has. */
+  enrichedAt?: string;
+}
+
 export interface NewsDataset {
   generatedAt: string;
   mode: 'daily' | 'breaking';
   events: NewsEvent[];
+  stats?: RunStats;
 }

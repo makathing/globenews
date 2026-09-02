@@ -12,7 +12,8 @@
     "build": "npm run build -w frontend",
     "test": "npm run test -w pipeline",
     "pipeline:daily": "npm run daily -w pipeline",
-    "pipeline:monitor": "npm run monitor -w pipeline"
+    "pipeline:monitor": "npm run monitor -w pipeline",
+    "pipeline:enrich": "npm run enrich -w pipeline"
   },
   "engines": {
     "node": ">=20"

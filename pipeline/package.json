@@ -7,7 +7,8 @@
     "daily": "tsx src/run-daily.ts",
     "monitor": "tsx src/run-monitor.ts",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "enrich": "tsx src/enrich-existing.ts"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.3.0",

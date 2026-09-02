@@ -72,3 +72,18 @@ export function relativeTime(iso: string, now = Date.now()): string {
 export function isNew(event: NewsEvent, now = Date.now()): boolean {
   return ageHours(event, now) < 1;
 }
+
+/**
+ * A daily feed is expected to be a few hours old; past this it is not "live"
+ * any more, it is a stale file. The batch runs every 24h, so 26 allows a late
+ * run without crying wolf.
+ */
+export const STALE_AFTER_HOURS = 26;
+
+export function datasetAgeHours(generatedAt: string, now = Date.now()): number {
+  return Math.max(0, (now - new Date(generatedAt).getTime()) / 3_600_000);
+}
+
+export function isStale(generatedAt: string, now = Date.now()): boolean {
+  return datasetAgeHours(generatedAt, now) > STALE_AFTER_HOURS;
+}

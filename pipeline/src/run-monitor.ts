@@ -4,7 +4,7 @@ import { query } from '@anthropic-ai/claude-agent-sdk';
 import { MONITOR_PROMPT, SUBAGENTS } from './agents.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
-import { finalizeDataset } from './finalize.ts';
+import { finalizeDataset, computeStats } from './finalize.ts';
 import { enrichImages } from './enrich-images.ts';
 import { parseStagedOutput } from './schema.ts';
 import {
@@ -16,6 +16,8 @@ import {
   waitForFile,
   writeDataset,
   writeStagingDebug,
+  readOutletIcons,
+  writeOutletIcons,
 } from './io.ts';
 
 stripHarnessBackgroundEnv();
@@ -149,7 +151,10 @@ REASON: ${verdict.reason}
     return;
   }
 
-  await enrichImages(breakingDataset);
+  const icons = readOutletIcons();
+  await enrichImages(breakingDataset, icons);
+  writeOutletIcons(icons);
+  breakingDataset.stats = computeStats(breakingDataset);
 
   // Merge: breaking events first, then existing events (minus superseded ids).
   const breakingIds = new Set(breakingDataset.events.map((event) => event.id));

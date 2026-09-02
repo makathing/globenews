@@ -15,6 +15,12 @@
   --radius-sm: 7px;
   --font: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
   --shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+  /* one place to say "clear of the OS chrome", for everything edge-anchored;
+     these resolve to 0 unless index.html asks for viewport-fit=cover */
+  --inset-bottom: env(safe-area-inset-bottom, 0px);
+  --inset-top: env(safe-area-inset-top, 0px);
+  /* drawer width, shared by the rail and whatever has to sit beside it */
+  --rail-w: min(312px, 86vw);
 }
 
 * {
@@ -37,6 +43,16 @@ body,
 .app {
   position: fixed;
   inset: 0;
+  /* dvh tracks the iOS toolbar as it collapses; 100vh would leave the globe
+     cropped behind it for the whole scroll gesture */
+  height: 100dvh;
+}
+
+/* The globe owns every drag, or a vertical swipe fires pull-to-refresh instead
+   of rotating the earth. !important is load-bearing here: react-three-fiber
+   sets touch-action:auto inline on the canvas, which a plain rule can't beat. */
+.app canvas {
+  touch-action: none !important;
 }
 
 /* ————— shared panel ————— */
@@ -85,6 +101,12 @@ body,
 }
 .status-dot.ok {
   background: #3ecf8e;
+}
+.status-dot.stale {
+  background: #d8973c;
+}
+.status-sub.is-stale {
+  color: #d8973c;
 }
 .status-dot.alert {
   background: var(--danger);
@@ -139,9 +161,6 @@ body,
     background 0.15s,
     color 0.15s;
 }
-.theme-btn:hover {
-  color: var(--text-secondary);
-}
 .theme-btn.active {
   background: rgba(255, 255, 255, 0.12);
   color: var(--text);
@@ -151,7 +170,7 @@ body,
 .event-panel {
   top: 16px;
   right: 16px;
-  bottom: 78px;
+  bottom: calc(78px + var(--inset-bottom));
   width: min(368px, calc(100vw - 32px));
   padding: 16px 18px;
   overflow-y: auto;
@@ -232,6 +251,25 @@ body,
   padding: 2px 7px;
   backdrop-filter: blur(4px);
 }
+/* An outlet mark is a logo, not a photograph: contain it and give it room,
+   or a square favicon gets cropped into an unrecognisable smear. */
+.card-source.is-icon {
+  background: rgba(255, 255, 255, 0.04);
+}
+.card-source.is-icon img {
+  object-fit: contain;
+  padding: 22%;
+}
+.source-mark {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+.source-mark.is-blank {
+  background: rgba(255, 255, 255, 0.06);
+}
 .preview-fallback {
   display: flex;
   align-items: center;
@@ -254,6 +292,22 @@ body,
   border-radius: 999px;
   padding: 3px 9px;
 }
+/* shares the pill language of the badges beside it, rather than the
+   user-agent button it was rendering as */
+.copy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
 .close-btn {
   margin-left: auto;
   background: none;
@@ -264,10 +318,6 @@ body,
   height: 26px;
   cursor: pointer;
   font-size: 13px;
-}
-.close-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text);
 }
 .event-headline {
   font-size: 17px;
@@ -337,10 +387,10 @@ body,
   color: var(--text);
   border-radius: var(--radius-sm);
 }
-.source-row:hover {
-  background: rgba(255, 255, 255, 0.06);
-}
 .source-domain {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   font-size: 12.5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -466,9 +516,6 @@ body,
   cursor: pointer;
   transition: background 0.15s, opacity 0.15s;
 }
-.filter-chip:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
 .filter-chip.off {
   opacity: 0.4;
 }
@@ -542,7 +589,6 @@ body,
   color: var(--text);
   transition: background 0.15s, border-color 0.15s, opacity 0.2s;
 }
-.event-card:hover,
 .event-card.hovered {
   background: rgba(255, 255, 255, 0.05);
 }
@@ -563,7 +609,6 @@ body,
   margin-top: 1px;
   color: var(--text-dim);
 }
-.event-card:hover .card-icon,
 .event-card.hovered .card-icon,
 .event-card.selected .card-icon {
   color: var(--text-secondary);
@@ -657,7 +702,7 @@ body,
   position: absolute;
   left: 304px;
   right: 16px;
-  bottom: 16px;
+  bottom: calc(16px + var(--inset-bottom));
   z-index: 21;
   height: 48px;
   display: flex;
@@ -684,7 +729,6 @@ body,
   align-items: center;
   justify-content: center;
 }
-.timeline-play:hover,
 .timeline-play.on {
   color: var(--text);
   background: rgba(255, 255, 255, 0.12);
@@ -745,6 +789,9 @@ body,
   font-variant-numeric: tabular-nums;
   color: var(--text-secondary);
 }
+.timeline-now.stale {
+  color: #d8973c;
+}
 .timeline-now.live {
   color: #3ecf8e;
   letter-spacing: 0.06em;
@@ -758,7 +805,7 @@ body,
 .rail-toggle {
   display: none;
   position: absolute;
-  top: 14px;
+  top: calc(14px + var(--inset-top));
   left: 14px;
   z-index: 24;
   width: 36px;
@@ -837,31 +884,135 @@ body,
   .rail {
     transform: translateX(-100%);
     transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.25, 1);
-    width: min(312px, 86vw);
+    width: var(--rail-w);
+    /* the rail runs to the bottom edge, so its own footer needs the inset */
+    padding-bottom: var(--inset-bottom);
   }
   .app.rail-open .rail {
     transform: none;
   }
   .rail-toggle {
     display: block;
+    transition: left 0.25s cubic-bezier(0.2, 0.9, 0.25, 1);
+  }
+  /* Open, the toggle would sit on top of the rail's own wordmark. Ride the
+     drawer's edge instead, where it reads as the thing that closes it. */
+  .app.rail-open .rail-toggle {
+    /* beside the drawer, but never past the screen edge: on a 320px phone the
+       rail alone is 275px wide and a naive offset would push this off-screen */
+    left: min(calc(var(--rail-w) + 8px), calc(100vw - 58px));
+  }
+  /* The drawer is modal on a phone: full height and over the globe. Leaving
+     the timeline under it means tapping the scrubber hits the rail instead. */
+  .app.rail-open .timeline {
+    opacity: 0;
+    pointer-events: none;
   }
   .timeline {
     left: 16px;
+    transition: opacity 0.2s;
   }
-
 
   .event-panel {
     top: auto;
     left: 16px;
     right: 16px;
-    bottom: 78px;
+    bottom: calc(78px + var(--inset-bottom));
     width: auto;
-    max-height: 52vh;
+    max-height: 60dvh;
   }
 }
+
+/* ————— phones —————
+   Below the tablet tier the timeline has to share a narrow bar with the live
+   status, so the descriptive half goes and the essentials stay. */
+@media (max-width: 560px) {
+  .timeline {
+    left: 10px;
+    right: 10px;
+    gap: 9px;
+    padding: 0 11px;
+  }
+  .timeline-span {
+    display: none;
+  }
+  .event-panel {
+    left: 10px;
+    right: 10px;
+  }
+  /* the panel head is 10px over budget at this width, and the label is the
+     part that can go — the icon still says "link", and now says "copied" too */
+  .copy-link-label {
+    display: none;
+  }
+  .copy-link {
+    padding: 3px 9px;
+  }
+}
+
+/* ————— touch —————
+   Pointer-sized targets are a miss on a fingertip, and :hover on a touch
+   screen sticks after the tap because nothing ever moves away. */
+@media (pointer: coarse) {
+  .rail-toggle {
+    width: 44px;
+    height: 44px;
+  }
+  .timeline-play {
+    width: 34px;
+    height: 34px;
+  }
+  .timeline-track {
+    height: 38px;
+  }
+  .close-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .filter-chip,
+  .theme-btn,
+  .copy-link {
+    min-height: 34px;
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .status-dot.alert {
     animation: none;
+  }
+}
+
+/* ————— hover —————
+   A touch screen has no pointer to move away, so :hover latches on after a tap
+   and the row stays lit. Every rule here has a non-hover companion (.hovered,
+   .on, .selected) that still drives the same state from the app. */
+@media (hover: hover) {
+  .theme-btn:hover {
+    color: var(--text-secondary);
+  }
+  .close-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+  }
+  .source-row:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .filter-chip:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .event-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .event-card:hover .card-icon {
+    color: var(--text-secondary);
+  }
+  .timeline-play:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.12);
+  }
+  .copy-link:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.1);
   }
 }

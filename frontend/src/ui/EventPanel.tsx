@@ -6,7 +6,7 @@ import {
   type NewsSource,
 } from '../../../shared/news';
 import { useGlobeStore } from '../store';
-import { CategoryIcon, ClockIcon, LinkIcon, ShieldIcon } from './icons';
+import { CategoryIcon, CheckIcon, ClockIcon, LinkIcon, ShieldIcon } from './icons';
 import { shareUrlForEvent } from '../lib/urlState';
 
 /**
@@ -43,6 +43,8 @@ function BiasSpectrum({ source }: { source: NewsSource }) {
 function PreviewCard({ event }: { event: NewsEvent }) {
   const [failed, setFailed] = useState(false);
 
+  // the hero is the article's own art; when it is missing or the publisher
+  // refuses the hotlink, the category glyph says more than a stretched favicon
   if (!event.image || failed) {
     return (
       <div
@@ -64,6 +66,22 @@ function PreviewCard({ event }: { event: NewsEvent }) {
       />
       <span className="preview-credit">via {event.image.domain}</span>
     </div>
+  );
+}
+
+/** Outlet mark beside a source row, dropping out silently if it won't load. */
+function SourceMark({ source }: { source: NewsSource }) {
+  const [failed, setFailed] = useState(false);
+  if (!source.icon || failed) return <span className="source-mark is-blank" />;
+  return (
+    <img
+      className="source-mark"
+      src={source.icon}
+      alt=""
+      loading="lazy"
+      referrerPolicy="no-referrer"
+      onError={() => setFailed(true)}
+    />
   );
 }
 
@@ -94,10 +112,12 @@ function CopyLinkButton({ eventId }: { eventId: string }) {
           setCopied(false);
         }
       }}
-      aria-label="Copy link to this story"
+      aria-label={copied ? 'Link copied' : 'Copy link to this story'}
     >
-      <LinkIcon size={12} />
-      {copied ? 'Copied' : 'Copy link'}
+      {copied ? <CheckIcon size={12} /> : <LinkIcon size={12} />}
+      {/* the label is dropped on a phone, where the row can't afford it — the
+          icon carries the state instead, which is why it changes on copy */}
+      <span className="copy-link-label">{copied ? 'Copied' : 'Copy link'}</span>
     </button>
   );
 }
@@ -162,7 +182,10 @@ export function EventPanel() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="source-domain">{source.domain}</span>
+            <span className="source-domain">
+              <SourceMark source={source} />
+              {source.domain}
+            </span>
             <span className="source-rel" title="Reliability (0-100)">
               {source.reliability}
               {source.unrated ? '*' : ''}
