@@ -8,6 +8,13 @@ on:
       - 'shared/**'
       - 'data/**'
       - '.github/workflows/deploy.yml'
+  # The enrichment workflow commits resolved images to data/, but a push made
+  # with GITHUB_TOKEN deliberately does not trigger other workflows — GitHub
+  # blocks that to prevent recursion. So the push filter above never sees it,
+  # and without this the images would sit on main undeployed.
+  workflow_run:
+    workflows: ['Resolve article preview images']
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -22,6 +29,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # workflow_run fires on completion whatever the outcome, so don't publish
+    # off the back of an enrichment run that failed.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     steps:
       - uses: actions/checkout@v4
       # Provisions Pages if it has never been enabled, so a fresh clone of this

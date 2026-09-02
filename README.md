@@ -93,6 +93,11 @@ Each run records what it produced in `data/events.json` under `stats`, and the
 UI shows dataset age rather than an unconditional LIVE badge — a run that
 resolves nothing should not look like a run that had nothing to resolve.
 
+The enrichment commit cannot trigger the deploy through `on: push`: GitHub
+blocks workflow triggering for pushes made with `GITHUB_TOKEN`, to prevent
+recursion. `deploy.yml` therefore also listens on `workflow_run` for that
+workflow completing — without it, resolved images sit on `main` undeployed.
+
 Aside from that, there are **no scheduled GitHub Actions workflows** — only `deploy.yml`
 remains, which needs no Anthropic credentials. If you ever prefer GitHub-hosted scheduling,
 restore the workflows from git history (`daily-batch.yml` / `breaking-monitor.yml`,
