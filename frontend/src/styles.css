@@ -735,6 +735,33 @@ body,
   cursor: pointer;
 }
 
+/* Marker switch — phones only, riding under the drawer button so the two read
+   as one cluster. The rail footer has the same control as a radiogroup, but
+   on a phone that rail is a drawer, and a switch you must open a drawer to
+   find may as well not be there. */
+.marker-toggle {
+  display: none;
+  position: absolute;
+  top: calc(58px + var(--inset-top));
+  left: 14px;
+  z-index: 24;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 12px 0 10px;
+  border-radius: 999px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  color: var(--text-secondary);
+  font-family: var(--font);
+  font-size: 11.5px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
 /* ————— tooltip ————— */
 .blip-tooltip {
   position: fixed;
@@ -823,6 +850,14 @@ body,
   .app.rail-open .updated {
     opacity: 0;
   }
+  .marker-toggle {
+    display: flex;
+  }
+  /* the drawer's own picker is right there, so the floating one steps aside */
+  .app.rail-open .marker-toggle {
+    opacity: 0;
+    pointer-events: none;
+  }
   .updated {
     left: 16px;
   }
@@ -863,6 +898,10 @@ body,
   .rail-toggle {
     width: 44px;
     height: 44px;
+  }
+  .marker-toggle {
+    top: calc(66px + var(--inset-top));
+    height: 40px;
   }
   .close-btn {
     width: 36px;
