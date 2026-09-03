@@ -79,6 +79,22 @@ account credentials, and pushes only `data/` changes. A data push to `main` trig
 Pages deploy workflow. Manage the Routines (pause, edit schedule, view run history) from
 the Routines panel on claude.ai / the Claude app.
 
+### How long a story stays
+
+A story is not dropped just because the next batch did not mention it. Each event carries an
+`expiresAt` set from its severity — 24h for a minor item, 36h / 48h / 4 days as it climbs, a week
+for a severity-5 event — and stays on the map until then. `firstSeen` is when it was added and
+never moves; `lastUpdated` moves only when a run re-reports it, which also resets the clock.
+
+The coordinator is told what is already on the map, so a development gets reported as an update
+(`"updates": "<id>"`) rather than a near-duplicate; the runner keeps the story's id and added
+time, replaces the text, and unions the sources. When the agent forgets, a conservative fuzzy
+match (same category, within 250 km, similar headline) catches a rewording — not a re-angled
+story, which would risk swallowing a genuinely separate one; a missed match costs a duplicate for
+a day, a false one loses a story. `stats.carried`, `updated` and
+`expired` record what each run did. The rule lives in `shared/retention.ts` so the frontend fades
+a story over the same span the pipeline keeps it.
+
 ### Why image enrichment happens at deploy time
 
 Resolving article previews needs **internet, not intelligence**: it is `fetch`

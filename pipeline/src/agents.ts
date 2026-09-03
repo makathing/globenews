@@ -75,6 +75,8 @@ from the researcher and produce the final standardized dataset.
 
 Tasks:
 1. DEDUPLICATE: merge events describing the same underlying story (keep the union of sources).
+   If the coordinator gave you STORIES ALREADY ON THE MAP, an event that continues one of
+   them is an UPDATE to that story, not a new one: copy its id into "updates" (below).
 2. STANDARDIZE each event to exactly this JSON shape:
    {
      "headline": string (<= 140 chars, neutral),
@@ -84,7 +86,9 @@ Tasks:
      "lat": number, "lon": number  (precise coordinates of the event location),
      "locationName": "City, Country" or "Country",
      "countryCode": ISO 3166-1 alpha-2 ("XX" if genuinely multi-country),
-     "sources": [{"url": "https://..."}, ...]  (2+ independent URLs whenever available)
+     "sources": [{"url": "https://..."}, ...]  (2+ independent URLs whenever available),
+     "updates": "<id>"  (ONLY when this event continues one of the STORIES ALREADY ON THE MAP —
+                        copy that story's id exactly; omit the field for a new story)
    }
 3. Balance the map: aim for 25-45 events spanning all inhabited continents; do not let one
    story dominate. Severity must reflect real-world impact, not coverage volume.
@@ -96,10 +100,38 @@ without the file actually written is a FAILED run — write the file first, then
   },
 } as const;
 
-export function coordinatorPrompt(stagingPath: string): string {
+/** A story already on the map, as the agents are told about it. */
+export interface CurrentStory {
+  id: string;
+  headline: string;
+  locationName: string;
+  firstSeen: string;
+}
+
+/** Most recent stories the prompt lists; the rest have aged past mattering to continuity. */
+const MAX_LISTED_STORIES = 120;
+
+function currentStoriesBlock(current: CurrentStory[]): string {
+  if (current.length === 0) return '';
+  const lines = current
+    .slice(0, MAX_LISTED_STORIES)
+    .map(
+      (story) =>
+        `  ${story.id} · ${story.firstSeen.slice(0, 10)} · ${story.headline.slice(0, 110)} · ${story.locationName}`,
+    );
+  return `
+STORIES ALREADY ON THE MAP (id · added · headline · place) — ${current.length} stories:
+${lines.join('\n')}
+A verified event that is a development of one of these is an UPDATE, not a new story. Pass this
+list to the synthesizer verbatim; it must set "updates": "<id>" on such events and write a headline
+that reflects the latest state. Do not re-report a listed story that has not developed.
+`;
+}
+
+export function coordinatorPrompt(stagingPath: string, current: CurrentStory[] = []): string {
   return `You are the COORDINATOR of a multi-agent global news radar pipeline. Today is ${new Date().toISOString().slice(0, 10)}.
 Orchestrate your subagents to build a verified 24-hour world news dataset. Do NOT do the research yourself — delegate.
-
+${currentStoriesBlock(current)}
 CRITICAL: every Agent tool invocation MUST pass run_in_background: false and you MUST wait
 for each subagent's actual returned result before moving on. Never launch subagents async —
 a "launched in background" response means you did it wrong; re-invoke synchronously.
@@ -107,7 +139,7 @@ a "launched in background" response means you did it wrong; re-invoke synchronou
 Workflow (follow strictly, in order):
 1. Invoke the "explorer" subagent 4 times — once per region: (a) Americas, (b) Europe, (c) Middle East & Africa, (d) Asia-Pacific. These can run in parallel.
 2. Collect all candidates, then invoke the "researcher" subagent in 2-4 batches (group candidates by region) to verify them. Pass each batch the full candidate details.
-3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full), and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
+3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full) and the STORIES ALREADY ON THE MAP list if you were given one, and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
 4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path and telling it the previous attempt failed to write. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
 5. RE-READ the file you just wrote and verify EVERY event object has all of:
    headline, summary, category, severity (integer 1-5), lat, lon, locationName,

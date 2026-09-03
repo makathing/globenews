@@ -5,7 +5,7 @@ import {
   type NewsEvent,
   type NewsSource,
 } from '../../../shared/news';
-import { SEVERITY_COLORS, freshness, isNew, relativeTime } from '../lib/beams';
+import { SEVERITY_COLORS, freshness, isNew, isUpdated, relativeTime } from '../lib/beams';
 import { useGlobeStore, useVisibleEvents } from '../store';
 import { CategoryIcon } from './icons';
 import { StatusPanel } from './StatusPanel';
@@ -97,8 +97,15 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
 
       <div className="card-foot">
         {event.isBreaking && <span className="card-breaking">Breaking</span>}
-        {isNew(event) && !event.isBreaking && <span className="card-new">New</span>}
-        <span className="card-time">{relativeTime(event.firstSeen)}</span>
+        {!event.isBreaking && isUpdated(event) && <span className="card-updated">Updated</span>}
+        {!event.isBreaking && !isUpdated(event) && isNew(event) && (
+          <span className="card-new">New</span>
+        )}
+        <span className="card-time">
+          {isUpdated(event)
+            ? `Updated ${relativeTime(event.lastUpdated)}`
+            : `Added ${relativeTime(event.firstSeen)}`}
+        </span>
         <span className="card-trust" title={`Trust ${event.trustScore}/100`}>
           {event.trustScore}
         </span>

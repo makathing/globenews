@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { expiryOf } from '../../../shared/retention';
 import {
   BIAS_RATINGS,
   CATEGORY_LABELS,
@@ -14,6 +15,16 @@ import { shareUrlForEvent } from '../lib/urlState';
  * on every value, when the only reading that needs to interrupt you is a story
  * we could not corroborate.
  */
+/** "2026-09-02 05:13" — a UTC timestamp to the minute. */
+function utcMinute(iso: string): string {
+  return new Date(iso).toISOString().slice(0, 16).replace('T', ' ');
+}
+
+/** "2026-09-06" — a UTC day. */
+function utcDay(epochMs: number): string {
+  return new Date(epochMs).toISOString().slice(0, 10);
+}
+
 function trustColor(score: number): string {
   return score >= 41 ? 'var(--text)' : '#ff8b6b';
 }
@@ -204,8 +215,9 @@ export function EventPanel() {
       </div>
 
       <div className="event-meta">
-        <ClockIcon size={12} /> First seen{' '}
-        {new Date(event.firstSeen).toISOString().slice(0, 16).replace('T', ' ')} UTC
+        <ClockIcon size={12} /> Added {utcMinute(event.firstSeen)}
+        {event.lastUpdated !== event.firstSeen && <> · Updated {utcMinute(event.lastUpdated)}</>}
+        {' · '}On the map until {utcDay(expiryOf(event))} UTC
       </div>
     </aside>
   );

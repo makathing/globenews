@@ -81,9 +81,16 @@ export interface NewsEvent {
   image?: NewsImage;
   /** 0-100, computed deterministically from corroboration + source reliability + bias spread. */
   trustScore: number;
-  /** ISO timestamp of when this event first appeared in the dataset. */
+  /** ISO timestamp of when this story was added to the map. Survives re-reporting. */
   firstSeen: string;
+  /** ISO timestamp of the run that last reported it; moves only when the story is re-reported. */
   lastUpdated: string;
+  /**
+   * When the story leaves the map: lastUpdated plus a severity-scaled
+   * lifetime (shared/retention.ts). Absent on files from before retention
+   * existed; `expiryOf()` derives it then.
+   */
+  expiresAt?: string;
   isBreaking: boolean;
 }
 
@@ -114,6 +121,12 @@ export interface RunStats {
    * the build. `build` — the deploy's enrichment step filled it in.
    */
   enrichment?: 'inline' | 'deferred' | 'build';
+  /** Stories carried over unchanged from the previous run because they had not expired. */
+  carried?: number;
+  /** Stories that were already on the map and were re-reported this run. */
+  updated?: number;
+  /** Stories from the previous run that left the map because their lifetime ran out. */
+  expired?: number;
 }
 
 export interface NewsDataset {

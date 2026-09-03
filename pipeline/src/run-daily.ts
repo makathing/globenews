@@ -1,7 +1,7 @@
 import { readFileSync, existsSync, rmSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { query } from '@anthropic-ai/claude-agent-sdk';
-import { SUBAGENTS, coordinatorPrompt } from './agents.ts';
+import { SUBAGENTS, coordinatorPrompt, type CurrentStory } from './agents.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_STAGED } from './mock-data.ts';
@@ -40,6 +40,7 @@ class PipelineError extends Error {
 async function runCoordinator(
   ledger: RunLedger,
   attempt: number,
+  current: CurrentStory[],
   feedback?: string,
 ): Promise<StagedOutput> {
   // per-attempt filename: a late background write from a previous attempt can
@@ -47,7 +48,7 @@ async function runCoordinator(
   const stagingPath = resolve(STAGING_DIR, `events.raw.attempt${attempt}.json`);
   if (existsSync(stagingPath)) rmSync(stagingPath);
 
-  let prompt = coordinatorPrompt(stagingPath);
+  let prompt = coordinatorPrompt(stagingPath, current);
   if (feedback) {
     prompt += `\n\nIMPORTANT — the previous attempt produced invalid output. Fix these problems this time:\n${feedback}`;
   }
@@ -139,6 +140,15 @@ let lastSeverityDefaulted = 0;
 async function main(): Promise<void> {
   const ledger = new RunLedger();
   if (!MOCK) console.log(`[daily] auth: ${authMode()}`);
+  // read up front: the agents are told what is already on the map so they
+  // report developments as updates instead of near-duplicates
+  const previous = readCurrentDataset();
+  const current: CurrentStory[] = (previous?.events ?? []).map((event) => ({
+    id: event.id,
+    headline: event.headline,
+    locationName: event.locationName,
+    firstSeen: event.firstSeen,
+  }));
   let staged: StagedOutput;
 
   if (MOCK) {
@@ -149,7 +159,7 @@ async function main(): Promise<void> {
     let feedback: string | undefined;
     for (;;) {
       try {
-        staged = await runCoordinator(ledger, attempt + 1, feedback);
+        staged = await runCoordinator(ledger, attempt + 1, current, feedback);
         break;
       } catch (error) {
         if (error instanceof PipelineError && !error.retryable) throw error;
@@ -161,7 +171,6 @@ async function main(): Promise<void> {
     }
   }
 
-  const previous = readCurrentDataset();
   const dataset = finalizeDataset(staged, previous, 'daily');
   let enrichment: 'inline' | 'deferred' = 'deferred';
   if (MOCK) {
@@ -190,8 +199,10 @@ async function main(): Promise<void> {
   // recorded in the file, not just the log: enrichment fails silently by
   // design, so a run that resolved nothing has to leave a trace somewhere
   // the site can read
+  const stats = computeStats(dataset);
   dataset.stats = {
-    ...computeStats(dataset),
+    ...stats,
+    expired: (previous?.events.length ?? 0) - (stats.carried ?? 0) - (stats.updated ?? 0),
     severityDefaulted: lastSeverityDefaulted,
     enrichment,
   };
