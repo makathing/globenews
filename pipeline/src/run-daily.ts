@@ -6,7 +6,7 @@ import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_STAGED } from './mock-data.ts';
 import { finalizeDataset, computeStats } from './finalize.ts';
-import { enrichImages } from './enrich-images.ts';
+import { enrichImages, probeEgress } from './enrich-images.ts';
 import { parseStagedOutput, validateDataset, type StagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
@@ -163,6 +163,7 @@ async function main(): Promise<void> {
 
   const previous = readCurrentDataset();
   const dataset = finalizeDataset(staged, previous, 'daily');
+  let enrichment: 'inline' | 'deferred' = 'deferred';
   if (MOCK) {
     // placeholder previews on a handful of events so the UI (and its
     // no-image fallback) can both be exercised in development
@@ -172,16 +173,28 @@ async function main(): Promise<void> {
       });
       event.image = { url: event.sources[0].image!, domain: event.sources[0].domain };
     }
-  } else {
+  } else if (await probeEgress()) {
+    // publishers are reachable from here: one pass, art included
     const icons = readOutletIcons();
     const { resolved } = await enrichImages(dataset, icons);
     writeOutletIcons(icons);
-    console.log(`[daily] resolved ${resolved} article preview image(s)`);
+    enrichment = 'inline';
+    console.log(`[daily] resolved ${resolved} article preview image(s) inline`);
+  } else {
+    // Not reachable. Say so and hand off to the deploy's enrichment step
+    // rather than spend ~76s of timeouts learning it the slow way.
+    console.warn(
+      '[daily] publishers unreachable from this environment — deferring images to the build',
+    );
   }
   // recorded in the file, not just the log: enrichment fails silently by
   // design, so a run that resolved nothing has to leave a trace somewhere
   // the site can read
-  dataset.stats = { ...computeStats(dataset), severityDefaulted: lastSeverityDefaulted };
+  dataset.stats = {
+    ...computeStats(dataset),
+    severityDefaulted: lastSeverityDefaulted,
+    enrichment,
+  };
   validateDataset(dataset);
   writeDataset(dataset, { archive: true });
   writeStagingDebug('ledger.json', ledger.toJSON());

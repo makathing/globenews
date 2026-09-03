@@ -1,4 +1,4 @@
-import { enrichImages } from './enrich-images.ts';
+import { enrichImages, probeEgress } from './enrich-images.ts';
 import { computeStats } from './finalize.ts';
 import {
   readCurrentDataset,
@@ -33,13 +33,27 @@ async function main(): Promise<void> {
     return;
   }
 
+  if (!(await probeEgress())) {
+    // Same silent-failure trap the news run has: without this a blocked
+    // runner reports "resolved 0" and looks like a day with no art.
+    console.warn('[enrich] publishers unreachable from this environment — nothing resolved');
+    return;
+  }
+
   const before = JSON.stringify(dataset);
   const icons = readOutletIcons();
   const iconsBefore = Object.keys(icons).length;
 
   const { resolved } = await enrichImages(dataset, icons);
 
-  dataset.stats = { ...computeStats(dataset), enrichedAt: new Date().toISOString() };
+  dataset.stats = {
+    ...dataset.stats,
+    ...computeStats(dataset),
+    enrichedAt: new Date().toISOString(),
+    // claim the art only if this step actually added some; an inline run that
+    // already did the work keeps its own record
+    ...(resolved > 0 ? { enrichment: 'build' as const } : {}),
+  };
 
   const changed = JSON.stringify(dataset) !== before;
   if (changed) {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { extractIconHref, extractOgImage } from '../src/enrich-images.ts';
+import { PROBE_HOSTS, extractIconHref, extractOgImage, probeEgress } from '../src/enrich-images.ts';
 
 describe('extractOgImage', () => {
   it('extracts a standard og:image tag', () => {
@@ -64,5 +64,39 @@ describe('extractIconHref', () => {
 
   it('returns null when the head declares no icon', () => {
     expect(extractIconHref('<head><title>x</title></head>', page)).toBeNull();
+  });
+});
+
+describe('probeEgress', () => {
+  // The preflight that turns "resolved 0 images" from an ambiguous number into
+  // a stated cause. Any one reachable host is enough; nothing reachable, or
+  // every request failing, means the run must defer to the build.
+  const respond = (status: number) => async () => new Response(null, { status });
+  const refuse = async () => {
+    throw new Error('CONNECT tunnel failed, response 403');
+  };
+
+  it('is true when any probe host answers 2xx/3xx', async () => {
+    let n = 0;
+    const fetchImpl = (async () => (n++ === 1 ? new Response(null, { status: 301 }) : refuse())) as typeof fetch;
+    expect(await probeEgress(fetchImpl)).toBe(true);
+  });
+
+  it('is false when every probe host refuses the connection', async () => {
+    expect(await probeEgress(refuse as unknown as typeof fetch)).toBe(false);
+  });
+
+  it('treats 4xx/5xx as unreachable — a proxy 403 is not a publisher', async () => {
+    expect(await probeEgress(respond(403) as unknown as typeof fetch)).toBe(false);
+  });
+
+  it('probes every host in parallel rather than one at a time', async () => {
+    const seen: string[] = [];
+    const fetchImpl = (async (url: string) => {
+      seen.push(String(url));
+      return new Response(null, { status: 200 });
+    }) as unknown as typeof fetch;
+    await probeEgress(fetchImpl);
+    expect(seen).toHaveLength(PROBE_HOSTS.length);
   });
 });

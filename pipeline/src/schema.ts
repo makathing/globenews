@@ -42,6 +42,7 @@ export const RunStatsSchema = z.object({
   enrichedAt: z.iso.datetime({ offset: true }).optional(),
   severityDefaulted: z.number().min(0).optional(),
   severityBackfilled: z.number().min(0).optional(),
+  enrichment: z.enum(['inline', 'deferred', 'build']).optional(),
 });
 
 export const NewsDatasetSchema = z.object({
