@@ -7,12 +7,15 @@ import { Starfield } from './Starfield';
 import { Sun } from './Sun';
 import { SpaceBackground } from './SpaceBackground';
 import { Beams } from './Beams';
+import { Pins } from './Pins';
+import { Ambience } from './Ambience';
 import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
 import { useGlobeStore, useTheme } from '../store';
 
 export function SceneRoot() {
   const select = useGlobeStore((s) => s.select);
+  const markerStyle = useGlobeStore((s) => s.markerStyle);
   const theme = useTheme();
 
   return (
@@ -33,7 +36,8 @@ export function SceneRoot() {
         {theme.clouds && <Clouds />}
       </Suspense>
       <CountryBorders />
-      <Beams />
+      <Ambience />
+      {markerStyle === 'pins' ? <Pins /> : <Beams />}
       <CameraRig />
       <Effects />
     </Canvas>

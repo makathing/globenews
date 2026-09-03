@@ -62,6 +62,17 @@ export function freshness(event: NewsEvent, now = Date.now()): number {
   return 1 - t * 0.6;
 }
 
+/**
+ * `freshness` with its timestamps parsed once. Every marker calls this every
+ * frame, so the per-frame path should not be re-parsing two ISO strings per
+ * story per frame.
+ */
+export function freshnessClock(event: NewsEvent): (now: number) => number {
+  const updated = Date.parse(event.lastUpdated);
+  const span = Math.max(expiryOf(event) - updated, 3_600_000);
+  return (now) => 1 - Math.min(Math.max((now - updated) / span, 0), 1) * 0.6;
+}
+
 /** Compact relative time for rail cards: "just now", "3h ago", "2d ago". */
 export function relativeTime(iso: string, now = Date.now()): string {
   const minutes = Math.max(0, Math.round((now - new Date(iso).getTime()) / 60_000));

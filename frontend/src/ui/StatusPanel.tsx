@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useGlobeStore } from '../store';
 import { THEME_IDS, THEMES } from '../themes';
+import { MARKER_STYLES, MARKER_STYLE_LABELS } from '../lib/markerStyle';
 
 function formatUtc(date: Date): string {
   return date.toISOString().slice(11, 19);
@@ -11,6 +12,8 @@ export function StatusPanel() {
   const dataset = useGlobeStore((s) => s.dataset);
   const theme = useGlobeStore((s) => s.theme);
   const setTheme = useGlobeStore((s) => s.setTheme);
+  const markerStyle = useGlobeStore((s) => s.markerStyle);
+  const setMarkerStyle = useGlobeStore((s) => s.setMarkerStyle);
   const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
@@ -41,6 +44,19 @@ export function StatusPanel() {
             onClick={() => setTheme(id)}
           >
             {THEMES[id].label}
+          </button>
+        ))}
+      </div>
+      <div className="theme-picker marker-picker" role="radiogroup" aria-label="Event markers">
+        {MARKER_STYLES.map((id) => (
+          <button
+            key={id}
+            role="radio"
+            aria-checked={markerStyle === id}
+            className={`theme-btn ${markerStyle === id ? 'active' : ''}`}
+            onClick={() => setMarkerStyle(id)}
+          >
+            {MARKER_STYLE_LABELS[id]}
           </button>
         ))}
       </div>
