@@ -102,12 +102,6 @@ body,
 .status-dot.ok {
   background: #3ecf8e;
 }
-.status-dot.stale {
-  background: #d8973c;
-}
-.status-sub.is-stale {
-  color: #d8973c;
-}
 .status-dot.alert {
   background: var(--danger);
   animation: pulse 1.2s ease-in-out infinite;
@@ -131,12 +125,6 @@ body,
   font-size: 12px;
   color: var(--text-secondary);
   font-variant-numeric: tabular-nums;
-}
-.status-sub {
-  margin-top: 3px;
-  padding-left: 16px;
-  font-size: 11.5px;
-  color: var(--text-dim);
 }
 .theme-picker {
   display: flex;
@@ -170,7 +158,7 @@ body,
 .event-panel {
   top: 16px;
   right: 16px;
-  bottom: calc(78px + var(--inset-bottom));
+  bottom: calc(16px + var(--inset-bottom));
   width: min(368px, calc(100vw - 32px));
   padding: 16px 18px;
   overflow-y: auto;
@@ -459,7 +447,7 @@ body,
 }
 
 
-/* ————— app shell: rail | globe | panel, timeline across the bottom ————— */
+/* ————— app shell: rail | globe | panel ————— */
 .rail {
   position: absolute;
   top: 0;
@@ -697,108 +685,26 @@ body,
   color: var(--text-secondary);
 }
 
-/* ————— timeline ————— */
-.timeline {
+/* ————— last-updated chip —————
+   Foot of the globe, beside the rail. Below the panels' z-index on purpose:
+   an open story panel is allowed to cover it. */
+.updated {
   position: absolute;
   left: 304px;
-  right: 16px;
   bottom: calc(16px + var(--inset-bottom));
-  z-index: 21;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 0 14px;
-  background: var(--panel);
-  border: 1px solid var(--panel-border);
-  border-radius: var(--radius);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--shadow);
-}
-.timeline-play {
-  flex: none;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1px solid var(--panel-border);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-secondary);
-  font-size: 9px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.timeline-play.on {
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.12);
-}
-.timeline-track {
-  position: relative;
-  flex: 1;
-  height: 28px;
-  cursor: ew-resize;
-  touch-action: none;
-}
-.timeline-bars {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  gap: 1px;
-}
-.timeline-bar {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 1px;
-  transition: background 0.2s;
-}
-.timeline-bar.in {
-  background: rgba(120, 170, 255, 0.55);
-}
-.timeline-fill {
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  height: 2px;
-  background: linear-gradient(to right, rgba(120, 170, 255, 0.25), rgba(120, 170, 255, 0.8));
-  border-radius: 1px;
-}
-.timeline-cursor {
-  position: absolute;
-  top: -2px;
-  bottom: -4px;
-  width: 2px;
-  margin-left: -1px;
-  background: var(--text);
-  border-radius: 1px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-  pointer-events: none;
-}
-.timeline-labels {
-  flex: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1px;
-  min-width: 104px;
-}
-.timeline-now {
-  font-size: 12px;
-  font-weight: 600;
+  z-index: 19;
+  padding: 5px 10px;
+  font-size: 11.5px;
   font-variant-numeric: tabular-nums;
   color: var(--text-secondary);
-}
-.timeline-now.stale {
-  color: #d8973c;
-}
-.timeline-now.live {
-  color: #3ecf8e;
-  letter-spacing: 0.06em;
-}
-.timeline-span {
-  font-size: 10px;
-  color: var(--text-dim);
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  user-select: none;
+  transition: opacity 0.2s;
 }
 
 /* rail toggle — only shown on narrow screens */
@@ -902,39 +808,29 @@ body,
        rail alone is 275px wide and a naive offset would push this off-screen */
     left: min(calc(var(--rail-w) + 8px), calc(100vw - 58px));
   }
-  /* The drawer is modal on a phone: full height and over the globe. Leaving
-     the timeline under it means tapping the scrubber hits the rail instead. */
-  .app.rail-open .timeline {
+  /* The drawer is modal on a phone: full height and over the globe, so the
+     chip under it would just peek out beside the drawer's edge. */
+  .app.rail-open .updated {
     opacity: 0;
-    pointer-events: none;
   }
-  .timeline {
+  .updated {
     left: 16px;
-    transition: opacity 0.2s;
   }
 
   .event-panel {
     top: auto;
     left: 16px;
     right: 16px;
-    bottom: calc(78px + var(--inset-bottom));
+    bottom: calc(16px + var(--inset-bottom));
     width: auto;
     max-height: 60dvh;
   }
 }
 
-/* ————— phones —————
-   Below the tablet tier the timeline has to share a narrow bar with the live
-   status, so the descriptive half goes and the essentials stay. */
+/* ————— phones ————— */
 @media (max-width: 560px) {
-  .timeline {
+  .updated {
     left: 10px;
-    right: 10px;
-    gap: 9px;
-    padding: 0 11px;
-  }
-  .timeline-span {
-    display: none;
   }
   .event-panel {
     left: 10px;
@@ -957,13 +853,6 @@ body,
   .rail-toggle {
     width: 44px;
     height: 44px;
-  }
-  .timeline-play {
-    width: 34px;
-    height: 34px;
-  }
-  .timeline-track {
-    height: 38px;
   }
   .close-btn {
     width: 36px;
@@ -1006,10 +895,6 @@ body,
   }
   .event-card:hover .card-icon {
     color: var(--text-secondary);
-  }
-  .timeline-play:hover {
-    color: var(--text);
-    background: rgba(255, 255, 255, 0.12);
   }
   .copy-link:hover {
     color: var(--text);

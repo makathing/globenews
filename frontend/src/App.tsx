@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import type { NewsDataset } from '../../shared/news';
 import { SceneRoot } from './scene/SceneRoot';
 import { EventRail } from './ui/EventRail';
-import { Timeline } from './ui/Timeline';
 import { EventPanel } from './ui/EventPanel';
 import { Tooltip } from './ui/Tooltip';
+import { Updated } from './ui/Updated';
 import { useGlobeStore } from './store';
 import { useUrlSync } from './lib/urlState';
 
@@ -40,9 +40,9 @@ export function App() {
     <div className={`app ${railOpen ? 'rail-open' : ''}`}>
       <SceneRoot />
       <EventRail />
-      <Timeline />
       <EventPanel />
       <Tooltip />
+      <Updated />
       <button
         className="rail-toggle"
         onClick={() => setRailOpen((open) => !open)}
