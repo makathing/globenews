@@ -8,20 +8,26 @@ import { GLOBE_RADIUS } from './geo';
  */
 
 /**
- * Severity ramp. Beams share one cool family rather than eight category hues:
+ * Severity ramp. Markers share one family rather than eight category hues:
  * from orbit the question people scan for is "how bad, and where", which is
  * ordinal — category is answered by the rail icons once you're reading.
  *
- * The ramp climbs in luminance as well as saturation, so the most severe
- * events are also the most visible against a dark globe. It stops short of
- * white at the top, leaving pure white free for the breaking-news strobe.
+ * That family is warm, and deliberately so. The ramp used to be blue-to-cyan,
+ * which put the markers in the same hue as every globe theme — worst of all
+ * on Blueprint, where a beam and the ocean beneath it were the same colour.
+ * Warm is the complement of every planet we draw, so a marker separates from
+ * the map whatever theme is on.
+ *
+ * It climbs in luminance as it heats up, so the most severe events are also
+ * the most visible against a dark globe, and it stops short of white at the
+ * top — pure white stays reserved for the breaking-news strobe.
  */
 export const SEVERITY_COLORS: Record<number, string> = {
-  1: '#2d6ba3', // deep blue
-  2: '#3d92cf', // steel blue
-  3: '#45b3e8', // azure
-  4: '#52d3f7', // bright cyan
-  5: '#8fe8ff', // icy cyan
+  1: '#c06a35', // ember
+  2: '#e08640', // burnt orange
+  3: '#ff9f45', // orange
+  4: '#ffbe5c', // amber
+  5: '#ffdd8f', // bright gold
 };
 
 export function beamColor(event: Pick<NewsEvent, 'severity'>): string {

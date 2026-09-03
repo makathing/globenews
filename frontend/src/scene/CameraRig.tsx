@@ -7,6 +7,9 @@ import { cameraMotion, prefersReducedMotion, useGlobeStore } from '../store';
 import { latLonToVec3 } from '../lib/geo';
 
 const IDLE_BEFORE_AUTOROTATE_MS = 10_000;
+const UP = new THREE.Vector3(0, 1, 0);
+/** How far off an event's own normal the camera parks when you select it. */
+const VIEW_TILT = Math.PI / 5.6; // ~32°
 
 /**
  * Owns the OrbitControls plus two side jobs:
@@ -31,7 +34,15 @@ export function CameraRig() {
     }
     const event = dataset.events.find((e) => e.id === selectedId);
     if (!event) return;
-    flyTarget.current = latLonToVec3(event.lat, event.lon, 1).normalize();
+    // Land beside the event's normal, not on it. A beam is a vertical shaft:
+    // looked at straight down it projects to a few pixels and has no shape to
+    // show, which is what the ground pool used to compensate for. Tilting the
+    // arrival toward the pole gives a three-quarter view where the shaft
+    // stands up off the surface and reads as itself.
+    const normal = latLonToVec3(event.lat, event.lon, 1).normalize();
+    const poleward = Math.abs(normal.y) > 0.9 ? new THREE.Vector3(0, 0, 1) : UP;
+    const tiltAxis = new THREE.Vector3().crossVectors(normal, poleward).normalize();
+    flyTarget.current = normal.clone().applyAxisAngle(tiltAxis, VIEW_TILT).normalize();
   }, [selectedId, dataset]);
 
   useFrame((_, delta) => {
