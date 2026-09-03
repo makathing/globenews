@@ -2,6 +2,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { create } from 'zustand';
 import type { Category, NewsDataset, NewsEvent } from '../../shared/news';
 import { loadStoredTheme, storeTheme, THEMES, type GlobeTheme, type ThemeId } from './themes';
+import {
+  loadStoredMarkerStyle,
+  markerStyleFromUrl,
+  storeMarkerStyle,
+  type MarkerStyle,
+} from './lib/markerStyle';
 import { buildCountryTint } from './lib/countryTint';
 import * as THREE from 'three';
 
@@ -14,6 +20,8 @@ interface HoverState {
 interface GlobeStore {
   dataset: NewsDataset | null;
   theme: ThemeId;
+  /** Which shape marks a story on the globe. */
+  markerStyle: MarkerStyle;
   hidden: Set<Category>;
   hovered: HoverState | null;
   selectedId: string | null;
@@ -21,6 +29,7 @@ interface GlobeStore {
   scrollToId: string | null;
   setDataset: (dataset: NewsDataset) => void;
   setTheme: (theme: ThemeId) => void;
+  setMarkerStyle: (style: MarkerStyle) => void;
   toggleCategory: (category: Category) => void;
   setHovered: (hover: HoverState | null) => void;
   hoverId: (id: string | null) => void;
@@ -31,6 +40,7 @@ interface GlobeStore {
 export const useGlobeStore = create<GlobeStore>((set) => ({
   dataset: null,
   theme: loadStoredTheme(),
+  markerStyle: markerStyleFromUrl() ?? loadStoredMarkerStyle(),
   hidden: new Set<Category>(),
   hovered: null,
   selectedId: null,
@@ -39,6 +49,10 @@ export const useGlobeStore = create<GlobeStore>((set) => ({
   setTheme: (theme) => {
     storeTheme(theme);
     set({ theme });
+  },
+  setMarkerStyle: (markerStyle) => {
+    storeMarkerStyle(markerStyle);
+    set({ markerStyle });
   },
   toggleCategory: (category) =>
     set((state) => {
@@ -111,3 +125,11 @@ export const cameraMotion = {
 export const prefersReducedMotion =
   typeof window !== 'undefined' &&
   window.matchMedia?.('(prefers-reduced-motion: reduce)').matches === true;
+
+/**
+ * A finger, not a pointer. This is the *primary* input, so a touchscreen
+ * laptop driven by its trackpad still takes the desktop path. Effects that
+ * cost a full-screen pass on a phone GPU check this.
+ */
+export const coarsePointer =
+  typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches === true;

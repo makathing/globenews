@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { BlendFunction, Effect } from 'postprocessing';
 import * as THREE from 'three';
-import { cameraMotion, prefersReducedMotion } from '../store';
+import { cameraMotion, coarsePointer, prefersReducedMotion } from '../store';
 
 const smearFragment = /* glsl */ `
   uniform vec2 uVelocity;
@@ -53,24 +53,31 @@ class MotionSmearEffect extends Effect {
 }
 
 export function Effects() {
-  const smear = useMemo(() => new MotionSmearEffect(), []);
-  return (
-    <EffectComposer multisampling={0}>
-      {/*
-        Bloom is screen-space, so its halo grows with whatever fills the frame:
-        a wide radius that flatters a distant beam turns a close one into a
-        white smear, and a low threshold catches every star. Tight and
-        selective — only genuinely hot cores bloom.
-      */}
-      <Bloom
-        intensity={0.6}
-        luminanceThreshold={0.28}
-        luminanceSmoothing={0.3}
-        mipmapBlur
-        radius={0.45}
-      />
-      <primitive object={smear} />
-      <Vignette eskil={false} offset={0.25} darkness={0.4} />
-    </EffectComposer>
-  );
+  // A finger flick is a short, high spike of angular velocity, so on a phone
+  // the smear fires on essentially every swipe — and it is a full-screen
+  // five-tap pass at up to 1.75x DPR on a mobile GPU. Skip the pass entirely
+  // rather than weakening it; the star streaks still carry the motion.
+  const smear = useMemo(() => (coarsePointer ? null : new MotionSmearEffect()), []);
+  // EffectComposer types its children as elements, not conditionals, so the
+  // optional pass is composed into the list rather than rendered as `&&`
+  const passes = [
+    /*
+      Bloom is screen-space, so its halo grows with whatever fills the frame:
+      a wide radius that flatters a distant beam turns a close one into a
+      white smear, and a low threshold catches every star. Tight and
+      selective — only genuinely hot cores bloom.
+    */
+    <Bloom
+      key="bloom"
+      intensity={0.6}
+      luminanceThreshold={0.28}
+      luminanceSmoothing={0.3}
+      mipmapBlur
+      radius={0.45}
+    />,
+    ...(smear ? [<primitive key="smear" object={smear} />] : []),
+    <Vignette key="vignette" eskil={false} offset={0.25} darkness={0.4} />,
+  ];
+
+  return <EffectComposer multisampling={0}>{passes}</EffectComposer>;
 }

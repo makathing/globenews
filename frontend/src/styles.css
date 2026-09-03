@@ -690,6 +690,11 @@ body,
   color: var(--text-secondary);
 }
 
+/* the marker switch shares the theme picker's chip styling, one row below */
+.marker-picker {
+  margin-top: 6px;
+}
+
 /* ————— last-updated chip —————
    Foot of the globe, beside the rail. Below the panels' z-index on purpose:
    an open story panel is allowed to cover it. */

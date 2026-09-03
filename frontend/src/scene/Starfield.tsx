@@ -1,7 +1,7 @@
 import { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { cameraMotion, prefersReducedMotion, useTheme } from '../store';
+import { cameraMotion, coarsePointer, prefersReducedMotion, useTheme } from '../store';
 
 const STAR_COUNT = prefersReducedMotion ? 2500 : 7000;
 
@@ -115,7 +115,11 @@ export function Starfield() {
     const uniforms = materialRef.current?.uniforms;
     if (!uniforms) return;
     uniforms.uTime.value = state.clock.elapsedTime;
-    uniforms.uSpeed.value = prefersReducedMotion ? 0 : cameraMotion.speed;
+    // On touch the streaks are the only motion cue left (the smear pass is
+    // skipped there), so they stay — at roughly half strength, since a flick
+    // reaches speeds a mouse drag rarely does.
+    const speed = prefersReducedMotion ? 0 : cameraMotion.speed * (coarsePointer ? 0.45 : 1);
+    uniforms.uSpeed.value = speed;
     uniforms.uBrightness.value = theme.starBrightness;
     (uniforms.uVelocity.value as THREE.Vector2).set(cameraMotion.vx, cameraMotion.vy);
   });
