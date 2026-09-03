@@ -108,6 +108,12 @@ export interface RunStats {
   severityDefaulted?: number;
   /** Events whose severity was assigned afterwards by the backfill pass. */
   severityBackfilled?: number;
+  /**
+   * Which process resolved the preview art. `inline` — the news run itself,
+   * one pass. `deferred` — the run could not reach publishers and left it to
+   * the build. `build` — the deploy's enrichment step filled it in.
+   */
+  enrichment?: 'inline' | 'deferred' | 'build';
 }
 
 export interface NewsDataset {

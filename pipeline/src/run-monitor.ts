@@ -5,7 +5,7 @@ import { MONITOR_PROMPT, SUBAGENTS } from './agents.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { finalizeDataset, computeStats } from './finalize.ts';
-import { enrichImages } from './enrich-images.ts';
+import { enrichImages, probeEgress } from './enrich-images.ts';
 import { parseStagedOutput } from './schema.ts';
 import {
   STAGING_DIR,
@@ -151,10 +151,16 @@ REASON: ${verdict.reason}
     return;
   }
 
-  const icons = readOutletIcons();
-  await enrichImages(breakingDataset, icons);
-  writeOutletIcons(icons);
-  breakingDataset.stats = computeStats(breakingDataset);
+  let enrichment: 'inline' | 'deferred' = 'deferred';
+  if (await probeEgress()) {
+    const icons = readOutletIcons();
+    await enrichImages(breakingDataset, icons);
+    writeOutletIcons(icons);
+    enrichment = 'inline';
+  } else {
+    console.warn('[monitor] publishers unreachable — deferring images to the build');
+  }
+  breakingDataset.stats = { ...computeStats(breakingDataset), enrichment };
 
   // Merge: breaking events first, then existing events (minus superseded ids).
   const breakingIds = new Set(breakingDataset.events.map((event) => event.id));

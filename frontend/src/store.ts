@@ -17,8 +17,6 @@ interface GlobeStore {
   hidden: Set<Category>;
   hovered: HoverState | null;
   selectedId: string | null;
-  /** Epoch ms; events first seen after this are hidden. null = live (show all). */
-  timeCursor: number | null;
   /** Set when a selection came from the globe, so the rail can scroll to it. */
   scrollToId: string | null;
   setDataset: (dataset: NewsDataset) => void;
@@ -27,7 +25,6 @@ interface GlobeStore {
   setHovered: (hover: HoverState | null) => void;
   hoverId: (id: string | null) => void;
   select: (id: string | null, opts?: { fromGlobe?: boolean }) => void;
-  setTimeCursor: (cursor: number | null) => void;
   clearScrollTo: () => void;
 }
 
@@ -37,7 +34,6 @@ export const useGlobeStore = create<GlobeStore>((set) => ({
   hidden: new Set<Category>(),
   hovered: null,
   selectedId: null,
-  timeCursor: null,
   scrollToId: null,
   setDataset: (dataset) => set({ dataset }),
   setTheme: (theme) => {
@@ -56,7 +52,6 @@ export const useGlobeStore = create<GlobeStore>((set) => ({
   hoverId: (id) => set({ hovered: id ? { id, x: -1, y: -1 } : null }),
   select: (selectedId, opts) =>
     set({ selectedId, scrollToId: opts?.fromGlobe ? selectedId : null }),
-  setTimeCursor: (timeCursor) => set({ timeCursor }),
   clearScrollTo: () => set({ scrollToId: null }),
 }));
 
@@ -64,19 +59,14 @@ export function useTheme(): GlobeTheme {
   return THEMES[useGlobeStore((s) => s.theme)];
 }
 
-/** Events passing the category filters and the timeline cursor. */
+/** Events passing the category filters. */
 export function useVisibleEvents(): NewsEvent[] {
   const dataset = useGlobeStore((s) => s.dataset);
   const hidden = useGlobeStore((s) => s.hidden);
-  const timeCursor = useGlobeStore((s) => s.timeCursor);
   return useMemo(() => {
     if (!dataset) return [];
-    return dataset.events.filter(
-      (event) =>
-        !hidden.has(event.category) &&
-        (timeCursor === null || new Date(event.firstSeen).getTime() <= timeCursor),
-    );
-  }, [dataset, hidden, timeCursor]);
+    return dataset.events.filter((event) => !hidden.has(event.category));
+  }, [dataset, hidden]);
 }
 
 /**

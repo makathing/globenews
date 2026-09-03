@@ -146,6 +146,39 @@ async function resolveEventImages(
 /** Domain -> the outlet's own icon URL, cached across runs in data/outlet-icons.json. */
 export type OutletIcons = Record<string, string>;
 
+/** Well-known publishers used only to test whether publishers are reachable at all. */
+export const PROBE_HOSTS = ['https://www.reuters.com/', 'https://apnews.com/', 'https://www.bbc.co.uk/'];
+const PROBE_TIMEOUT_MS = 5_000;
+
+/**
+ * Can this process reach news publishers? The pipeline's own environment
+ * often cannot — every publisher 403s at an egress proxy — and enrichment
+ * fails silently by design, so without this a blocked run looks identical to
+ * a run where no article had an og:image. It also spent ~76s of fetch
+ * timeouts finding that out. Ask up front, once, in parallel; any 2xx/3xx
+ * from any host is enough. `fetchImpl` is injectable for tests.
+ */
+export async function probeEgress(fetchImpl: typeof fetch = fetch): Promise<boolean> {
+  const attempts = PROBE_HOSTS.map(async (url) => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), PROBE_TIMEOUT_MS);
+    try {
+      const res = await fetchImpl(url, {
+        method: 'HEAD',
+        redirect: 'manual',
+        signal: controller.signal,
+        headers: { 'user-agent': UA },
+      });
+      return res.status >= 200 && res.status < 400;
+    } catch {
+      return false;
+    } finally {
+      clearTimeout(timer);
+    }
+  });
+  return (await Promise.all(attempts)).some(Boolean);
+}
+
 /** Mutates the dataset in place, attaching preview images where resolvable. */
 export async function enrichImages(
   dataset: NewsDataset,

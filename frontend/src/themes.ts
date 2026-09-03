@@ -131,7 +131,7 @@ export function loadStoredTheme(): ThemeId {
   } catch {
     // storage unavailable
   }
-  return 'obsidian';
+  return 'blueprint';
 }
 
 export function storeTheme(id: ThemeId): void {
