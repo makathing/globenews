@@ -5,6 +5,7 @@ import { EventRail } from './ui/EventRail';
 import { EventPanel } from './ui/EventPanel';
 import { Tooltip } from './ui/Tooltip';
 import { Updated } from './ui/Updated';
+import { MarkerToggle } from './ui/MarkerToggle';
 import { useGlobeStore } from './store';
 import { useUrlSync } from './lib/urlState';
 
@@ -43,6 +44,7 @@ export function App() {
       <EventPanel />
       <Tooltip />
       <Updated />
+      <MarkerToggle />
       <button
         className="rail-toggle"
         onClick={() => setRailOpen((open) => !open)}
