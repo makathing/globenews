@@ -141,11 +141,15 @@ REASON: ${verdict.reason}
   const previous = readCurrentDataset();
   const breakingDataset = finalizeDataset(staged, previous, 'breaking', { markBreaking: true });
 
-  // Multi-source rule is hard-enforced for breaking pushes.
+  // Multi-source rule is hard-enforced for breaking pushes — on this run's
+  // events. The stories carried over from the daily batch passed their own bar.
+  const thisRun = (event: { lastUpdated: string }) =>
+    event.lastUpdated === breakingDataset.generatedAt;
   breakingDataset.events = breakingDataset.events.filter(
-    (event) => event.sources.length >= MIN_SOURCES_FOR_BREAKING,
+    (event) => !thisRun(event) || event.sources.length >= MIN_SOURCES_FOR_BREAKING,
   );
-  if (breakingDataset.events.length === 0) {
+  const fresh = breakingDataset.events.filter(thisRun);
+  if (fresh.length === 0) {
     console.log('[monitor] escalation produced no multi-source events — not publishing');
     signalChanged(false);
     return;
@@ -160,17 +164,21 @@ REASON: ${verdict.reason}
   } else {
     console.warn('[monitor] publishers unreachable — deferring images to the build');
   }
-  breakingDataset.stats = { ...computeStats(breakingDataset), enrichment };
-
-  // Merge: breaking events first, then existing events (minus superseded ids).
-  const breakingIds = new Set(breakingDataset.events.map((event) => event.id));
-  const kept = (previous?.events ?? []).filter((event) => !breakingIds.has(event.id));
-  breakingDataset.events = [...breakingDataset.events, ...kept].slice(0, 60);
+  // finalizeDataset already merged: this run's events plus every unexpired
+  // story from the previous file, minus the ones this run updated
+  const stats = computeStats(breakingDataset);
+  breakingDataset.stats = {
+    ...stats,
+    expired: (previous?.events.length ?? 0) - (stats.carried ?? 0) - (stats.updated ?? 0),
+    enrichment,
+  };
 
   writeDataset(breakingDataset);
   writeStagingDebug('monitor-ledger.json', ledger.toJSON());
   signalChanged(true);
-  console.log(`[monitor] published ${breakingIds.size} breaking event(s)`);
+  console.log(
+    `[monitor] published ${fresh.length} breaking event(s); ${stats.carried} carried over`,
+  );
 }
 
 main().catch((error) => {

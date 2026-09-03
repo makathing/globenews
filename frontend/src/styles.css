@@ -666,7 +666,8 @@ body,
   color: var(--text-secondary);
 }
 .card-breaking,
-.card-new {
+.card-new,
+.card-updated {
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -682,6 +683,10 @@ body,
 }
 .card-new {
   background: rgba(255, 255, 255, 0.12);
+  color: var(--text-secondary);
+}
+.card-updated {
+  background: rgba(120, 170, 255, 0.18);
   color: var(--text-secondary);
 }
 

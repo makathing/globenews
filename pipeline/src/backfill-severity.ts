@@ -1,4 +1,5 @@
 import { query } from '@anthropic-ai/claude-agent-sdk';
+import { expiryIso } from '../../shared/retention.ts';
 import type { NewsEvent } from '../../shared/news.ts';
 import { computeStats } from './finalize.ts';
 import { readCurrentDataset, writeDataset, authMode, signalChanged } from './io.ts';
@@ -117,6 +118,8 @@ async function main(): Promise<void> {
     const clamped = Math.min(5, Math.max(1, Math.round(rated))) as NewsEvent['severity'];
     if (clamped !== event.severity) changed += 1;
     event.severity = clamped;
+    // lifetime follows severity, so a re-rated story gets a re-set clock
+    event.expiresAt = expiryIso(clamped, event.lastUpdated);
   }
 
   const unrated = targets.filter((e) => !byId.has(e.id));

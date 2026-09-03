@@ -1,4 +1,5 @@
 import type { NewsEvent } from '../../../shared/news';
+import { expiryOf } from '../../../shared/retention';
 import { GLOBE_RADIUS } from './geo';
 
 /**
@@ -42,19 +43,22 @@ export function beamRate(severity: number): number {
   return 0.26 + severity * 0.05;
 }
 
-export const FRESHNESS_WINDOW_HOURS = 24;
-
 /** Hours since the event was first seen (clamped at 0). */
 export function ageHours(event: NewsEvent, now = Date.now()): number {
   return Math.max(0, (now - new Date(event.firstSeen).getTime()) / 3_600_000);
 }
 
 /**
- * 1 = brand new, decaying to 0.4 at the end of the 24h window. Drives beam
- * brightness and pulse speed — never height, so the two encodings don't fight.
+ * 1 when the story was last reported, decaying to 0.4 as it reaches the end
+ * of its severity-scaled lifetime (shared/retention.ts) — so a week-long
+ * story fades over the week and brightens again when it is re-reported.
+ * Drives beam brightness and pulse speed — never height, so the two
+ * encodings don't fight.
  */
 export function freshness(event: NewsEvent, now = Date.now()): number {
-  const t = Math.min(ageHours(event, now) / FRESHNESS_WINDOW_HOURS, 1);
+  const updated = Date.parse(event.lastUpdated);
+  const span = Math.max(expiryOf(event) - updated, 3_600_000);
+  const t = Math.min(Math.max((now - updated) / span, 0), 1);
   return 1 - t * 0.6;
 }
 
@@ -71,4 +75,12 @@ export function relativeTime(iso: string, now = Date.now()): string {
 /** Events first seen within the last hour get a NEW marker. */
 export function isNew(event: NewsEvent, now = Date.now()): boolean {
   return ageHours(event, now) < 1;
+}
+
+/** A story that was already on the map and was re-reported in the last six hours. */
+export function isUpdated(event: NewsEvent, now = Date.now()): boolean {
+  return (
+    event.lastUpdated !== event.firstSeen &&
+    now - Date.parse(event.lastUpdated) < 6 * 3_600_000
+  );
 }

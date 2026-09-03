@@ -32,6 +32,7 @@ export const NewsEventSchema = z.object({
   trustScore: z.number().min(0).max(100),
   firstSeen: z.iso.datetime({ offset: true }),
   lastUpdated: z.iso.datetime({ offset: true }),
+  expiresAt: z.iso.datetime({ offset: true }).optional(),
   isBreaking: z.boolean(),
 });
 
@@ -43,12 +44,15 @@ export const RunStatsSchema = z.object({
   severityDefaulted: z.number().min(0).optional(),
   severityBackfilled: z.number().min(0).optional(),
   enrichment: z.enum(['inline', 'deferred', 'build']).optional(),
+  carried: z.number().min(0).optional(),
+  updated: z.number().min(0).optional(),
+  expired: z.number().min(0).optional(),
 });
 
 export const NewsDatasetSchema = z.object({
   generatedAt: z.iso.datetime({ offset: true }),
   mode: z.enum(['daily', 'breaking']),
-  events: z.array(NewsEventSchema).max(100),
+  events: z.array(NewsEventSchema).max(150),
   // zod strips unknown keys rather than rejecting them, so anything absent
   // here is silently dropped on read — stats have to be declared to survive
   stats: RunStatsSchema.optional(),
@@ -64,8 +68,12 @@ export const StagedEventSchema = NewsEventSchema.omit({
   trustScore: true,
   firstSeen: true,
   lastUpdated: true,
+  expiresAt: true,
   isBreaking: true,
 }).extend({
+  // the id of the story already on the map that this event continues; the
+  // runner uses it to keep that story's id and added time
+  updates: z.string().optional(),
   sources: z
     .array(z.object({ url: z.url() }).or(z.url().transform((url) => ({ url }))))
     .min(1)

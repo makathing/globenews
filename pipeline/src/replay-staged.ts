@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { parseStagedOutput, validateDataset } from './schema.ts';
-import { finalizeDataset } from './finalize.ts';
+import { computeStats, finalizeDataset } from './finalize.ts';
 import { enrichImages } from './enrich-images.ts';
 import { readCurrentDataset, writeDataset, signalChanged } from './io.ts';
 
@@ -28,7 +28,15 @@ if (!flags.includes('--no-images')) {
   const { resolved } = await enrichImages(dataset);
   console.log(`[replay] resolved ${resolved} preview image(s)`);
 }
+const stats = computeStats(dataset);
+dataset.stats = {
+  ...stats,
+  expired: (previous?.events.length ?? 0) - (stats.carried ?? 0) - (stats.updated ?? 0),
+};
 validateDataset(dataset);
 writeDataset(dataset, { archive: true });
 signalChanged(true);
-console.log(`[replay] wrote ${dataset.events.length} events to data/events.json`);
+console.log(
+  `[replay] wrote ${dataset.events.length} events to data/events.json ` +
+    `(${stats.updated} updated, ${stats.carried} carried, ${dataset.stats.expired} expired)`,
+);

@@ -69,3 +69,129 @@ describe('per-source preview images', () => {
     expect(carried.sources[2]?.image).toBeUndefined();
   });
 });
+
+// ————— retention: what one run keeps from the last —————
+
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import type { NewsDataset } from '../../shared/news.ts';
+import { computeStats } from '../src/finalize.ts';
+
+/** The same dataset as if it had been produced `hours` ago. */
+function shift(dataset: NewsDataset, hours: number): NewsDataset {
+  const back = (iso: string) => new Date(Date.parse(iso) - hours * 3_600_000).toISOString();
+  return {
+    ...dataset,
+    generatedAt: back(dataset.generatedAt),
+    events: dataset.events.map((event) => ({
+      ...event,
+      firstSeen: back(event.firstSeen),
+      lastUpdated: back(event.lastUpdated),
+      ...(event.expiresAt ? { expiresAt: back(event.expiresAt) } : {}),
+    })),
+  };
+}
+
+describe('finalizeDataset retention', () => {
+  const first = finalizeDataset(MOCK_STAGED, null, 'daily');
+  const ceasefire = first.events.find((event) => event.headline.startsWith('Ceasefire'))!;
+
+  it('stamps every event with a severity-scaled expiry', () => {
+    for (const event of first.events) {
+      const hours = (Date.parse(event.expiresAt!) - Date.parse(event.lastUpdated)) / 3_600_000;
+      expect(hours).toBe({ 1: 24, 2: 36, 3: 48, 4: 96, 5: 168 }[event.severity]);
+    }
+  });
+
+  it('carries every unexpired story through a run that did not mention it', () => {
+    const later = finalizeDataset({ events: [] }, shift(first, 10), 'daily');
+    expect(later.events).toHaveLength(first.events.length);
+    for (const event of later.events) {
+      const before = shift(first, 10).events.find((e) => e.id === event.id)!;
+      expect(event.lastUpdated).toBe(before.lastUpdated);
+      expect(event.firstSeen).toBe(before.firstSeen);
+      expect(event.summary).toBe(before.summary);
+    }
+    expect(() => validateDataset(later)).not.toThrow();
+  });
+
+  it('lets stories go when their lifetime runs out, shortest first', () => {
+    const later = finalizeDataset({ events: [] }, shift(first, 40), 'daily');
+    const survivors = first.events.filter((event) => event.severity >= 3);
+    expect(later.events.map((e) => e.id).sort()).toEqual(survivors.map((e) => e.id).sort());
+    expect(finalizeDataset({ events: [] }, shift(first, 200), 'daily').events).toHaveLength(0);
+  });
+
+  it('treats a reworded follow-up as an update: same id, same added time, new clock', () => {
+    const previous = shift(first, 10);
+    const staged = {
+      events: [
+        {
+          ...MOCK_STAGED.events[0],
+          headline: 'Ceasefire talks resume as shelling continues near eastern frontline towns',
+          sources: [{ url: 'https://www.theguardian.com/world/sample-ceasefire' }],
+        },
+      ],
+    };
+    const later = finalizeDataset(staged, previous, 'daily');
+    const updated = later.events.find((e) => e.id === ceasefire.id)!;
+    expect(updated).toBeDefined();
+    expect(updated.headline).toMatch(/^Ceasefire talks/);
+    expect(updated.firstSeen).toBe(previous.events.find((e) => e.id === ceasefire.id)!.firstSeen);
+    expect(updated.lastUpdated).toBe(later.generatedAt);
+    expect(Date.parse(updated.expiresAt!)).toBeGreaterThan(Date.parse(ceasefire.expiresAt!) - 1);
+    // the outlets that reported the earlier chapter stay, the new one leads
+    expect(updated.sources[0].domain).toBe('theguardian.com');
+    expect(updated.sources.map((s) => s.domain)).toEqual(
+      expect.arrayContaining(ceasefire.sources.map((s) => s.domain)),
+    );
+    // and no stale copy of the story is left behind
+    expect(later.events.filter((e) => e.headline.startsWith('Ceasefire'))).toHaveLength(1);
+  });
+
+  it('honours the synthesizer naming the story it continues', () => {
+    const previous = shift(first, 10);
+    const staged = {
+      events: [
+        {
+          ...MOCK_STAGED.events[0],
+          headline: 'Prisoner exchange completed under new humanitarian corridor agreement',
+          updates: ceasefire.id,
+        },
+      ],
+    };
+    const later = finalizeDataset(staged, previous, 'daily');
+    const updated = later.events.find((e) => e.id === ceasefire.id)!;
+    expect(updated.headline).toMatch(/^Prisoner exchange/);
+    expect(later.events).toHaveLength(first.events.length);
+  });
+
+  it('clears the breaking flag on carried stories in a daily run, keeps it for the monitor', () => {
+    const previous = shift(first, 2);
+    previous.events[0].isBreaking = true;
+    const daily = finalizeDataset({ events: [] }, previous, 'daily');
+    expect(daily.events.find((e) => e.id === previous.events[0].id)!.isBreaking).toBe(false);
+    const breaking = finalizeDataset({ events: [] }, previous, 'breaking', { markBreaking: true });
+    expect(breaking.events.find((e) => e.id === previous.events[0].id)!.isBreaking).toBe(true);
+  });
+
+  it('can still replace wholesale when asked', () => {
+    const later = finalizeDataset({ events: [MOCK_STAGED.events[1]] }, shift(first, 10), 'daily', {
+      retain: false,
+    });
+    expect(later.events).toHaveLength(1);
+  });
+
+  it('counts what a run carried and updated', () => {
+    const previous = shift(first, 10);
+    const later = finalizeDataset({ events: [MOCK_STAGED.events[0]] }, previous, 'daily');
+    const stats = computeStats(later);
+    expect(stats.updated).toBe(1);
+    expect(stats.carried).toBe(first.events.length - 1);
+  });
+
+  it('still validates the dataset shipped before retention existed', () => {
+    const shipped = JSON.parse(readFileSync(resolve(__dirname, '../../data/events.json'), 'utf8'));
+    expect(() => validateDataset(shipped)).not.toThrow();
+  });
+});
