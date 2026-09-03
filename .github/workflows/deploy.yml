@@ -8,13 +8,6 @@ on:
       - 'shared/**'
       - 'data/**'
       - '.github/workflows/deploy.yml'
-  # The enrichment workflow commits resolved images to data/, but a push made
-  # with GITHUB_TOKEN deliberately does not trigger other workflows — GitHub
-  # blocks that to prevent recursion. So the push filter above never sees it,
-  # and without this the images would sit on main undeployed.
-  workflow_run:
-    workflows: ['Resolve article preview images']
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -29,11 +22,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # workflow_run fires on completion whatever the outcome, so don't publish
-    # off the back of an enrichment run that failed.
-    if: >-
-      github.event_name != 'workflow_run' ||
-      github.event.workflow_run.conclusion == 'success'
     steps:
       - uses: actions/checkout@v4
       # Provisions Pages if it has never been enabled, so a fresh clone of this
@@ -47,6 +35,17 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+
+      # Preview images are presentation, not data: derived, best-effort and
+      # re-derivable at any time. Resolving them here — into the ephemeral
+      # checkout, never committed — means the repo holds news and the build
+      # adds art. prebuild's copy-data.mjs then copies the enriched file into
+      # public/, and vite-plugin-seo reads the same file for per-story og:image.
+      #
+      # This used to be a separate workflow that committed to data/, which
+      # collided with every pull request that touched the dataset.
+      - run: npm run pipeline:enrich
+
       - run: npm run build -w frontend
       - uses: actions/upload-pages-artifact@v3
         with:
