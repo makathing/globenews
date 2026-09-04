@@ -1,7 +1,7 @@
 import { useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import type { NewsEvent } from '../../../shared/news';
-import { beamColor, beamWidth } from '../lib/beams';
+import { beamColor } from '../lib/beams';
 import { useGlyphAtlas } from '../lib/glyphAtlas';
 import {
   PIN_GLYPH_FADE_PX,
@@ -11,11 +11,10 @@ import {
   pinNeedleLength,
 } from '../lib/pins';
 import { CATEGORY_PATTERN } from '../lib/signatures';
-import { useTheme, useVisibleEvents } from '../store';
+import { useVisibleEvents } from '../store';
 import {
   MarkerHitTarget,
   applyFrame,
-  makePoolMaterial,
   sharedMarkerUniforms,
   useMarkerFrame,
   useMarkerPointer,
@@ -35,7 +34,7 @@ import {
  */
 
 /** Dark ink for the glyph cut into the head. */
-const PIN_INK = new THREE.Color('#06121c');
+const PIN_INK = new THREE.Color('#2b1608');
 
 /* — needle: a hairline quad standing on the surface, billboarded about its axis — */
 const needleVertex = /* glsl */ `
@@ -156,14 +155,13 @@ function smoothstep(edge0: number, edge1: number, x: number): number {
 }
 
 function Pin({ event }: { event: NewsEvent }) {
-  const theme = useTheme();
   const { texture, ready } = useGlyphAtlas();
   const { position, quaternion, axis } = useSurfaceFrame(event.lat, event.lon);
   const headRef = useRef<THREE.Group>(null);
   const readyRef = useRef(ready);
   readyRef.current = ready;
 
-  const { needle, head, pool } = useMemo(() => {
+  const { needle, head } = useMemo(() => {
     const color = new THREE.Color(beamColor(event));
     const common = {
       transparent: true,
@@ -199,14 +197,12 @@ function Pin({ event }: { event: NewsEvent }) {
           uAtlas: { value: texture },
         },
       }),
-      pool: makePoolMaterial(sharedMarkerUniforms(color, event.isBreaking), theme.blipAdditive),
     };
-  }, [event, theme.blipAdditive, texture]);
+  }, [event, texture]);
 
   const pointerInsideRef = useMarkerFrame(event, position, axis, (frame) => {
     applyFrame(needle, frame);
     applyFrame(head, frame);
-    applyFrame(pool, frame);
 
     // the needle never falls below a legible length on screen, so a pin at
     // full zoom-out is still a pin and not a dot
@@ -231,17 +227,12 @@ function Pin({ event }: { event: NewsEvent }) {
   });
   const handlers = useMarkerPointer(event, pointerInsideRef);
 
-  const poolSize = beamWidth(event.severity) * 3.6;
   const needleFloor = pinNeedleLength(event.severity);
 
   return (
     <group position={position} quaternion={quaternion}>
       <mesh material={needle} frustumCulled={false}>
         <planeGeometry args={[1, 1]} />
-      </mesh>
-
-      <mesh material={pool} position={[0, 0.002, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[poolSize, poolSize]} />
       </mesh>
 
       <group ref={headRef} position={[0, needleFloor, 0]}>

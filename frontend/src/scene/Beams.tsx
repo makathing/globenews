@@ -7,7 +7,6 @@ import { useTheme, useVisibleEvents } from '../store';
 import {
   MarkerHitTarget,
   applyFrame,
-  makePoolMaterial,
   sharedMarkerUniforms,
   useMarkerFrame,
   useMarkerPointer,
@@ -131,11 +130,11 @@ const shaftFragment = /* glsl */ `
     alpha *= mix(1.0, 0.55, near);
     // ...and down a little when zoomed out, where many overlap
     alpha *= mix(1.0, 0.8, uFar);
-    // Selecting a story flies the camera onto the event's own normal, so you
-    // end up sighting straight down the shaft, where a vertical beam has no
-    // shape to show. Yield instead of drawing a bright blob — the pool below
-    // takes over as the marker.
-    alpha *= 1.0 - smoothstep(0.72, 0.97, uAxisView) * 0.75;
+    // Sighting down a beam still flattens it, but there is no ground pool to
+    // take over any more, so it dims rather than yields — a dim marker beats
+    // an absent one. Selection now parks off-axis (CameraRig), so this is the
+    // rare hand-orbited case rather than every story you open.
+    alpha *= 1.0 - smoothstep(0.72, 0.97, uAxisView) * 0.3;
     if (alpha < 0.004) discard;
     gl_FragColor = vec4(color * (1.0 + uBoost * 0.5), min(alpha, 1.0));
   }
@@ -147,10 +146,9 @@ function Beam({ event }: { event: NewsEvent }) {
   const width = beamWidth(event.severity);
   const { position, quaternion, axis } = useSurfaceFrame(event.lat, event.lon);
 
-  const { shaft, pool } = useMemo(() => {
+  const shaft = useMemo(() => {
     const color = new THREE.Color(beamColor(event));
-    return {
-      shaft: new THREE.ShaderMaterial({
+    return new THREE.ShaderMaterial({
         transparent: true,
         depthWrite: false,
         // depthTest against the Earth keeps far-side beams correctly occluded —
@@ -165,34 +163,21 @@ function Beam({ event }: { event: NewsEvent }) {
           uHeight: { value: height },
           uWidth: { value: width },
           uRate: { value: beamRate(event.severity) },
-          uPattern: { value: CATEGORY_PATTERN[event.category] },
-        },
-      }),
-      pool: makePoolMaterial(
-        sharedMarkerUniforms(color, event.isBreaking),
-        theme.blipAdditive,
-      ),
-    };
+        uPattern: { value: CATEGORY_PATTERN[event.category] },
+      },
+    });
   }, [event, theme.blipAdditive, height, width]);
 
   const pointerInsideRef = useMarkerFrame(event, position, axis, (frame) => {
     applyFrame(shaft, frame);
-    applyFrame(pool, frame);
   });
   const handlers = useMarkerPointer(event, pointerInsideRef);
-
-  const poolSize = width * 5.2;
 
   return (
     <group position={position} quaternion={quaternion}>
       {/* shaft: unit quad, expanded to full size in the vertex shader */}
       <mesh material={shaft} frustumCulled={false}>
         <planeGeometry args={[1, 1]} />
-      </mesh>
-
-      {/* ground pool, lying flat on the surface */}
-      <mesh material={pool} position={[0, 0.002, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[poolSize, poolSize]} />
       </mesh>
 
       <MarkerHitTarget
