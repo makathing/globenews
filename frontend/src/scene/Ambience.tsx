@@ -236,9 +236,14 @@ const SHIP_LENGTH = 0.4;
 const SHIP_MIN_PX = 14;
 const SHIP_MAX_PX = 30;
 /** Path units per second at rest; a burst multiplies this. */
-const SHIP_BASE_SPEED = 0.16;
-/** Lookahead used to derive heading and turn rate from the path. */
-const SHIP_STEP = 0.03;
+const SHIP_BASE_SPEED = 0.28;
+/**
+ * Lookahead used to derive heading and turn rate from the path. Large enough
+ * that the sampled travel is unambiguously bigger than any residual noise.
+ */
+const SHIP_STEP = 0.08;
+/** Flutter: a bob, in ship-lengths, not a vibration. */
+const SHIP_FLUTTER = 0.12;
 
 /**
  * Where the ship sits at path position `s`, as a point in the camera's own
@@ -255,13 +260,17 @@ const SHIP_STEP = 0.03;
  */
 function shipViewPoint(s: number): { x: number; y: number; depth: number } {
   return {
-    // biased right of centre so it does not spend its time hidden behind the
-    // rail on a desktop layout
-    x: 0.2 + 0.62 * Math.sin(0.37 * s) * Math.cos(0.19 * s + 0.7),
-    y: 0.52 * Math.sin(0.29 * s + 1.3) + 0.18 * Math.sin(0.71 * s),
-    // 0.42x to 1.45x the camera's distance: well in front of the globe's near
+    // A wide, fast lateral sweep with a slow vertical drift under it, so the
+    // ship reads as going somewhere. The first attempt multiplied two similar
+    // frequencies together, which traced an ellipse whose amplitude collapsed
+    // periodically — it orbited a patch of sky instead of crossing. Sums, and
+    // clearly separated rates, are what make it a traverse. Biased right of
+    // centre so it is not forever hidden behind the rail on desktop.
+    x: 0.12 + 0.62 * Math.sin(0.42 * s) + 0.12 * Math.sin(0.11 * s + 2.0),
+    y: 0.34 * Math.sin(0.13 * s + 1.3) + 0.09 * Math.sin(0.53 * s),
+    // 0.45x to 1.45x the camera's distance: well in front of the globe's near
     // face at one end, comfortably behind its centre at the other
-    depth: 0.935 + 0.515 * Math.sin(0.13 * s + 0.4),
+    depth: 0.95 + 0.5 * Math.sin(0.31 * s + 0.4),
   };
 }
 
@@ -317,6 +326,7 @@ function Ship({ brightness }: { brightness: number }) {
       heading: new THREE.Vector3(),
       turn: new THREE.Vector3(),
       lateral: new THREE.Vector3(),
+      aim: new THREE.Vector3(),
     }),
     [],
   );
@@ -367,21 +377,28 @@ function Ship({ brightness }: { brightness: number }) {
     const scale = targetPx / naturalPx;
     ship.scale.setScalar(scale);
 
-    // flutter, sized against the ship rather than the world, so the wobble
-    // reads the same whether it is near or far
-    const wobble = prefersReducedMotion ? 0 : SHIP_LENGTH * scale * 0.4;
-    scratch.here.addScaledVector(scratch.right, Math.sin(11.3 * t) * wobble);
-    scratch.here.addScaledVector(scratch.up, Math.sin(9.7 * t + 1.2) * wobble);
-    ship.position.copy(scratch.here);
-
-    // heading from the path itself, then bank into the turn
+    // Heading comes from the *clean* path, before any flutter. Deriving it
+    // from the fluttered point was the bug that made the ship spin: the
+    // wobble offset was about three times the travel between path samples, so
+    // the direction vector was dominated by a 1.8Hz oscillation and lookAt
+    // whipped the hull around every frame.
     scratch.heading.subVectors(scratch.next, scratch.here).normalize();
-    ship.lookAt(scratch.next);
     scratch.turn.subVectors(scratch.after, scratch.next).normalize().sub(scratch.heading);
+
+    // flutter, sized against the ship rather than the world, so the wobble
+    // reads the same whether it is near or far — and applied only to where it
+    // is drawn, never to where it is pointing
+    const wobble = prefersReducedMotion ? 0 : SHIP_LENGTH * scale * SHIP_FLUTTER;
+    scratch.here.addScaledVector(scratch.right, Math.sin(3.1 * t) * wobble);
+    scratch.here.addScaledVector(scratch.up, Math.sin(2.3 * t + 1.2) * wobble);
+    ship.position.copy(scratch.here);
+    ship.lookAt(scratch.aim.copy(scratch.here).add(scratch.heading));
+
+    // bank into the turn
     scratch.lateral.crossVectors(scratch.heading, scratch.up).normalize();
     const targetBank =
-      Math.min(Math.max(scratch.turn.dot(scratch.lateral) * 22, -1.1), 1.1) +
-      (prefersReducedMotion ? 0 : Math.sin(7.9 * t) * 0.14);
+      Math.min(Math.max(scratch.turn.dot(scratch.lateral) * 12, -0.8), 0.8) +
+      (prefersReducedMotion ? 0 : Math.sin(1.7 * t) * 0.1);
     bankRef.current += (targetBank - bankRef.current) * Math.min(delta * 3, 1);
     ship.rotateZ(bankRef.current);
 

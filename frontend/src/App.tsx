@@ -28,7 +28,9 @@ export function App() {
   }, [selectedId]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/events.json`)
+    // ?v= defeats any cache that ignores revalidation; no-cache forces an
+    // If-None-Match round trip, so an unchanged file still costs only a 304
+    fetch(`${import.meta.env.BASE_URL}data/events.json?v=${__BUILD_ID__}`, { cache: 'no-cache' })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
