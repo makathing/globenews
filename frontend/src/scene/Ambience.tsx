@@ -6,16 +6,15 @@ import { prefersReducedMotion, useTheme } from '../store';
 
 /**
  * Things that are simply out there: two satellites in low orbit, a moon well
- * off in the dark, and a ship that crosses the far background every couple of
- * minutes. Nothing here is data — it exists so the sky around the planet is a
- * place rather than a void.
+ * off in the dark, and a ship going about its business. Nothing here is data
+ * — it exists so the sky around the planet is a place rather than a void.
  *
  * The rules that keep it from becoming a distraction: everything is small
- * (the moon reads at roughly 15px, the ship at 16), slow, and dim enough to
- * sit under the bloom threshold; nothing crosses in front of the globe or the
- * UI; and nothing takes a pointer event, so a click always belongs to a
- * story. There are no lights in this scene, so each object shades itself from
- * the same SUN_DIRECTION the Earth uses.
+ * (the moon reads at roughly 15px, the ship between 14 and 28), slow enough
+ * to be scenery, and dim enough to sit under the bloom threshold; and nothing
+ * takes a pointer event, so a click always belongs to a story even when the
+ * ship is crossing the globe. There are no lights in this scene, so each
+ * object shades itself from the same SUN_DIRECTION the Earth uses.
  */
 
 /* — self-shading material: the only lighting model in the scene — */
@@ -142,7 +141,9 @@ function Satellite({ orbit, brightness }: { orbit: Orbit; brightness: number }) 
       panel: sunlitMaterial('#1c3054', 0.12),
       beaconMaterial: new THREE.SpriteMaterial({
         map: glowTexture(),
-        color: new THREE.Color('#ffd9a0'),
+        // cool, not warm: severity markers own the warm end of the palette now,
+        // and a warm blink over the globe reads as a story that isn't there
+        color: new THREE.Color('#dceaff'),
         transparent: true,
         depthWrite: false,
         blending: THREE.AdditiveBlending,
@@ -226,28 +227,73 @@ function Moon({ brightness }: { brightness: number }) {
   );
 }
 
-/** First pass shortly after arrival, then every two to three minutes. */
-const SHIP_FIRST_DELAY = 45;
-const SHIP_GAP = 120;
-const SHIP_GAP_JITTER = 60;
-const SHIP_DURATION = 20;
-/** How far past the globe the flight path sits, and how far off the planet's disc. */
-const SHIP_DEPTH = 22;
-const SHIP_OFFSET = 7.5;
-const SHIP_HALF_SPAN = 11;
+/**
+ * The ship's shape, in world units before the on-screen size clamp below.
+ * Nose along +Z, which is where `lookAt` points.
+ */
+const SHIP_LENGTH = 0.4;
+/** On-screen length it is held between, in CSS pixels. */
+const SHIP_MIN_PX = 14;
+const SHIP_MAX_PX = 30;
+/** Path units per second at rest; a burst multiplies this. */
+const SHIP_BASE_SPEED = 0.16;
+/** Lookahead used to derive heading and turn rate from the path. */
+const SHIP_STEP = 0.03;
 
+/**
+ * Where the ship sits at path position `s`, as a point in the camera's own
+ * frame: `x` and `y` are fractions of the visible half-width and half-height,
+ * and `depth` is a multiple of the camera's distance to the globe.
+ *
+ * Anchoring to the view rather than to world coordinates is what makes "always
+ * there" true. A world-fixed wanderer spends most of its life outside the
+ * frustum — badly so on a phone, where the horizontal field of view is about
+ * eleven degrees — and a ship you only glimpse once a minute is the thing we
+ * were trying to get away from. Kept inside ±0.9 it is always somewhere on
+ * screen; the depth sweep is what carries it in front of the planet and back
+ * behind it.
+ */
+function shipViewPoint(s: number): { x: number; y: number; depth: number } {
+  return {
+    // biased right of centre so it does not spend its time hidden behind the
+    // rail on a desktop layout
+    x: 0.2 + 0.62 * Math.sin(0.37 * s) * Math.cos(0.19 * s + 0.7),
+    y: 0.52 * Math.sin(0.29 * s + 1.3) + 0.18 * Math.sin(0.71 * s),
+    // 0.42x to 1.45x the camera's distance: well in front of the globe's near
+    // face at one end, comfortably behind its centre at the other
+    depth: 0.935 + 0.515 * Math.sin(0.13 * s + 0.4),
+  };
+}
+
+/**
+ * A small craft going about its business, always somewhere in frame.
+ *
+ * It used to be a scheduled straight line far behind the planet, absent most
+ * of the time. Now it roams the whole view — including across the globe —
+ * which only works because its size is clamped in *pixels*: the same hull at
+ * the near end of its depth range would otherwise be a few hundred pixels of
+ * spaceship across the middle of the map. Held between 14 and 30px it keeps a
+ * hint of parallax and can never take over the frame.
+ *
+ * Personality is all in the motion: it drifts, then bursts forward with the
+ * engine flaring, flutters constantly like something small holding a heading
+ * in a breeze, and banks into its own turns.
+ */
 function Ship({ brightness }: { brightness: number }) {
   const group = useRef<THREE.Group>(null);
   const engine = useRef<THREE.Sprite>(null);
-  const flight = useRef<{ from: THREE.Vector3; to: THREE.Vector3; start: number } | null>(null);
-  const nextLaunch = useRef(SHIP_FIRST_DELAY);
+  /** Distance travelled along the path, advanced at a variable rate. */
+  const pathPos = useRef(Math.random() * 40);
+  const bankRef = useRef(0);
 
   const { hull, engineMaterial } = useMemo(
     () => ({
       hull: sunlitMaterial('#b9c1cc', 0.2),
       engineMaterial: new THREE.SpriteMaterial({
         map: glowTexture(),
-        color: new THREE.Color('#ffb36b'),
+        // same rule as the satellite beacons: ambient lights are cool so they
+        // are never mistaken for a marker when the ship crosses the planet
+        color: new THREE.Color('#cfe6ff'),
         transparent: true,
         depthWrite: false,
         blending: THREE.AdditiveBlending,
@@ -262,70 +308,96 @@ function Ship({ brightness }: { brightness: number }) {
 
   const scratch = useMemo(
     () => ({
-      dir: new THREE.Vector3(),
       right: new THREE.Vector3(),
       up: new THREE.Vector3(),
-      anchor: new THREE.Vector3(),
-      ahead: new THREE.Vector3(),
+      forward: new THREE.Vector3(),
+      here: new THREE.Vector3(),
+      next: new THREE.Vector3(),
+      after: new THREE.Vector3(),
+      heading: new THREE.Vector3(),
+      turn: new THREE.Vector3(),
+      lateral: new THREE.Vector3(),
     }),
     [],
   );
 
-  useFrame((state) => {
-    if (!group.current) return;
-    if (prefersReducedMotion) {
-      group.current.visible = false;
-      return;
-    }
-    const now = state.clock.elapsedTime;
+  useFrame((state, delta) => {
+    const ship = group.current;
+    if (!ship) return;
+    const t = state.clock.elapsedTime;
+    const camera = state.camera as THREE.PerspectiveCamera;
 
-    if (!flight.current && now >= nextLaunch.current) {
-      // The path is laid out from where the camera is looking *at launch* and
-      // then fixed in world space, so turning the globe mid-flight moves past
-      // the ship the way it would move past anything else out there.
-      const camera = state.camera;
-      camera.getWorldDirection(scratch.dir);
-      scratch.right.setFromMatrixColumn(camera.matrixWorld, 0).normalize();
-      scratch.up.setFromMatrixColumn(camera.matrixWorld, 1).normalize();
-      scratch.anchor
-        .copy(scratch.dir)
-        .multiplyScalar(SHIP_DEPTH)
-        .addScaledVector(scratch.up, SHIP_OFFSET * (Math.random() < 0.5 ? 1 : -1));
-      flight.current = {
-        from: scratch.anchor.clone().addScaledVector(scratch.right, -SHIP_HALF_SPAN),
-        to: scratch.anchor.clone().addScaledVector(scratch.right, SHIP_HALF_SPAN),
-        start: now,
-      };
+    // A burst every ~48s: mostly nothing, then a sharp couple of seconds at ~4x.
+    const burst = prefersReducedMotion
+      ? 0
+      : Math.pow(Math.max(Math.sin(0.13 * t + 2.1), 0), 8) * 3;
+    if (!prefersReducedMotion) {
+      pathPos.current += delta * SHIP_BASE_SPEED * (1 + burst);
     }
+    const s = pathPos.current;
 
-    const active = flight.current;
-    if (!active) {
-      group.current.visible = false;
-      return;
-    }
+    // the camera's own frame, which the path is expressed in
+    scratch.right.setFromMatrixColumn(camera.matrixWorld, 0).normalize();
+    scratch.up.setFromMatrixColumn(camera.matrixWorld, 1).normalize();
+    camera.getWorldDirection(scratch.forward);
+    const camDistance = camera.position.length();
+    const tanHalf = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
 
-    const t = (now - active.start) / SHIP_DURATION;
-    if (t >= 1) {
-      flight.current = null;
-      nextLaunch.current = now + SHIP_GAP + Math.random() * SHIP_GAP_JITTER;
-      group.current.visible = false;
-      return;
-    }
+    const place = (at: number, out: THREE.Vector3) => {
+      const p = shipViewPoint(at);
+      const depth = p.depth * camDistance;
+      const halfHeight = depth * tanHalf;
+      const halfWidth = halfHeight * camera.aspect;
+      return out
+        .copy(camera.position)
+        .addScaledVector(scratch.forward, depth)
+        .addScaledVector(scratch.right, p.x * halfWidth)
+        .addScaledVector(scratch.up, p.y * halfHeight);
+    };
 
-    group.current.visible = true;
-    group.current.position.lerpVectors(active.from, active.to, t);
-    scratch.ahead.lerpVectors(active.from, active.to, Math.min(t + 0.01, 1));
-    group.current.lookAt(scratch.ahead);
+    place(s, scratch.here);
+    place(s + SHIP_STEP, scratch.next);
+    place(s + SHIP_STEP * 2, scratch.after);
+
+    // hold a near-constant size on screen, whatever the depth
+    const distance = camera.position.distanceTo(scratch.here);
+    const worldPerPixel = (2 * distance * tanHalf) / state.size.height;
+    const naturalPx = SHIP_LENGTH / worldPerPixel;
+    const targetPx = Math.min(Math.max(naturalPx, SHIP_MIN_PX), SHIP_MAX_PX);
+    const scale = targetPx / naturalPx;
+    ship.scale.setScalar(scale);
+
+    // flutter, sized against the ship rather than the world, so the wobble
+    // reads the same whether it is near or far
+    const wobble = prefersReducedMotion ? 0 : SHIP_LENGTH * scale * 0.4;
+    scratch.here.addScaledVector(scratch.right, Math.sin(11.3 * t) * wobble);
+    scratch.here.addScaledVector(scratch.up, Math.sin(9.7 * t + 1.2) * wobble);
+    ship.position.copy(scratch.here);
+
+    // heading from the path itself, then bank into the turn
+    scratch.heading.subVectors(scratch.next, scratch.here).normalize();
+    ship.lookAt(scratch.next);
+    scratch.turn.subVectors(scratch.after, scratch.next).normalize().sub(scratch.heading);
+    scratch.lateral.crossVectors(scratch.heading, scratch.up).normalize();
+    const targetBank =
+      Math.min(Math.max(scratch.turn.dot(scratch.lateral) * 22, -1.1), 1.1) +
+      (prefersReducedMotion ? 0 : Math.sin(7.9 * t) * 0.14);
+    bankRef.current += (targetBank - bankRef.current) * Math.min(delta * 3, 1);
+    ship.rotateZ(bankRef.current);
+
     if (engine.current) {
-      engine.current.material.opacity = brightness * (0.8 + 0.2 * Math.sin(now * 23));
+      // the engine is how a burst reads: brighter and bigger while it runs
+      const flicker = prefersReducedMotion ? 1 : 0.8 + 0.2 * Math.sin(t * 23);
+      engine.current.material.opacity = Math.min(brightness * flicker * (0.55 + burst * 0.5), 1);
+      engine.current.scale.setScalar(0.16 * (1 + burst * 0.9));
     }
   });
 
   return (
-    <group ref={group} visible={false}>
+    <group ref={group}>
       {/* nose along +Z, which lookAt points down the flight path */}
       <mesh material={hull} rotation={[Math.PI / 2, 0, 0]} raycast={noRaycast}>
-        <coneGeometry args={[0.05, 0.4, 6]} />
+        <coneGeometry args={[0.05, SHIP_LENGTH, 6]} />
       </mesh>
       <mesh material={hull} raycast={noRaycast}>
         <planeGeometry args={[0.22, 0.09]} />

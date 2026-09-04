@@ -133,3 +133,12 @@ export const prefersReducedMotion =
  */
 export const coarsePointer =
   typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches === true;
+
+/**
+ * A phone-shaped viewport. Same breakpoint the rail uses to become a drawer,
+ * so the layout and the camera's opening framing agree about what "small
+ * screen" means. Read once, like the flags above; the camera is only seeded
+ * from it and the viewer can zoom wherever they like afterwards.
+ */
+export const narrowViewport =
+  typeof window !== 'undefined' && window.matchMedia?.('(max-width: 900px)').matches === true;
