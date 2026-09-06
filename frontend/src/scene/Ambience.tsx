@@ -198,30 +198,57 @@ function Satellite({ orbit, brightness }: { orbit: Orbit; brightness: number }) 
 
 /**
  * Far enough out to be scenery, placed up and to the right of the opening
- * framing so it is noticed rather than hunted for. Derived from the camera's
- * start position (SceneRoot) rather than hand-picked coordinates, which is
- * how the first attempt ended up behind the viewer. Fixed in world space, so
- * it drifts out of frame as you turn the globe — as it should.
+ * framing so it is noticed rather than hunted for. Direction comes from the
+ * camera's start vector (SceneRoot) rather than hand-picked coordinates, which
+ * is how the first attempt ended up behind the viewer.
+ *
+ * The offsets are fractions of the *actual* field of view, not constants: with
+ * a perspective camera, `right · f · tan(hfov/2)` lands at exactly `f` in NDC,
+ * so the moon sits at the same spot on screen whatever the aspect. It used to
+ * be a fixed world offset tuned against a landscape frustum — and since
+ * `fov: 45` is the *vertical* fov, a portrait phone has barely a third of a
+ * desktop's horizontal field, which put the moon well off the side of every
+ * phone. Fixed in world space once placed, so it drifts out of frame as you
+ * turn the globe — as it should.
  */
-const MOON_POSITION = (() => {
-  const forward = new THREE.Vector3(1.15, 0.95, 4.3).negate().normalize();
-  const right = new THREE.Vector3().crossVectors(forward, new THREE.Vector3(0, 1, 0)).normalize();
-  const up = new THREE.Vector3().crossVectors(right, forward).normalize();
-  return forward
-    .clone()
-    .addScaledVector(right, 0.42)
-    .addScaledVector(up, 0.3)
+const MOON_FORWARD = new THREE.Vector3(1.15, 0.95, 4.3).negate().normalize();
+const MOON_RIGHT = new THREE.Vector3()
+  .crossVectors(MOON_FORWARD, new THREE.Vector3(0, 1, 0))
+  .normalize();
+const MOON_UP = new THREE.Vector3().crossVectors(MOON_RIGHT, MOON_FORWARD).normalize();
+const MOON_DISTANCE = 30;
+/** Where it lands in NDC: right of centre, high, clear of the rail and the chip. */
+const MOON_NDC_X = 0.65;
+const MOON_NDC_Y = 0.75;
+
+function placeMoon(target: THREE.Vector3, camera: THREE.PerspectiveCamera): void {
+  const tanV = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+  const tanH = tanV * camera.aspect;
+  target
+    .copy(MOON_FORWARD)
+    .addScaledVector(MOON_RIGHT, MOON_NDC_X * tanH)
+    .addScaledVector(MOON_UP, MOON_NDC_Y * tanV)
     .normalize()
-    .multiplyScalar(30);
-})();
+    .multiplyScalar(MOON_DISTANCE);
+}
 
 function Moon({ brightness }: { brightness: number }) {
   const material = useMemo(() => sunlitMaterial('#6c6c68', 0.05, 0.45), []);
+  const meshRef = useRef<THREE.Mesh>(null);
+  const aspectRef = useRef(0);
   useEffect(() => {
     material.uniforms.uBrightness.value = brightness;
   }, [material, brightness]);
+  // r3f mutates the camera on resize without re-rendering, so this is a frame
+  // check rather than a memo — and it costs one float compare per frame.
+  useFrame((state) => {
+    const camera = state.camera as THREE.PerspectiveCamera;
+    if (!meshRef.current || camera.aspect === aspectRef.current) return;
+    aspectRef.current = camera.aspect;
+    placeMoon(meshRef.current.position, camera);
+  });
   return (
-    <mesh position={MOON_POSITION} material={material} raycast={noRaycast}>
+    <mesh ref={meshRef} material={material} raycast={noRaycast}>
       <sphereGeometry args={[0.42, 24, 24]} />
     </mesh>
   );
