@@ -34,6 +34,16 @@ const fragmentShader = /* glsl */ `
   }
 `;
 
+/**
+ * How much horizontal field of view a landscape screen has, as a multiple of
+ * the vertical. Below it the billboard shrinks in proportion, so the sun takes
+ * roughly the same slice of the screen on a phone as on a desktop instead of
+ * spanning almost the whole width — `fov: 45` is the *vertical* fov, so a
+ * portrait viewport sees about a third of a desktop's horizontal field and a
+ * fixed-size sun swells to fill it.
+ */
+const SUN_REFERENCE_ASPECT = 1.2;
+
 /** Visible sun: additive camera-facing glow sitting at SUN_DIRECTION inside the starfield. */
 export function Sun() {
   const theme = useTheme();
@@ -61,7 +71,11 @@ export function Sun() {
 
   useFrame((state) => {
     material.uniforms.uTime.value = state.clock.elapsedTime;
-    meshRef.current?.quaternion.copy(state.camera.quaternion);
+    const mesh = meshRef.current;
+    if (!mesh) return;
+    mesh.quaternion.copy(state.camera.quaternion);
+    const aspect = (state.camera as THREE.PerspectiveCamera).aspect;
+    mesh.scale.setScalar(Math.min(1, aspect / SUN_REFERENCE_ASPECT));
   });
 
   if (theme.sunIntensity <= 0) return null;
