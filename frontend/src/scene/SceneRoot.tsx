@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, type ComponentType } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Earth } from './Earth';
 import { Clouds } from './Clouds';
@@ -8,10 +8,13 @@ import { Sun } from './Sun';
 import { SpaceBackground } from './SpaceBackground';
 import { Beams } from './Beams';
 import { Pins } from './Pins';
+import { Sculptures } from './Sculptures';
 import { Ambience } from './Ambience';
 import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
+import { RenderStats } from './RenderStats';
 import { narrowViewport, useGlobeStore, useTheme } from '../store';
+import type { MarkerStyle } from '../lib/markerStyle';
 
 /**
  * Opening framing. The phone value is the same direction 30% further out: on
@@ -22,10 +25,18 @@ const START_POSITION: [number, number, number] = narrowViewport
   ? [1.495, 1.235, 5.59]
   : [1.15, 0.95, 4.3];
 
+/** One layer per marker style; the store picks which is mounted. */
+const MARKER_LAYERS: Record<MarkerStyle, ComponentType> = {
+  sculptures: Sculptures,
+  beams: Beams,
+  pins: Pins,
+};
+
 export function SceneRoot() {
   const select = useGlobeStore((s) => s.select);
   const markerStyle = useGlobeStore((s) => s.markerStyle);
   const theme = useTheme();
+  const MarkerLayer = MARKER_LAYERS[markerStyle];
 
   return (
     <Canvas
@@ -46,9 +57,10 @@ export function SceneRoot() {
       </Suspense>
       <CountryBorders />
       <Ambience />
-      {markerStyle === 'pins' ? <Pins /> : <Beams />}
+      <MarkerLayer />
       <CameraRig />
       <Effects />
+      {import.meta.env.DEV && <RenderStats />}
     </Canvas>
   );
 }
