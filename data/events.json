@@ -1,86 +1,105 @@
 {
-  "generatedAt": "2026-10-13T06:10:50.147Z",
+  "generatedAt": "2026-10-14T06:06:01.197Z",
   "mode": "daily",
   "events": [
     {
-      "id": "5224c0a1c7b9",
-      "headline": "US Pauses New Iran Strikes Before Midterms but Maintains Naval Blockade of Strait of Hormuz",
-      "summary": "The United States has paused further strikes on Iran ahead of midterm elections but continues to enforce a naval blockade of the Strait of Hormuz, including the disabling of the tanker M/V Ocean Molica. Israel's security cabinet continues to meet on the regional crisis.",
-      "category": "conflict",
+      "id": "66e00b84b876",
+      "headline": "Hurricane Simon and Tropical Storm Rachel Death Toll Rises to 6 in Mexico, 10+ Missing in Baja California",
+      "summary": "As of Oct 13, 2026, the combined death toll from Hurricane Simon and the remnants of Tropical Storm Rachel reached 6 in Mexico. A 71-year-old man died in Guerrero when Simon, which had peaked as a Category 4 storm, caused a retaining wall collapse, while at least 4 people died and 10 or more are missing in Baja California (8 near Ensenada, 2 near San Felipe) after Rachel's remnants hit. New landfalls are forecast for the weekend of Oct 17-18.",
+      "category": "disaster",
       "severity": 4,
-      "lat": 32.0668,
-      "lon": 34.7918,
-      "locationName": "Jerusalem, Israel",
-      "countryCode": "IL",
+      "lat": 23.6,
+      "lon": -102.5,
+      "locationName": "Baja California, Mexico",
+      "countryCode": "MX",
       "sources": [
         {
-          "url": "https://www.timesofisrael.com/liveblog-october-11-2026",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/10/12/us-iran-war-trump-hormuz-saudi",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/world/trump-rejects-irans-proposal-to-reopen-the-strait-of-hormuz-and-other-middle-east-news",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/iran/iran-says-choice-reopening-hormuz-rests-united-states-offer-rcna599956",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they",
+          "url": "https://www.aljazeera.com",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/",
+          "url": "https://www.washingtonpost.com",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com",
           "domain": "cbsnews.com",
           "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.cnn.com",
-          "domain": "cnn.com",
-          "reliability": 75,
+          "url": "https://www.pbs.org",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.npr.org/2026/10/11/nx-s1-5998022",
+          "domain": "npr.org",
+          "reliability": 87,
           "bias": "center-left"
         },
         {
-          "url": "https://www.eia.gov",
-          "domain": "eia.gov",
+          "url": "https://www.usnews.com/news/world/articles/2026-10-12/hurricane-simon-crawls-along-mexicos-pacific-coast",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/US/wireStory/simon-strengthens-category-4-hurricane-approaches-mexicos-coast-137153541",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://mexiconewsdaily.com/news/simon-strengthens-rapidly-hit-jalisco-or-colima-as-major-hurricane-this-weekend/",
+          "domain": "mexiconewsdaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://mx.usembassy.gov/weather-alert-upgraded-storm-hurricane-simon-u-s-consulate-general-guadalajara-u-s-embassy-mexico-city-on-friday-october-9-2026/",
+          "domain": "usembassy.gov",
           "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://apnews.com",
+          "domain": "apnews.com",
+          "reliability": 95,
           "bias": "center"
         }
       ],
       "trustScore": 88,
       "firstSeen": "2026-10-09T06:09:29.650Z",
-      "lastUpdated": "2026-10-13T06:10:50.147Z",
-      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
       "isBreaking": false
     },
     {
       "id": "0327f4542847",
-      "headline": "DRC Ebola Deaths Climb to 4,242 in History's Deadliest Outbreak",
-      "summary": "A WHO Disease Outbreak News update reported 8,787 confirmed cases and 4,242 deaths in the DRC's Ebola outbreak as of Oct 7, 2026, a case fatality rate of 48.3%, up from 8,728 cases and 4,205 deaths the day before. Including cases in Kenya and Uganda, the regional toll is about 4,245, making it the largest Ebola outbreak ever recorded in DRC.",
+      "headline": "DRC Ebola Outbreak Cases Pass 9,000 as Death Toll Tops 4,300, History's Deadliest",
+      "summary": "As of Oct 13, 2026, the DRC's Ebola outbreak has recorded over 9,000 confirmed cases and more than 4,300 deaths, making it history's deadliest Ebola outbreak behind only the 2014-2016 West Africa epidemic. The outbreak remains centered in Ituri Province.",
       "category": "health",
       "severity": 4,
-      "lat": 1.5667,
+      "lat": 1.57,
       "lon": 30.25,
       "locationName": "Bunia, Ituri Province, DR Congo",
       "countryCode": "CD",
       "sources": [
         {
-          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON619",
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.who.int",
           "domain": "who.int",
           "reliability": 92,
           "bias": "center"
@@ -96,12 +115,6 @@
           "domain": "un.org",
           "reliability": 88,
           "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/2/ebola-death-toll-surpasses-4000-as-dr-congo-struggles-to-suppress-outbreak",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
         },
         {
           "url": "https://www.vanguardngr.com/2026/10/ebola-outbreak-drc-death-toll-rises-to-4018/",
@@ -131,99 +144,37 @@
       ],
       "trustScore": 88,
       "firstSeen": "2026-10-03T06:03:53.013Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-15T06:36:26.744Z",
-      "isBreaking": false
-    },
-    {
-      "id": "66e00b84b876",
-      "headline": "Hurricane Simón Weakens but Continues Battering Mexico's Pacific Coast",
-      "summary": "Hurricane Simón weakened from its earlier Category 4 peak but continues pounding Jalisco, Colima and Michoacán states with heavy rain, flooding and high winds. Authorities maintain emergency measures as the storm crawls slowly along Mexico's Pacific coast.",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 20.41,
-      "lon": -105.7,
-      "locationName": "Jalisco, Mexico",
-      "countryCode": "MX",
-      "sources": [
-        {
-          "url": "https://www.npr.org/2026/10/11/nx-s1-5998022",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/hurricane-simon-takes-aim-mexico-pacific-coast",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-10-12/hurricane-simon-crawls-along-mexicos-pacific-coast",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/world/hurricane-simon-hits-mexicos-pacific-coast",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://abcnews.com/US/wireStory/simon-strengthens-category-4-hurricane-approaches-mexicos-coast-137153541",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://mexiconewsdaily.com/news/simon-strengthens-rapidly-hit-jalisco-or-colima-as-major-hurricane-this-weekend/",
-          "domain": "mexiconewsdaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://mx.usembassy.gov/weather-alert-upgraded-storm-hurricane-simon-u-s-consulate-general-guadalajara-u-s-embassy-mexico-city-on-friday-october-9-2026/",
-          "domain": "usembassy.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://apnews.com",
-          "domain": "apnews.com",
-          "reliability": 95,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.riotimesonline.com",
-          "domain": "riotimesonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 87,
-      "firstSeen": "2026-10-09T06:09:29.650Z",
-      "lastUpdated": "2026-10-13T06:10:50.147Z",
-      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
       "isBreaking": false
     },
     {
       "id": "94e43fb2ece7",
-      "headline": "Houthi Missiles Strike Saudi Arabia for Third Consecutive Day, Hitting Jazan and Najran Airports",
-      "summary": "Houthi forces launched missile attacks on Saudi Arabia for a third straight day, striking airports in Jazan and Najran in addition to Riyadh. Saudi authorities have opened an investigation into why air-defense systems failed to stop the earlier deadly Riyadh airport attack.",
+      "headline": "Houthi Missile Strikes Saudi Aramco Headquarters in Dhahran, Setting Office Tower Ablaze",
+      "summary": "A Houthi missile struck Saudi Aramco's headquarters complex in Dhahran on Oct 13, 2026, damaging the top three floors and sparking a limited fire, with no injuries reported at the site. The strike is part of an intensifying Houthi campaign that has also hit Riyadh and other Saudi cities, killing at least 18-20 people and wounding hundreds over the preceding week.",
       "category": "conflict",
       "severity": 4,
-      "lat": 24.9576,
-      "lon": 46.6988,
-      "locationName": "Riyadh, Saudi Arabia",
+      "lat": 26.2361,
+      "lon": 50.0393,
+      "locationName": "Dhahran, Saudi Arabia",
       "countryCode": "SA",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three",
+          "url": "https://www.bloomberg.com",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com",
           "domain": "aljazeera.com",
           "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com",
+          "domain": "cnn.com",
+          "reliability": 75,
           "bias": "center-left"
         },
         {
@@ -242,18 +193,6 @@
           "url": "https://www.washingtonpost.com/world/2026/10/10/saudi-arabia-faces-new-level-peril-houthi-attacks-amid-wider-iran-war/",
           "domain": "washingtonpost.com",
           "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-10-10/saudi-arabia-suspends-operations-at-riyadh-airport-after-attack",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnn.com/2026/10/08/middleeast/riyadh-airport-houthis-explosion-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
           "bias": "center-left"
         },
         {
@@ -284,43 +223,43 @@
       ],
       "trustScore": 87,
       "firstSeen": "2026-10-04T06:02:55.000Z",
-      "lastUpdated": "2026-10-13T06:10:50.147Z",
-      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
       "isBreaking": false
     },
     {
       "id": "c604f62a40e5",
-      "headline": "Sudan Famine Risk Worsens as Drought and Conflict Push Malnutrition Rates to 38%",
-      "summary": "A food-security monitor warns that famine risk in Sudan's Darfur and Kordofan regions is worsening due to combined drought and conflict, with acute malnutrition rates reaching 30.8-38% in displacement camps. The UN cites funding shortages as compounding the crisis.",
+      "headline": "13 of 17 Sudan Nutrition Surveys Since January Find Critical Malnutrition; 300,000+ Newly Displaced in Kordofan",
+      "summary": "A new famine-risk assessment found that 13 of 17 nutrition surveys conducted in Sudan since January 2026 recorded critical acute malnutrition, with Greater Kordofan, the epicenter, seeing more than 300,000 people newly displaced since October 2025. A WFP convoy was struck by an airstrike in South Kordofan on Oct 3, killing a driver, a day after another WFP truck hit an explosive device, as the humanitarian response faces severe funding shortfalls.",
       "category": "disaster",
       "severity": 4,
-      "lat": 13.6283,
-      "lon": 25.3487,
-      "locationName": "Darfur, Sudan",
+      "lat": 12.05,
+      "lon": 29.65,
+      "locationName": "Kordofan, Sudan",
       "countryCode": "SD",
       "sources": [
         {
-          "url": "https://www.washingtonpost.com/world/2026/10/12/food-insecurity-famine-sudan-war",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/world/sudans-famine-risk-worsened-by-conflict-drought-and-funding-shortages-report-says",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://news.un.org/en/story/2026/10/1168577",
+          "url": "https://news.un.org",
           "domain": "un.org",
           "reliability": 88,
           "bias": "center"
         },
         {
-          "url": "https://www.aljazeera.com/amp/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor",
+          "url": "https://www.aljazeera.com",
           "domain": "aljazeera.com",
           "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/10/12/food-insecurity-famine-sudan-war",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
           "bias": "center-left"
         },
         {
@@ -333,8 +272,8 @@
       ],
       "trustScore": 87,
       "firstSeen": "2026-10-11T06:36:26.744Z",
-      "lastUpdated": "2026-10-13T06:10:50.147Z",
-      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -600,48 +539,6 @@
       "firstSeen": "2026-10-04T06:02:55.000Z",
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-17T06:10:50.147Z",
-      "isBreaking": false
-    },
-    {
-      "id": "fc4f43abc68b",
-      "headline": "India Detains Over 2,000 Protesters in Delhi Crackdown Before Election Rally",
-      "summary": "Police detained more than 2,000 people, including 'Cockroach Janta Party' founder Abhijeet Dipke, opposition MPs, journalists and former chief ministers, to quash an Oct 10 rally in New Delhi demanding the resignation of chief election commissioner Gyanesh Kumar over a voter-roll revision dropping about 130 million names. More than 45 metro stations closed and over 240 trains were cancelled.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 28.6139,
-      "lon": 77.209,
-      "locationName": "New Delhi, India",
-      "countryCode": "IN",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/10/10/india-detains-youth-protest-leader-over-rally-against-election-chief.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/10/11/asia-pacific/politics/cockroach-members-detained/",
-          "domain": "japantimes.co.jp",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.abc.net.au/news/2026-10-11/cockroach-party-india-protesters-against-modi-vow-to-return/107252114",
-          "domain": "abc.net.au",
-          "reliability": 86,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 81,
-      "firstSeen": "2026-10-11T06:36:26.744Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-15T06:36:26.744Z",
       "isBreaking": false
     },
     {
@@ -911,6 +808,82 @@
       "isBreaking": false
     },
     {
+      "id": "5f1baef46f53",
+      "headline": "Russian Missiles Strike Kyiv's CHP-4 Power Plant and Apartment Building, Killing 2, Injuring 21",
+      "summary": "On the night of Oct 13, 2026, Russian ballistic missiles struck Kyiv's CHPP-4 power plant in the Darnytsia district and a nine-story residential building in Desnianskyi district, killing at least 2 people and injuring 21. President Zelensky said Western partners gave no advance warning for a second consecutive night, days after a Trump-announced energy ceasefire.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 50.45,
+      "lon": 30.52,
+      "locationName": "Kyiv, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.kyivpost.com",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.france24.com",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pravda.com.ua",
+          "domain": "pravda.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2d134bafbbee",
+      "headline": "Drone Strikes Sink Cargo Ship Off Bulgaria's Black Sea Coast, 11 Sailors Missing",
+      "summary": "Overnight Oct 12-13, 2026, drones struck two cargo ships in Bulgaria's Black Sea exclusive economic zone; a Guinea-Bissau-flagged vessel sank off Krapets with 11 of 16 crew still missing, while a Malta-flagged ship's 15 crew were rescued safely. Bulgaria summoned Russia's ambassador and requested NATO/EU assistance, with its president saying the outcome benefits Russia.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 43.2,
+      "lon": 28.1,
+      "locationName": "Krapets, Bulgaria",
+      "countryCode": "BG",
+      "sources": [
+        {
+          "url": "https://www.euronews.com",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.themoscowtimes.com",
+          "domain": "themoscowtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.irishtimes.com",
+          "domain": "irishtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
       "id": "169d37cc9701",
       "headline": "Former DRC President Kabila Forms New Rebel Group Aligned With M23 in Goma",
       "summary": "Former Democratic Republic of Congo President Joseph Kabila has formed the 'Front for the Refoundation of the Nation,' aligning openly with the M23/AFC insurgency in Goma. The move marks Kabila's formal emergence as a rebel leader against the Congolese government.",
@@ -942,65 +915,76 @@
       "isBreaking": false
     },
     {
-      "id": "4b90a393549a",
-      "headline": "China, EU Reach Deal to Curb Hybrid-Car Exports, Ease Rare-Earth Rules",
-      "summary": "After Oct 8-9 talks in Beijing between the EU's Šefčovič and China's Wang Wentao, the two sides reached an understanding to roughly halve China's projected hybrid and plug-in hybrid exports to Europe. China will lower tariffs on about 4 billion euros of EU goods and ease rare-earth and magnet export licensing via a 'green channel,' with follow-up talks planned for January and March.",
-      "category": "economy",
+      "id": "5224c0a1c7b9",
+      "headline": "Trump Says Iran Decision Coming 'Very Soon' as Houthi Attacks and Hormuz Tensions Escalate",
+      "summary": "On Oct 13, 2026, President Trump told reporters he would decide on Iran 'very soon' amid renewed attacks on shipping in the Strait of Hormuz and Houthi strikes on Saudi Arabia, adding that the Nov 3 midterm elections have 'no impact' on the timing. A White House official denied Trump had discussed resuming military action with Netanyahu and reiterated there would be no US strike before the midterms.",
+      "category": "politics",
       "severity": 3,
-      "lat": 39.9042,
-      "lon": 116.4074,
-      "locationName": "Beijing, China",
-      "countryCode": "CN",
+      "lat": 31.7683,
+      "lon": 35.2137,
+      "locationName": "Jerusalem, Israel",
+      "countryCode": "IL",
       "sources": [
         {
-          "url": "https://www.cnbc.com/2026/10/09/china-europe-hybrid-vehicle-exports-deal.html",
+          "url": "https://www.timesofisrael.com",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.iranintl.com",
+          "domain": "iranintl.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnbc.com/2026/10/12/us-iran-war-trump-hormuz-saudi",
           "domain": "cnbc.com",
           "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://www.irishtimes.com/world/asia-pacific/2026/10/09/eu-and-china-strike-deal-to-curb-car-exports-and-avert-trade-war/",
-          "domain": "irishtimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.pbs.org/newshour/world/trump-rejects-irans-proposal-to-reopen-the-strait-of-hormuz-and-other-middle-east-news",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
         },
         {
-          "url": "https://cnevpost.com/2026/10/09/china-eu-make-progress-hybrid-trade/",
-          "domain": "cnevpost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.nbcnews.com/world/iran/iran-says-choice-reopening-hormuz-rests-united-states-offer-rcna599956",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.aljazeera.com",
+          "url": "https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.japantimes.co.jp",
-          "domain": "japantimes.co.jp",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/",
+          "domain": "cbsnews.com",
           "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.scmp.com",
-          "domain": "scmp.com",
-          "reliability": 76,
-          "bias": "center"
+          "url": "https://www.cnn.com",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.euronews.com",
-          "domain": "euronews.com",
-          "reliability": 80,
+          "url": "https://www.eia.gov",
+          "domain": "eia.gov",
+          "reliability": 85,
           "bias": "center"
         }
       ],
-      "trustScore": 83,
+      "trustScore": 87,
       "firstSeen": "2026-10-09T06:09:29.650Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -1067,73 +1051,54 @@
       "isBreaking": false
     },
     {
-      "id": "828068d2db4e",
-      "headline": "Indonesia Accepts Singapore, Malaysia Aid to Fight Haze-Causing Fires",
-      "summary": "Indonesia confirmed it welcomes assistance from Singapore and Malaysia to combat forest fires in Sumatra and Borneo, with Malaysia committing aircraft, three helicopters and 52 personnel. Haze continues over Indonesia, Malaysia and Singapore with unhealthy air quality readings ahead of the Singapore F1 weekend.",
-      "category": "disaster",
+      "id": "b62f594585b7",
+      "headline": "Kospi Closes Below 6,100 as Samsung, SK Hynix Plunge Further on Chinese Rival CXMT Fears",
+      "summary": "South Korea's Kospi index closed down 5.46% at 6,035.35 on Oct 13, 2026, with an intraday low of 5,911, its first drop below 6,000 since late July. Samsung Electronics fell 7.4% and SK Hynix fell 10.1%, driven by concerns over Chinese memory maker CXMT's new high-density memory-cell design and roughly $3.4 billion in net foreign outflows that day.",
+      "category": "economy",
       "severity": 3,
-      "lat": -6.2088,
-      "lon": 106.8456,
-      "locationName": "Jakarta, Indonesia",
-      "countryCode": "ID",
+      "lat": 37.57,
+      "lon": 126.98,
+      "locationName": "Seoul, South Korea",
+      "countryCode": "KR",
       "sources": [
         {
-          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/10/indonesia-welcomes-singapore-and-malaysia-offers-to-help-tackle-haze",
-          "domain": "thestar.com.my",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://mothership.sg/2026/10/indonesia-appreciate-singapore-offer-haze/",
-          "domain": "mothership.sg",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.malaymail.com",
-          "domain": "malaymail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.asiaone.com",
-          "domain": "asiaone.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.xinhuanet.com",
-          "domain": "xinhuanet.com",
-          "reliability": 45,
-          "bias": "unknown"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-10-07/malaysia-closes-schools-in-johor-as-indonesia-wildfire-haze-worsens",
+          "url": "https://www.bloomberg.com",
           "domain": "bloomberg.com",
           "reliability": 88,
           "bias": "center"
         },
         {
-          "url": "https://www.japantimes.co.jp/news/2026/10/01/asia-pacific/crime-legal/indonesia-haze-neighbors/",
-          "domain": "japantimes.co.jp",
-          "reliability": 82,
+          "url": "https://finance.yahoo.com",
+          "domain": "yahoo.com",
+          "reliability": 60,
           "bias": "center"
         },
         {
-          "url": "https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-5-october-2026",
-          "domain": "nea.gov.sg",
-          "reliability": 85,
-          "bias": "center"
+          "url": "https://www.koreaherald.com/article/10789600",
+          "domain": "koreaherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kedglobal.com/korean-stock-market/newsView/ked202610130001",
+          "domain": "kedglobal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.investinglive.com/stock-market-update/kospi-plunges-more-than-6-below-6-000",
+          "domain": "investinglive.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 79,
-      "firstSeen": "2026-10-07T06:05:19.187Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
+      "trustScore": 78,
+      "firstSeen": "2026-10-13T06:10:50.147Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -1186,87 +1151,140 @@
       "isBreaking": false
     },
     {
-      "id": "8c94f64cf09a",
-      "headline": "Sinaloa Prison Riot Death Toll Confirmed at 10, Including a Visitor",
-      "summary": "A riot at the Mazatlán penitentiary in Sinaloa on Oct 8 during family visiting hours left nine inmates and one visitor dead and 16 injured. State and federal forces were deployed; the cause and the method by which any weapons were obtained remain undisclosed.",
+      "id": "d8a8ea266c21",
+      "headline": "US Sanctions Cartel del Noreste Business Network; Mexico Seizes 48 Drones, Explosives in Sinaloa",
+      "summary": "On Oct 13, 2026, US Treasury's OFAC sanctioned four individuals and 11 entities tied to Cartel del Noreste's business network centered on Nuevo Laredo, spanning horse racing, construction, trucking and energy firms. Separately, Mexico's security forces reported seizing 48 drones, explosive devices, landmines and a dismantled drug lab across Culiacán, Mazatlán and nearby Sinaloa municipalities between Oct 9-12.",
       "category": "conflict",
       "severity": 3,
-      "lat": 23.2494,
-      "lon": -106.4111,
-      "locationName": "Mazatlán, Sinaloa, Mexico",
+      "lat": 24.8091,
+      "lon": -107.394,
+      "locationName": "Culiacán, Sinaloa, Mexico",
       "countryCode": "MX",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/10/9/mexico-prison-clash-in-strife-torn-sinaloa-state-leaves-10-dead",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/mexico/prison-riot-mexicos-violence-plagued-sinaloa-state-kills-10-rcna602459",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-10-08/prison-riot-in-mexicos-violence-plagued-sinaloa-state-kills-10-and-leaves-16-injured",
-          "domain": "usnews.com",
-          "reliability": 75,
+          "url": "https://ofac.treasury.gov",
+          "domain": "treasury.gov",
+          "reliability": 85,
           "bias": "center"
         },
         {
-          "url": "https://www.yahoo.com/news/world/articles/mexico-prison-clash-strife-torn-042655426.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 77,
-      "firstSeen": "2026-10-10T06:17:11.597Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
-      "isBreaking": false
-    },
-    {
-      "id": "aba773b30f61",
-      "headline": "Netanyahu's Ex-Chief of Staff Accused of Altering Oct 7 Call Timestamp",
-      "summary": "Netanyahu's former military secretary Avi Gil alleges that ex-chief of staff Tzachi Braverman instructed a stenographer to change the recorded time of Netanyahu's first Oct 7, 2023 phone call from 6:40am to 6:29am, and allegedly altered it by hand after the stenographer refused. Police reportedly have evidence to indict for record tampering but are unlikely to file charges.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 31.7683,
-      "lon": 35.2137,
-      "locationName": "Jerusalem, Israel",
-      "countryCode": "IL",
-      "sources": [
-        {
-          "url": "https://www.haaretz.com/israel-news/israel-security/2026-10-08/ty-article/too-many-lies-netanyahus-ex-military-secretary-challenges-october-7-account/000001a1-1a17-db57-abb5-bff781f50000",
-          "domain": "haaretz.com",
-          "reliability": 80,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.timesofisrael.com/transcript-reportedly-captures-pms-top-aide-asking-stenographer-to-falsify-oct-7-records/",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
+          "url": "https://www.ice.gov",
+          "domain": "ice.gov",
+          "reliability": 85,
           "bias": "center"
         },
         {
-          "url": "https://www.jpost.com/israel-news/defense-news/article-911101",
-          "domain": "jpost.com",
-          "reliability": 72,
-          "bias": "center-right"
-        },
-        {
-          "url": "https://news.yahoo.com",
-          "domain": "yahoo.com",
-          "reliability": 60,
+          "url": "https://www.reuters.com",
+          "domain": "reuters.com",
+          "reliability": 95,
           "bias": "center"
         }
       ],
       "trustScore": 76,
-      "firstSeen": "2026-10-09T06:09:29.650Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3af1b38e580d",
+      "headline": "Zamfara Bandits Ambush Military-Escorted Traders, Killing About 20; Villages Torched in Maru",
+      "summary": "On Oct 11-12, 2026, bandits ambushed traders traveling under military escort along the Gwashi-Nasarawa road in Bukkuyum LGA, killing approximately 20-22 soldiers, police and civilians. Separately, bandits torched about 12 vehicles and displaced over 300 residents from three villages along the Dansadau road in Maru LGA, Zamfara State.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 12.17,
+      "lon": 6.66,
+      "locationName": "Gusau, Zamfara State, Nigeria",
+      "countryCode": "NG",
+      "sources": [
+        {
+          "url": "https://allafrica.com",
+          "domain": "allafrica.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sowetanlive.co.za",
+          "domain": "sowetanlive.co.za",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dailytrust.com",
+          "domain": "dailytrust.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/dozens-soldiers-militants-miners-killed-174814179.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://gulfnews.com/world/africa/gunmen-kill-17-in-northwestern-nigeria-authorities-1.500701088",
+          "domain": "gulfnews.com",
+          "reliability": 66,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.icirnigeria.org/how-bandits-killed-dozens-of-miners-security-forces-in-zamfara/",
+          "domain": "icirnigeria.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/07/dozens-of-soldiers-militants-and-miners-killed-in-nigeria-attacks",
+          "domain": "internazionale.it",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 75,
+      "firstSeen": "2026-10-10T06:17:11.597Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0434a83b112d",
+      "headline": "Debris From Intercepted Houthi Missiles Injures Four, Damages 15 Homes in Riyadh",
+      "summary": "Saudi Civil Defense said debris from two intercepted Houthi cruise missiles injured four people, including a woman and a child, and damaged 15 homes in Riyadh on Oct 13, 2026. The coalition separately intercepted two more ballistic missiles as part of a broader campaign that closed Riyadh's airport and has killed 18-20 people over the preceding week.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 24.7136,
+      "lon": 46.6753,
+      "locationName": "Riyadh, Saudi Arabia",
+      "countryCode": "SA",
+      "sources": [
+        {
+          "url": "https://www.spa.gov.sa",
+          "domain": "spa.gov.sa",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 73,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -1333,6 +1351,64 @@
       "isBreaking": false
     },
     {
+      "id": "3048420d3dd8",
+      "headline": "UN Allocates $75M for Haiti as Drone Attack Deaths Surge 120%, Topping 1,200 Civilians Killed in 2026",
+      "summary": "The UN allocated an additional $75 million for Haiti on Oct 12, 2026, funding 10 projects across Ouest, Centre and Artibonite departments to reach over 500,000 people. Drone attacks have surged 120% this year, killing more than 1,200 civilians including 17 children; over 6 million people need assistance and 1.5 million are displaced, while the Humanitarian Response Plan remains less than half funded.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 18.5944,
+      "lon": -72.3074,
+      "locationName": "Port-au-Prince, Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://www.jamaicaobserver.com",
+          "domain": "jamaicaobserver.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.un.org",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://haitiantimes.com/2026/10/10/haiti-gangs-political-ties-election-violence-un-report/",
+          "domain": "haitiantimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.courthousenews.com/at-least-5700-killed-wounded-in-haiti-gang-crisis-this-year-un/",
+          "domain": "courthousenews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.africanews.com/2026/10/02/at-least-5700-killed-wounded-in-haiti-gang-crisis-this-year-un/",
+          "domain": "africanews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 71,
+      "firstSeen": "2026-10-10T06:17:11.597Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
       "id": "b1060a9a8b0b",
       "headline": "US Measles Cases Top 4,080, Elimination Status at Risk; Florida Dengue Outbreak Largest in Decades",
       "summary": "US measles cases have climbed past 4,080, with health officials warning the country is highly likely to lose its measles elimination status this fall. Separately, Florida is experiencing its largest dengue outbreak in decades with roughly 300 cases.",
@@ -1391,6 +1467,36 @@
       "isBreaking": false
     },
     {
+      "id": "5478eefaebd2",
+      "headline": "China's September Exports Surge 36%, Nine-Month Trade Surplus Nears $938 Billion",
+      "summary": "China's exports rose 36.3% year-on-year in September 2026, the fastest pace since February, reaching a record $447.18 billion, while imports grew 31%. The monthly trade surplus of $133.5 billion was a 20-month high, bringing the nine-month cumulative surplus to roughly $938 billion, driven by semiconductor exports up 108% and auto exports up 54% year-on-year.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.9,
+      "lon": 116.41,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.reuters.com",
+          "domain": "reuters.com",
+          "reliability": 95,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
       "id": "5cfd48a15768",
       "headline": "Thousands Protest Contaminated Water in Guadalajara, Dozens Arrested",
       "summary": "Around 10,000 people marched in Guadalajara, Mexico over contaminated water supplies, resulting in clashes that injured 28 police officers and 31 civilians. Authorities arrested 39 people as President Sheinbaum faced demands for answers.",
@@ -1424,6 +1530,50 @@
       "firstSeen": "2026-10-13T06:10:50.147Z",
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-15T06:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "eb8fc151a71f",
+      "headline": "Taliban Rejects Pakistani Accusations of Harboring TTP Militants Amid Kurram Border Tensions",
+      "summary": "Following a deadly clash in Pakistan's Kurram District, Islamabad urged the Afghan Taliban government to stop cross-border attacks by the Tehrik-i-Taliban Pakistan (TTP). Taliban spokesman Zabihullah Mujahid rejected the accusations, saying there are 'no TTP bases in Afghanistan' and accusing Pakistan of prioritizing propaganda over dialogue.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 34.56,
+      "lon": 69.21,
+      "locationName": "Kabul, Afghanistan",
+      "countryCode": "AF",
+      "sources": [
+        {
+          "url": "https://www.arabnews.com",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        },
+        {
+          "url": "https://tribune.com.pk",
+          "domain": "tribune.com.pk",
+          "reliability": 68,
+          "bias": "center"
+        },
+        {
+          "url": "https://dailytimes.com.pk/1565789/pakistan-forces-kill-12-militants-in-kurram-border-infiltration-attempt",
+          "domain": "dailytimes.com.pk",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.longwarjournal.org/archives/2026/10/taliban-pakistan-border-clashes-continue-after-moscow-talks-end-without-agreement",
+          "domain": "longwarjournal.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-10-13T06:10:50.147Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -1463,47 +1613,40 @@
       "isBreaking": false
     },
     {
-      "id": "3af1b38e580d",
-      "headline": "Nigeria Bandit Attack on Zamfara Military Base, Mining Site Kills Dozens",
-      "summary": "An Oct 5 bandit attack on a military base in Bindin, Maru local government area, killed at least 25 soldiers, followed by an assault on a nearby gold-mining site where a village head claims more than 100 miners died, though Reuters could not independently confirm the figure; other reports cite about 23 miners and 8-9 security personnel killed. The attack was reportedly in revenge for miners killing a bandit leader.",
-      "category": "conflict",
+      "id": "64b66b6840de",
+      "headline": "France Opens 2027 Budget Debate Targeting 5.0% Deficit as Debt Hits 119% of GDP",
+      "summary": "France's National Assembly opened debate on the 2027 budget on Oct 13, 2026, targeting a deficit of 5.0% of GDP, down from 5.4%, through roughly 54 billion euros in savings and revenue measures. Public debt has climbed to 3.6 trillion euros, or 119% of GDP, the highest since 1946, with debt projected to reach 121.7% in 2027.",
+      "category": "economy",
       "severity": 3,
-      "lat": 12.4,
-      "lon": 6.4,
-      "locationName": "Maru, Zamfara State, Nigeria",
-      "countryCode": "NG",
+      "lat": 48.86,
+      "lon": 2.35,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
       "sources": [
         {
-          "url": "https://www.yahoo.com/news/world/articles/dozens-soldiers-militants-miners-killed-174814179.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
+          "url": "https://www.cnbc.com",
+          "domain": "cnbc.com",
+          "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://gulfnews.com/world/africa/gunmen-kill-17-in-northwestern-nigeria-authorities-1.500701088",
-          "domain": "gulfnews.com",
-          "reliability": 66,
+          "url": "https://www.euronews.com",
+          "domain": "euronews.com",
+          "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://www.icirnigeria.org/how-bandits-killed-dozens-of-miners-security-forces-in-zamfara/",
-          "domain": "icirnigeria.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/07/dozens-of-soldiers-militants-and-miners-killed-in-nigeria-attacks",
-          "domain": "internazionale.it",
+          "url": "https://fortune.com/2026/10/10/baby-boomer-vs-gen-z-france-debt-crisis",
+          "domain": "fortune.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 68,
+      "trustScore": 67,
       "firstSeen": "2026-10-10T06:17:11.597Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -1549,43 +1692,6 @@
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
-        }
-      ],
-      "trustScore": 67,
-      "firstSeen": "2026-10-10T06:17:11.597Z",
-      "lastUpdated": "2026-10-13T06:10:50.147Z",
-      "expiresAt": "2026-10-15T06:10:50.147Z",
-      "isBreaking": false
-    },
-    {
-      "id": "64b66b6840de",
-      "headline": "French Bond Yields Hit Highest Level Since 2002 Amid Debt and Protest Crisis",
-      "summary": "French government bond yields have climbed to their highest level since 2002, driven by record debt, political instability and an escalating generational standoff over a proposed 54 billion euro fiscal adjustment.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 48.8566,
-      "lon": 2.3522,
-      "locationName": "Paris, France",
-      "countryCode": "FR",
-      "sources": [
-        {
-          "url": "https://www.cnbc.com/2026/10/07/imf-france-debt-student-protests-yields",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://fortune.com/2026/10/10/baby-boomer-vs-gen-z-france-debt-crisis",
-          "domain": "fortune.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.euronews.com/2026/10/02/bonds-steady-as-french-borrowing-costs-hit-24-year-high-and-uk-30-year-yields-top-6",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
         }
       ],
       "trustScore": 67,
@@ -1661,40 +1767,167 @@
       "isBreaking": false
     },
     {
-      "id": "1353b78ef5c6",
-      "headline": "Kosovo Veterans' Protesters Clash With Police Again Over Hague Court Bill",
-      "summary": "War veterans' protesters angered by the September conviction of former president Thaçi and three others gathered outside Kosovo's parliament on Oct 5-6 demanding legislation capping Hague war-crimes court sentences, resulting in three arrests and six injured officers. The amendment still requires committee review before a second reading.",
-      "category": "politics",
+      "id": "6231734621fd",
+      "headline": "Saudi-Led Coalition Strikes Houthi Oil and Military Sites in Sanaa, Dhamar and Saada",
+      "summary": "In retaliation for Houthi missile strikes on Saudi Arabia, a Saudi-led coalition struck oil facilities including the Yemen Petroleum Company and military sites in Dhamar and Saada on Oct 13, 2026. An evacuation order was issued in Sanaa before the strikes, and Houthi television reported civilian casualties.",
+      "category": "conflict",
       "severity": 3,
-      "lat": 42.6629,
-      "lon": 21.1655,
-      "locationName": "Pristina, Kosovo",
-      "countryCode": "XK",
+      "lat": 15.3694,
+      "lon": 44.191,
+      "locationName": "Sanaa, Yemen",
+      "countryCode": "YE",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/10/6/police-clash-with-kosovo-protesters-over-bid-to-curb-hague-war-crimes-court",
-          "domain": "aljazeera.com",
-          "reliability": 78,
+          "url": "https://www.washingtonpost.com",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://balkaninsight.com/2026/10/06/kosovo-protesters-against-hague-court-gather-again-after-clashes/bi/",
-          "domain": "balkaninsight.com",
+          "url": "https://www.usnews.com",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnn.com",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 63,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "90866e11c83e",
+      "headline": "Canada Sheds 68,000 Jobs in September, Unemployment Climbs to 6.5%",
+      "summary": "Statistics Canada reported a loss of roughly 68,000 jobs in September 2026, far exceeding expectations of a 9,000 gain and following a loss of about 42,000 in August. Unemployment rose to 6.5% from 6.4%, with youth employment (ages 15-24) down 48,000 and labor force participation at its lowest non-pandemic level in 29 years; the Bank of Canada's next rate decision is Oct 28.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 45.4215,
+      "lon": -75.6972,
+      "locationName": "Ottawa, Canada",
+      "countryCode": "CA",
+      "sources": [
+        {
+          "url": "https://www.cbc.ca",
+          "domain": "cbc.ca",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.statcan.gc.ca",
+          "domain": "gc.ca",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.washingtonpost.com/world/2026/10/05/kosovo-protest-unrest-clashes-war-crimes/bee9b2d4-c102-11f1-8170-681419af1cc9_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
+          "url": "https://www.theglobeandmail.com",
+          "domain": "theglobeandmail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ctvnews.ca",
+          "domain": "ctvnews.ca",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "35583cb881ca",
+      "headline": "Bank of America Fined $1.21 Billion for Anti-Money-Laundering and Sanctions Violations",
+      "summary": "On Oct 13, 2026, the US Treasury imposed a combined $1.21 billion penalty on Bank of America, with FinCEN assessing $1.2B and OCC levying a record $750M for failing to report over $5 billion in suspicious transactions linked to Chinese laundering networks and border illicit finance. OFAC separately settled for $11.6M over sanctions violations involving Iran, Russia and narcotics programs. The bank admitted willfully violating the Bank Secrecy Act, making this the third-largest Treasury penalty in history.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "Washington, D.C., USA",
+      "countryCode": "US",
+      "sources": [
+        {
+          "url": "https://www.cnbc.com",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.go.com",
+          "domain": "go.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcnews.com",
+          "domain": "nbcnews.com",
+          "reliability": 81,
           "bias": "center-left"
         }
       ],
-      "trustScore": 60,
-      "firstSeen": "2026-10-10T06:17:11.597Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
+      "trustScore": 59,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b499af889df4",
+      "headline": "IMF Cuts Argentina's 2026 Growth Forecast to 2.1% as Milei Begins Washington Visit",
+      "summary": "The IMF's October World Economic Outlook cut Argentina's 2026 growth forecast to 2.1% from 3.5%, citing weak third-quarter activity, while raising inflation projections to 32.5% and unemployment to 7.6%. President Javier Milei began a two-day visit to Washington on Oct 14 to reinforce ties with the Trump administration and address the US Chamber of Commerce.",
+      "category": "economy",
+      "severity": 3,
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "locationName": "Buenos Aires, Argentina",
+      "countryCode": "AR",
+      "sources": [
+        {
+          "url": "https://www.imf.org",
+          "domain": "imf.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.batimes.com.ar",
+          "domain": "batimes.com.ar",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.mercopress.com",
+          "domain": "mercopress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.infobae.com",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -1744,98 +1977,6 @@
       "isBreaking": false
     },
     {
-      "id": "3048420d3dd8",
-      "headline": "UN Report Details Haitian Gang-Politician Ties as Elections Delayed",
-      "summary": "A 94-page UN expert report covering October 2025 to July 2026 names former legislators and officials with ties to Haitian gangs and flags police corruption, arms trafficking and child recruitment. UN rights chief Türk cited at least 5,700 people killed or wounded by gang violence this year, with Haiti indefinitely postponing planned December and February elections.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 18.5944,
-      "lon": -72.3074,
-      "locationName": "Port-au-Prince, Haiti",
-      "countryCode": "HT",
-      "sources": [
-        {
-          "url": "https://haitiantimes.com/2026/10/10/haiti-gangs-political-ties-election-violence-un-report/",
-          "domain": "haitiantimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.courthousenews.com/at-least-5700-killed-wounded-in-haiti-gang-crisis-this-year-un/",
-          "domain": "courthousenews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.africanews.com/2026/10/02/at-least-5700-killed-wounded-in-haiti-gang-crisis-this-year-un/",
-          "domain": "africanews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.jamaicaobserver.com/2026/10/02/least-5700-killed-wounded-haiti-gang-crisis-year-un/",
-          "domain": "jamaicaobserver.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-10-10T06:17:11.597Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
-      "isBreaking": false
-    },
-    {
-      "id": "d062d73f107a",
-      "headline": "Thai Opposition Files Censure Motion Against PM Anutin, 17 Ministers",
-      "summary": "Thailand's People's Party-led opposition filed a no-confidence motion on Oct 8 under Section 151 against PM Anutin and 17 Bhumjaithai ministers, signed by 145 MPs, alleging 'Blue Regime' influence over institutions, Senate-election manipulation and flood-management failures. Debate is expected in late October.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 13.7563,
-      "lon": 100.5018,
-      "locationName": "Bangkok, Thailand",
-      "countryCode": "TH",
-      "sources": [
-        {
-          "url": "https://www.nationthailand.com/news/politics/40072017",
-          "domain": "nationthailand.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.bangkokpost.com/thailand/politics/3332525/opposition-set-to-file-censure-bid",
-          "domain": "bangkokpost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/08/thai-opposition-files-no-confidence-motion-against-pm-anutin-17-ministers",
-          "domain": "thestar.com.my",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thaiexaminer.com/thai-news-foreigners/2026/10/10/pm-says-he-can-explain-all-denies-power-over-independent-agencies-as-a-no-confidence-motion-is-filed/",
-          "domain": "thaiexaminer.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-10-09T06:09:29.650Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
-      "isBreaking": false
-    },
-    {
       "id": "480eb4549754",
       "headline": "Singapore's Haze Hits 2026-Season Worst as Indonesian Fires Persist",
       "summary": "Singapore's air quality index reached 181, its worst level of the 2026 haze season, as fires in Indonesia continue to blanket the region in smoke. Malaysia and Indonesia are coordinating a diplomatic response as millions of students remain affected by school closures.",
@@ -1863,6 +2004,82 @@
       "firstSeen": "2026-10-10T06:17:11.597Z",
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-15T06:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b2017dd60b81",
+      "headline": "Colombia's Peace Tribunal Charges 10 Former FARC Commanders With War Crimes",
+      "summary": "Colombia's JEP transitional justice tribunal charged 10 former FARC commanders, including ex-senator Julián Gallo, with 44 acts of violence committed between 1996 and 2016 against the Nukak Baka, Korebaju, Siona, Hitnu and Jiw Indigenous peoples in the Amazon-Orinoquia region. The accused have 30 days to respond to the charges.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 4.711,
+      "lon": -74.0721,
+      "locationName": "Bogotá, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.eltiempo.com",
+          "domain": "eltiempo.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ctvnews.ca",
+          "domain": "ctvnews.ca",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "23867cfb0102",
+      "headline": "Bangladesh's 2026 Measles Outbreak Death Toll Reaches 1,155",
+      "summary": "As of Oct 10, 2026, Bangladesh's nationwide measles outbreak, which began March 15, 2026, has caused 1,155 deaths (104 confirmed, 1,051 suspected) out of 205,028 total suspected cases and 22,421 confirmed cases. The outbreak continues nationwide amid strained health resources.",
+      "category": "health",
+      "severity": 3,
+      "lat": 23.81,
+      "lon": 90.41,
+      "locationName": "Dhaka, Bangladesh",
+      "countryCode": "BD",
+      "sources": [
+        {
+          "url": "https://www.ians.in",
+          "domain": "ians.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcnews.com",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.bssnews.net",
+          "domain": "bssnews.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-16T06:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -1904,113 +2121,6 @@
       "isBreaking": false
     },
     {
-      "id": "eb8fc151a71f",
-      "headline": "Pakistani Forces Kill 12 Militants in Border Clash in Kurram District",
-      "summary": "Pakistani security forces killed 12 TTP and Afghan Taliban-linked fighters during a border infiltration attempt in the Kurram district, though one Pakistani soldier was also killed. The clash follows inconclusive talks between Pakistan and the Taliban in Moscow.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 33.8667,
-      "lon": 70.0833,
-      "locationName": "Kurram District, Pakistan",
-      "countryCode": "PK",
-      "sources": [
-        {
-          "url": "https://tribune.com.pk/story/2634327/soldier-martyred-twelve-terrorists-killed-in-kurram",
-          "domain": "tribune.com.pk",
-          "reliability": 68,
-          "bias": "center"
-        },
-        {
-          "url": "https://dailytimes.com.pk/1565789/pakistan-forces-kill-12-militants-in-kurram-border-infiltration-attempt",
-          "domain": "dailytimes.com.pk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.longwarjournal.org/archives/2026/10/taliban-pakistan-border-clashes-continue-after-moscow-talks-end-without-agreement",
-          "domain": "longwarjournal.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 52,
-      "firstSeen": "2026-10-13T06:10:50.147Z",
-      "lastUpdated": "2026-10-13T06:10:50.147Z",
-      "expiresAt": "2026-10-15T06:10:50.147Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ae9770ccc465",
-      "headline": "Tuareg Separatists Withdraw From Kidal as Mali's Army Retakes City",
-      "summary": "The Azawad Liberation Front announced on Oct 6 a 'controlled withdrawal' from Kidal, which it had held for about six months, citing pressure from Malian airstrikes backed by Russia's Africa Corps. Mali's army subsequently retook the strategic northern city.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 18.4411,
-      "lon": 1.4078,
-      "locationName": "Kidal, Mali",
-      "countryCode": "ML",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/6/tuareg-rebels-withdraw-from-strategic-town-of-kidal-in-northern-mali",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/tuareg-rebels-withdraw-strategic-town-174652083.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-10-11T06:36:26.744Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
-      "isBreaking": false
-    },
-    {
-      "id": "b62f594585b7",
-      "headline": "South Korea's Kospi Plunges Over 6%, Triggers Circuit Breaker Amid Chip Selloff",
-      "summary": "South Korea's Kospi index plunged more than 6%, falling below 6,000 and triggering a sell-side circuit breaker, driven by a steep selloff in semiconductor stocks.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 37.5665,
-      "lon": 126.978,
-      "locationName": "Seoul, South Korea",
-      "countryCode": "KR",
-      "sources": [
-        {
-          "url": "https://www.koreaherald.com/article/10789600",
-          "domain": "koreaherald.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kedglobal.com/korean-stock-market/newsView/ked202610130001",
-          "domain": "kedglobal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.investinglive.com/stock-market-update/kospi-plunges-more-than-6-below-6-000",
-          "domain": "investinglive.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-10-13T06:10:50.147Z",
-      "lastUpdated": "2026-10-13T06:10:50.147Z",
-      "expiresAt": "2026-10-15T06:10:50.147Z",
-      "isBreaking": false
-    },
-    {
       "id": "b594b2bae4c1",
       "headline": "Nigerian Air Force Plane Crash Death Toll Revised to 25 in Ondo State",
       "summary": "Nigeria's military revised the death toll from an Air Force ATR-42 crash in Igbokoda, Ondo State, to 25 people, down from an earlier reported 32 aboard. The government declared three days of national mourning.",
@@ -2042,28 +2152,66 @@
       "isBreaking": false
     },
     {
-      "id": "fbc1327ac48a",
-      "headline": "Egypt and Ethiopia Expel Diplomats Amid Nile Dam Dispute",
-      "summary": "Ethiopia declared an Egyptian diplomat persona non grata on Oct 1, giving him 48 hours to leave, and Egypt reciprocated by expelling an Ethiopian embassy official. The tit-for-tat move is tied to the Grand Ethiopian Renaissance Dam dispute, intensified after Ethiopia announced plans for three more Blue Nile dams.",
+      "id": "fc4f43abc68b",
+      "headline": "Delhi Police File FIRs Against Rahul Gandhi, Kharge Over INDIA Bloc's March to Supreme Court",
+      "summary": "Following an Oct 12, 2026 march by INDIA-bloc leaders including Rahul Gandhi, Mallikarjun Kharge and Priyanka Gandhi toward the Supreme Court to protest the Election Commission's voter-roll revision, Delhi Police registered at least two FIRs for alleged breach of prohibitory orders and barricade-breaking. Eleven opposition leaders separately filed a joint Supreme Court petition challenging the revision exercise.",
       "category": "politics",
-      "severity": 3,
-      "lat": 30.0444,
-      "lon": 31.2357,
-      "locationName": "Cairo, Egypt",
-      "countryCode": "EG",
+      "severity": 2,
+      "lat": 28.61,
+      "lon": 77.21,
+      "locationName": "New Delhi, India",
+      "countryCode": "IN",
       "sources": [
         {
-          "url": "https://www.thenationalnews.com/news/mena/2026/10/02/egypt-ethiopia-nile-dam-latest/",
-          "domain": "thenationalnews.com",
+          "url": "https://www.thestatesman.com",
+          "domain": "thestatesman.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
+        },
+        {
+          "url": "https://www.etvbharat.com",
+          "domain": "etvbharat.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.businesstoday.in",
+          "domain": "businesstoday.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/10/10/india-detains-youth-protest-leader-over-rally-against-election-chief.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/10/11/asia-pacific/politics/cockroach-members-detained/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-10-11/cockroach-party-india-protesters-against-modi-vow-to-return/107252114",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
         }
       ],
-      "trustScore": 33,
+      "trustScore": 82,
       "firstSeen": "2026-10-11T06:36:26.744Z",
-      "lastUpdated": "2026-10-11T06:36:26.744Z",
-      "expiresAt": "2026-10-13T06:36:26.744Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -2114,6 +2262,79 @@
       "firstSeen": "2026-10-10T06:17:11.597Z",
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-14T18:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "acd35d23c121",
+      "headline": "US Ambassador to Greece Kimberly Guilfoyle Resigns Amid Misconduct Allegations",
+      "summary": "Kimberly Guilfoyle resigned as US ambassador to Greece on Oct 13, 2026, after the White House requested her resignation following a Wall Street Journal report alleging she solicited $100,000 from a donor, threatened a host-country official, and accepted improper gifts. Guilfoyle denies the allegations.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 37.9838,
+      "lon": 23.7275,
+      "locationName": "Athens, Greece",
+      "countryCode": "GR",
+      "sources": [
+        {
+          "url": "https://www.cnn.com",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.go.com",
+          "domain": "go.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnbc.com",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.axios.com",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 76,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "68549bcf731d",
+      "headline": "Takaichi's Food Consumption-Tax Cut Advances in Diet as Farm Minister Scandal Overshadows Agenda",
+      "summary": "Japan's cabinet submitted legislation on Oct 9, 2026, to cut the consumption tax on food from 8% to 1% for two years starting April 2027, alongside low-income cash support. The plan has been overshadowed by Agriculture Minister Kazuo Yana facing election-law-violation allegations after boasting he cut road funding to municipalities backing his rival; PM Takaichi reprimanded him but kept him in office.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 35.68,
+      "lon": 139.65,
+      "locationName": "Tokyo, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 67,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -2221,6 +2442,52 @@
       "isBreaking": false
     },
     {
+      "id": "d062d73f107a",
+      "headline": "Thai PM Anutin Calls Opposition's Censure Motion Wording 'Hazy,' Delaying Formal Notification",
+      "summary": "After an Oct 8, 2026 no-confidence motion was filed against Prime Minister Anutin and 17 ministers, Anutin publicly criticized the motion's wording as unclear. He suggested this ambiguity is why the House Speaker had not formally notified the government of the censure motion as of Oct 13.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 13.76,
+      "lon": 100.5,
+      "locationName": "Bangkok, Thailand",
+      "countryCode": "TH",
+      "sources": [
+        {
+          "url": "https://www.bangkokpost.com",
+          "domain": "bangkokpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nationthailand.com",
+          "domain": "nationthailand.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/08/thai-opposition-files-no-confidence-motion-against-pm-anutin-17-ministers",
+          "domain": "thestar.com.my",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thaiexaminer.com/thai-news-foreigners/2026/10/10/pm-says-he-can-explain-all-denies-power-over-independent-agencies-as-a-no-confidence-motion-is-filed/",
+          "domain": "thaiexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-10-09T06:09:29.650Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
+      "isBreaking": false
+    },
+    {
       "id": "4319c5ff32c6",
       "headline": "Germany Doubles 2026 Growth Forecast to 1.3% on Manufacturing Rebound",
       "summary": "Germany's government raised its 2026 economic growth forecast from 0.5% to 1.3%, citing an unexpected rally in manufacturing output. The upgrade marks a notable improvement in Europe's largest economy.",
@@ -2256,6 +2523,44 @@
       "firstSeen": "2026-10-13T06:10:50.147Z",
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-14T18:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c051b821c115",
+      "headline": "Foot-and-Mouth Disease Spreads to Second Namibian Region as EU Suspends Meat Imports",
+      "summary": "Namibia has confirmed 127 foot-and-mouth disease cases across 15 farms, with the outbreak first declared in the //Kharas region in late September and spreading to the Zambezi Region by Oct 7, 2026. The EU suspended imports of fresh Namibian beef, sheep and goat meat, removing the market that received 80.7% of Namibia's 2025 beef exports.",
+      "category": "health",
+      "severity": 2,
+      "lat": -17.8,
+      "lon": 24.27,
+      "locationName": "Zambezi Region, Namibia",
+      "countryCode": "NA",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.africanews.com",
+          "domain": "africanews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thenamibian.com.na",
+          "domain": "thenamibian.com.na",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -2334,6 +2639,102 @@
       "firstSeen": "2026-10-13T06:10:50.147Z",
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-14T18:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b58a596fd0d6",
+      "headline": "Jamaica Receives First Flight of US Third-Country Deportees Under Bilateral Deal",
+      "summary": "A flight carrying 22 third-country migrants deported from the US landed in Kingston on Oct 13, 2026, the first under a June 2026 bilateral memorandum of understanding. The agreement caps arrivals at 25 deportees per fortnight.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 17.9712,
+      "lon": -76.7936,
+      "locationName": "Kingston, Jamaica",
+      "countryCode": "JM",
+      "sources": [
+        {
+          "url": "https://abcnews.go.com",
+          "domain": "go.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wtop.com",
+          "domain": "wtop.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "91ea842a5077",
+      "headline": "ASML Reports Record €11.7 Billion Q3 Revenue, Warns AI Chip Demand Will Outstrip 2027-2028 Supply",
+      "summary": "ASML reported record third-quarter 2026 net sales of about 11.7 billion euros, up 55% year-on-year, with net income near 5.0 billion euros and a gross margin of 57.5%. The company forecasts fourth-quarter sales of 14.2-15.2 billion euros and warned that planned 2027-2028 equipment supply capacity will not fully meet AI-driven chip demand, with some customers now seeking orders for 2029-2030.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 51.42,
+      "lon": 5.4,
+      "locationName": "Veldhoven, Netherlands",
+      "countryCode": "NL",
+      "sources": [
+        {
+          "url": "https://www.asml.com",
+          "domain": "asml.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.globenewswire.com",
+          "domain": "globenewswire.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dada1e9bb19f",
+      "headline": "Seoul's US Ambassador Calls September DMZ Blast Deliberate, Sparking Clarification Row",
+      "summary": "South Korea's ambassador to the US, Kang Kyung-wha, told lawmakers on Oct 12, 2026, that the Sept 21 DMZ landmine blast that wounded three South Korean soldiers was 'definitely not accidental,' aligning with a Joint Chiefs of Staff finding that North Korea deliberately planted mines south of the Military Demarcation Line. Her remarks appeared to contrast with President Lee's earlier description of the incident as an 'unfortunate accident,' prompting the embassy to issue a clarification on Oct 14.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 37.76,
+      "lon": 126.78,
+      "locationName": "Paju, Gyeonggi, South Korea",
+      "countryCode": "KR",
+      "sources": [
+        {
+          "url": "https://news.sbs.co.kr",
+          "domain": "sbs.co.kr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://koreajoongangdaily.joins.com",
+          "domain": "joins.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T18:06:01.197Z",
       "isBreaking": false
     },
     {
@@ -2451,15 +2852,78 @@
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-14T06:10:50.147Z",
       "isBreaking": false
+    },
+    {
+      "id": "f4c53aaf5f1e",
+      "headline": "Hong Kong Customs Seizes 320,000 Suspected Unmanifested Pharmaceutical Products Worth HK$18 Million",
+      "summary": "On Oct 13, 2026, Hong Kong customs officers intercepted a lorry at the Hong Kong-Zhuhai-Macao Bridge that had been declared to carry supplements, skincare and clothing but was found to contain about 320,000 suspected unmanifested pharmaceutical products worth roughly HK$18 million. A 39-year-old mainland Chinese male driver was arrested.",
+      "category": "society",
+      "severity": 1,
+      "lat": 22.21,
+      "lon": 113.94,
+      "locationName": "Hong Kong-Zhuhai-Macao Bridge, Hong Kong",
+      "countryCode": "HK",
+      "sources": [
+        {
+          "url": "https://www.customs.gov.hk",
+          "domain": "customs.gov.hk",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thestandard.com.hk",
+          "domain": "thestandard.com.hk",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4a5eeaaace73",
+      "headline": "CGIL General Strike Disrupts Trains, Buses and Waste Collection Across Tuscany",
+      "summary": "A CGIL-called regional general strike across Tuscany on Oct 14, 2026, from 09:00 to 17:00 disrupted Trenitalia and Italo rail services, Autolinee Toscane buses, and Alia waste collection, though schools and air transport were excluded. The strike opposes Italy's 'Security Packages' legislation and shows solidarity with people facing legal proceedings over an October 2025 protest at Massa Carrara station.",
+      "category": "society",
+      "severity": 1,
+      "lat": 43.77,
+      "lon": 11.26,
+      "locationName": "Florence, Tuscany, Italy",
+      "countryCode": "IT",
+      "sources": [
+        {
+          "url": "https://www.lanazione.it",
+          "domain": "lanazione.it",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.055firenze.it",
+          "domain": "055firenze.it",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-15T06:06:01.197Z",
+      "isBreaking": false
     }
   ],
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 51,
-    "carried": 15,
-    "updated": 20,
-    "expired": 33,
+    "multiSource": 64,
+    "carried": 33,
+    "updated": 12,
+    "expired": 7,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
