@@ -1,0 +1,2179 @@
+{
+  "generatedAt": "2026-10-17T06:06:41.868Z",
+  "mode": "daily",
+  "events": [
+    {
+      "id": "cfa0badc7e79",
+      "headline": "Houthi Missile Strike on Riyadh Airport Kills 12-13, Wounds 300+, Deadliest Saudi Attack in a Decade",
+      "summary": "A Houthi missile strike on Riyadh's King Khalid International Airport on October 10, 2026, killed 12-13 people and wounded over 300, including foreign nationals from Bangladesh, the US, Egypt, Jordan, Syria, Palestine and Sudan. It was the third Houthi strike on the airport within a week, following strikes that destroyed a Saudia A320; the airport remains closed under an extended NOTAM through at least October 17.",
+      "category": "conflict",
+      "severity": 5,
+      "lat": 24.96,
+      "lon": 46.7,
+      "locationName": "Riyadh, Saudi Arabia",
+      "countryCode": "SA",
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/10/10/the-airport-in-the-saudi-capital-has-been-attacked-again-officials.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-10-10/saudi-arabia-suspends-operations-at-riyadh-airport-after-attack",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/10/middleeast/riyadh-airport-saudi-houthis-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/middle-east/riyadh-airport-attacked-rcna602662",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 88,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-23T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "66e00b84b876",
+      "headline": "Hurricane Simon and Tropical Storm Rachel Death Toll Rises to 6 in Mexico, 10+ Missing in Baja California",
+      "summary": "As of Oct 13, 2026, the combined death toll from Hurricane Simon and the remnants of Tropical Storm Rachel reached 6 in Mexico. A 71-year-old man died in Guerrero when Simon, which had peaked as a Category 4 storm, caused a retaining wall collapse, while at least 4 people died and 10 or more are missing in Baja California (8 near Ensenada, 2 near San Felipe) after Rachel's remnants hit. New landfalls are forecast for the weekend of Oct 17-18.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 23.6,
+      "lon": -102.5,
+      "locationName": "Baja California, Mexico",
+      "countryCode": "MX",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.npr.org/2026/10/11/nx-s1-5998022",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-12/hurricane-simon-crawls-along-mexicos-pacific-coast",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/US/wireStory/simon-strengthens-category-4-hurricane-approaches-mexicos-coast-137153541",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://mexiconewsdaily.com/news/simon-strengthens-rapidly-hit-jalisco-or-colima-as-major-hurricane-this-weekend/",
+          "domain": "mexiconewsdaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://mx.usembassy.gov/weather-alert-upgraded-storm-hurricane-simon-u-s-consulate-general-guadalajara-u-s-embassy-mexico-city-on-friday-october-9-2026/",
+          "domain": "usembassy.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://apnews.com",
+          "domain": "apnews.com",
+          "reliability": 95,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 88,
+      "firstSeen": "2026-10-09T06:09:29.650Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "94e43fb2ece7",
+      "headline": "Houthi Missile Strikes Saudi Aramco Headquarters in Dhahran, Setting Office Tower Ablaze",
+      "summary": "A Houthi missile struck Saudi Aramco's headquarters complex in Dhahran on Oct 13, 2026, damaging the top three floors and sparking a limited fire, with no injuries reported at the site. The strike is part of an intensifying Houthi campaign that has also hit Riyadh and other Saudi cities, killing at least 18-20 people and wounding hundreds over the preceding week.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 26.2361,
+      "lon": 50.0393,
+      "locationName": "Dhahran, Saudi Arabia",
+      "countryCode": "SA",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/10/12/us-iran-war-trump-hormuz-saudi",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/saudis-probe-how-defense-systems-failed-to-stop-deadly-houthi-attack-on-riyadh-airport",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/10/10/saudi-arabia-faces-new-level-peril-houthi-attacks-amid-wider-iran-war/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://time.com/article/2026/10/08/saudi-arabia-yemen-houthi-rebels-airport-attacks-war/",
+          "domain": "time.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.npr.org",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/middle-east/flames-smoke-seen-riyadh-airport-houthis-claim-attacks-saudi-capital-rcna598714",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.thenationalnews.com/news/gulf/2026/10/07/houthis-claim-dawn-drone-and-missile-strikes-on-saudi-and-yemeni-airports/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 87,
+      "firstSeen": "2026-10-04T06:02:55.000Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c604f62a40e5",
+      "headline": "13 of 17 Sudan Nutrition Surveys Since January Find Critical Malnutrition; 300,000+ Newly Displaced in Kordofan",
+      "summary": "A new famine-risk assessment found that 13 of 17 nutrition surveys conducted in Sudan since January 2026 recorded critical acute malnutrition, with Greater Kordofan, the epicenter, seeing more than 300,000 people newly displaced since October 2025. A WFP convoy was struck by an airstrike in South Kordofan on Oct 3, killing a driver, a day after another WFP truck hit an explosive device, as the humanitarian response faces severe funding shortfalls.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 12.05,
+      "lon": 29.65,
+      "locationName": "Kordofan, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://news.un.org",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/10/12/food-insecurity-famine-sudan-war",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://english.aawsat.com/arab-world/5327280-sudan%E2%80%99s-burhan-rules-out-talks-rsf-or-%E2%80%98any-other-party%E2%80%99",
+          "domain": "aawsat.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 87,
+      "firstSeen": "2026-10-11T06:36:26.744Z",
+      "lastUpdated": "2026-10-14T06:06:01.197Z",
+      "expiresAt": "2026-10-18T06:06:01.197Z",
+      "isBreaking": false
+    },
+    {
+      "id": "89c35e1a2510",
+      "headline": "Roof Collapse at Peshawar School Kills at Least 27-32 Children and a Teacher",
+      "summary": "The roof of a two-story building at Al Khair Public School in Peshawar collapsed on the morning of October 15, 2026, after heavy overnight rain destabilized the structure. The death toll stands at 27-32 children plus one teacher, with about 50 injured; the school owner has been arrested and an investigation launched.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 34.0151,
+      "lon": 71.5249,
+      "locationName": "Peshawar, Khyber Pakhtunkhwa, Pakistan",
+      "countryCode": "PK",
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/asia-pacific/20261015-pakistan-school-roof-collapse-kills-dozens-of-pupils-teacher-in-peshawar",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/pakistan-school-collapse-peshawar-student-teacher-deaths/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/asia/pakistan-school-roof-collapse-at-least-28-killed-rcna603649",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/15/asia/pakistan-school-roof-collapse-deaths-intl-hnk",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/11/pakistan-imposes-emergency-rule-in-khyber-pakhtunkhwa",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-12/pakistan-province-leaders-of-ex-pm-imran-khans-party-detained-junior-minister-says",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.theweek.in/news/world/2026/10/11/pakistan-imposes-emergency-in-khyber-pakhtunkhwa",
+          "domain": "theweek.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 86,
+      "firstSeen": "2026-10-13T06:10:50.147Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-20T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0327f4542847",
+      "headline": "DRC Ebola Outbreak Toll Passes 9,200 Cases and 4,400 Deaths",
+      "summary": "The DRC's Ebola outbreak has grown to over 9,200 confirmed and probable cases and more than 4,400 deaths as of mid-October, spanning 64 of 167 health zones across seven provinces. The case fatality rate stands at roughly 48%, making it the second-largest Ebola outbreak on record.",
+      "category": "health",
+      "severity": 4,
+      "lat": 1.5,
+      "lon": 29.9,
+      "locationName": "Ituri Province, DR Congo",
+      "countryCode": "CD",
+      "sources": [
+        {
+          "url": "https://nation.com.pk/",
+          "domain": "nation.com.pk",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON619",
+          "domain": "who.int",
+          "reliability": 92,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/13/dr-congo-ebola-cases-pass-9000-as-efforts-to-curb-transmission-falter",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+          "domain": "europa.eu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/10/africa/kenya-ebola-cross-border-spread-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/10/1168499",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.vanguardngr.com/2026/10/ebola-outbreak-drc-death-toll-rises-to-4018/",
+          "domain": "vanguardngr.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://statnews.com",
+          "domain": "statnews.com",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://cbsnews.com",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 85,
+      "firstSeen": "2026-10-03T06:03:53.013Z",
+      "lastUpdated": "2026-10-17T06:06:41.868Z",
+      "expiresAt": "2026-10-21T06:06:41.868Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a29fabc774a4",
+      "headline": "Russian Strikes Hit Kharkiv Power Plant and Kyiv Energy Facility, Grocery Store Attack Kills 3",
+      "summary": "Russia struck a power plant in Kharkiv and an energy facility in Kyiv hours after Trump's claimed energy ceasefire announcement. A separate strike on a grocery store killed three people and injured 22 others.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 49.9935,
+      "lon": 36.2304,
+      "locationName": "Kharkiv, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/world/ukraine/trump-russia-ukraine-agree-energy-ceasefire-zelenskyy-diesel-rcna602766",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://thehill.com/policy/international/6141601-russia-strikes-ukraine-power-plant",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.france24.com/en/europe/20261010-live-russian-strikes-on-ukraine-zaporizhzhia-kill-least-seven-including-children",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www-cdn.abcnews.com/International/deadly-russian-attack-levels-apartment-building-ukraine-killing/story?id=137160086",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/7/at-least-two-killed-in-kyiv-as-russia-launches-massive-attack-on-ukraine",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.dailysabah.com/world/europe/massive-russian-overnight-strikes-kill-at-least-20-across-ukraine/amp",
+          "domain": "dailysabah.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc.net.au",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://meduza.io",
+          "domain": "meduza.io",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/03/europe/russia-strikes-northern-southern-bridges-kyiv-attacks-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 85,
+      "firstSeen": "2026-10-07T06:05:19.187Z",
+      "lastUpdated": "2026-10-13T06:10:50.147Z",
+      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7212bacd395b",
+      "headline": "Ethiopia and Eritrea Sever Diplomatic Ties, Trade Accusations of Launching War",
+      "summary": "Ethiopia closed its embassy in Asmara and expelled 10 Eritrean diplomats; Eritrea reciprocally severed all diplomatic ties. Eritrean troops crossed into Tigray near Zalambessa and came under fire from Ethiopian drones advancing toward the Adigrat-Idaga Hamus road; unconfirmed figures on troop numbers and territorial advances are excluded.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 14.28,
+      "lon": 39.46,
+      "locationName": "Adigrat, Tigray Region, Ethiopia",
+      "countryCode": "ET",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.thenationalnews.com/news/mena/2026/10/08/ethiopia-and-eritrea-edge-closer-to-direct-conflict-as-troops-enter-tigray/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.africanews.com/amp/2026/10/07/eritrean-troops-deploy-in-ethiopias-tigray-region-witnesses-say/",
+          "domain": "africanews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-10/ethiopian-forces-regain-control-of-border-city-after-reported-eritrean-incursion",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-10-07/ethiopia-accuses-eritrea-of-incursion-demands-troop-withdrawal",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.arabnews.com/world/eritrea-says-severing-diplomatic-ties-with-ethiopia-3004145",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://apnews.com",
+          "domain": "apnews.com",
+          "reliability": 95,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtontimes.com/news/2026/oct/4/ethiopias-government-retakes-mekelle-opposition-fighters-withdraw/",
+          "domain": "washingtontimes.com",
+          "reliability": 58,
+          "bias": "right"
+        },
+        {
+          "url": "https://www.hngn.com/articles/273429/20261003/ethiopia-war-goes-regional-eritrea-cuts-ties-egypt-expels-envoy.htm",
+          "domain": "hngn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 82,
+      "firstSeen": "2026-10-04T06:02:55.000Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-20T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c5558cc47d64",
+      "headline": "Blue Nile Drone Strike Death Toll Rises to at Least 72 Sudanese Miners",
+      "summary": "A rights monitor says the death toll from a drone strike on gold miners in Sudan's Blue Nile region has risen to at least 72, up from an earlier count of 41. The strike targeted a displacement camp and mining site in Wad al-Mahi.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 11.8,
+      "lon": 34.3,
+      "locationName": "Wad al-Mahi, Blue Nile State, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://radiotamazuj.org/en/news/article/more-than-20-killed-in-drone-strike-on-gold-miners-in-blue-nile",
+          "domain": "radiotamazuj.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/10/1168567",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/10/rights-group-says-paramilitary-drone-strike-in-sudan-killed-41-near-ethiopian-border",
+          "domain": "ny1.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://sudantribune.com/article/319781",
+          "domain": "sudantribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arabnews.com/world/drone-strike-kills-4-women-in-sudans-blue-nile-state-3005102",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-10-10T06:17:11.597Z",
+      "lastUpdated": "2026-10-13T06:10:50.147Z",
+      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5f1baef46f53",
+      "headline": "Russian Missile Strikes on Kyiv's CHP-4 Plant Kill Up to 9, Leave 600,000 Without Power",
+      "summary": "Updated figures on the October 14 strike on Kyiv's CHP-4 power plant and an apartment building show 5-9 killed and 25 injured, higher than initial counts. All three of Kyiv's CHP plants are now down, leaving roughly 600,000 residents without power.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 50.45,
+      "lon": 30.52,
+      "locationName": "Kyiv, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/europe/20261014-kyiv-power-plant-hit-by-russian-missile-without-warning-from-allies",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/14/europe/russia-ukraine-energy-strike-early-warning-intl-hnk",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.kyivpost.com",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.pravda.com.ua",
+          "domain": "pravda.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 74,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-20T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7c56990f2a38",
+      "headline": "Gaza Ceasefire Death Toll Rises to 1,493 Killed, 5,299 Wounded One Year After Truce",
+      "summary": "The death toll since the October 2025 Gaza ceasefire reached 1,493 killed and 5,299 wounded as of October 12, 2026, up from 1,460 a week earlier; the cumulative toll since October 2023 stands at 74,382. Israel has struck Gaza on 333 of the 369 days since the truce began.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 31.5,
+      "lon": 34.47,
+      "locationName": "Gaza Strip",
+      "countryCode": "PS",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://english.wafa.ps/Pages/Details/175769",
+          "domain": "wafa.ps",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+          "domain": "amnesty.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.timesofisrael.com/liveblog-october-10-2026",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.npr.org/2026/10/08/nx-s1-5993984/four-seasons-of-ceasefire-in-gaza",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 74,
+      "firstSeen": "2026-10-10T06:17:11.597Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-20T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "139961c4b79e",
+      "headline": "Panama Earthquake Toll Rises: Hotel and Church Collapse in Tonosí, 27+ Injured",
+      "summary": "Aftershocks from Panama's magnitude-7.7 earthquake continue, with a hotel and church collapsing in Tonosí and more than 27 people injured. Nationwide damage now includes over 142 homes and 188 schools, with 147 aftershocks recorded since the quake.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 7.42,
+      "lon": -80.47,
+      "locationName": "Tonosí, Panama",
+      "countryCode": "XX",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/2026_Panama_earthquake",
+          "domain": "wikipedia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.latintimes.com/panama-hit-77-quake-147-aftershocks-27-injured-cathedral-collapsed-600040",
+          "domain": "latintimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.manilatimes.net/2026/10/10/world/americas-emea/major-earthquake-destroys-buildings-roads-in-panama",
+          "domain": "manilatimes.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/09/americas/panama-earthquake-latam-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/panama/magnitude-77-earthquake-rocks-panama-rcna602557",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://gulfnews.com/world/americas/15lq305-magnitude-57-earthquake-strikes-panama-1.500153061",
+          "domain": "gulfnews.com",
+          "reliability": 66,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 72,
+      "firstSeen": "2026-10-10T06:17:11.597Z",
+      "lastUpdated": "2026-10-13T06:10:50.147Z",
+      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6e6336e3e35f",
+      "headline": "Nearly Half of Sudan's Community Kitchens Have Closed in Six Months Amid Deepening Famine Risk",
+      "summary": "An Islamic Relief report found that almost half of Sudan's community kitchens have closed in the past six months due to funding shortfalls, rising costs and insecurity. North Darfur is down to just one of roughly 40 kitchens that previously operated, while North Kordofan's kitchens have mostly stayed open.",
+      "category": "health",
+      "severity": 4,
+      "lat": 13.5,
+      "lon": 25,
+      "locationName": "North Darfur, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://www.pbs.org/newshour/world/sudans-famine-risk-worsened-by-conflict-drought-and-funding-shortages-report-says",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.middleeasteye.net/news/almost-half-sudans-community-kitchens-have-closed-last-six-months",
+          "domain": "middleeasteye.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://islamic-relief.org/news/hundreds-of-sudans-community-kitchens-forced-to-shut-in-last-six-months-new-islamic-relief-research-finds/",
+          "domain": "islamic-relief.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-20T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "169d37cc9701",
+      "headline": "Former DRC President Kabila Forms New Rebel Group Aligned With M23 in Goma",
+      "summary": "Former Democratic Republic of Congo President Joseph Kabila has formed the 'Front for the Refoundation of the Nation,' aligning openly with the M23/AFC insurgency in Goma. The move marks Kabila's formal emergence as a rebel leader against the Congolese government.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": -1.6792,
+      "lon": 29.2228,
+      "locationName": "Goma, DR Congo",
+      "countryCode": "XX",
+      "sources": [
+        {
+          "url": "https://www.dailymaverick.co.za/article/2026-10-12-congos-former-president-kabila-forms-new-group-to-replace-m23-insurgency",
+          "domain": "dailymaverick.co.za",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-12/congos-former-president-kabila-forms-new-group-to-replace-m23-insurgency",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 47,
+      "firstSeen": "2026-10-13T06:10:50.147Z",
+      "lastUpdated": "2026-10-13T06:10:50.147Z",
+      "expiresAt": "2026-10-17T06:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c3eb4cb43d8e",
+      "headline": "Drone Strike on Nyala Cattle Market Kills 30 in Sudan's South Darfur",
+      "summary": "A drone strike hit a cattle market in Nyala, South Darfur, killing 30 people including 17 women and five children, and wounding 47 others. Sudan's Rapid Support Forces, who control the city, blamed the army for the strike.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 12.05,
+      "lon": 24.88,
+      "locationName": "Nyala, South Darfur, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://dawn.com/",
+          "domain": "dawn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 33,
+      "firstSeen": "2026-10-17T06:06:41.868Z",
+      "lastUpdated": "2026-10-17T06:06:41.868Z",
+      "expiresAt": "2026-10-21T06:06:41.868Z",
+      "isBreaking": false
+    },
+    {
+      "id": "323ece2c45da",
+      "headline": "Flávio Bolsonaro and Lula to Hold First Direct TV Debate Ahead of Oct 25 Brazil Runoff",
+      "summary": "Polling tightened ahead of Brazil's October 25 presidential runoff: Datafolha (Oct 8) showed Bolsonaro 49%-Lula 45%, Quaest (Oct 15) showed Bolsonaro 46%-Lula 44%, with 9 of 10 runoff polls putting Flávio Bolsonaro narrowly ahead. He reversed course on October 14-15 and confirmed he will appear opposite Lula in a Band network debate on October 18, the campaign's first direct face-off.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -15.79,
+      "lon": -47.88,
+      "locationName": "Brasília, Brazil",
+      "countryCode": "BR",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/15/poll-shows-bolsonaro-with-slight-lead-over-lula-ahead-of-brazilian-run-off",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/bolsonaro-and-lula-head-to-a-runoff-in-brazils-presidential-election",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-08/flavio-bolsonaro-slightly-ahead-of-lula-in-brazil-runoff-datafolha-poll-shows",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/10/04/bolsonaro-lula-head-runoff-5-takeaways-brazils-election",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/04/americas/brazil-president-elections-2026-latam-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/brazil/brazilians-polarized-election-lula-flavio-bolsonaro-rcna601381",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 88,
+      "firstSeen": "2026-10-13T06:10:50.147Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "64b66b6840de",
+      "headline": "France Crisis Talks Continue as Student Protest Toll Reaches ~1,900 Detained, 700+ Police Injured",
+      "summary": "French PM Lecornu held crisis talks as nationwide student and school protests continued, with a cumulative toll of about 1,900 detained, 215 students and 85 staff injured, and over 700 police injured, amid the backdrop of the 2027 budget debate targeting a 5.0% deficit.",
+      "category": "society",
+      "severity": 3,
+      "lat": 48.86,
+      "lon": 2.35,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/france/20261001-hundreds-of-students-detained-dozens-of-officers-injured-in-french-school-protests",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://time.com/article/2026/10/06/france-student-protest-in-photos/",
+          "domain": "time.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://tribune.com.pk/story/2634063/french-policing-under-scrutiny-as-student-protest-injuries-mount",
+          "domain": "tribune.com.pk",
+          "reliability": 68,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnbc.com",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.euronews.com",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://fortune.com/2026/10/10/baby-boomer-vs-gen-z-france-debt-crisis",
+          "domain": "fortune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 85,
+      "firstSeen": "2026-10-10T06:17:11.597Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0f5e341f192a",
+      "headline": "Kenya Confirms Second Ebola Case, a Relative of Nairobi's First Patient Already Under Quarantine",
+      "summary": "Kenya's Health Ministry confirmed a second Ebola case on October 14, 2026, a 39-year-old relative of the first patient who was already under quarantine. Officials said there is no evidence of wider community spread linked to the DRC outbreak.",
+      "category": "health",
+      "severity": 3,
+      "lat": -1.29,
+      "lon": 36.82,
+      "locationName": "Nairobi, Kenya",
+      "countryCode": "KE",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/14/kenyas-health-ministry-confirms-second-ebola-case",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/10/14/kenya-ebola-congo/d9c75bf2-c7e6-11f1-aefb-abe4112d087e_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.africanews.com/2026/10/14/kenya-reports-second-ebola-case-family-member-of-first-patient/",
+          "domain": "africanews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON619",
+          "domain": "who.int",
+          "reliability": 92,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/10/africa/kenya-ebola-cross-border-spread-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.health.go.ke/kenya-confirms-first-imported-case-bundibugyo-ebola-virus-disease",
+          "domain": "go.ke",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.pbs.org",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.go.com",
+          "domain": "go.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 83,
+      "firstSeen": "2026-10-09T06:09:29.650Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fc4f43abc68b",
+      "headline": "India's Supreme Court Hears Mass-Detention Petitions as Delhi Protests Over Electoral Roll Purge Continue",
+      "summary": "Delhi Police detained between 2,000 and 6,000 protesters, opposition figures and journalists on October 9-11, 2026, over the SIR electoral roll revision that removed about 130 million names. On October 15, fresh detentions followed an India Gate protest, and the Supreme Court heard 18 petitions on the detentions and shutdowns while UN OHCHR urged release of 'arbitrarily detained' protesters.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 28.6139,
+      "lon": 77.209,
+      "locationName": "New Delhi, India",
+      "countryCode": "IN",
+      "sources": [
+        {
+          "url": "https://news.un.org/en/story/2026/10/1168571",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/11/indias-crackdown-on-youth-protesters-what-next",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/",
+          "domain": "civicus.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thestatesman.com",
+          "domain": "thestatesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.etvbharat.com",
+          "domain": "etvbharat.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.businesstoday.in",
+          "domain": "businesstoday.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnbc.com/2026/10/10/india-detains-youth-protest-leader-over-rally-against-election-chief.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/10/11/asia-pacific/politics/cockroach-members-detained/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-10-11/cockroach-party-india-protesters-against-modi-vow-to-return/107252114",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 82,
+      "firstSeen": "2026-10-11T06:36:26.744Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b1060a9a8b0b",
+      "headline": "Pennsylvania Measles Cases Climb to 1,222 With 5 Deaths as US National Outbreak Persists",
+      "summary": "Pennsylvania reported 1,222 measles cases and 5 deaths as of mid-October 2026, the latest state-level development in a US outbreak that has topped 4,080 cases nationally and put the country's measles elimination status at risk.",
+      "category": "health",
+      "severity": 3,
+      "lat": 39.8,
+      "lon": -98.6,
+      "locationName": "Pennsylvania, USA",
+      "countryCode": "US",
+      "sources": [
+        {
+          "url": "https://www.usnews.com/news/us/articles/2026-10-14/pennsylvania-reports-1-222-measles-cases-as-outbreak-grows",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://thehill.com/policy/healthcare/6140802-us-measles-cases-surpass-4000-pennsylvania/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cdc.gov/measles/data-research/index.html",
+          "domain": "cdc.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/health/health-news/measles-outbreaks-us-cases-2026-virginia-florida-pennsylvania-rcna348630",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cidrap.umn.edu/measles/us-highly-likely-lose-measles-elimination-status-fall-analysis-warns",
+          "domain": "umn.edu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://medicalxpress.com/news/2026-10-florida-dengue-outbreak-largest-state",
+          "domain": "medicalxpress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.paho.org/en/news/9-10-2026-paho-assesses-risk-measles-spread-very-high-ahead-religious-mass-gatherings-americas",
+          "domain": "paho.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://awe24.com",
+          "domain": "awe24.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-10-09T06:09:29.650Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2d134bafbbee",
+      "headline": "Drone Strikes Set Two Tankers Ablaze Off Romania's Black Sea Coast, Seven Sailors Missing",
+      "summary": "The tankers Wine Trader (San Marino flag) and Yara J (Comoros flag) caught fire after drone strikes overnight into October 15, 2026, near Romanian territorial waters off Sulina; seven of twelve Wine Trader crew remain missing while Yara J's crew are safe. Romanian President Nicușor Dan confirmed drone strikes, and a NATO source said the drones were of Russian origin.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 45.15,
+      "lon": 29.66,
+      "locationName": "Sulina, Romania",
+      "countryCode": "RO",
+      "sources": [
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-15/two-ships-ablaze-in-romanian-black-sea-waters-8-sailors-missing",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-10-15/two-ships-ablaze-romanian-black-sea-sailors-missing/107272674",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://gcaptain.com/two-ships-ablaze-off-romanian-black-sea-coast-7-sailors-missing/",
+          "domain": "gcaptain.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://theprint.in/world/seven-sailors-missing-after-drones-hit-two-ships-near-romania/3073143/",
+          "domain": "theprint.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.euronews.com",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.themoscowtimes.com",
+          "domain": "themoscowtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.irishtimes.com",
+          "domain": "irishtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b62f594585b7",
+      "headline": "Kospi Plunges 7.57% Triggering Circuit Breaker as Chip Stocks Crash on Rate Fears",
+      "summary": "South Korea's Kospi plunged 7.57% on October 15, 2026, closing at 5,554.22, its lowest since April, triggering a circuit breaker that halted trading for 20 minutes alongside a simultaneous KOSDAQ halt, the first dual circuit-breaker since July 29. Samsung fell about 10% and SK Hynix about 11% amid a hot US inflation print, AI/chip financing fears and a Chinese DRAM claim, marking a seventh consecutive losing session and entry into a bear market.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 37.5665,
+      "lon": 126.978,
+      "locationName": "Seoul, South Korea",
+      "countryCode": "KR",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-10-15/chip-stocks-deepen-losses-as-concerns-mount-over-rates-ai-debt",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://money.usnews.com/investing/news/articles/2026-10-15/south-koreas-kospi-triggers-circuit-breaker-in-tech-led-selloff",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10904070",
+          "domain": "koreaherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://finance.yahoo.com",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kedglobal.com/korean-stock-market/newsView/ked202610130001",
+          "domain": "kedglobal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.investinglive.com/stock-market-update/kospi-plunges-more-than-6-below-6-000",
+          "domain": "investinglive.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 79,
+      "firstSeen": "2026-10-13T06:10:50.147Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dc823221cee7",
+      "headline": "Istanbul Hit by Heaviest Rainfall Since 1942, Killing at Least Three",
+      "summary": "Torrential rain of up to 242mm flooded Istanbul on October 14-15, 2026, the heaviest since records began in 1942. At least three people were confirmed dead with several missing; 8,000 emergency workers were deployed to respond to more than 1,200 flooding reports and 15 landslides, and flights were cancelled or diverted.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 41.01,
+      "lon": 28.98,
+      "locationName": "Istanbul, Turkey",
+      "countryCode": "TR",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/world/2026/10/15/istanbul-turkey-rain/39030fd2-c867-11f1-aefb-abe4112d087e_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.euronews.com/2026/10/15/at-least-two-killed-after-heavy-rain-and-widespread-flooding-causes-istanbul-shutdown",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.newarab.com/news/three-dead-istanbul-sees-heaviest-rainfall-80-years",
+          "domain": "newarab.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arabnews.com/world/two-dead-as-istanbul-endures-heaviest-rainfall-in-80-years-3006487",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 75,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "91077fadd7c4",
+      "headline": "Netanyahu Reveals Direct Phone Call With Syria's al-Sharaa That Halted 2025 Druze Massacre",
+      "summary": "On October 15, 2026, Netanyahu disclosed a phone call with Syrian President al-Sharaa shortly after Israel's July 2025 strikes near Damascus, saying the call halted violence against the Druze in Sweida. It is the first disclosed direct Israel-Syria leader contact in decades, though Syrian sources say the contact was mediated rather than fully direct.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 31.77,
+      "lon": 35.21,
+      "locationName": "Jerusalem, Israel",
+      "countryCode": "IL",
+      "sources": [
+        {
+          "url": "https://www.timesofisrael.com/liveblog-october-15-2026/",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.jpost.com/israel-news/article-911842",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        },
+        {
+          "url": "https://www.haaretz.com/israel-news/israel-security/2026-10-15/ty-article/.premium/netanyahu-reveals-he-spoke-to-syrias-al-sharaa-about-druze-massacre/000001a1-3fd9-d8db-ada3-7fdf18ca0000",
+          "domain": "haaretz.com",
+          "reliability": 80,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.theweek.in/news/middle-east/2026/10/15/netanyahu-reveals-call-with-syrian-president.html",
+          "domain": "theweek.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 75,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6cee0934d442",
+      "headline": "North Korea Tests Submarine-Launched Cruise Missiles for First Time in Nearly Three Years",
+      "summary": "North Korea fired two types of submarine-launched cruise missiles on October 14-15, 2026, its first public SLCM test in roughly three years, demonstrating naval deterrence capability. South Korea's military confirmed tracking the launches, which are distinct from North Korea's October 12-13 ballistic missile test.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 39,
+      "lon": 128,
+      "locationName": "Sea of Japan/East Sea, North Korea",
+      "countryCode": "KP",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/15/north-korea-tests-two-submarine-launched-missiles-state-media-reports",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/10/15/asia-pacific/north-korea-submarine-cruise-missiles/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/10/15/North-Korea-submarine-launch-cruise-missiles/6571792056064",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 72,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6f5e38002333",
+      "headline": "Student Protesters Torch Albania's Education Ministry in Third Day of Tirana Unrest",
+      "summary": "Student protests in Tirana entered a third-plus day on October 13-15, 2026, with demonstrators setting fire to the Education Ministry and blazes also breaking out at bank branches and near the prime minister's office. At least six police and one journalist were injured and 23 people arrested; PM Edi Rama has refused to resign.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 41.33,
+      "lon": 19.82,
+      "locationName": "Tirana, Albania",
+      "countryCode": "AL",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/14/fire-erupts-at-albanias-education-ministry-as-protests-enter-third-day",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.jpost.com/international/article-911710",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-14/fire-breaks-out-at-albanias-education-ministry-during-student-protest",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d790c8dc9cd7",
+      "headline": "Hurricane Trudy Rapidly Intensifies Off Mexico's Pacific Coast, Threatening Jalisco and Colima",
+      "summary": "Hurricane Trudy strengthened into a Category 1 storm roughly 300 miles southwest of Acapulco on October 15, 2026, with forecasters predicting rapid intensification to Category 3 or 4 within 48 hours. Heavy rainfall and flood/landslide risk are forecast from Guerrero through Jalisco, on a track similar to Hurricane Simon, which killed people in Baja California.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 19.5,
+      "lon": -104.8,
+      "locationName": "Colima, Mexico",
+      "countryCode": "MX",
+      "sources": [
+        {
+          "url": "https://mx.usembassy.gov/weather-alert-hurricane-trudy-u-s-embassy-mexico-city-u-s-consulate-general-guadalajara-on-thursday-october-15-2026/",
+          "domain": "usembassy.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/trudy-strengthens-hurricane-system-nears-mexicos-coast-major-137280302",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://gvwire.com/2026/10/15/hurricane-trudy-looms-over-mexicos-pacific-coast-severe-rainfall-expected/",
+          "domain": "gvwire.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "480eb4549754",
+      "headline": "Indonesia Rejects National Disaster Status for Worst Fire Season in 11 Years",
+      "summary": "In an October 14, 2026 cabinet meeting chaired by President Prabowo, Indonesia decided not to declare its wildfires a national disaster, saying the government remains 'capable of handling it.' It is the worst fire season in about 11 years, with 600,000-900,000+ hectares burned since January, drawing criticism from Greenpeace and Walhi.",
+      "category": "climate",
+      "severity": 3,
+      "lat": -6.2088,
+      "lon": 106.8456,
+      "locationName": "Jakarta, Indonesia",
+      "countryCode": "ID",
+      "sources": [
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-13/indonesias-prabowo-orders-more-resources-to-fight-wildfires-as-haze-anger-grows",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/asia/singapore-pollution-spikes-east-timor-shuts-schools-indonesia-wildfire-rcna603416",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/14/regional-fallout-grows-as-indonesia-rejects-disaster-status",
+          "domain": "thestar.com.my",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/9/malaysia-shuts-schools-as-haze-from-indonesian-fires-chokes-southeast-asia",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-10-10T06:17:11.597Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "efcd5ad3b409",
+      "headline": "Belgium Blocks EU Plan to Seize Frozen Russian Assets for Ukraine at Brussels Summit",
+      "summary": "Belgian Prime Minister Bart De Wever blocked a roughly €185-210 billion plan to use Euroclear-held frozen Russian assets for Ukraine at the October 15-16 Brussels summit. A meeting between De Wever and Ukrainian President Volodymyr Zelensky produced no breakthrough.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 50.8503,
+      "lon": 4.3517,
+      "locationName": "Brussels, Belgium",
+      "countryCode": "BE",
+      "sources": [
+        {
+          "url": "https://eurointegration.com.ua/",
+          "domain": "eurointegration.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://english.news.cn/europe/20261016/643f448e35ca4643bbc41eca26f3b910/c.html",
+          "domain": "news.cn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://easternherald.com/2026/10/15/eu-frozen-russian-assets-us-control/",
+          "domain": "easternherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://famagusta-gazette.com/merz-rejects-placing-russian-assets-frozen-in-eu-under-u-s-control/",
+          "domain": "famagusta-gazette.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://newsukraine.rbc.ua/news/merz-rejects-us-bid-to-control-frozen-russian-1792063501.html",
+          "domain": "rbc.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-17T06:06:41.868Z",
+      "expiresAt": "2026-10-19T06:06:41.868Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2683e4e536a2",
+      "headline": "Anti-Migrant Violence Flares in Durban and Soweto; Nigeria Evacuates 111 More Citizens",
+      "summary": "Anti-migrant protests triggered by a Constitutional Court asylum ruling turned violent in early-to-mid October 2026, with 14 vehicles torched in Durban and 10 in Soweto, shops looted and 15+ people arrested. Nigeria evacuated 111 more citizens around October 11, bringing the cumulative total to about 2,037 repatriated over 15 flights since June.",
+      "category": "society",
+      "severity": 3,
+      "lat": -30.6,
+      "lon": 22.9,
+      "locationName": "Durban, South Africa",
+      "countryCode": "ZA",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/8/south-africa-protests-turn-violent-amid-rage-over-asylum-ruling",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://english.news.cn/africa/20261009/6341ded7b5e84bc19d83f2b1eb77a2fe/c.html",
+          "domain": "news.cn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://pmnewsnigeria.com/2026/10/11/fg-evacuates-another-111-nigerians-from-south-africa-amid-xenophobia-fears/",
+          "domain": "pmnewsnigeria.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/cars-torched-shops-looted-anti-044428067.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 62,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8f17cdb389c3",
+      "headline": "Russia Launches 580-Drone Barrage on Ukraine, Killing Three in Kirovohrad Region",
+      "summary": "Russia launched 580 drones at Ukraine on the evening of October 14, 2026, with 536 intercepted (92.4%); 31 locations were struck. In Kirovohrad region, this specific wave killed 3 and wounded 6, part of intensified fighting including 264 clashes reported in Donetsk over 24 hours.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 48.5,
+      "lon": 32.26,
+      "locationName": "Kirovohrad Region, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.ukrinform.net/rubric-ato/4174564-russia-launches-massive-drone-attack-on-ukraine-air-defence-neutralizes-536-of-580-targets.html",
+          "domain": "ukrinform.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://en.interfax.com.ua/news/general/1220461.html",
+          "domain": "interfax.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://censor.net/en/news/4027641",
+          "domain": "censor.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-10-13T06:10:50.147Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "18cf1f0a4bad",
+      "headline": "Colombia Holds First National Strike Against President de la Espriella Over Austerity Cuts",
+      "summary": "A coalition of unions, indigenous groups and Petro-aligned opposition staged Colombia's first national strike against President de la Espriella on October 14, 2026, protesting austerity cuts and Decree 1525. Thousands marched in Bogotá's Plaza de Bolívar under heavy riot-police deployment, with violent clashes, tear gas and arrests reported in Medellín; no deaths were reported.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 4.711,
+      "lon": -74.072,
+      "locationName": "Bogotá, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/14/colombia-opposition-groups-launch-protest-against-de-la-espriellas-cuts",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://co.usembassy.gov/demonstration-alert-planned-protests-in-bogota-october-14/",
+          "domain": "usembassy.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.riotimesonline.com/colombia-strike-14-october-2026/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 60,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "355d059dd984",
+      "headline": "UN Security Council Renews Haiti Arms Embargo and Sanctions Regime for One More Year",
+      "summary": "The UN Security Council adopted Resolution 2831 on October 14, 2026, by a 14-0 vote with Russia abstaining, renewing Haiti's sanctions regime (arms embargo, travel ban, asset freezes) for another year and extending its Panel of Experts mandate by 13 months. About 1.5 million people, roughly 12% of Haiti's population, remain displaced by gang violence.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 18.59,
+      "lon": -72.31,
+      "locationName": "Port-au-Prince, Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://news.un.org/en/story/2026/10/1168598",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.securitycouncilreport.org/whatsinblue/2026/10/haiti-vote-on-a-draft-resolution-renewing-the-sanctions-regime-2.php",
+          "domain": "securitycouncilreport.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://jamaica-gleaner.com/article/world-news/20261015/un-security-council-renews-haiti-sanctions-amid-continued-gang-violence",
+          "domain": "jamaica-gleaner.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c0680eeae2d6",
+      "headline": "Japan Scrambles Jets as Chinese Carrier Liaoning Conducts Flight Operations Near Okinawa",
+      "summary": "Japan scrambled jets on October 14, 2026, after the Chinese carrier Liaoning conducted about 10 takeoffs and landings south of Okinawa, within Japan's EEZ, while sailing the Okinawa-Miyako corridor into the Pacific. Japan deployed the destroyer JS Yugiri and P-1/P-3C patrol aircraft in response; China called the operation 'annual routine training.'",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 36.2,
+      "lon": 138.3,
+      "locationName": "Near Okinawa, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/10/16/japan/china-carrier-pacific-japan-koizumi-defense/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.stripes.com/theaters/asia_pacific/2026-10-15/china-aircraft-carrier-liaoning-okinawa-23160511.html",
+          "domain": "stripes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.usni.org/2026/10/14/chinese-carrier-strike-group-drills-in-the-philippine-sea",
+          "domain": "usni.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "df37fbdb4672",
+      "headline": "Houthi Forces Encircle Taiz as Yemeni Government Claims Gains in Marib",
+      "summary": "A Houthi offensive encircling Taiz has intensified since early October 2026; Yemen's army claims over 200 Houthi fighters killed or wounded in clashes as of October 14. Houthi shelling killed 5 civilians and wounded 17 in a 24-hour period, part of a continuing rolling toll.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 13.58,
+      "lon": 44.02,
+      "locationName": "Taiz, Yemen",
+      "countryCode": "YE",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/13/deadly-houthi-attacks-in-yemens-taiz-as-government-forces-advance-in-marib",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-200-houthis-killed-wounded-clashes-taiz",
+          "domain": "middleeasteye.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 48,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-18T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f2ed55dfdbda",
+      "headline": "Nepal Flash Flood Sweeps Away Dozens of Homes in Gorkha District",
+      "summary": "Around October 11-12, 2026, a landslide-dammed river burst in Nepal's Gorkha district, sweeping away about 45 houses and damaging three hydropower projects and four bridges, with at least five people missing. The event is distinct from the much larger August 2026 Langtang glacier-collapse disaster.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 28,
+      "lon": 84.63,
+      "locationName": "Gorkha District, Nepal",
+      "countryCode": "NP",
+      "sources": [
+        {
+          "url": "https://news.un.org/en/story/2026/10/1168576",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/10/12/asia-pacific/nepal-new-flash-floods/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 67,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "68549bcf731d",
+      "headline": "Japan's Agriculture Minister Kazuo Yana Resigns Over Vote-Buying Allegations",
+      "summary": "Agriculture Minister Kazuo Yana resigned on October 14, 2026, becoming the first cabinet minister to quit under PM Takaichi's government, following allegations of providing free shuttle buses to supporters in violation of election law and backlash over remarks on the road budget.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "locationName": "Tokyo, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-10-14/pressure-mounts-on-japan-s-farm-minister-ahead-of-takaichi-meet",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/10/14/japan/politics/takaichi-cabinet-yana-parliament-resigns/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 67,
+      "firstSeen": "2026-10-14T06:06:01.197Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dd6c0eb14018",
+      "headline": "BHP and Union Reach Deal, Averting Strike at World's Largest Copper Mine in Chile",
+      "summary": "BHP and the supervisors' union at the Escondida copper mine reached a tentative 36-month wage deal on October 14, 2026, narrowly averting a strike. The roughly 1,020-member union approved the agreement with about 64% support.",
+      "category": "economy",
+      "severity": 2,
+      "lat": -35.7,
+      "lon": -71.5,
+      "locationName": "Antofagasta Region, Chile",
+      "countryCode": "CL",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-10-13/bhp-in-final-bid-to-avert-strike-at-top-copper-mine-as-prices-rally",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.miningweekly.com/article/bhp-escondida-supervisors-reach-deal-to-avert-strike-at-chile-copper-mine-2026-10-15",
+          "domain": "miningweekly.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.mining-journal.com/miners/news-analysis/4538163/bhp-averts-strikes-worlds-largest-copper",
+          "domain": "mining-journal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2437900896c9",
+      "headline": "Macron Reaffirms Support for Ukraine in Brussels as Lavrov Rules Out Ceasefire",
+      "summary": "On October 15, 2026, French President Macron met Zelensky in Brussels and reaffirmed continued French military and aviation support for Ukraine. Separately in Baku, Russia's Lavrov ruled out a ceasefire and accused Zelensky of defying Trump over the recent diesel deal.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 50.85,
+      "lon": 4.35,
+      "locationName": "Brussels, Belgium",
+      "countryCode": "BE",
+      "sources": [
+        {
+          "url": "https://www.yahoo.com/news/articles/frances-macron-reaffirms-support-ukraine-182443848.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kyivpost.com/post/87215",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://en.apa.az/cis-countries/lavrov-zelenskyy-is-challenging-trump-not-interested-in-elections-530293",
+          "domain": "apa.az",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c2ab2c1f2618",
+      "headline": "Israeli Drone Strike Near Lebanon-Syria Border Wounds Six, Targets Alleged Iran-Linked Operative",
+      "summary": "An Israeli drone strike on October 10, 2026, wounded six people (five Syrian, one Lebanese) near Hawsh al-Sayyed Ali in Lebanon's Hermel district. Israel said the strike targeted Yusuf Ali al-Hassoun, an alleged Iran-directed operative.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 34.3,
+      "lon": 36.4,
+      "locationName": "Hermel District, Lebanon",
+      "countryCode": "LB",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/10/israeli-drone-attack-wounds-six-in-lebanon-near-syria-border",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/israeli-drone-attack-wounds-six-002252164.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8b91e49ea7d2",
+      "headline": "Ecuador's 'Operation Muralla' Raids Net Four Leaders of Armed Group Comandos de la Frontera",
+      "summary": "Ecuadorian security forces conducted 14 raids on October 15, 2026, across Orellana, Sucumbíos and Guayas provinces, detaining four leaders of Comandos de la Frontera, a group tied to 19 confirmed deaths including 11 soldiers and 3 police officers.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 0.47,
+      "lon": -76.98,
+      "locationName": "Orellana Province, Ecuador",
+      "countryCode": "EC",
+      "sources": [
+        {
+          "url": "https://www.primicias.ec/sucesos/operacion-muralla-comandos-frontera-detenidos-muerte-militares-alto-punino-policia-134961/",
+          "domain": "primicias.ec",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.infobae.com/america/america-latina/2026/10/15/las-autoridades-ecuatorianas-detuvieron-a-cuatro-presuntos-miembros-de-comandos-de-la-frontera-por-decenas-de-asesinatos/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://noticiasargentinas.com/internacionales/ecuador-captura-a-cuatro-presuntos-cabecillas-de-grupo-armado-colombiano-comandos-de-la-frontera_a6ad1422388153cda2d0263dd",
+          "domain": "noticiasargentinas.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "83a67c9287a2",
+      "headline": "Peru and Venezuela Coordinate on Air Deportation of Undocumented Venezuelan Migrants",
+      "summary": "Peru's Fujimori and Venezuela's Delcy Rodríguez spoke on October 15, 2026, to coordinate an 'orderly' expulsion by air of undocumented Venezuelan migrants; Peru hosts about 1.6 million Venezuelans. No flight date or passenger numbers have been announced yet, and reporting remains provisional.",
+      "category": "politics",
+      "severity": 2,
+      "lat": -12.05,
+      "lon": -77.04,
+      "locationName": "Lima, Peru / Caracas, Venezuela",
+      "countryCode": "PE",
+      "sources": [
+        {
+          "url": "https://www.infobae.com/peru/2026/10/15/keiko-fujimori-llama-a-delcy-rodriguez-para-coordinar-expulsion-de-venezolanos-indocumentados-por-via-aerea/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.riotimesonline.com/peru-venezuela-plan-expulsion-flights-undocumented-migrants-2026/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://gestion.pe/peru/politica/presidenta-fujimori-y-delcy-rodriguez-coordinan-retorno-de-venezolanos-que-medidas-alista-peru-noticia/",
+          "domain": "gestion.pe",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "aec4dc483012",
+      "headline": "Drone Strike on Trade Convoy Kills One to Two, Wounds Up to Eight in North Darfur's Furawiya",
+      "summary": "A drone strike on October 15, 2026, hit five civilian vehicles transporting food between markets in Furawiya, Karnoi locality, North Darfur, killing one to two people and wounding five to eight others. Casualties were treated across the border in Chad.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 15.5,
+      "lon": 23.9,
+      "locationName": "Furawiya, North Darfur, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://allafrica.com/stories/202610160012.html",
+          "domain": "allafrica.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.dabangasudan.org/en/all-news/article/drone-attack-kills-two-in-north-darfur-as-red-crescent-volunteer-killed-in-blue-nile",
+          "domain": "dabangasudan.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://darfur24.com/en/2026/10/15/drone-strike-kills-one-injures-five-in-north-darfur/",
+          "domain": "darfur24.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "57e842db4b5f",
+      "headline": "Myanmar Junta Seeks INTERPOL Red Notices Against Five Exiled Media Outlets",
+      "summary": "Myanmar's junta filed criminal cases under sedition, counter-terrorism and e-transactions laws against five exiled media outlets (Mizzima, Myanmar Now, Khit Thit, The Irrawaddy, DVB) and NUG/CRPH/PDF figures, seeking INTERPOL Red Notices, passport revocation and extradition. INTERPOL has not confirmed issuing any such notices, and its Article 3 bars political interventions.",
+      "category": "society",
+      "severity": 2,
+      "lat": 19.7633,
+      "lon": 96.0785,
+      "locationName": "Naypyidaw, Myanmar",
+      "countryCode": "MM",
+      "sources": [
+        {
+          "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmar-regime-trying-to-hound-independent-exile-media-through-interpol.html",
+          "domain": "irrawaddy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://english.dvb.no/myanmar-junta-attempts-to-file-international-criminal-cases-against-five-exiled-media-outlets/",
+          "domain": "dvb.no",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ifj.org/media-centre/news/detail/article/myanmar-junta-attempts-to-file-international-criminal-cases-five-exiled-media-outlets",
+          "domain": "ifj.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-16T06:10:27.487Z",
+      "expiresAt": "2026-10-17T18:10:27.487Z",
+      "isBreaking": false
+    }
+  ],
+  "stats": {
+    "imagesResolved": 0,
+    "sourcesWithImages": 0,
+    "multiSource": 43,
+    "carried": 41,
+    "updated": 2,
+    "expired": 0,
+    "severityDefaulted": 0,
+    "enrichment": "deferred"
+  }
+}

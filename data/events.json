@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T06:10:27.487Z",
+  "generatedAt": "2026-10-17T06:06:41.868Z",
   "mode": "daily",
   "events": [
     {
@@ -258,80 +258,6 @@
       "isBreaking": false
     },
     {
-      "id": "0327f4542847",
-      "headline": "DRC Ebola Outbreak Toll Rises to 9,144 Cases, 4,410 Deaths, Now Second-Largest Ever Globally",
-      "summary": "As of October 12-13, 2026, DR Congo's Ebola outbreak reached 9,144 confirmed cases and 4,410 deaths, making it the largest Ebola outbreak in DRC history and the second largest ever recorded globally, as containment efforts continue to falter.",
-      "category": "health",
-      "severity": 4,
-      "lat": 1.57,
-      "lon": 30.27,
-      "locationName": "Bunia, Ituri Province, DR Congo",
-      "countryCode": "CD",
-      "sources": [
-        {
-          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON619",
-          "domain": "who.int",
-          "reliability": 92,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/13/dr-congo-ebola-cases-pass-9000-as-efforts-to-curb-transmission-falter",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
-          "domain": "europa.eu",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.cnn.com/2026/10/10/africa/kenya-ebola-cross-border-spread-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://news.un.org/en/story/2026/10/1168499",
-          "domain": "un.org",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.vanguardngr.com/2026/10/ebola-outbreak-drc-death-toll-rises-to-4018/",
-          "domain": "vanguardngr.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://statnews.com",
-          "domain": "statnews.com",
-          "reliability": 86,
-          "bias": "center"
-        },
-        {
-          "url": "https://abcnews.com",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://cbsnews.com",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 86,
-      "firstSeen": "2026-10-03T06:03:53.013Z",
-      "lastUpdated": "2026-10-16T06:10:27.487Z",
-      "expiresAt": "2026-10-20T06:10:27.487Z",
-      "isBreaking": false
-    },
-    {
       "id": "89c35e1a2510",
       "headline": "Roof Collapse at Peshawar School Kills at Least 27-32 Children and a Teacher",
       "summary": "The roof of a two-story building at Al Khair Public School in Peshawar collapsed on the morning of October 15, 2026, after heavy overnight rain destabilized the structure. The death toll stands at 27-32 children plus one teacher, with about 50 injured; the school owner has been arrested and an investigation launched.",
@@ -390,6 +316,87 @@
       "firstSeen": "2026-10-13T06:10:50.147Z",
       "lastUpdated": "2026-10-16T06:10:27.487Z",
       "expiresAt": "2026-10-20T06:10:27.487Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0327f4542847",
+      "headline": "DRC Ebola Outbreak Toll Passes 9,200 Cases and 4,400 Deaths",
+      "summary": "The DRC's Ebola outbreak has grown to over 9,200 confirmed and probable cases and more than 4,400 deaths as of mid-October, spanning 64 of 167 health zones across seven provinces. The case fatality rate stands at roughly 48%, making it the second-largest Ebola outbreak on record.",
+      "category": "health",
+      "severity": 4,
+      "lat": 1.5,
+      "lon": 29.9,
+      "locationName": "Ituri Province, DR Congo",
+      "countryCode": "CD",
+      "sources": [
+        {
+          "url": "https://nation.com.pk/",
+          "domain": "nation.com.pk",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON619",
+          "domain": "who.int",
+          "reliability": 92,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/13/dr-congo-ebola-cases-pass-9000-as-efforts-to-curb-transmission-falter",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+          "domain": "europa.eu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/10/africa/kenya-ebola-cross-border-spread-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/10/1168499",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.vanguardngr.com/2026/10/ebola-outbreak-drc-death-toll-rises-to-4018/",
+          "domain": "vanguardngr.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://statnews.com",
+          "domain": "statnews.com",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://cbsnews.com",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 85,
+      "firstSeen": "2026-10-03T06:03:53.013Z",
+      "lastUpdated": "2026-10-17T06:06:41.868Z",
+      "expiresAt": "2026-10-21T06:06:41.868Z",
       "isBreaking": false
     },
     {
@@ -840,6 +847,31 @@
       "firstSeen": "2026-10-13T06:10:50.147Z",
       "lastUpdated": "2026-10-13T06:10:50.147Z",
       "expiresAt": "2026-10-17T06:10:50.147Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c3eb4cb43d8e",
+      "headline": "Drone Strike on Nyala Cattle Market Kills 30 in Sudan's South Darfur",
+      "summary": "A drone strike hit a cattle market in Nyala, South Darfur, killing 30 people including 17 women and five children, and wounding 47 others. Sudan's Rapid Support Forces, who control the city, blamed the army for the strike.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 12.05,
+      "lon": 24.88,
+      "locationName": "Nyala, South Darfur, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://dawn.com/",
+          "domain": "dawn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 33,
+      "firstSeen": "2026-10-17T06:06:41.868Z",
+      "lastUpdated": "2026-10-17T06:06:41.868Z",
+      "expiresAt": "2026-10-21T06:06:41.868Z",
       "isBreaking": false
     },
     {
@@ -1526,6 +1558,59 @@
       "isBreaking": false
     },
     {
+      "id": "efcd5ad3b409",
+      "headline": "Belgium Blocks EU Plan to Seize Frozen Russian Assets for Ukraine at Brussels Summit",
+      "summary": "Belgian Prime Minister Bart De Wever blocked a roughly €185-210 billion plan to use Euroclear-held frozen Russian assets for Ukraine at the October 15-16 Brussels summit. A meeting between De Wever and Ukrainian President Volodymyr Zelensky produced no breakthrough.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 50.8503,
+      "lon": 4.3517,
+      "locationName": "Brussels, Belgium",
+      "countryCode": "BE",
+      "sources": [
+        {
+          "url": "https://eurointegration.com.ua/",
+          "domain": "eurointegration.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://english.news.cn/europe/20261016/643f448e35ca4643bbc41eca26f3b910/c.html",
+          "domain": "news.cn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://easternherald.com/2026/10/15/eu-frozen-russian-assets-us-control/",
+          "domain": "easternherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://famagusta-gazette.com/merz-rejects-placing-russian-assets-frozen-in-eu-under-u-s-control/",
+          "domain": "famagusta-gazette.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://newsukraine.rbc.ua/news/merz-rejects-us-bid-to-control-frozen-russian-1792063501.html",
+          "domain": "rbc.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-10-16T06:10:27.487Z",
+      "lastUpdated": "2026-10-17T06:06:41.868Z",
+      "expiresAt": "2026-10-19T06:06:41.868Z",
+      "isBreaking": false
+    },
+    {
       "id": "2683e4e536a2",
       "headline": "Anti-Migrant Violence Flares in Durban and Soweto; Nigeria Evacuates 111 More Citizens",
       "summary": "Anti-migrant protests triggered by a Constitutional Court asylum ruling turned violent in early-to-mid October 2026, with 14 vehicles torched in Durban and 10 in Soweto, shops looted and 15+ people arrested. Nigeria evacuated 111 more citizens around October 11, bringing the cumulative total to about 2,037 repatriated over 15 flights since June.",
@@ -1646,52 +1731,6 @@
         }
       ],
       "trustScore": 60,
-      "firstSeen": "2026-10-16T06:10:27.487Z",
-      "lastUpdated": "2026-10-16T06:10:27.487Z",
-      "expiresAt": "2026-10-18T06:10:27.487Z",
-      "isBreaking": false
-    },
-    {
-      "id": "efcd5ad3b409",
-      "headline": "EU Leaders Reject US Bid to Take Control of Frozen Russian Assets at Brussels Summit",
-      "summary": "At the October 15-16, 2026 European Council summit, EU leaders rebuffed a US proposal to move roughly €210 billion in frozen Russian assets into a US-controlled vehicle. German Chancellor Merz said assets frozen in Europe 'shall remain frozen in Europe,' and no final decision on further Ukraine funding was adopted at the summit.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 50.85,
-      "lon": 4.35,
-      "locationName": "Brussels, Belgium",
-      "countryCode": "BE",
-      "sources": [
-        {
-          "url": "https://english.news.cn/europe/20261016/643f448e35ca4643bbc41eca26f3b910/c.html",
-          "domain": "news.cn",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://easternherald.com/2026/10/15/eu-frozen-russian-assets-us-control/",
-          "domain": "easternherald.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://famagusta-gazette.com/merz-rejects-placing-russian-assets-frozen-in-eu-under-u-s-control/",
-          "domain": "famagusta-gazette.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://newsukraine.rbc.ua/news/merz-rejects-us-bid-to-control-frozen-russian-1792063501.html",
-          "domain": "rbc.ua",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
       "firstSeen": "2026-10-16T06:10:27.487Z",
       "lastUpdated": "2026-10-16T06:10:27.487Z",
       "expiresAt": "2026-10-18T06:10:27.487Z",
@@ -2131,9 +2170,9 @@
     "imagesResolved": 0,
     "sourcesWithImages": 0,
     "multiSource": 43,
-    "carried": 7,
-    "updated": 15,
-    "expired": 42,
+    "carried": 41,
+    "updated": 2,
+    "expired": 0,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
