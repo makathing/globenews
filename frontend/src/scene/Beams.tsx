@@ -84,8 +84,12 @@ const shaftFragment = /* glsl */ `
     // right out the haze is what piles a cluster into one smear, so it thins
     // there too.
     float core = smoothstep(1.0, 0.0, x);
-    float haze = pow(core, 1.35) * mix(0.55, 0.16, near) * mix(1.0, 0.7, uFar);
-    float body = haze + pow(core, mix(5.0, 9.0, near)) * 0.75;
+    // A defined filament inside a thin halo. A wide flat haze is what made a
+    // beam read as a smudge on a phone, where the canvas is upscaled.
+    float haze = pow(core, 1.8) * mix(0.32, 0.12, near) * mix(1.0, 0.7, uFar);
+    float body = haze + pow(core, mix(6.0, 10.0, near)) * 0.95;
+    // a white-hot centre line: the thing the eye locks onto
+    float filament = smoothstep(0.22, 0.0, x);
     // a crisp edge rail, invisible from orbit, that gives the shaft a
     // silhouette instead of a gradient once you're close enough to see it
     body += smoothstep(0.86, 0.66, x) * smoothstep(0.52, 0.72, x) * near * 0.5;
@@ -98,13 +102,14 @@ const shaftFragment = /* glsl */ `
     float alpha = body * vertical;
 
     // energy pulse travelling up the shaft
-    float pulsePhase = fract(uTime * uRate * (0.75 + 0.35 * uFresh) - y);
-    float pulse = smoothstep(0.22, 0.0, pulsePhase) * (1.0 - y * 0.4);
-    alpha += pulse * core * 0.55;
+    // slow and soft: a swell of light rising, not a flash
+    float pulsePhase = fract(uTime * uRate * (0.9 + 0.1 * uFresh) - y);
+    float pulse = smoothstep(0.38, 0.0, pulsePhase) * smoothstep(0.0, 0.06, pulsePhase + 0.06) * (1.0 - y * 0.4);
+    alpha += pulse * core * 0.32;
     // disaster: a trailing twin pulse
     if (uPattern == 1) {
-      float twin = smoothstep(0.1, 0.0, fract(pulsePhase + 0.86));
-      alpha += twin * core * 0.4 * (1.0 - y * 0.35);
+      float twin = smoothstep(0.16, 0.0, fract(pulsePhase + 0.86));
+      alpha += twin * core * 0.24 * (1.0 - y * 0.35);
     }
 
     // A soft swell near the top so tall beams still terminate visibly — a
@@ -117,11 +122,11 @@ const shaftFragment = /* glsl */ `
     vec3 color = uColor;
     if (uBreaking > 0.5) {
       // white-hot core, faster strobe
-      float strobe = 0.5 + 0.5 * sin(uTime * 7.0);
+      float strobe = 0.5 + 0.5 * sin(uTime * 3.0);
       color = mix(color, vec3(1.0), core * (0.35 + 0.35 * strobe));
       alpha *= 1.15;
     }
-    color = mix(color, vec3(1.0), max(pulse * 0.45, cap * 0.12));
+    color = mix(color, vec3(1.0), max(max(pulse * 0.35, cap * 0.12), filament * 0.45 * vertical));
 
     alpha *= (0.55 + 0.45 * uFresh) * (0.85 + uBoost * 0.9) * uIntensity;
     // Additive blending clips at 1.0, and a clipped core is a flat white

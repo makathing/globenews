@@ -130,7 +130,18 @@ export function ClockIcon(props: IconProps) {
 }
 
 
-/** The two marker styles, for the switch that picks between them. */
+/** The marker styles, for the switch that picks between them. */
+export function SculpturesIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      {/* an obelisk standing on its plinth */}
+      <path d="M12 3.5 14.3 8.2V16H9.7V8.2L12 3.5Z" />
+      <path d="M7 16h10" />
+      <path d="M5.5 19.5h13" />
+    </Svg>
+  );
+}
+
 export function BeamsIcon(props: IconProps) {
   return (
     <Svg {...props}>

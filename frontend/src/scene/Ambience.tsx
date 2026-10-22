@@ -6,7 +6,7 @@ import { prefersReducedMotion, useTheme } from '../store';
 
 /**
  * Things that are simply out there: two satellites in low orbit, a moon well
- * off in the dark, and a ship going about its business. Nothing here is data
+ * off in the dark, and a ship orbiting further out. Nothing here is data
  * — it exists so the sky around the planet is a place rather than a void.
  *
  * The rules that keep it from becoming a distraction: everything is small
@@ -262,64 +262,60 @@ const SHIP_LENGTH = 0.4;
 /** On-screen length it is held between, in CSS pixels. */
 const SHIP_MIN_PX = 14;
 const SHIP_MAX_PX = 30;
-/** Path units per second at rest; a burst multiplies this. */
-const SHIP_BASE_SPEED = 0.28;
-/**
- * Lookahead used to derive heading and turn rate from the path. Large enough
- * that the sampled travel is unambiguously bigger than any residual noise.
- */
-const SHIP_STEP = 0.08;
+/** Mean orbital radius: above both satellites, clear of the tallest beam. */
+const SHIP_ORBIT_RADIUS = 1.62;
+/** Radians per second at rest — about 45 seconds a lap. A burst multiplies this. */
+const SHIP_BASE_SPEED = (Math.PI * 2) / 45;
+/** Tilt of the orbital plane, and how fast that plane swings round the pole. */
+const SHIP_INCLINATION = 0.55;
+const SHIP_PRECESSION = 0.012;
+/** Lookahead (radians of orbit) used to derive heading and turn from the path. */
+const SHIP_STEP = 0.06;
 /** Flutter: a bob, in ship-lengths, not a vibration. */
 const SHIP_FLUTTER = 0.12;
 
 /**
- * Where the ship sits at path position `s`, as a point in the camera's own
- * frame: `x` and `y` are fractions of the visible half-width and half-height,
- * and `depth` is a multiple of the camera's distance to the globe.
- *
- * Anchoring to the view rather than to world coordinates is what makes "always
- * there" true. A world-fixed wanderer spends most of its life outside the
- * frustum — badly so on a phone, where the horizontal field of view is about
- * eleven degrees — and a ship you only glimpse once a minute is the thing we
- * were trying to get away from. Kept inside ±0.9 it is always somewhere on
- * screen; the depth sweep is what carries it in front of the planet and back
- * behind it.
+ * Where the ship is at orbital angle `a`, `t` seconds in: a real orbit round
+ * the planet, in world space, so it passes in front and behind and moves with
+ * the globe when you drag it. The plane slowly precesses, so successive laps
+ * cross different parts of the sky rather than the same arc; a gentle weave in
+ * altitude and across the plane gives it something to bank into.
  */
-function shipViewPoint(s: number): { x: number; y: number; depth: number } {
-  return {
-    // A wide, fast lateral sweep with a slow vertical drift under it, so the
-    // ship reads as going somewhere. The first attempt multiplied two similar
-    // frequencies together, which traced an ellipse whose amplitude collapsed
-    // periodically — it orbited a patch of sky instead of crossing. Sums, and
-    // clearly separated rates, are what make it a traverse. Biased right of
-    // centre so it is not forever hidden behind the rail on desktop.
-    x: 0.12 + 0.62 * Math.sin(0.42 * s) + 0.12 * Math.sin(0.11 * s + 2.0),
-    y: 0.34 * Math.sin(0.13 * s + 1.3) + 0.09 * Math.sin(0.53 * s),
-    // 0.45x to 1.45x the camera's distance: well in front of the globe's near
-    // face at one end, comfortably behind its centre at the other
-    depth: 0.95 + 0.5 * Math.sin(0.31 * s + 0.4),
-  };
+function shipOrbitPoint(a: number, t: number, out: THREE.Vector3): THREE.Vector3 {
+  const node = 0.8 + t * SHIP_PRECESSION;
+  const r = SHIP_ORBIT_RADIUS * (1 + 0.05 * Math.sin(2.3 * a));
+  const lift = 0.07 * Math.sin(1.7 * a + 0.6);
+  // the orbit drawn in a flat plane, then tilted and turned into place
+  const x = Math.cos(a) * r;
+  const z = Math.sin(a) * r;
+  const ci = Math.cos(SHIP_INCLINATION);
+  const si = Math.sin(SHIP_INCLINATION);
+  const y = z * si + lift * ci;
+  const zt = z * ci - lift * si;
+  const cn = Math.cos(node);
+  const sn = Math.sin(node);
+  return out.set(x * cn - zt * sn, y, x * sn + zt * cn);
 }
 
 /**
- * A small craft going about its business, always somewhere in frame.
+ * A small craft orbiting the planet.
  *
- * It used to be a scheduled straight line far behind the planet, absent most
- * of the time. Now it roams the whole view — including across the globe —
- * which only works because its size is clamped in *pixels*: the same hull at
- * the near end of its depth range would otherwise be a few hundred pixels of
- * spaceship across the middle of the map. Held between 14 and 30px it keeps a
- * hint of parallax and can never take over the frame.
+ * It used to fly a path pinned to the camera, which kept it always in frame
+ * but meant it sat still on screen while the globe turned beneath it — it
+ * never went *round* anything. Now it holds a real, slowly precessing orbit,
+ * so it crosses in front of the planet, slips behind the limb and comes back,
+ * and drags with the globe like everything else up here. Its size is still
+ * clamped in pixels, so passing near the camera never fills the frame.
  *
- * Personality is all in the motion: it drifts, then bursts forward with the
- * engine flaring, flutters constantly like something small holding a heading
- * in a breeze, and banks into its own turns.
+ * Personality is all in the motion: it cruises, then bursts forward with the
+ * engine flaring, flutters like something small holding a heading, and banks
+ * into its own weave.
  */
 function Ship({ brightness }: { brightness: number }) {
   const group = useRef<THREE.Group>(null);
   const engine = useRef<THREE.Sprite>(null);
-  /** Distance travelled along the path, advanced at a variable rate. */
-  const pathPos = useRef(Math.random() * 40);
+  /** Orbital angle travelled, advanced at a variable rate. */
+  const orbitPos = useRef(Math.random() * Math.PI * 2);
   const bankRef = useRef(0);
 
   const { hull, engineMaterial } = useMemo(
@@ -344,14 +340,12 @@ function Ship({ brightness }: { brightness: number }) {
 
   const scratch = useMemo(
     () => ({
-      right: new THREE.Vector3(),
-      up: new THREE.Vector3(),
-      forward: new THREE.Vector3(),
       here: new THREE.Vector3(),
       next: new THREE.Vector3(),
       after: new THREE.Vector3(),
       heading: new THREE.Vector3(),
       turn: new THREE.Vector3(),
+      out: new THREE.Vector3(),
       lateral: new THREE.Vector3(),
       aim: new THREE.Vector3(),
     }),
@@ -361,42 +355,24 @@ function Ship({ brightness }: { brightness: number }) {
   useFrame((state, delta) => {
     const ship = group.current;
     if (!ship) return;
-    const t = state.clock.elapsedTime;
+    const t = prefersReducedMotion ? 0 : state.clock.elapsedTime;
     const camera = state.camera as THREE.PerspectiveCamera;
 
-    // A burst every ~48s: mostly nothing, then a sharp couple of seconds at ~4x.
+    // A burst every ~48s: mostly cruising, then a sharp couple of seconds at ~4x.
     const burst = prefersReducedMotion
       ? 0
       : Math.pow(Math.max(Math.sin(0.13 * t + 2.1), 0), 8) * 3;
     if (!prefersReducedMotion) {
-      pathPos.current += delta * SHIP_BASE_SPEED * (1 + burst);
+      orbitPos.current += delta * SHIP_BASE_SPEED * (1 + burst);
     }
-    const s = pathPos.current;
+    const a = orbitPos.current;
 
-    // the camera's own frame, which the path is expressed in
-    scratch.right.setFromMatrixColumn(camera.matrixWorld, 0).normalize();
-    scratch.up.setFromMatrixColumn(camera.matrixWorld, 1).normalize();
-    camera.getWorldDirection(scratch.forward);
-    const camDistance = camera.position.length();
+    shipOrbitPoint(a, t, scratch.here);
+    shipOrbitPoint(a + SHIP_STEP, t, scratch.next);
+    shipOrbitPoint(a + SHIP_STEP * 2, t, scratch.after);
+
+    // hold a near-constant size on screen, whatever the distance
     const tanHalf = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
-
-    const place = (at: number, out: THREE.Vector3) => {
-      const p = shipViewPoint(at);
-      const depth = p.depth * camDistance;
-      const halfHeight = depth * tanHalf;
-      const halfWidth = halfHeight * camera.aspect;
-      return out
-        .copy(camera.position)
-        .addScaledVector(scratch.forward, depth)
-        .addScaledVector(scratch.right, p.x * halfWidth)
-        .addScaledVector(scratch.up, p.y * halfHeight);
-    };
-
-    place(s, scratch.here);
-    place(s + SHIP_STEP, scratch.next);
-    place(s + SHIP_STEP * 2, scratch.after);
-
-    // hold a near-constant size on screen, whatever the depth
     const distance = camera.position.distanceTo(scratch.here);
     const worldPerPixel = (2 * distance * tanHalf) / state.size.height;
     const naturalPx = SHIP_LENGTH / worldPerPixel;
@@ -404,28 +380,27 @@ function Ship({ brightness }: { brightness: number }) {
     const scale = targetPx / naturalPx;
     ship.scale.setScalar(scale);
 
-    // Heading comes from the *clean* path, before any flutter. Deriving it
-    // from the fluttered point was the bug that made the ship spin: the
-    // wobble offset was about three times the travel between path samples, so
-    // the direction vector was dominated by a 1.8Hz oscillation and lookAt
-    // whipped the hull around every frame.
+    // Heading from the *clean* path, before any flutter — deriving it from the
+    // fluttered point is what once made the ship spin on the spot.
     scratch.heading.subVectors(scratch.next, scratch.here).normalize();
     scratch.turn.subVectors(scratch.after, scratch.next).normalize().sub(scratch.heading);
+    // "up" for the ship is away from the planet: it flies belly-down
+    scratch.out.copy(scratch.here).normalize();
+    scratch.lateral.crossVectors(scratch.heading, scratch.out).normalize();
 
-    // flutter, sized against the ship rather than the world, so the wobble
-    // reads the same whether it is near or far — and applied only to where it
-    // is drawn, never to where it is pointing
+    // flutter, sized against the ship so it reads the same near or far, and
+    // applied only to where it is drawn, never to where it points
     const wobble = prefersReducedMotion ? 0 : SHIP_LENGTH * scale * SHIP_FLUTTER;
-    scratch.here.addScaledVector(scratch.right, Math.sin(3.1 * t) * wobble);
-    scratch.here.addScaledVector(scratch.up, Math.sin(2.3 * t + 1.2) * wobble);
+    scratch.here.addScaledVector(scratch.lateral, Math.sin(3.1 * t) * wobble);
+    scratch.here.addScaledVector(scratch.out, Math.sin(2.3 * t + 1.2) * wobble);
     ship.position.copy(scratch.here);
+    ship.up.copy(scratch.out);
     ship.lookAt(scratch.aim.copy(scratch.here).add(scratch.heading));
 
-    // bank into the turn
-    scratch.lateral.crossVectors(scratch.heading, scratch.up).normalize();
+    // bank into the weave
     const targetBank =
-      Math.min(Math.max(scratch.turn.dot(scratch.lateral) * 12, -0.8), 0.8) +
-      (prefersReducedMotion ? 0 : Math.sin(1.7 * t) * 0.1);
+      Math.min(Math.max(scratch.turn.dot(scratch.lateral) * 14, -0.7), 0.7) +
+      (prefersReducedMotion ? 0 : Math.sin(1.7 * t) * 0.08);
     bankRef.current += (targetBank - bankRef.current) * Math.min(delta * 3, 1);
     ship.rotateZ(bankRef.current);
 
@@ -438,7 +413,7 @@ function Ship({ brightness }: { brightness: number }) {
   });
 
   return (
-    <group ref={group}>
+    <group ref={group} name="ship">
       {/* nose along +Z, which lookAt points down the flight path */}
       <mesh material={hull} rotation={[Math.PI / 2, 0, 0]} raycast={noRaycast}>
         <coneGeometry args={[0.05, SHIP_LENGTH, 6]} />

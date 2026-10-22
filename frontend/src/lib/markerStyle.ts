@@ -1,8 +1,9 @@
-export const MARKER_STYLES = ['beams', 'pins'] as const;
+export const MARKER_STYLES = ['sculptures', 'beams', 'pins'] as const;
 
 export type MarkerStyle = (typeof MARKER_STYLES)[number];
 
 export const MARKER_STYLE_LABELS: Record<MarkerStyle, string> = {
+  sculptures: 'Sculptures',
   beams: 'Beams',
   pins: 'Pins',
 };
@@ -20,7 +21,7 @@ export function loadStoredMarkerStyle(): MarkerStyle {
   } catch {
     // storage unavailable
   }
-  return 'beams';
+  return 'sculptures';
 }
 
 export function storeMarkerStyle(style: MarkerStyle): void {

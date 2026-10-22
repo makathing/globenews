@@ -9,8 +9,9 @@ import { useGlobeStore, useTheme } from '../store';
 /**
  * What every marker style shares: where a story sits on the sphere, how the
  * camera relates to it this frame, how it responds to the pointer, and the
- * pool of light at its base. Beams.tsx and Pins.tsx are the two styles built
- * on this; each owns only the shape that stands on the pool.
+ * pool of light at its base. Beams.tsx and Pins.tsx are built on this one
+ * story at a time; Sculptures.tsx draws every story from one mesh and uses
+ * the instanced variants below.
  */
 
 export const UP = new THREE.Vector3(0, 1, 0);
@@ -35,13 +36,16 @@ export function farFor(distance: number): number {
 }
 
 /** Surface position, the rotation that makes local +Y the surface normal, and that normal. */
+export function surfaceFrame(lat: number, lon: number, radius = GLOBE_RADIUS) {
+  const position = latLonToVec3(lat, lon, radius);
+  const axis = position.clone().normalize();
+  const quaternion = new THREE.Quaternion().setFromUnitVectors(UP, axis);
+  return { position, quaternion, axis };
+}
+
+/** `surfaceFrame`, memoised for a marker component. */
 export function useSurfaceFrame(lat: number, lon: number) {
-  return useMemo(() => {
-    const position = latLonToVec3(lat, lon, GLOBE_RADIUS);
-    const axis = position.clone().normalize();
-    const quaternion = new THREE.Quaternion().setFromUnitVectors(UP, axis);
-    return { position, quaternion, axis };
-  }, [lat, lon]);
+  return useMemo(() => surfaceFrame(lat, lon), [lat, lon]);
 }
 
 export interface MarkerFrame {
@@ -182,6 +186,65 @@ export function useMarkerPointer(event: NewsEvent, pointerInsideRef: React.Mutab
 }
 
 export type MarkerPointerHandlers = ReturnType<typeof useMarkerPointer>;
+
+/**
+ * The same wiring for a style that draws every story from one InstancedMesh:
+ * the hit volume is one instanced mesh too, and `e.instanceId` says which
+ * story was under the pointer. `eventsRef` is the flat list the instances were
+ * written from (swapped whole on every rebuild, so an index always resolves
+ * against the list it came from) and `pointerIndexRef` plays the role of
+ * `pointerInsideRef`: -1 when nothing is under the pointer. r3f tracks hover
+ * per instance and sends the old instance's `out` before the new one's
+ * `over`, so one shared index is enough.
+ */
+export function useInstancedMarkerPointer(
+  eventsRef: React.MutableRefObject<NewsEvent[]>,
+  pointerIndexRef: React.MutableRefObject<number>,
+): MarkerPointerHandlers {
+  const setHovered = useGlobeStore((s) => s.setHovered);
+  const select = useGlobeStore((s) => s.select);
+
+  const eventAt = (index: number | undefined): NewsEvent | undefined =>
+    index === undefined ? undefined : eventsRef.current[index];
+
+  const onPointerOut = () => {
+    pointerIndexRef.current = -1;
+    document.body.style.cursor = 'auto';
+    setHovered(null);
+  };
+  const onPointerOver = (e: ThreeEvent<PointerEvent>) => {
+    const event = eventAt(e.instanceId);
+    if (!event || e.instanceId === undefined) return;
+    e.stopPropagation();
+    pointerIndexRef.current = e.instanceId;
+    document.body.style.cursor = 'pointer';
+    setHovered({ id: event.id, x: e.nativeEvent.clientX, y: e.nativeEvent.clientY });
+  };
+  const onPointerMove = (e: ThreeEvent<PointerEvent>) => {
+    const event = eventAt(e.instanceId);
+    if (event && pointerIndexRef.current === e.instanceId) {
+      setHovered({ id: event.id, x: e.nativeEvent.clientX, y: e.nativeEvent.clientY });
+    }
+  };
+  const onTouchRelease = (e: ThreeEvent<PointerEvent>) => {
+    if (e.nativeEvent.pointerType !== 'mouse') onPointerOut();
+  };
+  const onClick = (e: ThreeEvent<MouseEvent>) => {
+    const event = eventAt(e.instanceId);
+    if (!event) return;
+    e.stopPropagation();
+    select(event.id, { fromGlobe: true });
+  };
+
+  return {
+    onPointerOver,
+    onPointerMove,
+    onPointerOut,
+    onPointerUp: onTouchRelease,
+    onPointerCancel: onTouchRelease,
+    onClick,
+  };
+}
 
 /**
  * Invisible hit volume standing on the surface. Never drawn — three's
