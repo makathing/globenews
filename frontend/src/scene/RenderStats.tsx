@@ -28,6 +28,19 @@ export function RenderStats() {
 
     w.__gnDebug = {
       events: useGlobeStore.getState().dataset?.events ?? [],
+      /** Where a named object is on screen, its world position, and whether it is in front of the camera. */
+      locate(name: string) {
+        const object = state.scene.getObjectByName(name);
+        if (!object) return null;
+        const world = object.getWorldPosition(new THREE.Vector3());
+        const ndc = world.clone().project(state.camera);
+        return {
+          world: world.toArray().map((v) => +v.toFixed(3)),
+          x: Math.round(((ndc.x + 1) / 2) * state.size.width),
+          y: Math.round(((1 - ndc.y) / 2) * state.size.height),
+          inFront: ndc.z < 1,
+        };
+      },
       project(lat: number, lon: number) {
         const point = latLonToVec3(lat, lon);
         const facing = point.dot(scratch.copy(state.camera.position).normalize());

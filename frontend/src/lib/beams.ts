@@ -44,9 +44,12 @@ export function beamWidth(severity: number): number {
   return GLOBE_RADIUS * (0.015 + severity * 0.0042);
 }
 
-/** Energy-pulse travel rate, mildly severity-scaled. */
+/**
+ * Energy-pulse travel rate, mildly severity-scaled: one pulse every five to
+ * seven seconds. Faster read as flicker, worst of all on a phone.
+ */
 export function beamRate(severity: number): number {
-  return 0.26 + severity * 0.05;
+  return 0.13 + severity * 0.012;
 }
 
 /** Hours since the event was first seen (clamped at 0). */
