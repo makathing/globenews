@@ -2,7 +2,7 @@
   "name": "globenews",
   "private": true,
   "version": "0.1.0",
-  "description": "3D news radar globe \u2014 Earth from space with pulsing hotspot blips, fed by a multi-agent Claude news pipeline",
+  "description": "3D news radar globe \u2014 a dotted Earth whose dots light up where news is happening, fed by a multi-agent Claude news pipeline",
   "workspaces": [
     "frontend",
     "pipeline"

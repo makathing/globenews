@@ -1,20 +1,33 @@
 /* @font-face lives in index.html so Vite's %BASE_URL% resolves the font paths */
 
 :root {
-  --bg: #04070d;
-  --panel: rgba(17, 20, 26, 0.86);
-  --panel-border: rgba(255, 255, 255, 0.09);
-  --hairline: rgba(255, 255, 255, 0.07);
-  --text: #e8ecf1;
-  --text-secondary: #a9b2bf;
-  --text-dim: #6d7684;
-  /* one interaction accent, matched to the beams so UI and globe agree */
-  --accent: #52d3f7;
+  /* Theme colours. These are Midnight's; applyTheme (themes.ts) rewrites
+     them on <html> for whichever theme is picked, category colours too. */
+  --bg: #0b1220;
+  --panel-solid: #131c2e;
+  --panel: color-mix(in srgb, var(--panel-solid) 88%, transparent);
+  --panel-border: #24304a;
+  /* "r, g, b" of the wash for hairlines and hovers: white on dark, ink on light */
+  --tint: 255, 255, 255;
+  --hairline: rgba(var(--tint), 0.07);
+  --text: #e8edf4;
+  --text-secondary: #a7b2c3;
+  --text-dim: #8a97ab;
+  --accent: #7cc4ff;
+  --accent-ink: #0b1220;
   --danger: #f2545b;
+  --cat-conflict: #ff6b6b;
+  --cat-disaster: #ff9f43;
+  --cat-politics: #a78bfa;
+  --cat-economy: #f7c948;
+  --cat-health: #f472b6;
+  --cat-science: #38d9e8;
+  --cat-climate: #5ed27a;
+  --cat-society: #60a5fa;
   --radius: 10px;
   --radius-sm: 7px;
   --font: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+  --shadow: 0 8px 28px rgba(0, 0, 0, var(--shadow-alpha, 0.4));
   /* one place to say "clear of the OS chrome", for everything edge-anchored;
      these resolve to 0 unless index.html asks for viewport-fit=cover */
   --inset-bottom: env(safe-area-inset-bottom, 0px);
@@ -84,7 +97,7 @@ body,
   border: none;
   border-top: 1px solid var(--hairline);
   border-radius: 0;
-  background: rgba(8, 11, 16, 0.6);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
   box-shadow: none;
   backdrop-filter: none;
 }
@@ -131,7 +144,7 @@ body,
   gap: 4px;
   margin-top: 11px;
   padding: 3px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(var(--tint), 0.05);
   border-radius: var(--radius-sm);
 }
 .theme-btn {
@@ -149,9 +162,21 @@ body,
     background 0.15s,
     color 0.15s;
 }
+.theme-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 .theme-btn.active {
-  background: rgba(255, 255, 255, 0.12);
-  color: var(--text);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.theme-swatch {
+  width: 9px;
+  height: 9px;
+  flex: none;
+  border-radius: 50%;
 }
 
 /* ————— event panel ————— */
@@ -183,7 +208,7 @@ body,
   font-size: 11px;
   font-weight: 600;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(var(--tint), 0.06);
   border-radius: 999px;
   padding: 3px 9px;
 }
@@ -201,7 +226,7 @@ body,
   width: 4px;
   height: 10px;
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(var(--tint), 0.14);
 }
 .sev-tick.on {
   background: var(--text-secondary);
@@ -220,7 +245,7 @@ body,
   border-radius: var(--radius-sm);
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  background: #10141b;
+  background: var(--bg);
 }
 .preview-card img {
   width: 100%;
@@ -242,7 +267,7 @@ body,
 /* An outlet mark is a logo, not a photograph: contain it and give it room,
    or a square favicon gets cropped into an unrecognisable smear. */
 .card-source.is-icon {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(var(--tint), 0.04);
 }
 .card-source.is-icon img {
   object-fit: contain;
@@ -256,13 +281,13 @@ body,
   border-radius: 3px;
 }
 .source-mark.is-blank {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(var(--tint), 0.06);
 }
 .preview-fallback {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(var(--tint), 0.04);
 }
 .severity-badge {
   font-size: 11px;
@@ -290,7 +315,7 @@ body,
   font-size: 11px;
   font-weight: 600;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(var(--tint), 0.06);
   border: 1px solid var(--panel-border);
   border-radius: 999px;
   padding: 3px 10px;
@@ -344,7 +369,7 @@ body,
 }
 .trust-bar {
   height: 6px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(var(--tint), 0.08);
   border-radius: 3px;
   margin: 9px 0 8px;
   overflow: hidden;
@@ -409,7 +434,7 @@ body,
   top: 3px;
   width: 1px;
   height: 6px;
-  background: rgba(255, 255, 255, 0.22);
+  background: rgba(var(--tint), 0.22);
   transform: translateX(-50%);
 }
 .bias-spectrum .bias-pip {
@@ -457,7 +482,11 @@ body,
   width: 288px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(10, 13, 18, 0.94), rgba(10, 13, 18, 0.82));
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--panel-solid) 95%, transparent),
+    color-mix(in srgb, var(--panel-solid) 85%, transparent)
+  );
   border-right: 1px solid var(--panel-border);
   backdrop-filter: blur(12px);
 }
@@ -478,7 +507,7 @@ body,
   font-size: 11px;
   font-weight: 600;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(var(--tint), 0.08);
   border-radius: 999px;
   padding: 2px 8px;
   font-variant-numeric: tabular-nums;
@@ -493,7 +522,7 @@ body,
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(var(--tint), 0.05);
   border: 1px solid var(--panel-border);
   border-radius: 999px;
   color: var(--text-secondary);
@@ -509,34 +538,13 @@ body,
 }
 .filter-chip[aria-pressed='true'] {
   color: var(--text);
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(var(--tint), 0.18);
 }
 .filter-count {
   font-variant-numeric: tabular-nums;
   opacity: 0.85;
 }
 
-.severity-key {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-}
-.severity-key-label {
-  font-size: 9.5px;
-  color: var(--text-dim);
-  flex: none;
-}
-.severity-key-ramp {
-  display: flex;
-  flex: 1;
-  height: 5px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-.severity-key-ramp span {
-  flex: 1;
-}
 
 .rail-list {
   flex: 1;
@@ -546,13 +554,13 @@ body,
   flex-direction: column;
   gap: 2px;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
+  scrollbar-color: rgba(var(--tint), 0.16) transparent;
 }
 .rail-list::-webkit-scrollbar {
   width: 8px;
 }
 .rail-list::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(var(--tint), 0.14);
   border-radius: 4px;
 }
 .rail-empty {
@@ -578,10 +586,10 @@ body,
   transition: background 0.15s, border-color 0.15s, opacity 0.2s;
 }
 .event-card.hovered {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(var(--tint), 0.05);
 }
 .event-card.selected {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(var(--tint), 0.07);
   border-left-color: var(--accent);
   opacity: 1 !important;
 }
@@ -624,7 +632,7 @@ body,
   aspect-ratio: 16 / 10;
   border-radius: 4px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.055);
+  background: rgba(var(--tint), 0.055);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -682,18 +690,14 @@ body,
   animation: pulse 1.2s ease-in-out infinite;
 }
 .card-new {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(var(--tint), 0.12);
   color: var(--text-secondary);
 }
 .card-updated {
-  background: rgba(120, 170, 255, 0.18);
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
   color: var(--text-secondary);
 }
 
-/* the marker switch shares the theme picker's chip styling, one row below */
-.marker-picker {
-  margin-top: 6px;
-}
 
 /* ————— last-updated chip —————
    Foot of the globe, beside the rail. Below the panels' z-index on purpose:
@@ -735,32 +739,6 @@ body,
   cursor: pointer;
 }
 
-/* Marker switch — phones only, riding under the drawer button so the two read
-   as one cluster. The rail footer has the same control as a radiogroup, but
-   on a phone that rail is a drawer, and a switch you must open a drawer to
-   find may as well not be there. */
-.marker-toggle {
-  display: none;
-  position: absolute;
-  top: calc(58px + var(--inset-top));
-  left: 14px;
-  z-index: 24;
-  align-items: center;
-  gap: 6px;
-  height: 36px;
-  padding: 0 12px 0 10px;
-  border-radius: 999px;
-  border: 1px solid var(--panel-border);
-  background: var(--panel);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--shadow);
-  color: var(--text-secondary);
-  font-family: var(--font);
-  font-size: 11.5px;
-  font-weight: 550;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
 
 /* ————— tooltip ————— */
 .blip-tooltip {
@@ -850,14 +828,6 @@ body,
   .app.rail-open .updated {
     opacity: 0;
   }
-  .marker-toggle {
-    display: flex;
-  }
-  /* the drawer's own picker is right there, so the floating one steps aside */
-  .app.rail-open .marker-toggle {
-    opacity: 0;
-    pointer-events: none;
-  }
   .updated {
     left: 16px;
   }
@@ -899,10 +869,6 @@ body,
     width: 44px;
     height: 44px;
   }
-  .marker-toggle {
-    top: calc(66px + var(--inset-top));
-    height: 40px;
-  }
   .close-btn {
     width: 36px;
     height: 36px;
@@ -930,23 +896,23 @@ body,
     color: var(--text-secondary);
   }
   .close-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(var(--tint), 0.08);
     color: var(--text);
   }
   .source-row:hover {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(var(--tint), 0.06);
   }
   .filter-chip:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(var(--tint), 0.1);
   }
   .event-card:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(var(--tint), 0.05);
   }
   .event-card:hover .card-icon {
     color: var(--text-secondary);
   }
   .copy-link:hover {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(var(--tint), 0.1);
   }
 }

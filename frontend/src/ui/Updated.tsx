@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { relativeTime } from '../lib/beams';
+import { relativeTime } from '../lib/freshness';
 import { useGlobeStore } from '../store';
 
 /**

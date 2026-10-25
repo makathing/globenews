@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { BlendFunction, Effect } from 'postprocessing';
 import * as THREE from 'three';
-import { cameraMotion, coarsePointer, prefersReducedMotion } from '../store';
+import { cameraMotion, coarsePointer, prefersReducedMotion, useTheme } from '../store';
 
 const smearFragment = /* glsl */ `
   uniform vec2 uVelocity;
@@ -53,6 +53,7 @@ class MotionSmearEffect extends Effect {
 }
 
 export function Effects() {
+  const theme = useTheme();
   // A finger flick is a short, high spike of angular velocity, so on a phone
   // the smear fires on essentially every swipe — and it is a full-screen
   // five-tap pass at up to 1.75x DPR on a mobile GPU. Skip the pass entirely
@@ -62,21 +63,22 @@ export function Effects() {
   // optional pass is composed into the list rather than rendered as `&&`
   const passes = [
     /*
-      Bloom is screen-space, so its halo grows with whatever fills the frame:
-      a wide radius that flatters a distant beam turns a close one into a
-      white smear, and a low threshold catches every star. Tight and
-      selective — only genuinely hot cores bloom.
+      Bloom is screen-space, so its halo grows with whatever fills the frame.
+      The story dots sit deliberately under the threshold: bloomed, a patch
+      of lit dots melts back into one glowing disc. Only the sun and the
+      brightest stars are hot enough to catch it.
     */
     <Bloom
       key="bloom"
-      intensity={0.6}
-      luminanceThreshold={0.28}
+      intensity={0.45}
+      luminanceThreshold={0.75}
       luminanceSmoothing={0.3}
       mipmapBlur
       radius={0.45}
     />,
     ...(smear ? [<primitive key="smear" object={smear} />] : []),
-    <Vignette key="vignette" eskil={false} offset={0.25} darkness={0.4} />,
+    // a daylight theme only wants a hint of edge falloff, not a dark frame
+    <Vignette key="vignette" eskil={false} offset={0.25} darkness={theme.light ? 0.12 : 0.4} />,
   ];
 
   return <EffectComposer multisampling={0}>{passes}</EffectComposer>;

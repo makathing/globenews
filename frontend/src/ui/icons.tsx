@@ -129,34 +129,3 @@ export function ClockIcon(props: IconProps) {
   );
 }
 
-
-/** The marker styles, for the switch that picks between them. */
-export function SculpturesIcon(props: IconProps) {
-  return (
-    <Svg {...props}>
-      {/* an obelisk standing on its plinth */}
-      <path d="M12 3.5 14.3 8.2V16H9.7V8.2L12 3.5Z" />
-      <path d="M7 16h10" />
-      <path d="M5.5 19.5h13" />
-    </Svg>
-  );
-}
-
-export function BeamsIcon(props: IconProps) {
-  return (
-    <Svg {...props}>
-      {/* a shaft standing in its pool of light */}
-      <path d="M12 3.8v9.8" />
-      <ellipse cx="12" cy="15.8" rx="6.2" ry="2.4" />
-    </Svg>
-  );
-}
-
-export function PinsIcon(props: IconProps) {
-  return (
-    <Svg {...props}>
-      <path d="M12 21s6-5.7 6-10.2a6 6 0 1 0-12 0C6 15.3 12 21 12 21Z" />
-      <circle cx="12" cy="10.6" r="2.1" />
-    </Svg>
-  );
-}

@@ -1,6 +1,6 @@
 # GlobeNews // Orbital Watch
 
-A 3D news radar: Earth from space with pulsing, color-coded blips marking world news hotspots.
+A 3D news radar: a dotted Earth from space where the dots light up in category colours wherever world news is happening.
 The dataset is produced by a multi-agent Claude pipeline that batches once every 24 hours, with an
 hourly breaking-news monitor that only publishes when something of **global scale** (or affecting
 the **entire US**) happens.
@@ -179,7 +179,7 @@ upgrades or prompt changes before trusting a full batch.
 | `pipeline/src/trust.ts` | Deterministic trust scoring |
 | `pipeline/src/run-daily.ts` | 24h batch entry point |
 | `pipeline/src/run-monitor.ts` | Hourly breaking-news monitor + escalation |
-| `frontend/src/scene/` | Earth, clouds, atmosphere, borders, starfield, blips, effects |
+| `frontend/src/scene/` | Dotted Earth with story dots and picking, starfield, sun, effects |
 | `frontend/src/ui/` | HUD: top bar, legend, ticker, event panel, tooltip, boot |
 | `data/events.json` | The dataset the globe renders (committed by the pipeline) |
 | `.github/workflows/` | `deploy` (Pages build; scheduling lives in cloud Routines) |

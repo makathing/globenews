@@ -1,20 +1,14 @@
-import { Suspense, type ComponentType } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Earth } from './Earth';
-import { Clouds } from './Clouds';
-import { CountryBorders } from './CountryBorders';
 import { Starfield } from './Starfield';
 import { Sun } from './Sun';
 import { SpaceBackground } from './SpaceBackground';
-import { Beams } from './Beams';
-import { Pins } from './Pins';
-import { Sculptures } from './Sculptures';
 import { Ambience } from './Ambience';
 import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
 import { RenderStats } from './RenderStats';
 import { narrowViewport, useGlobeStore, useTheme } from '../store';
-import type { MarkerStyle } from '../lib/markerStyle';
 
 /**
  * Opening framing. The phone value is the same direction 30% further out: on
@@ -25,18 +19,9 @@ const START_POSITION: [number, number, number] = narrowViewport
   ? [1.495, 1.235, 5.59]
   : [1.15, 0.95, 4.3];
 
-/** One layer per marker style; the store picks which is mounted. */
-const MARKER_LAYERS: Record<MarkerStyle, ComponentType> = {
-  sculptures: Sculptures,
-  beams: Beams,
-  pins: Pins,
-};
-
 export function SceneRoot() {
   const select = useGlobeStore((s) => s.select);
-  const markerStyle = useGlobeStore((s) => s.markerStyle);
   const theme = useTheme();
-  const MarkerLayer = MARKER_LAYERS[markerStyle];
 
   return (
     <Canvas
@@ -45,19 +30,16 @@ export function SceneRoot() {
       camera={{ position: START_POSITION, fov: 45, near: 0.1, far: 120 }}
       gl={{ antialias: false, powerPreference: 'high-performance' }}
       onPointerMissed={() => select(null)}
-      style={{ position: 'absolute', inset: 0, background: '#010204' }}
+      style={{ position: 'absolute', inset: 0, background: theme.space }}
     >
-      <color attach="background" args={['#010204']} />
+      <color attach="background" args={[theme.space]} />
       <SpaceBackground />
-      <Starfield />
+      {theme.starBrightness > 0 && <Starfield />}
       <Sun />
       <Suspense fallback={null}>
         <Earth />
-        {theme.clouds && <Clouds />}
       </Suspense>
-      <CountryBorders />
-      <Ambience />
-      <MarkerLayer />
+      {theme.starBrightness > 0 && <Ambience />}
       <CameraRig />
       <Effects />
       {import.meta.env.DEV && <RenderStats />}

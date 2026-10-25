@@ -5,7 +5,7 @@ import {
   type NewsEvent,
   type NewsSource,
 } from '../../../shared/news';
-import { SEVERITY_COLORS, freshness, isNew, isUpdated, relativeTime } from '../lib/beams';
+import { freshness, isNew, isUpdated, relativeTime } from '../lib/freshness';
 import { useGlobeStore, useVisibleEvents } from '../store';
 import { CategoryIcon } from './icons';
 import { StatusPanel } from './StatusPanel';
@@ -65,7 +65,7 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
   const scrollToId = useGlobeStore((s) => s.scrollToId);
   const clearScrollTo = useGlobeStore((s) => s.clearScrollTo);
 
-  // when the selection came from clicking a beam, bring this card into view
+  // when the selection came from clicking the globe, bring this card into view
   useEffect(() => {
     if (scrollToId === event.id && ref.current) {
       ref.current.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
@@ -78,7 +78,7 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
       ref={ref}
       className={`event-card ${selected ? 'selected' : ''} ${hoveredId === event.id ? 'hovered' : ''}`}
       style={{
-        // older stories recede, matching their beams
+        // older stories recede
         opacity: 0.6 + freshness(event) * 0.4,
       }}
       onMouseEnter={() => hoverId(event.id)}
@@ -87,7 +87,7 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
       title={CATEGORY_LABELS[event.category]}
     >
       <div className="card-head">
-        <span className="card-icon">
+        <span className="card-icon" style={{ color: `var(--cat-${event.category})` }}>
           <CategoryIcon category={event.category} size={14} />
         </span>
         <span className="card-headline">{event.headline}</span>
@@ -155,6 +155,7 @@ export function EventRail() {
               <button
                 key={category}
                 className={`filter-chip ${off ? 'off' : ''}`}
+                style={{ color: off ? undefined : `var(--cat-${category})` }}
                 onClick={() => toggleCategory(category)}
                 title={`${off ? 'Show' : 'Hide'} ${CATEGORY_LABELS[category]} (${counts.get(category) ?? 0})`}
                 aria-pressed={!off}
@@ -164,15 +165,6 @@ export function EventRail() {
               </button>
             );
           })}
-        </div>
-        <div className="severity-key" title="Beam colour and height encode severity">
-          <span className="severity-key-label">Minor</span>
-          <span className="severity-key-ramp">
-            {[1, 2, 3, 4, 5].map((level) => (
-              <span key={level} style={{ background: SEVERITY_COLORS[level] }} />
-            ))}
-          </span>
-          <span className="severity-key-label">Historic</span>
         </div>
       </header>
 

@@ -1,6 +1,7 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import * as THREE from 'three';
 import { SUN_DIRECTION } from './Earth';
+import { useTheme } from '../store';
 
 const vertexShader = /* glsl */ `
   varying vec3 vDir;
@@ -12,6 +13,8 @@ const vertexShader = /* glsl */ `
 
 const fragmentShader = /* glsl */ `
   uniform vec3 uSunDir;
+  uniform vec3 uBase;
+  uniform float uGlow;
   varying vec3 vDir;
 
   // cheap value noise for a whisper of nebula structure
@@ -40,14 +43,14 @@ const fragmentShader = /* glsl */ `
   void main() {
     // deep space is black — only the faintest lift toward the sun so the
     // sphere isn't a flat void, and nothing that greys out the stars
-    vec3 base = vec3(0.004, 0.005, 0.008);
     float sunward = pow(max(dot(vDir, uSunDir), 0.0), 6.0);
-    gl_FragColor = vec4(base + vec3(0.03, 0.026, 0.022) * sunward, 1.0);
+    gl_FragColor = vec4(uBase + vec3(0.03, 0.026, 0.022) * sunward * uGlow, 1.0);
   }
 `;
 
 /** Replaces the flat background: a huge inward-facing sphere whose sky subtly brightens toward the sun. */
 export function SpaceBackground() {
+  const theme = useTheme();
   const material = useMemo(
     () =>
       new THREE.ShaderMaterial({
@@ -55,10 +58,20 @@ export function SpaceBackground() {
         fragmentShader,
         side: THREE.BackSide,
         depthWrite: false,
-        uniforms: { uSunDir: { value: SUN_DIRECTION.clone() } },
+        uniforms: {
+          uSunDir: { value: SUN_DIRECTION.clone() },
+          uBase: { value: new THREE.Color() },
+          uGlow: { value: 1 },
+        },
       }),
     [],
   );
+
+  useEffect(() => {
+    (material.uniforms.uBase.value as THREE.Color).set(theme.space);
+    // a daylight sky has no sun-glow gradient to show
+    material.uniforms.uGlow.value = theme.light ? 0 : 1;
+  }, [material, theme]);
 
   return (
     <mesh material={material} renderOrder={-10}>

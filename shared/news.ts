@@ -2,9 +2,9 @@
  * Shared vocabulary between the agent pipeline (producer) and the globe frontend (consumer).
  * This file is the single source of truth for categories and the dataset shape.
  *
- * Colour lives in the frontend: severity drives the beam ramp
- * (frontend/src/lib/beams.ts) and the interface is otherwise monochrome, so
- * there is deliberately no per-category palette here.
+ * Colour lives in the frontend: each theme carries its own tuning of the
+ * category palette (frontend/src/lib/categoryColors.ts), so there is
+ * deliberately no palette here.
  * It must stay dependency-free so both workspaces can import it directly.
  */
 
@@ -69,7 +69,7 @@ export interface NewsEvent {
   headline: string;
   summary: string;
   category: Category;
-  /** 1 (minor regional story) … 5 (historic global event). Drives blip size + pulse rate. */
+  /** 1 (minor regional story) … 5 (historic global event). Drives how many globe dots the story lights up, and whether they pulse (4–5). */
   severity: 1 | 2 | 3 | 4 | 5;
   lat: number;
   lon: number;

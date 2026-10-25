@@ -1,124 +1,126 @@
-/** Globe render themes. `mode` selects the branch inside the Earth shader. */
+import { categoryCssVars } from './lib/categoryColors';
 
-export const THEME_IDS = ['obsidian', 'halftone', 'slate', 'blueprint', 'atlas', 'relief'] as const;
+/**
+ * Site themes. One theme colours everything: the page chrome (applied as CSS
+ * custom properties on <html>), the dotted globe and the category palette the
+ * globe's lit dots use.
+ */
+
+export const THEME_IDS = ['midnight', 'dusk', 'paper', 'ocean'] as const;
 export type ThemeId = (typeof THEME_IDS)[number];
 
-export interface GlobeTheme {
+export interface SiteTheme {
   id: ThemeId;
   label: string;
-  /** Shader branch: 0 obsidian, 1 halftone, 2 slate, 3 blueprint, 4 atlas, 5 relief */
-  mode: number;
-  /** Inner rim (fresnel) tint + strength — kept subtle everywhere. */
-  rimColor: string;
-  rimStrength: number;
-  borderColor: string;
-  borderOpacity: number;
-  clouds: boolean;
-  /** Additive glow washes out on light surfaces; use normal blending there. */
-  blipAdditive: boolean;
+  /** Light themes get the deeper category palette and no stars. */
+  light: boolean;
+  /** Page chrome. */
+  bg: string;
+  panel: string;
+  border: string;
+  text: string;
+  text2: string;
+  dim: string;
+  accent: string;
+  accentInk: string;
+  /** "r, g, b" of the overlay tint used for hairlines and hover washes. */
+  tint: string;
+  /** The globe: ocean at the centre and the limb, the land dots, the rim light. */
+  ocean: string;
+  limb: string;
+  dot: string;
+  rim: string;
+  /** Sky behind the planet. */
+  space: string;
   starBrightness: number;
   /** Visible sun glow strength (0 disables the sun billboard). */
   sunIntensity: number;
-  /** Multiplier on beam brightness — dialled down where the surface is bright. */
-  beamIntensity: number;
-  /** Strength of the dominant-category country wash. */
-  tintOpacity: number;
 }
 
-/**
- * Every globe is deliberately neutral: the news beams are the only saturated
- * colour in the scene, so the map never competes with the data.
- */
-export const THEMES: Record<ThemeId, GlobeTheme> = {
-  obsidian: {
-    id: 'obsidian',
-    label: 'Obsidian',
-    mode: 0,
-    rimColor: '#4a6a92',
-    rimStrength: 0.16,
-    borderColor: '#71839c',
-    borderOpacity: 0.4,
-    clouds: false,
-    blipAdditive: true,
-    starBrightness: 1,
-    sunIntensity: 0.5,
-    beamIntensity: 1,
-    tintOpacity: 0.14,
-  },
-  halftone: {
-    id: 'halftone',
-    label: 'Halftone',
-    mode: 1,
-    rimColor: '#3f5f88',
-    rimStrength: 0.12,
-    borderColor: '#5b7a9c',
-    borderOpacity: 0,
-    clouds: false,
-    blipAdditive: true,
+export const THEMES: Record<ThemeId, SiteTheme> = {
+  midnight: {
+    id: 'midnight',
+    label: 'Midnight',
+    light: false,
+    bg: '#0b1220',
+    panel: '#131c2e',
+    border: '#24304a',
+    text: '#e8edf4',
+    text2: '#a7b2c3',
+    dim: '#8a97ab',
+    accent: '#7cc4ff',
+    accentInk: '#0b1220',
+    tint: '255, 255, 255',
+    ocean: '#0f1d38',
+    limb: '#0a1427',
+    dot: '#4a6185',
+    rim: '#7cc4ff',
+    space: '#03060c',
     starBrightness: 1,
     sunIntensity: 0.45,
-    beamIntensity: 1,
-    tintOpacity: 0.1,
   },
-  slate: {
-    id: 'slate',
-    label: 'Slate',
-    mode: 2,
-    rimColor: '#5b7a9c',
-    rimStrength: 0.14,
-    borderColor: '#8fa2b8',
-    borderOpacity: 0.22,
-    clouds: false,
-    blipAdditive: true,
-    starBrightness: 0.9,
-    sunIntensity: 0.6,
-    beamIntensity: 1,
-    tintOpacity: 0.13,
-  },
-  blueprint: {
-    id: 'blueprint',
-    label: 'Blueprint',
-    mode: 3,
-    rimColor: '#2f6ea8',
-    rimStrength: 0.14,
-    borderColor: '#6fb4e8',
-    borderOpacity: 0.5,
-    clouds: false,
-    blipAdditive: true,
-    starBrightness: 0.85,
-    sunIntensity: 0.45,
-    beamIntensity: 0.95,
-    tintOpacity: 0.16,
-  },
-  atlas: {
-    id: 'atlas',
-    label: 'Atlas',
-    mode: 4,
-    rimColor: '#5fa8e0',
-    rimStrength: 0.16,
-    borderColor: '#bcd8ea',
-    borderOpacity: 0.26,
-    clouds: false,
-    blipAdditive: true,
-    starBrightness: 0.9,
-    sunIntensity: 0.55,
-    beamIntensity: 1.3,
-    tintOpacity: 0.14,
-  },
-  relief: {
-    id: 'relief',
-    label: 'Relief',
-    mode: 5,
-    rimColor: '#54708f',
-    rimStrength: 0.14,
-    borderColor: '#93a3b6',
-    borderOpacity: 0.26,
-    clouds: false,
-    blipAdditive: true,
+  dusk: {
+    id: 'dusk',
+    label: 'Dusk',
+    light: false,
+    bg: '#1a1430',
+    panel: '#241c3f',
+    border: '#3a2f5e',
+    text: '#f3edf9',
+    text2: '#c4b8d8',
+    dim: '#a497bd',
+    accent: '#ffb38a',
+    accentInk: '#2a1a12',
+    tint: '255, 255, 255',
+    ocean: '#241a44',
+    limb: '#170f2e',
+    dot: '#64578f',
+    rim: '#ffb38a',
+    space: '#0a0716',
     starBrightness: 0.9,
     sunIntensity: 0.5,
-    beamIntensity: 1,
-    tintOpacity: 0.13,
+  },
+  paper: {
+    id: 'paper',
+    label: 'Paper',
+    light: true,
+    bg: '#f5efe3',
+    panel: '#fffcf6',
+    border: '#e3d9c6',
+    text: '#27231d',
+    text2: '#5c5448',
+    dim: '#6f6557',
+    accent: '#b9512a',
+    accentInk: '#ffffff',
+    tint: '39, 35, 29',
+    ocean: '#ebe2cf',
+    limb: '#ddd1b8',
+    dot: '#a99c82',
+    rim: '#b9512a',
+    space: '#f5efe3',
+    starBrightness: 0,
+    sunIntensity: 0,
+  },
+  ocean: {
+    id: 'ocean',
+    label: 'Ocean',
+    light: false,
+    bg: '#0c1d22',
+    panel: '#12292f',
+    border: '#22424a',
+    text: '#e3f1ef',
+    text2: '#a3c2bd',
+    dim: '#86a8a3',
+    accent: '#6fe3c1',
+    accentInk: '#08241c',
+    tint: '255, 255, 255',
+    ocean: '#0f2a31',
+    limb: '#091c21',
+    dot: '#3b6e6e',
+    rim: '#6fe3c1',
+    space: '#040d10',
+    starBrightness: 0.9,
+    sunIntensity: 0.45,
   },
 };
 
@@ -131,7 +133,8 @@ export function loadStoredTheme(): ThemeId {
   } catch {
     // storage unavailable
   }
-  return 'blueprint';
+  // also where visitors land who had one of the retired globe themes stored
+  return 'midnight';
 }
 
 export function storeTheme(id: ThemeId): void {
@@ -140,4 +143,26 @@ export function storeTheme(id: ThemeId): void {
   } catch {
     // storage unavailable
   }
+}
+
+/** Push a theme's chrome colours onto <html> as the custom properties styles.css reads. */
+export function applyTheme(theme: SiteTheme): void {
+  if (typeof document === 'undefined') return;
+  const root = document.documentElement;
+  root.dataset.theme = theme.id;
+  root.style.colorScheme = theme.light ? 'light' : 'dark';
+  const vars: Record<string, string> = {
+    '--bg': theme.bg,
+    '--panel-solid': theme.panel,
+    '--panel-border': theme.border,
+    '--text': theme.text,
+    '--text-secondary': theme.text2,
+    '--text-dim': theme.dim,
+    '--accent': theme.accent,
+    '--accent-ink': theme.accentInk,
+    '--tint': theme.tint,
+    '--shadow-alpha': theme.light ? '0.1' : '0.4',
+    ...categoryCssVars(theme.light),
+  };
+  for (const [name, value] of Object.entries(vars)) root.style.setProperty(name, value);
 }
