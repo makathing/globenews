@@ -7,10 +7,18 @@ import { EVENTS_PATH } from '../src/io.ts';
 
 const dataset = JSON.parse(readFileSync(resolve(EVENTS_PATH), 'utf8')) as NewsDataset;
 
+// The named cases below are real stories frozen from the 2026-10-25 batch: the
+// live dataset turns over daily, so looking them up there broke the moment the
+// next batch landed.
+type TopicStory = Pick<NewsDataset['events'][number], 'headline' | 'summary' | 'category'>;
+const stories = JSON.parse(
+  readFileSync(resolve(import.meta.dirname, 'fixtures/topic-stories.json'), 'utf8'),
+) as TopicStory[];
+
 function topicOf(headlineStart: string): string {
-  const event = dataset.events.find((e) => e.headline.startsWith(headlineStart));
-  if (!event) throw new Error(`no event in data/events.json starting "${headlineStart}"`);
-  return matchTopic(event);
+  const story = stories.find((s) => s.headline.startsWith(headlineStart));
+  if (!story) throw new Error(`no story in fixtures/topic-stories.json starting "${headlineStart}"`);
+  return matchTopic(story);
 }
 
 describe('TOPICS', () => {
