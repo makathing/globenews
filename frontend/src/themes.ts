@@ -145,6 +145,26 @@ export function storeTheme(id: ThemeId): void {
   }
 }
 
+const SPACE_KEY = 'globenews-space';
+
+/** Space view (stars, sun, moon) is opt-in; the default is the flat page background. */
+export function loadStoredSpace(): boolean {
+  try {
+    return localStorage.getItem(SPACE_KEY) === 'true';
+  } catch {
+    // storage unavailable
+  }
+  return false;
+}
+
+export function storeSpace(on: boolean): void {
+  try {
+    localStorage.setItem(SPACE_KEY, String(on));
+  } catch {
+    // storage unavailable
+  }
+}
+
 /** Push a theme's chrome colours onto <html> as the custom properties styles.css reads. */
 export function applyTheme(theme: SiteTheme): void {
   if (typeof document === 'undefined') return;

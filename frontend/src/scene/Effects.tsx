@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { BlendFunction, Effect } from 'postprocessing';
 import * as THREE from 'three';
-import { cameraMotion, coarsePointer, prefersReducedMotion, useTheme } from '../store';
+import { cameraMotion, coarsePointer, prefersReducedMotion } from '../store';
 
 const smearFragment = /* glsl */ `
   uniform vec2 uVelocity;
@@ -52,8 +52,8 @@ class MotionSmearEffect extends Effect {
   }
 }
 
-export function Effects() {
-  const theme = useTheme();
+/** `space` is the space view; flat mode has no stars to smear and no frame to darken. */
+export function Effects({ space }: { space: boolean }) {
   // A finger flick is a short, high spike of angular velocity, so on a phone
   // the smear fires on essentially every swipe — and it is a full-screen
   // five-tap pass at up to 1.75x DPR on a mobile GPU. Skip the pass entirely
@@ -76,9 +76,9 @@ export function Effects() {
       mipmapBlur
       radius={0.45}
     />,
-    ...(smear ? [<primitive key="smear" object={smear} />] : []),
-    // a daylight theme only wants a hint of edge falloff, not a dark frame
-    <Vignette key="vignette" eskil={false} offset={0.25} darkness={theme.light ? 0.12 : 0.4} />,
+    ...(space && smear ? [<primitive key="smear" object={smear} />] : []),
+    // the flat page background should read as flat, so only space gets a dark frame
+    ...(space ? [<Vignette key="vignette" eskil={false} offset={0.25} darkness={0.4} />] : []),
   ];
 
   return <EffectComposer multisampling={0}>{passes}</EffectComposer>;

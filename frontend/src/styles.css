@@ -178,6 +178,54 @@ body,
   flex: none;
   border-radius: 50%;
 }
+.space-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 6px;
+  padding: 5px 9px;
+  background: rgba(var(--tint), 0.05);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.space-toggle.on {
+  color: var(--text-secondary);
+}
+.space-toggle-track {
+  position: relative;
+  width: 24px;
+  height: 13px;
+  flex: none;
+  border-radius: 7px;
+  background: rgba(var(--tint), 0.14);
+  transition: background 0.15s;
+}
+.space-toggle.on .space-toggle-track {
+  background: var(--accent);
+}
+.space-toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  transition:
+    transform 0.15s,
+    background 0.15s;
+}
+.space-toggle.on .space-toggle-thumb {
+  transform: translateX(11px);
+  background: var(--accent-ink);
+}
 
 /* ————— event panel ————— */
 .event-panel {
@@ -875,6 +923,7 @@ body,
   }
   .filter-chip,
   .theme-btn,
+  .space-toggle,
   .copy-link {
     min-height: 34px;
   }
@@ -892,7 +941,8 @@ body,
    and the row stays lit. Every rule here has a non-hover companion (.hovered,
    .on, .selected) that still drives the same state from the app. */
 @media (hover: hover) {
-  .theme-btn:hover {
+  .theme-btn:hover,
+  .space-toggle:hover {
     color: var(--text-secondary);
   }
   .close-btn:hover {

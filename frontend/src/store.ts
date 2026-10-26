@@ -1,7 +1,16 @@
 import { useMemo } from 'react';
 import { create } from 'zustand';
 import type { Category, NewsDataset, NewsEvent } from '../../shared/news';
-import { applyTheme, loadStoredTheme, storeTheme, THEMES, type SiteTheme, type ThemeId } from './themes';
+import {
+  applyTheme,
+  loadStoredSpace,
+  loadStoredTheme,
+  storeSpace,
+  storeTheme,
+  THEMES,
+  type SiteTheme,
+  type ThemeId,
+} from './themes';
 
 interface HoverState {
   id: string;
@@ -12,6 +21,8 @@ interface HoverState {
 interface GlobeStore {
   dataset: NewsDataset | null;
   theme: ThemeId;
+  /** The viewer's space-view preference; see useSpaceView for whether it applies. */
+  space: boolean;
   hidden: Set<Category>;
   hovered: HoverState | null;
   selectedId: string | null;
@@ -19,6 +30,7 @@ interface GlobeStore {
   scrollToId: string | null;
   setDataset: (dataset: NewsDataset) => void;
   setTheme: (theme: ThemeId) => void;
+  setSpace: (on: boolean) => void;
   toggleCategory: (category: Category) => void;
   setHovered: (hover: HoverState | null) => void;
   hoverId: (id: string | null) => void;
@@ -29,6 +41,7 @@ interface GlobeStore {
 export const useGlobeStore = create<GlobeStore>((set) => ({
   dataset: null,
   theme: loadStoredTheme(),
+  space: loadStoredSpace(),
   hidden: new Set<Category>(),
   hovered: null,
   selectedId: null,
@@ -38,6 +51,10 @@ export const useGlobeStore = create<GlobeStore>((set) => ({
     storeTheme(theme);
     applyTheme(THEMES[theme]);
     set({ theme });
+  },
+  setSpace: (space) => {
+    storeSpace(space);
+    set({ space });
   },
   toggleCategory: (category) =>
     set((state) => {
@@ -56,6 +73,16 @@ export const useGlobeStore = create<GlobeStore>((set) => ({
 
 export function useTheme(): SiteTheme {
   return THEMES[useGlobeStore((s) => s.theme)];
+}
+
+/**
+ * Whether the scene shows the space view. A light theme has no night sky to
+ * show, so the preference is kept but ignored while one is active.
+ */
+export function useSpaceView(): boolean {
+  const space = useGlobeStore((s) => s.space);
+  const theme = useTheme();
+  return space && !theme.light;
 }
 
 /** Events passing the category filters. */

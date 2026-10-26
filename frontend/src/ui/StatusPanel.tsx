@@ -6,11 +6,13 @@ function formatUtc(date: Date): string {
   return date.toISOString().slice(11, 19);
 }
 
-/** Rail footer: signal count, UTC clock and the site theme switcher. */
+/** Rail footer: signal count, UTC clock, the site theme switcher and the space-view switch. */
 export function StatusPanel() {
   const dataset = useGlobeStore((s) => s.dataset);
   const theme = useGlobeStore((s) => s.theme);
   const setTheme = useGlobeStore((s) => s.setTheme);
+  const space = useGlobeStore((s) => s.space);
+  const setSpace = useGlobeStore((s) => s.setSpace);
   const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
@@ -48,6 +50,20 @@ export function StatusPanel() {
           </button>
         ))}
       </div>
+      {/* a light theme has no night sky, so the switch only exists on dark ones */}
+      {!THEMES[theme].light && (
+        <button
+          role="switch"
+          aria-checked={space}
+          className={`space-toggle ${space ? 'on' : ''}`}
+          onClick={() => setSpace(!space)}
+        >
+          Space view
+          <span className="space-toggle-track" aria-hidden="true">
+            <span className="space-toggle-thumb" />
+          </span>
+        </button>
+      )}
     </aside>
   );
 }
