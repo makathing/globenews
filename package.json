@@ -14,7 +14,8 @@
     "pipeline:daily": "npm run daily -w pipeline",
     "pipeline:monitor": "npm run monitor -w pipeline",
     "pipeline:enrich": "npm run enrich -w pipeline",
-    "pipeline:backfill-severity": "npm run backfill-severity -w pipeline"
+    "pipeline:backfill-severity": "npm run backfill-severity -w pipeline",
+    "pipeline:photo-library": "npm run photo-library -w pipeline"
   },
   "engines": {
     "node": ">=20"

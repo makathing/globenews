@@ -127,8 +127,48 @@ Each pipeline run still records what it produced in `data/events.json` under
 a run that resolves nothing should not look like a run that had nothing to
 resolve.
 
-Aside from that, there are **no scheduled GitHub Actions workflows** — only `deploy.yml`
-remains, which needs no Anthropic credentials. If you ever prefer GitHub-hosted scheduling,
+### Illustrative photos
+
+A story card needs a picture, and many stories' own sources carry no usable
+`og:image`. For those, the site shows an **illustrative** photo of the story's
+*topic* — a flooded street, a ballot box, a container port — never presented
+as a photo of the event itself.
+
+- **Topics** — `shared/topics.ts` lists ~36 topics with keywords, and
+  `matchTopic()` scores a story's headline (weighted) and summary against them,
+  deterministically, falling back to a per-category default. The pipeline tests
+  run it over every story in `data/events.json`.
+- **Library** — `data/photo-library.json` holds up to four photos per topic:
+  hotlinked Wikimedia Commons thumbnails (Commons permits hotlinking) with
+  title, author, licence and a link to the file page.
+- **Refresh** — the *Refresh photo library* workflow (`photo-library.yml`,
+  manual) runs `npm run pipeline:photo-library` on a runner that can reach
+  Commons, searches each topic's queries, filters and ranks the hits
+  (Commons' featured / quality / valued images first), and opens or updates a
+  pull request from `photo-library/refresh`. The PR body is the rendered
+  gallery (`data/photo-library.md`) so a reviewer sees every picture. Topics
+  whose searches fail keep their current photos; an unreachable Commons fails
+  the run without touching the file. It needs *Settings → Actions → General →
+  Allow GitHub Actions to create and approve pull requests* enabled.
+- **Review** — to reject a photo, add its id to `blocked` in
+  `data/photo-library.json` (or delete it) before merging; blocked ids never
+  come back on later refreshes. Re-running the workflow force-updates the
+  review branch, so merge or close an open refresh PR before running another,
+  or put blocks on the default branch first.
+
+The rules:
+
+- **Licences:** only CC0, public domain (including PD-\*), CC BY and CC BY-SA.
+  GFDL-only, non-commercial, no-derivatives, fair-use and unlicensed files are
+  refused, as are maps, logos, flags, charts, posters, portraits and
+  screenshots, and anything small or not landscape.
+- **Labelling:** an illustrative photo is always labelled *Illustrative* and
+  credited (author, licence, link to its Commons page) wherever it appears.
+- **Precedence:** a story's own article image always wins; the library is only
+  the fallback.
+
+There are **no scheduled GitHub Actions workflows** — `deploy.yml` and the manual
+`photo-library.yml` need no Anthropic credentials. If you ever prefer GitHub-hosted scheduling,
 restore the workflows from git history (`daily-batch.yml` / `breaking-monitor.yml`,
 removed in the "tokenless scheduling" commit); they support `CLAUDE_CODE_OAUTH_TOKEN`
 (subscription, via `claude setup-token`) or `ANTHROPIC_API_KEY` secrets.
@@ -182,4 +222,6 @@ upgrades or prompt changes before trusting a full batch.
 | `frontend/src/scene/` | Dotted Earth with story dots and picking, starfield, sun, effects |
 | `frontend/src/ui/` | HUD: top bar, legend, ticker, event panel, tooltip, boot |
 | `data/events.json` | The dataset the globe renders (committed by the pipeline) |
-| `.github/workflows/` | `deploy` (Pages build; scheduling lives in cloud Routines) |
+| `shared/topics.ts` | News topics + `matchTopic()` for illustrative photos |
+| `pipeline/src/build-photo-library.ts` | Commons search → `data/photo-library.json` + review gallery |
+| `.github/workflows/` | `deploy` (Pages build; scheduling lives in cloud Routines), `photo-library` (manual refresh PR) |

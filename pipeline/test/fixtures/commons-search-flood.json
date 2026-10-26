@@ -1,0 +1,662 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 30,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 1001,
+        "ns": 6,
+        "title": "File:Flooded street in Jakarta.jpg",
+        "index": 1,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 3000,
+            "height": 2000,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flooded_street_in_Jakarta.jpg/960px-Flooded_street_in_Jakarta.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 640,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flooded_street_in_Jakarta.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flooded_street_in_Jakarta.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1001",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Example\" title=\"User:Example\">Ex&amp;ample Photographer</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1002,
+        "ns": 6,
+        "title": "File:Flood water around houses.png",
+        "index": 2,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 2400,
+            "height": 1600,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flood_water_around_houses.png/960px-Flood_water_around_houses.png",
+            "thumbwidth": 960,
+            "thumbheight": 640,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flood_water_around_houses.png",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flood_water_around_houses.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1002",
+            "mime": "image/png",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Houses standing in flood water.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1003,
+        "ns": 6,
+        "title": "File:Flood in Bavaria (GFDL).jpg",
+        "index": 3,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 4000,
+            "height": 2600,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flood_in_Bavaria_(GFDL).jpg/960px-Flood_in_Bavaria_(GFDL).jpg",
+            "thumbwidth": 960,
+            "thumbheight": 624,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flood_in_Bavaria_(GFDL).jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flood_in_Bavaria_(GFDL).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1003",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "GFDL",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1004,
+        "ns": 6,
+        "title": "File:River flood noncommercial.jpg",
+        "index": 4,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 4000,
+            "height": 2600,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/River_flood_noncommercial.jpg/960px-River_flood_noncommercial.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 624,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/River_flood_noncommercial.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:River_flood_noncommercial.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1004",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-NC-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1005,
+        "ns": 6,
+        "title": "File:Flooded town, aerial view.jpg",
+        "index": 5,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 4000,
+            "height": 2667,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flooded_town,_aerial_view.jpg/960px-Flooded_town,_aerial_view.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 640,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flooded_town,_aerial_view.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flooded_town,_aerial_view.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1005",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<span>Max Mustermann</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Flooded town, aerial view",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1006,
+        "ns": 6,
+        "title": "File:Flood map of the Elbe 2002.png",
+        "index": 6,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 3000,
+            "height": 2000,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flood_map_of_the_Elbe_2002.png/960px-Flood_map_of_the_Elbe_2002.png",
+            "thumbwidth": 960,
+            "thumbheight": 640,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flood_map_of_the_Elbe_2002.png",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flood_map_of_the_Elbe_2002.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1006",
+            "mime": "image/png",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1007,
+        "ns": 6,
+        "title": "File:Flooded alley (vertical).jpg",
+        "index": 7,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 2000,
+            "height": 3000,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flooded_alley_(vertical).jpg/960px-Flooded_alley_(vertical).jpg",
+            "thumbwidth": 960,
+            "thumbheight": 1440,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flooded_alley_(vertical).jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flooded_alley_(vertical).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1007",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1008,
+        "ns": 6,
+        "title": "File:Small flood photo.jpg",
+        "index": 8,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 800,
+            "height": 500,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Small_flood_photo.jpg/800px-Small_flood_photo.jpg",
+            "thumbwidth": 800,
+            "thumbheight": 500,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Small_flood_photo.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Small_flood_photo.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1008",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1009,
+        "ns": 6,
+        "title": "File:Flood scan.tif",
+        "index": 9,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 5000,
+            "height": 3000,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flood_scan.tif/960px-Flood_scan.tif",
+            "thumbwidth": 960,
+            "thumbheight": 576,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flood_scan.tif",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flood_scan.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1009",
+            "mime": "image/tiff",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "PD-USGov",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1010,
+        "ns": 6,
+        "title": "File:Relief agency at the flood.jpg",
+        "index": 10,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 3000,
+            "height": 1800,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Relief_agency_at_the_flood.jpg/960px-Relief_agency_at_the_flood.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 576,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Relief_agency_at_the_flood.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Relief_agency_at_the_flood.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1010",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Volunteers in front of the agency logo.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1011,
+        "ns": 6,
+        "title": "File:Flood news still.jpg",
+        "index": 11,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 3000,
+            "height": 1800,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flood_news_still.jpg/960px-Flood_news_still.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 576,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flood_news_still.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flood_news_still.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1011",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Fair use",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              },
+              "NonFree": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1012,
+        "ns": 6,
+        "title": "File:Rejected by reviewer flood.jpg",
+        "index": 12,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 3000,
+            "height": 1800,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Rejected_by_reviewer_flood.jpg/960px-Rejected_by_reviewer_flood.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 576,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Rejected_by_reviewer_flood.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Rejected_by_reviewer_flood.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1012",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1013,
+        "ns": 6,
+        "title": "File:Photograph of a flooded road.jpg",
+        "index": 13,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 3200,
+            "height": 2000,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Photograph_of_a_flooded_road.jpg/960px-Photograph_of_a_flooded_road.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 600,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Photograph_of_a_flooded_road.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Photograph_of_a_flooded_road.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1013",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "PD-USGov-NOAA",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1014,
+        "ns": 6,
+        "title": "File:Square flood.jpg",
+        "index": 14,
+        "imageinfo": [
+          {
+            "size": 1234567,
+            "width": 3000,
+            "height": 2500,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Square_flood.jpg/960px-Square_flood.jpg",
+            "thumbwidth": 960,
+            "thumbheight": 800,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Square_flood.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Square_flood.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1014",
+            "mime": "image/jpeg",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-01 10:00:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>A flooded street after heavy rain.</p>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0 de",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "Jane Doe",
+                "source": "commons-desc-page"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

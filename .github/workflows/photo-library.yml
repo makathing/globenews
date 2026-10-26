@@ -1,0 +1,71 @@
+name: Refresh photo library
+
+# Manual only. Picks openly licensed illustrative photos per news topic from
+# Wikimedia Commons (pipeline/src/build-photo-library.ts) and proposes them as
+# a pull request whose body is the rendered gallery — nothing reaches the site
+# until a person has looked at the pictures and merged. Runs here rather than
+# in the pipeline's environment because that one cannot reach Commons.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: photo-library
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      # Exits non-zero without writing anything if Commons is unreachable, so
+      # a blocked run fails visibly instead of looking like "nothing new".
+      # Topics whose searches fail keep their current photos.
+      - run: npm run pipeline:photo-library
+
+      - id: diff
+        run: |
+          if [ -n "$(git status --porcelain -- data/photo-library.json)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change to the photo library; no pull request needed."
+          fi
+
+      # One standing review branch, force-updated on every refresh: re-running
+      # replaces the proposal rather than stacking PRs. The body is the gallery
+      # cut to GitHub's 65,536-character limit (pipeline/.staging/…); the full
+      # gallery is committed as data/photo-library.md.
+      - name: Open or update the review pull request
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: photo-library/refresh
+          BASE: ${{ github.event.repository.default_branch }}
+          BODY: pipeline/.staging/photo-library-pr.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$BRANCH"
+          git add data/photo-library.json data/photo-library.md
+          git commit -m "data: refresh illustrative photo library"
+          git push --force origin "$BRANCH"
+
+          existing=$(gh pr list --head "$BRANCH" --base "$BASE" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh pr edit "$existing" --body-file "$BODY"
+            echo "Updated pull request #$existing"
+          else
+            gh pr create --base "$BASE" --head "$BRANCH" \
+              --title "Refresh illustrative photo library" \
+              --body-file "$BODY"
+          fi

@@ -10,6 +10,9 @@ export const DATA_DIR = resolve(REPO_ROOT, 'data');
 export const EVENTS_PATH = resolve(DATA_DIR, 'events.json');
 export const ARCHIVE_DIR = resolve(DATA_DIR, 'archive');
 export const OUTLET_ICONS_PATH = resolve(DATA_DIR, 'outlet-icons.json');
+export const PHOTO_LIBRARY_PATH = resolve(DATA_DIR, 'photo-library.json');
+/** Human-readable review gallery for the photo library; becomes the refresh PR's body. */
+export const PHOTO_GALLERY_PATH = resolve(DATA_DIR, 'photo-library.md');
 export const STAGING_DIR = resolve(REPO_ROOT, 'pipeline', '.staging');
 
 export function readCurrentDataset(): NewsDataset | null {
