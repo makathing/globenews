@@ -112,6 +112,8 @@ async function main(): Promise<void> {
   // to know which topics failed and are keeping their old photos
   const results = new Map<string, Candidate[][] | null>();
   const rejected = new Map<string, number>();
+  // one real example per reason, so an all-rejected run shows what Commons sent
+  const examples = new Map<string, string>();
   let requests = 0;
   let failures = 0;
   for (const topic of TOPICS) {
@@ -123,7 +125,9 @@ async function main(): Promise<void> {
         perQuery.push(candidates);
         for (const candidate of candidates) {
           const reason = rejectionReason(candidate, blocked);
-          if (reason) rejected.set(reason, (rejected.get(reason) ?? 0) + 1);
+          if (!reason) continue;
+          rejected.set(reason, (rejected.get(reason) ?? 0) + 1);
+          if (!examples.has(reason)) examples.set(reason, `${candidate.photo.id} → ${candidate.photo.thumb}`);
         }
       } catch (error) {
         failures += 1;
@@ -176,6 +180,9 @@ async function main(): Promise<void> {
     .slice(0, 12)
     .map(([reason, n]) => `${reason} ×${n}`);
   console.log(`[photo-library] top rejections: ${reasons.join(', ') || 'none'}`);
+  for (const [reason, example] of [...examples].slice(0, 6)) {
+    console.log(`[photo-library]   e.g. ${reason}: ${example}`);
+  }
   console.log(`[photo-library] ${requests} searches, ${failures} failed; library ${changed ? 'updated' : 'unchanged'}`);
   signalChanged(changed);
 }
