@@ -5,8 +5,19 @@ name: Refresh photo library
 # a pull request whose body is the rendered gallery — nothing reaches the site
 # until a person has looked at the pictures and merged. Runs here rather than
 # in the pipeline's environment because that one cannot reach Commons.
+#
+# Two ways in:
+#  - Run workflow (workflow_dispatch): proposes the library as a new PR on
+#    branch photo-library/refresh. Needs "Allow GitHub Actions to create and
+#    approve pull requests" in Settings → Actions → General.
+#  - Push any branch named photo-library/** and open a PR from it yourself:
+#    the run fills that same branch and PR with the photos. No setting needed,
+#    because the workflow only commits and edits an existing PR, never opens one.
+#    Its own commit doesn't re-trigger it (GITHUB_TOKEN pushes start no runs).
 on:
   workflow_dispatch:
+  push:
+    branches: ['photo-library/**']
 
 permissions:
   contents: write
@@ -46,7 +57,7 @@ jobs:
       # cut to GitHub's 65,536-character limit (pipeline/.staging/…); the full
       # gallery is committed as data/photo-library.md.
       - name: Open or update the review pull request
-        if: steps.diff.outputs.changed == 'true'
+        if: steps.diff.outputs.changed == 'true' && github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ github.token }}
           BRANCH: photo-library/refresh
@@ -68,4 +79,27 @@ jobs:
             gh pr create --base "$BASE" --head "$BRANCH" \
               --title "Refresh illustrative photo library" \
               --body-file "$BODY"
+          fi
+
+      # Pushed branch: commit the photos onto it and, if a PR is open from it,
+      # show the gallery as the PR description (editing a PR needs no setting).
+      - name: Fill the pushed branch and its pull request
+        if: steps.diff.outputs.changed == 'true' && github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+          BODY: pipeline/.staging/photo-library-pr.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/photo-library.json data/photo-library.md
+          git commit -m "data: illustrative photo library from Wikimedia Commons"
+          git push origin "HEAD:$BRANCH"
+
+          pr=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$pr" ]; then
+            gh pr edit "$pr" --body-file "$BODY"
+            echo "Gallery posted to pull request #$pr"
+          else
+            echo "No open pull request from $BRANCH yet; the photos are committed to the branch."
           fi
