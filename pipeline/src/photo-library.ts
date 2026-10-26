@@ -148,7 +148,7 @@ export function parseCommonsResponse(json: unknown): Candidate[] {
     const info = Array.isArray(page.imageinfo) ? (page.imageinfo[0] as Record<string, unknown> | undefined) : undefined;
     if (!id || !info) return;
 
-    const thumb = str(info.thumburl) || str(info.url);
+    const thumb = absoluteUrl(str(info.thumburl) || str(info.url));
     const pageUrl = str(info.descriptionurl);
     if (!thumb || !pageUrl) return;
     const extmetadata =
@@ -167,11 +167,11 @@ export function parseCommonsResponse(json: unknown): Candidate[] {
       photo: {
         id,
         thumb,
-        page: pageUrl.startsWith('//') ? `https:${pageUrl}` : pageUrl,
+        page: absoluteUrl(pageUrl),
         title,
         author: author || FALLBACK_AUTHOR,
         license: stripHtml(meta(extmetadata, 'LicenseShortName')),
-        ...(licenseUrl ? { licenseUrl: licenseUrl.startsWith('//') ? `https:${licenseUrl}` : licenseUrl } : {}),
+        ...(licenseUrl ? { licenseUrl: absoluteUrl(licenseUrl) } : {}),
         width,
         height,
       },
@@ -187,6 +187,21 @@ export function parseCommonsResponse(json: unknown): Candidate[] {
   return candidates;
 }
 
+/** The API hands back protocol-relative URLs ("//upload…") in places; pin them to https. */
+function absoluteUrl(url: string): string {
+  return url.startsWith('//') ? `https:${url}` : url;
+}
+
+/** Hotlinks only from Wikimedia's own hosts (upload.wikimedia.org and kin). */
+function isWikimediaHttps(url: string): boolean {
+  try {
+    const { protocol, hostname } = new URL(url);
+    return protocol === 'https:' && (hostname === 'wikimedia.org' || hostname.endsWith('.wikimedia.org'));
+  } catch {
+    return false;
+  }
+}
+
 /** Why a candidate may not appear on the site, or null if it may. */
 export function rejectionReason(candidate: Candidate, blocked: ReadonlySet<string>): string | null {
   const { photo } = candidate;
@@ -196,7 +211,7 @@ export function rejectionReason(candidate: Candidate, blocked: ReadonlySet<strin
   if (!ACCEPTED_MIME.has(candidate.mime)) return `type ${candidate.mime || 'unknown'}`;
   if (candidate.originalWidth < MIN_WIDTH) return 'too small';
   if (candidate.originalWidth < MIN_ASPECT * candidate.originalHeight) return 'not landscape';
-  if (!photo.thumb.startsWith('https://upload.wikimedia.org/')) return 'thumbnail not on upload.wikimedia.org';
+  if (!isWikimediaHttps(photo.thumb)) return 'thumbnail not a Wikimedia https URL';
   for (const text of [photo.id, photo.title, candidate.description]) {
     const word = text.replace(/_/g, ' ').match(REJECT_WORDS);
     if (word) return `"${word[1].toLowerCase()}" in title/description`;

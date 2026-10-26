@@ -159,6 +159,29 @@ describe('orientation, size and type', () => {
   });
 });
 
+describe('thumbnail host', () => {
+  const base = byId('File:Flooded street in Jakarta.jpg');
+  const withThumb = (thumb: string): Candidate => ({ ...base, photo: { ...base.photo, thumb } });
+
+  it('accepts any https Wikimedia host', () => {
+    expect(rejectionReason(withThumb('https://upload.wikimedia.org/a.jpg'), none)).toBeNull();
+    expect(rejectionReason(withThumb('https://commons.wikimedia.org/w/thumb.php?f=a.jpg'), none)).toBeNull();
+  });
+
+  it('rejects other hosts and plain http', () => {
+    expect(rejectionReason(withThumb('https://example.com/a.jpg'), none)).toMatch(/Wikimedia/);
+    expect(rejectionReason(withThumb('http://upload.wikimedia.org/a.jpg'), none)).toMatch(/Wikimedia/);
+    expect(rejectionReason(withThumb('https://wikimedia.org.evil.example/a.jpg'), none)).toMatch(/Wikimedia/);
+  });
+
+  it('pins protocol-relative URLs from the API to https', () => {
+    const relative = JSON.parse(JSON.stringify(fixture).replaceAll('"https://upload.wikimedia.org', '"//upload.wikimedia.org'));
+    const parsed = parseCommonsResponse(relative);
+    expect(parsed.length).toBeGreaterThan(0);
+    for (const candidate of parsed) expect(candidate.photo.thumb.startsWith('https://upload.wikimedia.org/')).toBe(true);
+  });
+});
+
 describe('selectTopicPhotos', () => {
   it('keeps the best four, assessed first, then by search rank, skipping blocked ids', () => {
     const blocked = new Set(['File:Rejected by reviewer flood.jpg']);
