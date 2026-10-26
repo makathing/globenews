@@ -1,8 +1,8 @@
 import type { ThreeEvent } from '@react-three/fiber';
 import type { NewsEvent } from '../../../shared/news';
 import { angularDistance, vec3ToLatLon } from '../lib/geo';
-import { footprintDegrees } from '../lib/eventDots';
-import { useGlobeStore } from '../store';
+import { footprintFor } from '../lib/eventDots';
+import { dotLevel, useGlobeStore } from '../store';
 
 /** The framing the pick radius is tuned at; closer in, it tightens with the view. */
 const DEFAULT_DISTANCE = 4.3;
@@ -20,7 +20,7 @@ function storyAt(e: ThreeEvent<PointerEvent | MouseEvent>, events: NewsEvent[]):
   let bestScore = Infinity;
   for (const event of events) {
     const distance = angularDistance(lat, lon, event.lat, event.lon);
-    const reach = footprintDegrees(event.severity) + 1.5 * zoom;
+    const reach = footprintFor(event.severity, dotLevel.width) + 1.5 * zoom;
     if (distance > reach) continue;
     // nearest edge wins, so a big story doesn't swallow a small neighbour
     const score = distance / reach;

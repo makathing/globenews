@@ -1,10 +1,15 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 import { GLOBE_RADIUS } from '../lib/geo';
-import { DOT_GRID, buildEventDots } from '../lib/eventDots';
-import { prefersReducedMotion, useTheme, useVisibleEvents } from '../store';
+import {
+  DOT_LEVELS,
+  buildEventDots,
+  continuousDotLevel,
+  pickDotLevel,
+} from '../lib/eventDots';
+import { dotLevel, prefersReducedMotion, useTheme, useVisibleEvents } from '../store';
 import { useEventPicking } from './eventPicking';
 
 /** Fixed sun direction: keeps a soft terminator and a lit limb in view. */
@@ -31,9 +36,14 @@ const vertexShader = /* glsl */ `
 */
 const fragmentShader = /* glsl */ `
   uniform sampler2D waterMap;
-  uniform sampler2D eventColor;   // rgb category colour, a weight
-  uniform sampler2D eventPulse;   // r pulses?, g phase
-  uniform vec2 uGrid;
+  // two dot grids (coarse A, fine B) crossfaded by uLevelMix while zooming
+  uniform sampler2D eventColorA;  // rgb category colour, a weight
+  uniform sampler2D eventPulseA;  // r pulses?, g phase
+  uniform sampler2D eventColorB;
+  uniform sampler2D eventPulseB;
+  uniform vec2 uGridA;
+  uniform vec2 uGridB;
+  uniform float uLevelMix;
   uniform float uTime;
   uniform vec3 sunDir;
   uniform vec3 uOcean;
@@ -45,18 +55,10 @@ const fragmentShader = /* glsl */ `
   varying vec3 vNormal;
   varying vec3 vWorldPos;
 
-  void main() {
-    vec3 normal = normalize(vNormal);
-    vec3 viewDir = normalize(cameraPosition - vWorldPos);
-    float facing = max(dot(normal, viewDir), 0.0);
-    // soft key light so the sphere keeps its volume
-    float shade = 0.72 + 0.28 * clamp(dot(normal, sunDir) * 0.5 + 0.5, 0.0, 1.0);
-
-    // ocean: brighter facing the viewer, deepening toward the limb
-    vec3 color = mix(uLimb, uOcean, smoothstep(0.0, 0.9, facing));
-
-    vec2 grid = vUv * uGrid;
-    vec2 cellUv = (floor(grid) + 0.5) / uGrid;
+  // the halftone layer for one grid: rgb = dot colour, a = dot coverage
+  vec4 dotLayer(sampler2D eventColor, sampler2D eventPulse, vec2 gridSize, float land, float shade) {
+    vec2 grid = vUv * gridSize;
+    vec2 cellUv = (floor(grid) + 0.5) / gridSize;
     vec2 cell = fract(grid) - 0.5;
 
     // every dot reads its story at its own centre, so it shows one flat colour
@@ -66,7 +68,6 @@ const fragmentShader = /* glsl */ `
     float pulse = 1.0 + pl.r * 0.12 * sin(uTime * 2.2 + pl.g * 6.2832);
     float strength = clamp((0.35 + 0.55 * ev.a) * pulse, 0.0, 1.0) * lit;
 
-    float land = 1.0 - texture2D(waterMap, vUv).r;
     // shrink dots toward the coast so edges feather instead of clipping;
     // a story offshore lights its dots over the sea as well
     float density = max(smoothstep(0.25, 0.75, land), lit);
@@ -74,8 +75,27 @@ const fragmentShader = /* glsl */ `
     float radial = length(cell) / (1.0 + 0.1 * ev.a * lit);
     float dotMask = smoothstep(0.42, 0.16, radial) * density;
 
-    vec3 dotColor = mix(uDot * shade, ev.rgb, strength);
-    color = mix(color, dotColor, dotMask);
+    return vec4(mix(uDot * shade, ev.rgb, strength), dotMask);
+  }
+
+  void main() {
+    vec3 normal = normalize(vNormal);
+    vec3 viewDir = normalize(cameraPosition - vWorldPos);
+    float facing = max(dot(normal, viewDir), 0.0);
+    // soft key light so the sphere keeps its volume
+    float shade = 0.72 + 0.28 * clamp(dot(normal, sunDir) * 0.5 + 0.5, 0.0, 1.0);
+
+    // ocean: brighter facing the viewer, deepening toward the limb
+    vec3 ocean = mix(uLimb, uOcean, smoothstep(0.0, 0.9, facing));
+
+    float land = 1.0 - texture2D(waterMap, vUv).r;
+    vec4 dotsA = dotLayer(eventColorA, eventPulseA, uGridA, land, shade);
+    vec3 color = mix(ocean, dotsA.rgb, dotsA.a);
+    // uniform branch: only mid-crossfade pays for the second grid
+    if (uLevelMix > 0.0) {
+      vec4 dotsB = dotLayer(eventColorB, eventPulseB, uGridB, land, shade);
+      color = mix(color, mix(ocean, dotsB.rgb, dotsB.a), uLevelMix);
+    }
 
     // subtle inner rim, brightest on the sunlit limb
     float fresnel = pow(1.0 - facing, 3.0);
@@ -85,6 +105,9 @@ const fragmentShader = /* glsl */ `
     gl_FragColor = vec4(color, 1.0);
   }
 `;
+
+/** How long a crossfade between two dot grids takes, in seconds. */
+const LEVEL_FADE_SECONDS = 0.25;
 
 export function Earth() {
   const theme = useTheme();
@@ -100,9 +123,13 @@ export function Earth() {
       fragmentShader,
       uniforms: {
         waterMap: { value: waterMap },
-        eventColor: { value: null },
-        eventPulse: { value: null },
-        uGrid: { value: new THREE.Vector2(DOT_GRID.width, DOT_GRID.height) },
+        eventColorA: { value: null },
+        eventPulseA: { value: null },
+        eventColorB: { value: null },
+        eventPulseB: { value: null },
+        uGridA: { value: new THREE.Vector2(DOT_LEVELS[0], DOT_LEVELS[0] / 2) },
+        uGridB: { value: new THREE.Vector2(DOT_LEVELS[0], DOT_LEVELS[0] / 2) },
+        uLevelMix: { value: 0 },
         uTime: { value: 0 },
         sunDir: { value: SUN_DIRECTION.clone() },
         uOcean: { value: new THREE.Color() },
@@ -114,16 +141,26 @@ export function Earth() {
     });
   }, [waterMap]);
 
-  const dots = useMemo(() => buildEventDots(events, theme.light), [events, theme.light]);
+  // one set of story textures per zoom level (~70 stories: cheap to build)
+  const levels = useMemo(
+    () => DOT_LEVELS.map((width) => buildEventDots(events, theme.light, width)),
+    [events, theme.light],
+  );
 
-  useEffect(() => {
-    material.uniforms.eventColor.value = dots.color;
-    material.uniforms.eventPulse.value = dots.pulse;
-    return () => {
-      dots.color.dispose();
-      dots.pulse.dispose();
-    };
-  }, [material, dots]);
+  useEffect(
+    () => () => {
+      for (const dots of levels) {
+        dots.color.dispose();
+        dots.pulse.dispose();
+      }
+    },
+    [levels],
+  );
+
+  // the grid being faded from and to (indices into DOT_LEVELS) and how far
+  // along the fade is; from === to (and progress 1) when settled on one grid.
+  // null until the first frame snaps it to the opening framing.
+  const fade = useRef<{ from: number; to: number; progress: number } | null>(null);
 
   useEffect(() => {
     const u = material.uniforms;
@@ -134,8 +171,45 @@ export function Earth() {
     u.uRimStrength.value = theme.light ? 0.1 : 0.16;
   }, [material, theme]);
 
-  useFrame(({ clock }) => {
-    if (!prefersReducedMotion) material.uniforms.uTime.value = clock.elapsedTime;
+  useFrame(({ clock, camera, size }, delta) => {
+    const u = material.uniforms;
+    if (!prefersReducedMotion) u.uTime.value = clock.elapsedTime;
+
+    // Dot density follows zoom: the globe's projected radius in CSS pixels
+    // decides the finest grid whose cells still read as crisp, separate dots;
+    // a change of grid crossfades over a quarter second, then settles on one.
+    const distance = Math.max(camera.position.length(), GLOBE_RADIUS * 1.0001);
+    const fov = (camera as THREE.PerspectiveCamera).fov ?? 45;
+    const focal = size.height / 2 / Math.tan((fov * Math.PI) / 360);
+    const radiusPx = (focal * GLOBE_RADIUS) / Math.sqrt(distance * distance - GLOBE_RADIUS * GLOBE_RADIUS);
+    const level = continuousDotLevel(radiusPx);
+    let f = fade.current;
+    if (!f) f = fade.current = { from: 0, to: pickDotLevel(level, 0), progress: 1 };
+    f.from = f.progress >= 1 ? f.to : f.from;
+    const next = pickDotLevel(level, f.to);
+    if (next !== f.to) {
+      // mid-fade, keep whichever grid is showing more so nothing jumps
+      if (f.progress < 1 && f.progress >= 0.5) f.from = f.to;
+      f.to = next;
+      f.progress = f.from === next ? 1 : 0;
+    }
+    if (f.progress < 1) {
+      f.progress = prefersReducedMotion ? 1 : Math.min(1, f.progress + delta / LEVEL_FADE_SECONDS);
+    }
+    const t = f.progress;
+    const mix = t >= 1 ? 0 : t * t * (3 - 2 * t);
+    const a = t >= 1 ? f.to : f.from;
+    const b = f.to;
+
+    u.eventColorA.value = levels[a].color;
+    u.eventPulseA.value = levels[a].pulse;
+    u.eventColorB.value = levels[b].color;
+    u.eventPulseB.value = levels[b].pulse;
+    (u.uGridA.value as THREE.Vector2).set(DOT_LEVELS[a], DOT_LEVELS[a] / 2);
+    (u.uGridB.value as THREE.Vector2).set(DOT_LEVELS[b], DOT_LEVELS[b] / 2);
+    u.uLevelMix.value = mix;
+    // picking follows the finer of the two grids on screen
+    dotLevel.width = DOT_LEVELS[Math.max(a, b)];
   });
 
   // The planet mesh stays fixed (the dot grid is registered to lat/lon);

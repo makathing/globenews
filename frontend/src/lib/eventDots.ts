@@ -5,9 +5,28 @@ import { categoryPalette } from './categoryColors';
 /** The halftone grid: dots per row and rows, pole to pole. */
 export const DOT_GRID = { width: 420, height: 210 } as const;
 
+/**
+ * Dots per row at each zoom level, coarsest first (rows = width / 2). The
+ * whole-globe view uses the first; zooming in crossfades to finer grids so a
+ * dot keeps roughly the same size on screen.
+ */
+export const DOT_LEVELS = [420, 560, 720, 960] as const;
+
 /** Angular radius, in degrees, of the patch of dots a story lights up. */
 export function footprintDegrees(severity: number): number {
   return 0.5 + 0.22 * severity;
+}
+
+/**
+ * A story's footprint on a grid `width` dots wide. The base grid keeps the
+ * approved footprint exactly; finer grids never go below ~1.6 cells, so even a
+ * small story lights its centre dot and the ring around it.
+ */
+export function footprintFor(severity: number, width: number = DOT_GRID.width): number {
+  const base = footprintDegrees(severity);
+  if (width <= DOT_GRID.width) return base;
+  const cellDegrees = 180 / (width / 2);
+  return Math.max(base, 1.6 * cellDegrees);
 }
 
 export interface EventDotTextures {
@@ -22,8 +41,13 @@ function hexToRgb(hex: string): [number, number, number] {
   return [(value >> 16) & 255, (value >> 8) & 255, value & 255];
 }
 
-function dataTexture(data: Uint8Array<ArrayBuffer>, colorSpace: THREE.ColorSpace): THREE.DataTexture {
-  const texture = new THREE.DataTexture(data, DOT_GRID.width, DOT_GRID.height, THREE.RGBAFormat);
+function dataTexture(
+  data: Uint8Array<ArrayBuffer>,
+  width: number,
+  height: number,
+  colorSpace: THREE.ColorSpace,
+): THREE.DataTexture {
+  const texture = new THREE.DataTexture(data, width, height, THREE.RGBAFormat);
   // one texel per dot, read at the dot's centre: no filtering, no wrap blur
   texture.magFilter = THREE.NearestFilter;
   texture.minFilter = THREE.NearestFilter;
@@ -53,9 +77,15 @@ function dotHash(row: number, col: number): number {
  * still shows one clean colour, but which story it takes is a stable dither:
  * the dot picks among (up to three) covering stories with probability
  * proportional to their weight there, so co-located stories all stay visible.
+ * `width` picks the grid (one of DOT_LEVELS; rows = width / 2).
  */
-export function buildEventDots(events: NewsEvent[], light: boolean): EventDotTextures {
-  const { width: W, height: H } = DOT_GRID;
+export function buildEventDots(
+  events: NewsEvent[],
+  light: boolean,
+  width: number = DOT_GRID.width,
+): EventDotTextures {
+  const W = width;
+  const H = width / 2;
   const color = new Uint8Array(W * H * 4);
   const pulse = new Uint8Array(W * H * 4);
   const palette = categoryPalette(light);
@@ -66,7 +96,7 @@ export function buildEventDots(events: NewsEvent[], light: boolean): EventDotTex
   const candidateWeight = new Uint8Array(W * H * MAX_CANDIDATES);
 
   events.forEach((event, index) => {
-    const radius = footprintDegrees(event.severity);
+    const radius = footprintFor(event.severity, W);
     const sinLat = Math.sin(event.lat * deg);
     const cosLat = Math.cos(event.lat * deg);
     const rowFrom = Math.max(0, Math.floor(((event.lat - radius + 90) / 180) * H));
@@ -128,7 +158,51 @@ export function buildEventDots(events: NewsEvent[], light: boolean): EventDotTex
 
   // the palette is sRGB hex; the pulse channels are plain numbers
   return {
-    color: dataTexture(color, THREE.SRGBColorSpace),
-    pulse: dataTexture(pulse, THREE.NoColorSpace),
+    color: dataTexture(color, W, H, THREE.SRGBColorSpace),
+    pulse: dataTexture(pulse, W, H, THREE.NoColorSpace),
   };
+}
+
+/**
+ * Smallest on-screen size, in CSS pixels, a grid cell may have before the
+ * globe steps to a coarser grid. Calibrated so the default framings (desktop
+ * at distance 4.3: ~3.9 px cells at 420; phone at 5.59: ~2.8 px) stay on the
+ * approved 420 grid, and finer grids arrive only once zooming has made room
+ * for them. With a device pixel ratio >= 1 this keeps every cell well above
+ * 2.5 device pixels, crossfades included.
+ */
+export const MIN_CELL_CSS_PX = 3.4;
+
+/** How far (in levels) zoom must fall back below a grid before leaving it. */
+const LEVEL_HYSTERESIS = 0.15;
+
+/**
+ * The continuous dot level for a globe drawn `radiusPx` CSS pixels in radius:
+ * 0 = DOT_LEVELS[0], 3 = DOT_LEVELS[3], fractions are log-spaced in between.
+ * An integer part i means grid i is the finest whose cells are at least
+ * MIN_CELL_CSS_PX on screen (near the middle of the disc); never below 0.
+ */
+export function continuousDotLevel(radiusPx: number): number {
+  // the grid width whose cells would be exactly MIN_CELL_CSS_PX tall
+  const ideal = (2 * Math.PI * radiusPx) / MIN_CELL_CSS_PX;
+  const last = DOT_LEVELS.length - 1;
+  if (ideal <= DOT_LEVELS[0]) return 0;
+  if (ideal >= DOT_LEVELS[last]) return last;
+  let i = 0;
+  while (ideal >= DOT_LEVELS[i + 1]) i++;
+  return i + Math.log(ideal / DOT_LEVELS[i]) / Math.log(DOT_LEVELS[i + 1] / DOT_LEVELS[i]);
+}
+
+/**
+ * The grid to draw (an index into DOT_LEVELS) for a continuous level, given
+ * the one drawn now. Steps up as soon as the finer grid's cells are big
+ * enough; steps down only once the level is LEVEL_HYSTERESIS below the
+ * current grid, so a zoom resting near a boundary never flickers between two.
+ */
+export function pickDotLevel(level: number, current: number): number {
+  const last = DOT_LEVELS.length - 1;
+  const up = Math.min(Math.floor(level), last);
+  if (up > current) return up;
+  if (level < current - LEVEL_HYSTERESIS) return Math.max(0, Math.min(Math.floor(level + LEVEL_HYSTERESIS), last));
+  return current;
 }

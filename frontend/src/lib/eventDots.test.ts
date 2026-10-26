@@ -1,6 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import type { NewsEvent } from '../../../shared/news';
-import { buildEventDots, DOT_GRID, footprintDegrees } from './eventDots';
+import {
+  buildEventDots,
+  continuousDotLevel,
+  DOT_GRID,
+  DOT_LEVELS,
+  footprintDegrees,
+  footprintFor,
+  pickDotLevel,
+} from './eventDots';
 import { categoryPalette } from './categoryColors';
 
 function story(id: string, overrides: Partial<NewsEvent>): NewsEvent {
@@ -117,5 +125,53 @@ describe('buildEventDots', () => {
     const second = buildEventDots(events, true);
     expect(firstDifference(bytes(first.color), bytes(second.color))).toBe(-1);
     expect(firstDifference(bytes(first.pulse), bytes(second.pulse))).toBe(-1);
+  });
+});
+
+describe('dot levels', () => {
+  it('keeps the approved footprint on the base grid and widens it on fine grids', () => {
+    for (let severity = 1; severity <= 5; severity++) {
+      expect(footprintFor(severity, 420)).toBe(footprintDegrees(severity));
+      expect(footprintFor(severity, 960)).toBeGreaterThanOrEqual(1.6 * (180 / 480));
+    }
+    expect(buildEventDots([story('x', {})], false, 960).color.image.width).toBe(960);
+  });
+
+  it('lights a centre dot and its neighbours for a small story on the finest grid', () => {
+    const built = buildEventDots([story('small', { severity: 1 })], false, DOT_LEVELS[DOT_LEVELS.length - 1]);
+    const color = bytes(built.color);
+    let lit = 0;
+    for (let i = 3; i < color.length; i += 4) if (color[i] > 0) lit++;
+    expect(lit).toBeGreaterThanOrEqual(5);
+  });
+
+  // projected globe radius in CSS px: (h/2)/tan(fov/2) * R/sqrt(d^2 - R^2)
+  const radiusPx = (viewportHeight: number, distance: number) =>
+    (viewportHeight / 2 / Math.tan((45 * Math.PI) / 360)) / Math.sqrt(distance * distance - 1);
+
+  it('stays on the base grid at the default framings', () => {
+    expect(continuousDotLevel(radiusPx(900, 4.3))).toBeLessThan(0.5);
+    expect(continuousDotLevel(radiusPx(844, 5.59))).toBe(0);
+    expect(pickDotLevel(continuousDotLevel(radiusPx(900, 4.3)), 0)).toBe(0);
+    expect(continuousDotLevel(radiusPx(900, 8))).toBe(0);
+  });
+
+  it('reaches the finest grid at the closest zoom and moves monotonically', () => {
+    expect(pickDotLevel(continuousDotLevel(radiusPx(900, 1.75)), 0)).toBe(DOT_LEVELS.length - 1);
+    let previous = -1;
+    for (let d = 8; d >= 1.75; d -= 0.01) {
+      const level = continuousDotLevel(radiusPx(900, d));
+      expect(level).toBeGreaterThanOrEqual(previous);
+      previous = level;
+    }
+  });
+
+  it('steps between grids with hysteresis', () => {
+    expect(pickDotLevel(0.99, 0)).toBe(0);
+    expect(pickDotLevel(1.0, 0)).toBe(1);
+    expect(pickDotLevel(0.9, 1)).toBe(1); // resting just below the boundary keeps the finer grid
+    expect(pickDotLevel(0.8, 1)).toBe(0);
+    expect(pickDotLevel(0.2, 3)).toBe(0);
+    expect(pickDotLevel(2.95, 3)).toBe(3);
   });
 });

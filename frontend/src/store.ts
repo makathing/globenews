@@ -106,6 +106,15 @@ export const cameraMotion = {
   speed: 0,
 };
 
+/**
+ * The dot grid the globe is drawing right now (the finer one while two are
+ * crossfading), as dots per row. Written by the earth every frame, read by
+ * picking so a story's hover reach matches the dots it lights. Not reactive.
+ */
+export const dotLevel = {
+  width: 420,
+};
+
 export const prefersReducedMotion =
   typeof window !== 'undefined' &&
   window.matchMedia?.('(prefers-reduced-motion: reduce)').matches === true;
