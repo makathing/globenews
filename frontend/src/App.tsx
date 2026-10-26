@@ -6,12 +6,10 @@ import { Tooltip } from './ui/Tooltip';
 import { Updated } from './ui/Updated';
 import { useGlobeStore } from './store';
 import { useUrlSync } from './lib/urlState';
-import { BUNDLED_DATASET, fetchLatestDataset } from './lib/dataset';
+import { BUNDLED_DATASET, useLiveDataset } from './lib/dataset';
 
 /** Matches the rail's drawer breakpoint in styles.css. */
 const DRAWER_QUERY = '(max-width: 900px)';
-/** How often an open tab looks for a newer batch. */
-const REFRESH_MS = 15 * 60 * 1000;
 
 export function App() {
   const setDataset = useGlobeStore((s) => s.setDataset);
@@ -33,29 +31,9 @@ export function App() {
   }, [selectedId]);
 
   // A radar left open all afternoon should not still be showing this
-  // morning's batch. Look for a newer one when the tab comes back to the
-  // front, and every quarter hour it stays there; adopt it only if the run
-  // is genuinely newer than what is on screen.
-  useEffect(() => {
-    let cancelled = false;
-    const check = async () => {
-      if (document.visibilityState !== 'visible') return;
-      const latest = await fetchLatestDataset(import.meta.env.BASE_URL);
-      if (cancelled || !latest) return;
-      const current = useGlobeStore.getState().dataset;
-      if (!current || Date.parse(latest.generatedAt) > Date.parse(current.generatedAt)) {
-        setDataset(latest);
-      }
-    };
-    const timer = setInterval(check, REFRESH_MS);
-    document.addEventListener('visibilitychange', check);
-    check();
-    return () => {
-      cancelled = true;
-      clearInterval(timer);
-      document.removeEventListener('visibilitychange', check);
-    };
-  }, [setDataset]);
+  // morning's batch: revalidate while visible and adopt only newer runs.
+  // The whole update protocol is documented in lib/dataset.ts.
+  useLiveDataset();
 
   return (
     <div className={`app ${railOpen ? 'rail-open' : ''}`}>

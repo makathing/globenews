@@ -32,7 +32,13 @@ function storyAt(e: ThreeEvent<PointerEvent | MouseEvent>, events: NewsEvent[]):
   return best;
 }
 
-/** Pointer handlers for the earth mesh: hover shows the tooltip, a click (not a drag) selects. */
+/**
+ * Pointer handlers for the earth mesh: hover shows the tooltip, a click (not a drag) selects.
+ * `events` is always the current visible set. While a dataset update is
+ * crossfading, the outgoing stories' dots are still fading out on screen,
+ * but they are deliberately not pickable: picking runs against the new
+ * events only, so nothing can select a story that has just expired.
+ */
 export function useEventPicking(events: NewsEvent[]) {
   const setHovered = useGlobeStore((s) => s.setHovered);
   const select = useGlobeStore((s) => s.select);

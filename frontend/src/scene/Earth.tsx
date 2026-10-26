@@ -8,8 +8,9 @@ import {
   buildEventDots,
   continuousDotLevel,
   pickDotLevel,
+  type EventDotTextures,
 } from '../lib/eventDots';
-import { dotLevel, prefersReducedMotion, useTheme, useVisibleEvents } from '../store';
+import { dotLevel, prefersReducedMotion, useGlobeStore, useTheme, useVisibleEvents } from '../store';
 import { useEventPicking } from './eventPicking';
 
 /** Fixed sun direction: keeps a soft terminator and a lit limb in view. */
@@ -36,15 +37,19 @@ const vertexShader = /* glsl */ `
 */
 const fragmentShader = /* glsl */ `
   uniform sampler2D waterMap;
-  // two dot grids (coarse A, fine B) crossfaded by uLevelMix while zooming
+  // two dot layers crossfaded by uLevelMix: while zooming, coarse grid A and
+  // fine grid B; while a new dataset arrives, the old textures (A) and the
+  // new ones (B) on the same grid
   uniform sampler2D eventColorA;  // rgb category colour, a weight
-  uniform sampler2D eventPulseA;  // r pulses?, g phase
+  uniform sampler2D eventPulseA;  // r pulses?, g phase, b arrival
   uniform sampler2D eventColorB;
   uniform sampler2D eventPulseB;
   uniform vec2 uGridA;
   uniform vec2 uGridB;
   uniform float uLevelMix;
   uniform float uTime;
+  uniform float uArrivalStart;  // uTime when the arrival cue began
+  uniform vec3 uFlash;          // what an arrival pulse brightens toward
   uniform vec3 sunDir;
   uniform vec3 uOcean;
   uniform vec3 uLimb;
@@ -75,7 +80,15 @@ const fragmentShader = /* glsl */ `
     float radial = length(cell) / (1.0 + 0.1 * ev.a * lit);
     float dotMask = smoothstep(0.42, 0.16, radial) * density;
 
-    return vec4(mix(uDot * shade, ev.rgb, strength), dotMask);
+    // arrival cue: three soft brightness swells over four seconds, then
+    // nothing; colour only, never size, so neighbours keep their gap
+    float since = uTime - uArrivalStart;
+    float cue = pl.b * lit * step(0.0, since) * step(since, 4.0)
+      * 0.5 * (1.0 - cos(since * 4.712389)); // 3 cycles in 4 s
+    vec3 dotColor = mix(uDot * shade, ev.rgb, max(strength, cue * lit));
+    dotColor = mix(dotColor, uFlash, 0.38 * cue);
+
+    return vec4(dotColor, dotMask);
   }
 
   void main() {
@@ -108,6 +121,34 @@ const fragmentShader = /* glsl */ `
 
 /** How long a crossfade between two dot grids takes, in seconds. */
 const LEVEL_FADE_SECONDS = 0.25;
+/** How long the globe takes to crossfade to a newly arrived dataset. */
+const DATA_FADE_SECONDS = 1.2;
+
+type DotLevels = EventDotTextures[];
+
+function disposeLevels(levels: DotLevels | null) {
+  for (const dots of levels ?? []) {
+    dots.color.dispose();
+    dots.pulse.dispose();
+  }
+}
+
+/**
+ * The texture sets on screen. `current` is the set built from the visible
+ * events; `old` is the set a dataset update is fading away from (null when
+ * no data fade is running), disposed once the fade completes.
+ */
+interface ShownDots {
+  current: DotLevels | null;
+  old: DotLevels | null;
+  /** 0 → 1 over DATA_FADE_SECONDS while `old` is set. */
+  progress: number;
+  /** What `current` was built from, to tell a dataset update from a filter toggle. */
+  dataset: unknown;
+  light: boolean;
+  /** Set when a new arrival cue should start on the next frame. */
+  cuePending: boolean;
+}
 
 export function Earth() {
   const theme = useTheme();
@@ -131,6 +172,9 @@ export function Earth() {
         uGridB: { value: new THREE.Vector2(DOT_LEVELS[0], DOT_LEVELS[0] / 2) },
         uLevelMix: { value: 0 },
         uTime: { value: 0 },
+        // far in the past: no cue until a dataset says so
+        uArrivalStart: { value: -1e4 },
+        uFlash: { value: new THREE.Color(1, 1, 1) },
         sunDir: { value: SUN_DIRECTION.clone() },
         uOcean: { value: new THREE.Color() },
         uLimb: { value: new THREE.Color() },
@@ -141,20 +185,63 @@ export function Earth() {
     });
   }, [waterMap]);
 
+  const dataset = useGlobeStore((s) => s.dataset);
+  const arrivals = useGlobeStore((s) => s.arrivals);
+
   // one set of story textures per zoom level (~70 stories: cheap to build)
   const levels = useMemo(
-    () => DOT_LEVELS.map((width) => buildEventDots(events, theme.light, width)),
-    [events, theme.light],
+    () => DOT_LEVELS.map((width) => buildEventDots(events, theme.light, width, { arrivals })),
+    [events, theme.light, arrivals],
   );
 
+  const shown = useRef<ShownDots>({
+    current: null,
+    old: null,
+    progress: 1,
+    dataset: null,
+    light: theme.light,
+    cuePending: false,
+  });
+
+  // Swap texture sets. A new dataset crossfades (unchanged stories' texels are
+  // byte-identical, so only real changes move); a category toggle or theme
+  // change swaps at once — those are direct actions and should feel instant,
+  // and a theme change repaints the whole globe anyway.
+  useEffect(() => {
+    const s = shown.current;
+    const previous = s.current;
+    if (previous === levels) return;
+    const datasetUpdate = previous !== null && s.dataset !== null && dataset !== s.dataset;
+    if (datasetUpdate && s.light === theme.light && !prefersReducedMotion) {
+      // a second update mid-fade (rare: runs are minutes apart) restarts from the newer set
+      disposeLevels(s.old);
+      s.old = previous;
+      s.progress = 0;
+    } else {
+      // instant swap; one landing mid-fade also ends that fade
+      disposeLevels(previous);
+      disposeLevels(s.old);
+      s.old = null;
+      s.progress = 1;
+    }
+    if (dataset !== s.dataset && arrivals.size > 0 && !prefersReducedMotion) s.cuePending = true;
+    s.current = levels;
+    s.dataset = dataset;
+    s.light = theme.light;
+  }, [levels, dataset, arrivals, theme.light]);
+
+  // unmount (and StrictMode's rehearsal of it): free whatever is still held
   useEffect(
     () => () => {
-      for (const dots of levels) {
-        dots.color.dispose();
-        dots.pulse.dispose();
-      }
+      const s = shown.current;
+      disposeLevels(s.current);
+      disposeLevels(s.old);
+      s.current = null;
+      s.old = null;
+      s.progress = 1;
+      s.dataset = null;
     },
-    [levels],
+    [],
   );
 
   // the grid being faded from and to (indices into DOT_LEVELS) and how far
@@ -169,6 +256,8 @@ export function Earth() {
     (u.uDot.value as THREE.Color).set(theme.dot);
     (u.uRim.value as THREE.Color).set(theme.rim);
     u.uRimStrength.value = theme.light ? 0.1 : 0.16;
+    // dark themes brighten toward white; on a light globe, toward a deeper ink
+    (u.uFlash.value as THREE.Color).set(theme.light ? '#1d2433' : '#ffffff');
   }, [material, theme]);
 
   useFrame(({ clock, camera, size }, delta) => {
@@ -196,15 +285,38 @@ export function Earth() {
     if (f.progress < 1) {
       f.progress = prefersReducedMotion ? 1 : Math.min(1, f.progress + delta / LEVEL_FADE_SECONDS);
     }
-    const t = f.progress;
+
+    // A dataset update fades old → new on the current grid. The two fades
+    // share the shader's A/B slots, so while data fades the level fade snaps.
+    const s = shown.current;
+    const current = s.current ?? levels;
+    if (s.cuePending) {
+      u.uArrivalStart.value = clock.elapsedTime;
+      s.cuePending = false;
+    }
+    let oldSet: DotLevels | null = null;
+    if (s.old) {
+      s.progress = Math.min(1, s.progress + delta / DATA_FADE_SECONDS);
+      if (s.progress >= 1) {
+        disposeLevels(s.old);
+        s.old = null;
+      } else {
+        oldSet = s.old;
+        f.from = f.to;
+        f.progress = 1;
+      }
+    }
+
+    const t = oldSet ? s.progress : f.progress;
     const mix = t >= 1 ? 0 : t * t * (3 - 2 * t);
     const a = t >= 1 ? f.to : f.from;
     const b = f.to;
+    const setA = oldSet ?? current;
 
-    u.eventColorA.value = levels[a].color;
-    u.eventPulseA.value = levels[a].pulse;
-    u.eventColorB.value = levels[b].color;
-    u.eventPulseB.value = levels[b].pulse;
+    u.eventColorA.value = setA[a].color;
+    u.eventPulseA.value = setA[a].pulse;
+    u.eventColorB.value = current[b].color;
+    u.eventPulseB.value = current[b].pulse;
     (u.uGridA.value as THREE.Vector2).set(DOT_LEVELS[a], DOT_LEVELS[a] / 2);
     (u.uGridB.value as THREE.Vector2).set(DOT_LEVELS[b], DOT_LEVELS[b] / 2);
     u.uLevelMix.value = mix;

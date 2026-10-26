@@ -32,8 +32,37 @@ export function footprintFor(severity: number, width: number = DOT_GRID.width): 
 export interface EventDotTextures {
   /** rgb = category colour, a = how strongly that dot takes it (0 = untouched). */
   color: THREE.DataTexture;
-  /** r = 1 when the story pulses (severity 4-5), g = its pulse phase. */
+  /**
+   * r = 1 when the story pulses (severity 4-5), g = its pulse phase (a hash
+   * of its id), b = 1 while it is a fresh arrival (see BuildOptions.arrivals).
+   */
   pulse: THREE.DataTexture;
+}
+
+export interface BuildOptions {
+  /** Story ids whose dots carry the arrival flag (pulse texture b channel). */
+  arrivals?: ReadonlySet<string>;
+}
+
+/**
+ * A stable 32-bit hash of a story id (FNV-1a, then an avalanche), so
+ * everything a story's dots look like depends on the story alone — never on
+ * where it happens to sit in the dataset's array.
+ */
+export function idHash(id: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < id.length; i++) {
+    h ^= id.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  h = Math.imul(h ^ (h >>> 16), 0x85ebca6b);
+  h = Math.imul(h ^ (h >>> 13), 0xc2b2ae35);
+  return (h ^ (h >>> 16)) >>> 0;
+}
+
+/** A story's pulse phase as a texture byte (0-255 = one full cycle). */
+export function pulsePhaseByte(id: string): number {
+  return idHash(id) >>> 24;
 }
 
 function hexToRgb(hex: string): [number, number, number] {
@@ -78,12 +107,24 @@ function dotHash(row: number, col: number): number {
  * the dot picks among (up to three) covering stories with probability
  * proportional to their weight there, so co-located stories all stay visible.
  * `width` picks the grid (one of DOT_LEVELS; rows = width / 2).
+ *
+ * Stable across dataset updates: stories are laid down in a fixed order keyed
+ * by a hash of their id, and each dot ranks its candidates the same way, so a
+ * dot's colour depends only on the set of stories covering it. Adding,
+ * removing or reordering stories elsewhere leaves it byte-identical, which is
+ * what lets a live update crossfade only the dots that actually changed.
  */
 export function buildEventDots(
-  events: NewsEvent[],
+  events: readonly NewsEvent[],
   light: boolean,
   width: number = DOT_GRID.width,
+  options: BuildOptions = {},
 ): EventDotTextures {
+  // the canonical order: by id hash, ties (practically never) by id
+  const keyed = events.map((event) => ({ event, key: idHash(event.id) }));
+  keyed.sort((a, b) => a.key - b.key || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
+  const ordered = keyed.map((k) => k.event);
+  const arrivals = options.arrivals;
   const W = width;
   const H = width / 2;
   const color = new Uint8Array(W * H * 4);
@@ -91,11 +132,11 @@ export function buildEventDots(
   const palette = categoryPalette(light);
   const deg = Math.PI / 180;
 
-  // per-texel candidates: story index + 1 (0 = empty slot) and weight there
+  // per-texel candidates: canonical story index + 1 (0 = empty slot) and weight there
   const candidate = new Uint16Array(W * H * MAX_CANDIDATES);
   const candidateWeight = new Uint8Array(W * H * MAX_CANDIDATES);
 
-  events.forEach((event, index) => {
+  ordered.forEach((event, index) => {
     const radius = footprintFor(event.severity, W);
     const sinLat = Math.sin(event.lat * deg);
     const cosLat = Math.cos(event.lat * deg);
@@ -129,12 +170,25 @@ export function buildEventDots(
     }
   });
 
-  const rgb = events.map((event) => hexToRgb(palette[event.category]));
+  const rgb = ordered.map((event) => hexToRgb(palette[event.category]));
+  const phase = ordered.map((event) => pulsePhaseByte(event.id));
   for (let t = 0; t < W * H; t++) {
     const base = t * MAX_CANDIDATES;
     if (candidate[base] === 0) continue;
     let pick = base;
     if (candidate[base + 1] !== 0) {
+      // rank the dot's candidates canonically (slot order is an artefact of
+      // which weaker story got replaced), so the dither walk is order-free
+      for (let k = 1; k < MAX_CANDIDATES && candidate[base + k] !== 0; k++) {
+        for (let j = k; j > 0 && candidate[base + j - 1] > candidate[base + j]; j--) {
+          const c = candidate[base + j];
+          candidate[base + j] = candidate[base + j - 1];
+          candidate[base + j - 1] = c;
+          const w = candidateWeight[base + j];
+          candidateWeight[base + j] = candidateWeight[base + j - 1];
+          candidateWeight[base + j - 1] = w;
+        }
+      }
       let total = 0;
       for (let k = 0; k < MAX_CANDIDATES && candidate[base + k] !== 0; k++) total += candidateWeight[base + k];
       let target = dotHash(Math.floor(t / W), t % W) * total;
@@ -145,7 +199,7 @@ export function buildEventDots(
       }
     }
     const index = candidate[pick] - 1;
-    const event = events[index];
+    const event = ordered[index];
     const [r, g, b] = rgb[index];
     const i = t * 4;
     color[i] = r;
@@ -153,7 +207,8 @@ export function buildEventDots(
     color[i + 2] = b;
     color[i + 3] = candidateWeight[pick];
     pulse[i] = event.severity >= 4 ? 255 : 0;
-    pulse[i + 1] = Math.round(((index * 1.7) % (Math.PI * 2)) / (Math.PI * 2) * 255);
+    pulse[i + 1] = phase[index];
+    if (arrivals?.has(event.id)) pulse[i + 2] = 255;
   }
 
   // the palette is sRGB hex; the pulse channels are plain numbers

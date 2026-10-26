@@ -28,6 +28,17 @@ interface GlobeStore {
   selectedId: string | null;
   /** Set when a selection came from the globe, so the rail can scroll to it. */
   scrollToId: string | null;
+  /**
+   * Stories whose dots play the arrival cue, recomputed by every setDataset:
+   * ids new since the previous dataset (a live update), plus breaking stories
+   * that are new or were just re-reported (on first load: every breaking one).
+   */
+  arrivals: ReadonlySet<string>;
+  /**
+   * Adopt a dataset. Also keeps the UI consistent with it: a selection or
+   * hover whose story has expired is cleared (a re-reported story keeps its
+   * id, so it stays selected and simply shows the fresh text).
+   */
   setDataset: (dataset: NewsDataset) => void;
   setTheme: (theme: ThemeId) => void;
   setSpace: (on: boolean) => void;
@@ -46,7 +57,27 @@ export const useGlobeStore = create<GlobeStore>((set) => ({
   hovered: null,
   selectedId: null,
   scrollToId: null,
-  setDataset: (dataset) => set({ dataset }),
+  arrivals: new Set<string>(),
+  setDataset: (dataset) =>
+    set((state) => {
+      if (state.dataset === dataset) return {};
+      const previous = state.dataset ? new Map(state.dataset.events.map((e) => [e.id, e])) : null;
+      const ids = new Set(dataset.events.map((e) => e.id));
+      const arrivals = new Set<string>();
+      for (const event of dataset.events) {
+        const before = previous?.get(event.id);
+        if (previous && !before) arrivals.add(event.id);
+        else if (event.isBreaking && (!before || before.lastUpdated !== event.lastUpdated)) arrivals.add(event.id);
+      }
+      const keep = (id: string | null | undefined) => (id && ids.has(id) ? id : null);
+      return {
+        dataset,
+        arrivals,
+        selectedId: keep(state.selectedId),
+        scrollToId: keep(state.scrollToId),
+        hovered: state.hovered && ids.has(state.hovered.id) ? state.hovered : null,
+      };
+    }),
   setTheme: (theme) => {
     storeTheme(theme);
     applyTheme(THEMES[theme]);

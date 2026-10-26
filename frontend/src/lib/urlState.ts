@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useGlobeStore } from '../store';
 
 /**
@@ -40,16 +40,24 @@ export function useUrlSync(): void {
   const selectedId = useGlobeStore((s) => s.selectedId);
   const select = useGlobeStore((s) => s.select);
 
-  // once data is in, honour whatever the incoming link asked for
+  // Once data is in, honour whatever the incoming link asked for. Later
+  // datasets (live updates) never re-select: the store has already dropped a
+  // selection whose story expired, so all that is left is to take the dead
+  // `?event=` off the URL — with replaceState, since nobody navigated. This
+  // runs before the selection -> URL effect below, which then finds the URL
+  // and the (cleared) selection already in agreement and pushes nothing.
+  const honoured = useRef(false);
   useEffect(() => {
     if (!dataset) return;
     const wanted = eventIdFromUrl();
+    const first = !honoured.current;
+    honoured.current = true;
     if (!wanted) return;
     if (dataset.events.some((event) => event.id === wanted)) {
       // fromGlobe so the rail scrolls the story into view as well
-      select(wanted, { fromGlobe: true });
+      if (first) select(wanted, { fromGlobe: true });
     } else {
-      // stale or bad link: drop the param rather than leaving a dead URL
+      // stale or bad link, or the story expired: drop the param rather than leaving a dead URL
       window.history.replaceState(null, '', urlForEvent(null));
     }
   }, [dataset, select]);
