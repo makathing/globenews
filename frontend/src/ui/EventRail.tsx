@@ -1,63 +1,23 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import {
-  CATEGORIES,
-  CATEGORY_LABELS,
-  type NewsEvent,
-  type NewsSource,
-} from '../../../shared/news';
+import { useEffect, useMemo, useRef } from 'react';
+import { CATEGORIES, CATEGORY_LABELS, type NewsEvent } from '../../../shared/news';
+import type { ArtCandidate } from '../lib/illustration';
 import { freshness, isNew, isUpdated, relativeTime } from '../lib/freshness';
-import { useGlobeStore, useVisibleEvents } from '../store';
+import { useGlobeStore } from '../store';
 import { CategoryIcon } from './icons';
+import { SourceLogos } from './SourceLogos';
 import { StatusPanel } from './StatusPanel';
+import { StoryArt } from './StoryArt';
+import { useRailStories } from './useStoryArt';
 
-/** Short outlet name for a preview tile when no image resolved: "reuters.com" -> "reuters". */
-function outletName(domain: string): string {
-  return domain.replace(/^www\./, '').split('.')[0];
-}
-
-/**
- * Article art, then the outlet's own mark, then its name. Each step is also
- * the recovery path for the one before it: publishers routinely 403 a
- * hotlinked og:image, so `onError` walks down rather than straight to text.
- */
-function SourceTile({ source }: { source: NewsSource }) {
-  const [step, setStep] = useState<'image' | 'icon' | 'name'>(
-    source.image ? 'image' : source.icon ? 'icon' : 'name',
-  );
-  const src = step === 'image' ? source.image : step === 'icon' ? source.icon : undefined;
-
-  return (
-    <span className={`card-source ${step === 'icon' ? 'is-icon' : ''}`} title={source.domain}>
-      {src ? (
-        <img
-          src={src}
-          alt=""
-          loading="lazy"
-          referrerPolicy="no-referrer"
-          onError={() => setStep(step === 'image' && source.icon ? 'icon' : 'name')}
-        />
-      ) : (
-        <span className="card-source-name">{outletName(source.domain)}</span>
-      )}
-    </span>
-  );
-}
-
-function SourcePreviews({ event }: { event: NewsEvent }) {
-  // one tile per source, up to three, so the row always says who is carrying
-  // the story even when nobody's art is reachable
-  const previews = event.sources.slice(0, 3);
-  if (previews.length === 0) return null;
-  return (
-    <div className="card-sources">
-      {previews.map((source) => (
-        <SourceTile key={source.url} source={source} />
-      ))}
-    </div>
-  );
-}
-
-function EventCard({ event, selected }: { event: NewsEvent; selected: boolean }) {
+function EventCard({
+  event,
+  art,
+  selected,
+}: {
+  event: NewsEvent;
+  art: ArtCandidate[];
+  selected: boolean;
+}) {
   const hoverId = useGlobeStore((s) => s.hoverId);
   const select = useGlobeStore((s) => s.select);
   const hoveredId = useGlobeStore((s) => s.hovered?.id ?? null);
@@ -93,7 +53,9 @@ function EventCard({ event, selected }: { event: NewsEvent; selected: boolean })
         <span className="card-headline">{event.headline}</span>
       </div>
 
-      <SourcePreviews event={event} />
+      <StoryArt chain={art} category={event.category} linkCredit={false} />
+
+      <SourceLogos sources={event.sources} />
 
       <div className="card-foot">
         {event.isBreaking && <span className="card-breaking">Breaking</span>}
@@ -119,7 +81,7 @@ export function EventRail() {
   const hidden = useGlobeStore((s) => s.hidden);
   const toggleCategory = useGlobeStore((s) => s.toggleCategory);
   const selectedId = useGlobeStore((s) => s.selectedId);
-  const events = useVisibleEvents();
+  const { sorted, chains } = useRailStories();
 
   const counts = useMemo(() => {
     const map = new Map<string, number>();
@@ -129,24 +91,12 @@ export function EventRail() {
     return map;
   }, [dataset]);
 
-  // breaking first, then severity, then trust
-  const sorted = useMemo(
-    () =>
-      [...events].sort(
-        (a, b) =>
-          Number(b.isBreaking) - Number(a.isBreaking) ||
-          b.severity - a.severity ||
-          b.trustScore - a.trustScore,
-      ),
-    [events],
-  );
-
   return (
     <aside className="rail" aria-label="Event list">
       <header className="rail-head">
         <div className="rail-brand">
           GlobeNews
-          <span className="rail-count">{events.length}</span>
+          <span className="rail-count">{sorted.length}</span>
         </div>
         <div className="rail-filters" role="group" aria-label="Category filters">
           {CATEGORIES.map((category) => {
@@ -170,7 +120,12 @@ export function EventRail() {
 
       <div className="rail-list">
         {sorted.map((event) => (
-          <EventCard key={event.id} event={event} selected={selectedId === event.id} />
+          <EventCard
+            key={event.id}
+            event={event}
+            art={chains.get(event.id) ?? []}
+            selected={selectedId === event.id}
+          />
         ))}
         {sorted.length === 0 && (
           <div className="rail-empty">No events match the current filters.</div>

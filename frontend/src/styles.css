@@ -286,57 +286,11 @@ body,
   color: var(--text-secondary);
 }
 
-/* article preview card */
-.preview-card {
-  position: relative;
-  margin-top: 12px;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  aspect-ratio: 16 / 9;
-  background: var(--bg);
+/* source rows in the panel carry the outlet's round mark (SourceLogos.tsx) */
+.source-domain .outlet-mark {
+  margin-right: 1px;
 }
-.preview-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.preview-card .preview-credit {
-  position: absolute;
-  right: 8px;
-  bottom: 7px;
-  font-size: 10px;
-  color: #e8ecf1;
-  background: rgba(8, 10, 14, 0.72);
-  border-radius: 5px;
-  padding: 2px 7px;
-  backdrop-filter: blur(4px);
-}
-/* An outlet mark is a logo, not a photograph: contain it and give it room,
-   or a square favicon gets cropped into an unrecognisable smear. */
-.card-source.is-icon {
-  background: rgba(var(--tint), 0.04);
-}
-.card-source.is-icon img {
-  object-fit: contain;
-  padding: 22%;
-}
-.source-mark {
-  flex: none;
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
-  border-radius: 3px;
-}
-.source-mark.is-blank {
-  background: rgba(var(--tint), 0.06);
-}
-.preview-fallback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(var(--tint), 0.04);
-}
+
 .severity-badge {
   font-size: 11px;
   font-weight: 550;
@@ -618,7 +572,7 @@ body,
   text-align: center;
 }
 
-/* ————— event card: icon + headline, then source previews ————— */
+/* ————— event card: icon + headline, the story's picture, who carries it ————— */
 .event-card {
   display: block;
   width: 100%;
@@ -668,47 +622,11 @@ body,
   overflow: hidden;
 }
 
-/* one tile per source, up to three */
-.card-sources {
-  display: flex;
-  gap: 4px;
-  margin-top: 7px;
-  padding-left: 21px;
-}
-.card-source {
-  flex: 1;
-  aspect-ratio: 16 / 10;
-  border-radius: 4px;
-  overflow: hidden;
-  background: rgba(var(--tint), 0.055);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
-}
-.card-source img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.card-source-name {
-  font-size: 9px;
-  font-weight: 550;
-  letter-spacing: 0.01em;
-  color: var(--text-dim);
-  padding: 0 4px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .card-foot {
   display: flex;
   align-items: center;
   gap: 7px;
   margin-top: 6px;
-  padding-left: 21px;
   font-size: 10px;
   color: var(--text-dim);
 }
@@ -846,6 +764,158 @@ body,
   color: var(--text-dim);
   font-size: 13px;
   pointer-events: none;
+}
+
+/* ————— story art (StoryArt.tsx): one picture per story ————— */
+.story-art {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  /* what shows while the picture is still on its way */
+  background: rgba(var(--tint), 0.05);
+  isolation: isolate;
+}
+.story-art-card {
+  margin-top: 8px;
+}
+.story-art-panel {
+  margin-top: 12px;
+}
+.story-art img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* a hairline inside the edge, so a pale photo doesn't bleed into a pale panel */
+.story-art::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(var(--tint), 0.08);
+  pointer-events: none;
+}
+/* nothing loaded: the category's own colour, quietly */
+.story-art.is-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--art-cat);
+  background:
+    radial-gradient(120% 90% at 18% 0%, color-mix(in srgb, var(--art-cat) 26%, transparent), transparent 70%),
+    linear-gradient(160deg, color-mix(in srgb, var(--art-cat) 14%, var(--panel-solid)), var(--panel-solid));
+}
+.story-art.is-panel svg {
+  opacity: 0.75;
+}
+/* Overlays sit on an arbitrary photo, so they bring their own dark ground
+   instead of the theme's: white on a translucent near-black reads on snow
+   and on night skies alike, in every theme. */
+.art-credit,
+.art-badge {
+  position: absolute;
+  z-index: 1;
+  color: #f1f4f8;
+  background: rgba(8, 10, 14, 0.66);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 5px;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+.art-credit {
+  left: 6px;
+  bottom: 6px;
+  max-width: calc(100% - 12px);
+  font-size: 9.5px;
+  padding: 1px 6px;
+}
+.art-badge {
+  left: 6px;
+  top: 6px;
+  font-size: 8.5px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 1.5px 6px;
+}
+.story-art-panel .art-credit {
+  left: 8px;
+  bottom: 8px;
+  max-width: calc(100% - 16px);
+  font-size: 10.5px;
+  padding: 2px 8px;
+}
+.story-art-panel .art-badge {
+  left: 8px;
+  top: 8px;
+  font-size: 9.5px;
+  padding: 2px 8px;
+}
+a.art-credit:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* ————— outlet logos (SourceLogos.tsx) ————— */
+.source-logos {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 7px;
+  min-width: 0;
+  font-size: 10.5px;
+  color: var(--text-secondary);
+}
+.source-logos-marks {
+  flex: none;
+  display: inline-flex;
+  gap: 3px;
+}
+.source-logos-names {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.source-logos-more {
+  flex: none;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-dim);
+}
+.outlet-mark {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* a logo is not a photograph: contain it on a white disc, which is what
+   favicons are drawn for, so dark marks don't vanish on a dark theme */
+.outlet-mark.is-logo {
+  background: #fff;
+}
+.outlet-mark.is-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.outlet-mark.is-monogram {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  user-select: none;
 }
 
 /* ————— responsive ————— */

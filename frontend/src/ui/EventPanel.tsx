@@ -9,6 +9,9 @@ import {
 import { useGlobeStore } from '../store';
 import { CategoryIcon, CheckIcon, ClockIcon, LinkIcon, ShieldIcon } from './icons';
 import { shareUrlForEvent } from '../lib/urlState';
+import { OutletMark } from './SourceLogos';
+import { StoryArt } from './StoryArt';
+import { useStoryArtChain } from './useStoryArt';
 
 /**
  * Trust is neutral until it's a problem: a green/amber/red scale spends colour
@@ -48,51 +51,6 @@ function BiasSpectrum({ source }: { source: NewsSource }) {
       ))}
       <span className="bias-pip" style={{ left: `${pct}%` }} />
     </div>
-  );
-}
-
-function PreviewCard({ event }: { event: NewsEvent }) {
-  const [failed, setFailed] = useState(false);
-
-  // the hero is the article's own art; when it is missing or the publisher
-  // refuses the hotlink, the category glyph says more than a stretched favicon
-  if (!event.image || failed) {
-    return (
-      <div
-        className="preview-card preview-fallback"
-        style={{ color: 'var(--text-dim)' }}
-      >
-        <CategoryIcon category={event.category} size={40} strokeWidth={1.2} />
-      </div>
-    );
-  }
-  return (
-    <div className="preview-card">
-      <img
-        src={event.image.url}
-        alt=""
-        loading="lazy"
-        referrerPolicy="no-referrer"
-        onError={() => setFailed(true)}
-      />
-      <span className="preview-credit">via {event.image.domain}</span>
-    </div>
-  );
-}
-
-/** Outlet mark beside a source row, dropping out silently if it won't load. */
-function SourceMark({ source }: { source: NewsSource }) {
-  const [failed, setFailed] = useState(false);
-  if (!source.icon || failed) return <span className="source-mark is-blank" />;
-  return (
-    <img
-      className="source-mark"
-      src={source.icon}
-      alt=""
-      loading="lazy"
-      referrerPolicy="no-referrer"
-      onError={() => setFailed(true)}
-    />
   );
 }
 
@@ -139,7 +97,8 @@ export function EventPanel() {
   const select = useGlobeStore((s) => s.select);
 
   const event = dataset?.events.find((e) => e.id === selectedId);
-  if (!event) return null;
+  const art = useStoryArtChain(event);
+  if (!event || !art) return null;
 
   return (
     <aside className="panel event-panel" aria-label="Event details">
@@ -156,7 +115,7 @@ export function EventPanel() {
         </button>
       </div>
 
-      <PreviewCard event={event} />
+      <StoryArt key={event.id} chain={art} category={event.category} size="panel" />
 
       <h2 className="event-headline">{event.headline}</h2>
       <div className="event-location">{event.locationName}</div>
@@ -194,7 +153,7 @@ export function EventPanel() {
             rel="noopener noreferrer"
           >
             <span className="source-domain">
-              <SourceMark source={source} />
+              <OutletMark source={source} size={16} />
               {source.domain}
             </span>
             <span className="source-rel" title="Reliability (0-100)">
