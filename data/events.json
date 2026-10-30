@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T06:23:58.774Z",
+  "generatedAt": "2026-10-30T06:06:47.664Z",
   "mode": "daily",
   "events": [
     {
@@ -1116,6 +1116,71 @@
       "isBreaking": false
     },
     {
+      "id": "957a544f51fa",
+      "headline": "Pakistan Destroys Seven Afghan Border Posts After Deadly Angoor Adda Mortar Attack",
+      "summary": "Mortar fire on Oct 27 killed one civilian and wounded five members of the same family at a market in Angoor Adda, South Waziristan. Pakistan blamed Afghan Taliban forces and retaliated by destroying seven Afghan border posts, while the Taliban counter-claims Pakistani drones struck first.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 32.32,
+      "lon": 69.35,
+      "locationName": "Angoor Adda, South Waziristan, Pakistan",
+      "countryCode": "PK",
+      "sources": [
+        {
+          "url": "https://tribune.com.pk/",
+          "domain": "tribune.com.pk",
+          "reliability": 68,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/10/27/pakistan-afghanistan-border-clashes-northwest-civilian-killed/ac2c1210-d249-11f1-9931-2a41b76fc976_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.dawn.com",
+          "domain": "dawn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.longwarjournal.org",
+          "domain": "longwarjournal.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://rferl.org",
+          "domain": "rferl.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://pakobserver.net",
+          "domain": "pakobserver.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nation.com.pk",
+          "domain": "nation.com.pk",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-10-24T06:06:45.630Z",
+      "lastUpdated": "2026-10-30T06:06:47.664Z",
+      "expiresAt": "2026-11-01T06:06:47.664Z",
+      "isBreaking": false
+    },
+    {
       "id": "f10a1524d95f",
       "headline": "Myanmar Junta Airstrikes Kill Civilians in Sagaing, Damage Historic Monastery",
       "summary": "Myanmar junta forces conducted about 30 airstrikes in Sagaing Region, killing five civilians and injuring 23, and damaging a historic Buddhist meditation center. The junta claims the operations serve peace efforts despite continued civilian casualties.",
@@ -1297,6 +1362,30 @@
       "isBreaking": false
     },
     {
+      "id": "47ee01bdf29b",
+      "headline": "US Measles Outbreak Tops 4,588 Cases; Pennsylvania Reports Up to Six Deaths",
+      "summary": "CDC data through Oct 22 show 4,588 measles cases nationally this year, more than double the prior year's total. Pennsylvania is the epicenter with roughly 1,300-1,400 cases, over 250 hospitalizations and five to six deaths.",
+      "category": "health",
+      "severity": 3,
+      "lat": 39.8,
+      "lon": -98.6,
+      "locationName": "Pennsylvania, United States",
+      "countryCode": "US",
+      "sources": [
+        {
+          "url": "https://cdc.gov/",
+          "domain": "cdc.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 40,
+      "firstSeen": "2026-10-30T06:06:47.664Z",
+      "lastUpdated": "2026-10-30T06:06:47.664Z",
+      "expiresAt": "2026-11-01T06:06:47.664Z",
+      "isBreaking": false
+    },
+    {
       "id": "0327f4542847",
       "headline": "Nigeria-Origin Ebola Patient Evacuated to Switzerland",
       "summary": "On Oct 26, a Swiss woman confirmed as Nigeria's first Ebola case since 2014 was medically evacuated to Geneva University Hospital, with her husband isolated at Zurich University Hospital. Officials said there is no risk to the Swiss population.",
@@ -1448,71 +1537,6 @@
       ],
       "trustScore": 80,
       "firstSeen": "2026-10-25T06:07:01.691Z",
-      "lastUpdated": "2026-10-29T06:23:58.774Z",
-      "expiresAt": "2026-10-30T18:23:58.774Z",
-      "isBreaking": false
-    },
-    {
-      "id": "957a544f51fa",
-      "headline": "Afghan Taliban Mortar Fire Kills Civilian, Wounds Five in South Waziristan",
-      "summary": "Afghan Taliban mortar fire killed one civilian and wounded five others in a border clash in South Waziristan on Oct 27. Pakistan responded by destroying Afghan border posts.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 32.3,
-      "lon": 69.9,
-      "locationName": "South Waziristan, Pakistan",
-      "countryCode": "PK",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/10/27/pakistan-afghanistan-border-clashes-northwest-civilian-killed/ac2c1210-d249-11f1-9931-2a41b76fc976_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://tribune.com.pk/story/2637300/afghan-posts-destroyed-after-border-shelling",
-          "domain": "tribune.com.pk",
-          "reliability": 68,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.dawn.com",
-          "domain": "dawn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.longwarjournal.org",
-          "domain": "longwarjournal.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://rferl.org",
-          "domain": "rferl.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://pakobserver.net",
-          "domain": "pakobserver.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://nation.com.pk",
-          "domain": "nation.com.pk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 69,
-      "firstSeen": "2026-10-24T06:06:45.630Z",
       "lastUpdated": "2026-10-29T06:23:58.774Z",
       "expiresAt": "2026-10-30T18:23:58.774Z",
       "isBreaking": false
@@ -1937,6 +1961,55 @@
       "isBreaking": false
     },
     {
+      "id": "bda23328321d",
+      "headline": "ASEAN Defence Ministers Conclude Meeting in Philippines, Hand Chairmanship to Singapore",
+      "summary": "The 20th ASEAN Defence Ministers' Meeting and its Plus session concluded Oct 28-29 in Lapu-Lapu City, Philippines, addressing South China Sea tensions, maritime security and disaster response, and adopting five cooperation initiatives. Chairmanship passed to Singapore on Oct 29; China sent only a military attaché rather than its defense minister.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 10.31,
+      "lon": 123.95,
+      "locationName": "Lapu-Lapu City, Cebu, Philippines",
+      "countryCode": "PH",
+      "sources": [
+        {
+          "url": "https://pia.gov.ph/",
+          "domain": "pia.gov.ph",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 40,
+      "firstSeen": "2026-10-30T06:06:47.664Z",
+      "lastUpdated": "2026-10-30T06:06:47.664Z",
+      "expiresAt": "2026-10-31T18:06:47.664Z",
+      "isBreaking": false
+    },
+    {
+      "id": "50aca6a404d3",
+      "headline": "CGT Dockers Strike at About 24 French Ports, Cutting Activity Up to 95%",
+      "summary": "The CGT union called a 24-hour strike on Oct 30 across roughly two dozen French ports including Le Havre, Marseille-Fos, Dunkirk and Bordeaux, protesting port 'militarization,' pay, automation and budget cuts. Activity was reportedly cut by as much as 95% at affected terminals.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 49.4944,
+      "lon": 0.1079,
+      "locationName": "Le Havre, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://maritima.fr/",
+          "domain": "maritima.fr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 33,
+      "firstSeen": "2026-10-30T06:06:47.664Z",
+      "lastUpdated": "2026-10-30T06:06:47.664Z",
+      "expiresAt": "2026-10-31T18:06:47.664Z",
+      "isBreaking": false
+    },
+    {
       "id": "f5d9a317f9ea",
       "headline": "Germany's Ifo Business Climate Index Hits Highest Level Since 2023",
       "summary": "Germany's Ifo Business Climate Index rose to 90.2 in October 2026, its sixth consecutive monthly rise and the highest level since May 2023, driven by improved business expectations.",
@@ -2005,15 +2078,40 @@
       "lastUpdated": "2026-10-29T06:23:58.774Z",
       "expiresAt": "2026-10-30T06:23:58.774Z",
       "isBreaking": false
+    },
+    {
+      "id": "13b428060607",
+      "headline": "M5.4 Earthquake Strikes Chiba Prefecture Near Tokyo, No Damage Reported",
+      "summary": "A magnitude 5.4 (JMA) earthquake struck near Yokoshibahikari, Chiba Prefecture at 00:07 JST on Oct 29 at a depth of roughly 41-50km, registering 'lower 5' intensity. No tsunami warning was issued and no damage was reported, though aftershocks are possible for up to a week.",
+      "category": "disaster",
+      "severity": 1,
+      "lat": 35.68,
+      "lon": 140.55,
+      "locationName": "Yokoshibahikari, Chiba Prefecture, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://nippon.com/",
+          "domain": "nippon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 33,
+      "firstSeen": "2026-10-30T06:06:47.664Z",
+      "lastUpdated": "2026-10-30T06:06:47.664Z",
+      "expiresAt": "2026-10-31T06:06:47.664Z",
+      "isBreaking": false
     }
   ],
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
     "multiSource": 40,
-    "carried": 4,
-    "updated": 14,
-    "expired": 10,
+    "carried": 39,
+    "updated": 1,
+    "expired": 0,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
