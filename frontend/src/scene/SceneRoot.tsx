@@ -9,6 +9,7 @@ import { Halo } from './Halo';
 import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
 import { RenderStats } from './RenderStats';
+import { ViewFraming } from './ViewFraming';
 import { narrowViewport, useGlobeStore, useSpaceView, useTheme } from '../store';
 
 /**
@@ -52,6 +53,7 @@ export function SceneRoot() {
       </Suspense>
       {space && theme.starBrightness > 0 && <Ambience />}
       <CameraRig />
+      <ViewFraming />
       <Effects space={space} />
       {import.meta.env.DEV && <RenderStats />}
     </Canvas>

@@ -271,3 +271,31 @@ describe('dot levels', () => {
     expect(pickDotLevel(2.95, 3)).toBe(3);
   });
 });
+
+describe('dimmed stories', () => {
+  it('draws dimmed stories fainter and leaves the default output unchanged', () => {
+    const events = [story('a', {}), story('b', { lat: -20, lon: 130, countryCode: 'AU' })];
+    const plain = buildEventDots(events, false);
+    const same = buildEventDots(events, false, DOT_GRID.width, { dimmed: new Set() });
+    const dim = buildEventDots(events, false, DOT_GRID.width, { dimmed: new Set(['b']) });
+    const a = bytes(plain.color);
+    const s = bytes(same.color);
+    let differing = 0;
+    for (let i = 0; i < a.length; i++) if (a[i] !== s[i]) differing++;
+    expect(differing).toBe(0);
+    const d = bytes(dim.color);
+    let lowered = 0;
+    let unchanged = 0;
+    for (let i = 3; i < a.length; i += 4) {
+      if (a[i] === 0) {
+        expect(d[i]).toBe(0);
+        continue;
+      }
+      expect(d[i]).toBeGreaterThan(0);
+      if (d[i] < a[i]) lowered++;
+      else if (d[i] === a[i]) unchanged++;
+    }
+    expect(lowered).toBeGreaterThan(0);
+    expect(unchanged).toBeGreaterThan(0);
+  });
+});

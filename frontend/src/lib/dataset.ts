@@ -76,25 +76,32 @@ let validators: { etag: string | null; lastModified: string | null } = { etag: n
 
 /**
  * The served data/events.json, if it changed since the last time we asked —
- * null when unchanged (304), unreachable or malformed. See the protocol above.
+ * `dataset` is null when unchanged (304), unreachable or malformed.
+ * `answered` says the server replied at all, which is what "checked 3 min
+ * ago" in the status line reports.
  */
-export async function fetchLatestDataset(base: string): Promise<NewsDataset | null> {
+export async function fetchLatestDataset(base: string): Promise<{ dataset: NewsDataset | null; answered: boolean }> {
   try {
     const headers: Record<string, string> = {};
     if (validators.etag) headers['If-None-Match'] = validators.etag;
     if (validators.lastModified) headers['If-Modified-Since'] = validators.lastModified;
     const res = await fetch(`${base}data/events.json`, { cache: 'no-store', headers });
-    if (res.status === 304 || !res.ok) return null;
+    if (res.status === 304) return { dataset: null, answered: true };
+    if (!res.ok) return { dataset: null, answered: false };
     const dataset = (await res.json()) as NewsDataset;
-    if (!dataset || !Array.isArray(dataset.events) || !dataset.generatedAt) return null;
+    if (!dataset || !Array.isArray(dataset.events) || !dataset.generatedAt) return { dataset: null, answered: true };
     validators = { etag: res.headers.get('ETag'), lastModified: res.headers.get('Last-Modified') };
-    return dataset;
+    return { dataset, answered: true };
   } catch {
-    return null;
+    return { dataset: null, answered: false };
   }
 }
 
-/** Keeps the store's dataset current while the tab is open (protocol above). */
+/**
+ * Keeps the store's live dataset current while the tab is open (protocol
+ * above). While an archived day is on screen the poll is paused: the viewer
+ * is reading history, and "Back to today" asks again at once.
+ */
 export function useLiveDataset(): void {
   useEffect(() => {
     let cancelled = false;
@@ -102,16 +109,18 @@ export function useLiveDataset(): void {
     let lastAsked = 0;
     const check = async (force = false) => {
       if (document.visibilityState !== 'visible' || inFlight) return;
+      if (useGlobeStore.getState().viewingDate) return;
       const now = Date.now();
       if (!force && now - lastAsked < MIN_GAP_MS) return;
       lastAsked = now;
       inFlight = true;
       try {
-        const latest = await fetchLatestDataset(import.meta.env.BASE_URL);
-        if (cancelled || !latest) return;
-        const { dataset: current, setDataset } = useGlobeStore.getState();
-        if (!current || Date.parse(latest.generatedAt) > Date.parse(current.generatedAt)) {
-          setDataset(latest);
+        const { dataset: latest, answered } = await fetchLatestDataset(import.meta.env.BASE_URL);
+        if (cancelled) return;
+        const { liveDataset: current, setLiveDataset, markChecked } = useGlobeStore.getState();
+        if (answered) markChecked(Date.now());
+        if (latest && (!current || Date.parse(latest.generatedAt) > Date.parse(current.generatedAt))) {
+          setLiveDataset(latest);
         }
       } finally {
         inFlight = false;
@@ -121,10 +130,14 @@ export function useLiveDataset(): void {
     const timer = setInterval(() => void check(true), REFRESH_MS);
     document.addEventListener('visibilitychange', onWake);
     window.addEventListener('online', onWake);
+    const unsubscribe = useGlobeStore.subscribe((s, prev) => {
+      if (prev.viewingDate && !s.viewingDate) void check(true);
+    });
     void check(true);
     return () => {
       cancelled = true;
       clearInterval(timer);
+      unsubscribe();
       document.removeEventListener('visibilitychange', onWake);
       window.removeEventListener('online', onWake);
     };

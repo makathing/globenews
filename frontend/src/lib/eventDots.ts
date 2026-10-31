@@ -42,7 +42,15 @@ export interface EventDotTextures {
 export interface BuildOptions {
   /** Story ids whose dots carry the arrival flag (pulse texture b channel). */
   arrivals?: ReadonlySet<string>;
+  /**
+   * Story ids drawn faint (a region view's out-of-region stories): their
+   * dots keep their colour but at DIMMED_WEIGHT of their strength.
+   */
+  dimmed?: ReadonlySet<string>;
 }
+
+/** How strong a dimmed story's dots are, relative to normal. */
+export const DIMMED_WEIGHT = 0.3;
 
 /**
  * A stable 32-bit hash of a story id (FNV-1a, then an avalanche), so
@@ -125,6 +133,7 @@ export function buildEventDots(
   keyed.sort((a, b) => a.key - b.key || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
   const ordered = keyed.map((k) => k.event);
   const arrivals = options.arrivals;
+  const dimmed = options.dimmed;
   const W = width;
   const H = width / 2;
   const color = new Uint8Array(W * H * 4);
@@ -205,7 +214,9 @@ export function buildEventDots(
     color[i] = r;
     color[i + 1] = g;
     color[i + 2] = b;
-    color[i + 3] = candidateWeight[pick];
+    color[i + 3] = dimmed?.has(event.id)
+      ? Math.max(1, Math.round(candidateWeight[pick] * DIMMED_WEIGHT))
+      : candidateWeight[pick];
     pulse[i] = event.severity >= 4 ? 255 : 0;
     pulse[i + 1] = phase[index];
     if (arrivals?.has(event.id)) pulse[i + 2] = 255;

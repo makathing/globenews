@@ -1,34 +1,34 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { SceneRoot } from './scene/SceneRoot';
 import { EventRail } from './ui/EventRail';
 import { EventPanel } from './ui/EventPanel';
+import { MobileShell } from './ui/MobileShell';
 import { Tooltip } from './ui/Tooltip';
 import { Updated } from './ui/Updated';
-import { useGlobeStore } from './store';
+import { ViewingBanner } from './ui/ViewingBanner';
+import { useGlobeStore, useIsMobile } from './store';
 import { useUrlSync } from './lib/urlState';
 import { BUNDLED_DATASET, useLiveDataset } from './lib/dataset';
 
-/** Matches the rail's drawer breakpoint in styles.css. */
-const DRAWER_QUERY = '(max-width: 900px)';
-
 export function App() {
-  const setDataset = useGlobeStore((s) => s.setDataset);
+  const setLiveDataset = useGlobeStore((s) => s.setLiveDataset);
   const dataset = useGlobeStore((s) => s.dataset);
-  const selectedId = useGlobeStore((s) => s.selectedId);
-  const [railOpen, setRailOpen] = useState(false);
+  const mobile = useIsMobile();
+  const panelOpen = useGlobeStore((s) => s.selectedId !== null);
+  const setLayoutInsets = useGlobeStore((s) => s.setLayoutInsets);
   useUrlSync();
+
+  // desktop: centre the globe between the rail and the story panel
+  // (widths from styles.css: .rail 300px; .event-panel 368px + 16px margins)
+  useEffect(() => {
+    if (mobile) setLayoutInsets({ left: 0, right: 0 });
+    else setLayoutInsets({ top: 0, bottom: 0, left: 300, right: panelOpen ? Math.min(400, window.innerWidth * 0.3) : 0 });
+  }, [mobile, panelOpen, setLayoutInsets]);
 
   // the stories ship inside the bundle, so there is nothing to wait for
   useEffect(() => {
-    setDataset(BUNDLED_DATASET);
-  }, [setDataset]);
-
-  // On a phone the rail is a drawer over the globe, and the event panel opens
-  // underneath it — pick a story and you'd get a panel you can't read. Picking
-  // one is the end of browsing, so the drawer closes and hands the screen over.
-  useEffect(() => {
-    if (selectedId && window.matchMedia(DRAWER_QUERY).matches) setRailOpen(false);
-  }, [selectedId]);
+    setLiveDataset(BUNDLED_DATASET);
+  }, [setLiveDataset]);
 
   // A radar left open all afternoon should not still be showing this
   // morning's batch: revalidate while visible and adopt only newer runs.
@@ -36,19 +36,20 @@ export function App() {
   useLiveDataset();
 
   return (
-    <div className={`app ${railOpen ? 'rail-open' : ''}`}>
+    <div className={`app ${mobile ? 'is-mobile' : 'is-desktop'}`}>
       <SceneRoot />
-      <EventRail />
-      <EventPanel />
-      <Tooltip />
-      <Updated />
-      <button
-        className="rail-toggle"
-        onClick={() => setRailOpen((open) => !open)}
-        aria-label={railOpen ? 'Hide event list' : 'Show event list'}
-      >
-        {railOpen ? '✕' : '☰'}
-      </button>
+      {mobile ? (
+        // the phone layout: top bar + bottom sheet; no hover tooltip on touch
+        <MobileShell />
+      ) : (
+        <>
+          <EventRail />
+          <EventPanel />
+          <Tooltip />
+          <Updated />
+          <ViewingBanner className="viewing-banner-desktop" />
+        </>
+      )}
       {!dataset && <div className="data-status">Loading events…</div>}
     </div>
   );

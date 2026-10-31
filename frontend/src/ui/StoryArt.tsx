@@ -23,7 +23,7 @@ export function StoryArt({
 }: {
   chain: ArtCandidate[];
   category: Category;
-  size?: 'card' | 'panel';
+  size?: 'card' | 'panel' | 'thumb';
   linkCredit?: boolean;
 }) {
   const chainKey = chain.map((c) => c.key).join('|');
@@ -44,7 +44,7 @@ export function StoryArt({
         style={{ ['--art-cat' as string]: `var(--cat-${category})` }}
         aria-hidden
       >
-        <CategoryIcon category={category} size={size === 'panel' ? 44 : 30} strokeWidth={1.3} />
+        <CategoryIcon category={category} size={size === 'panel' ? 44 : size === 'thumb' ? 22 : 30} strokeWidth={1.3} />
       </div>
     );
   }

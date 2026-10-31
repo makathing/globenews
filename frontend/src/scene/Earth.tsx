@@ -12,6 +12,7 @@ import {
 } from '../lib/eventDots';
 import { dotLevel, prefersReducedMotion, useGlobeStore, useTheme, useVisibleEvents } from '../store';
 import { useEventPicking } from './eventPicking';
+import { inRegion } from '../lib/regions';
 
 /** Fixed sun direction: keeps a soft terminator and a lit limb in view. */
 export const SUN_DIRECTION = new THREE.Vector3(-2.2, 0.9, 1.6).normalize();
@@ -187,11 +188,19 @@ export function Earth() {
 
   const dataset = useGlobeStore((s) => s.dataset);
   const arrivals = useGlobeStore((s) => s.arrivals);
+  const region = useGlobeStore((s) => s.region);
+
+  // a region view keeps every story on the globe, the rest just faint
+  const dimmed = useMemo(
+    () =>
+      region === 'world' ? undefined : new Set(events.filter((e) => !inRegion(e, region)).map((e) => e.id)),
+    [events, region],
+  );
 
   // one set of story textures per zoom level (~70 stories: cheap to build)
   const levels = useMemo(
-    () => DOT_LEVELS.map((width) => buildEventDots(events, theme.light, width, { arrivals })),
-    [events, theme.light, arrivals],
+    () => DOT_LEVELS.map((width) => buildEventDots(events, theme.light, width, { arrivals, dimmed })),
+    [events, theme.light, arrivals, dimmed],
   );
 
   const shown = useRef<ShownDots>({
