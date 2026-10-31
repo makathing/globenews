@@ -6,6 +6,7 @@
   "scripts": {
     "daily": "tsx src/run-daily.ts",
     "monitor": "tsx src/run-monitor.ts",
+    "regional:us": "tsx src/run-regional.ts --region us",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "enrich": "tsx src/enrich-existing.ts",

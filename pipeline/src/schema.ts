@@ -1,6 +1,9 @@
 import { z } from 'zod';
-import { BIAS_RATINGS, CATEGORIES, type NewsDataset } from '../../shared/news.ts';
-import { lookupPlace } from './gazetteer.ts';
+import { BIAS_RATINGS, CATEGORIES, NEWS_SCOPES, type NewsDataset } from '../../shared/news.ts';
+import { resolvePlace } from './gazetteer.ts';
+
+/** ISO 3166-2, e.g. 'US-TX', 'US-DC'. */
+export const SUBDIVISION_PATTERN = /^[A-Z]{2}-[A-Z0-9]{1,3}$/;
 
 export const NewsSourceSchema = z.object({
   url: z.url(),
@@ -27,6 +30,8 @@ export const NewsEventSchema = z.object({
   lon: z.number().min(-180).max(180),
   locationName: z.string().min(2),
   countryCode: z.string().length(2),
+  scope: z.enum(NEWS_SCOPES).optional(),
+  subdivision: z.string().regex(SUBDIVISION_PATTERN).optional(),
   sources: z.array(NewsSourceSchema).min(1).max(10),
   image: NewsImageSchema.optional(),
   trustScore: z.number().min(0).max(100),
@@ -52,7 +57,8 @@ export const RunStatsSchema = z.object({
 export const NewsDatasetSchema = z.object({
   generatedAt: z.iso.datetime({ offset: true }),
   mode: z.enum(['daily', 'breaking']),
-  events: z.array(NewsEventSchema).max(150),
+  // per-scope caps (finalize.ts SCOPE_CAPS: 120 global + 40 us) plus slack
+  events: z.array(NewsEventSchema).max(170),
   // zod strips unknown keys rather than rejecting them, so anything absent
   // here is silently dropped on read — stats have to be declared to survive
   stats: RunStatsSchema.optional(),
@@ -65,6 +71,8 @@ export const NewsDatasetSchema = z.object({
  */
 export const StagedEventSchema = NewsEventSchema.omit({
   id: true,
+  // which run owns a story is the runner's call, never the model's
+  scope: true,
   trustScore: true,
   firstSeen: true,
   lastUpdated: true,
@@ -214,15 +222,18 @@ export function parseStagedOutput(raw: string): SalvageResult {
       // missing coordinates: resolve from the gazetteer by location name
       if (typeof fixed.lat !== 'number' || typeof fixed.lon !== 'number') {
         const name = typeof fixed.locationName === 'string' ? fixed.locationName : '';
-        for (const part of name.split(/[,/]/).map((p) => p.trim())) {
-          const place = lookupPlace(part);
-          if (place) {
-            fixed.lat = place.lat;
-            fixed.lon = place.lon;
-            if (typeof fixed.countryCode !== 'string') fixed.countryCode = place.cc;
-            break;
-          }
+        const place = resolvePlace(name);
+        if (place) {
+          fixed.lat = place.lat;
+          fixed.lon = place.lon;
+          if (typeof fixed.countryCode !== 'string') fixed.countryCode = place.cc;
         }
+      }
+      // a malformed subdivision is not worth an event: fix the case or drop the field
+      if (fixed.subdivision !== undefined) {
+        const sub = typeof fixed.subdivision === 'string' ? fixed.subdivision.trim().toUpperCase() : '';
+        if (SUBDIVISION_PATTERN.test(sub)) fixed.subdivision = sub;
+        else delete fixed.subdivision;
       }
 
       if (typeof fixed.summary === 'string') fixed.summary = truncateText(fixed.summary, 590);

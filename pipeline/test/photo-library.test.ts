@@ -270,9 +270,15 @@ describe('mergeLibrary', () => {
 });
 
 describe('parseLibraryFile', () => {
-  it('reads the committed seed', () => {
-    const seed = JSON.parse(readFileSync(resolve(import.meta.dirname, '..', '..', 'data', 'photo-library.json'), 'utf8'));
-    expect(parseLibraryFile(seed)).toEqual(emptyLibrary());
+  it('reads the committed library', () => {
+    // the file started as an empty seed and is now a reviewed library; either
+    // way it must parse, and every photo in it must still pass today's rules
+    const committed = JSON.parse(readFileSync(resolve(import.meta.dirname, '..', '..', 'data', 'photo-library.json'), 'utf8'));
+    const library = parseLibraryFile(committed);
+    expect(library.version).toBe(1);
+    for (const photos of Object.values(library.topics)) {
+      for (const photo of photos) expect(isAcceptedLicense(photo.license), photo.id).toBe(true);
+    }
   });
 
   it('refuses a corrupt file rather than losing the blocked list', () => {

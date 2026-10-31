@@ -332,3 +332,124 @@ export const MOCK_STAGED: StagedOutput = {
     },
   ],
 };
+
+/**
+ * Sample staged output of the US & state run (`run-regional.ts --region us
+ * --mock`): placeholder state and metro stories across the map, with one
+ * deliberately missing its `subdivision` so the gazetteer has to fill it.
+ */
+export const MOCK_US_STAGED: StagedOutput = {
+  events: [
+    {
+      headline: 'Texas lawmakers open special session on property tax relief',
+      summary:
+        'Legislators convened in Austin for a special session called by the governor to consider property tax cuts. Leaders of both chambers said they expect votes on competing plans within two weeks.',
+      category: 'politics',
+      severity: 2,
+      lat: 30.27,
+      lon: -97.74,
+      locationName: 'Austin, Texas, USA',
+      countryCode: 'US',
+      subdivision: 'US-TX',
+      sources: [
+        { url: 'https://www.texastribune.org/sample-special-session' },
+        { url: 'https://apnews.com/article/sample-texas-session' },
+      ],
+    },
+    {
+      headline: 'Washington state wildfire forces evacuations east of the Cascades',
+      summary:
+        'A fast-moving grass fire prompted level 3 evacuation orders for several rural communities. State fire officials said crews had contained part of the perimeter by evening.',
+      category: 'disaster',
+      severity: 3,
+      lat: 47.04,
+      lon: -122.9,
+      locationName: 'Olympia, Washington, USA',
+      countryCode: 'US',
+      subdivision: 'US-WA',
+      sources: [
+        { url: 'https://www.seattletimes.com/sample-wildfire' },
+        { url: 'https://www.kuow.org/stories/sample-wildfire' },
+      ],
+    },
+    {
+      headline: 'Port of Savannah approves expansion of container terminal',
+      summary:
+        'The Georgia Ports Authority board approved a terminal expansion meant to raise annual capacity. Officials said construction would begin next year and add hundreds of jobs.',
+      category: 'economy',
+      severity: 2,
+      lat: 32.08,
+      lon: -81.09,
+      locationName: 'Savannah, Georgia, USA',
+      countryCode: 'US',
+      subdivision: 'US-GA',
+      sources: [
+        { url: 'https://www.ajc.com/sample-port-savannah' },
+        { url: 'https://www.savannahnow.com/sample-port' },
+      ],
+    },
+    {
+      headline: 'California regulators adopt new rules for statewide water conservation',
+      summary:
+        'The state water board adopted long-term conservation targets for urban suppliers. Utilities will have several years to meet the new standards, which vary by local climate.',
+      category: 'climate',
+      severity: 2,
+      lat: 38.58,
+      lon: -121.49,
+      locationName: 'Sacramento, California, USA',
+      countryCode: 'US',
+      subdivision: 'US-CA',
+      sources: [
+        { url: 'https://calmatters.org/sample-water-rules' },
+        { url: 'https://www.latimes.com/california/sample-water' },
+      ],
+    },
+    {
+      headline: 'New York court upholds state congestion pricing program',
+      summary:
+        'A state appeals court rejected a challenge to the tolling program for lower Manhattan. Transit officials said revenue would continue to fund subway upgrades.',
+      category: 'society',
+      severity: 2,
+      lat: 42.65,
+      lon: -73.76,
+      locationName: 'Albany, NY, USA',
+      countryCode: 'US',
+      subdivision: 'US-NY',
+      sources: [
+        { url: 'https://www.timesunion.com/sample-congestion' },
+        { url: 'https://www.nytimes.com/sample-congestion-court' },
+      ],
+    },
+    {
+      headline: 'Tampa Bay hospitals expand storm-season backup power plans',
+      summary:
+        'Regional hospital systems announced investments in backup generation after outages during recent storms. State health officials said the plans exceed new minimum requirements.',
+      category: 'health',
+      severity: 1,
+      lat: 27.95,
+      lon: -82.46,
+      locationName: 'Tampa, Florida, USA',
+      countryCode: 'US',
+      subdivision: 'US-FL',
+      sources: [
+        { url: 'https://www.tampabay.com/sample-hospitals' },
+        { url: 'https://www.wusf.org/sample-hospitals' },
+      ],
+    },
+    {
+      headline: 'Colorado university researchers report early snowpack gains',
+      summary:
+        'Researchers said early-season snowfall had pushed mountain snowpack above the long-term median. Water managers cautioned that spring conditions would decide supply.',
+      category: 'science',
+      severity: 1,
+      lat: 40.01,
+      lon: -105.27,
+      locationName: 'Boulder, Colorado, USA',
+      countryCode: 'US',
+      sources: [
+        { url: 'https://www.denverpost.com/sample-snowpack' },
+        { url: 'https://www.cpr.org/sample-snowpack' },
+      ],
+    },
+  ],
+};

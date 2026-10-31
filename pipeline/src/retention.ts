@@ -99,3 +99,19 @@ export function matchPrevious(
   }
   return best;
 }
+
+/**
+ * Whether a staged story is already on the map in ANOTHER run's scope (the
+ * worldwide desk vs the US desk), by the same three signals. Such a story is
+ * dropped, not merged: a run never edits, re-scopes or duplicates a story it
+ * does not own, so the US run cannot double a global headline and the global
+ * run cannot rewrite a US one.
+ */
+export function crossScopeMatch(
+  staged: StagedLike,
+  coords: { lat: number; lon: number },
+  otherScopes: NewsEvent[],
+  exactId: string,
+): NewsEvent | undefined {
+  return matchPrevious(staged, coords, otherScopes, exactId);
+}

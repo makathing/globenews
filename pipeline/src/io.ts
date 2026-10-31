@@ -24,13 +24,21 @@ export function readCurrentDataset(): NewsDataset | null {
   }
 }
 
-export function writeDataset(dataset: NewsDataset, { archive = false } = {}): void {
+/**
+ * Write data/events.json and, with `archive`, a dated snapshot. The daily
+ * batch archives as `<date>.json`; other runs pass a suffix (`-us`) so they
+ * never overwrite the day's worldwide snapshot. Archives are write-only.
+ */
+export function writeDataset(
+  dataset: NewsDataset,
+  { archive = false, archiveSuffix = '' }: { archive?: boolean; archiveSuffix?: string } = {},
+): void {
   const json = JSON.stringify(dataset, null, 2);
   mkdirSync(DATA_DIR, { recursive: true });
   writeFileSync(EVENTS_PATH, json);
   if (archive) {
     mkdirSync(ARCHIVE_DIR, { recursive: true });
-    writeFileSync(resolve(ARCHIVE_DIR, `${dataset.generatedAt.slice(0, 10)}.json`), json);
+    writeFileSync(resolve(ARCHIVE_DIR, `${dataset.generatedAt.slice(0, 10)}${archiveSuffix}.json`), json);
   }
 }
 

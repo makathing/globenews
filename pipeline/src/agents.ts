@@ -151,6 +151,105 @@ Workflow (follow strictly, in order):
 Quality bar: only verified, multi-source events make the dataset. Trust scores are computed downstream — never invent numeric trust values.`;
 }
 
+// ——— US & state run (run-regional.ts --region us) ———
+
+/** The five explorer beats of the US run; together they cover all 50 states and DC. */
+export const US_REGIONS = [
+  'Northeast (ME, NH, VT, MA, RI, CT, NY, NJ, PA)',
+  'Southeast (DE, MD, DC, VA, WV, NC, SC, GA, FL, KY, TN, AL, MS)',
+  'Midwest (OH, MI, IN, IL, WI, MN, IA, MO, ND, SD, NE, KS)',
+  'South Central & Mountain (AR, LA, OK, TX, NM, AZ, CO, UT, NV, WY, MT, ID)',
+  'West Coast, Alaska & Hawaii (WA, OR, CA, AK, HI)',
+] as const;
+
+const US_EXPLORER_PROMPT = `You are the EXPLORER agent for the US & state desk of a news radar map.
+A separate world desk already covers international news and national US politics; you cover
+what happens in the STATES and their cities.
+
+Given a group of US states, run several targeted web searches (prefer local and regional
+outlets, state public broadcasters, and the wires) for significant news there from roughly
+the LAST 24 HOURS:
+- state legislatures, governors, ballot measures and state-level elections
+- disasters and severe weather, wildfires, floods, major accidents
+- state and federal courts ruling on state matters; crime of real public significance
+- economy and jobs (plant openings/closures, strikes, state budgets), health, education,
+  infrastructure, environment, science and technology anchored in a place
+
+Skip: national/federal politics in Washington (the world desk has it), celebrity gossip,
+sports scores, product launches, opinion pieces, and routine local crime.
+Note every [source-intel] annotation you receive — carry high-reliability source URLs forward.
+
+Return a concise markdown list of 5-10 candidate events, spread across different states, each as:
+- HEADLINE | City, State | category (${CATEGORY_LIST}) | 1-2 sentence gist | candidate source URLs (2+ if seen)`;
+
+const US_SYNTHESIZER_PROMPT = SUBAGENTS.synthesizer.prompt
+  .replace('for a global news radar', 'for the US & state desk of a news radar')
+  .replace(
+    '"locationName": "City, Country" or "Country",',
+    '"locationName": "City, State, USA" (e.g. "Savannah, Georgia, USA"; "Washington, D.C., USA"),',
+  )
+  .replace(
+    '"countryCode": ISO 3166-1 alpha-2 ("XX" if genuinely multi-country),',
+    '"countryCode": "US",\n     "subdivision": ISO 3166-2 state code, e.g. "US-TX", "US-DC",',
+  )
+  .replace(
+    /3\. Balance the map:[^\n]*\n[^\n]*\n/,
+    '3. Balance the map: aim for 20-40 events spread across as many different states as possible;\n' +
+      '   no state gets more than 4. Severity is mostly 1-3 for state news (4-5 only for disasters or\n' +
+      '   events of national consequence). Coordinates are the exact city, never a state centroid.\n' +
+      '   Drop anything on the ALREADY COVERED BY THE WORLD DESK list.\n',
+  );
+
+export const US_SUBAGENTS = {
+  explorer: {
+    ...SUBAGENTS.explorer,
+    description:
+      'Scans US state and local news for candidate events. Use once per group of states to discover what happened in the last 24 hours.',
+    prompt: US_EXPLORER_PROMPT,
+  },
+  researcher: SUBAGENTS.researcher,
+  synthesizer: { ...SUBAGENTS.synthesizer, prompt: US_SYNTHESIZER_PROMPT },
+} as const;
+
+function coveredStoriesBlock(covered: CurrentStory[]): string {
+  if (covered.length === 0) return '';
+  const lines = covered
+    .slice(0, MAX_LISTED_STORIES)
+    .map((story) => `  ${story.headline.slice(0, 110)} · ${story.locationName}`);
+  return `
+ALREADY COVERED BY THE WORLD DESK (headline · place) — do NOT report, update or duplicate these;
+they belong to another run and anything matching them is discarded:
+${lines.join('\n')}
+`;
+}
+
+export function usCoordinatorPrompt(
+  stagingPath: string,
+  current: CurrentStory[] = [],
+  covered: CurrentStory[] = [],
+): string {
+  return `You are the COORDINATOR of the US & state desk of a multi-agent news radar pipeline. Today is ${new Date().toISOString().slice(0, 10)}.
+Orchestrate your subagents to build a verified 24-hour dataset of US STATE and CITY news. Do NOT do the research yourself — delegate.
+${currentStoriesBlock(current)}${coveredStoriesBlock(covered)}
+CRITICAL: every Agent tool invocation MUST pass run_in_background: false and you MUST wait
+for each subagent's actual returned result before moving on. Never launch subagents async.
+
+Workflow (follow strictly, in order):
+1. Invoke the "explorer" subagent ${US_REGIONS.length} times — once per group of states:
+${US_REGIONS.map((region, index) => `   (${String.fromCharCode(97 + index)}) ${region}`).join('\n')}
+   These can run in parallel.
+2. Collect all candidates, drop any that are on the ALREADY COVERED list, then invoke the "researcher" subagent in 2-4 batches (group by region) to verify them. Pass each batch the full candidate details.
+3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full), the STORIES ALREADY ON THE MAP list and the ALREADY COVERED list if you were given them, and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
+   Every event must be in the United States: "countryCode": "US", a "subdivision" like "US-TX", and "locationName" as "City, State, USA".
+4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
+5. RE-READ the file and verify EVERY event object has all of: headline, summary, category,
+   severity (integer 1-5), lat, lon, locationName, countryCode, subdivision, sources. Rewrite the
+   file fixing any that are missing a field. Do not report done until that check passes.
+6. Reply with a one-paragraph run summary (counts of candidates, verified, discarded, states covered). If the file could not be written at all, your reply must instead contain the complete final JSON ({"events": [...]}).
+
+Quality bar: only verified, multi-source events make the dataset (local outlets count; prefer at least one wire or public broadcaster). Trust scores are computed downstream — never invent numeric trust values.`;
+}
+
 export const MONITOR_PROMPT = `You are a BREAKING-NEWS MONITOR doing an hourly sweep. Your bar is EXTREMELY high.
 
 Search the web (2-4 searches max) for news from the LAST 1-2 HOURS only.
