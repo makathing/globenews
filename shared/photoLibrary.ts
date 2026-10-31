@@ -13,6 +13,12 @@ export interface LibraryPhoto {
   id: string;
   /** Hotlinkable Commons thumbnail, ~960px wide. */
   thumb: string;
+  /**
+   * Self-hosted copy relative to the site base ("library/<hash>.webp"),
+   * written by the photo-library workflow. The frontend tries it before the
+   * Commons thumbnail, so the last real picture can't be blocked by a host.
+   */
+  local?: string;
   /** The file's Commons description page, for the credit link. */
   page: string;
   title: string;

@@ -14,6 +14,8 @@ export const PHOTO_LIBRARY_PATH = resolve(DATA_DIR, 'photo-library.json');
 /** Human-readable review gallery for the photo library; becomes the refresh PR's body. */
 export const PHOTO_GALLERY_PATH = resolve(DATA_DIR, 'photo-library.md');
 export const STAGING_DIR = resolve(REPO_ROOT, 'pipeline', '.staging');
+/** Self-hosted copies of the library photos, committed and served as /library/*.webp. */
+export const PHOTO_LIBRARY_LOCAL_DIR = resolve(REPO_ROOT, 'frontend', 'public', 'library');
 
 export function readCurrentDataset(): NewsDataset | null {
   if (!existsSync(EVENTS_PATH)) return null;

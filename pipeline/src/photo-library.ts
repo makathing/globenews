@@ -11,6 +11,8 @@ import { TOPICS } from '../../shared/topics.ts';
  */
 
 export const COMMONS_API = 'https://commons.wikimedia.org/w/api.php';
+/** Commons asks every client to identify itself; anonymous agents get throttled or blocked. */
+export const COMMONS_USER_AGENT = 'GlobeNewsPhotoLibrary/1.0 (https://github.com/makathing/globenews)';
 /** Hotlinked thumbnail width: crisp on a story card, light on the wire. */
 export const THUMB_WIDTH = 960;
 /** Originals narrower than this are usually crops or scans. */
@@ -265,7 +267,8 @@ function isPhoto(value: unknown): value is LibraryPhoto {
   return (
     ['id', 'thumb', 'page', 'title', 'author', 'license'].every((key) => typeof photo[key] === 'string') &&
     typeof photo.width === 'number' &&
-    typeof photo.height === 'number'
+    typeof photo.height === 'number' &&
+    (photo.local === undefined || (typeof photo.local === 'string' && /^library\/[a-f0-9]{16}\.webp$/.test(photo.local)))
   );
 }
 
@@ -314,8 +317,19 @@ export function mergeLibrary(
 ): PhotoLibrary {
   const blocked = [...new Set(existing.blocked)];
   const blockedSet = new Set(blocked);
+  // a photo Commons hands back again keeps its self-hosted copy: search
+  // results never carry `local`, and losing it would churn every refresh
+  const localById = new Map<string, string>();
+  for (const photos of Object.values(existing.topics)) {
+    for (const photo of photos) if (photo.local) localById.set(photo.id, photo.local);
+  }
   const keep = (photos: LibraryPhoto[] | undefined) =>
-    (photos ?? []).filter((photo) => !blockedSet.has(photo.id));
+    (photos ?? [])
+      .filter((photo) => !blockedSet.has(photo.id))
+      .map((photo) => {
+        const local = photo.local ?? localById.get(photo.id);
+        return local ? { ...photo, local } : photo;
+      });
 
   const topics: Record<string, LibraryPhoto[]> = {};
   // known topics in TOPICS order, so the file diffs cleanly between refreshes

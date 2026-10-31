@@ -1,4 +1,5 @@
 import type { NewsDataset, NewsEvent, NewsImage } from '../../shared/news.ts';
+import { imageRejectionReason, isPlausibleHostname } from '../../shared/imageFilters.ts';
 import { normalizeDomain } from './source-ratings.ts';
 
 /**
@@ -16,26 +17,64 @@ const MAX_PREVIEWS = 3;
 const UA =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
-/** Pull og:image / twitter:image out of an HTML head. Order-tolerant. */
-export function extractOgImage(html: string): string | null {
+/**
+ * Resolve an og:image value against the article it came from. Relative
+ * values are legal and common ("/img/a.jpg"); resolving them against the
+ * page — never by string concatenation — is what keeps "news.un.org" +
+ * "internal/…" from becoming the host "news.un.orginternal". The result must
+ * be https on a plausible public hostname.
+ */
+export function resolveImageUrl(raw: string, pageUrl?: string): string | null {
+  const value = raw.replace(/&amp;/g, '&').trim();
+  if (!value) return null;
+  try {
+    const url = pageUrl ? new URL(value, pageUrl) : new URL(value);
+    if (url.protocol !== 'https:') return null;
+    if (!isPlausibleHostname(url.hostname)) return null;
+    return url.toString();
+  } catch {
+    return null;
+  }
+}
+
+const OG_IMAGE_PATTERNS = [
+  /<meta[^>]+(?:property|name)=["'](?:og:image|og:image:secure_url|og:image:url|twitter:image|twitter:image:src)["'][^>]*content=["']([^"']+)["']/gi,
+  /<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|og:image:secure_url|og:image:url|twitter:image|twitter:image:src)["']/gi,
+];
+
+/**
+ * Pull og:image / twitter:image out of an HTML head. Order-tolerant. With
+ * `pageUrl`, relative values resolve against the article; without it only
+ * absolute URLs count. Returns the first usable value.
+ */
+export function extractOgImage(html: string, pageUrl?: string): string | null {
   const head = html.slice(0, MAX_HTML_BYTES);
-  const patterns = [
-    /<meta[^>]+(?:property|name)=["'](?:og:image|og:image:secure_url|twitter:image)["'][^>]*content=["']([^"']+)["']/i,
-    /<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|og:image:secure_url|twitter:image)["']/i,
-  ];
-  for (const pattern of patterns) {
-    const match = head.match(pattern);
-    if (!match) continue;
-    const raw = match[1].replace(/&amp;/g, '&').trim();
-    try {
-      const url = new URL(raw);
-      if (url.protocol !== 'https:') continue;
-      return url.toString();
-    } catch {
-      continue;
+  for (const pattern of OG_IMAGE_PATTERNS) {
+    for (const match of head.matchAll(pattern)) {
+      const url = resolveImageUrl(match[1], pageUrl);
+      if (url) return url;
     }
   }
   return null;
+}
+
+/** The og:image:width the page declares, when it declares one. */
+export function extractOgImageWidth(html: string): number | null {
+  const head = html.slice(0, MAX_HTML_BYTES);
+  const match =
+    head.match(/<meta[^>]+(?:property|name)=["']og:image:width["'][^>]*content=["'](\d+)["']/i) ??
+    head.match(/<meta[^>]+content=["'](\d+)["'][^>]*(?:property|name)=["']og:image:width["']/i);
+  return match ? Number(match[1]) : null;
+}
+
+/**
+ * The article's story photo, or null when it has none — including when the
+ * only og:image is the outlet's logo, share card or a thumbnail.
+ */
+export function extractStoryImage(html: string, pageUrl: string): string | null {
+  const url = extractOgImage(html, pageUrl);
+  if (!url) return null;
+  return imageRejectionReason(url, extractOgImageWidth(html)) === null ? url : null;
 }
 
 /**
@@ -119,7 +158,7 @@ async function resolveEventImages(
     candidates.map(async (source) => {
       const html = await fetchHtml(source.url);
       if (!html) return;
-      const imageUrl = extractOgImage(html);
+      const imageUrl = extractStoryImage(html, source.url);
       if (imageUrl) source.image = imageUrl;
       // one fetch, two answers: the article's art and the outlet's mark
       const domain = normalizeDomain(new URL(source.url).hostname);
@@ -179,11 +218,78 @@ export async function probeEgress(fetchImpl: typeof fetch = fetch): Promise<bool
   return (await Promise.all(attempts)).some(Boolean);
 }
 
+/**
+ * How many different stories one outlet may illustrate with the very same
+ * image URL before that image counts as the outlet's default art.
+ */
+export const SHARED_IMAGE_LIMIT = 1;
+
+/**
+ * Drop images that are not pictures of their story, in place: anything the
+ * branding rules reject (shared/imageFilters.ts), and any image one outlet
+ * uses on more than SHARED_IMAGE_LIMIT different stories in the dataset —
+ * which is its site-wide default whatever the file is called. The hero is
+ * re-picked from what remains, or removed, so the frontend falls through to
+ * an illustrative library photo rather than an outlet's logo.
+ *
+ * Runs over images already in the dataset as well as freshly resolved ones:
+ * an inline run, or an earlier dataset, may carry images from before these
+ * rules existed. Returns how many image references it removed.
+ */
+export function scrubStoryImages(dataset: NewsDataset): number {
+  const domainOf = (url: string) => {
+    try {
+      return normalizeDomain(new URL(url).hostname);
+    } catch {
+      return '';
+    }
+  };
+
+  // outlet|image → the stories it appears on
+  const usage = new Map<string, Set<string>>();
+  const note = (domain: string, image: string, eventId: string) => {
+    const key = `${domain}|${image}`;
+    let events = usage.get(key);
+    if (!events) usage.set(key, (events = new Set()));
+    events.add(eventId);
+  };
+  for (const event of dataset.events) {
+    for (const source of event.sources) {
+      if (source.image) note(domainOf(source.url), source.image, event.id);
+    }
+    if (event.image?.url) note(event.image.domain, event.image.url, event.id);
+  }
+  const shared = (domain: string, image: string) =>
+    (usage.get(`${domain}|${image}`)?.size ?? 0) > SHARED_IMAGE_LIMIT;
+
+  let removed = 0;
+  for (const event of dataset.events) {
+    for (const source of event.sources) {
+      if (!source.image) continue;
+      if (imageRejectionReason(source.image) || shared(domainOf(source.url), source.image)) {
+        delete source.image;
+        removed += 1;
+      }
+    }
+    const hero = event.image;
+    if (hero && (imageRejectionReason(hero.url) || shared(hero.domain, hero.url))) {
+      removed += 1;
+      const replacement = event.sources.find((source) => source.image);
+      if (replacement?.image) {
+        event.image = { url: replacement.image, domain: domainOf(replacement.url) };
+      } else {
+        delete event.image;
+      }
+    }
+  }
+  return removed;
+}
+
 /** Mutates the dataset in place, attaching preview images where resolvable. */
 export async function enrichImages(
   dataset: NewsDataset,
   icons: OutletIcons = {},
-): Promise<{ resolved: number; icons: OutletIcons }> {
+): Promise<{ resolved: number; scrubbed: number; icons: OutletIcons }> {
   let resolved = 0;
   const queue = [...dataset.events];
   const workers = Array.from({ length: CONCURRENCY }, async () => {
@@ -198,5 +304,9 @@ export async function enrichImages(
     }
   });
   await Promise.all(workers);
-  return { resolved, icons };
+  const before = dataset.events.filter((event) => event.image).length;
+  const scrubbed = scrubStoryImages(dataset);
+  // a hero that was only an outlet's default art was never really resolved
+  resolved = Math.max(0, resolved - (before - dataset.events.filter((event) => event.image).length));
+  return { resolved, scrubbed, icons };
 }

@@ -2,9 +2,11 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { LibraryPhoto, PhotoLibrary } from '../../shared/photoLibrary.ts';
 import { TOPICS } from '../../shared/topics.ts';
-import { PHOTO_GALLERY_PATH, PHOTO_LIBRARY_PATH, STAGING_DIR, signalChanged } from './io.ts';
+import { PHOTO_GALLERY_PATH, PHOTO_LIBRARY_LOCAL_DIR, PHOTO_LIBRARY_PATH, STAGING_DIR, signalChanged } from './io.ts';
+import { commonsImageFetcher, localiseLibrary, sharpConverter } from './localise-photos.ts';
 import {
   COMMONS_API,
+  COMMONS_USER_AGENT,
   type Candidate,
   commonsSearchUrl,
   emptyLibrary,
@@ -25,22 +27,22 @@ import {
  * workflow opens a pull request whose body is the rendered gallery, and a
  * person reviews the pictures before they can appear next to a news story.
  *
- * Writes data/photo-library.json, data/photo-library.md (the gallery), and
- * pipeline/.staging/photo-library-pr.md (the gallery cut to GitHub's PR body
+ * Writes data/photo-library.json, data/photo-library.md (the gallery), a
+ * self-hosted WebP of every selected photo under frontend/public/library/
+ * (see localise-photos.ts), and pipeline/.staging/photo-library-pr.md (the gallery cut to GitHub's PR body
  * limit). Exits non-zero, writing nothing, when Commons is unreachable — a
  * manually dispatched refresh that silently did nothing would look like one
  * that found nothing new.
  */
 
-/** Commons asks every client to identify itself; anonymous agents get throttled or blocked. */
-const UA = 'GlobeNewsPhotoLibrary/1.0 (https://github.com/makathing/globenews)';
+const UA = COMMONS_USER_AGENT;
 const FETCH_TIMEOUT_MS = 20_000;
 /** Sequential with a pause: ~100 requests over a couple of minutes is a polite load. */
 const REQUEST_DELAY_MS = 750;
 const MAX_ATTEMPTS = 3;
 const PR_BODY_PATH = resolve(STAGING_DIR, 'photo-library-pr.md');
 
-const sleep = (ms: number) => new Promise((resolveSleep) => setTimeout(resolveSleep, ms));
+const sleep = (ms: number) => new Promise<void>((resolveSleep) => setTimeout(resolveSleep, ms));
 
 /**
  * One Commons API GET. Retries what Commons asks to be retried — maxlag
@@ -154,7 +156,21 @@ async function main(): Promise<void> {
     fetched[id] = perQuery === null ? null : selectTopicPhotos(perQuery, blocked, used);
   }
 
-  const library = mergeLibrary(existing, fetched, new Date().toISOString());
+  const merged = mergeLibrary(existing, fetched, new Date().toISOString());
+  // self-host every selected photo; a failed download just leaves that photo
+  // on its Commons hotlink, and files for photos that left are deleted
+  const localised = await localiseLibrary(merged, {
+    dir: PHOTO_LIBRARY_LOCAL_DIR,
+    fetchImage: commonsImageFetcher(UA),
+    convert: await sharpConverter(),
+    pause: () => sleep(REQUEST_DELAY_MS),
+    log: (line) => console.warn(line),
+  });
+  const library = localised.library;
+  console.log(
+    `[photo-library] self-hosted: ${localised.downloaded} downloaded, ${localised.reused} reused, ` +
+      `${localised.failed.length} failed, ${localised.removed.length} orphan file(s) removed`,
+  );
   const changed = JSON.stringify(library) !== JSON.stringify(existing);
   const gallery = renderGallery(library);
 
@@ -184,7 +200,7 @@ async function main(): Promise<void> {
     console.log(`[photo-library]   e.g. ${reason}: ${example}`);
   }
   console.log(`[photo-library] ${requests} searches, ${failures} failed; library ${changed ? 'updated' : 'unchanged'}`);
-  signalChanged(changed);
+  signalChanged(changed || localised.downloaded > 0 || localised.removed.length > 0);
 }
 
 main().catch((error) => {

@@ -16,7 +16,8 @@
     "pipeline:us": "npm run regional:us -w pipeline --",
     "pipeline:enrich": "npm run enrich -w pipeline",
     "pipeline:backfill-severity": "npm run backfill-severity -w pipeline",
-    "pipeline:photo-library": "npm run photo-library -w pipeline"
+    "pipeline:photo-library": "npm run photo-library -w pipeline",
+    "pipeline:photo-library:localise": "npm run photo-library:localise -w pipeline"
   },
   "engines": {
     "node": ">=20"

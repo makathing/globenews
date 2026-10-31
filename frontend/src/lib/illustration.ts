@@ -1,3 +1,4 @@
+import { isStoryImage } from '../../../shared/imageFilters';
 import type { NewsEvent } from '../../../shared/news';
 import type { LibraryPhoto, PhotoLibrary } from '../../../shared/photoLibrary';
 import { CATEGORY_DEFAULT_TOPIC, matchTopic } from '../../../shared/topics';
@@ -6,11 +7,14 @@ import { CATEGORY_DEFAULT_TOPIC, matchTopic } from '../../../shared/topics';
  * The picture a story gets, as an ordered list of things to try.
  *
  * The story's own art comes first (the event's hero, then each source's
- * article image), then an openly licensed library photo of the story's
- * *topic*, then one for the category's default topic, and last a quiet
- * category-colour panel. `StoryArt` renders the first candidate that loads
- * and walks down the list on `onError`, because publishers routinely refuse a
- * hotlinked og:image.
+ * article image, minus anything that is really the outlet's logo or share
+ * card), then an openly licensed library photo of the story's *topic*, then
+ * one for the category's default topic, and last a quiet category-colour
+ * panel. Each library photo is offered twice: the copy this site hosts
+ * itself, then the Commons thumbnail — so the panel is reached only when even
+ * our own file fails. `StoryArt` renders the first candidate that loads and
+ * walks down the list on error, timeout, or a picture that turns out to be a
+ * logo-sized or banner-shaped image (`judgeLoadedImage`).
  */
 export type ArtCandidate =
   | {
@@ -27,6 +31,8 @@ export type ArtCandidate =
       src: string;
       photo: LibraryPhoto;
       topic: string;
+      /** Served from this site (frontend/public/library), not hotlinked. */
+      selfHosted: boolean;
     }
   | { kind: 'panel'; key: 'panel' };
 
@@ -66,10 +72,36 @@ export function pickLibraryPhoto(
 
 type ArtEvent = Pick<NewsEvent, 'id' | 'headline' | 'summary' | 'category' | 'sources' | 'image'>;
 
+/** The site's base path ("./" in the Pages build), for self-hosted library photos. */
+const SITE_BASE: string = import.meta.env?.BASE_URL ?? '/';
+
+/** A loaded image narrower than this is a thumbnail or a logo, not a card picture. */
+export const MIN_LOADED_WIDTH = 200;
+/** Wider than 4:1 (or taller than 1:4) is a banner, a wordmark or a spacer strip. */
+export const MAX_ASPECT = 4;
+
+/**
+ * Whether a picture that loaded is fit to show. Publishers' "images" include
+ * tracking pixels, outlet wordmarks and tiny thumbnails; those load fine, so
+ * only their size gives them away.
+ */
+export function judgeLoadedImage(width: number, height: number): 'ok' | 'too-small' | 'bad-shape' {
+  if (!(width >= MIN_LOADED_WIDTH) || !(height > 0)) return 'too-small';
+  const ratio = width / height;
+  if (ratio > MAX_ASPECT || ratio < 1 / MAX_ASPECT) return 'bad-shape';
+  return 'ok';
+}
+
+/** Images from another host get no Referer; the site's own files don't need hiding. */
+export function isRemoteSrc(src: string): boolean {
+  return /^(?:https?:)?\/\//i.test(src);
+}
+
 export function artChain(
   event: ArtEvent,
   library: PhotoLibrary,
   avoid?: ReadonlySet<string>,
+  base: string = SITE_BASE,
 ): ArtCandidate[] {
   const chain: ArtCandidate[] = [];
   const seen = new Set<string>();
@@ -79,7 +111,7 @@ export function artChain(
     chain.push(candidate);
   };
 
-  if (event.image?.url) {
+  if (event.image?.url && isStoryImage(event.image.url)) {
     push({
       kind: 'source',
       key: `event:${event.image.url}`,
@@ -88,7 +120,8 @@ export function artChain(
     });
   }
   for (const source of event.sources) {
-    if (!source.image) continue;
+    // an older dataset can still carry an outlet's logo or share card
+    if (!source.image || !isStoryImage(source.image)) continue;
     push({
       kind: 'source',
       key: `source:${source.image}`,
@@ -102,9 +135,21 @@ export function artChain(
   const fallbackTopic = CATEGORY_DEFAULT_TOPIC[event.category];
   for (const id of topic === fallbackTopic ? [topic] : [topic, fallbackTopic]) {
     const photo = pickLibraryPhoto(library.topics[id], event.id, blocked, avoid);
-    if (photo) push({ kind: 'library', key: `library:${photo.id}`, src: photo.thumb, photo, topic: id });
+    if (!photo) continue;
+    if (photo.local) {
+      push({
+        kind: 'library',
+        key: `library:${photo.id}:local`,
+        src: `${base}${photo.local}`,
+        photo,
+        topic: id,
+        selfHosted: true,
+      });
+    }
+    push({ kind: 'library', key: `library:${photo.id}`, src: photo.thumb, photo, topic: id, selfHosted: false });
   }
 
+  // always last, and only once: reached when even our own copy fails
   chain.push({ kind: 'panel', key: 'panel' });
   return chain;
 }
