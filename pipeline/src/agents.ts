@@ -90,6 +90,11 @@ Tasks:
      "updates": "<id>"  (ONLY when this event continues one of the STORIES ALREADY ON THE MAP —
                         copy that story's id exactly; omit the field for a new story)
    }
+   SOURCES: every entry is an object {"url": "https://..."} holding a full https URL — the
+   article URL from the research. If you do not have an outlet's article URL, use that
+   outlet's homepage URL instead (e.g. {"url": "https://www.reuters.com/"}). NEVER write a
+   bare outlet name ("Reuters", {"name": "BBC"}, {"outlet": "AP", "url": ""}) — sources
+   without a URL are discarded, and an event left with none is dropped from the map.
 3. Balance the map: aim for 25-45 events spanning all inhabited continents; do not let one
    story dominate. Severity must reflect real-world impact, not coverage volume.
 4. Write the result as VALID JSON — {"events": [...]} — to the staging file path you were given,
@@ -143,7 +148,9 @@ Workflow (follow strictly, in order):
 4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path and telling it the previous attempt failed to write. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
 5. RE-READ the file you just wrote and verify EVERY event object has all of:
    headline, summary, category, severity (integer 1-5), lat, lon, locationName,
-   countryCode, sources. Rewrite the file fixing any that are missing a field —
+   countryCode, sources — and that every source has a "url" starting with https://
+   (an outlet name alone is not a source: replace it with the article URL or, failing
+   that, the outlet's homepage URL). Rewrite the file fixing any that fall short —
    a run has shipped where every event omitted "severity", which silently
    flattened the whole dataset. Do not report done until that check passes.
 6. Reply with a one-paragraph run summary (counts of candidates, verified, discarded). If for any reason the file could not be written at all, your reply must instead contain the complete final JSON ({"events": [...]}) so the caller can recover it.
@@ -243,8 +250,10 @@ ${US_REGIONS.map((region, index) => `   (${String.fromCharCode(97 + index)}) ${r
    Every event must be in the United States: "countryCode": "US", a "subdivision" like "US-TX", and "locationName" as "City, State, USA".
 4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
 5. RE-READ the file and verify EVERY event object has all of: headline, summary, category,
-   severity (integer 1-5), lat, lon, locationName, countryCode, subdivision, sources. Rewrite the
-   file fixing any that are missing a field. Do not report done until that check passes.
+   severity (integer 1-5), lat, lon, locationName, countryCode, subdivision, sources — and that
+   every source has a "url" starting with https:// (an outlet name alone is not a source:
+   replace it with the article URL or, failing that, the outlet's homepage URL). Rewrite the
+   file fixing any that fall short. Do not report done until that check passes.
 6. Reply with a one-paragraph run summary (counts of candidates, verified, discarded, states covered). If the file could not be written at all, your reply must instead contain the complete final JSON ({"events": [...]}).
 
 Quality bar: only verified, multi-source events make the dataset (local outlets count; prefer at least one wire or public broadcaster). Trust scores are computed downstream — never invent numeric trust values.`;

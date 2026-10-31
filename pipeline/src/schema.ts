@@ -1,6 +1,15 @@
 import { z } from 'zod';
-import { BIAS_RATINGS, CATEGORIES, NEWS_SCOPES, type NewsDataset } from '../../shared/news.ts';
+import {
+  BIAS_RATINGS,
+  CATEGORIES,
+  CATEGORY_LABELS,
+  NEWS_SCOPES,
+  type Category,
+  type NewsDataset,
+} from '../../shared/news.ts';
 import { resolvePlace } from './gazetteer.ts';
+import { resolveOutletName } from './outlet-names.ts';
+import { normalizeDomain } from './source-ratings.ts';
 
 /** ISO 3166-2, e.g. 'US-TX', 'US-DC'. */
 export const SUBDIVISION_PATTERN = /^[A-Z]{2}-[A-Z0-9]{1,3}$/;
@@ -11,6 +20,7 @@ export const NewsSourceSchema = z.object({
   reliability: z.number().min(0).max(100),
   bias: z.enum(BIAS_RATINGS),
   unrated: z.boolean().optional(),
+  homepage: z.boolean().optional(),
   image: z.url().optional(),
   icon: z.url().optional(),
 });
@@ -83,7 +93,11 @@ export const StagedEventSchema = NewsEventSchema.omit({
   // runner uses it to keep that story's id and added time
   updates: z.string().optional(),
   sources: z
-    .array(z.object({ url: z.url() }).or(z.url().transform((url) => ({ url }))))
+    .array(
+      z
+        .object({ url: z.url(), homepage: z.boolean().optional() })
+        .or(z.url().transform((url) => ({ url }))),
+    )
     .min(1)
     .max(10),
 });
@@ -110,42 +124,203 @@ export function truncateText(text: string, max: number): string {
   return (wordEnd > max * 0.6 ? slice.slice(0, wordEnd) : slice) + '…';
 }
 
+export interface StagedSource {
+  url: string;
+  /** The outlet's homepage, recovered from a bare outlet name — not the article itself. */
+  homepage?: boolean;
+}
+
+const URL_KEYS = ['url', 'link', 'href', 'source'] as const;
+const NAME_KEYS = ['name', 'outlet', 'publisher', 'domain', 'title', 'source', 'site'] as const;
+
+/** A bare domain somewhere in free text: "Al Jazeera (aljazeera.com)". */
+const DOMAIN_IN_TEXT = /(?:^|[\s(\[<"'])((?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,24})(\/[^\s"'<>)\]]*)?(?=$|[\s)\]>"',;])/i;
+
+function asHttpUrl(candidate: string): URL | undefined {
+  try {
+    const url = new URL(candidate);
+    if ((url.protocol === 'https:' || url.protocol === 'http:') && url.hostname.includes('.')) return url;
+  } catch {
+    // not a URL
+  }
+  return undefined;
+}
+
+/** A site's front page rather than an article on it. */
+export function isHomepage(url: URL): boolean {
+  return url.pathname === '/' && !url.search;
+}
+
+/** An article URL (or a domain-prefixed path) from a string, if it holds one. */
+function urlFrom(raw: string): StagedSource | undefined {
+  const match = raw.match(/https?:\/\/[^\s"'<>\\)\]]+/);
+  if (match) {
+    const url = asHttpUrl(match[0]);
+    return url ? { url: url.toString() } : undefined;
+  }
+  const text = raw.trim();
+  if (/^[\w-]+(\.[\w-]+)+(\/|$)/.test(text)) {
+    const url = asHttpUrl(`https://${text}`);
+    if (url) return isHomepage(url) ? { url: url.toString(), homepage: true } : { url: url.toString() };
+  }
+  const inText = raw.match(DOMAIN_IN_TEXT);
+  if (inText) {
+    const path = inText[2] && inText[2] !== '/' ? inText[2] : '';
+    const url = asHttpUrl(`https://${inText[1].toLowerCase()}${path}`);
+    if (url) return path ? { url: url.toString() } : { url: url.toString(), homepage: true };
+  }
+  return undefined;
+}
+
+/** The outlet's homepage from a name: the whole string, then its parts ("Reuters - Headline"). */
+function homepageFrom(raw: string): StagedSource | undefined {
+  const candidates = [raw, ...raw.split(/\s[-\u2013\u2014|:]\s|[()[\],;]/)];
+  for (const candidate of candidates) {
+    const domain = resolveOutletName(candidate);
+    if (domain) return { url: `https://${domain}/`, homepage: true };
+  }
+  return undefined;
+}
+
 /**
  * Coerce whatever the synthesizer wrote for `sources` into [{url}] —
- * live runs produced strings, protocol-less domains, markdown links, and
- * objects keyed `link`/`href` instead of `url`.
+ * live runs produced strings, protocol-less domains, markdown links, objects
+ * keyed `link`/`href` instead of `url`, and bare outlet names ("Reuters",
+ * {"outlet": "BBC", "url": ""}). Names of known outlets become the outlet's
+ * homepage, flagged `homepage: true`; unknown names are skipped.
  */
-export function normalizeStagedSources(value: unknown): { url: string }[] | undefined {
+export function normalizeStagedSources(value: unknown): StagedSource[] | undefined {
   if (!Array.isArray(value)) return undefined;
-  const urls: string[] = [];
-  const push = (raw: unknown) => {
-    if (typeof raw !== 'string') return;
-    const match = raw.match(/https?:\/\/[^\s"'<>\\)\]]+/);
-    let candidate = match?.[0] ?? raw.trim();
-    if (!/^https?:\/\//.test(candidate) && /^[\w-]+(\.[\w-]+)+(\/|$)/.test(candidate)) {
-      candidate = `https://${candidate}`;
-    }
-    try {
-      const url = new URL(candidate);
-      if (url.protocol === 'https:' || url.protocol === 'http:') urls.push(url.toString());
-    } catch {
-      // not a URL — skip
-    }
-  };
+  const found: StagedSource[] = [];
   for (const entry of value) {
-    if (typeof entry === 'string') push(entry);
-    else if (entry && typeof entry === 'object') {
+    let source: StagedSource | undefined;
+    if (typeof entry === 'string') {
+      source = urlFrom(entry) ?? homepageFrom(entry);
+    } else if (entry && typeof entry === 'object') {
       const record = entry as Record<string, unknown>;
-      push(record.url ?? record.link ?? record.href ?? record.source);
+      const strings = (keys: readonly string[]) =>
+        keys.map((key) => record[key]).filter((v): v is string => typeof v === 'string' && v.trim() !== '');
+      for (const raw of strings(URL_KEYS)) {
+        source = urlFrom(raw);
+        if (source) break;
+      }
+      if (!source) {
+        for (const raw of strings(NAME_KEYS)) {
+          source = homepageFrom(raw) ?? urlFrom(raw);
+          if (source) break;
+        }
+      }
     }
+    if (source) found.push(source);
   }
-  const unique = [...new Set(urls)].map((url) => ({ url }));
+  // a homepage adds nothing when the same outlet's article is already cited
+  const domainOf = (url: string) => normalizeDomain(new URL(url).hostname);
+  const articleDomains = new Set(found.filter((s) => !s.homepage).map((s) => domainOf(s.url)));
+  const seen = new Set<string>();
+  const unique: StagedSource[] = [];
+  for (const source of found) {
+    const key = source.homepage ? `home:${domainOf(source.url)}` : source.url;
+    if (seen.has(key)) continue;
+    if (source.homepage && articleDomains.has(domainOf(source.url))) continue;
+    seen.add(key);
+    unique.push(source);
+  }
   return unique.length > 0 ? unique.slice(0, 10) : undefined;
+}
+
+/**
+ * Synthesizer category dialects -> the fixed list. Live runs dropped stories
+ * for "security", "technology", "environment" and the like.
+ */
+const CATEGORY_ALIASES: Record<string, Category> = {
+  security: 'conflict',
+  war: 'conflict',
+  military: 'conflict',
+  terrorism: 'conflict',
+  defense: 'conflict',
+  defence: 'conflict',
+  'armed conflict': 'conflict',
+  violence: 'conflict',
+  environment: 'climate',
+  environmental: 'climate',
+  ecology: 'climate',
+  pollution: 'climate',
+  wildlife: 'climate',
+  'climate change': 'climate',
+  energy: 'economy',
+  business: 'economy',
+  markets: 'economy',
+  market: 'economy',
+  finance: 'economy',
+  financial: 'economy',
+  trade: 'economy',
+  economics: 'economy',
+  economic: 'economy',
+  labor: 'economy',
+  labour: 'economy',
+  technology: 'science',
+  tech: 'science',
+  space: 'science',
+  ai: 'science',
+  'artificial intelligence': 'science',
+  research: 'science',
+  weather: 'disaster',
+  earthquake: 'disaster',
+  'natural disaster': 'disaster',
+  'natural disasters': 'disaster',
+  accident: 'disaster',
+  disasters: 'disaster',
+  'human rights': 'society',
+  culture: 'society',
+  education: 'society',
+  religion: 'society',
+  migration: 'society',
+  immigration: 'society',
+  crime: 'society',
+  justice: 'society',
+  social: 'society',
+  elections: 'politics',
+  election: 'politics',
+  government: 'politics',
+  diplomacy: 'politics',
+  geopolitics: 'politics',
+  'international relations': 'politics',
+  policy: 'politics',
+  medicine: 'health',
+  'public health': 'health',
+  disease: 'health',
+  healthcare: 'health',
+  'health care': 'health',
+  pandemic: 'health',
+};
+
+/** A category from the fixed list for an off-list one, if it maps cleanly. */
+export function normalizeCategory(value: unknown): Category | undefined {
+  if (typeof value !== 'string') return undefined;
+  const key = value.trim().toLowerCase().replace(/[_-]+/g, ' ').replace(/\s+/g, ' ');
+  const lookup = (k: string): Category | undefined => {
+    if ((CATEGORIES as readonly string[]).includes(k)) return k as Category;
+    const byLabel = CATEGORIES.find((c) => CATEGORY_LABELS[c].toLowerCase() === k);
+    return byLabel ?? CATEGORY_ALIASES[k];
+  };
+  // "politics/economy", "security & defense": the first part decides
+  return lookup(key) ?? lookup(key.split(/\s*[/&,]\s*|\s+and\s+/)[0]);
+}
+
+/** Nothing survived salvage; carries the drops so the caller can still diagnose them. */
+export class StagedValidationError extends Error {
+  constructor(
+    message: string,
+    readonly dropped: SalvageResult['dropped'],
+  ) {
+    super(message);
+  }
 }
 
 export interface SalvageResult {
   staged: StagedOutput;
-  dropped: { index: number; reason: string }[];
+  /** `sources` is the event's raw sources value, kept for diagnosing why it failed. */
+  dropped: { index: number; reason: string; sources?: unknown }[];
   repaired: number;
   /**
    * How many events had no usable severity and took the default. A live run
@@ -246,6 +421,10 @@ export function parseStagedOutput(raw: string): SalvageResult {
       }
       const sources = normalizeStagedSources(fixed.sources);
       if (sources) fixed.sources = sources;
+      if (!(CATEGORIES as readonly string[]).includes(fixed.category as string)) {
+        const category = normalizeCategory(fixed.category);
+        if (category) fixed.category = category;
+      }
       const retry = StagedEventSchema.safeParse(fixed);
       if (retry.success) {
         staged.events.push(retry.data);
@@ -255,6 +434,7 @@ export function parseStagedOutput(raw: string): SalvageResult {
       dropped.push({
         index,
         reason: retry.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ').slice(0, 300),
+        sources: (rawEvent as Record<string, unknown>).sources,
       });
     } else {
       dropped.push({ index, reason: 'not an object' });
@@ -262,8 +442,9 @@ export function parseStagedOutput(raw: string): SalvageResult {
   }
 
   if (staged.events.length === 0) {
-    throw new Error(
+    throw new StagedValidationError(
       `No staged events survived validation (${dropped.length} dropped). First reason: ${dropped[0]?.reason}`,
+      dropped,
     );
   }
   return { staged, dropped, repaired, severityDefaulted };

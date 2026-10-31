@@ -1,0 +1,410 @@
+{
+  "events": [
+    {
+      "headline": "Story number 1 develops in Nairobi, Kenya",
+      "summary": "A factual two-sentence summary of story number 1 in Nairobi, Kenya. It is long enough to pass validation comfortably.",
+      "category": "politics",
+      "severity": 1,
+      "lat": -1.29,
+      "lon": 36.82,
+      "locationName": "Nairobi, Kenya",
+      "countryCode": "KE",
+      "sources": [
+        "Reuters",
+        "AP News"
+      ]
+    },
+    {
+      "headline": "Story number 2 develops in Lagos, Nigeria",
+      "summary": "A factual two-sentence summary of story number 2 in Lagos, Nigeria. It is long enough to pass validation comfortably.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 6.52,
+      "lon": 3.38,
+      "locationName": "Lagos, Nigeria",
+      "countryCode": "NG",
+      "sources": [
+        {
+          "name": "Reuters"
+        },
+        {
+          "name": "BBC News"
+        }
+      ]
+    },
+    {
+      "headline": "Story number 3 develops in Cairo, Egypt",
+      "summary": "A factual two-sentence summary of story number 3 in Cairo, Egypt. It is long enough to pass validation comfortably.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 30.04,
+      "lon": 31.24,
+      "locationName": "Cairo, Egypt",
+      "countryCode": "EG",
+      "sources": [
+        {
+          "outlet": "BBC",
+          "url": ""
+        },
+        {
+          "outlet": "Al Jazeera",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "headline": "Story number 4 develops in Kyiv, Ukraine",
+      "summary": "A factual two-sentence summary of story number 4 in Kyiv, Ukraine. It is long enough to pass validation comfortably.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 50.45,
+      "lon": 30.52,
+      "locationName": "Kyiv, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        "Associated Press",
+        "Agence France-Presse"
+      ]
+    },
+    {
+      "headline": "Story number 5 develops in Paris, France",
+      "summary": "A factual two-sentence summary of story number 5 in Paris, France. It is long enough to pass validation comfortably.",
+      "category": "health",
+      "severity": 5,
+      "lat": 48.86,
+      "lon": 2.35,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
+      "sources": [
+        "The Guardian",
+        "Le Monde"
+      ]
+    },
+    {
+      "headline": "Story number 6 develops in Berlin, Germany",
+      "summary": "A factual two-sentence summary of story number 6 in Berlin, Germany. It is long enough to pass validation comfortably.",
+      "category": "science",
+      "severity": 1,
+      "lat": 52.52,
+      "lon": 13.4,
+      "locationName": "Berlin, Germany",
+      "countryCode": "DE",
+      "sources": [
+        "Deutsche Welle",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 7 develops in Tokyo, Japan",
+      "summary": "A factual two-sentence summary of story number 7 in Tokyo, Japan. It is long enough to pass validation comfortably.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 35.68,
+      "lon": 139.69,
+      "locationName": "Tokyo, Japan",
+      "countryCode": "JP",
+      "sources": [
+        "NHK World",
+        "Kyodo News"
+      ]
+    },
+    {
+      "headline": "Story number 8 develops in Seoul, South Korea",
+      "summary": "A factual two-sentence summary of story number 8 in Seoul, South Korea. It is long enough to pass validation comfortably.",
+      "category": "society",
+      "severity": 3,
+      "lat": 37.57,
+      "lon": 126.98,
+      "locationName": "Seoul, South Korea",
+      "countryCode": "KR",
+      "sources": [
+        "Yonhap",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 9 develops in Beijing, China",
+      "summary": "A factual two-sentence summary of story number 9 in Beijing, China. It is long enough to pass validation comfortably.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 39.9,
+      "lon": 116.4,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        "Xinhua",
+        "South China Morning Post"
+      ]
+    },
+    {
+      "headline": "Story number 10 develops in New Delhi, India",
+      "summary": "A factual two-sentence summary of story number 10 in New Delhi, India. It is long enough to pass validation comfortably.",
+      "category": "economy",
+      "severity": 5,
+      "lat": 28.61,
+      "lon": 77.21,
+      "locationName": "New Delhi, India",
+      "countryCode": "IN",
+      "sources": [
+        "The Times of India",
+        "The Hindu"
+      ]
+    },
+    {
+      "headline": "Story number 11 develops in Karachi, Pakistan",
+      "summary": "A factual two-sentence summary of story number 11 in Karachi, Pakistan. It is long enough to pass validation comfortably.",
+      "category": "conflict",
+      "severity": 1,
+      "lat": 24.86,
+      "lon": 67,
+      "locationName": "Karachi, Pakistan",
+      "countryCode": "PK",
+      "sources": [
+        "Dawn",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 12 develops in Jakarta, Indonesia",
+      "summary": "A factual two-sentence summary of story number 12 in Jakarta, Indonesia. It is long enough to pass validation comfortably.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": -6.2,
+      "lon": 106.85,
+      "locationName": "Jakarta, Indonesia",
+      "countryCode": "ID",
+      "sources": [
+        "AFP",
+        "Al Jazeera English"
+      ]
+    },
+    {
+      "headline": "Story number 13 develops in Manila, Philippines",
+      "summary": "A factual two-sentence summary of story number 13 in Manila, Philippines. It is long enough to pass validation comfortably.",
+      "category": "health",
+      "severity": 3,
+      "lat": 14.6,
+      "lon": 120.98,
+      "locationName": "Manila, Philippines",
+      "countryCode": "PH",
+      "sources": [
+        {
+          "publisher": "Reuters"
+        },
+        {
+          "publisher": "AP"
+        }
+      ]
+    },
+    {
+      "headline": "Story number 14 develops in Sydney, Australia",
+      "summary": "A factual two-sentence summary of story number 14 in Sydney, Australia. It is long enough to pass validation comfortably.",
+      "category": "science",
+      "severity": 4,
+      "lat": -33.87,
+      "lon": 151.21,
+      "locationName": "Sydney, Australia",
+      "countryCode": "AU",
+      "sources": [
+        "ABC (Australia)",
+        "The Guardian"
+      ]
+    },
+    {
+      "headline": "Story number 15 develops in Ottawa, Canada",
+      "summary": "A factual two-sentence summary of story number 15 in Ottawa, Canada. It is long enough to pass validation comfortably.",
+      "category": "climate",
+      "severity": 5,
+      "lat": 45.42,
+      "lon": -75.7,
+      "locationName": "Ottawa, Canada",
+      "countryCode": "CA",
+      "sources": [
+        "CBC News",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 16 develops in Mexico City, Mexico",
+      "summary": "A factual two-sentence summary of story number 16 in Mexico City, Mexico. It is long enough to pass validation comfortably.",
+      "category": "society",
+      "severity": 1,
+      "lat": 19.43,
+      "lon": -99.13,
+      "locationName": "Mexico City, Mexico",
+      "countryCode": "MX",
+      "sources": [
+        "Reuters",
+        "El País"
+      ]
+    },
+    {
+      "headline": "Story number 17 develops in Bogota, Colombia",
+      "summary": "A factual two-sentence summary of story number 17 in Bogota, Colombia. It is long enough to pass validation comfortably.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 4.71,
+      "lon": -74.07,
+      "locationName": "Bogota, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        "Reuters",
+        "AP"
+      ]
+    },
+    {
+      "headline": "Story number 18 develops in Lima, Peru",
+      "summary": "A factual two-sentence summary of story number 18 in Lima, Peru. It is long enough to pass validation comfortably.",
+      "category": "economy",
+      "severity": 3,
+      "lat": -12.05,
+      "lon": -77.04,
+      "locationName": "Lima, Peru",
+      "countryCode": "PE",
+      "sources": [
+        "BBC",
+        "AFP"
+      ]
+    },
+    {
+      "headline": "Story number 19 develops in Buenos Aires, Argentina",
+      "summary": "A factual two-sentence summary of story number 19 in Buenos Aires, Argentina. It is long enough to pass validation comfortably.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": -34.6,
+      "lon": -58.38,
+      "locationName": "Buenos Aires, Argentina",
+      "countryCode": "AR",
+      "sources": [
+        "Reuters",
+        "Associated Press"
+      ]
+    },
+    {
+      "headline": "Story number 20 develops in Sao Paulo, Brazil",
+      "summary": "A factual two-sentence summary of story number 20 in Sao Paulo, Brazil. It is long enough to pass validation comfortably.",
+      "category": "disaster",
+      "severity": 5,
+      "lat": -23.55,
+      "lon": -46.63,
+      "locationName": "Sao Paulo, Brazil",
+      "countryCode": "BR",
+      "sources": [
+        "Reuters",
+        "Bloomberg"
+      ]
+    },
+    {
+      "headline": "Story number 21 develops in Johannesburg, South Africa",
+      "summary": "A factual two-sentence summary of story number 21 in Johannesburg, South Africa. It is long enough to pass validation comfortably.",
+      "category": "health",
+      "severity": 1,
+      "lat": -26.2,
+      "lon": 28.05,
+      "locationName": "Johannesburg, South Africa",
+      "countryCode": "ZA",
+      "sources": [
+        "Daily Maverick",
+        "Mail & Guardian"
+      ]
+    },
+    {
+      "headline": "Story number 22 develops in Istanbul, Turkey",
+      "summary": "A factual two-sentence summary of story number 22 in Istanbul, Turkey. It is long enough to pass validation comfortably.",
+      "category": "science",
+      "severity": 2,
+      "lat": 41.01,
+      "lon": 28.98,
+      "locationName": "Istanbul, Turkey",
+      "countryCode": "TR",
+      "sources": [
+        "Anadolu Agency",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 23 develops in Tehran, Iran",
+      "summary": "A factual two-sentence summary of story number 23 in Tehran, Iran. It is long enough to pass validation comfortably.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 35.69,
+      "lon": 51.39,
+      "locationName": "Tehran, Iran",
+      "countryCode": "IR",
+      "sources": [
+        "Al Jazeera",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 24 develops in Riyadh, Saudi Arabia",
+      "summary": "A factual two-sentence summary of story number 24 in Riyadh, Saudi Arabia. It is long enough to pass validation comfortably.",
+      "category": "society",
+      "severity": 4,
+      "lat": 24.71,
+      "lon": 46.68,
+      "locationName": "Riyadh, Saudi Arabia",
+      "countryCode": "SA",
+      "sources": [
+        "Arab News",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 25 develops in Jerusalem, Israel",
+      "summary": "A factual two-sentence summary of story number 25 in Jerusalem, Israel. It is long enough to pass validation comfortably.",
+      "category": "politics",
+      "severity": 5,
+      "lat": 31.77,
+      "lon": 35.21,
+      "locationName": "Jerusalem, Israel",
+      "countryCode": "IL",
+      "sources": [
+        "Times of Israel",
+        "Haaretz"
+      ]
+    },
+    {
+      "headline": "Story number 26 develops in London, United Kingdom",
+      "summary": "A factual two-sentence summary of story number 26 in London, United Kingdom. It is long enough to pass validation comfortably.",
+      "category": "economy",
+      "severity": 1,
+      "lat": 51.51,
+      "lon": -0.13,
+      "locationName": "London, United Kingdom",
+      "countryCode": "GB",
+      "sources": [
+        "Sky News",
+        "The Telegraph"
+      ]
+    },
+    {
+      "headline": "Story number 27 develops in Singapore",
+      "summary": "A factual two-sentence summary of story number 27 in Singapore. It is long enough to pass validation comfortably.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 1.35,
+      "lon": 103.82,
+      "locationName": "Singapore",
+      "countryCode": "SG",
+      "sources": [
+        "The Straits Times",
+        "Reuters"
+      ]
+    },
+    {
+      "headline": "Story number 28 develops in Hong Kong",
+      "summary": "A factual two-sentence summary of story number 28 in Hong Kong. It is long enough to pass validation comfortably.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 22.32,
+      "lon": 114.17,
+      "locationName": "Hong Kong",
+      "countryCode": "HK",
+      "sources": [
+        "South China Morning Post",
+        "Nikkei Asia"
+      ]
+    }
+  ]
+}
