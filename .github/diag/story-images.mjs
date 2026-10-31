@@ -30,7 +30,10 @@ for (const [name, engine, device] of [
   if (await toggle.count()) await toggle.click();
   await page.waitForTimeout(3000);
   for (let i = 0; i < 6; i++) {
-    await page.mouse.wheel(0, 800);
+    await page.evaluate(() => {
+      for (const el of document.querySelectorAll('.rail-list, .rail, [class*=list]')) el.scrollTop += 800;
+      window.scrollBy(0, 800);
+    });
     await page.waitForTimeout(800);
   }
   await page.waitForTimeout(3000);
