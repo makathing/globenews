@@ -1,4 +1,4 @@
-import { enrichImages, probeEgress } from './enrich-images.ts';
+import { enrichImages, probeEgress, scrubStoryImages } from './enrich-images.ts';
 import { computeStats } from './finalize.ts';
 import {
   readCurrentDataset,
@@ -33,18 +33,28 @@ async function main(): Promise<void> {
     return;
   }
 
+  const before = JSON.stringify(dataset);
+
   if (!(await probeEgress())) {
     // Same silent-failure trap the news run has: without this a blocked
     // runner reports "resolved 0" and looks like a day with no art.
     console.warn('[enrich] publishers unreachable from this environment — nothing resolved');
+    // still drop outlet logos and share cards already in the dataset: that
+    // needs no network, and the site is better off with none than with those
+    const scrubbed = scrubStoryImages(dataset);
+    if (scrubbed > 0) {
+      dataset.stats = { ...dataset.stats, ...computeStats(dataset) };
+      validateDataset(dataset);
+      writeDataset(dataset);
+      console.log(`[enrich] removed ${scrubbed} generic/branding image(s) already in the dataset`);
+    }
     return;
   }
 
-  const before = JSON.stringify(dataset);
   const icons = readOutletIcons();
   const iconsBefore = Object.keys(icons).length;
 
-  const { resolved } = await enrichImages(dataset, icons);
+  const { resolved, scrubbed } = await enrichImages(dataset, icons);
 
   dataset.stats = {
     ...dataset.stats,
@@ -65,6 +75,7 @@ async function main(): Promise<void> {
   writeOutletIcons(icons);
 
   const newIcons = Object.keys(icons).length - iconsBefore;
+  console.log(`[enrich] dropped ${scrubbed} generic/branding image(s) (logos, share cards, outlet defaults)`);
   console.log(
     `[enrich] ${resolved} new hero image(s); ` +
       `${dataset.stats.imagesResolved}/${dataset.events.length} events and ` +

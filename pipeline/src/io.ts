@@ -14,6 +14,8 @@ export const PHOTO_LIBRARY_PATH = resolve(DATA_DIR, 'photo-library.json');
 /** Human-readable review gallery for the photo library; becomes the refresh PR's body. */
 export const PHOTO_GALLERY_PATH = resolve(DATA_DIR, 'photo-library.md');
 export const STAGING_DIR = resolve(REPO_ROOT, 'pipeline', '.staging');
+/** Self-hosted copies of the library photos, committed and served as /library/*.webp. */
+export const PHOTO_LIBRARY_LOCAL_DIR = resolve(REPO_ROOT, 'frontend', 'public', 'library');
 
 export function readCurrentDataset(): NewsDataset | null {
   if (!existsSync(EVENTS_PATH)) return null;
@@ -24,13 +26,21 @@ export function readCurrentDataset(): NewsDataset | null {
   }
 }
 
-export function writeDataset(dataset: NewsDataset, { archive = false } = {}): void {
+/**
+ * Write data/events.json and, with `archive`, a dated snapshot. The daily
+ * batch archives as `<date>.json`; other runs pass a suffix (`-us`) so they
+ * never overwrite the day's worldwide snapshot. Archives are write-only.
+ */
+export function writeDataset(
+  dataset: NewsDataset,
+  { archive = false, archiveSuffix = '' }: { archive?: boolean; archiveSuffix?: string } = {},
+): void {
   const json = JSON.stringify(dataset, null, 2);
   mkdirSync(DATA_DIR, { recursive: true });
   writeFileSync(EVENTS_PATH, json);
   if (archive) {
     mkdirSync(ARCHIVE_DIR, { recursive: true });
-    writeFileSync(resolve(ARCHIVE_DIR, `${dataset.generatedAt.slice(0, 10)}.json`), json);
+    writeFileSync(resolve(ARCHIVE_DIR, `${dataset.generatedAt.slice(0, 10)}${archiveSuffix}.json`), json);
   }
 }
 

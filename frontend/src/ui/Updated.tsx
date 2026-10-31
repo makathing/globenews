@@ -1,27 +1,40 @@
 import { useEffect, useState } from 'react';
-import { relativeTime } from '../lib/freshness';
+import { longDayLabel } from '../lib/archive';
+import { briefingLabel, checkedLabel } from '../lib/status';
 import { useGlobeStore } from '../store';
 
-/**
- * When the feed was last generated, as a small chip at the foot of the globe.
- * One fact, one place: the rail footer and the old scrubber bar both used to say
- * it, in three formats. The full UTC timestamp is one hover away.
- */
-export function Updated() {
+/** The status line's text: "Today's briefing · 06:00 UTC · checked 3 min ago". */
+export function useStatusLine(): string {
   const dataset = useGlobeStore((s) => s.dataset);
+  const viewingDate = useGlobeStore((s) => s.viewingDate);
+  const checkedAt = useGlobeStore((s) => s.liveCheckedAt);
   const [now, setNow] = useState(() => Date.now());
 
   useEffect(() => {
-    // relativeTime is minute-grained below an hour; ticking faster buys nothing
-    const timer = setInterval(() => setNow(Date.now()), 60_000);
+    const timer = setInterval(() => setNow(Date.now()), 30_000);
     return () => clearInterval(timer);
   }, []);
 
+  if (!dataset) return 'Loading…';
+  if (viewingDate) return `Archive · ${longDayLabel(viewingDate)} · live updates paused`;
+  const checked = checkedLabel(checkedAt, now);
+  return checked ? `${briefingLabel(dataset, now)} · ${checked}` : briefingLabel(dataset, now);
+}
+
+/**
+ * Desktop: which briefing the map is showing and when the site last checked
+ * for a newer one, as a chip at the foot of the globe.
+ */
+export function Updated() {
+  const dataset = useGlobeStore((s) => s.dataset);
+  const line = useStatusLine();
   if (!dataset) return null;
-  const generated = new Date(dataset.generatedAt);
   return (
-    <div className="updated" title={`Generated ${generated.toISOString().replace('T', ' ').slice(0, 16)} UTC`}>
-      Updated {relativeTime(dataset.generatedAt, now)}
+    <div
+      className="updated"
+      title={`Generated ${new Date(dataset.generatedAt).toISOString().replace('T', ' ').slice(0, 16)} UTC`}
+    >
+      {line}
     </div>
   );
 }

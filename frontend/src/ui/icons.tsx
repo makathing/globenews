@@ -129,3 +129,30 @@ export function ClockIcon(props: IconProps) {
   );
 }
 
+
+export function ShareIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M12 3.6v11.2" />
+      <path d="M8 7.4 12 3.4l4 4" />
+      <path d="M7.4 10.6H6.2a1.6 1.6 0 0 0-1.6 1.6v6.6a1.6 1.6 0 0 0 1.6 1.6h11.6a1.6 1.6 0 0 0 1.6-1.6v-6.6a1.6 1.6 0 0 0-1.6-1.6h-1.2" />
+    </Svg>
+  );
+}
+
+export function GearIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <circle cx="12" cy="12" r="3" />
+      <path d="M19.4 13.5a7.6 7.6 0 0 0 0-3l2-1.5-2-3.4-2.3.9a7.4 7.4 0 0 0-2.6-1.5L14 2.6h-4l-.5 2.4a7.4 7.4 0 0 0-2.6 1.5l-2.3-.9-2 3.4 2 1.5a7.6 7.6 0 0 0 0 3l-2 1.5 2 3.4 2.3-.9a7.4 7.4 0 0 0 2.6 1.5l.5 2.4h4l.5-2.4a7.4 7.4 0 0 0 2.6-1.5l2.3.9 2-3.4Z" />
+    </Svg>
+  );
+}
+
+export function ChevronLeftIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M14.8 5.6 8.4 12l6.4 6.4" />
+    </Svg>
+  );
+}

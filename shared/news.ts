@@ -64,6 +64,14 @@ export interface NewsImage {
   domain: string;
 }
 
+export const NEWS_SCOPES = ['global', 'us'] as const;
+export type NewsScope = (typeof NEWS_SCOPES)[number];
+
+/** A missing scope means the story came from the worldwide runs. */
+export function scopeOf(event: { scope?: NewsScope }): NewsScope {
+  return event.scope ?? 'global';
+}
+
 export interface NewsEvent {
   id: string;
   headline: string;
@@ -76,6 +84,14 @@ export interface NewsEvent {
   locationName: string;
   /** ISO 3166-1 alpha-2, or 'XX' for international waters / multi-country events. */
   countryCode: string;
+  /**
+   * Which run owns the story: the worldwide daily batch / breaking monitor
+   * ('global', also assumed when absent) or the US & state run ('us'). A run
+   * only ever replaces, updates or expires stories in its own scope.
+   */
+  scope?: NewsScope;
+  /** ISO 3166-2 subdivision for state-level stories, e.g. 'US-TX'. */
+  subdivision?: string;
   sources: NewsSource[];
   /** Optional article preview image, resolved by the pipeline's enrichment step. */
   image?: NewsImage;

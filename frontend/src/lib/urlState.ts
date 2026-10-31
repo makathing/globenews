@@ -1,80 +1,92 @@
 import { useEffect, useRef } from 'react';
 import { useGlobeStore } from '../store';
+import { readUrlState, writeUrlState, type UrlState } from './urlParams';
 
 /**
- * Deep links. The selected story lives in `?event=<id>` so a link points at a
- * specific story rather than "the homepage, good luck finding it". A query
- * param rather than a path segment, deliberately: static hosts (GitHub Pages)
- * serve index.html for `/?event=x` without any SPA-fallback configuration.
+ * Deep links and back/forward. The open story (`?event=`), the region view
+ * (`?region=`) and an archived day (`?date=`) all live in the URL; the pure
+ * reading and writing is in urlParams.ts.
+ *
+ * Feedback loops are avoided by direction: URL → state happens only on load
+ * and on popstate (with `applying` set, so the state changes it causes don't
+ * echo back), and state → URL only pushes when the URL actually differs. A
+ * user's choice (story, region, day) pushes a history entry; the app
+ * dropping a selection on its own (a live update expired the story) replaces.
  */
 
-const PARAM = 'event';
-
-export function eventIdFromUrl(): string | null {
-  if (typeof window === 'undefined') return null;
-  return new URLSearchParams(window.location.search).get(PARAM);
+function stateToUrl(s: ReturnType<typeof useGlobeStore.getState>): UrlState {
+  return { event: s.selectedId, region: s.region, date: s.viewingDate };
 }
 
-function urlForEvent(id: string | null): string {
-  const url = new URL(window.location.href);
-  if (id) url.searchParams.set(PARAM, id);
-  else url.searchParams.delete(PARAM);
-  return url.pathname + url.search + url.hash;
+function here(): string {
+  return window.location.pathname + window.location.search + window.location.hash;
 }
 
-/** Absolute share link for a story — used by the copy-link button. */
+/** Absolute share link for a story (on the archived day it is from, if one is on screen). */
 export function shareUrlForEvent(id: string): string {
   const url = new URL(window.location.href);
-  url.searchParams.set(PARAM, id);
+  url.search = '';
   url.hash = '';
+  const date = useGlobeStore.getState().viewingDate;
+  if (date) url.searchParams.set('date', date);
+  url.searchParams.set('event', id);
   return url.toString();
 }
 
-/**
- * Two-way sync between `selectedId` and the URL, without feedback loops:
- * URL-driven selections replace rather than push, and we only touch history
- * when the value actually differs from what's already there.
- */
 export function useUrlSync(): void {
-  const dataset = useGlobeStore((s) => s.dataset);
-  const selectedId = useGlobeStore((s) => s.selectedId);
-  const select = useGlobeStore((s) => s.select);
+  const hasData = useGlobeStore((s) => s.dataset !== null);
+  const ready = useRef(false);
+  const applying = useRef(false);
 
-  // Once data is in, honour whatever the incoming link asked for. Later
-  // datasets (live updates) never re-select: the store has already dropped a
-  // selection whose story expired, so all that is left is to take the dead
-  // `?event=` off the URL — with replaceState, since nobody navigated. This
-  // runs before the selection -> URL effect below, which then finds the URL
-  // and the (cleared) selection already in agreement and pushes nothing.
-  const honoured = useRef(false);
+  // load: honour the incoming link once data is in (an archived day first,
+  // so an `?event=` from that day can be found), then tidy the URL in place
   useEffect(() => {
-    if (!dataset) return;
-    const wanted = eventIdFromUrl();
-    const first = !honoured.current;
-    honoured.current = true;
-    if (!wanted) return;
-    if (dataset.events.some((event) => event.id === wanted)) {
-      // fromGlobe so the rail scrolls the story into view as well
-      if (first) select(wanted, { fromGlobe: true });
-    } else {
-      // stale or bad link, or the story expired: drop the param rather than leaving a dead URL
-      window.history.replaceState(null, '', urlForEvent(null));
-    }
-  }, [dataset, select]);
+    if (!hasData || ready.current || applying.current) return;
+    applying.current = true;
+    void (async () => {
+      const url = readUrlState(window.location.search);
+      if (url.date) await useGlobeStore.getState().viewDay(url.date);
+      const { dataset, select } = useGlobeStore.getState();
+      // fromGlobe so the list scrolls the story into view as well
+      if (url.event && dataset?.events.some((e) => e.id === url.event)) select(url.event, { fromGlobe: true });
+      // a dead story, an unknown region or a missing day leaves the URL here
+      window.history.replaceState(window.history.state, '', writeUrlState(window.location.href, stateToUrl(useGlobeStore.getState())));
+      applying.current = false;
+      ready.current = true;
+    })();
+  }, [hasData]);
 
-  // selection -> URL
-  useEffect(() => {
-    if (!dataset) return;
-    if (eventIdFromUrl() === selectedId) return;
-    window.history.pushState(null, '', urlForEvent(selectedId));
-  }, [selectedId, dataset]);
+  // state -> URL
+  useEffect(
+    () =>
+      useGlobeStore.subscribe((s, prev) => {
+        if (!ready.current || applying.current) return;
+        if (s.selectedId === prev.selectedId && s.region === prev.region && s.viewingDate === prev.viewingDate) return;
+        const next = writeUrlState(window.location.href, stateToUrl(s));
+        if (next === here()) return;
+        const chosen = s.region !== prev.region || s.viewingDate !== prev.viewingDate || s.dataset === prev.dataset;
+        if (chosen) window.history.pushState(null, '', next);
+        else window.history.replaceState(window.history.state, '', next);
+      }),
+    [],
+  );
 
-  // back/forward -> selection
+  // back/forward -> state
   useEffect(() => {
-    const onPop = () => {
-      const wanted = eventIdFromUrl();
-      const known = wanted && useGlobeStore.getState().dataset?.events.some((e) => e.id === wanted);
-      useGlobeStore.getState().select(known ? wanted : null, { fromGlobe: true });
+    const onPop = async () => {
+      if (!ready.current) return;
+      applying.current = true;
+      try {
+        const url = readUrlState(window.location.search);
+        await useGlobeStore.getState().viewDay(url.date);
+        const store = useGlobeStore.getState();
+        const region = url.region ?? 'world';
+        if (store.region !== region) store.setRegion(region);
+        const known = url.event && useGlobeStore.getState().dataset?.events.some((e) => e.id === url.event);
+        useGlobeStore.getState().select(known ? url.event : null, { fromGlobe: true });
+      } finally {
+        applying.current = false;
+      }
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);

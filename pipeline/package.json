@@ -6,11 +6,13 @@
   "scripts": {
     "daily": "tsx src/run-daily.ts",
     "monitor": "tsx src/run-monitor.ts",
+    "regional:us": "tsx src/run-regional.ts --region us",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "enrich": "tsx src/enrich-existing.ts",
     "backfill-severity": "tsx src/backfill-severity.ts",
-    "photo-library": "tsx src/build-photo-library.ts"
+    "photo-library": "tsx src/build-photo-library.ts",
+    "photo-library:localise": "tsx src/localise-photo-library.ts"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.3.0",
@@ -18,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.20.1",
+    "sharp": "^0.35.5",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0"

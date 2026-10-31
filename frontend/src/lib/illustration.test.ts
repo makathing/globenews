@@ -2,7 +2,14 @@ import { describe, expect, it } from 'vitest';
 import type { NewsEvent } from '../../../shared/news';
 import type { LibraryPhoto, PhotoLibrary } from '../../../shared/photoLibrary';
 import { CATEGORY_DEFAULT_TOPIC, matchTopic, TOPICS } from '../../../shared/topics';
-import { artChain, artChains, pickLibraryPhoto, type ArtCandidate } from './illustration';
+import {
+  artChain,
+  artChains,
+  isRemoteSrc,
+  judgeLoadedImage,
+  pickLibraryPhoto,
+  type ArtCandidate,
+} from './illustration';
 
 function story(id: string, overrides: Partial<NewsEvent> = {}): NewsEvent {
   return {
@@ -66,28 +73,28 @@ function specificStory(): { event: NewsEvent; topic: string; fallback: string } 
 describe('artChain', () => {
   it('orders the hero, then each source image, then the colour panel', () => {
     const event = story('a', {
-      image: { url: 'https://cdn.a/hero.jpg', domain: 'a.com' },
+      image: { url: 'https://cdn.a.com/hero.jpg', domain: 'a.com' },
       sources: [
-        { url: 'https://a.com/1', domain: 'a.com', reliability: 80, bias: 'center', image: 'https://cdn.a/hero.jpg' },
+        { url: 'https://a.com/1', domain: 'a.com', reliability: 80, bias: 'center', image: 'https://cdn.a.com/hero.jpg' },
         { url: 'https://b.com/1', domain: 'b.com', reliability: 80, bias: 'center' },
-        { url: 'https://c.com/1', domain: 'c.com', reliability: 80, bias: 'center', image: 'https://cdn.c/c.jpg' },
+        { url: 'https://c.com/1', domain: 'c.com', reliability: 80, bias: 'center', image: 'https://cdn.c.com/c.jpg' },
       ],
     });
     const chain = artChain(event, EMPTY);
     // the hero repeated as a source image is tried once, not twice
-    expect(srcs(chain)).toEqual(['https://cdn.a/hero.jpg', 'https://cdn.c/c.jpg', 'panel']);
+    expect(srcs(chain)).toEqual(['https://cdn.a.com/hero.jpg', 'https://cdn.c.com/c.jpg', 'panel']);
     expect(chain[0]).toMatchObject({ kind: 'source', credit: 'via a.com' });
     expect(chain[1]).toMatchObject({ kind: 'source', credit: 'via c.com' });
   });
 
   it('with an empty library, offers only the real images and the colour panel', () => {
     expect(kinds(artChain(story('b'), EMPTY))).toEqual(['panel']);
-    const withImage = story('b', { image: { url: 'https://x/y.jpg', domain: 'x.com' } });
+    const withImage = story('b', { image: { url: 'https://img.x.com/y.jpg', domain: 'x.com' } });
     expect(kinds(artChain(withImage, EMPTY))).toEqual(['source', 'panel']);
   });
 
   it('puts the topic photo after the real images and before the panel', () => {
-    const event = story('c', { image: { url: 'https://x/y.jpg', domain: 'x.com' } });
+    const event = story('c', { image: { url: 'https://img.x.com/y.jpg', domain: 'x.com' } });
     const topic = matchTopic(event);
     const chain = artChain(event, library({ [topic]: [photo('p1')] }));
     expect(kinds(chain)).toEqual(['source', 'library', 'panel']);
@@ -162,11 +169,113 @@ describe('avoid set', () => {
 
   it('does not let stories with their own art claim library photos', () => {
     const photos = [photo('a'), photo('b')];
-    const withArt = story('art', { image: { url: 'https://x/y.jpg', domain: 'x.com' } });
+    const withArt = story('art', { image: { url: 'https://img.x.com/y.jpg', domain: 'x.com' } });
     const bare = story('bare');
     const lib = library({ [matchTopic(bare)]: photos });
     const alone = libraryIds(artChain(bare, lib))[0];
     const chains = artChains([withArt, bare], lib);
     expect(libraryIds(chains.get('bare')!)[0]).toBe(alone);
+  });
+});
+
+describe('self-hosted library photos', () => {
+  const local = (id: string): LibraryPhoto => ({ ...photo(id), local: `library/${id}.webp` });
+
+  it("tries the site's own copy before the Commons thumbnail, and the panel only after both", () => {
+    const event = story('l1');
+    const chain = artChain(event, library({ [matchTopic(event)]: [local('p1')] }), undefined, './');
+    expect(srcs(chain)).toEqual(['./library/p1.webp', 'https://upload.example/p1.jpg', 'panel']);
+    expect(chain[0]).toMatchObject({ kind: 'library', selfHosted: true });
+    expect(chain[1]).toMatchObject({ kind: 'library', selfHosted: false });
+  });
+
+  it('keeps each photo\'s two copies together, topic photo before the category default', () => {
+    const found = specificStory();
+    if (!found) return;
+    const chain = artChain(
+      found.event,
+      library({ [found.topic]: [local('t1')], [found.fallback]: [local('f1')] }),
+      undefined,
+      '/',
+    );
+    expect(srcs(chain)).toEqual([
+      '/library/t1.webp',
+      'https://upload.example/t1.jpg',
+      '/library/f1.webp',
+      'https://upload.example/f1.jpg',
+      'panel',
+    ]);
+  });
+
+  it('a photo with no self-hosted copy is just its thumbnail', () => {
+    const event = story('l2');
+    const chain = artChain(event, library({ [matchTopic(event)]: [photo('p1')] }));
+    expect(srcs(chain)).toEqual(['https://upload.example/p1.jpg', 'panel']);
+  });
+
+  it('spreading across cards still counts a self-hosted photo as used', () => {
+    const photos = [local('a'), local('b')];
+    const events = [story('one'), story('two')];
+    const chains = artChains(events, library({ [matchTopic(events[0])]: photos }));
+    const firsts = events.map((e) => libraryIds(chains.get(e.id)!)[0]);
+    expect(new Set(firsts).size).toBe(2);
+  });
+});
+
+describe('outlet branding in an older dataset', () => {
+  it('skips logos and share cards, so the story falls through to a library photo', () => {
+    const event = story('brand', {
+      image: { url: 'https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg', domain: 'npr.org' },
+      sources: [
+        {
+          url: 'https://www.pbs.org/a',
+          domain: 'pbs.org',
+          reliability: 80,
+          bias: 'center',
+          image: 'https://www.pbs.org/images/pbs_share_og.png',
+        },
+        {
+          url: 'https://news.un.org/a',
+          domain: 'un.org',
+          reliability: 80,
+          bias: 'center',
+          image: 'https://news.un.orginternal/sites/un-emblem-for-rss.png',
+        },
+      ],
+    });
+    const chain = artChain(event, library({ [matchTopic(event)]: [photo('p1')] }));
+    expect(kinds(chain)).toEqual(['library', 'panel']);
+  });
+});
+
+describe('judgeLoadedImage', () => {
+  it('accepts an ordinary landscape or portrait photo', () => {
+    expect(judgeLoadedImage(1200, 630)).toBe('ok');
+    expect(judgeLoadedImage(640, 427)).toBe('ok');
+    expect(judgeLoadedImage(600, 900)).toBe('ok');
+    expect(judgeLoadedImage(200, 200)).toBe('ok');
+  });
+
+  it('rejects pixels, icons and thumbnails narrower than 200px', () => {
+    expect(judgeLoadedImage(1, 1)).toBe('too-small');
+    expect(judgeLoadedImage(180, 180)).toBe('too-small');
+    expect(judgeLoadedImage(199, 120)).toBe('too-small');
+    expect(judgeLoadedImage(0, 0)).toBe('too-small');
+    expect(judgeLoadedImage(Number.NaN, 100)).toBe('too-small');
+  });
+
+  it('rejects banners and wordmarks more extreme than 4:1', () => {
+    expect(judgeLoadedImage(1200, 200)).toBe('bad-shape');
+    expect(judgeLoadedImage(300, 1500)).toBe('bad-shape');
+    expect(judgeLoadedImage(800, 200)).toBe('ok');
+  });
+});
+
+describe('isRemoteSrc', () => {
+  it('tells hotlinks from the site\'s own files', () => {
+    expect(isRemoteSrc('https://upload.wikimedia.org/x.jpg')).toBe(true);
+    expect(isRemoteSrc('//cdn.example.com/x.jpg')).toBe(true);
+    expect(isRemoteSrc('./library/abc.webp')).toBe(false);
+    expect(isRemoteSrc('/library/abc.webp')).toBe(false);
   });
 });

@@ -14,6 +14,14 @@ name: Refresh photo library
 #    the run fills that same branch and PR with the photos. No setting needed,
 #    because the workflow only commits and edits an existing PR, never opens one.
 #    Its own commit doesn't re-trigger it (GITHUB_TOKEN pushes start no runs).
+#    A branch named photo-library/localise* instead only self-hosts the photos
+#    already in the library (no Commons search, same photos): it downloads each
+#    one, stores a card-sized WebP under frontend/public/library/ and records
+#    it as `local` in data/photo-library.json.
+#
+# Every run commits frontend/public/library/ alongside the JSON: the site
+# serves those copies first, so the last real picture a story can fall back
+# to never depends on a third-party host accepting a hotlink.
 on:
   workflow_dispatch:
   push:
@@ -41,11 +49,18 @@ jobs:
       # Exits non-zero without writing anything if Commons is unreachable, so
       # a blocked run fails visibly instead of looking like "nothing new".
       # Topics whose searches fail keep their current photos.
-      - run: npm run pipeline:photo-library
+      - name: Refresh the library from Commons
+        if: ${{ !(github.event_name == 'push' && startsWith(github.ref_name, 'photo-library/localise')) }}
+        run: npm run pipeline:photo-library
+
+      # One-off: self-host the photos already listed, without searching again.
+      - name: Self-host the photos already in the library
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'photo-library/localise') }}
+        run: npm run pipeline:photo-library:localise
 
       - id: diff
         run: |
-          if [ -n "$(git status --porcelain -- data/photo-library.json)" ]; then
+          if [ -n "$(git status --porcelain -- data/photo-library.json frontend/public/library/)" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -68,6 +83,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -C "$BRANCH"
           git add data/photo-library.json data/photo-library.md
+          # new copies and removed orphans; the folder only exists once a photo was self-hosted
+          git add -A -- frontend/public/library/ 2>/dev/null || true
           git commit -m "data: refresh illustrative photo library"
           git push --force origin "$BRANCH"
 
@@ -93,6 +110,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/photo-library.json data/photo-library.md
+          # new copies and removed orphans; the folder only exists once a photo was self-hosted
+          git add -A -- frontend/public/library/ 2>/dev/null || true
           git commit -m "data: illustrative photo library from Wikimedia Commons"
           git push origin "HEAD:$BRANCH"
 

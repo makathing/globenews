@@ -11,11 +11,13 @@
     "dev": "npm run dev -w frontend",
     "build": "npm run build -w frontend",
     "test": "npm run test -w pipeline",
-    "pipeline:daily": "npm run daily -w pipeline",
-    "pipeline:monitor": "npm run monitor -w pipeline",
+    "pipeline:daily": "npm run daily -w pipeline --",
+    "pipeline:monitor": "npm run monitor -w pipeline --",
+    "pipeline:us": "npm run regional:us -w pipeline --",
     "pipeline:enrich": "npm run enrich -w pipeline",
     "pipeline:backfill-severity": "npm run backfill-severity -w pipeline",
-    "pipeline:photo-library": "npm run photo-library -w pipeline"
+    "pipeline:photo-library": "npm run photo-library -w pipeline",
+    "pipeline:photo-library:localise": "npm run photo-library:localise -w pipeline"
   },
   "engines": {
     "node": ">=20"
