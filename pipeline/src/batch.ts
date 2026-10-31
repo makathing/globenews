@@ -1,4 +1,4 @@
-import { readFileSync, existsSync, rmSync } from 'node:fs';
+import { readFileSync, existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import { scopeOf, type NewsDataset, type NewsScope } from '../../shared/news.ts';
@@ -6,7 +6,13 @@ import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
 import { computeStats } from './finalize.ts';
 import { enrichImages, probeEgress } from './enrich-images.ts';
-import { parseStagedOutput, validateDataset, type StagedOutput } from './schema.ts';
+import {
+  parseStagedOutput,
+  StagedValidationError,
+  validateDataset,
+  type SalvageResult,
+  type StagedOutput,
+} from './schema.ts';
 import { gitExec, gitSyncEnabled, syncAndRemerge } from './git-sync.ts';
 import {
   REPO_ROOT,
@@ -48,6 +54,55 @@ export interface CoordinatorConfig {
   agents: unknown;
   /** The coordinator prompt for a given staging path. */
   prompt: (stagingPath: string) => string;
+}
+
+/** "sources.3: Invalid input; sources.7: Invalid input" -> "sources.*: Invalid input". */
+export function dropReasonKey(reason: string): string {
+  const parts = reason.split('; ').map((part) => part.replace(/\.\d+(?=[.:])/g, '.*'));
+  return [...new Set(parts)].join('; ');
+}
+
+/**
+ * Log every dropped staged event and, when anything was dropped, keep the raw
+ * staged file as `.staging/<date>[-<stem>].rejected.json` and log one example
+ * `sources` value per distinct reason — a run once dropped ~30 stories a day
+ * for months with only "Invalid input" to go on.
+ */
+export function reportDropped(
+  tag: string,
+  stagingStem: string,
+  raw: string,
+  dropped: SalvageResult['dropped'],
+  dir: string = STAGING_DIR,
+): string | undefined {
+  for (const drop of dropped) {
+    console.warn(`[${tag}] dropped staged event #${drop.index}: ${drop.reason}`);
+  }
+  if (dropped.length === 0) return undefined;
+
+  const suffix = stagingStem === 'events' ? '' : `-${stagingStem}`;
+  const path = resolve(dir, `${new Date().toISOString().slice(0, 10)}${suffix}.rejected.json`);
+  try {
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(path, raw);
+    console.warn(`[${tag}] ${dropped.length} staged event(s) dropped; raw staged file kept at ${path}`);
+  } catch (error) {
+    console.warn(`[${tag}] could not keep the rejected staged file: ${String(error)}`);
+  }
+
+  const byReason = new Map<string, { count: number; example: SalvageResult['dropped'][number] }>();
+  for (const drop of dropped) {
+    const key = dropReasonKey(drop.reason);
+    const entry = byReason.get(key);
+    if (entry) entry.count += 1;
+    else byReason.set(key, { count: 1, example: drop });
+  }
+  for (const [reason, { count, example }] of byReason) {
+    const sources = JSON.stringify(example.sources) ?? 'undefined';
+    const shown = sources.length > 200 ? `${sources.slice(0, 200)}…` : sources;
+    console.warn(`[${tag}]   ${count}× ${reason} — e.g. #${example.index} sources: ${shown}`);
+  }
+  return path;
 }
 
 async function runCoordinator(
@@ -118,11 +173,16 @@ async function runCoordinator(
     console.warn(`[${tag}] staging file missing — recovering JSON from coordinator reply`);
     raw = embedded[0];
   }
-  const { staged, dropped, repaired, severityDefaulted } = parseStagedOutput(raw);
-  if (repaired > 0) console.log(`[${tag}] repaired ${repaired} event(s) (truncation/clamping)`);
-  for (const drop of dropped) {
-    console.warn(`[${tag}] dropped staged event #${drop.index}: ${drop.reason}`);
+  let salvage: SalvageResult;
+  try {
+    salvage = parseStagedOutput(raw);
+  } catch (error) {
+    if (error instanceof StagedValidationError) reportDropped(tag, config.stagingStem, raw, error.dropped);
+    throw error;
   }
+  const { staged, dropped, repaired, severityDefaulted } = salvage;
+  if (repaired > 0) console.log(`[${tag}] repaired ${repaired} event(s) (truncation/clamping)`);
+  reportDropped(tag, config.stagingStem, raw, dropped);
 
   // Severity drives beam height and colour, so a batch where nobody supplied
   // one renders every event identically — the encoding silently dies. Worth a

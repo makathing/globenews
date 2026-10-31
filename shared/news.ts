@@ -51,6 +51,11 @@ export interface NewsSource {
   bias: BiasRating;
   /** True when the domain was not in the ratings table. */
   unrated?: boolean;
+  /**
+   * `url` is the outlet's homepage, not the article: the synthesizer named the
+   * outlet without linking the story. Still rated by its domain.
+   */
+  homepage?: boolean;
   /** This article's own preview image (og:image), when resolvable. */
   image?: string;
   /** The outlet's own icon, used as preview art when the article has none. */

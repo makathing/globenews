@@ -458,6 +458,10 @@ body,
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.source-homepage {
+  color: var(--text-secondary);
+  white-space: pre;
+}
 .source-rel {
   font-size: 12px;
   color: var(--text-secondary);

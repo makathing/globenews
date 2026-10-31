@@ -10,7 +10,7 @@ import {
 import { normalizeDomain, rateDomain } from './source-ratings.ts';
 import { reconcileCoordinates, subdivisionFor, US_SUBDIVISIONS } from './gazetteer.ts';
 import { computeTrustScore } from './trust.ts';
-import type { StagedOutput } from './schema.ts';
+import { isHomepage, type StagedOutput } from './schema.ts';
 import { expiryIso, isExpired } from '../../shared/retention.ts';
 import { crossScopeMatch, matchPrevious } from './retention.ts';
 
@@ -19,27 +19,33 @@ export function stableEventId(headline: string, lat: number, lon: number): strin
   return createHash('sha1').update(key).digest('hex').slice(0, 12);
 }
 
-function buildSources(urls: { url: string }[]): NewsSource[] {
-  const seen = new Set<string>();
-  const sources: NewsSource[] = [];
-  for (const { url } of urls) {
+function buildSources(staged: { url: string; homepage?: boolean }[]): NewsSource[] {
+  const byDomain = new Map<string, NewsSource>();
+  for (const { url, homepage } of staged) {
+    let parsed: URL;
     try {
-      const domain = normalizeDomain(new URL(url).hostname);
-      if (seen.has(domain)) continue;
-      seen.add(domain);
-      const rating = rateDomain(domain);
-      sources.push({
-        url,
-        domain,
-        reliability: rating.reliability,
-        bias: rating.bias,
-        ...(rating.unrated ? { unrated: true } : {}),
-      });
+      parsed = new URL(url);
     } catch {
-      // skip malformed URLs
+      continue; // skip malformed URLs
     }
+    const host = parsed.hostname.toLowerCase().replace(/^www\./, '');
+    const domain = normalizeDomain(host);
+    const isHome = homepage === true || isHomepage(parsed);
+    const existing = byDomain.get(domain);
+    // one row per outlet; the article beats the outlet's front page
+    if (existing && !(existing.homepage && !isHome)) continue;
+    // rate the full host too: some outlets are rated on a subdomain (news.sky.com)
+    const rating = rateDomain(host);
+    byDomain.set(domain, {
+      url,
+      domain,
+      reliability: rating.reliability,
+      bias: rating.bias,
+      ...(rating.unrated ? { unrated: true } : {}),
+      ...(isHome ? { homepage: true } : {}),
+    });
   }
-  return sources;
+  return [...byDomain.values()];
 }
 
 /** Schema cap on sources per event; an update keeps its old outlets up to this. */
@@ -144,7 +150,7 @@ export function finalizeScoped(
 
   const events: NewsEvent[] = [];
   for (const stagedEvent of staged.events) {
-    const sources = buildSources(stagedEvent.sources as { url: string }[]);
+    const sources = buildSources(stagedEvent.sources);
     if (sources.length === 0) continue;
 
     const coords = reconcileCoordinates(stagedEvent.locationName, stagedEvent.lat, stagedEvent.lon);

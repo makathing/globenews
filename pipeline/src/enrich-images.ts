@@ -148,9 +148,10 @@ async function resolveEventImages(
   icons: OutletIcons,
 ): Promise<NewsImage | undefined> {
   // best sources first; skip low-reliability outlets — their preview art
-  // shouldn't front a verified story
+  // shouldn't front a verified story. A homepage's og:image is the outlet's
+  // generic banner, not this story's art.
   const candidates = [...event.sources]
-    .filter((source) => source.reliability >= 50 && !source.image)
+    .filter((source) => source.reliability >= 50 && !source.image && !source.homepage)
     .sort((a, b) => b.reliability - a.reliability)
     .slice(0, MAX_PREVIEWS);
 

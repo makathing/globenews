@@ -8,6 +8,7 @@ import {
 import { CategoryIcon, ClockIcon, ShieldIcon } from './icons';
 import { ShareButton } from './ShareButton';
 import { OutletMark } from './SourceLogos';
+import { outletName } from '../lib/outlets';
 import { StoryArt } from './StoryArt';
 import type { ArtCandidate } from '../lib/illustration';
 import type { ReactNode } from 'react';
@@ -118,12 +119,21 @@ export function StoryBody({ event, art, headingId }: { event: NewsEvent; art: Ar
             key={source.url}
             className="source-row"
             href={source.url}
+            title={source.homepage ? `${outletName(source.domain)} homepage — the article itself was not linked` : undefined}
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="source-domain">
               <OutletMark source={source} size={16} />
-              {source.domain}
+              {source.homepage ? (
+                // only the outlet was named, not the article: link its front page, say so
+                <>
+                  {outletName(source.domain)}
+                  <span className="source-homepage"> · outlet site</span>
+                </>
+              ) : (
+                source.domain
+              )}
             </span>
             <span className="source-rel" title="Reliability (0-100)">
               {source.reliability}
