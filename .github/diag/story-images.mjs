@@ -2,7 +2,7 @@
 import { chromium, webkit, devices } from 'playwright';
 import { mkdirSync, writeFileSync } from 'node:fs';
 
-const URL = 'https://makathing.github.io/globenews/';
+const SITE = 'https://makathing.github.io/globenews/';
 mkdirSync('diag-out', { recursive: true });
 const summary = [];
 
@@ -23,7 +23,7 @@ for (const [name, engine, device] of [
     if (req.resourceType() !== 'image') return;
     images.push({ url: req.url(), status: 'FAILED', error: req.failure()?.errorText });
   });
-  await page.goto(URL, { waitUntil: 'networkidle', timeout: 60000 });
+  await page.goto(SITE, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(4000);
   // open the story list (drawer on phones) so card images are requested
   const toggle = page.locator('.rail-toggle');
