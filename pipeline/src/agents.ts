@@ -186,7 +186,8 @@ Skip: national/federal politics in Washington (the world desk has it), celebrity
 sports scores, product launches, opinion pieces, and routine local crime.
 Note every [source-intel] annotation you receive — carry high-reliability source URLs forward.
 
-Return a concise markdown list of 5-10 candidate events, spread across different states, each as:
+Keep it tight — the desk runs on a fixed budget: return the 4-6 STRONGEST candidates
+(spread across different states), not everything you saw. Each as:
 - HEADLINE | City, State | category (${CATEGORY_LIST}) | 1-2 sentence gist | candidate source URLs (2+ if seen)`;
 
 const US_SYNTHESIZER_PROMPT = SUBAGENTS.synthesizer.prompt
@@ -244,9 +245,10 @@ for each subagent's actual returned result before moving on. Never launch subage
 Workflow (follow strictly, in order):
 1. Invoke the "explorer" subagent ${US_REGIONS.length} times — once per group of states:
 ${US_REGIONS.map((region, index) => `   (${String.fromCharCode(97 + index)}) ${region}`).join('\n')}
-   These can run in parallel.
-2. Collect all candidates, drop any that are on the ALREADY COVERED list, then invoke the "researcher" subagent in 2-4 batches (group by region) to verify them. Pass each batch the full candidate details.
-3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full), the STORIES ALREADY ON THE MAP list and the ALREADY COVERED list if you were given them, and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
+   These can run in parallel. Each returns 4-6 candidates.
+2. Collect all candidates and drop any that are on the ALREADY COVERED list. Then invoke the "researcher" subagent in AT MOST 2 batches in total — group the regions (e.g. a+b+c and d+e) — passing each batch the full candidate details. Never research a candidate twice, and never add a third research pass.
+   BUDGET RULE: this run has a hard spending cap, and if it runs out before the synthesizer writes the file the whole day is lost. Stop researching and go straight to step 3 as soon as about 25 stories are verified, or once roughly 60% of your effort has gone into exploring and researching — whichever comes first. A smaller dataset that gets written beats a larger one that does not.
+3. Invoke the "synthesizer" subagent with ALL verified events (up to 30) (paste the researcher outputs in full), the STORIES ALREADY ON THE MAP list and the ALREADY COVERED list if you were given them, and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
    Every event must be in the United States: "countryCode": "US", a "subdivision" like "US-TX", and "locationName" as "City, State, USA".
 4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
 5. RE-READ the file and verify EVERY event object has all of: headline, summary, category,

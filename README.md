@@ -81,7 +81,7 @@ it to finish — the two runs never write at the same time.
 | Routine | Schedule (UTC) | Runs | Budget |
 | --- | --- | --- | --- |
 | **GlobeNews daily news batch** | `51 5 * * *` (05:51) | `PIPELINE_GIT_SYNC=1 npm run daily -w pipeline` | `PIPELINE_MAX_BUDGET_USD`, default $8 |
-| **GlobeNews US & state news batch** | `15 15 * * *` (15:15) | `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline` | `REGIONAL_MAX_BUDGET_USD`, default $5 |
+| **GlobeNews US & state news batch** | `15 15 * * *` (15:15) | `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline` | `REGIONAL_MAX_BUDGET_USD`, default $8 |
 
 The scripts only write files; the **Routine session** checks the result, commits `data/` and
 pushes to `main` (never force). A data push to `main` triggers the Pages deploy workflow.
@@ -118,11 +118,14 @@ the gazetteer, else the model's, else the nearest known city's.
 
 `pipeline/src/run-regional.ts --region us` (`npm run regional:us -w pipeline`, or
 `npm run pipeline:us` at the root): five explorers (Northeast; Southeast; Midwest; South
-Central & Mountain; West Coast, Alaska & Hawaii) look for state and metro news from the last
+Central & Mountain; West Coast, Alaska & Hawaii) each return their 4–6 strongest candidates for state and metro news from the last
 24 hours — legislatures and governors, disasters and weather, courts, economy, health,
 education, infrastructure — skipping national politics the world desk covers. The same
-researcher (2+ independent sources) and severity scale apply; the synthesizer aims for 20–40
-stories across as many states as possible, as `"City, State, USA"` with a `subdivision`.
+researcher (2+ independent sources) and severity scale apply, in at most two batches; the
+coordinator stops researching once about 25 stories are verified or roughly 60% of its effort
+is spent, so the synthesizer always gets to write the file inside the $8 cap. The synthesizer
+aims for 20–40 stories (in practice up to 30) across as many states as possible, as
+`"City, State, USA"` with a `subdivision`.
 `--mock` publishes bundled sample US stories without any API call; `--remerge-only` re-merges
 the last finished result (`pipeline/.staging/us.final.json`) onto the current file without
 running agents, for a push that lost a race.
@@ -142,7 +145,7 @@ The repository is already checked out in this session at ~/globenews on main. Th
 
 1. `cd ~/globenews && git checkout main && git pull origin main`
 2. `npm ci` at the repo root (npm workspace). Allow several minutes.
-3. `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline` — the budget-capped US & state batch, on this session's own Claude credentials. It only adds, updates or expires stories with "scope": "us", and writes data/events.json plus data/archive/<date>-us.json. Allow it up to 40 minutes and do not interrupt it; it prints its own progress.
+3. `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline` — the budget-capped US & state batch ($8 default cap, `REGIONAL_MAX_BUDGET_USD`), on this session's own Claude credentials. If it reaches the cap after staging its stories it still publishes them (the log says "budget reached after staging") — that is a success, not a failure. It only adds, updates or expires stories with "scope": "us", and writes data/events.json plus data/archive/<date>-us.json. Allow it up to 40 minutes and do not interrupt it; it prints its own progress.
 4. Check the result before committing: data/events.json parses, its `generatedAt` is within the last hour, at least 5 events have "scope": "us" and a `lastUpdated` equal to `generatedAt`, and `stats.severityDefaulted` is 0. Also compare with `git show HEAD:data/events.json`: every event there WITHOUT a "scope" field whose `expiresAt` is still in the future must be present and unchanged. If any check fails, treat the run as failed.
 5. If `git status` shows changes under data/: commit ONLY the data/ directory with message "data: US & state news batch <today's UTC date>" and `git push origin main`. If the push is rejected: `git pull --rebase origin main`. If that stops on a conflict in data/, run `git rebase --abort`, then `git reset --hard origin/main`, then `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline -- --remerge-only` (re-applies this run's US stories onto the new main without running any agents), then commit data/ and push again. Never force-push. The GitHub Pages deploy triggers itself on the push — do not run it yourself.
 6. On any failure: commit nothing, and begin your final message with the single word FAILED, then the step number and the last ~20 lines of output. Do not retry a run that failed on budget exhaustion.
@@ -244,9 +247,13 @@ restore the workflows from git history (`daily-batch.yml` / `breaking-monitor.ym
 removed in the "tokenless scheduling" commit); they support `CLAUDE_CODE_OAUTH_TOKEN`
 (subscription, via `claude setup-token`) or `ANTHROPIC_API_KEY` secrets.
 
-Budget caps (`PIPELINE_MAX_BUDGET_USD` ~$8/daily batch, `REGIONAL_MAX_BUDGET_USD` $5/US batch,
+Budget caps (`PIPELINE_MAX_BUDGET_USD` ~$8/daily batch, `REGIONAL_MAX_BUDGET_USD` $8/US batch,
 `MONITOR_MAX_BUDGET_USD` $0.50, `ESCALATION_MAX_BUDGET_USD` $3) act as estimated-cost circuit
-breakers in every mode.
+breakers in every mode. If a daily or US batch hits its cap (or its turn limit) after the synthesizer
+has already written the staged stories, the run publishes those instead of failing — it logs
+`[us] budget reached after staging — publishing N staged stories` and records
+`stats.stoppedEarly` (e.g. `"error_max_budget_usd"`) in `data/events.json`. A cap hit before
+anything was staged still fails the run, and is never retried.
 
 ## Setup (one time, after merging to `main`)
 

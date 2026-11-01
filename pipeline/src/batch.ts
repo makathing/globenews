@@ -42,6 +42,19 @@ export class PipelineError extends Error {
   }
 }
 
+/** Default `REGIONAL_MAX_BUDGET_USD`: the US run's five explorers need about what the daily run does. */
+export const DEFAULT_REGIONAL_BUDGET_USD = 8;
+
+/** A USD budget from the environment, falling back when unset or not a positive number. */
+export function budgetFromEnv(
+  name: string,
+  fallback: number,
+  env: Record<string, string | undefined> = process.env,
+): number {
+  const value = Number(env[name]);
+  return env[name] !== undefined && env[name] !== '' && Number.isFinite(value) && value > 0 ? value : fallback;
+}
+
 /** Attempts before the run takes whatever it has. */
 export const MAX_ATTEMPTS = 3;
 
@@ -54,6 +67,32 @@ export interface CoordinatorConfig {
   agents: unknown;
   /** The coordinator prompt for a given staging path. */
   prompt: (stagingPath: string) => string;
+  /** Test seam: the Agent SDK's `query` (default) or a fake that yields messages. */
+  query?: (params: { prompt: string; options?: Record<string, unknown> }) => AsyncIterable<CoordinatorMessage>;
+  /** Test seam: where staging files go (default pipeline/.staging). */
+  stagingDir?: string;
+}
+
+/** The subset of an SDK message the coordinator loop reads. */
+export interface CoordinatorMessage {
+  type: string;
+  subtype?: string;
+  total_cost_usd?: number;
+  result?: unknown;
+}
+
+/**
+ * Result subtypes where the coordinator was cut off by a cap rather than
+ * failing outright. The synthesizer may already have written the staging
+ * file by then, so what it staged is worth publishing.
+ */
+export const SALVAGEABLE_SUBTYPES: ReadonlySet<string> = new Set(['error_max_budget_usd', 'error_max_turns']);
+
+export interface BatchResult {
+  staged: StagedOutput;
+  severityDefaulted: number;
+  /** Set when the coordinator hit a cap after staging: the SDK result subtype. */
+  stoppedEarly?: string;
 }
 
 /** "sources.3: Invalid input; sources.7: Invalid input" -> "sources.*: Invalid input". */
@@ -105,16 +144,75 @@ export function reportDropped(
   return path;
 }
 
+/** Parse a staged file, logging repairs and drops; throws when nothing valid is left. */
+function parseStaged(config: CoordinatorConfig, raw: string): SalvageResult {
+  const { tag } = config;
+  const dir = config.stagingDir ?? STAGING_DIR;
+  let salvage: SalvageResult;
+  try {
+    salvage = parseStagedOutput(raw);
+  } catch (error) {
+    if (error instanceof StagedValidationError) reportDropped(tag, config.stagingStem, raw, error.dropped, dir);
+    throw error;
+  }
+  if (salvage.repaired > 0) console.log(`[${tag}] repaired ${salvage.repaired} event(s) (truncation/clamping)`);
+  reportDropped(tag, config.stagingStem, raw, salvage.dropped, dir);
+  return salvage;
+}
+
+/**
+ * The coordinator stopped on a cap. If the staging file is already there with
+ * at least one valid event, publish that rather than throw the day away;
+ * otherwise rethrow the cap error.
+ */
+function salvageAfterCap(
+  config: CoordinatorConfig,
+  stagingPath: string,
+  subtype: string,
+  capError: PipelineError,
+): BatchResult {
+  const { tag } = config;
+  if (!existsSync(stagingPath)) {
+    console.warn(`[${tag}] ${subtype} before the synthesizer wrote ${stagingPath} — nothing to salvage`);
+    throw capError;
+  }
+  let salvage: SalvageResult;
+  try {
+    salvage = parseStaged(config, readFileSync(stagingPath, 'utf8'));
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    console.warn(`[${tag}] ${subtype} and the staged file is unusable (${reason}) — nothing to salvage`);
+    throw capError;
+  }
+  const { staged, severityDefaulted } = salvage;
+  if (staged.events.length === 0) {
+    console.warn(`[${tag}] ${subtype} and the staged file has no events — nothing to salvage`);
+    throw capError;
+  }
+  const what = subtype === 'error_max_turns' ? 'turn limit' : 'budget';
+  console.warn(
+    `[${tag}] ${what} reached after staging — publishing ${staged.events.length} staged stories ` +
+      `(partial run: ${subtype}; the coordinator's final checks did not run)`,
+  );
+  if (severityDefaulted > 0) {
+    console.warn(
+      `[${tag}] ${severityDefaulted}/${staged.events.length} event(s) had no severity and took the default`,
+    );
+  }
+  return { staged, severityDefaulted, stoppedEarly: subtype };
+}
+
 async function runCoordinator(
   config: CoordinatorConfig,
   ledger: RunLedger,
   attempt: number,
   feedback?: string,
-): Promise<{ staged: StagedOutput; severityDefaulted: number }> {
+): Promise<BatchResult> {
   const { tag } = config;
   // per-attempt filename: a late background write from a previous attempt can
   // neither satisfy nor corrupt this one
-  const stagingPath = resolve(STAGING_DIR, `${config.stagingStem}.raw.attempt${attempt}.json`);
+  const stagingDir = config.stagingDir ?? STAGING_DIR;
+  const stagingPath = resolve(stagingDir, `${config.stagingStem}.raw.attempt${attempt}.json`);
   if (existsSync(stagingPath)) rmSync(stagingPath);
 
   let prompt = config.prompt(stagingPath);
@@ -123,7 +221,8 @@ async function runCoordinator(
   }
 
   let finalReply = '';
-  const run = query({
+  const runQuery = config.query ?? (query as unknown as NonNullable<CoordinatorConfig['query']>);
+  const run = runQuery({
     prompt,
     options: {
       model: 'sonnet',
@@ -142,13 +241,13 @@ async function runCoordinator(
   try {
     for await (const message of run) {
       if (message.type === 'result') {
-        const cost = 'total_cost_usd' in message ? message.total_cost_usd : undefined;
-        console.log(`[${tag}] coordinator finished: ${message.subtype}, cost=$${cost?.toFixed?.(2)}`);
-        if (message.subtype !== 'success') {
-          throw new PipelineError(
-            `Coordinator run failed: ${message.subtype}`,
-            !isNonRetryable(message.subtype),
-          );
+        const cost = message.total_cost_usd;
+        const subtype = String(message.subtype);
+        console.log(`[${tag}] coordinator finished: ${subtype}, cost=$${cost?.toFixed?.(2)}`);
+        if (subtype !== 'success') {
+          const capError = new PipelineError(`Coordinator run failed: ${subtype}`, !isNonRetryable(subtype));
+          if (SALVAGEABLE_SUBTYPES.has(subtype)) return salvageAfterCap(config, stagingPath, subtype, capError);
+          throw capError;
         }
         if ('result' in message) finalReply = String(message.result);
       }
@@ -173,16 +272,7 @@ async function runCoordinator(
     console.warn(`[${tag}] staging file missing — recovering JSON from coordinator reply`);
     raw = embedded[0];
   }
-  let salvage: SalvageResult;
-  try {
-    salvage = parseStagedOutput(raw);
-  } catch (error) {
-    if (error instanceof StagedValidationError) reportDropped(tag, config.stagingStem, raw, error.dropped);
-    throw error;
-  }
-  const { staged, dropped, repaired, severityDefaulted } = salvage;
-  if (repaired > 0) console.log(`[${tag}] repaired ${repaired} event(s) (truncation/clamping)`);
-  reportDropped(tag, config.stagingStem, raw, dropped);
+  const { staged, severityDefaulted } = parseStaged(config, raw);
 
   // Severity drives beam height and colour, so a batch where nobody supplied
   // one renders every event identically — the encoding silently dies. Worth a
@@ -206,10 +296,7 @@ async function runCoordinator(
 }
 
 /** The coordinator with up to MAX_ATTEMPTS tries, feeding each failure back into the next. */
-export async function runBatchAgents(
-  config: CoordinatorConfig,
-  ledger: RunLedger,
-): Promise<{ staged: StagedOutput; severityDefaulted: number }> {
+export async function runBatchAgents(config: CoordinatorConfig, ledger: RunLedger): Promise<BatchResult> {
   let attempt = 0;
   let feedback: string | undefined;
   for (;;) {
@@ -231,6 +318,8 @@ export interface PublishOptions {
   mock: boolean;
   previous: NewsDataset | null;
   severityDefaulted: number;
+  /** The SDK result subtype when the coordinator hit a cap and only its staged stories were published. */
+  stoppedEarly?: string;
   /** Appended to the archive name: '' for the daily batch, '-us' for the US run. */
   archiveSuffix: string;
   ledger: RunLedger;
@@ -278,6 +367,7 @@ export async function publishDataset(finalized: NewsDataset, opts: PublishOption
     expired: Math.max(0, (opts.previous?.events.length ?? 0) - (stats.carried ?? 0) - (stats.updated ?? 0)),
     severityDefaulted: opts.severityDefaulted,
     enrichment,
+    ...(opts.stoppedEarly ? { stoppedEarly: opts.stoppedEarly } : {}),
   };
   validateDataset(dataset);
   writeDataset(dataset, { archive: true, archiveSuffix: opts.archiveSuffix });
@@ -287,7 +377,8 @@ export async function publishDataset(finalized: NewsDataset, opts: PublishOption
   const multiSource = dataset.events.filter((event) => event.sources.length >= 2).length;
   console.log(
     `[${tag}] wrote ${dataset.events.length} events (${own.length} ${scope}, ${multiSource} multi-source, ` +
-      `${opts.ledger.uniqueDomains().length} domains scored)`,
+      `${opts.ledger.uniqueDomains().length} domains scored)` +
+      (opts.stoppedEarly ? ` — PARTIAL run, coordinator stopped early (${opts.stoppedEarly})` : ''),
   );
   return dataset;
 }
