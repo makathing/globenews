@@ -4,7 +4,7 @@ import { US_SUBAGENTS, usCoordinatorPrompt, type CurrentStory } from './agents.t
 import { RunLedger } from './ledger.ts';
 import { MOCK_US_STAGED } from './mock-data.ts';
 import { finalizeScoped, keepInRegion, remergeScope } from './finalize.ts';
-import { publishDataset, runBatchAgents } from './batch.ts';
+import { DEFAULT_REGIONAL_BUDGET_USD, budgetFromEnv, publishDataset, runBatchAgents } from './batch.ts';
 import { gitExec, gitSyncEnabled, syncFromRemote } from './git-sync.ts';
 import { validateDataset, type StagedOutput } from './schema.ts';
 import {
@@ -25,7 +25,7 @@ import { scopeOf, type NewsEvent, type NewsScope } from '../../shared/news.ts';
  * (US & state news): it adds, updates and expires stories with
  * `"scope": "us"` and never touches a worldwide one.
  *
- *   npm run regional:us -w pipeline                 # live (REGIONAL_MAX_BUDGET_USD, default $5)
+ *   npm run regional:us -w pipeline                 # live (REGIONAL_MAX_BUDGET_USD, default $8)
  *   npm run regional:us -w pipeline -- --mock       # bundled sample stories, no API
  *   npm run regional:us -w pipeline -- --remerge-only
  *       re-merge the last finished result (pipeline/.staging/us.final.json) onto the
@@ -52,7 +52,7 @@ function argValue(flag: string): string | undefined {
 
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
 const REMERGE_ONLY = process.argv.includes('--remerge-only');
-const MAX_BUDGET_USD = Number(process.env.REGIONAL_MAX_BUDGET_USD ?? 5);
+const MAX_BUDGET_USD = budgetFromEnv('REGIONAL_MAX_BUDGET_USD', DEFAULT_REGIONAL_BUDGET_USD);
 
 stripHarnessBackgroundEnv();
 
@@ -108,11 +108,12 @@ async function main(): Promise<void> {
 
   let staged: StagedOutput;
   let severityDefaulted = 0;
+  let stoppedEarly: string | undefined;
   if (MOCK) {
     console.log(`[${tag}] MOCK_MODE — using bundled sample ${region.label} events`);
     staged = MOCK_US_STAGED;
   } else {
-    ({ staged, severityDefaulted } = await runBatchAgents(
+    ({ staged, severityDefaulted, stoppedEarly } = await runBatchAgents(
       {
         tag,
         stagingStem: region.scope,
@@ -136,6 +137,7 @@ async function main(): Promise<void> {
     mock: MOCK,
     previous,
     severityDefaulted,
+    stoppedEarly,
     archiveSuffix: `-${region.scope}`,
     ledger,
     ledgerName: `${region.scope}-ledger.json`,

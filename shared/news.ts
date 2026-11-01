@@ -148,6 +148,12 @@ export interface RunStats {
   updated?: number;
   /** Stories from the previous run that left the map because their lifetime ran out. */
   expired?: number;
+  /**
+   * Set when the run's coordinator hit its budget or turn cap after the
+   * synthesizer had staged its stories, and those were published as-is: the
+   * SDK result subtype, e.g. `error_max_budget_usd`. Absent on a full run.
+   */
+  stoppedEarly?: string;
 }
 
 export interface NewsDataset {

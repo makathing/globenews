@@ -29,12 +29,13 @@ async function main(): Promise<void> {
     }));
   let staged: StagedOutput;
   let severityDefaulted = 0;
+  let stoppedEarly: string | undefined;
 
   if (MOCK) {
     console.log('[daily] MOCK_MODE — using bundled sample events');
     staged = MOCK_STAGED;
   } else {
-    ({ staged, severityDefaulted } = await runBatchAgents(
+    ({ staged, severityDefaulted, stoppedEarly } = await runBatchAgents(
       {
         tag: 'daily',
         stagingStem: 'events',
@@ -56,6 +57,7 @@ async function main(): Promise<void> {
     mock: MOCK,
     previous,
     severityDefaulted,
+    stoppedEarly,
     archiveSuffix: '',
     ledger,
     ledgerName: 'ledger.json',
