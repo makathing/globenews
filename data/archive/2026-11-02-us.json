@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T11:59:46.260Z",
+  "generatedAt": "2026-11-02T15:48:07.539Z",
   "mode": "daily",
   "events": [
     {
@@ -160,6 +160,67 @@
       "firstSeen": "2026-11-02T06:06:25.795Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-06T06:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7e888e3a0625",
+      "headline": "Mandatory Evacuations in Pagosa Springs, Colorado, as San Juan River Nears Record Crest",
+      "summary": "A second storm wave triggered mandatory evacuations in Archuleta County, Colorado, as the San Juan River rose to 16.8 feet/11,200 cfs — the second-highest stage on record, just below the historic 1911 mark of 17.8 feet. Highway 160 closed, Red Cross shelters opened, and the Colorado National Guard deployed.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 37.2696,
+      "lon": -107.0098,
+      "locationName": "Pagosa Springs, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://www.cpr.org/2026/11/01/southwest-colorado-pagosa-springs-flooding-san-luis-valley-november-2026/",
+          "domain": "cpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://coloradosun.com/2026/11/01/another-storm-southwest-colorado-flooding-evacuations/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/colorado/news/rushing-water-flooding-evacuations-pagosa-springs-southwestern-colorado-record-breaking-rain",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.sltrib.com/news/2026/11/01/san-juan-county-hit-with-lot-rain/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc4.com/news/southern-utah/significant-historic-flood-san-juan-county-bluff/",
+          "domain": "abc4.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://navajotimes.com/reznews/san-juan-river-forecast-to-flood-again-at-shiprock-as-heavy-rain-hits-region/",
+          "domain": "navajotimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-06T15:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -1239,6 +1300,126 @@
       "isBreaking": false
     },
     {
+      "id": "289ef6ed2af8",
+      "headline": "Prescott, Arizona Declares State of Emergency After Flooding Overtops Watson Lake Dam",
+      "summary": "Prescott's mayor declared a state of emergency after heavy rainfall overtopped the Watson Lake (Granite) Dam, with inflow peaking above 4,000 cfs; the Upper Goldwater Reservoir also topped. The dam is rated to safely handle up to 10 feet of overtopping; low-water crossings closed.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 34.54,
+      "lon": -112.4685,
+      "locationName": "Prescott, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
+      "sources": [
+        {
+          "url": "https://www.azfamily.com/2026/11/02/prescott-declares-state-emergency-flooding-hammers-parts-arizona/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://prescott-az.gov/city-of-prescott-responds-to-significant-flooding-event/",
+          "domain": "prescott-az.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.12news.com/article/weather/severe-weather/city-of-prescott-declares-state-of-emergency-due-to-flooding/75-d203221c-36e5-4420-873e-2ce357ebae8c",
+          "domain": "12news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a258db560115",
+      "headline": "One Year After Typhoon Halong, Kipnuk and Kwigillingok Villages Remain in Limbo Amid FEMA Relocation Dispute",
+      "summary": "A year after the remnants of Typhoon Halong destroyed over 150 homes and forced roughly 1,500 evacuations in the Yup'ik villages of Kipnuk and Kwigillingok, Alaska, most residents remain displaced. Both villages voted to relocate entirely, but the state's FEMA request to fund permanent replacement housing for 219 damaged homes has been denied, and temporary housing assistance is set to expire in April 2027.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 59.9386,
+      "lon": -164.0372,
+      "locationName": "Kipnuk, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/10/14/one-year-after-ex-typhoon-halong-western-alaskas-recovery-is-ongoing-and-uncertain/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.adn.com/alaska-news/rural-alaska/2026/10/12/one-year-after-halong-devastated-their-villages-storm-survivors-navigate-life-in-alaskas-largest-city/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "039642ee0978",
+      "headline": "Georgia Ponzi Scheme Founder Brant Frost Sentenced to 15 Years, Ordered to Pay $76.4 Million Restitution",
+      "summary": "Edwin Brant Frost IV, founder of First Liberty Building & Loan in Newnan, Georgia, was sentenced to 15 years in prison and ordered to pay $76.4 million in restitution after pleading guilty to wire fraud in a Ponzi scheme the SEC says defrauded roughly 300 investors of about $140 million. Funds were also funneled to conservative political causes and Alabama politicians.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 33.3807,
+      "lon": -84.7997,
+      "locationName": "Newnan, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/prominent-republican-donor-sentenced-to-15-years-in-prison-for-first-liberty-ponzi-scheme-prosecutors-say/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wsbtv.com/news/local/coweta-county/founder-alleged-georgia-ponzi-scheme-ordered-pay-back-more-than-76-million/W62ALRSN4VDKHF4S4HLDWYHC6E/",
+          "domain": "wsbtv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://georgiarecorder.com/2026/10/26/conservative-lender-accused-of-ponzi-scheme-sentenced-to-15-years-in-prison/",
+          "domain": "georgiarecorder.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
       "id": "4a5e787054ed",
       "headline": "Lawsuit Could Strip Medicaid Coverage From 140,000 Ohioans",
       "summary": "The American Medical Association filed an amicus brief backing a lawsuit brought by the City of Columbus challenging a federal Medicaid work-requirement rule. The AMA warned the rule could cause up to 140,000 Ohio Medicaid-expansion enrollees to lose coverage.",
@@ -1276,6 +1457,46 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "305064093cbd",
+      "headline": "Ohio Measles Outbreak Expands to 24 Counties, Cases Nearly 600% Higher Than 2025",
+      "summary": "Ohio has recorded 296 measles cases across 24 counties in 2026 — a roughly 558-600% increase over 2025's 45 cases — in the state's third distinct outbreak of the year, concentrated in Wayne, Geauga, Ashtabula and Medina counties. Officials cite MMR vaccination coverage (88.3%) below the 95% herd-immunity threshold.",
+      "category": "health",
+      "severity": 3,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://ohiocapitaljournal.com/2026/11/02/catching-our-eye-news-roundup-nov-2-2026/",
+          "domain": "ohiocapitaljournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/measles-cases-ohio-nearly-600-150823604.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cleveland19.com/2026/10/08/measles-cases-continue-climb-northeast-ohio-outpacing-2025-numbers/",
+          "domain": "cleveland19.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -1317,6 +1538,211 @@
       "isBreaking": false
     },
     {
+      "id": "bce956883aef",
+      "headline": "Brigham and Women's Hospital Nurses Set Open-Ended Strike for Nov. 12 Amid Contract Fight",
+      "summary": "More than 4,000 Brigham and Women's Hospital nurses issued a 10-day notice for an open-ended strike starting Nov. 12 after rejecting Mass General Brigham's \"last, best, final\" contract offer. Talks resume Nov. 9, three days before the deadline; disputes center on pay, staffing ratios, and insurance choice.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "locationName": "Boston, Massachusetts, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MA",
+      "sources": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/01/metro/brigham-nurses-strike-contract-mgb/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbur.org/news/2026/11/02/brigham-womens-nurses-open-ended-strike-notice-contract",
+          "domain": "wbur.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wgbh.org/news/local/2026-11-01/brigham-nurses-plan-open-ended-strike-for-mid-november",
+          "domain": "wgbh.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "653530d9ac65",
+      "headline": "Mayor Mamdani Threatens Legal Action Against ICE Over Use of NYC Park Lots as Staging Grounds",
+      "summary": "Mayor Zohran Mamdani sent DHS a letter demanding ICE stop using city-owned lots at Van Cortlandt Park (Bronx) and near Flushing Meadows Corona Park (Queens) as enforcement staging areas, calling it unauthorized under his February executive order, and threatening legal action.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.7128,
+      "lon": -74.006,
+      "locationName": "New York, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://ny1.com/nyc/all-boroughs/politics/2026/11/02/mamdani-threatens-legal-action-over-ice-use-of-city-lots",
+          "domain": "ny1.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.amny.com/politics/mamdani-threatens-sue-ice-nyc-parks/",
+          "domain": "amny.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://patch.com/new-york/new-york-city/mamdani-tells-ice-get-nyc-property-or-face-lawsuit",
+          "domain": "patch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fd25dc47c4f0",
+      "headline": "Widespread Flooding Prompts State of Emergency, School Closures in Okeechobee and Brevard Counties, Florida",
+      "summary": "A slow-moving storm dumped 5-10 inches of rain across Florida Nov. 1-2, flooding roads in Okeechobee County (which declared a state of emergency) and Brevard County (Palm Bay, Titusville, Satellite Beach, Cocoa Beach). Schools in both counties plus Florida Tech closed Monday.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 27.2433,
+      "lon": -80.8303,
+      "locationName": "Okeechobee, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.wflx.com/2026/11/02/widespread-flooding-prompts-okeechobee-county-school-closures-state-emergency-declaration/",
+          "domain": "wflx.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.winknews.com/weather/okeechobee-county-declares-state-of-emergency-as-flooding-covers-roads/article_8b20da99-e6d5-4920-82b9-b8684084231d.html",
+          "domain": "winknews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wftv.com/news/local/brevard-county-schools-cancel-classes-due-severe-weather-flooding/NV2WVVQ6URAXLEDI7OL5AHGG2Q/",
+          "domain": "wftv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2cddf5598f77",
+      "headline": "Two Teenagers Killed in Halloween-Night Shooting Outside Spartanburg Cook Out",
+      "summary": "A 15-year-old (Jayden Watkins) and a 17-year-old (Shane Dawkins) were shot and killed around 11:30 p.m. Oct. 31 in the parking lot of a Cook Out restaurant in Spartanburg, South Carolina. A third person suffered non-life-threatening injuries; no suspects had been identified as of Nov. 2.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 34.9496,
+      "lon": -81.932,
+      "locationName": "Spartanburg, South Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-SC",
+      "sources": [
+        {
+          "url": "https://www.wbtv.com/2026/11/02/teenagers-killed-halloween-night-shooting-cook-out-restaurant-south-carolina/",
+          "domain": "wbtv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.southcarolinapublicradio.org/sc-news/2026-11-02/halloween-shooting-at-a-fast-food-restaurant-leaves-two-upstate-teens-dead",
+          "domain": "southcarolinapublicradio.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.foxcarolina.com/2026/11/01/coroner-identifies-2-teens-killed-cook-out-shooting-spartanburg/",
+          "domain": "foxcarolina.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8f044edbeda2",
+      "headline": "Fatal Shooting at Madison Senior High School Youth Football Game in Illinois",
+      "summary": "One adult was killed and three others wounded in a shooting shortly after 10:45 p.m. Nov. 1 at Madison Senior High School in Madison, Illinois (St. Louis metro area) during a youth football league championship game. The school canceled classes Monday and Tuesday, and the Major Case Squad of Greater St. Louis is investigating.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 38.6773,
+      "lon": -90.1529,
+      "locationName": "Madison, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://fox2now.com/news/illinois/police-investigating-shooting-at-madison-senior-high-school-classes-canceled-monday/",
+          "domain": "fox2now.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kbsi23.com/news/madison-school-district-12-responds-to-deadly-shooting-at-youth-football-game/",
+          "domain": "kbsi23.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.riverbender.com/news/details/major-case-squad-joins-fatal-madison-school-shooting-investigation-97992.cfm",
+          "domain": "riverbender.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
       "id": "d5d07b71999f",
       "headline": "Halloween-Weekend Violence Leaves 3 Dead, About 11 Injured Across Philadelphia",
       "summary": "A wave of 11 separate shootings and stabbings over Halloween weekend in Philadelphia killed three people, including a 15-year-old, and injured roughly 11 others. Police are investigating the incidents, which occurred across multiple neighborhoods.",
@@ -1346,47 +1772,6 @@
         {
           "url": "https://metrophiladelphia.com/stories/3-killed-halloween-shootings-philadelphia,161448",
           "domain": "metrophiladelphia.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-04T11:59:46.260Z",
-      "isBreaking": false
-    },
-    {
-      "id": "7e888e3a0625",
-      "headline": "Historic Flooding Hits San Juan County, Utah, as River Nears Record Crest",
-      "summary": "The San Juan River was forecast to crest near 19 feet, prompting evacuations in Bluff, Utah, and near Shiprock on Nov. 1. Officials called it the second consecutive Sunday of damaging river flooding in the Four Corners region.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 37.2892,
-      "lon": -109.5523,
-      "locationName": "Bluff, Utah, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-UT",
-      "sources": [
-        {
-          "url": "https://www.sltrib.com/news/2026/11/01/san-juan-county-hit-with-lot-rain/",
-          "domain": "sltrib.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.abc4.com/news/southern-utah/significant-historic-flood-san-juan-county-bluff/",
-          "domain": "abc4.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://navajotimes.com/reznews/san-juan-river-forecast-to-flood-again-at-shiprock-as-heavy-rain-hits-region/",
-          "domain": "navajotimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
@@ -1900,6 +2285,38 @@
       "isBreaking": false
     },
     {
+      "id": "d78036f1fc48",
+      "headline": "Anti-Robotaxi Group Becomes D.C.'s Top Political Ad Spender, Outspending Mayoral Candidates",
+      "summary": "The Coalition for Accountability and Road Safety has spent over $2.6 million opposing a D.C. Council bill that would legalize commercial robotaxis — more than either leading mayoral candidate — per a Washington Post analysis of AdImpact data.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "Washington, D.C., USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-DC",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/dc-md-va/2026/11/02/shelling-out-millions-anti-robotaxi-group-is-dcs-top-political-ad-spender/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.axios.com/local/washington-dc/2026/10/16/robotaxi-waymo-bill-dc-council",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
       "id": "801c158ea560",
       "headline": "Formal Complaint Filed Against Ex-President Petro Over Election-Fraud Claims",
       "summary": "On Oct 27, 2026, lawyer Jaime Lombana, backed by the Conservative Party, filed a complaint against former President Gustavo Petro before Colombia's Accusation Commission, alleging Petro disrupted the democratic process and promoted unsubstantiated fraud claims after losing the 2026 election to Abelardo De La Espriella.",
@@ -2069,6 +2486,251 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c7ee3dbb35f2",
+      "headline": "Texas Amazon Delivery Contractors and Food Processor File WARN Notices, Cutting About 400 Jobs",
+      "summary": "4XH Logistics, a Boerne-based Amazon delivery contractor, is laying off 230 workers in the San Antonio area (Nov. 6-19) after its Amazon contract expired. Eagles Delivery LLC separately cut 115 jobs after shuttering its Roanoke, TX facility; CTI Foods Bean LLC is closing its Saginaw, TX plant, eliminating 66 jobs effective Nov. 9.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 29.4241,
+      "lon": -98.4936,
+      "locationName": "San Antonio, Texas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TX",
+      "sources": [
+        {
+          "url": "https://www.mysanantonio.com/business/article/layoffs-san-antonio-amazon-22431102.php",
+          "domain": "mysanantonio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://sanantonioreport.org/4xh-logistics-amazon-delivery-drivers-layoff-230-workers-boerne/",
+          "domain": "sanantonioreport.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/articles/mass-layoff-wave-slams-more-123300190.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f0aab8b8fee5",
+      "headline": "FBI Probes Former Burlington, Vermont School Administrator Over Alleged $1.8 Million Fraud",
+      "summary": "Federal investigators are examining whether former Burlington School District administrator Stephanie Phillips defrauded the district of at least $1.77 million since 2013 by billing through a fake consulting company while drawing her regular salary. No criminal charges filed yet; she retired in May.",
+      "category": "society",
+      "severity": 2,
+      "lat": 44.4759,
+      "lon": -73.2121,
+      "locationName": "Burlington, Vermont, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VT",
+      "sources": [
+        {
+          "url": "https://vtdigger.org/2026/10/28/fbi-investigates-former-burlington-school-administrator-in-alleged-1-8-million-fraud/",
+          "domain": "vtdigger.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.vermontpublic.org/local-news/2026-10-28/feds-target-burlington-school-official-embezzlement-probe",
+          "domain": "vermontpublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcax.com/2026/10/28/ex-burlington-school-administrator-center-18m-federal-fraud-probe/",
+          "domain": "wcax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "416eb8cc8153",
+      "headline": "Rockslide Shuts Down Lehigh Gorge Scenic Railway Indefinitely in the Poconos",
+      "summary": "A rockslide on Route 209 between Jim Thorpe and Nesquehoning, PA on Oct. 31 damaged the roadway and tracks, forcing the Reading & Northern's Lehigh Gorge Scenic Railway to suspend all excursions indefinitely. Route 209 closed in both directions with a 6-8 week reopening estimate.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 40.8742,
+      "lon": -75.7336,
+      "locationName": "Jim Thorpe, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://6abc.com/amp/post/rockslide-closes-lehigh-gorge-scenic-railway-poconos/20004359/",
+          "domain": "6abc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.trains.com/pro/freight/short-lines-regionals/reading-northern-excursion-route-shut-down-by-rockslide/",
+          "domain": "trains.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.tnonline.com/20261031/rock-slide-closes-rt-209-between-jim-thorpe-and-nesquehoning/",
+          "domain": "tnonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c740f2916931",
+      "headline": "Authors, 'Read Freely Alabama' Sue State Library Board Over Transgender-Themed Book Ban",
+      "summary": "Read Freely Alabama and three authors filed a federal lawsuit against the Alabama Public Library Service over a rule barring youth library books referencing transgender people, alleging First Amendment violations and financial harm to authors.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 32.3792,
+      "lon": -86.3077,
+      "locationName": "Montgomery, Alabama, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AL",
+      "sources": [
+        {
+          "url": "https://www.alreporter.com/2026/11/02/read-freely-authors-sue-apls-over-rule-barring",
+          "domain": "alreporter.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://1819news.com/news/item/advocates-authors-sue-state-library-board-over-restricting-minors-access-to-transgender-books",
+          "domain": "1819news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtonblade.com/2026/10/30/democracy-forward-sues-alabama-over-restrictions-on-books-featuring-trans-characters/",
+          "domain": "washingtonblade.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e23131318e97",
+      "headline": "Washington Supreme Court Rejects Seattle's Appeal in Public-Records Case Brought by Podcaster Brandi Kruse",
+      "summary": "The Washington State Supreme Court declined to hear Seattle's appeal of a lower ruling that found the city violated the Public Records Act in a suit brought by podcaster Brandi Kruse over records tied to a 2023 city council vote. The court also awarded attorney fees to the Citizen Action Defense Fund, which represented Kruse.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "locationName": "Seattle, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.thecentersquare.com/washington/article_d48b82d9-ee68-42c1-a30c-1c86310da76e.html",
+          "domain": "thecentersquare.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.chronline.com/stories/high-court-sides-with-podcaster-in-public-records-fight-against-seattle,409912",
+          "domain": "chronline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.omakchronicle.com/news/state/watch-high-court-sides-with-podcaster-in-public-records-fight-against-seattle/article_bcaaf0eb-fc3a-5dc9-a4ce-1ac6e19fa9ac.html",
+          "domain": "omakchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "282b92d34f4b",
+      "headline": "Washington Court of Appeals Revives Landlord's Takings Lawsuit Against Seattle Rental Regulations",
+      "summary": "Washington's Court of Appeals, Division One, reversed a King County Superior Court dismissal and ruled Goodman Real Estate's lawsuit over the Addison on Fourth apartments — alleging a \"regulatory taking\" from Seattle tenant-protection laws passed 2018-2021 — can proceed. The 254-unit complex's rent collections reportedly fell from 94% to 44% and it is now in receivership.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "locationName": "Seattle, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.seattletimes.com/business/real-estate/seattle-landlord-sues-over-city-tenant-protections/",
+          "domain": "seattletimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yakimaherald.com/news/northwest/wa-court-decision-revives-landlord-s-challenge-to-seattle-rental-laws/article_e8f0435d-2650-5b3b-94bd-e2c01af15ba1.html",
+          "domain": "yakimaherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.chronline.com/stories/washington-state-court-decision-revives-landlords-challenge-to-seattle-rental-laws,410959",
+          "domain": "chronline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -2343,6 +3005,74 @@
       "isBreaking": false
     },
     {
+      "id": "8ada11672db0",
+      "headline": "String of Indiana Factory Closures Cuts Hundreds of Jobs",
+      "summary": "Three Indiana plants are closing in late 2026: ZF Active Safety & Electronics will shut its Lafayette steering-components plant Nov. 30 (133 jobs); Packaging Corporation of America is closing its Gas City containerboard plant (72 jobs); and PMG Indiana is winding down its 39-year-old Columbus auto-parts plant (about 150 jobs by year-end).",
+      "category": "economy",
+      "severity": 2,
+      "lat": 40.4167,
+      "lon": -86.8753,
+      "locationName": "Lafayette, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
+      "sources": [
+        {
+          "url": "https://www.insideindianabusiness.com/articles/automotive-technology-company-to-close-lafayette-plant-cut-133-jobs",
+          "domain": "insideindianabusiness.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://fox59.com/news/automotive-manufacturing-plant-pmg-indiana-closing-in-columbus/",
+          "domain": "fox59.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e3b943ef0d7b",
+      "headline": "Coastal Flood Advisory Hits San Francisco Bay Area as Pacific Storm Brings High Tides, Beach Hazards",
+      "summary": "A \"Pineapple Express\" atmospheric-river storm triggered a coastal flood advisory for San Francisco, Monterey Bay, and the Big Sur coast, with up to 1.5 feet of inundation possible in low-lying shoreline areas and elevated risk of sneaker waves and rip currents through Tuesday evening.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "locationName": "San Francisco, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.insurancejournal.com/news/west/2026/11/02/891040.htm",
+          "domain": "insurancejournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sfchronicle.com/weather-forecast/article/california-atmospheric-river-rain-21738643.php",
+          "domain": "sfchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "isBreaking": false
+    },
+    {
       "id": "9cf5460fd7e6",
       "headline": "Massachusetts Gun Owners Hit New Firearm Registration Deadline Days Before Vote on Question 9",
       "summary": "An Oct. 28 deadline passed requiring Massachusetts gun owners to register and serialize previously grandfathered firearms under the state's 2024 gun law. The deadline came six days ahead of the Nov. 3 ballot vote on Question 9, which would affect the registry law.",
@@ -2514,47 +3244,6 @@
       "isBreaking": false
     },
     {
-      "id": "40fdfb57494d",
-      "headline": "Three Nashville Firefighters Resign After On-Duty Bar Incident",
-      "summary": "Three Nashville Fire Department employees resigned after a police report revealed they visited a Broadway bar in uniform while on duty. Mayor Freddie O'Connell called for accountability following the incident.",
-      "category": "society",
-      "severity": 1,
-      "lat": 36.1627,
-      "lon": -86.7816,
-      "locationName": "Nashville, Tennessee, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TN",
-      "sources": [
-        {
-          "url": "https://www.wsmv.com/2026/10/30/police-report-reveals-3-former-nashville-firefighters-were-broadway-bar-while-duty-before-resigning-after-investigation/",
-          "domain": "wsmv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wkrn.com/news/local-news/nashville/report-3-nashville-firefighters-caught-at-bar-while-on-duty/",
-          "domain": "wkrn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wafb.com/2026/11/01/3-firefighters-resign-after-drinking-bar-while-duty-police-reports-says/",
-          "domain": "wafb.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T11:59:46.260Z",
-      "isBreaking": false
-    },
-    {
       "id": "14045fc23c8a",
       "headline": "SSEN Restores Power to 97% of Customers in Northern Scotland After Storms Boelo and Austen",
       "summary": "Following back-to-back Storms Austen and Boelo in late October 2026, Scottish and Southern Electricity Networks restored power to 97% of affected customers in northern Scotland by Tuesday evening, though hundreds of homes remained without power with some reconnections not expected until Wednesday.",
@@ -2590,9 +3279,9 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 59,
-    "carried": 37,
-    "updated": 0,
+    "multiSource": 76,
+    "carried": 58,
+    "updated": 1,
     "expired": 1,
     "severityDefaulted": 0,
     "enrichment": "deferred"
