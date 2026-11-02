@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T06:06:25.795Z",
+  "generatedAt": "2026-11-02T11:59:46.260Z",
   "mode": "daily",
   "events": [
     {
@@ -163,6 +163,44 @@
       "isBreaking": false
     },
     {
+      "id": "376a7929c446",
+      "headline": "Federal Judge Rejects DOJ Bid to Segregate About 20,000 'Likely Non-Citizen' California Ballots",
+      "summary": "A federal judge denied a DOJ emergency request to force California to segregate roughly 20,000 ballots the department claims belong to likely non-citizens, two days before the Nov. 3 election, ruling it would \"wreak havoc\" on the vote. An appeals panel also rejected a similar request.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 34.0537,
+      "lon": -118.2428,
+      "locationName": "Los Angeles, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6021478/doj-california-ballots-denied",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/Politics/judge-rejects-trump-administration-request-order-segregate-20000/story?id=137660006",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/justice-department/judge-rules-california-ballots-alleged-non-citizen-voters-trump-doj-rcna606100",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-06T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
       "id": "6769be7a0b25",
       "headline": "UN Investigation Finds Hallmarks of Genocide in El Fasher One Year After RSF Takeover",
       "summary": "A UN fact-finding mission concluded that mass killings, gang rapes and deliberate starvation by the RSF in El Fasher, North Darfur, constitute \"the hallmarks of genocide.\" One year after the city's October 2025 capture, North Darfur's governor alleges RSF forces committed 320 gang-rape cases at El Fasher University and 140 mass graves have been identified; Amnesty International's October 2026 follow-up found ongoing unlawful killings, detention, starvation and torture of civilians.",
@@ -207,40 +245,122 @@
       "isBreaking": false
     },
     {
-      "id": "bec48927068b",
-      "headline": "Drone Strike on Nyala Market in South Darfur Kills at Least 36",
-      "summary": "A Sudanese Armed Forces drone strike hit a market in RSF-held Nyala on Oct 26; MSF confirmed at least 36 killed and more than 150 injured. A rights group and the RSF-aligned local health ministry reported unverified higher tolls of 100 to 188.",
-      "category": "conflict",
+      "id": "35ea5d36a5da",
+      "headline": "Historic Flash Flooding Triggers Mass Evacuations in Sedona, Arizona",
+      "summary": "A second Pacific storm dumped up to 4 inches of rain across the Southwest on Nov. 1-2, triggering mandatory evacuations in Sedona zones near Oak Creek and prompting water rescues. The same system caused severe flooding in southern Colorado, where Gov. Polis issued a disaster declaration.",
+      "category": "disaster",
       "severity": 4,
-      "lat": 12.0474,
-      "lon": 24.8827,
-      "locationName": "Nyala, South Darfur, Sudan",
-      "countryCode": "SD",
+      "lat": 34.8697,
+      "lon": -111.761,
+      "locationName": "Sedona, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/10/27/drone-strike-kills-at-least-21-and-injures-40-in-sudans-nyala",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
+          "url": "https://www.azfamily.com/2026/11/01/flash-flooding-triggers-immediate-evacuations-parts-sedona/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.washingtonpost.com/world/2026/10/27/sudan-power-outage-capital-drone/1d4f0d34-d237-11f1-9931-2a41b76fc976_story.html",
-          "domain": "washingtonpost.com",
+          "url": "https://www.cbsnews.com/colorado/news/pagosa-springs-colorado-extreme-flooding-evacuations",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtontimes.com/news/2026/nov/1/flash-floods-trigger-evacuations-arizona-colorado-amid-heavy-rains/",
+          "domain": "washingtontimes.com",
+          "reliability": 58,
+          "bias": "right"
+        }
+      ],
+      "trustScore": 56,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-06T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "38041f40d5cf",
+      "headline": "Palisades Fire Arson Retrial Begins in Los Angeles Federal Court",
+      "summary": "Jury selection began Nov. 2 in the federal retrial of Jonathan Rinderknecht, who is accused of igniting the Palisades Fire. His first trial ended in a hung jury in June 2026.",
+      "category": "society",
+      "severity": 4,
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "locationName": "Los Angeles, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.nbclosangeles.com/investigations/palisades-fire-arson-retrial-set-for-november/3931320/",
+          "domain": "nbclosangeles.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.justice.gov/usao-cdca/united-states-v-jonathan-rinderknecht",
+          "domain": "justice.gov",
           "reliability": 85,
-          "bias": "center-left"
+          "bias": "center"
         },
         {
-          "url": "https://www.thenationalnews.com/news/mena/2026/10/27/saf-drone-strike-on-sudanese-busy-market-kills-dozens-says-msf/",
-          "domain": "thenationalnews.com",
+          "url": "https://1027wbow.com/2026/11/02/accused-arsonist-in-los-angeles-deadly-palisades-fire-returns-for-federal-retrial/",
+          "domain": "1027wbow.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 60,
-      "firstSeen": "2026-10-29T06:23:58.774Z",
-      "lastUpdated": "2026-10-29T06:23:58.774Z",
-      "expiresAt": "2026-11-02T06:23:58.774Z",
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-06T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "60fb374992e3",
+      "headline": "Learjet Crashes Near Greenacres, Florida, Killing All 9 Aboard",
+      "summary": "A Learjet 60 flying from Austin, Texas, to North Eleuthera, Bahamas, crashed near a residential area in Greenacres, Florida, around 12:50 p.m. on Nov. 1, killing all nine people aboard. Gov. Ron DeSantis called the crash \"cataclysmic.\"",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 26.619,
+      "lon": -80.1253,
+      "locationName": "Greenacres, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/nine-people-dead-after-learjet-crashes-in-florida",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcmiami.com/news/local/officials-respond-to-fiery-aircraft-incident-in-palm-beach-county/3881532/",
+          "domain": "nbcmiami.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://cbs12.com/news/local/explosion-fire-shut-down-military-trail-in-both-directions-military-trail-s-military-trail-diamond-road-explosion-fire-loud-boom-boom-heard-for-miles-road-closure-traffic-alert-road-damage-broken-pavement-debris",
+          "domain": "cbs12.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-06T11:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -619,6 +739,44 @@
       "isBreaking": false
     },
     {
+      "id": "06f802eed5ec",
+      "headline": "Minnesota Sues Federal Government Over Withheld Evidence in Fatal ICE Shootings",
+      "summary": "Minnesota sued the Trump administration, DOJ and DHS after federal officials suspended the transfer of evidence needed for state investigations into fatal shootings of Renee Good and Alex Pretti by federal agents during \"Operation Metro Surge.\" The lawsuit seeks access to evidence for the state probes.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 44.9778,
+      "lon": -93.265,
+      "locationName": "Minneapolis, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.pbs.org/newshour/nation/minnesota-sues-to-obtain-evidence-in-shootings-by-federal-officers-during-ice-surge",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/minnesota-sues-trump-admin-access-evidence-federal-shootings-including-alex-pretti-renee-good-cases",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
+        },
+        {
+          "url": "https://thehill.com/homenews/6168592-minnesota-sues-doj-evidence/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
       "id": "f43eb1745d8c",
       "headline": "North Korea Tests Cluster-Bomb Warhead for Tactical Ballistic Missile",
       "summary": "On Oct 31, North Korea's Missile Administration test-fired a short-range ballistic missile fitted with a \"Standard Type 2\" cluster warhead, with state media claiming the munition can turn a 12-13 hectare target area to scorched earth. Pyongyang said it intends to field various cluster-warhead types by end of 2026, amid heightened DMZ tensions including a landmine blast that wounded South Korean soldiers.",
@@ -763,6 +921,45 @@
       "firstSeen": "2026-10-29T06:23:58.774Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-04T06:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1dda73a5422a",
+      "headline": "Christa Pike, Who Survived Botched Tennessee Execution, Issues First Public Statement",
+      "summary": "Death-row inmate Christa Pike, who survived a botched lethal injection attempt a month ago at Riverbend prison in Nashville, released her first public statement saying she remains in constant pain. Tennessee executions remain paused pending a review.",
+      "category": "society",
+      "severity": 3,
+      "lat": 36.1627,
+      "lon": -86.7816,
+      "locationName": "Nashville, Tennessee, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TN",
+      "sources": [
+        {
+          "url": "https://abcnews.com/US/christa-pike-shes-recovering-after-botched-execution-new/story?id=137705435",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/christa-pike-botched-execution-statement/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wsmv.com/2026/10/30/christa-pike-releases-statement-after-botched-tennessee-execution/",
+          "domain": "wsmv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-04T11:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -1042,6 +1239,46 @@
       "isBreaking": false
     },
     {
+      "id": "4a5e787054ed",
+      "headline": "Lawsuit Could Strip Medicaid Coverage From 140,000 Ohioans",
+      "summary": "The American Medical Association filed an amicus brief backing a lawsuit brought by the City of Columbus challenging a federal Medicaid work-requirement rule. The AMA warned the rule could cause up to 140,000 Ohio Medicaid-expansion enrollees to lose coverage.",
+      "category": "health",
+      "severity": 3,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://ohiocapitaljournal.com/2026/11/02/lawsuit-could-save-medicaid-for-140k-in-ohio/",
+          "domain": "ohiocapitaljournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://thehill.com/policy/healthcare/6105262-lawsuit-trump-medicaid-work-requirements/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fiercehealthcare.com/payers/medical-groups-city-columbus-sue-challenge-final-medicaid-work-requirements-rule",
+          "domain": "fiercehealthcare.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 53,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
       "id": "a61c04ccd858",
       "headline": "UN Envoy Says Sudan-RSF Transition Talks Expected Before Christmas",
       "summary": "UN special envoy for Sudan Pekka Haavisto told reporters talks with the RSF on a transition to civilian rule are expected \"before Christmas,\" saying there is \"no military solution\" to the conflict. The Quintet (UN, EU, AU, Arab League, IGAD) continues to push a peace track.",
@@ -1077,6 +1314,170 @@
       "firstSeen": "2026-11-02T06:06:25.795Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-04T06:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d5d07b71999f",
+      "headline": "Halloween-Weekend Violence Leaves 3 Dead, About 11 Injured Across Philadelphia",
+      "summary": "A wave of 11 separate shootings and stabbings over Halloween weekend in Philadelphia killed three people, including a 15-year-old, and injured roughly 11 others. Police are investigating the incidents, which occurred across multiple neighborhoods.",
+      "category": "society",
+      "severity": 3,
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "locationName": "Philadelphia, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.fox29.com/news/halloween-shootings-philadelphia-leave-1-dead-5-injured-including-3-teens",
+          "domain": "fox29.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/philadelphia-halloween-shootings-2-dead-5-injured/4489383/",
+          "domain": "nbcphiladelphia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://metrophiladelphia.com/stories/3-killed-halloween-shootings-philadelphia,161448",
+          "domain": "metrophiladelphia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7e888e3a0625",
+      "headline": "Historic Flooding Hits San Juan County, Utah, as River Nears Record Crest",
+      "summary": "The San Juan River was forecast to crest near 19 feet, prompting evacuations in Bluff, Utah, and near Shiprock on Nov. 1. Officials called it the second consecutive Sunday of damaging river flooding in the Four Corners region.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 37.2892,
+      "lon": -109.5523,
+      "locationName": "Bluff, Utah, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-UT",
+      "sources": [
+        {
+          "url": "https://www.sltrib.com/news/2026/11/01/san-juan-county-hit-with-lot-rain/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc4.com/news/southern-utah/significant-historic-flood-san-juan-county-bluff/",
+          "domain": "abc4.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://navajotimes.com/reznews/san-juan-river-forecast-to-flood-again-at-shiprock-as-heavy-rain-hits-region/",
+          "domain": "navajotimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "460bc11e44a8",
+      "headline": "Oklahoma Officials Seek Dismissal of Lawsuit Challenging State's Near-Total Abortion Ban",
+      "summary": "Oklahoma Attorney General Gentner Drummond filed a motion to dismiss a Center for Reproductive Rights lawsuit brought by three women who were denied abortions despite fatal fetal diagnoses. The case challenges the state's near-total abortion ban.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.kgou.org/health/2026-10-30/oklahoma-leaders-seek-dismissal-of-lawsuit-challenging-state-abortion-bans",
+          "domain": "kgou.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kosu.org/oklahoma-abortion-ban-dismissal-against",
+          "domain": "kosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://reproductiverights.org/cases/nova-health-systems-v-cline-et-al/",
+          "domain": "reproductiverights.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "10e1bc053010",
+      "headline": "Daimler Truck Shutters Nearly 80-Year-Old Portland Manufacturing Plant, Cutting About 375 Jobs",
+      "summary": "Daimler Truck North America closed its Swan Island plant in Portland, Oregon, on Oct. 30, cutting roughly 375 to 387 jobs. The closure ends 84 years of Freightliner-legacy manufacturing in Portland as production shifts to North and South Carolina.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 45.5152,
+      "lon": -122.6784,
+      "locationName": "Portland, Oregon, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OR",
+      "sources": [
+        {
+          "url": "https://katu.com/news/local/daimler-truck-to-end-production-in-portland-eliminate-375-jobs-oregon-pacific-northwest-pnw-oregon-freight-madras-keith-wilson-business-finance-budget-operator-union-labor-teamsters",
+          "domain": "katu.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ttnews.com/articles/dtna-portland-plant-move",
+          "domain": "ttnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nwlaborpress.org/2026/08/daimler-to-close-portland-truck-plant/",
+          "domain": "nwlaborpress.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-04T11:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -1270,6 +1671,45 @@
       "isBreaking": false
     },
     {
+      "id": "609a01cd331e",
+      "headline": "Severe Storms, Tornado Threat Strike Northwest Missouri and Northeast Kansas",
+      "summary": "A Level 2-of-5 \"Slight Risk\" severe weather outlook covered the Kansas City, St. Joseph and Topeka region on Nov. 2, with damaging winds and isolated tornadoes cited as the primary threats. Forecasters warned residents to monitor conditions through the evening.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 39.7675,
+      "lon": -94.8467,
+      "locationName": "St. Joseph, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.spc.noaa.gov/products/md/md0779.html",
+          "domain": "noaa.gov",
+          "reliability": 94,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kq2.com/weather/local-forecast/2026/11/02/tracking-a-windy-stormy-monday/",
+          "domain": "kq2.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/tornadoes-giant-hail-possible-west-200157388.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
       "id": "ac244653c4d8",
       "headline": "France Releases Strategic Diesel Reserves; Retailers Cut Pump Prices",
       "summary": "France began releasing roughly 10 million barrels (about 20% of its strategic diesel stockpile) from Nov 1, 2026, in a move expected to cut pump prices by 12-18 centimes per litre. Major retailers announced cuts of up to 21 centimes/litre at their stations.",
@@ -1349,6 +1789,84 @@
       "firstSeen": "2026-11-02T06:06:25.795Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-03T18:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8860be9182a3",
+      "headline": "Federal Agents Take Over Arson Probe at Senatobia, Mississippi, Police Headquarters",
+      "summary": "The ATF took over the investigation into suspected arson that damaged the Senatobia, Mississippi, police department building on Oct. 31. The department has faced prior controversy after an officer fatally shot a 1-year-old child in June and the chief was fired over racist texts.",
+      "category": "society",
+      "severity": 2,
+      "lat": 34.6151,
+      "lon": -89.9692,
+      "locationName": "Senatobia, Mississippi, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MS",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/01/us/senatobia-mississippi-police-arson-investigation",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.wral.com/news/ap/3de11-federal-officials-investigate-fire-at-beleaguered-police-department-in-mississippi/",
+          "domain": "wral.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abcnews.com/US/wireStory/federal-officials-investigate-fire-beleaguered-police-department-mississippi-137739234",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 59,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d826d5a557a5",
+      "headline": "Mayor Mamdani Says Trump Will Grant Visa to Mother of Bronx Shooting Victim",
+      "summary": "New York City Mayor Mamdani said President Trump agreed to expedite a visa for the mother of 15-year-old Javits Frimpong, who was fatally shot in the Bronx. Three teenage suspects in the shooting remain at large.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 40.8448,
+      "lon": -73.8648,
+      "locationName": "Bronx, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/1/mamdani-says-trump-to-grant-visa-to-mother-of-boy-killed-in-bronx-shooting",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com/2026/10/31/us/mamdani-javits-frimpong-visa-trump",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.amny.com/news/mother-of-slain-bronx-boy-granted-visa-trump/",
+          "domain": "amny.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -1471,6 +1989,209 @@
       "firstSeen": "2026-11-02T06:06:25.795Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-03T18:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "afa2103b9b56",
+      "headline": "Comcast Slashes 634 Jobs at Philadelphia Headquarters, Citing AI Investment",
+      "summary": "Comcast filed a WARN notice confirming 634 layoffs at its Philadelphia headquarters effective Dec. 31 as part of an AI-driven customer-service restructuring. The company also filed notices for cuts in New Jersey, Washington and California, while planning more than 1,100 new hires companywide.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "locationName": "Philadelphia, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.inquirer.com/business/comcast/comcast-layoffs-warn-notice-philadelphia-ai-jobs-20261030.html",
+          "domain": "inquirer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://technical.ly/workforce/comcast-cuts-634-jobs-philadelphia-headquarters/",
+          "domain": "technical.ly",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
+          "domain": "pa.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "30ee434d163d",
+      "headline": "Cockeysville, Maryland, Man Shoots Three Masked Men on His Property on Halloween, Killing One",
+      "summary": "A homeowner in Cockeysville, Maryland, opened fire on three masked, allegedly armed men who approached him on Halloween night, killing 20-year-old Amon Walker and wounding two others. Baltimore County Police are investigating the shooting.",
+      "category": "society",
+      "severity": 2,
+      "lat": 39.4818,
+      "lon": -76.6441,
+      "locationName": "Cockeysville, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
+      "sources": [
+        {
+          "url": "https://www.thebanner.com/community/local-news/cockeysville-halloween-shooting-3-masked-men-killing-one-7P33VCYWDFFWHAADUQR75KDNY4/",
+          "domain": "thebanner.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/baltimore/news/baltimore-county-police-investigate-cockeysville-shooting/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.baltimoresun.com/2026/11/01/cockeysville-homeowner-shooting/",
+          "domain": "baltimoresun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "befd14e17711",
+      "headline": "Bird Flu Detected at Colorado Dairy for First Time Since 2024",
+      "summary": "Colorado's state veterinary lab confirmed highly pathogenic avian influenza in a Weld County dairy herd on Oct. 24, the first detection in a Colorado dairy since the 2024 outbreak. The facility is under quarantine, and officials say pasteurized milk remains safe.",
+      "category": "health",
+      "severity": 2,
+      "lat": 40.4233,
+      "lon": -104.7091,
+      "locationName": "Greeley, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://coloradosun.com/2026/10/30/avian-flu-found-weld-county-dairy/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.9news.com/article/news/health/bird-flu-detected-at-colorado-dairy-for-first-time-since-2024-outbreak/73-a3cfcbb4-953b-49da-8683-2b7ebf54af8e",
+          "domain": "9news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kktv.com/2026/10/30/avian-flu-detected-colorado-dairy-facility-first-time-more-than-2-years/",
+          "domain": "kktv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "468a0037777a",
+      "headline": "Honolulu City Council Members Face Sunshine Law Probe Over Secret Zippy's Meeting",
+      "summary": "Five of nine Honolulu City Council members, a quorum, are under a state Office of Information Practices investigation after complaints alleged they privately discussed leadership and committee assignments at a Zippy's restaurant. Such a gathering could violate Hawaii's open-meetings Sunshine law.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 21.3069,
+      "lon": -157.8583,
+      "locationName": "Honolulu, Hawaii, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-HI",
+      "sources": [
+        {
+          "url": "https://www.staradvertiser.com/2026/11/02/hawaii-news/council-members-targeted-in-sunshine-law-probe/",
+          "domain": "staradvertiser.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kitv.com/news/honolulu-city-council-members-face-sunshine-law-complaint-over-private-meeting-at-zippy-s/article_5fd1974c-6939-4427-93d3-4419ebbbf7f6.html",
+          "domain": "kitv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.hawaiinewsnow.com/2026/10/30/council-leadership-fight-involves-claims-illegal-meeting/",
+          "domain": "hawaiinewsnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d8a3ab550160",
+      "headline": "Anchorage Faces Looming 'Fiscal Cliff' as Mayor Proposes Flat $692.5 Million 2027 Budget",
+      "summary": "Anchorage Mayor Suzanne LaFrance proposed a $692.5 million flat FY2027 municipal budget that closes a roughly $15 million gap using one-time funds. Officials warned the shortfall could nearly double to about $30 million in 2028.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 61.2181,
+      "lon": -149.9003,
+      "locationName": "Anchorage, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://alaskapublic.org/news/anchorage/2026-10-02/anchorage-mayor-lafrance-proposes-relatively-flat-budget-warns-of-fiscal-cliff-next-year",
+          "domain": "alaskapublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.adn.com/alaska-news/anchorage/2026/10/16/anchorages-mayor-predicts-budget-shortfalls-as-soon-as-next-year-does-a-sales-tax-fit-into-the-conversation/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.muni.org/Departments/Mayor/PressReleases/Pages/Mayor-LaFrance-proposes-2027-municipal-budget.aspx",
+          "domain": "muni.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -1622,6 +2343,74 @@
       "isBreaking": false
     },
     {
+      "id": "9cf5460fd7e6",
+      "headline": "Massachusetts Gun Owners Hit New Firearm Registration Deadline Days Before Vote on Question 9",
+      "summary": "An Oct. 28 deadline passed requiring Massachusetts gun owners to register and serialize previously grandfathered firearms under the state's 2024 gun law. The deadline came six days ahead of the Nov. 3 ballot vote on Question 9, which would affect the registry law.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "locationName": "Boston, Massachusetts, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MA",
+      "sources": [
+        {
+          "url": "https://www.boston.com/news/local-news/2026/11/01/new-firearms-registration-rules-went-live-in-mass-last-week-heres-what-to-know/",
+          "domain": "boston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.usacarry.com/massachusetts-gun-owners-must-register-their-firearms-today-six-days-before-voters-decide-whether-to-keep-the-registry-law/",
+          "domain": "usacarry.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d0e4f2cc7c55",
+      "headline": "Four Iowa Nursing Homes Cited for Alleged Resident Abuse or Injuries, One Death",
+      "summary": "Iowa state inspectors cited four nursing homes for alleged resident injuries or abuse. The most serious case involved a resident at Azria Health Prairie Ridge in Mediapolis who died after receiving an opioid overdose roughly ten times the prescribed amount.",
+      "category": "health",
+      "severity": 2,
+      "lat": 41.0014,
+      "lon": -91.1685,
+      "locationName": "Mediapolis, Iowa, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IA",
+      "sources": [
+        {
+          "url": "https://iowacapitaldispatch.com/2026/10/29/four-iowa-nursing-homes-cited-for-alleged-resident-injuries-or-abuse/",
+          "domain": "iowacapitaldispatch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kcrg.com/2026/10/30/four-iowa-nursing-homes-cited-alleged-resident-injuries-or-abuse/",
+          "domain": "kcrg.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
       "id": "e27588c2a443",
       "headline": "ECDC Reports Early Flu Season Driven by H3N2 Subclade K Alongside West Nile Activity in Europe",
       "summary": "ECDC's weekly communicable disease threat reports show influenza A(H3N2) subclade K is the dominant circulating strain, prompting a threat-assessment brief, though overall EU/EEA flu/RSV circulation remained low in early Oct while SARS-CoV-2 was increasing. ECDC also recorded West Nile virus activity across 18 countries and chikungunya cases in two European countries, plus isolated measles cases in Serbia.",
@@ -1684,6 +2473,88 @@
       "isBreaking": false
     },
     {
+      "id": "a6d0db579e68",
+      "headline": "Fire Forces Evacuation of Jamaica Plain Apartment Building in Boston, 12+ Displaced",
+      "summary": "A fire at a six-unit building at 211 Boylston St. in Boston's Jamaica Plain neighborhood on Oct. 31 caused the rear wall to become structurally unstable, displacing more than 12 residents. No injuries were reported.",
+      "category": "disaster",
+      "severity": 1,
+      "lat": 42.3097,
+      "lon": -71.1151,
+      "locationName": "Boston, Massachusetts, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MA",
+      "sources": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/01/metro/jamaica-plain-apartment-building-fire/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcboston.com/news/local/12-displaced-after-fire-in-jamaica-plain/4041298/",
+          "domain": "nbcboston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.boston.com/news/local-news/2026/11/01/more-than-20-displaced-from-fires-in-homes-in-dorchester-jamaica-plain/",
+          "domain": "boston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "40fdfb57494d",
+      "headline": "Three Nashville Firefighters Resign After On-Duty Bar Incident",
+      "summary": "Three Nashville Fire Department employees resigned after a police report revealed they visited a Broadway bar in uniform while on duty. Mayor Freddie O'Connell called for accountability following the incident.",
+      "category": "society",
+      "severity": 1,
+      "lat": 36.1627,
+      "lon": -86.7816,
+      "locationName": "Nashville, Tennessee, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TN",
+      "sources": [
+        {
+          "url": "https://www.wsmv.com/2026/10/30/police-report-reveals-3-former-nashville-firefighters-were-broadway-bar-while-duty-before-resigning-after-investigation/",
+          "domain": "wsmv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wkrn.com/news/local-news/nashville/report-3-nashville-firefighters-caught-at-bar-while-on-duty/",
+          "domain": "wkrn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/01/3-firefighters-resign-after-drinking-bar-while-duty-police-reports-says/",
+          "domain": "wafb.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
       "id": "14045fc23c8a",
       "headline": "SSEN Restores Power to 97% of Customers in Northern Scotland After Storms Boelo and Austen",
       "summary": "Following back-to-back Storms Austen and Boelo in late October 2026, Scottish and Southern Electricity Networks restored power to 97% of affected customers in northern Scotland by Tuesday evening, though hundreds of homes remained without power with some reconnections not expected until Wednesday.",
@@ -1719,10 +2590,10 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 37,
-    "carried": 1,
-    "updated": 12,
-    "expired": 12,
+    "multiSource": 59,
+    "carried": 37,
+    "updated": 0,
+    "expired": 1,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
