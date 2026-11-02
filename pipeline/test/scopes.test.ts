@@ -9,9 +9,13 @@ import { validateDataset } from '../src/schema.ts';
 const HOUR = 3_600_000;
 const iso = (offsetHours: number) => new Date(Date.now() + offsetHours * HOUR).toISOString();
 
-/** The committed dataset with its clock moved to now, so nothing in it has expired. */
+/**
+ * A real shipped dataset (the 2026-11-02 daily batch, frozen as a fixture so
+ * the live file's daily churn — now including US stories — can't break these
+ * tests) with its clock moved to now, so nothing in it has expired.
+ */
 function shippedDataset(): NewsDataset {
-  const raw = JSON.parse(readFileSync(resolve(__dirname, '../../data/events.json'), 'utf8')) as NewsDataset;
+  const raw = JSON.parse(readFileSync(resolve(__dirname, 'fixtures/shipped-events.json'), 'utf8')) as NewsDataset;
   // move the clock so the soonest expiry is an hour from now
   const soonest = Math.min(...raw.events.map((event) => Date.parse(event.expiresAt ?? raw.generatedAt)));
   const delta = Date.now() + HOUR - soonest;

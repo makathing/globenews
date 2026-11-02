@@ -6,21 +6,40 @@
  * band's middle rather than the screen's.
  */
 
-/** Camera distance (globe radius 1) at which the globe's diameter spans `fill` of the band. */
+/**
+ * On a phone the globe spans this much of the screen's width — big, with
+ * clear space around it so it still reads as a planet…
+ */
+export const PHONE_WIDTH_FILL = 0.78;
+/** …unless the free band is shorter: then this much of the band, so it never clips. */
+export const PHONE_BAND_FILL = 0.9;
+
+/** The globe's on-screen diameter (px) for a band and a screen width. */
+export function framedDiameter(bandPx: number, widthPx: number, widthFill = PHONE_WIDTH_FILL, bandFill = PHONE_BAND_FILL): number {
+  return Math.max(48, Math.min(widthFill * widthPx, bandFill * bandPx));
+}
+
+/**
+ * Camera distance (globe radius 1) at which the globe's diameter is
+ * `framedDiameter` of the band: as wide as the screen allows, as tall as the
+ * band allows.
+ */
 export function framedDistance({
   bandPx,
   widthPx,
   heightPx,
   fovDeg,
-  fill = 0.86,
+  widthFill = PHONE_WIDTH_FILL,
+  bandFill = PHONE_BAND_FILL,
 }: {
   bandPx: number;
   widthPx: number;
   heightPx: number;
   fovDeg: number;
-  fill?: number;
+  widthFill?: number;
+  bandFill?: number;
 }): number {
-  const radiusPx = Math.max(24, (fill * Math.min(bandPx, widthPx)) / 2);
+  const radiusPx = framedDiameter(bandPx, widthPx, widthFill, bandFill) / 2;
   const focal = heightPx / 2 / Math.tan((fovDeg * Math.PI) / 360);
   return Math.sqrt((focal / radiusPx) ** 2 + 1);
 }

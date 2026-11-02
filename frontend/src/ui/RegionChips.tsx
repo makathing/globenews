@@ -1,9 +1,11 @@
 import { useMemo } from 'react';
 import { REGION_IDS, REGIONS, regionOf, type RegionId } from '../lib/regions';
 import { useGlobeStore, useVisibleEvents } from '../store';
+import { RegionIcon } from './icons';
 import { radioKeyDown } from './radio';
 
-const SHORT: Record<RegionId, string> = {
+/** Short names for chips and the region button; REGIONS[id].label is the accessible name. */
+export const REGION_SHORT: Record<RegionId, string> = {
   world: 'World',
   us: 'US',
   europe: 'Europe',
@@ -12,13 +14,10 @@ const SHORT: Record<RegionId, string> = {
   americas: 'Americas',
 };
 
-/** Region views: fly the camera there and filter the list. */
-export function RegionChips({ className = '' }: { className?: string }) {
-  const region = useGlobeStore((s) => s.region);
-  const setRegion = useGlobeStore((s) => s.setRegion);
+/** Stories per region among the visible (category-filtered) ones; 'world' is all of them. */
+export function useRegionCounts(): Map<RegionId, number> {
   const events = useVisibleEvents();
-
-  const counts = useMemo(() => {
+  return useMemo(() => {
     const map = new Map<RegionId, number>([['world', events.length]]);
     for (const event of events) {
       const r = regionOf(event);
@@ -26,6 +25,13 @@ export function RegionChips({ className = '' }: { className?: string }) {
     }
     return map;
   }, [events]);
+}
+
+/** Region views: fly the camera there and filter the list. */
+export function RegionChips({ className = '' }: { className?: string }) {
+  const region = useGlobeStore((s) => s.region);
+  const setRegion = useGlobeStore((s) => s.setRegion);
+  const counts = useRegionCounts();
 
   return (
     <div className={`region-chips ${className}`} role="radiogroup" aria-label="Region">
@@ -42,7 +48,8 @@ export function RegionChips({ className = '' }: { className?: string }) {
             onKeyDown={(e) => radioKeyDown(e, REGION_IDS, region, setRegion)}
             aria-label={`${REGIONS[id].label}, ${count} ${count === 1 ? 'story' : 'stories'}`}
           >
-            <span aria-hidden>{SHORT[id]}</span>
+            <RegionIcon region={id} size={14} className="region-icon" />
+            <span aria-hidden>{REGION_SHORT[id]}</span>
             <span className="region-count" aria-hidden>
               {count}
             </span>

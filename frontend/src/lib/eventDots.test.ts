@@ -248,6 +248,8 @@ describe('dot levels', () => {
   it('stays on the base grid at the default framings', () => {
     expect(continuousDotLevel(radiusPx(900, 4.3))).toBeLessThan(0.5);
     expect(continuousDotLevel(radiusPx(844, 5.59))).toBe(0);
+    // the phone framing (lib/framing.ts): 78% of a 390px-wide screen
+    expect(continuousDotLevel((0.78 * 390) / 2)).toBe(0);
     expect(pickDotLevel(continuousDotLevel(radiusPx(900, 4.3)), 0)).toBe(0);
     expect(continuousDotLevel(radiusPx(900, 8))).toBe(0);
   });

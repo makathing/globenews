@@ -8,10 +8,14 @@ export const SNAPS = ['peek', 'half', 'full'] as const;
 export type Snap = (typeof SNAPS)[number];
 export type SnapHeights = Record<Snap, number>;
 
-/** Handle, title row and region chips: what the sheet shows at its lowest. */
-export const SHEET_HEADER_PX = 126;
-/** One compact story card, gap included. */
-export const SHEET_CARD_PX = 74;
+/** Handle and title + status (the sheet's top border included): what it shows at its lowest. */
+export const SHEET_HEADER_PX = 61;
+/** One story row in the sheet (64px picture + padding, hairline included). */
+export const SHEET_ROW_PX = 77;
+/** Stories the peek tries to show under the header. */
+export const PEEK_ROWS = 2;
+/** …but the peek takes no more of the screen than this (the globe needs the rest). */
+export const PEEK_MAX_FRACTION = 0.31;
 /** A viewport this short is a phone on its side. */
 export const LANDSCAPE_MAX_H = 500;
 
@@ -27,10 +31,11 @@ export function snapHeights(viewportH: number, topBarBottom: number): SnapHeight
     const half = Math.min(full, Math.max(peek + 60, Math.round(viewportH * 0.6)));
     return { peek, half, full };
   }
-  // the top three stories, unless that would take most of the screen
+  // the header and two stories, unless that is more than ~30% of the screen:
+  // then as much as fits, but always one whole story
   const peek = Math.min(
-    Math.max(SHEET_HEADER_PX, Math.floor(viewportH * 0.4)),
-    SHEET_HEADER_PX + SHEET_CARD_PX * 3,
+    SHEET_HEADER_PX + SHEET_ROW_PX * PEEK_ROWS,
+    Math.max(SHEET_HEADER_PX + SHEET_ROW_PX, Math.round(viewportH * PEEK_MAX_FRACTION)),
   );
   const half = Math.min(full, Math.max(peek + 80, Math.round(viewportH * 0.58)));
   return { peek, half, full };

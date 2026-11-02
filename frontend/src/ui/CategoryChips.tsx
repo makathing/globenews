@@ -3,13 +3,14 @@ import { CATEGORIES, CATEGORY_LABELS } from '../../../shared/news';
 import { CATEGORY_SHORT } from '../lib/categories';
 import { inRegion } from '../lib/regions';
 import { useGlobeStore } from '../store';
+import { CategoryIcon } from './icons';
 
 /**
- * The colour key and the category filter in one: each chip is the category's
- * globe colour, its name and how many stories it has in the current region.
+ * The desktop rail's colour key and category filter in one: each chip is the
+ * category's icon in its globe colour, its name and how many stories it has in the current region.
  * Pressed = shown on the globe and in the list.
  */
-export function CategoryChips({ variant }: { variant: 'rail' | 'strip' }) {
+export function CategoryChips() {
   const dataset = useGlobeStore((s) => s.dataset);
   const hidden = useGlobeStore((s) => s.hidden);
   const region = useGlobeStore((s) => s.region);
@@ -25,7 +26,7 @@ export function CategoryChips({ variant }: { variant: 'rail' | 'strip' }) {
   }, [dataset, region]);
 
   return (
-    <div className={`cat-chips cat-chips-${variant}`} role="group" aria-label="Categories: colour key and filter">
+    <div className="cat-chips cat-chips-rail" role="group" aria-label="Categories: colour key and filter">
       {CATEGORIES.map((category) => {
         const off = hidden.has(category);
         const count = counts.get(category) ?? 0;
@@ -38,7 +39,9 @@ export function CategoryChips({ variant }: { variant: 'rail' | 'strip' }) {
             aria-label={`${CATEGORY_LABELS[category]}, ${count} ${count === 1 ? 'story' : 'stories'}`}
             title={`${off ? 'Show' : 'Hide'} ${CATEGORY_LABELS[category]}`}
           >
-            <span className="cat-dot" style={{ background: `var(--cat-${category})` }} aria-hidden />
+            <span className="cat-icon" style={{ color: `var(--cat-${category})` }} aria-hidden>
+              <CategoryIcon category={category} size={14} />
+            </span>
             <span className="cat-name" aria-hidden>
               {CATEGORY_SHORT[category]}
             </span>

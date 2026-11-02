@@ -22,7 +22,7 @@ export function EventRail() {
             {breaking > 0 && !viewing && <span className="rail-count-breaking"> · {breaking} breaking</span>}
           </span>
         </h1>
-        <CategoryChips variant="rail" />
+        <CategoryChips />
         <RegionChips className="region-chips-rail" />
         <DayPicker className="day-picker-rail" />
       </header>

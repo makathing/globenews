@@ -81,6 +81,7 @@ interface GlobeStore {
   setTheme: (theme: ThemeId) => void;
   setSpace: (on: boolean) => void;
   toggleCategory: (category: Category) => void;
+  showAllCategories: () => void;
   setHovered: (hover: HoverState | null) => void;
   hoverId: (id: string | null) => void;
   select: (id: string | null, opts?: { fromGlobe?: boolean }) => void;
@@ -181,6 +182,13 @@ export const useGlobeStore = create<GlobeStore>((set, get) => ({
       const hidden = new Set(state.hidden);
       if (hidden.has(category)) hidden.delete(category);
       else hidden.add(category);
+      storeHidden(hidden);
+      return { hidden };
+    }),
+  showAllCategories: () =>
+    set((state) => {
+      if (state.hidden.size === 0) return {};
+      const hidden = new Set<Category>();
       storeHidden(hidden);
       return { hidden };
     }),

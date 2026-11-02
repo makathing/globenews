@@ -1,16 +1,38 @@
 import { describe, expect, it } from 'vitest';
-import { framedDistance, viewOffsetX, viewOffsetY } from './framing';
+import { framedDiameter, framedDistance, PHONE_BAND_FILL, PHONE_WIDTH_FILL, viewOffsetX, viewOffsetY } from './framing';
+
+/** The projected diameter (px) of the unit globe seen from `d`. */
+function diameterAt(d: number, heightPx: number, fovDeg = 45) {
+  const focal = heightPx / 2 / Math.tan((fovDeg * Math.PI) / 360);
+  return (2 * focal) / Math.sqrt(d * d - 1);
+}
 
 describe('framing', () => {
-  it('fits the globe diameter to the band', () => {
-    const d = framedDistance({ bandPx: 400, widthPx: 390, heightPx: 844, fovDeg: 45, fill: 0.86 });
-    // projected radius back out of the distance
-    const focal = 844 / 2 / Math.tan((45 * Math.PI) / 360);
-    const radius = focal / Math.sqrt(d * d - 1);
-    expect(radius * 2).toBeCloseTo(0.86 * 390, 5);
-    // a taller band is limited by the width; a shorter one by itself
+  it('spans ~75–80% of a phone screen when the band is tall enough', () => {
+    // 390×844: top bar ~56, peek ~215 → a 573px band, so width decides
+    const d = framedDistance({ bandPx: 573, widthPx: 390, heightPx: 844, fovDeg: 45 });
+    expect(diameterAt(d, 844)).toBeCloseTo(PHONE_WIDTH_FILL * 390, 5);
+    expect(diameterAt(d, 844) / 390).toBeGreaterThanOrEqual(0.75);
+    expect(diameterAt(d, 844) / 390).toBeLessThanOrEqual(0.8);
+    // with room to spare above and below
+    expect(573 - diameterAt(d, 844)).toBeGreaterThan(200);
+  });
+
+  it('never lets the globe clip a short band', () => {
+    // landscape 844×390: a ~230px band between the top row and the sheet
+    const d = framedDistance({ bandPx: 230, widthPx: 844, heightPx: 390, fovDeg: 45 });
+    expect(diameterAt(d, 390)).toBeCloseTo(PHONE_BAND_FILL * 230, 5);
+    expect(diameterAt(d, 390)).toBeLessThan(230);
+    // a shorter band pushes the camera further out
+    const tall = framedDistance({ bandPx: 400, widthPx: 390, heightPx: 844, fovDeg: 45 });
     const short = framedDistance({ bandPx: 200, widthPx: 390, heightPx: 844, fovDeg: 45 });
-    expect(short).toBeGreaterThan(d);
+    expect(short).toBeGreaterThan(tall);
+  });
+
+  it('diameter is the smaller of the width and band limits', () => {
+    expect(framedDiameter(600, 390)).toBeCloseTo(390 * PHONE_WIDTH_FILL);
+    expect(framedDiameter(300, 390)).toBeCloseTo(300 * PHONE_BAND_FILL);
+    expect(framedDiameter(10, 390)).toBe(48);
   });
 
   it('centres the band', () => {

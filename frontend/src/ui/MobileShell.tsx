@@ -12,21 +12,20 @@ import {
 import { REGIONS } from '../lib/regions';
 import { clampDrag, nextSnap, resolveSnap, snapHeights, stepSnap, type Snap, type SnapHeights } from '../lib/sheet';
 import { inputModality, useGlobeStore, useReducedMotion } from '../store';
-import { CategoryChips } from './CategoryChips';
 import { DayPicker } from './DayPicker';
 import { ChevronLeftIcon, GearIcon } from './icons';
-import { RegionChips } from './RegionChips';
 import { StoryBody, StoryHeader } from './StoryDetail';
 import { StoryList } from './StoryList';
 import { ThemeControls } from './ThemeControls';
+import { FilterMenu, RegionMenu } from './TopBarMenus';
 import { useStatusLine } from './Updated';
 import { useListStories, useStoryArtChain } from './useStoryArt';
 import { ViewingBanner } from './ViewingBanner';
 
 /**
- * The phone layout (≤900px): a top bar (name, live counts, settings) over a
- * category strip that doubles as the colour key, the globe framed in the
- * band between, and a bottom sheet holding the story list — and, when a
+ * The phone layout (≤900px): one top bar (region menu, name and live
+ * count, category filter, settings), the globe framed in the band below it,
+ * and a bottom sheet holding the story list — and, when a
  * story is open, that story, with a way back to where the list was.
  */
 export function MobileShell() {
@@ -81,23 +80,30 @@ const TopBar = forwardRef<
   return (
     <header ref={ref} className="m-topbar">
       <div className="m-topbar-row">
-        <h1 className="m-brand">GlobeNews</h1>
-        <span className="m-counts" aria-live="polite">
-          {sorted.length} {sorted.length === 1 ? 'story' : 'stories'}
-          {breaking > 0 && <span className="m-counts-breaking"> · {breaking} breaking</span>}
-        </span>
-        <button
-          ref={gearRef}
-          className="m-gear"
-          onClick={onSettings}
-          aria-label="Settings: theme, space view and past days"
-          aria-haspopup="dialog"
-          aria-expanded={settingsOpen}
-        >
-          <GearIcon size={20} />
-        </button>
+        <div className="m-bar-start">
+          <RegionMenu />
+        </div>
+        <div className="m-bar-mid">
+          <h1 className="m-brand">GlobeNews</h1>
+          <span className="m-counts" aria-live="polite">
+            {sorted.length} {sorted.length === 1 ? 'story' : 'stories'}
+            {breaking > 0 && <span className="m-counts-breaking"> · {breaking} breaking</span>}
+          </span>
+        </div>
+        <div className="m-bar-end">
+          <FilterMenu />
+          <button
+            ref={gearRef}
+            className="m-icon-btn m-gear"
+            onClick={onSettings}
+            aria-label="Settings: theme, space view and past days"
+            aria-haspopup="dialog"
+            aria-expanded={settingsOpen}
+          >
+            <GearIcon size={20} />
+          </button>
+        </div>
       </div>
-      <CategoryChips variant="strip" />
       <ViewingBanner className="m-viewing" />
     </header>
   );
@@ -135,10 +141,10 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
   const art = useStoryArtChain(event);
   const mode = event ? 'story' : 'list';
 
-  const heights: SnapHeights = snapHeights(viewportH, topBottom || 112);
+  const heights: SnapHeights = snapHeights(viewportH, topBottom || 56);
   const [snap, setSnap] = useState<Snap>('peek');
   const [dragHeight, setDragHeight] = useState<number | null>(null);
-  const [headH, setHeadH] = useState(118);
+  const [headH, setHeadH] = useState(60);
   const headRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
   const backRef = useRef<HTMLButtonElement>(null);
@@ -221,18 +227,19 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
   } | null>(null);
   const suppressClick = useRef(false);
 
-  const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
-    if (e.pointerType === 'mouse' && e.button !== 0) return;
-    drag.current = { id: e.pointerId, startY: e.clientY, startX: e.clientX, startH: settled, active: false, samples: [] };
-  };
-  const onPointerMove = (e: PointerEvent<HTMLDivElement>) => {
+  type PointerLike = { pointerId: number; clientX: number; clientY: number };
+  const moveTo = (e: PointerLike) => {
     const d = drag.current;
     if (!d || d.id !== e.pointerId) return;
     const dy = d.startY - e.clientY;
     if (!d.active) {
       if (Math.abs(dy) < 6 || Math.abs(dy) < Math.abs(e.clientX - d.startX)) return;
       d.active = true;
-      e.currentTarget.setPointerCapture(e.pointerId);
+      try {
+        headRef.current?.setPointerCapture(e.pointerId);
+      } catch {
+        // the pointer already ended
+      }
     }
     const h = clampDrag(d.startH + dy, heights);
     const now = performance.now();
@@ -240,7 +247,7 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
     while (d.samples.length > 2 && now - d.samples[0].t > 100) d.samples.shift();
     setDragHeight(h);
   };
-  const endDrag = (e: PointerEvent<HTMLDivElement>) => {
+  const finish = (e: PointerLike) => {
     const d = drag.current;
     if (!d || d.id !== e.pointerId) return;
     drag.current = null;
@@ -252,6 +259,33 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
     const velocity = first && last && last.t > first.t ? (last.h - first.h) / (last.t - first.t) : 0;
     setSnap(resolveSnap(last?.h ?? settled, velocity, heights));
     setDragHeight(null);
+  };
+
+  const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    drag.current = { id: e.pointerId, startY: e.clientY, startX: e.clientX, startH: settled, active: false, samples: [] };
+    // A finger is captured by what it touched; a mouse is not, and a quick
+    // drag leaves the header before it moves 6px. Follow it on the window.
+    if (e.pointerType === 'mouse') {
+      const id = e.pointerId;
+      const move = (ev: globalThis.PointerEvent) => moveTo(ev);
+      const up = (ev: globalThis.PointerEvent) => {
+        if (ev.pointerId !== id) return;
+        window.removeEventListener('pointermove', move);
+        window.removeEventListener('pointerup', up);
+        window.removeEventListener('pointercancel', up);
+        finish(ev);
+      };
+      window.addEventListener('pointermove', move);
+      window.addEventListener('pointerup', up);
+      window.addEventListener('pointercancel', up);
+    }
+  };
+  const onPointerMove = (e: PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType !== 'mouse') moveTo(e);
+  };
+  const endDrag = (e: PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType !== 'mouse') finish(e);
   };
 
   const onHandleKey = (e: KeyboardEvent<HTMLButtonElement>) => {
@@ -274,7 +308,7 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
     e.stopPropagation();
   };
 
-  const title = region === 'world' ? 'Top stories' : `${REGIONS[region].label}`;
+  const title = region === 'world' ? 'Top stories' : `Top stories · ${REGIONS[region].label}`;
   const scrollable = snap !== 'peek' || mode === 'story';
 
   return (
@@ -308,13 +342,10 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
           <span className="m-handle-bar" aria-hidden />
         </button>
         {mode === 'list' ? (
-          <>
-            <div className="m-sheet-title">
-              <h2>{title}</h2>
-              <p className="m-status">{status}</p>
-            </div>
-            <RegionChips className="region-chips-sheet" />
-          </>
+          <div className="m-sheet-title">
+            <h2>{title}</h2>
+            <p className="m-status">{status}</p>
+          </div>
         ) : (
           event && (
             <div className="m-story-nav">
@@ -333,7 +364,9 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
         className={`m-sheet-body ${scrollable ? 'scrollable' : ''}`}
         style={{ height: Math.max(0, Math.max(settled, dragHeight ?? 0) - headH) }}
         onFocus={() => {
-          if (snap === 'peek') setSnap('half');
+          // tabbing into a collapsed list opens it; a tap on a row opens the
+          // story instead, and must not change where "back" returns to
+          if (snap === 'peek' && inputModality.keyboard) setSnap('half');
         }}
       >
         {mode === 'story' && event && art ? (
