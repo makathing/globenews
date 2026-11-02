@@ -1,27 +1,42 @@
 import { describe, expect, it } from 'vitest';
-import { clampDrag, nextSnap, resolveSnap, SHEET_HEADER_PX, snapHeights, stepSnap } from './sheet';
+import { clampDrag, nextSnap, PEEK_MAX_FRACTION, PEEK_ROWS, resolveSnap, SHEET_HEADER_PX, SHEET_ROW_PX, snapHeights, stepSnap } from './sheet';
 
 describe('snapHeights', () => {
   it('orders peek < half < full on phones', () => {
     for (const [h, top] of [
-      [844, 116],
-      [780, 112],
-      [667, 104],
-      [568, 100],
+      [915, 84],
+      [844, 84],
+      [780, 84],
+      [664, 84],
+      [568, 84],
     ]) {
       const s = snapHeights(h, top);
       expect(s.peek).toBeLessThan(s.half);
       expect(s.half).toBeLessThan(s.full);
       expect(s.full).toBe(h - top - 8);
-      expect(s.peek).toBeLessThanOrEqual(Math.max(SHEET_HEADER_PX, h * 0.4));
+      // never more than the header and two rows, and at least one whole row
+      expect(s.peek).toBeLessThanOrEqual(SHEET_HEADER_PX + SHEET_ROW_PX * PEEK_ROWS);
+      expect(s.peek).toBeGreaterThanOrEqual(SHEET_HEADER_PX + SHEET_ROW_PX);
     }
   });
 
+  it('peeks the header and two stories on a tall phone, ~30% of it', () => {
+    const s = snapHeights(844, 84);
+    expect(s.peek).toBe(SHEET_HEADER_PX + 2 * SHEET_ROW_PX);
+    expect(s.peek / 844).toBeGreaterThan(0.27);
+    expect(s.peek / 844).toBeLessThanOrEqual(0.31);
+  });
+
+  it('gives a short phone (Safari with its toolbars) less sheet, more globe', () => {
+    const s = snapHeights(664, 84);
+    expect(s.peek).toBe(Math.round(664 * PEEK_MAX_FRACTION));
+  });
+
   it('peeks just the header in landscape', () => {
-    const s = snapHeights(390, 60);
+    const s = snapHeights(390, 52);
     expect(s.peek).toBe(SHEET_HEADER_PX);
     expect(s.half).toBe(234);
-    expect(s.full).toBe(322);
+    expect(s.full).toBe(330);
   });
 });
 

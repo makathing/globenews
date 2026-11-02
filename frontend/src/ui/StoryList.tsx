@@ -1,6 +1,5 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { CATEGORY_LABELS, type NewsEvent } from '../../../shared/news';
-import { CATEGORY_SHORT } from '../lib/categories';
 import type { ArtCandidate } from '../lib/illustration';
 import { freshness, isNew, isUpdated, relativeTime } from '../lib/freshness';
 import { groupByState } from '../lib/regions';
@@ -88,10 +87,16 @@ function RailCard({ event, art, selected }: { event: NewsEvent; art: ArtCandidat
   );
 }
 
-/** Mobile sheet card: thumbnail, category, headline, time. Three fit at the peek. */
+/**
+ * Mobile sheet row: a 64px picture, a two-line headline and one meta line
+ * (category colour, place, time). ~76px tall, so two show at the peek. The
+ * outlets live in the opened story, not here.
+ */
 function CompactCard({ event, art, selected }: { event: NewsEvent; art: ArtCandidate[]; selected: boolean }) {
   const select = useGlobeStore((s) => s.select);
   const now = useListNow();
+  const updated = isUpdated(event, now);
+  const when = relativeTime(updated ? event.lastUpdated : event.firstSeen, now);
   return (
     <button
       data-story={event.id}
@@ -103,13 +108,19 @@ function CompactCard({ event, art, selected }: { event: NewsEvent; art: ArtCandi
         <StoryArt chain={art} category={event.category} size="thumb" linkCredit={false} />
       </span>
       <span className="m-card-text">
+        <span className="m-card-headline">
+          <span className="sr-only">{CATEGORY_LABELS[event.category]}: </span>
+          {event.headline}
+        </span>
         <span className="m-card-meta">
           <span className="cat-dot" style={{ background: `var(--cat-${event.category})` }} aria-hidden />
-          <span>{CATEGORY_SHORT[event.category]}</span>
-          <Marker event={event} now={now} />
-          <span className="m-card-time">{relativeTime(isUpdated(event, now) ? event.lastUpdated : event.firstSeen, now)}</span>
+          {event.isBreaking && <span className="m-card-breaking">Breaking</span>}
+          <span className="m-card-place">{event.locationName}</span>
+          <span className="m-card-sep" aria-hidden>
+            ·
+          </span>
+          <span className="m-card-time">{updated ? `Updated ${when}` : when}</span>
         </span>
-        <span className="m-card-headline">{event.headline}</span>
       </span>
     </button>
   );

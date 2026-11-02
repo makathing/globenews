@@ -1,16 +1,35 @@
 import { describe, expect, it } from 'vitest';
-import { framedDistance, viewOffsetX, viewOffsetY } from './framing';
+import { framedDiameter, framedDistance, PHONE_WIDTH_FILL, viewOffsetX, viewOffsetY } from './framing';
+
+/** The projected diameter (px) of the unit globe seen from `d`. */
+function diameterAt(d: number, heightPx: number, fovDeg = 45) {
+  const focal = heightPx / 2 / Math.tan((fovDeg * Math.PI) / 360);
+  return (2 * focal) / Math.sqrt(d * d - 1);
+}
 
 describe('framing', () => {
-  it('fits the globe diameter to the band', () => {
-    const d = framedDistance({ bandPx: 400, widthPx: 390, heightPx: 844, fovDeg: 45, fill: 0.86 });
-    // projected radius back out of the distance
-    const focal = 844 / 2 / Math.tan((45 * Math.PI) / 360);
-    const radius = focal / Math.sqrt(d * d - 1);
-    expect(radius * 2).toBeCloseTo(0.86 * 390, 5);
-    // a taller band is limited by the width; a shorter one by itself
+  it('fills most of a phone screen when the band is tall enough', () => {
+    // 390×844: top chrome ~84, peek ~254 → a 506px band, so width decides
+    const d = framedDistance({ bandPx: 506, widthPx: 390, heightPx: 844, fovDeg: 45 });
+    expect(diameterAt(d, 844)).toBeCloseTo(PHONE_WIDTH_FILL * 390, 5);
+    expect(diameterAt(d, 844) / 390).toBeGreaterThanOrEqual(0.85);
+  });
+
+  it('never lets the globe clip a short band', () => {
+    // landscape 844×390: a ~230px band between the top row and the sheet
+    const d = framedDistance({ bandPx: 230, widthPx: 844, heightPx: 390, fovDeg: 45 });
+    expect(diameterAt(d, 390)).toBeLessThanOrEqual(230);
+    expect(diameterAt(d, 390)).toBeGreaterThan(0.9 * 230);
+    // a shorter band pushes the camera further out
+    const tall = framedDistance({ bandPx: 400, widthPx: 390, heightPx: 844, fovDeg: 45 });
     const short = framedDistance({ bandPx: 200, widthPx: 390, heightPx: 844, fovDeg: 45 });
-    expect(short).toBeGreaterThan(d);
+    expect(short).toBeGreaterThan(tall);
+  });
+
+  it('diameter is the smaller of the width and band limits', () => {
+    expect(framedDiameter(600, 390)).toBeCloseTo(390 * PHONE_WIDTH_FILL);
+    expect(framedDiameter(300, 390)).toBeCloseTo(300 * 0.96);
+    expect(framedDiameter(10, 390)).toBe(48);
   });
 
   it('centres the band', () => {

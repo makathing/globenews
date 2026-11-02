@@ -1134,7 +1134,7 @@ a.art-credit:focus-visible {
   right: 0;
   z-index: 24;
   padding-top: calc(var(--inset-top) + 4px);
-  padding-bottom: 6px;
+  padding-bottom: 0;
   /* solid under the text, fading out over the globe below */
   background: linear-gradient(
     to bottom,
@@ -1144,15 +1144,19 @@ a.art-credit:focus-visible {
   );
 }
 .m-topbar-row {
+  /* over the chip row's hit areas, but only the gear takes taps */
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 0 8px 0 16px;
-  min-height: 48px;
+  min-height: 40px;
 }
 .m-brand {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.015em;
   flex: none;
@@ -1160,7 +1164,7 @@ a.art-credit:focus-visible {
 .m-counts {
   flex: 1;
   min-width: 0;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 550;
   color: var(--text-secondary);
   white-space: nowrap;
@@ -1172,13 +1176,16 @@ a.art-credit:focus-visible {
   color: var(--text);
 }
 .m-gear {
+  position: relative;
   flex: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
+  margin-right: 2px;
   border-radius: 50%;
+  pointer-events: auto;
   border: 1px solid var(--panel-border);
   background: color-mix(in srgb, var(--panel-solid) 80%, transparent);
   color: var(--text);
@@ -1187,38 +1194,73 @@ a.art-credit:focus-visible {
 .cat-chips-strip {
   display: flex;
   gap: 6px;
-  padding: 2px 12px 2px;
+  /* 36px chips; the 6px above and below belong to their hit areas */
+  padding: 6px 16px;
+  margin: -4px 0 -4px;
   overflow-x: auto;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
-  /* the row scrolls: let the last chip fade out so that's visible */
-  mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 28px), transparent);
+  /* the row scrolls: both ends fade, so it reads as more than fits */
+  mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 32px), transparent);
 }
 .cat-chips-strip::-webkit-scrollbar {
   display: none;
 }
 .cat-chips-strip .cat-chip {
-  min-height: 44px;
-  padding: 0 13px 0 11px;
-  font-size: 14px;
+  position: relative;
+  min-height: 0;
+  height: 36px;
+  gap: 6px;
+  padding: 0 11px 0 10px;
+  font-size: 13.5px;
   background: color-mix(in srgb, var(--panel-solid) 82%, transparent);
 }
 .cat-chips-strip .cat-chip.off {
   background: color-mix(in srgb, var(--bg) 70%, transparent);
 }
 .cat-chips-strip .cat-dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+}
+.cat-chips-strip .cat-count {
+  font-size: 12px;
+  font-weight: 550;
+}
+/* a 36px control with a ≥44px finger target: the target reaches past it
+   above and below (and halfway into the gaps beside it) */
+.m-gear::after,
+.cat-chips-strip .cat-chip::after,
+.region-chips-sheet .region-chip::after,
+.m-viewing .viewing-back::after {
+  content: '';
+  position: absolute;
+  inset: -6px -3px;
+}
+.m-gear::after {
+  inset: -5px;
 }
 .m-viewing {
-  margin: 6px 12px 2px;
-  font-size: 13.5px;
+  /* one slim row under the chips, not a second toolbar */
+  position: relative;
+  z-index: 1;
+  margin: 6px 12px 6px;
+  padding: 2px 2px 2px 12px;
+  font-size: 13px;
   justify-content: space-between;
+  box-shadow: none;
+}
+.m-viewing > span {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .m-viewing .viewing-back {
-  min-height: 44px;
+  position: relative;
+  min-height: 0;
+  height: 32px;
   padding: 0 14px;
-  font-size: 13.5px;
+  font-size: 13px;
 }
 
 .m-sheet {
@@ -1243,8 +1285,10 @@ a.art-credit:focus-visible {
 .m-sheet-head {
   position: relative;
   flex: none;
-  padding-top: 20px;
-  padding-bottom: 6px;
+  /* 98px in list mode (+ the sheet's 1px top border): lib/sheet.ts SHEET_HEADER_PX */
+  padding-top: 14px;
+  padding-bottom: 0;
+  border-bottom: 1px solid var(--hairline);
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
@@ -1268,10 +1312,10 @@ a.art-credit:focus-visible {
 }
 .m-handle-bar {
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: 50%;
-  width: 40px;
-  height: 5px;
+  width: 36px;
+  height: 4px;
   margin-left: -20px;
   border-radius: 3px;
   background: rgba(var(--tint), 0.3);
@@ -1281,13 +1325,15 @@ a.art-credit:focus-visible {
 }
 .m-sheet-title h2 {
   margin: 0;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 .m-status {
-  margin: 2px 0 0;
-  font-size: 12.5px;
+  margin: 1px 0 0;
+  font-size: 12px;
+  line-height: 16px;
   color: var(--text-secondary);
   white-space: nowrap;
   overflow: hidden;
@@ -1296,48 +1342,69 @@ a.art-credit:focus-visible {
 .region-chips-sheet {
   position: relative;
   z-index: 2;
-  margin-top: 8px;
-  padding: 0 12px;
+  gap: 6px;
+  margin-top: -2px;
+  /* 36px chips; the 6px above and below belong to their hit areas */
+  padding: 6px 16px;
   overflow-x: auto;
   scrollbar-width: none;
   touch-action: pan-x;
-  mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 24px), transparent);
+  mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 28px), transparent);
 }
 .region-chips-sheet::-webkit-scrollbar {
   display: none;
 }
 .region-chips-sheet .region-chip {
-  min-height: 44px;
-  padding: 0 13px;
-  font-size: 14px;
+  position: relative;
+  min-height: 0;
+  height: 36px;
+  padding: 0 12px;
+  font-size: 13.5px;
   border-radius: 999px;
+}
+.region-chips-sheet .region-count {
+  font-size: 12px;
 }
 .m-sheet-body {
   flex: none;
   overflow: hidden;
   overscroll-behavior: contain;
-  padding: 0 8px calc(var(--inset-bottom) + 16px);
+  padding: 0 0 calc(var(--inset-bottom) + 16px);
+}
+.m-sheet-body .story-list {
+  gap: 0;
+}
+/* hairlines between rows, edge to edge */
+.m-sheet-body .story-list > li + li {
+  border-top: 1px solid var(--hairline);
 }
 .m-sheet-body.scrollable {
   overflow-y: auto;
 }
 .m-sheet-body .story-group-head {
-  padding: 12px 8px 6px;
+  padding: 8px 16px 4px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--hairline);
 }
+/* one row per story: picture, two-line headline, one meta line */
 .m-card {
   display: flex;
   align-items: center;
   gap: 12px;
   width: 100%;
-  min-height: 72px;
-  padding: 8px;
+  min-height: 76px;
+  padding: 6px 16px;
   text-align: left;
   background: none;
   border: none;
-  border-radius: 12px;
+  border-radius: 0;
   color: var(--text);
   font-family: var(--font);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.m-card:focus-visible {
+  outline-offset: -3px;
 }
 .m-card.selected {
   background: rgba(var(--tint), 0.07);
@@ -1347,41 +1414,64 @@ a.art-credit:focus-visible {
 }
 .m-card-thumb {
   flex: none;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   border-radius: 8px;
   overflow: hidden;
 }
 .m-card-text {
+  flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-.m-card-meta {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12.5px;
-  font-weight: 550;
-  color: var(--text-secondary);
-}
-.m-card-time {
-  margin-left: auto;
-  padding-left: 6px;
-  font-weight: 450;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
 .m-card-headline {
   font-size: 15px;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 19px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.m-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.m-card-meta .cat-dot {
+  width: 8px;
+  height: 8px;
+}
+.m-card-breaking {
+  flex: none;
+  font-weight: 700;
+  color: var(--danger);
+}
+:root[data-theme='paper'] .m-card-breaking {
+  color: var(--danger-bg);
+}
+.m-card-place {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.m-card-sep {
+  flex: none;
+  margin: 0 -2px;
+}
+.m-card-time {
+  flex: none;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 .m-story-nav {
   position: relative;
@@ -1417,6 +1507,25 @@ a.art-credit:focus-visible {
 .m-story .event-summary {
   font-size: 15px;
   color: var(--text);
+}
+.m-sheet .category-badge,
+.m-sheet .sev-num {
+  font-size: 12px;
+}
+.m-story .story-art-panel .art-badge {
+  font-size: 12px;
+}
+.m-story .story-art-panel .art-credit {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+/* the linked credit is small; its finger target is not: transparent borders
+   (inside the picture's clip) take it to 44px tall */
+.m-story .story-art-panel a.art-credit {
+  bottom: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 8px solid transparent;
+  background-clip: padding-box;
 }
 .m-story .event-location {
   font-size: 13.5px;
@@ -1514,11 +1623,13 @@ a.art-credit:focus-visible {
     order: 1;
     flex: 1;
     min-width: 0;
-    padding: 2px 8px;
+    margin-top: 0;
+    padding: 4px 8px;
   }
   .m-counts {
     order: 2;
     flex: none;
+    margin-left: 4px;
     font-size: 12.5px;
   }
   .m-gear {

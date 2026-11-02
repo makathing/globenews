@@ -135,10 +135,10 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
   const art = useStoryArtChain(event);
   const mode = event ? 'story' : 'list';
 
-  const heights: SnapHeights = snapHeights(viewportH, topBottom || 112);
+  const heights: SnapHeights = snapHeights(viewportH, topBottom || 84);
   const [snap, setSnap] = useState<Snap>('peek');
   const [dragHeight, setDragHeight] = useState<number | null>(null);
-  const [headH, setHeadH] = useState(118);
+  const [headH, setHeadH] = useState(98);
   const headRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
   const backRef = useRef<HTMLButtonElement>(null);
@@ -333,7 +333,9 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
         className={`m-sheet-body ${scrollable ? 'scrollable' : ''}`}
         style={{ height: Math.max(0, Math.max(settled, dragHeight ?? 0) - headH) }}
         onFocus={() => {
-          if (snap === 'peek') setSnap('half');
+          // tabbing into a collapsed list opens it; a tap on a row opens the
+          // story instead, and must not change where "back" returns to
+          if (snap === 'peek' && inputModality.keyboard) setSnap('half');
         }}
       >
         {mode === 'story' && event && art ? (
