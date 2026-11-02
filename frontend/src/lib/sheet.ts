@@ -8,8 +8,8 @@ export const SNAPS = ['peek', 'half', 'full'] as const;
 export type Snap = (typeof SNAPS)[number];
 export type SnapHeights = Record<Snap, number>;
 
-/** Handle, title + status and the region row: what the sheet shows at its lowest. */
-export const SHEET_HEADER_PX = 99;
+/** Handle and title + status (the sheet's top border included): what it shows at its lowest. */
+export const SHEET_HEADER_PX = 61;
 /** One story row in the sheet (64px picture + padding, hairline included). */
 export const SHEET_ROW_PX = 77;
 /** Stories the peek tries to show under the header. */

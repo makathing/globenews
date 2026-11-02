@@ -232,8 +232,8 @@ export function buildEventDots(
 /**
  * Smallest on-screen size, in CSS pixels, a grid cell may have before the
  * globe steps to a coarser grid. Calibrated so the default framings (desktop
- * at distance 4.3: ~3.9 px cells at 420; a phone, where the globe spans ~92%
- * of the screen's width: ~2.7 px on a 390px-wide screen) stay on the
+ * at distance 4.3: ~3.9 px cells at 420; a phone, where the globe spans ~78%
+ * of the screen's width: ~2.3 px on a 390px-wide screen) stay on the
  * approved 420 grid, and finer grids arrive only once zooming has made room
  * for them. With a device pixel ratio >= 1 this keeps every cell well above
  * 2.5 device pixels, crossfades included.

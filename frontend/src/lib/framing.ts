@@ -6,10 +6,13 @@
  * band's middle rather than the screen's.
  */
 
-/** On a phone the globe spans this much of the screen's width… */
-export const PHONE_WIDTH_FILL = 0.92;
+/**
+ * On a phone the globe spans this much of the screen's width — big, with
+ * clear space around it so it still reads as a planet…
+ */
+export const PHONE_WIDTH_FILL = 0.78;
 /** …unless the free band is shorter: then this much of the band, so it never clips. */
-export const PHONE_BAND_FILL = 0.96;
+export const PHONE_BAND_FILL = 0.9;
 
 /** The globe's on-screen diameter (px) for a band and a screen width. */
 export function framedDiameter(bandPx: number, widthPx: number, widthFill = PHONE_WIDTH_FILL, bandFill = PHONE_BAND_FILL): number {

@@ -4,11 +4,11 @@ import { clampDrag, nextSnap, PEEK_MAX_FRACTION, PEEK_ROWS, resolveSnap, SHEET_H
 describe('snapHeights', () => {
   it('orders peek < half < full on phones', () => {
     for (const [h, top] of [
-      [915, 84],
-      [844, 84],
-      [780, 84],
-      [664, 84],
-      [568, 84],
+      [915, 56],
+      [844, 56],
+      [780, 56],
+      [664, 56],
+      [568, 56],
     ]) {
       const s = snapHeights(h, top);
       expect(s.peek).toBeLessThan(s.half);
@@ -21,22 +21,23 @@ describe('snapHeights', () => {
   });
 
   it('peeks the header and two stories on a tall phone, ~30% of it', () => {
-    const s = snapHeights(844, 84);
+    const s = snapHeights(844, 56);
     expect(s.peek).toBe(SHEET_HEADER_PX + 2 * SHEET_ROW_PX);
-    expect(s.peek / 844).toBeGreaterThan(0.27);
+    expect(s.peek / 844).toBeGreaterThan(0.24);
     expect(s.peek / 844).toBeLessThanOrEqual(0.31);
   });
 
   it('gives a short phone (Safari with its toolbars) less sheet, more globe', () => {
-    const s = snapHeights(664, 84);
-    expect(s.peek).toBe(Math.round(664 * PEEK_MAX_FRACTION));
+    const s = snapHeights(600, 56);
+    expect(s.peek).toBe(Math.round(600 * PEEK_MAX_FRACTION));
+    expect(s.peek).toBeLessThan(SHEET_HEADER_PX + 2 * SHEET_ROW_PX);
   });
 
   it('peeks just the header in landscape', () => {
-    const s = snapHeights(390, 52);
+    const s = snapHeights(390, 56);
     expect(s.peek).toBe(SHEET_HEADER_PX);
     expect(s.half).toBe(234);
-    expect(s.full).toBe(330);
+    expect(s.full).toBe(326);
   });
 });
 

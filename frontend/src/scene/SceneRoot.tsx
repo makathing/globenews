@@ -12,12 +12,11 @@ import { RenderStats } from './RenderStats';
 import { ViewFraming } from './ViewFraming';
 import * as THREE from 'three';
 import { framedDistance } from '../lib/framing';
-import { LANDSCAPE_MAX_H, snapHeights } from '../lib/sheet';
+import { snapHeights } from '../lib/sheet';
 import { narrowViewport, useGlobeStore, useSpaceView, useTheme } from '../store';
 
-/** The top chrome's height before it is measured (styles.css .m-topbar). */
-const PHONE_TOP_GUESS_PX = 84;
-const LANDSCAPE_TOP_GUESS_PX = 52;
+/** The top bar's height before it is measured (styles.css .m-topbar). */
+const PHONE_TOP_GUESS_PX = 56;
 const FOV = 45;
 const DESKTOP_START: [number, number, number] = [1.15, 0.95, 4.3];
 
@@ -31,7 +30,7 @@ function startPosition(): [number, number, number] {
   if (!narrowViewport) return DESKTOP_START;
   const w = window.innerWidth;
   const h = window.innerHeight;
-  const top = h < LANDSCAPE_MAX_H ? LANDSCAPE_TOP_GUESS_PX : PHONE_TOP_GUESS_PX;
+  const top = PHONE_TOP_GUESS_PX;
   const band = h - top - snapHeights(h, top).peek;
   const distance = framedDistance({ bandPx: band, widthPx: w, heightPx: h, fovDeg: FOV });
   const dir = new THREE.Vector3(...DESKTOP_START).normalize().multiplyScalar(distance);
