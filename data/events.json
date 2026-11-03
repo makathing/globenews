@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:07:11.564Z",
+  "generatedAt": "2026-11-03T15:27:52.809Z",
   "mode": "daily",
   "events": [
     {
@@ -268,43 +268,6 @@
       "isBreaking": false
     },
     {
-      "id": "580ee57e2024",
-      "headline": "US to Host Russia-Ukraine Trilateral Talks in Abu Dhabi on Nov 10-11",
-      "summary": "US officials Steve Witkoff and Jared Kushner will lead trilateral talks with Russian and Ukrainian delegations in Abu Dhabi on Nov 10-11, reviving a diplomatic track on post-war security arrangements that had been suspended since February.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 24.4539,
-      "lon": 54.3773,
-      "locationName": "Abu Dhabi, United Arab Emirates",
-      "countryCode": "AE",
-      "sources": [
-        {
-          "url": "https://www.axios.com/2026/11/03/us-russia-ukraine-peace-talks-uae-trump-witkoff-kushner",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-02/us-to-hold-trilateral-talks-with-ukraine-russia-in-abu-dhabi-next-week-us-official",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.thenationalnews.com/news/us/2026/11/02/russia-ukraine-witkoff-abu-dhabi/",
-          "domain": "thenationalnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-07T06:07:11.564Z",
-      "isBreaking": false
-    },
-    {
       "id": "376a7929c446",
       "headline": "Federal Judge Rejects DOJ Bid to Segregate About 20,000 'Likely Non-Citizen' California Ballots",
       "summary": "A federal judge denied a DOJ emergency request to force California to segregate roughly 20,000 ballots the department claims belong to likely non-citizens, two days before the Nov. 3 election, ruling it would \"wreak havoc\" on the vote. An appeals panel also rejected a similar request.",
@@ -340,6 +303,43 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-06T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "580ee57e2024",
+      "headline": "US to Host Russia-Ukraine Trilateral Talks in Abu Dhabi on Nov 10-11",
+      "summary": "US officials Steve Witkoff and Jared Kushner will lead trilateral talks with Russian and Ukrainian delegations in Abu Dhabi on Nov 10-11, reviving a diplomatic track on post-war security arrangements that had been suspended since February.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 24.4539,
+      "lon": 54.3773,
+      "locationName": "Abu Dhabi, United Arab Emirates",
+      "countryCode": "AE",
+      "sources": [
+        {
+          "url": "https://www.axios.com/2026/11/03/us-russia-ukraine-peace-talks-uae-trump-witkoff-kushner",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-02/us-to-hold-trilateral-talks-with-ukraine-russia-in-abu-dhabi-next-week-us-official",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thenationalnews.com/news/us/2026/11/02/russia-ukraine-witkoff-abu-dhabi/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-03T06:07:11.564Z",
+      "lastUpdated": "2026-11-03T06:07:11.564Z",
+      "expiresAt": "2026-11-07T06:07:11.564Z",
       "isBreaking": false
     },
     {
@@ -630,6 +630,47 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-07T06:07:11.564Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8fe5e3876d2a",
+      "headline": "Oregon's 2026 Wildfire Season Becomes Largest on Record, Nearly 2 Million Acres Burned",
+      "summary": "Oregon's 2026 wildfire season burned roughly 2 to 2.3 million acres, surpassing the prior record of about 1.93 million acres set in 2024, at a suppression cost near $1.4 billion. FEMA reversed an earlier denial of federal fire-management assistance for the Rowe Creek Complex fire after appeals from Oregon lawmakers.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 44.9429,
+      "lon": -123.0351,
+      "locationName": "Salem, Oregon, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OR",
+      "sources": [
+        {
+          "url": "https://www.kgw.com/article/news/local/wildfire/2026-oregon-worst-wildfire-season-on-record-1-99m-acres-burned/283-176b718c-4df4-418f-bfd5-257bebc5a3f7",
+          "domain": "kgw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://katu.com/news/local/oregon-2026-wildfire-season-burns-2-point-3-million-acres-topping-2024-record-wildfires-rowe-creek-haye",
+          "domain": "katu.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.klcc.org/news-briefs/2026-08-02/fema-reverses-decision-on-rowe-creek-complex-west-zone-funding",
+          "domain": "klcc.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-07T15:27:52.809Z",
       "isBreaking": false
     },
     {
@@ -1050,42 +1091,6 @@
       "isBreaking": false
     },
     {
-      "id": "f43eb1745d8c",
-      "headline": "North Korea Tests Cluster-Bomb Warhead for Tactical Ballistic Missile",
-      "summary": "On Oct 31, North Korea's Missile Administration test-fired a short-range ballistic missile fitted with a \"Standard Type 2\" cluster warhead, with state media claiming the munition can turn a 12-13 hectare target area to scorched earth. Pyongyang said it intends to field various cluster-warhead types by end of 2026, amid heightened DMZ tensions including a landmine blast that wounded South Korean soldiers.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 39.0392,
-      "lon": 125.7625,
-      "locationName": "Pyongyang, North Korea",
-      "countryCode": "KP",
-      "sources": [
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/",
-          "domain": "japantimes.co.jp",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-10-31/north-korea-says-defence-research-institutes-tested-major-weapon-system",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://tribune.com.pk/story/2638069/north-korea-tests-tactical-ballistic-missile-cluster-warhead",
-          "domain": "tribune.com.pk",
-          "reliability": 68,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 70,
-      "firstSeen": "2026-11-02T06:06:25.795Z",
-      "lastUpdated": "2026-11-02T06:06:25.795Z",
-      "expiresAt": "2026-11-04T06:06:25.795Z",
-      "isBreaking": false
-    },
-    {
       "id": "06f802eed5ec",
       "headline": "Minnesota Sues Federal Government Over Withheld Evidence in Fatal ICE Shootings",
       "summary": "Minnesota sued the Trump administration, DOJ and DHS after federal officials suspended the transfer of evidence needed for state investigations into fatal shootings of Renee Good and Alex Pretti by federal agents during \"Operation Metro Surge.\" The lawsuit seeks access to evidence for the state probes.",
@@ -1121,6 +1126,42 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f43eb1745d8c",
+      "headline": "North Korea Tests Cluster-Bomb Warhead for Tactical Ballistic Missile",
+      "summary": "On Oct 31, North Korea's Missile Administration test-fired a short-range ballistic missile fitted with a \"Standard Type 2\" cluster warhead, with state media claiming the munition can turn a 12-13 hectare target area to scorched earth. Pyongyang said it intends to field various cluster-warhead types by end of 2026, amid heightened DMZ tensions including a landmine blast that wounded South Korean soldiers.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 39.0392,
+      "lon": 125.7625,
+      "locationName": "Pyongyang, North Korea",
+      "countryCode": "KP",
+      "sources": [
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-31/north-korea-says-defence-research-institutes-tested-major-weapon-system",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://tribune.com.pk/story/2638069/north-korea-tests-tactical-ballistic-missile-cluster-warhead",
+          "domain": "tribune.com.pk",
+          "reliability": 68,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-11-02T06:06:25.795Z",
+      "lastUpdated": "2026-11-02T06:06:25.795Z",
+      "expiresAt": "2026-11-04T06:06:25.795Z",
       "isBreaking": false
     },
     {
@@ -1526,6 +1567,45 @@
       "isBreaking": false
     },
     {
+      "id": "79a629e068c0",
+      "headline": "Sen. Chris Murphy Hospitalized After Suffering Stroke in Connecticut",
+      "summary": "Sen. Chris Murphy, 53, experienced arm numbness on Nov. 1 at his son's hockey game in Connecticut and was taken to a local hospital, where doctors determined he'd had a stroke. He was transferred to Johns Hopkins in Baltimore for monitoring; his office says he is awake, alert, and expected to make a full recovery.",
+      "category": "health",
+      "severity": 3,
+      "lat": 41.7658,
+      "lon": -72.6734,
+      "locationName": "Hartford, Connecticut, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CT",
+      "sources": [
+        {
+          "url": "https://ctmirror.org/2026/11/01/u-s-sen-chris-murphy-hospitalized-after-having-a-stroke/",
+          "domain": "ctmirror.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/news/chris-murphy-stroke-hospitalized/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6025467/chris-murphy-stroke",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
       "id": "09971aa2e918",
       "headline": "Truck-Bomb and Drone Attack Near Colombian Military Base Kills Four Civilians, Including Infant",
       "summary": "A truck/cylinder-bomb and drone attack struck near a military base in Planadas, Tolima, on the night of Nov 1-2, killing four civilians including a two-month-old baby and injuring 17. The blast damaged a hospital and homes; no group has claimed responsibility, though FARC dissidents are suspected. Authorities imposed a curfew.",
@@ -1795,6 +1875,86 @@
       "isBreaking": false
     },
     {
+      "id": "289ef6ed2af8",
+      "headline": "Prescott, Arizona Declares State of Emergency After Flooding Overtops Watson Lake Dam",
+      "summary": "Prescott's mayor declared a state of emergency after heavy rainfall overtopped the Watson Lake (Granite) Dam, with inflow peaking above 4,000 cfs; the Upper Goldwater Reservoir also topped. The dam is rated to safely handle up to 10 feet of overtopping; low-water crossings closed.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 34.54,
+      "lon": -112.4685,
+      "locationName": "Prescott, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
+      "sources": [
+        {
+          "url": "https://www.azfamily.com/2026/11/02/prescott-declares-state-emergency-flooding-hammers-parts-arizona/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://prescott-az.gov/city-of-prescott-responds-to-significant-flooding-event/",
+          "domain": "prescott-az.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.12news.com/article/weather/severe-weather/city-of-prescott-declares-state-of-emergency-due-to-flooding/75-d203221c-36e5-4420-873e-2ce357ebae8c",
+          "domain": "12news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a258db560115",
+      "headline": "One Year After Typhoon Halong, Kipnuk and Kwigillingok Villages Remain in Limbo Amid FEMA Relocation Dispute",
+      "summary": "A year after the remnants of Typhoon Halong destroyed over 150 homes and forced roughly 1,500 evacuations in the Yup'ik villages of Kipnuk and Kwigillingok, Alaska, most residents remain displaced. Both villages voted to relocate entirely, but the state's FEMA request to fund permanent replacement housing for 219 damaged homes has been denied, and temporary housing assistance is set to expire in April 2027.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 59.9386,
+      "lon": -164.0372,
+      "locationName": "Kipnuk, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/10/14/one-year-after-ex-typhoon-halong-western-alaskas-recovery-is-ongoing-and-uncertain/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.adn.com/alaska-news/rural-alaska/2026/10/12/one-year-after-halong-devastated-their-villages-storm-survivors-navigate-life-in-alaskas-largest-city/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
       "id": "2b715353444b",
       "headline": "PAHO Warns of Dengue and Chikungunya Resurgence Across the Americas",
       "summary": "The Pan American Health Organization reports 1.69 million suspected dengue cases across the Americas as of mid-September 2026, including 3,413 severe cases and 571 deaths. Chikungunya is also resurging in Guyana, French Guiana, Suriname and Paraguay, prompting a US CDC health advisory.",
@@ -1947,83 +2107,43 @@
       "isBreaking": false
     },
     {
-      "id": "289ef6ed2af8",
-      "headline": "Prescott, Arizona Declares State of Emergency After Flooding Overtops Watson Lake Dam",
-      "summary": "Prescott's mayor declared a state of emergency after heavy rainfall overtopped the Watson Lake (Granite) Dam, with inflow peaking above 4,000 cfs; the Upper Goldwater Reservoir also topped. The dam is rated to safely handle up to 10 feet of overtopping; low-water crossings closed.",
-      "category": "disaster",
+      "id": "158a7a7dede6",
+      "headline": "Thornton Man Charged With Murder in Fatal Halloween-Night Shooting Near CU Boulder",
+      "summary": "Boulder police arrested 18-year-old Omar Perez of Thornton on Nov. 2, 2026, charging him with first-degree murder, assault and attempted murder in connection with a Halloween-night shooting at a party in Boulder's University Hill neighborhood. The shooting killed 19-year-old CU Boulder student Luca Hanlon and wounded a second student; it is reportedly Boulder's first homicide of 2026.",
+      "category": "society",
       "severity": 3,
-      "lat": 34.54,
-      "lon": -112.4685,
-      "locationName": "Prescott, Arizona, USA",
+      "lat": 40.0076,
+      "lon": -105.2659,
+      "locationName": "Boulder, Colorado, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-AZ",
+      "subdivision": "US-CO",
       "sources": [
         {
-          "url": "https://www.azfamily.com/2026/11/02/prescott-declares-state-emergency-flooding-hammers-parts-arizona/",
-          "domain": "azfamily.com",
+          "url": "https://www.cpr.org/2026/11/02/cu-boulder-halloween-shooting/",
+          "domain": "cpr.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://prescott-az.gov/city-of-prescott-responds-to-significant-flooding-event/",
-          "domain": "prescott-az.gov",
-          "reliability": 85,
+          "url": "https://www.axios.com/local/boulder/2026/11/02/boulder-shooting-university-hill-arrest",
+          "domain": "axios.com",
+          "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://www.12news.com/article/weather/severe-weather/city-of-prescott-declares-state-of-emergency-due-to-flooding/75-d203221c-36e5-4420-873e-2ce357ebae8c",
-          "domain": "12news.com",
+          "url": "https://www.denvergazette.com/2026/11/02/man-arrested-in-halloween-shooting-that-killed-cu-boulder-student/",
+          "domain": "denvergazette.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T15:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a258db560115",
-      "headline": "One Year After Typhoon Halong, Kipnuk and Kwigillingok Villages Remain in Limbo Amid FEMA Relocation Dispute",
-      "summary": "A year after the remnants of Typhoon Halong destroyed over 150 homes and forced roughly 1,500 evacuations in the Yup'ik villages of Kipnuk and Kwigillingok, Alaska, most residents remain displaced. Both villages voted to relocate entirely, but the state's FEMA request to fund permanent replacement housing for 219 damaged homes has been denied, and temporary housing assistance is set to expire in April 2027.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 59.9386,
-      "lon": -164.0372,
-      "locationName": "Kipnuk, Alaska, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AK",
-      "sources": [
-        {
-          "url": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://alaskabeacon.com/2026/10/14/one-year-after-ex-typhoon-halong-western-alaskas-recovery-is-ongoing-and-uncertain/",
-          "domain": "alaskabeacon.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.adn.com/alaska-news/rural-alaska/2026/10/12/one-year-after-halong-devastated-their-villages-storm-survivors-navigate-life-in-alaskas-largest-city/",
-          "domain": "adn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "trustScore": 54,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
       "isBreaking": false
     },
     {
@@ -2067,6 +2187,46 @@
       "isBreaking": false
     },
     {
+      "id": "0b36844a49de",
+      "headline": "Washington Reports Fatal Human H5N1 Bird Flu Case in Yakima County Dairy Worker",
+      "summary": "A Yakima County resident with underlying health conditions died on or around Nov. 1, 2026, after exposure to H5N1-infected dairy cattle, the first US avian influenza death of 2026 and Washington's second fatal avian-flu infection within roughly a year. The Yakima Health District also confirmed a third human case in the county; the outbreak has affected roughly 33 dairy herds in Washington since Oct. 8.",
+      "category": "health",
+      "severity": 3,
+      "lat": 46.6021,
+      "lon": -120.5059,
+      "locationName": "Yakima, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/02/health/bird-flu-death-2026",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.contagionlive.com/view/washington-reports-first-us-avian-influenza-death-of-2026-in-yakima-county",
+          "domain": "contagionlive.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cidrap.umn.edu/avian-influenza-bird-flu/preliminary-human-bird-flu-case-reported-washington-state",
+          "domain": "umn.edu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 53,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
       "id": "4a5e787054ed",
       "headline": "Lawsuit Could Strip Medicaid Coverage From 140,000 Ohioans",
       "summary": "The American Medical Association filed an amicus brief backing a lawsuit brought by the City of Columbus challenging a federal Medicaid work-requirement rule. The AMA warned the rule could cause up to 140,000 Ohio Medicaid-expansion enrollees to lose coverage.",
@@ -2104,6 +2264,46 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-04T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "305064093cbd",
+      "headline": "Ohio Measles Outbreak Expands to 24 Counties, Cases Nearly 600% Higher Than 2025",
+      "summary": "Ohio has recorded 296 measles cases across 24 counties in 2026 — a roughly 558-600% increase over 2025's 45 cases — in the state's third distinct outbreak of the year, concentrated in Wayne, Geauga, Ashtabula and Medina counties. Officials cite MMR vaccination coverage (88.3%) below the 95% herd-immunity threshold.",
+      "category": "health",
+      "severity": 3,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://ohiocapitaljournal.com/2026/11/02/catching-our-eye-news-roundup-nov-2-2026/",
+          "domain": "ohiocapitaljournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/measles-cases-ohio-nearly-600-150823604.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cleveland19.com/2026/10/08/measles-cases-continue-climb-northeast-ohio-outpacing-2025-numbers/",
+          "domain": "cleveland19.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -2145,43 +2345,167 @@
       "isBreaking": false
     },
     {
-      "id": "305064093cbd",
-      "headline": "Ohio Measles Outbreak Expands to 24 Counties, Cases Nearly 600% Higher Than 2025",
-      "summary": "Ohio has recorded 296 measles cases across 24 counties in 2026 — a roughly 558-600% increase over 2025's 45 cases — in the state's third distinct outbreak of the year, concentrated in Wayne, Geauga, Ashtabula and Medina counties. Officials cite MMR vaccination coverage (88.3%) below the 95% herd-immunity threshold.",
-      "category": "health",
+      "id": "46722b694891",
+      "headline": "Virginia Voters Decide Amendments on Felon Voting Rights, Abortion, Same-Sex Marriage",
+      "summary": "Virginia's Nov. 3, 2026 ballot included a constitutional amendment to automatically restore voting rights to people upon release from incarceration, ending the current system requiring individual governor approval. Two companion amendments addressed reproductive rights and marriage equality; all three were referred to voters by the General Assembly.",
+      "category": "politics",
       "severity": 3,
-      "lat": 39.9612,
-      "lon": -82.9988,
-      "locationName": "Columbus, Ohio, USA",
+      "lat": 37.5407,
+      "lon": -77.436,
+      "locationName": "Richmond, Virginia, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-OH",
+      "subdivision": "US-VA",
       "sources": [
         {
-          "url": "https://ohiocapitaljournal.com/2026/11/02/catching-our-eye-news-roundup-nov-2-2026/",
-          "domain": "ohiocapitaljournal.com",
+          "url": "https://en.wikipedia.org/wiki/2026_Virginia_Voting_Rights_Restoration_Amendment",
+          "domain": "wikipedia.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/measles-cases-ohio-nearly-600-150823604.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
+          "url": "https://www.wsls.com/news/local/2026/10/30/virginia-voters-will-decide-whether-felons-should-automatically-regain-the-right-to-vote-after-release/",
+          "domain": "wsls.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.cleveland19.com/2026/10/08/measles-cases-continue-climb-northeast-ohio-outpacing-2025-numbers/",
-          "domain": "cleveland19.com",
+          "url": "https://www.vpm.org/news/2026-09-07/va-constitution-civil-voting-rights-felony-conviction-criminal-justice/",
+          "domain": "vpm.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "trustScore": 49,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "839f9d5236ef",
+      "headline": "Federal and State Agents Raid Twin Cities Autism Service Providers in Medicaid Fraud Probe",
+      "summary": "State and federal agents, including the FBI, HHS-OIG, and Minnesota's AG Medicaid Fraud Control Unit, executed search warrants in late October 2026 at Iska Inc. in St. Louis Park and Bright Horizon Therapy Center in Edina, two autism-therapy providers accused of large-scale Medicaid overbilling. The raids followed an earlier spring round targeting additional centers, part of a broader multi-count fraud crackdown.",
+      "category": "society",
+      "severity": 3,
+      "lat": 44.9483,
+      "lon": -93.3475,
+      "locationName": "St. Louis Park, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.ag.state.mn.us/Office/Communications/2026/10/29_Medicaid-Fraud.asp",
+          "domain": "mn.us",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kare11.com/article/news/investigations/fraud/state-federal-agents-raid-2-businesses-suspected-of-autism-fraud/89-6aa8b711-592c-4991-aff0-ebdbcf8b8103",
+          "domain": "kare11.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox9.com/news/feds-raid-businesses-part-medicaid-fraud-investigations",
+          "domain": "fox9.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3805423f5a58",
+      "headline": "Atmospheric River Triggers Flash Flooding, Evacuations in Northern New Mexico and Southeast Utah",
+      "summary": "An atmospheric-river storm triggered severe flash flooding Nov. 1-3, 2026, across northern New Mexico, where the Rio Chama overflowed its banks, forcing evacuation of hundreds of Chama-area residents and closing US-64/84. In southeastern Utah's San Juan County, historic flooding washed out roads including the Comb Wash bridge and prompted shelter-in-place orders in Bluff.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 36.9048,
+      "lon": -106.5783,
+      "locationName": "Chama, New Mexico, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NM",
+      "sources": [
+        {
+          "url": "https://www.krqe.com/news/new-mexico/floodwaters-force-evacuations-for-hundreds-of-residents-in-chama/",
+          "domain": "krqe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sltrib.com/news/2026/11/03/flooding-san-juan-county-sparks/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc4.com/news/southern-utah/significant-historic-flood-san-juan-county-bluff/",
+          "domain": "abc4.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4f64fa1ec7b7",
+      "headline": "LA and Long Beach Port Security Workers' Strike Delayed to Nov. 4 Deadline as Talks Continue",
+      "summary": "Port employers and ILWU Local 26, representing roughly 250 maritime watchmen and security workers, extended their contract negotiation deadline from Nov. 1 to 5 p.m. Pacific on Nov. 4, 2026, temporarily averting a strike. The terminals they guard handle roughly 85% of Long Beach's and 33% of LA's cargo.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 33.74,
+      "lon": -118.26,
+      "locationName": "Los Angeles, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.freightwaves.com/news/strike-threat-by-port-security-workers-at-los-angeles-long-beach",
+          "domain": "freightwaves.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://gcaptain.com/strike-threat-at-los-angeles-long-beach-ports-delayed-as-union-and-employers-extend-talks/",
+          "domain": "gcaptain.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bairdmaritime.com/shipping/ports/strike-averted-at-los-angeles-and-long-beach-ports-after-deadline-extension",
+          "domain": "bairdmaritime.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
       "isBreaking": false
     },
     {
@@ -2513,6 +2837,74 @@
       "isBreaking": false
     },
     {
+      "id": "176f4efa4bec",
+      "headline": "Pennsylvania Legislature Control at Stake as Democrats Eye First Senate Majority Since 1978",
+      "summary": "Pennsylvania voters elected all 203 state House members and half the 50-seat state Senate on Nov. 3, 2026. Democrats held a narrow 103-100 House majority entering the election and sought to flip four GOP-held Senate seats, which combined with the governorship would create a Democratic trifecta.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.2732,
+      "lon": -76.8867,
+      "locationName": "Harrisburg, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://whyy.org/articles/pennsylvania-election-2026-state-house-senate-harrisburg-power-democratic-republican-parties/",
+          "domain": "whyy.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ballotpedia.org/Pennsylvania_State_Senate_elections,_2026",
+          "domain": "ballotpedia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7ce2544d8d14",
+      "headline": "Ohio Voters Decide Open Governor's Race Between Ramaswamy and Acton, Plus Voter ID Amendment",
+      "summary": "Ohio's Nov. 3, 2026 ballot featured an open-seat governor's race between Republican Vivek Ramaswamy and Democrat Amy Acton, former state health director, with pre-election polling showing Acton leading by roughly 5 points. Ohio Issue 3, a GOP-backed constitutional amendment enshrining the state's photo voter ID requirement, also appeared on the ballot.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://ohiocapitaljournal.com/2026/11/01/ohio-governor-candidate-amy-acton-calls-vivek-ramaswamys-attack-ad-absolutely-despicable/",
+          "domain": "ohiocapitaljournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/2026_Ohio_Issue_3",
+          "domain": "wikipedia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
       "id": "f593d0c3aa26",
       "headline": "Trump Says Flávio Bolsonaro Can Stay in US Indefinitely",
       "summary": "On Oct 31, President Trump said Flávio Bolsonaro, who fled Brazil for the US after his election loss and a passport-revocation order, \"can stay here as long as he wants,\" and called Brazil's election \"a disgrace\" despite international observers deeming it free and fair.",
@@ -2591,6 +2983,59 @@
       "firstSeen": "2026-10-21T06:08:30.863Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-03T18:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "609a01cd331e",
+      "headline": "Missouri Storm System Shifts to Flash-Flood Risk as Rivers Forecast to Crest Near Maryville",
+      "summary": "A storm system that brought a severe-weather and tornado threat to northwest Missouri and northeast Kansas dropped 1-3 inches of rain around Nov. 2-3, 2026, prompting NWS hydrologic outlooks for rising rivers across Missouri, Iowa, and Nebraska. The 102 River at Maryville, Missouri (flood stage 18.0 ft) was forecast to crest near 18.5 feet by the morning of Nov. 4.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 40.3461,
+      "lon": -94.873,
+      "locationName": "Maryville, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://govonestop.com/nws/missouri-unknown-hydrologic-outlook-effective-11032026-0658",
+          "domain": "govonestop.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kmaland.com/news/breaking_weather/flood-warning-for-102-river-in-nodaway-andrew-cos-until-friday-morning/article_60255444-95bd-41be-aac9-13111517bfbc.html",
+          "domain": "kmaland.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.spc.noaa.gov/products/md/md0779.html",
+          "domain": "noaa.gov",
+          "reliability": 94,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kq2.com/weather/local-forecast/2026/11/02/tracking-a-windy-stormy-monday/",
+          "domain": "kq2.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/tornadoes-giant-hail-possible-west-200157388.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 78,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T03:27:52.809Z",
       "isBreaking": false
     },
     {
@@ -2703,6 +3148,45 @@
       "isBreaking": false
     },
     {
+      "id": "9885f310a2c1",
+      "headline": "Washington Voters Decide Income-Tax Repeal and Transgender-Sports Ballot Initiatives",
+      "summary": "Washington voters on Nov. 3, 2026 decided Initiative 645, which would repeal the state's newly enacted 9.9% income tax on earnings over $1 million, and Initiative 638, which would ban transgender girls from K-12 girls' school sports. The election also determined all 98 state House seats and 24 of 49 Senate seats.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 47.4,
+      "lon": -120.5,
+      "locationName": "Olympia, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/02/tuesdays-election-in-washington-is-packed-with-big-decisions-for-voters/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/local/seattle/2026/11/02/washington-state-2026-election-ballot-measures-races-to-watch",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/voters-in-these-democratic-strongholds-could-ban-trans-girls-from-girls-school-sports",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T03:27:52.809Z",
+      "isBreaking": false
+    },
+    {
       "id": "857d4ce08b53",
       "headline": "Jordan Intercepts 14 Armed Individuals Crossing From Syria",
       "summary": "Jordanian forces stopped a group of 14 armed individuals attempting to cross from Syria into Mafraq Governorate on Oct 30-31, exchanging fire that killed some while others fled back across the border. The incident follows earlier Jordanian strikes on Syria after a deadly church attack in Jordan.",
@@ -2736,45 +3220,6 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-04T18:07:11.564Z",
-      "isBreaking": false
-    },
-    {
-      "id": "609a01cd331e",
-      "headline": "Severe Storms, Tornado Threat Strike Northwest Missouri and Northeast Kansas",
-      "summary": "A Level 2-of-5 \"Slight Risk\" severe weather outlook covered the Kansas City, St. Joseph and Topeka region on Nov. 2, with damaging winds and isolated tornadoes cited as the primary threats. Forecasters warned residents to monitor conditions through the evening.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 39.7675,
-      "lon": -94.8467,
-      "locationName": "St. Joseph, Missouri, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MO",
-      "sources": [
-        {
-          "url": "https://www.spc.noaa.gov/products/md/md0779.html",
-          "domain": "noaa.gov",
-          "reliability": 94,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.kq2.com/weather/local-forecast/2026/11/02/tracking-a-windy-stormy-monday/",
-          "domain": "kq2.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/tornadoes-giant-hail-possible-west-200157388.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T23:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -2936,36 +3381,6 @@
       "isBreaking": false
     },
     {
-      "id": "6f055c0d4be8",
-      "headline": "Incumbent Iliana Iotova Wins Bulgaria's Presidential Runoff, First Woman Directly Elected President",
-      "summary": "Acting President Iliana Iotova won Bulgaria's Nov 1 presidential runoff against former caretaker PM Andrey Gyurov, becoming Bulgaria's first woman directly elected to the presidency. Her opponent conceded; analysts note the result consolidates influence for PM Rumen Radev, seen as Ukraine-skeptic.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 42.6977,
-      "lon": 23.3219,
-      "locationName": "Sofia, Bulgaria",
-      "countryCode": "BG",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-01/incumbent-yotova-wins-bulgarian-president-vote-exit-poll-shows",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-02T06:06:25.795Z",
-      "lastUpdated": "2026-11-02T06:06:25.795Z",
-      "expiresAt": "2026-11-03T18:06:25.795Z",
-      "isBreaking": false
-    },
-    {
       "id": "d826d5a557a5",
       "headline": "Mayor Mamdani Says Trump Will Grant Visa to Mother of Bronx Shooting Victim",
       "summary": "New York City Mayor Mamdani said President Trump agreed to expedite a visa for the mother of 15-year-old Javits Frimpong, who was fatally shot in the Bronx. Three teenage suspects in the shooting remain at large.",
@@ -3002,6 +3417,68 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-03T23:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6f055c0d4be8",
+      "headline": "Incumbent Iliana Iotova Wins Bulgaria's Presidential Runoff, First Woman Directly Elected President",
+      "summary": "Acting President Iliana Iotova won Bulgaria's Nov 1 presidential runoff against former caretaker PM Andrey Gyurov, becoming Bulgaria's first woman directly elected to the presidency. Her opponent conceded; analysts note the result consolidates influence for PM Rumen Radev, seen as Ukraine-skeptic.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 42.6977,
+      "lon": 23.3219,
+      "locationName": "Sofia, Bulgaria",
+      "countryCode": "BG",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-01/incumbent-yotova-wins-bulgarian-president-vote-exit-poll-shows",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-02T06:06:25.795Z",
+      "lastUpdated": "2026-11-02T06:06:25.795Z",
+      "expiresAt": "2026-11-03T18:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d78036f1fc48",
+      "headline": "Anti-Robotaxi Group Becomes D.C.'s Top Political Ad Spender, Outspending Mayoral Candidates",
+      "summary": "The Coalition for Accountability and Road Safety has spent over $2.6 million opposing a D.C. Council bill that would legalize commercial robotaxis — more than either leading mayoral candidate — per a Washington Post analysis of AdImpact data.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "Washington, D.C., USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-DC",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/dc-md-va/2026/11/02/shelling-out-millions-anti-robotaxi-group-is-dcs-top-political-ad-spender/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.axios.com/local/washington-dc/2026/10/16/robotaxi-waymo-bill-dc-council",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -3134,35 +3611,123 @@
       "isBreaking": false
     },
     {
-      "id": "d78036f1fc48",
-      "headline": "Anti-Robotaxi Group Becomes D.C.'s Top Political Ad Spender, Outspending Mayoral Candidates",
-      "summary": "The Coalition for Accountability and Road Safety has spent over $2.6 million opposing a D.C. Council bill that would legalize commercial robotaxis — more than either leading mayoral candidate — per a Washington Post analysis of AdImpact data.",
-      "category": "politics",
+      "id": "c930111ec10e",
+      "headline": "Former East Aurora School Board President Indicted in $1.3M Kickback Scheme",
+      "summary": "Annette Johnson, former president of East Aurora School District 131's board, was federally indicted over allegedly steering a $2.7 million COVID-relief air-purifier contract to a vendor who funneled over $1 million as commission to a company owned by her boyfriend, where she worked as CFO. Aurora's mayor said a broader review found roughly $43 million flowed from the district to companies linked to Johnson between 2018-2023; Johnson denies wrongdoing.",
+      "category": "society",
       "severity": 2,
-      "lat": 38.9072,
-      "lon": -77.0369,
-      "locationName": "Washington, D.C., USA",
+      "lat": 41.7606,
+      "lon": -88.3201,
+      "locationName": "Aurora, Illinois, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-DC",
+      "subdivision": "US-IL",
       "sources": [
         {
-          "url": "https://www.washingtonpost.com/dc-md-va/2026/11/02/shelling-out-millions-anti-robotaxi-group-is-dcs-top-political-ad-spender/",
-          "domain": "washingtonpost.com",
+          "url": "https://www.justice.gov/usao-ndil/pr/federal-indictment-charges-former-president-suburban-chicago-school-district-board",
+          "domain": "justice.gov",
           "reliability": 85,
-          "bias": "center-left"
+          "bias": "center"
         },
         {
-          "url": "https://www.axios.com/local/washington-dc/2026/10/16/robotaxi-waymo-bill-dc-council",
-          "domain": "axios.com",
-          "reliability": 80,
+          "url": "https://abc7chicago.com/post/east-aurora-district-131-school-board-president-annette-johnson-indicted-federal-case-officials/19991013/",
+          "domain": "abc7chicago.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://chicago.suntimes.com/politics/2026/10/29/aurora-john-laesch-annette-johnson-corruption",
+          "domain": "suntimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T03:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "de180ae84fed",
+      "headline": "USDA Confirms New World Screwworm in Arizona Dog, Third US State Hit by Outbreak",
+      "summary": "USDA APHIS confirmed New World screwworm, a flesh-eating parasitic fly, in a dog in Cochise County, Arizona, on Oct. 28, 2026, the state's first case in roughly six decades and the third US state after Texas and New Mexico to report one in the current outbreak. Officials established a 20-km infested zone with animal-movement controls and increased surveillance and trapping.",
+      "category": "health",
+      "severity": 2,
+      "lat": 31.8,
+      "lon": -109.75,
+      "locationName": "Cochise County, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
+      "sources": [
+        {
+          "url": "https://www.aphis.usda.gov/news/agency-announcements/usda-confirms-new-world-screwworm-arizona",
+          "domain": "usda.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.azfamily.com/2026/10/29/arizona-confirms-first-case-flesh-eating-parasite-cochise-county-dog/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kold.com/2026/11/03/new-world-screwworm-case-cochise-county-raising-concerns-among-ranchers/",
+          "domain": "kold.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T03:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "afa2103b9b56",
+      "headline": "Comcast Slashes 634 Jobs at Philadelphia Headquarters, Citing AI Investment",
+      "summary": "Comcast filed a WARN notice confirming 634 layoffs at its Philadelphia headquarters effective Dec. 31 as part of an AI-driven customer-service restructuring. The company also filed notices for cuts in New Jersey, Washington and California, while planning more than 1,100 new hires companywide.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "locationName": "Philadelphia, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.inquirer.com/business/comcast/comcast-layoffs-warn-notice-philadelphia-ai-jobs-20261030.html",
+          "domain": "inquirer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://technical.ly/workforce/comcast-cuts-634-jobs-philadelphia-headquarters/",
+          "domain": "technical.ly",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
+          "domain": "pa.gov",
+          "reliability": 85,
           "bias": "center"
         }
       ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-03T23:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -3280,40 +3845,40 @@
       "isBreaking": false
     },
     {
-      "id": "afa2103b9b56",
-      "headline": "Comcast Slashes 634 Jobs at Philadelphia Headquarters, Citing AI Investment",
-      "summary": "Comcast filed a WARN notice confirming 634 layoffs at its Philadelphia headquarters effective Dec. 31 as part of an AI-driven customer-service restructuring. The company also filed notices for cuts in New Jersey, Washington and California, while planning more than 1,100 new hires companywide.",
-      "category": "economy",
+      "id": "30ee434d163d",
+      "headline": "Cockeysville, Maryland, Man Shoots Three Masked Men on His Property on Halloween, Killing One",
+      "summary": "A homeowner in Cockeysville, Maryland, opened fire on three masked, allegedly armed men who approached him on Halloween night, killing 20-year-old Amon Walker and wounding two others. Baltimore County Police are investigating the shooting.",
+      "category": "society",
       "severity": 2,
-      "lat": 39.9526,
-      "lon": -75.1652,
-      "locationName": "Philadelphia, Pennsylvania, USA",
+      "lat": 39.4818,
+      "lon": -76.6441,
+      "locationName": "Cockeysville, Maryland, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-PA",
+      "subdivision": "US-MD",
       "sources": [
         {
-          "url": "https://www.inquirer.com/business/comcast/comcast-layoffs-warn-notice-philadelphia-ai-jobs-20261030.html",
-          "domain": "inquirer.com",
+          "url": "https://www.thebanner.com/community/local-news/cockeysville-halloween-shooting-3-masked-men-killing-one-7P33VCYWDFFWHAADUQR75KDNY4/",
+          "domain": "thebanner.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://technical.ly/workforce/comcast-cuts-634-jobs-philadelphia-headquarters/",
-          "domain": "technical.ly",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-          "domain": "pa.gov",
-          "reliability": 85,
+          "url": "https://www.cbsnews.com/baltimore/news/baltimore-county-police-investigate-cockeysville-shooting/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
+        },
+        {
+          "url": "https://www.baltimoresun.com/2026/11/01/cockeysville-homeowner-shooting/",
+          "domain": "baltimoresun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 55,
+      "trustScore": 54,
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-03T23:59:46.260Z",
@@ -3358,43 +3923,43 @@
       "isBreaking": false
     },
     {
-      "id": "30ee434d163d",
-      "headline": "Cockeysville, Maryland, Man Shoots Three Masked Men on His Property on Halloween, Killing One",
-      "summary": "A homeowner in Cockeysville, Maryland, opened fire on three masked, allegedly armed men who approached him on Halloween night, killing 20-year-old Amon Walker and wounding two others. Baltimore County Police are investigating the shooting.",
-      "category": "society",
+      "id": "c7ee3dbb35f2",
+      "headline": "Texas Amazon Delivery Contractors and Food Processor File WARN Notices, Cutting About 400 Jobs",
+      "summary": "4XH Logistics, a Boerne-based Amazon delivery contractor, is laying off 230 workers in the San Antonio area (Nov. 6-19) after its Amazon contract expired. Eagles Delivery LLC separately cut 115 jobs after shuttering its Roanoke, TX facility; CTI Foods Bean LLC is closing its Saginaw, TX plant, eliminating 66 jobs effective Nov. 9.",
+      "category": "economy",
       "severity": 2,
-      "lat": 39.4818,
-      "lon": -76.6441,
-      "locationName": "Cockeysville, Maryland, USA",
+      "lat": 29.4241,
+      "lon": -98.4936,
+      "locationName": "San Antonio, Texas, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-MD",
+      "subdivision": "US-TX",
       "sources": [
         {
-          "url": "https://www.thebanner.com/community/local-news/cockeysville-halloween-shooting-3-masked-men-killing-one-7P33VCYWDFFWHAADUQR75KDNY4/",
-          "domain": "thebanner.com",
+          "url": "https://www.mysanantonio.com/business/article/layoffs-san-antonio-amazon-22431102.php",
+          "domain": "mysanantonio.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.cbsnews.com/baltimore/news/baltimore-county-police-investigate-cockeysville-shooting/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
+          "url": "https://sanantonioreport.org/4xh-logistics-amazon-delivery-drivers-layoff-230-workers-boerne/",
+          "domain": "sanantonioreport.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/articles/mass-layoff-wave-slams-more-123300190.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
           "bias": "center"
-        },
-        {
-          "url": "https://www.baltimoresun.com/2026/11/01/cockeysville-homeowner-shooting/",
-          "domain": "baltimoresun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T23:59:46.260Z",
+      "trustScore": 51,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T03:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -3433,46 +3998,6 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-04T18:07:11.564Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c7ee3dbb35f2",
-      "headline": "Texas Amazon Delivery Contractors and Food Processor File WARN Notices, Cutting About 400 Jobs",
-      "summary": "4XH Logistics, a Boerne-based Amazon delivery contractor, is laying off 230 workers in the San Antonio area (Nov. 6-19) after its Amazon contract expired. Eagles Delivery LLC separately cut 115 jobs after shuttering its Roanoke, TX facility; CTI Foods Bean LLC is closing its Saginaw, TX plant, eliminating 66 jobs effective Nov. 9.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 29.4241,
-      "lon": -98.4936,
-      "locationName": "San Antonio, Texas, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TX",
-      "sources": [
-        {
-          "url": "https://www.mysanantonio.com/business/article/layoffs-san-antonio-amazon-22431102.php",
-          "domain": "mysanantonio.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://sanantonioreport.org/4xh-logistics-amazon-delivery-drivers-layoff-230-workers-boerne/",
-          "domain": "sanantonioreport.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://finance.yahoo.com/economy/articles/mass-layoff-wave-slams-more-123300190.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -3827,334 +4352,6 @@
       "isBreaking": false
     },
     {
-      "id": "f0aab8b8fee5",
-      "headline": "FBI Probes Former Burlington, Vermont School Administrator Over Alleged $1.8 Million Fraud",
-      "summary": "Federal investigators are examining whether former Burlington School District administrator Stephanie Phillips defrauded the district of at least $1.77 million since 2013 by billing through a fake consulting company while drawing her regular salary. No criminal charges filed yet; she retired in May.",
-      "category": "society",
-      "severity": 2,
-      "lat": 44.4759,
-      "lon": -73.2121,
-      "locationName": "Burlington, Vermont, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-VT",
-      "sources": [
-        {
-          "url": "https://vtdigger.org/2026/10/28/fbi-investigates-former-burlington-school-administrator-in-alleged-1-8-million-fraud/",
-          "domain": "vtdigger.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.vermontpublic.org/local-news/2026-10-28/feds-target-burlington-school-official-embezzlement-probe",
-          "domain": "vermontpublic.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wcax.com/2026/10/28/ex-burlington-school-administrator-center-18m-federal-fraud-probe/",
-          "domain": "wcax.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "416eb8cc8153",
-      "headline": "Rockslide Shuts Down Lehigh Gorge Scenic Railway Indefinitely in the Poconos",
-      "summary": "A rockslide on Route 209 between Jim Thorpe and Nesquehoning, PA on Oct. 31 damaged the roadway and tracks, forcing the Reading & Northern's Lehigh Gorge Scenic Railway to suspend all excursions indefinitely. Route 209 closed in both directions with a 6-8 week reopening estimate.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 40.8742,
-      "lon": -75.7336,
-      "locationName": "Jim Thorpe, Pennsylvania, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-PA",
-      "sources": [
-        {
-          "url": "https://6abc.com/amp/post/rockslide-closes-lehigh-gorge-scenic-railway-poconos/20004359/",
-          "domain": "6abc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.trains.com/pro/freight/short-lines-regionals/reading-northern-excursion-route-shut-down-by-rockslide/",
-          "domain": "trains.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.tnonline.com/20261031/rock-slide-closes-rt-209-between-jim-thorpe-and-nesquehoning/",
-          "domain": "tnonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c740f2916931",
-      "headline": "Authors, 'Read Freely Alabama' Sue State Library Board Over Transgender-Themed Book Ban",
-      "summary": "Read Freely Alabama and three authors filed a federal lawsuit against the Alabama Public Library Service over a rule barring youth library books referencing transgender people, alleging First Amendment violations and financial harm to authors.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 32.3792,
-      "lon": -86.3077,
-      "locationName": "Montgomery, Alabama, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AL",
-      "sources": [
-        {
-          "url": "https://www.alreporter.com/2026/11/02/read-freely-authors-sue-apls-over-rule-barring",
-          "domain": "alreporter.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://1819news.com/news/item/advocates-authors-sue-state-library-board-over-restricting-minors-access-to-transgender-books",
-          "domain": "1819news.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.washingtonblade.com/2026/10/30/democracy-forward-sues-alabama-over-restrictions-on-books-featuring-trans-characters/",
-          "domain": "washingtonblade.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e23131318e97",
-      "headline": "Washington Supreme Court Rejects Seattle's Appeal in Public-Records Case Brought by Podcaster Brandi Kruse",
-      "summary": "The Washington State Supreme Court declined to hear Seattle's appeal of a lower ruling that found the city violated the Public Records Act in a suit brought by podcaster Brandi Kruse over records tied to a 2023 city council vote. The court also awarded attorney fees to the Citizen Action Defense Fund, which represented Kruse.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 47.6062,
-      "lon": -122.3321,
-      "locationName": "Seattle, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://www.thecentersquare.com/washington/article_d48b82d9-ee68-42c1-a30c-1c86310da76e.html",
-          "domain": "thecentersquare.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.chronline.com/stories/high-court-sides-with-podcaster-in-public-records-fight-against-seattle,409912",
-          "domain": "chronline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.omakchronicle.com/news/state/watch-high-court-sides-with-podcaster-in-public-records-fight-against-seattle/article_bcaaf0eb-fc3a-5dc9-a4ce-1ac6e19fa9ac.html",
-          "domain": "omakchronicle.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "282b92d34f4b",
-      "headline": "Washington Court of Appeals Revives Landlord's Takings Lawsuit Against Seattle Rental Regulations",
-      "summary": "Washington's Court of Appeals, Division One, reversed a King County Superior Court dismissal and ruled Goodman Real Estate's lawsuit over the Addison on Fourth apartments — alleging a \"regulatory taking\" from Seattle tenant-protection laws passed 2018-2021 — can proceed. The 254-unit complex's rent collections reportedly fell from 94% to 44% and it is now in receivership.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 47.6062,
-      "lon": -122.3321,
-      "locationName": "Seattle, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://www.seattletimes.com/business/real-estate/seattle-landlord-sues-over-city-tenant-protections/",
-          "domain": "seattletimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yakimaherald.com/news/northwest/wa-court-decision-revives-landlord-s-challenge-to-seattle-rental-laws/article_e8f0435d-2650-5b3b-94bd-e2c01af15ba1.html",
-          "domain": "yakimaherald.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.chronline.com/stories/washington-state-court-decision-revives-landlords-challenge-to-seattle-rental-laws,410959",
-          "domain": "chronline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "befd14e17711",
-      "headline": "Bird Flu Detected at Colorado Dairy for First Time Since 2024",
-      "summary": "Colorado's state veterinary lab confirmed highly pathogenic avian influenza in a Weld County dairy herd on Oct. 24, the first detection in a Colorado dairy since the 2024 outbreak. The facility is under quarantine, and officials say pasteurized milk remains safe.",
-      "category": "health",
-      "severity": 2,
-      "lat": 40.4233,
-      "lon": -104.7091,
-      "locationName": "Greeley, Colorado, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CO",
-      "sources": [
-        {
-          "url": "https://coloradosun.com/2026/10/30/avian-flu-found-weld-county-dairy/",
-          "domain": "coloradosun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.9news.com/article/news/health/bird-flu-detected-at-colorado-dairy-for-first-time-since-2024-outbreak/73-a3cfcbb4-953b-49da-8683-2b7ebf54af8e",
-          "domain": "9news.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kktv.com/2026/10/30/avian-flu-detected-colorado-dairy-facility-first-time-more-than-2-years/",
-          "domain": "kktv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T23:59:46.260Z",
-      "isBreaking": false
-    },
-    {
-      "id": "468a0037777a",
-      "headline": "Honolulu City Council Members Face Sunshine Law Probe Over Secret Zippy's Meeting",
-      "summary": "Five of nine Honolulu City Council members, a quorum, are under a state Office of Information Practices investigation after complaints alleged they privately discussed leadership and committee assignments at a Zippy's restaurant. Such a gathering could violate Hawaii's open-meetings Sunshine law.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 21.3069,
-      "lon": -157.8583,
-      "locationName": "Honolulu, Hawaii, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-HI",
-      "sources": [
-        {
-          "url": "https://www.staradvertiser.com/2026/11/02/hawaii-news/council-members-targeted-in-sunshine-law-probe/",
-          "domain": "staradvertiser.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kitv.com/news/honolulu-city-council-members-face-sunshine-law-complaint-over-private-meeting-at-zippy-s/article_5fd1974c-6939-4427-93d3-4419ebbbf7f6.html",
-          "domain": "kitv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.hawaiinewsnow.com/2026/10/30/council-leadership-fight-involves-claims-illegal-meeting/",
-          "domain": "hawaiinewsnow.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T23:59:46.260Z",
-      "isBreaking": false
-    },
-    {
-      "id": "d8a3ab550160",
-      "headline": "Anchorage Faces Looming 'Fiscal Cliff' as Mayor Proposes Flat $692.5 Million 2027 Budget",
-      "summary": "Anchorage Mayor Suzanne LaFrance proposed a $692.5 million flat FY2027 municipal budget that closes a roughly $15 million gap using one-time funds. Officials warned the shortfall could nearly double to about $30 million in 2028.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 61.2181,
-      "lon": -149.9003,
-      "locationName": "Anchorage, Alaska, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AK",
-      "sources": [
-        {
-          "url": "https://alaskapublic.org/news/anchorage/2026-10-02/anchorage-mayor-lafrance-proposes-relatively-flat-budget-warns-of-fiscal-cliff-next-year",
-          "domain": "alaskapublic.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.adn.com/alaska-news/anchorage/2026/10/16/anchorages-mayor-predicts-budget-shortfalls-as-soon-as-next-year-does-a-sales-tax-fit-into-the-conversation/",
-          "domain": "adn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.muni.org/Departments/Mayor/PressReleases/Pages/Mayor-LaFrance-proposes-2027-municipal-budget.aspx",
-          "domain": "muni.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T23:59:46.260Z",
-      "isBreaking": false
-    },
-    {
       "id": "edc50067e826",
       "headline": "Taiwan Accuses China of Harassment After Coast Guard Standoff Near Pratas Islands",
       "summary": "A Chinese coast guard vessel entered restricted waters near Taiwan-controlled Pratas Islands on Nov 1, coming within roughly 1 nautical mile of a Taiwanese coast guard ship that confronted and expelled it. Taiwan's coast guard said this was the 13th such Chinese intrusion near the islands in 2026.",
@@ -4186,142 +4383,6 @@
       "isBreaking": false
     },
     {
-      "id": "8ada11672db0",
-      "headline": "String of Indiana Factory Closures Cuts Hundreds of Jobs",
-      "summary": "Three Indiana plants are closing in late 2026: ZF Active Safety & Electronics will shut its Lafayette steering-components plant Nov. 30 (133 jobs); Packaging Corporation of America is closing its Gas City containerboard plant (72 jobs); and PMG Indiana is winding down its 39-year-old Columbus auto-parts plant (about 150 jobs by year-end).",
-      "category": "economy",
-      "severity": 2,
-      "lat": 40.4167,
-      "lon": -86.8753,
-      "locationName": "Lafayette, Indiana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IN",
-      "sources": [
-        {
-          "url": "https://www.insideindianabusiness.com/articles/automotive-technology-company-to-close-lafayette-plant-cut-133-jobs",
-          "domain": "insideindianabusiness.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://fox59.com/news/automotive-manufacturing-plant-pmg-indiana-closing-in-columbus/",
-          "domain": "fox59.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e3b943ef0d7b",
-      "headline": "Coastal Flood Advisory Hits San Francisco Bay Area as Pacific Storm Brings High Tides, Beach Hazards",
-      "summary": "A \"Pineapple Express\" atmospheric-river storm triggered a coastal flood advisory for San Francisco, Monterey Bay, and the Big Sur coast, with up to 1.5 feet of inundation possible in low-lying shoreline areas and elevated risk of sneaker waves and rip currents through Tuesday evening.",
-      "category": "climate",
-      "severity": 2,
-      "lat": 37.7749,
-      "lon": -122.4194,
-      "locationName": "San Francisco, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.insurancejournal.com/news/west/2026/11/02/891040.htm",
-          "domain": "insurancejournal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.sfchronicle.com/weather-forecast/article/california-atmospheric-river-rain-21738643.php",
-          "domain": "sfchronicle.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T03:48:07.539Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9cf5460fd7e6",
-      "headline": "Massachusetts Gun Owners Hit New Firearm Registration Deadline Days Before Vote on Question 9",
-      "summary": "An Oct. 28 deadline passed requiring Massachusetts gun owners to register and serialize previously grandfathered firearms under the state's 2024 gun law. The deadline came six days ahead of the Nov. 3 ballot vote on Question 9, which would affect the registry law.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 42.3601,
-      "lon": -71.0589,
-      "locationName": "Boston, Massachusetts, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MA",
-      "sources": [
-        {
-          "url": "https://www.boston.com/news/local-news/2026/11/01/new-firearms-registration-rules-went-live-in-mass-last-week-heres-what-to-know/",
-          "domain": "boston.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.usacarry.com/massachusetts-gun-owners-must-register-their-firearms-today-six-days-before-voters-decide-whether-to-keep-the-registry-law/",
-          "domain": "usacarry.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T23:59:46.260Z",
-      "isBreaking": false
-    },
-    {
-      "id": "d0e4f2cc7c55",
-      "headline": "Four Iowa Nursing Homes Cited for Alleged Resident Abuse or Injuries, One Death",
-      "summary": "Iowa state inspectors cited four nursing homes for alleged resident injuries or abuse. The most serious case involved a resident at Azria Health Prairie Ridge in Mediapolis who died after receiving an opioid overdose roughly ten times the prescribed amount.",
-      "category": "health",
-      "severity": 2,
-      "lat": 41.0014,
-      "lon": -91.1685,
-      "locationName": "Mediapolis, Iowa, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IA",
-      "sources": [
-        {
-          "url": "https://iowacapitaldispatch.com/2026/10/29/four-iowa-nursing-homes-cited-for-alleged-resident-injuries-or-abuse/",
-          "domain": "iowacapitaldispatch.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kcrg.com/2026/10/30/four-iowa-nursing-homes-cited-alleged-resident-injuries-or-abuse/",
-          "domain": "kcrg.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T23:59:46.260Z",
-      "isBreaking": false
-    },
-    {
       "id": "e27588c2a443",
       "headline": "ECDC Reports Early Flu Season Driven by H3N2 Subclade K Alongside West Nile Activity in Europe",
       "summary": "ECDC's weekly communicable disease threat reports show influenza A(H3N2) subclade K is the dominant circulating strain, prompting a threat-assessment brief, though overall EU/EEA flu/RSV circulation remained low in early Oct while SARS-CoV-2 was increasing. ECDC also recorded West Nile virus activity across 18 countries and chikungunya cases in two European countries, plus isolated measles cases in Serbia.",
@@ -4344,56 +4405,15 @@
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-03T18:06:25.795Z",
       "isBreaking": false
-    },
-    {
-      "id": "a6d0db579e68",
-      "headline": "Fire Forces Evacuation of Jamaica Plain Apartment Building in Boston, 12+ Displaced",
-      "summary": "A fire at a six-unit building at 211 Boylston St. in Boston's Jamaica Plain neighborhood on Oct. 31 caused the rear wall to become structurally unstable, displacing more than 12 residents. No injuries were reported.",
-      "category": "disaster",
-      "severity": 1,
-      "lat": 42.3097,
-      "lon": -71.1151,
-      "locationName": "Boston, Massachusetts, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MA",
-      "sources": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/01/metro/jamaica-plain-apartment-building-fire/",
-          "domain": "bostonglobe.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbcboston.com/news/local/12-displaced-after-fire-in-jamaica-plain/4041298/",
-          "domain": "nbcboston.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.boston.com/news/local-news/2026/11/01/more-than-20-displaced-from-fires-in-homes-in-dorchester-jamaica-plain/",
-          "domain": "boston.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-03T11:59:46.260Z",
-      "isBreaking": false
     }
   ],
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
     "multiSource": 105,
-    "carried": 74,
+    "carried": 92,
     "updated": 1,
-    "expired": 2,
+    "expired": 13,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
