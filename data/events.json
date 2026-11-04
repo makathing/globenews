@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T06:07:32.098Z",
+  "generatedAt": "2026-11-04T15:29:09.407Z",
   "mode": "daily",
   "events": [
     {
@@ -425,6 +425,44 @@
       "isBreaking": false
     },
     {
+      "id": "376a7929c446",
+      "headline": "Federal Judge Rejects DOJ Bid to Segregate About 20,000 'Likely Non-Citizen' California Ballots",
+      "summary": "A federal judge denied a DOJ emergency request to force California to segregate roughly 20,000 ballots the department claims belong to likely non-citizens, two days before the Nov. 3 election, ruling it would \"wreak havoc\" on the vote. An appeals panel also rejected a similar request.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 34.0537,
+      "lon": -118.2428,
+      "locationName": "Los Angeles, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6021478/doj-california-ballots-denied",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/Politics/judge-rejects-trump-administration-request-order-segregate-20000/story?id=137660006",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/justice-department/judge-rules-california-ballots-alleged-non-citizen-voters-trump-doj-rcna606100",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-02T11:59:46.260Z",
+      "expiresAt": "2026-11-06T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
       "id": "580ee57e2024",
       "headline": "US to Host Russia-Ukraine Trilateral Talks in Abu Dhabi on Nov 10-11",
       "summary": "US officials Steve Witkoff and Jared Kushner will lead trilateral talks with Russian and Ukrainian delegations in Abu Dhabi on Nov 10-11, reviving a diplomatic track on post-war security arrangements that had been suspended since February.",
@@ -462,41 +500,41 @@
       "isBreaking": false
     },
     {
-      "id": "376a7929c446",
-      "headline": "Federal Judge Rejects DOJ Bid to Segregate About 20,000 'Likely Non-Citizen' California Ballots",
-      "summary": "A federal judge denied a DOJ emergency request to force California to segregate roughly 20,000 ballots the department claims belong to likely non-citizens, two days before the Nov. 3 election, ruling it would \"wreak havoc\" on the vote. An appeals panel also rejected a similar request.",
+      "id": "f922089c1914",
+      "headline": "Texas Flips: Democrat Gina Hinojosa Elected Governor, Ousting Greg Abbott",
+      "summary": "Democratic state Rep. Gina Hinojosa defeated incumbent Gov. Greg Abbott, becoming Texas's first Democratic governor since the 1990s and its first Hispanic governor. The same night, Democrat James Talarico defeated Sen. Ken Paxton for US Senate, Texas's first Democratic Senate win since 1988, and Vikki Goodwin unseated 10-year incumbent Lt. Gov. Dan Patrick.",
       "category": "politics",
       "severity": 4,
-      "lat": 34.0537,
-      "lon": -118.2428,
-      "locationName": "Los Angeles, California, USA",
+      "lat": 30.2672,
+      "lon": -97.7431,
+      "locationName": "Austin, Texas, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-CA",
+      "subdivision": "US-TX",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6021478/doj-california-ballots-denied",
-          "domain": "npr.org",
-          "reliability": 87,
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/texas-governor-abbott-hinojosa-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://abcnews.com/Politics/judge-rejects-trump-administration-request-order-segregate-20000/story?id=137660006",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/justice-department/judge-rules-california-ballots-alleged-non-citizen-voters-trump-doj-rcna606100",
+          "url": "https://www.nbcnews.com/politics/2026-election/gina-hinojosa-win-texas-governor-race-greg-abbott-upset-election-rcna603360",
           "domain": "nbcnews.com",
           "reliability": 81,
           "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/texas-2026-senate-james-talarico-ken-paxton/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
         }
       ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-06T11:59:46.260Z",
+      "trustScore": 65,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-08T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -875,6 +913,40 @@
       "isBreaking": false
     },
     {
+      "id": "319edff27d35",
+      "headline": "Deb Haaland Elected New Mexico Governor, First Native American Woman to Lead a US State",
+      "summary": "Former Interior Secretary Deb Haaland defeated Republican Rio Rancho Mayor Gregg Hull by roughly 57%-43% to become New Mexico's governor. Haaland is the first Native American woman elected to lead any US state.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 35.687,
+      "lon": -105.9378,
+      "locationName": "Santa Fe, New Mexico, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NM",
+      "sources": [
+        {
+          "url": "https://www.krqe.com/news/politics-government/elections/deb-haaland-projected-to-win-2026-new-mexico-gubernatorial-race/",
+          "domain": "krqe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abqjournal.com/news/haaland-makes-history-bucks-state-trend-by-defeating-hull-to-become-new-mexicos-next-governor/3154673",
+          "domain": "abqjournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-08T15:29:09.407Z",
+      "isBreaking": false
+    },
+    {
       "id": "fb82c35e8dd5",
       "headline": "US Military Boat-Strike Campaign Continues; Cumulative Drug-Boat Death Toll Tops 240",
       "summary": "The US military carried out additional strikes on suspected drug-smuggling boats in the Caribbean and Eastern Pacific, pushing the cumulative death toll from the campaign past 240. The strikes continue a controversial campaign that has drawn criticism over its legality and lack of transparency.",
@@ -1082,44 +1154,6 @@
       "isBreaking": false
     },
     {
-      "id": "06f802eed5ec",
-      "headline": "Minnesota Sues Federal Government Over Withheld Evidence in Fatal ICE Shootings",
-      "summary": "Minnesota sued the Trump administration, DOJ and DHS after federal officials suspended the transfer of evidence needed for state investigations into fatal shootings of Renee Good and Alex Pretti by federal agents during \"Operation Metro Surge.\" The lawsuit seeks access to evidence for the state probes.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 44.9778,
-      "lon": -93.265,
-      "locationName": "Minneapolis, Minnesota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MN",
-      "sources": [
-        {
-          "url": "https://www.pbs.org/newshour/nation/minnesota-sues-to-obtain-evidence-in-shootings-by-federal-officers-during-ice-surge",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.foxnews.com/politics/minnesota-sues-trump-admin-access-evidence-federal-shootings-including-alex-pretti-renee-good-cases",
-          "domain": "foxnews.com",
-          "reliability": 62,
-          "bias": "right"
-        },
-        {
-          "url": "https://thehill.com/homenews/6168592-minnesota-sues-doj-evidence/",
-          "domain": "thehill.com",
-          "reliability": 76,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 70,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-04T11:59:46.260Z",
-      "isBreaking": false
-    },
-    {
       "id": "7b250e4f49ba",
       "headline": "Israeli Forces Kill Additional Palestinians in Khan Younis Despite Gaza Ceasefire",
       "summary": "Israeli forces killed at least four Palestinians in Khan Younis and al-Mawasi, with a fifth later dying of wounds, despite a nominal ceasefire in Gaza. The killings follow a similar incident the previous day that killed eight Palestinians, including police officers and a child.",
@@ -1294,45 +1328,6 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-04T06:07:32.098Z",
       "expiresAt": "2026-11-06T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
-      "id": "1dda73a5422a",
-      "headline": "Christa Pike, Who Survived Botched Tennessee Execution, Issues First Public Statement",
-      "summary": "Death-row inmate Christa Pike, who survived a botched lethal injection attempt a month ago at Riverbend prison in Nashville, released her first public statement saying she remains in constant pain. Tennessee executions remain paused pending a review.",
-      "category": "society",
-      "severity": 3,
-      "lat": 36.1627,
-      "lon": -86.7816,
-      "locationName": "Nashville, Tennessee, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TN",
-      "sources": [
-        {
-          "url": "https://abcnews.com/US/christa-pike-shes-recovering-after-botched-execution-new/story?id=137705435",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/christa-pike-botched-execution-statement/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.wsmv.com/2026/10/30/christa-pike-releases-statement-after-botched-tennessee-execution/",
-          "domain": "wsmv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-04T11:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -1552,6 +1547,84 @@
       "isBreaking": false
     },
     {
+      "id": "ce49c3a8b87c",
+      "headline": "Kansas Elects First Democratic US Senator Since 1932; Governor's Race Still Undecided",
+      "summary": "Democrat Adam Hamilton defeated incumbent Republican Sen. Roger Marshall in Kansas's most expensive race in state history, about $110 million. The governor's race between Democrat Cindy Holscher and Republican Ty Masterson remains too close to call with about 98% counted, while Democrat Chris Mann has declared victory for attorney general over incumbent Kris Kobach, who has not conceded.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.0473,
+      "lon": -95.6752,
+      "locationName": "Topeka, Kansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-KS",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/11/03/g-s1-151587/kansas-senate-race-hamilton-marshall",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.axios.com/local/kansas-city/2026/11/04/kansas-governor-race-holscher-masterson",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://johnsoncountypost.com/2026/11/04/chris-mann-attorney-general-kobach-not-conceding-300995/",
+          "domain": "johnsoncountypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 60,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6e1efc0eb8b0",
+      "headline": "Josh Shapiro Re-elected Pennsylvania Governor in Landslide Over Stacy Garrity",
+      "summary": "Gov. Josh Shapiro (D) defeated Republican state Treasurer Stacy Garrity by a wide margin, roughly 60%-37%, despite a Trump endorsement for Garrity. The decisive win cements Shapiro as a prominent national Democratic figure heading into his second term.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.2732,
+      "lon": -76.8867,
+      "locationName": "Harrisburg, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/josh-shapiro-democrat-wins-pennsylvania-governor-battleground-race-rcna603368",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.axios.com/local/pittsburgh/2026/11/04/josh-shapiro-wins-governor-second-term-pennsylvania",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.witf.org/2026/11/03/josh-shapiro-handily-wins-re-election-as-pennsylvania-governor-defeating-stacy-garrity/",
+          "domain": "witf.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 59,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
+      "isBreaking": false
+    },
+    {
       "id": "f70b0e146ba8",
       "headline": "Nationwide 'GenZ Regelt' Protests in Germany Turn Violent",
       "summary": "Tens of thousands protested cost-of-living, education and budget-cut policies across German cities on Oct 31-Nov 1, with clashes in Frankfurt, Berlin, Hamburg and Cologne. Police used water cannon and pepper spray after Molotov cocktails were thrown and shops were looted; officials blamed 'infiltrators' for the violence.",
@@ -1586,6 +1659,38 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-05T06:07:11.564Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3d021b1051cd",
+      "headline": "Xavier Becerra Elected California Governor, First Latino Governor in Over 150 Years",
+      "summary": "Democrat Xavier Becerra defeated Republican Steve Hilton by a wide margin, roughly 64%-36%, to become California's next governor. Becerra is the state's first Latino governor in more than 150 years.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.axios.com/2026/11/04/xavier-becerra-steve-hilton-california-election-results-2026",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/california-governor-becerra-hilton-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -1646,6 +1751,86 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-05T06:07:11.564Z",
+      "isBreaking": false
+    },
+    {
+      "id": "289ef6ed2af8",
+      "headline": "Prescott, Arizona Declares State of Emergency After Flooding Overtops Watson Lake Dam",
+      "summary": "Prescott's mayor declared a state of emergency after heavy rainfall overtopped the Watson Lake (Granite) Dam, with inflow peaking above 4,000 cfs; the Upper Goldwater Reservoir also topped. The dam is rated to safely handle up to 10 feet of overtopping; low-water crossings closed.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 34.54,
+      "lon": -112.4685,
+      "locationName": "Prescott, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
+      "sources": [
+        {
+          "url": "https://www.azfamily.com/2026/11/02/prescott-declares-state-emergency-flooding-hammers-parts-arizona/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://prescott-az.gov/city-of-prescott-responds-to-significant-flooding-event/",
+          "domain": "prescott-az.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.12news.com/article/weather/severe-weather/city-of-prescott-declares-state-of-emergency-due-to-flooding/75-d203221c-36e5-4420-873e-2ce357ebae8c",
+          "domain": "12news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a258db560115",
+      "headline": "One Year After Typhoon Halong, Kipnuk and Kwigillingok Villages Remain in Limbo Amid FEMA Relocation Dispute",
+      "summary": "A year after the remnants of Typhoon Halong destroyed over 150 homes and forced roughly 1,500 evacuations in the Yup'ik villages of Kipnuk and Kwigillingok, Alaska, most residents remain displaced. Both villages voted to relocate entirely, but the state's FEMA request to fund permanent replacement housing for 219 damaged homes has been denied, and temporary housing assistance is set to expire in April 2027.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 59.9386,
+      "lon": -164.0372,
+      "locationName": "Kipnuk, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/10/14/one-year-after-ex-typhoon-halong-western-alaskas-recovery-is-ongoing-and-uncertain/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.adn.com/alaska-news/rural-alaska/2026/10/12/one-year-after-halong-devastated-their-villages-storm-survivors-navigate-life-in-alaskas-largest-city/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-02T15:48:07.539Z",
+      "lastUpdated": "2026-11-02T15:48:07.539Z",
+      "expiresAt": "2026-11-04T15:48:07.539Z",
       "isBreaking": false
     },
     {
@@ -1839,80 +2024,80 @@
       "isBreaking": false
     },
     {
-      "id": "289ef6ed2af8",
-      "headline": "Prescott, Arizona Declares State of Emergency After Flooding Overtops Watson Lake Dam",
-      "summary": "Prescott's mayor declared a state of emergency after heavy rainfall overtopped the Watson Lake (Granite) Dam, with inflow peaking above 4,000 cfs; the Upper Goldwater Reservoir also topped. The dam is rated to safely handle up to 10 feet of overtopping; low-water crossings closed.",
-      "category": "disaster",
+      "id": "158a7a7dede6",
+      "headline": "Thornton Man Charged With Murder in Fatal Halloween-Night Shooting Near CU Boulder",
+      "summary": "Boulder police arrested 18-year-old Omar Perez of Thornton on Nov. 2, 2026, charging him with first-degree murder, assault and attempted murder in connection with a Halloween-night shooting at a party in Boulder's University Hill neighborhood. The shooting killed 19-year-old CU Boulder student Luca Hanlon and wounded a second student; it is reportedly Boulder's first homicide of 2026.",
+      "category": "society",
       "severity": 3,
-      "lat": 34.54,
-      "lon": -112.4685,
-      "locationName": "Prescott, Arizona, USA",
+      "lat": 40.0076,
+      "lon": -105.2659,
+      "locationName": "Boulder, Colorado, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-AZ",
+      "subdivision": "US-CO",
       "sources": [
         {
-          "url": "https://www.azfamily.com/2026/11/02/prescott-declares-state-emergency-flooding-hammers-parts-arizona/",
-          "domain": "azfamily.com",
+          "url": "https://www.cpr.org/2026/11/02/cu-boulder-halloween-shooting/",
+          "domain": "cpr.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://prescott-az.gov/city-of-prescott-responds-to-significant-flooding-event/",
-          "domain": "prescott-az.gov",
-          "reliability": 85,
+          "url": "https://www.axios.com/local/boulder/2026/11/02/boulder-shooting-university-hill-arrest",
+          "domain": "axios.com",
+          "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://www.12news.com/article/weather/severe-weather/city-of-prescott-declares-state-of-emergency-due-to-flooding/75-d203221c-36e5-4420-873e-2ce357ebae8c",
-          "domain": "12news.com",
+          "url": "https://www.denvergazette.com/2026/11/02/man-arrested-in-halloween-shooting-that-killed-cu-boulder-student/",
+          "domain": "denvergazette.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T15:48:07.539Z",
+      "trustScore": 54,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T15:27:52.809Z",
       "isBreaking": false
     },
     {
-      "id": "a258db560115",
-      "headline": "One Year After Typhoon Halong, Kipnuk and Kwigillingok Villages Remain in Limbo Amid FEMA Relocation Dispute",
-      "summary": "A year after the remnants of Typhoon Halong destroyed over 150 homes and forced roughly 1,500 evacuations in the Yup'ik villages of Kipnuk and Kwigillingok, Alaska, most residents remain displaced. Both villages voted to relocate entirely, but the state's FEMA request to fund permanent replacement housing for 219 damaged homes has been denied, and temporary housing assistance is set to expire in April 2027.",
-      "category": "disaster",
+      "id": "039642ee0978",
+      "headline": "Georgia Ponzi Scheme Founder Brant Frost Sentenced to 15 Years, Ordered to Pay $76.4 Million Restitution",
+      "summary": "Edwin Brant Frost IV, founder of First Liberty Building & Loan in Newnan, Georgia, was sentenced to 15 years in prison and ordered to pay $76.4 million in restitution after pleading guilty to wire fraud in a Ponzi scheme the SEC says defrauded roughly 300 investors of about $140 million. Funds were also funneled to conservative political causes and Alabama politicians.",
+      "category": "politics",
       "severity": 3,
-      "lat": 59.9386,
-      "lon": -164.0372,
-      "locationName": "Kipnuk, Alaska, USA",
+      "lat": 33.3807,
+      "lon": -84.7997,
+      "locationName": "Newnan, Georgia, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-AK",
+      "subdivision": "US-GA",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
+          "url": "https://www.cbsnews.com/atlanta/news/prominent-republican-donor-sentenced-to-15-years-in-prison-for-first-liberty-ponzi-scheme-prosecutors-say/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
         },
         {
-          "url": "https://alaskabeacon.com/2026/10/14/one-year-after-ex-typhoon-halong-western-alaskas-recovery-is-ongoing-and-uncertain/",
-          "domain": "alaskabeacon.com",
+          "url": "https://www.wsbtv.com/news/local/coweta-county/founder-alleged-georgia-ponzi-scheme-ordered-pay-back-more-than-76-million/W62ALRSN4VDKHF4S4HLDWYHC6E/",
+          "domain": "wsbtv.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.adn.com/alaska-news/rural-alaska/2026/10/12/one-year-after-halong-devastated-their-villages-storm-survivors-navigate-life-in-alaskas-largest-city/",
-          "domain": "adn.com",
+          "url": "https://georgiarecorder.com/2026/10/26/conservative-lender-accused-of-ponzi-scheme-sentenced-to-15-years-in-prison/",
+          "domain": "georgiarecorder.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 55,
+      "trustScore": 54,
       "firstSeen": "2026-11-02T15:48:07.539Z",
       "lastUpdated": "2026-11-02T15:48:07.539Z",
       "expiresAt": "2026-11-04T15:48:07.539Z",
@@ -1995,86 +2180,6 @@
       "isBreaking": false
     },
     {
-      "id": "158a7a7dede6",
-      "headline": "Thornton Man Charged With Murder in Fatal Halloween-Night Shooting Near CU Boulder",
-      "summary": "Boulder police arrested 18-year-old Omar Perez of Thornton on Nov. 2, 2026, charging him with first-degree murder, assault and attempted murder in connection with a Halloween-night shooting at a party in Boulder's University Hill neighborhood. The shooting killed 19-year-old CU Boulder student Luca Hanlon and wounded a second student; it is reportedly Boulder's first homicide of 2026.",
-      "category": "society",
-      "severity": 3,
-      "lat": 40.0076,
-      "lon": -105.2659,
-      "locationName": "Boulder, Colorado, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CO",
-      "sources": [
-        {
-          "url": "https://www.cpr.org/2026/11/02/cu-boulder-halloween-shooting/",
-          "domain": "cpr.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.axios.com/local/boulder/2026/11/02/boulder-shooting-university-hill-arrest",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.denvergazette.com/2026/11/02/man-arrested-in-halloween-shooting-that-killed-cu-boulder-student/",
-          "domain": "denvergazette.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "039642ee0978",
-      "headline": "Georgia Ponzi Scheme Founder Brant Frost Sentenced to 15 Years, Ordered to Pay $76.4 Million Restitution",
-      "summary": "Edwin Brant Frost IV, founder of First Liberty Building & Loan in Newnan, Georgia, was sentenced to 15 years in prison and ordered to pay $76.4 million in restitution after pleading guilty to wire fraud in a Ponzi scheme the SEC says defrauded roughly 300 investors of about $140 million. Funds were also funneled to conservative political causes and Alabama politicians.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 33.3807,
-      "lon": -84.7997,
-      "locationName": "Newnan, Georgia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-GA",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/atlanta/news/prominent-republican-donor-sentenced-to-15-years-in-prison-for-first-liberty-ponzi-scheme-prosecutors-say/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.wsbtv.com/news/local/coweta-county/founder-alleged-georgia-ponzi-scheme-ordered-pay-back-more-than-76-million/W62ALRSN4VDKHF4S4HLDWYHC6E/",
-          "domain": "wsbtv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://georgiarecorder.com/2026/10/26/conservative-lender-accused-of-ponzi-scheme-sentenced-to-15-years-in-prison/",
-          "domain": "georgiarecorder.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-02T15:48:07.539Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-04T15:48:07.539Z",
-      "isBreaking": false
-    },
-    {
       "id": "0b36844a49de",
       "headline": "Washington Reports Fatal Human H5N1 Bird Flu Case in Yakima County Dairy Worker",
       "summary": "A Yakima County resident with underlying health conditions died on or around Nov. 1, 2026, after exposure to H5N1-infected dairy cattle, the first US avian influenza death of 2026 and Washington's second fatal avian-flu infection within roughly a year. The Yakima Health District also confirmed a third human case in the county; the outbreak has affected roughly 33 dairy herds in Washington since Oct. 8.",
@@ -2112,46 +2217,6 @@
       "firstSeen": "2026-11-03T15:27:52.809Z",
       "lastUpdated": "2026-11-03T15:27:52.809Z",
       "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4a5e787054ed",
-      "headline": "Lawsuit Could Strip Medicaid Coverage From 140,000 Ohioans",
-      "summary": "The American Medical Association filed an amicus brief backing a lawsuit brought by the City of Columbus challenging a federal Medicaid work-requirement rule. The AMA warned the rule could cause up to 140,000 Ohio Medicaid-expansion enrollees to lose coverage.",
-      "category": "health",
-      "severity": 3,
-      "lat": 39.9612,
-      "lon": -82.9988,
-      "locationName": "Columbus, Ohio, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OH",
-      "sources": [
-        {
-          "url": "https://ohiocapitaljournal.com/2026/11/02/lawsuit-could-save-medicaid-for-140k-in-ohio/",
-          "domain": "ohiocapitaljournal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://thehill.com/policy/healthcare/6105262-lawsuit-trump-medicaid-work-requirements/",
-          "domain": "thehill.com",
-          "reliability": 76,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.fiercehealthcare.com/payers/medical-groups-city-columbus-sue-challenge-final-medicaid-work-requirements-rule",
-          "domain": "fiercehealthcare.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 53,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-04T11:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -2225,81 +2290,77 @@
       "isBreaking": false
     },
     {
-      "id": "e3700a34e46b",
-      "headline": "Zelensky Visits Berlin for Air-Defense Talks With Chancellor Merz",
-      "summary": "Ukrainian President Volodymyr Zelensky traveled to Berlin to meet German Chancellor Friedrich Merz for talks focused on bolstering Ukraine's air-defense capabilities. The visit comes amid continued Russian strikes on Ukrainian energy infrastructure.",
+      "id": "dda518f40fb4",
+      "headline": "Democrat Aaron Ford Elected Nevada Governor as Democrats Sweep Statewide Offices",
+      "summary": "Democratic Attorney General Aaron Ford defeated Republican incumbent Gov. Joe Lombardo to become Nevada's first Black governor. Democrats also won lieutenant governor, attorney general and treasurer, and held secretary of state, marking a full statewide sweep for the first time in decades.",
       "category": "politics",
       "severity": 3,
-      "lat": 52.52,
-      "lon": 13.405,
-      "locationName": "Berlin, Germany",
-      "countryCode": "DE",
+      "lat": 39.1638,
+      "lon": -119.7674,
+      "locationName": "Carson City, Nevada, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NV",
       "sources": [
         {
-          "url": "https://kyivindependent.com/zelensky-to-visit-berlin-on-nov-3-says-german-chancellor-2/",
+          "url": "https://www.npr.org/2026/11/04/g-s1-151138/midterms-ford-nevada-governor-lombardo",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://thenevadaindependent.com/article/nevada-democrats-lead-governors-race-sweep-other-statewide-offices-in-historic-night",
+          "domain": "thenevadaindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b7b9e0b9ebd3",
+      "headline": "Whistleblower Alleges Sanctioned Russian Firm Secretly Financed Alaska Gas Project",
+      "summary": "Former Polar LNG CEO Joel Riddle told the New York Times he resigned after discovering Russian energy giant Novatek, partially sanctioned over the Ukraine war, was financing and directing an Alaska North Slope gas export project despite being told funding came from a UAE firm. The allegations could trigger a US Treasury sanctions probe into the Trump-administration-linked deal; Polar LNG calls the claims unfounded and says it is investigating.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 70.33,
+      "lon": -149.72,
+      "locationName": "North Slope, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.adn.com/business-economy/energy/2026/10/28/former-ceo-alleges-russian-company-financed-alaska-project-raising-risk-of-us-sanctions-violations-polar-lng-denies-the-claims/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://alaskapublic.org/news/economy/energy/2026-11-03/russian-energy-giant-secretly-funded-alaska-natural-gas-project-according-to-new-york-times",
+          "domain": "alaskapublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://kyivindependent.com/sanctioned-russian-energy-giant-secretly-funded-us-gas-project-nyt-reports/",
           "domain": "kyivindependent.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
-        },
-        {
-          "url": "https://en.interfax.com.ua/news/general/1230564.html",
-          "domain": "interfax.com.ua",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.eurointegration.com.ua/eng/news/2026/11/3/7249162/",
-          "domain": "eurointegration.com.ua",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6445d7826a84",
-      "headline": "Storm Agneta Triggers Severe Flooding in Rhodes, Greece, With Alerts Extending to Spain",
-      "summary": "Storm Agneta brought severe flooding to Rhodes and other parts of Greece, damaging dozens of vehicles, while red-alert weather warnings were also issued in parts of Spain. Authorities warned the storm system would continue moving across the eastern Mediterranean.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 36.4341,
-      "lon": 28.2176,
-      "locationName": "Rhodes, Greece",
-      "countryCode": "GR",
-      "sources": [
-        {
-          "url": "https://greekreporter.com/2026/11/02/storm-agneta-greece-flooding/",
-          "domain": "greekreporter.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.news247.gr/en/storm-agneta-storm-seven-areas-on-red-code-alert-where-severe-storms-and-flooding-are-expected/",
-          "domain": "news247.gr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://en.rua.gr/2026/11/02/flooding-in-rhodes-dozens-of-cars-damaged-storm-agneta-moves-on/",
-          "domain": "rua.gr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -2672,158 +2733,115 @@
       "isBreaking": false
     },
     {
-      "id": "d5d07b71999f",
-      "headline": "Halloween-Weekend Violence Leaves 3 Dead, About 11 Injured Across Philadelphia",
-      "summary": "A wave of 11 separate shootings and stabbings over Halloween weekend in Philadelphia killed three people, including a 15-year-old, and injured roughly 11 others. Police are investigating the incidents, which occurred across multiple neighborhoods.",
-      "category": "society",
-      "severity": 3,
-      "lat": 39.9526,
-      "lon": -75.1652,
-      "locationName": "Philadelphia, Pennsylvania, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-PA",
-      "sources": [
-        {
-          "url": "https://www.fox29.com/news/halloween-shootings-philadelphia-leave-1-dead-5-injured-including-3-teens",
-          "domain": "fox29.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/philadelphia-halloween-shootings-2-dead-5-injured/4489383/",
-          "domain": "nbcphiladelphia.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://metrophiladelphia.com/stories/3-killed-halloween-shootings-philadelphia,161448",
-          "domain": "metrophiladelphia.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-04T11:59:46.260Z",
-      "isBreaking": false
-    },
-    {
-      "id": "460bc11e44a8",
-      "headline": "Oklahoma Officials Seek Dismissal of Lawsuit Challenging State's Near-Total Abortion Ban",
-      "summary": "Oklahoma Attorney General Gentner Drummond filed a motion to dismiss a Center for Reproductive Rights lawsuit brought by three women who were denied abortions despite fatal fetal diagnoses. The case challenges the state's near-total abortion ban.",
+      "id": "e3700a34e46b",
+      "headline": "Zelensky Visits Berlin for Air-Defense Talks With Chancellor Merz",
+      "summary": "Ukrainian President Volodymyr Zelensky traveled to Berlin to meet German Chancellor Friedrich Merz for talks focused on bolstering Ukraine's air-defense capabilities. The visit comes amid continued Russian strikes on Ukrainian energy infrastructure.",
       "category": "politics",
       "severity": 3,
-      "lat": 35.4676,
-      "lon": -97.5164,
-      "locationName": "Oklahoma City, Oklahoma, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OK",
+      "lat": 52.52,
+      "lon": 13.405,
+      "locationName": "Berlin, Germany",
+      "countryCode": "DE",
       "sources": [
         {
-          "url": "https://www.kgou.org/health/2026-10-30/oklahoma-leaders-seek-dismissal-of-lawsuit-challenging-state-abortion-bans",
-          "domain": "kgou.org",
+          "url": "https://kyivindependent.com/zelensky-to-visit-berlin-on-nov-3-says-german-chancellor-2/",
+          "domain": "kyivindependent.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.kosu.org/oklahoma-abortion-ban-dismissal-against",
-          "domain": "kosu.org",
+          "url": "https://en.interfax.com.ua/news/general/1230564.html",
+          "domain": "interfax.com.ua",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://reproductiverights.org/cases/nova-health-systems-v-cline-et-al/",
-          "domain": "reproductiverights.org",
+          "url": "https://www.eurointegration.com.ua/eng/news/2026/11/3/7249162/",
+          "domain": "eurointegration.com.ua",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-04T11:59:46.260Z",
+      "firstSeen": "2026-11-04T06:07:32.098Z",
+      "lastUpdated": "2026-11-04T06:07:32.098Z",
+      "expiresAt": "2026-11-06T06:07:32.098Z",
       "isBreaking": false
     },
     {
-      "id": "10e1bc053010",
-      "headline": "Daimler Truck Shutters Nearly 80-Year-Old Portland Manufacturing Plant, Cutting About 375 Jobs",
-      "summary": "Daimler Truck North America closed its Swan Island plant in Portland, Oregon, on Oct. 30, cutting roughly 375 to 387 jobs. The closure ends 84 years of Freightliner-legacy manufacturing in Portland as production shifts to North and South Carolina.",
-      "category": "economy",
+      "id": "6445d7826a84",
+      "headline": "Storm Agneta Triggers Severe Flooding in Rhodes, Greece, With Alerts Extending to Spain",
+      "summary": "Storm Agneta brought severe flooding to Rhodes and other parts of Greece, damaging dozens of vehicles, while red-alert weather warnings were also issued in parts of Spain. Authorities warned the storm system would continue moving across the eastern Mediterranean.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 45.5152,
-      "lon": -122.6784,
-      "locationName": "Portland, Oregon, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OR",
+      "lat": 36.4341,
+      "lon": 28.2176,
+      "locationName": "Rhodes, Greece",
+      "countryCode": "GR",
       "sources": [
         {
-          "url": "https://katu.com/news/local/daimler-truck-to-end-production-in-portland-eliminate-375-jobs-oregon-pacific-northwest-pnw-oregon-freight-madras-keith-wilson-business-finance-budget-operator-union-labor-teamsters",
-          "domain": "katu.com",
+          "url": "https://greekreporter.com/2026/11/02/storm-agneta-greece-flooding/",
+          "domain": "greekreporter.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.ttnews.com/articles/dtna-portland-plant-move",
-          "domain": "ttnews.com",
+          "url": "https://www.news247.gr/en/storm-agneta-storm-seven-areas-on-red-code-alert-where-severe-storms-and-flooding-are-expected/",
+          "domain": "news247.gr",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://nwlaborpress.org/2026/08/daimler-to-close-portland-truck-plant/",
-          "domain": "nwlaborpress.org",
+          "url": "https://en.rua.gr/2026/11/02/flooding-in-rhodes-dozens-of-cars-damaged-storm-agneta-moves-on/",
+          "domain": "rua.gr",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-04T11:59:46.260Z",
+      "firstSeen": "2026-11-04T06:07:32.098Z",
+      "lastUpdated": "2026-11-04T06:07:32.098Z",
+      "expiresAt": "2026-11-06T06:07:32.098Z",
       "isBreaking": false
     },
     {
-      "id": "96f2485336dc",
-      "headline": "Armenian PM Pashinyan Accuses Russia-Linked Circles of Backing Opposition Plot Amid Parliament Brawl",
-      "summary": "Armenian Prime Minister Nikol Pashinyan accused circles linked to Russia and the Eurasian Economic Union of backing a secret opposition plot against his government. The allegations coincided with a physical brawl in Armenia's parliament.",
+      "id": "e56e305cf734",
+      "headline": "Utah Legislature Sees Democratic Gains; Ben McAdams Wins Back US House Seat",
+      "summary": "Early results showed roughly 15 Democratic and unaffiliated challengers leading or defeating Republican state legislative incumbents in historically GOP-dominated Utah. Democrat Ben McAdams won Utah's 1st Congressional District, and voters passed Amendment A removing newspaper-publication requirements from the state constitution while rejecting Amendment B, which would have raised the threshold for tax-related ballot initiatives.",
       "category": "politics",
       "severity": 3,
-      "lat": 40.1792,
-      "lon": 44.4991,
-      "locationName": "Yerevan, Armenia",
-      "countryCode": "AM",
+      "lat": 40.7608,
+      "lon": -111.891,
+      "locationName": "Salt Lake City, Utah, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-UT",
       "sources": [
         {
-          "url": "https://jam-news.net/brawl-in-armenias-parliament-pashinyan-says-he-supports-his-party-colleagues/",
-          "domain": "jam-news.net",
+          "url": "https://utahnewsdispatch.com/2026/11/03/utah-legislature-2026-election-results/",
+          "domain": "utahnewsdispatch.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://armenpress.am/en/video/1264202",
-          "domain": "armenpress.am",
+          "url": "https://www.kuer.org/politics-government/2026-11-03/election-2026-utah-results-amendment-b-fails-amendment-a",
+          "domain": "kuer.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 41,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -2895,6 +2913,38 @@
       "isBreaking": false
     },
     {
+      "id": "96f2485336dc",
+      "headline": "Armenian PM Pashinyan Accuses Russia-Linked Circles of Backing Opposition Plot Amid Parliament Brawl",
+      "summary": "Armenian Prime Minister Nikol Pashinyan accused circles linked to Russia and the Eurasian Economic Union of backing a secret opposition plot against his government. The allegations coincided with a physical brawl in Armenia's parliament.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.1792,
+      "lon": 44.4991,
+      "locationName": "Yerevan, Armenia",
+      "countryCode": "AM",
+      "sources": [
+        {
+          "url": "https://jam-news.net/brawl-in-armenias-parliament-pashinyan-says-he-supports-his-party-colleagues/",
+          "domain": "jam-news.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://armenpress.am/en/video/1264202",
+          "domain": "armenpress.am",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-04T06:07:32.098Z",
+      "lastUpdated": "2026-11-04T06:07:32.098Z",
+      "expiresAt": "2026-11-06T06:07:32.098Z",
+      "isBreaking": false
+    },
+    {
       "id": "609a01cd331e",
       "headline": "Missouri Storm System Shifts to Flash-Flood Risk as Rivers Forecast to Crest Near Maryville",
       "summary": "A storm system that brought a severe-weather and tornado threat to northwest Missouri and northeast Kansas dropped 1-3 inches of rain around Nov. 2-3, 2026, prompting NWS hydrologic outlooks for rising rivers across Missouri, Iowa, and Nebraska. The 102 River at Maryville, Missouri (flood stage 18.0 ft) was forecast to crest near 18.5 feet by the morning of Nov. 4.",
@@ -2945,6 +2995,44 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-03T15:27:52.809Z",
       "expiresAt": "2026-11-05T03:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8139fbe85150",
+      "headline": "New Jersey Governor Warns Ports Against Accepting Russian Diesel Shipments",
+      "summary": "Gov. Mikie Sherrill sent letters to roughly a dozen New Jersey port and terminal operators warning them to turn away tankers carrying Russian diesel, arguing a recent Treasury license conflicts with the 2022 federal ban on Russian oil-product imports. She warned operators could face civil or criminal penalties for accepting the shipments.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 40.2206,
+      "lon": -74.7597,
+      "locationName": "Trenton, New Jersey, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NJ",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-03/nj-governor-warns-ports-against-russian-diesel-allowed-by-trump",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/top-news/articles/2026-11-03/new-jersey-governor-warns-ports-against-accepting-russian-diesel",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nj.gov/governor/news/2026/approved/20261102a.shtml",
+          "domain": "nj.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 73,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T03:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -3021,42 +3109,6 @@
       "isBreaking": false
     },
     {
-      "id": "857d4ce08b53",
-      "headline": "Jordan Intercepts 14 Armed Individuals Crossing From Syria",
-      "summary": "Jordanian forces stopped a group of 14 armed individuals attempting to cross from Syria into Mafraq Governorate on Oct 30-31, exchanging fire that killed some while others fled back across the border. The incident follows earlier Jordanian strikes on Syria after a deadly church attack in Jordan.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 32.34,
-      "lon": 36.21,
-      "locationName": "Mafraq Governorate, Jordan",
-      "countryCode": "JO",
-      "sources": [
-        {
-          "url": "https://www.timesofisrael.com/liveblog_entry/jordan-stops-fighters-attempting-to-enter-from-syria-armed-forces-say",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-10-31/jordan-stops-fighters-attempting-to-enter-from-syria-armed-forces-say",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.arabnews.com/middle-east/jordan-stops-fighters-attempting-to-enter-from-syria-armed-forces-say-3009102",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-04T18:07:11.564Z",
-      "isBreaking": false
-    },
-    {
       "id": "9885f310a2c1",
       "headline": "Washington Voters Decide Income-Tax Repeal and Transgender-Sports Ballot Initiatives",
       "summary": "Washington voters on Nov. 3, 2026 decided Initiative 645, which would repeal the state's newly enacted 9.9% income tax on earnings over $1 million, and Initiative 638, which would ban transgender girls from K-12 girls' school sports. The election also determined all 98 state House seats and 24 of 49 Senate seats.",
@@ -3093,6 +3145,42 @@
       "firstSeen": "2026-11-03T15:27:52.809Z",
       "lastUpdated": "2026-11-03T15:27:52.809Z",
       "expiresAt": "2026-11-05T03:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "857d4ce08b53",
+      "headline": "Jordan Intercepts 14 Armed Individuals Crossing From Syria",
+      "summary": "Jordanian forces stopped a group of 14 armed individuals attempting to cross from Syria into Mafraq Governorate on Oct 30-31, exchanging fire that killed some while others fled back across the border. The incident follows earlier Jordanian strikes on Syria after a deadly church attack in Jordan.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 32.34,
+      "lon": 36.21,
+      "locationName": "Mafraq Governorate, Jordan",
+      "countryCode": "JO",
+      "sources": [
+        {
+          "url": "https://www.timesofisrael.com/liveblog_entry/jordan-stops-fighters-attempting-to-enter-from-syria-armed-forces-say",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-31/jordan-stops-fighters-attempting-to-enter-from-syria-armed-forces-say",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/jordan-stops-fighters-attempting-to-enter-from-syria-armed-forces-say-3009102",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-03T06:07:11.564Z",
+      "lastUpdated": "2026-11-03T06:07:11.564Z",
+      "expiresAt": "2026-11-04T18:07:11.564Z",
       "isBreaking": false
     },
     {
@@ -3237,6 +3325,38 @@
       "isBreaking": false
     },
     {
+      "id": "6c4ed1454e8a",
+      "headline": "Wes Moore Wins Second Term as Maryland Governor in Landslide",
+      "summary": "Democrat Wes Moore defeated Republican Dan Cox by about 29 points, roughly 62.6%-33%, in a rematch of their 2022 race; Lt. Gov. Aruna Miller was also re-elected. Moore now faces a projected $3 billion state budget shortfall in his second term.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 38.9784,
+      "lon": -76.4922,
+      "locationName": "Annapolis, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/baltimore/news/wes-moore-defeats-dan-cox-second-term-maryland-governor/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/maryland-governor-cox-moore-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T03:29:09.407Z",
+      "isBreaking": false
+    },
+    {
       "id": "73b098c58f28",
       "headline": "Bangladesh Garment Workers Continue Multi-Day Wage Protests; Government Forms Wage Board",
       "summary": "Garment workers in Bangladesh continued wage protests for a third consecutive day, disrupting factory operations in Dhaka and Gazipur. The government responded by announcing the formation of a wage board to address worker demands.",
@@ -3271,6 +3391,38 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-04T06:07:32.098Z",
       "expiresAt": "2026-11-05T18:07:32.098Z",
+      "isBreaking": false
+    },
+    {
+      "id": "286d24b87b85",
+      "headline": "Amy Klobuchar Elected Minnesota's First Female Governor",
+      "summary": "US Sen. Amy Klobuchar (D) defeated Minnesota House Speaker Lisa Demuth (R) roughly 57%-43% in the open-seat race after Gov. Tim Walz declined to seek a third term. Klobuchar becomes Minnesota's first female governor.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 44.9537,
+      "lon": -93.09,
+      "locationName": "St. Paul, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/senator-amy-klobuchar-minnesota-governor-democrat-win-demuth-rcna603339",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/minnesota/news/klobuchar-wins-minnesota-governor-race-cbs-news-projects/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T03:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -3354,6 +3506,126 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-04T18:07:11.564Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1c70cf82ea1e",
+      "headline": "Marsha Blackburn Elected Tennessee's First Woman Governor",
+      "summary": "US Sen. Marsha Blackburn (R) won a narrower-than-expected race over Democrat Jerri Green to become Tennessee's first female governor. Voters also approved amendments expanding courts' ability to deny bail in certain violent-crime cases and permanently banning a state property tax.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 36.1627,
+      "lon": -86.7816,
+      "locationName": "Nashville, Tennessee, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TN",
+      "sources": [
+        {
+          "url": "https://tennesseelookout.com/2026/11/03/u-s-sen-marsha-blackburn-ekes-out-tennessee-governors-seat/",
+          "domain": "tennesseelookout.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.npr.org/2026/11/04/nx-s1-6028546/governor-candidates-history-election-2026",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.wsmv.com/2026/11/04/tennessee-constitutional-amendment-1-which-expands-courts-ability-deny-bail-passes/",
+          "domain": "wsmv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T03:29:09.407Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c930111ec10e",
+      "headline": "Former East Aurora School Board President Indicted in $1.3M Kickback Scheme",
+      "summary": "Annette Johnson, former president of East Aurora School District 131's board, was federally indicted over allegedly steering a $2.7 million COVID-relief air-purifier contract to a vendor who funneled over $1 million as commission to a company owned by her boyfriend, where she worked as CFO. Aurora's mayor said a broader review found roughly $43 million flowed from the district to companies linked to Johnson between 2018-2023; Johnson denies wrongdoing.",
+      "category": "society",
+      "severity": 2,
+      "lat": 41.7606,
+      "lon": -88.3201,
+      "locationName": "Aurora, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndil/pr/federal-indictment-charges-former-president-suburban-chicago-school-district-board",
+          "domain": "justice.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://abc7chicago.com/post/east-aurora-district-131-school-board-president-annette-johnson-indicted-federal-case-officials/19991013/",
+          "domain": "abc7chicago.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://chicago.suntimes.com/politics/2026/10/29/aurora-john-laesch-annette-johnson-corruption",
+          "domain": "suntimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T03:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "de180ae84fed",
+      "headline": "USDA Confirms New World Screwworm in Arizona Dog, Third US State Hit by Outbreak",
+      "summary": "USDA APHIS confirmed New World screwworm, a flesh-eating parasitic fly, in a dog in Cochise County, Arizona, on Oct. 28, 2026, the state's first case in roughly six decades and the third US state after Texas and New Mexico to report one in the current outbreak. Officials established a 20-km infested zone with animal-movement controls and increased surveillance and trapping.",
+      "category": "health",
+      "severity": 2,
+      "lat": 31.8,
+      "lon": -109.75,
+      "locationName": "Cochise County, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
+      "sources": [
+        {
+          "url": "https://www.aphis.usda.gov/news/agency-announcements/usda-confirms-new-world-screwworm-arizona",
+          "domain": "usda.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.azfamily.com/2026/10/29/arizona-confirms-first-case-flesh-eating-parasite-cochise-county-dog/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kold.com/2026/11/03/new-world-screwworm-case-cochise-county-raising-concerns-among-ranchers/",
+          "domain": "kold.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-03T15:27:52.809Z",
+      "expiresAt": "2026-11-05T03:27:52.809Z",
       "isBreaking": false
     },
     {
@@ -3620,86 +3892,6 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-04T18:07:11.564Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c930111ec10e",
-      "headline": "Former East Aurora School Board President Indicted in $1.3M Kickback Scheme",
-      "summary": "Annette Johnson, former president of East Aurora School District 131's board, was federally indicted over allegedly steering a $2.7 million COVID-relief air-purifier contract to a vendor who funneled over $1 million as commission to a company owned by her boyfriend, where she worked as CFO. Aurora's mayor said a broader review found roughly $43 million flowed from the district to companies linked to Johnson between 2018-2023; Johnson denies wrongdoing.",
-      "category": "society",
-      "severity": 2,
-      "lat": 41.7606,
-      "lon": -88.3201,
-      "locationName": "Aurora, Illinois, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IL",
-      "sources": [
-        {
-          "url": "https://www.justice.gov/usao-ndil/pr/federal-indictment-charges-former-president-suburban-chicago-school-district-board",
-          "domain": "justice.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://abc7chicago.com/post/east-aurora-district-131-school-board-president-annette-johnson-indicted-federal-case-officials/19991013/",
-          "domain": "abc7chicago.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://chicago.suntimes.com/politics/2026/10/29/aurora-john-laesch-annette-johnson-corruption",
-          "domain": "suntimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T03:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "de180ae84fed",
-      "headline": "USDA Confirms New World Screwworm in Arizona Dog, Third US State Hit by Outbreak",
-      "summary": "USDA APHIS confirmed New World screwworm, a flesh-eating parasitic fly, in a dog in Cochise County, Arizona, on Oct. 28, 2026, the state's first case in roughly six decades and the third US state after Texas and New Mexico to report one in the current outbreak. Officials established a 20-km infested zone with animal-movement controls and increased surveillance and trapping.",
-      "category": "health",
-      "severity": 2,
-      "lat": 31.8,
-      "lon": -109.75,
-      "locationName": "Cochise County, Arizona, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AZ",
-      "sources": [
-        {
-          "url": "https://www.aphis.usda.gov/news/agency-announcements/usda-confirms-new-world-screwworm-arizona",
-          "domain": "usda.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.azfamily.com/2026/10/29/arizona-confirms-first-case-flesh-eating-parasite-cochise-county-dog/",
-          "domain": "azfamily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kold.com/2026/11/03/new-world-screwworm-case-cochise-county-raising-concerns-among-ranchers/",
-          "domain": "kold.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T03:27:52.809Z",
       "isBreaking": false
     },
     {
@@ -4312,10 +4504,10 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 107,
-    "carried": 65,
-    "updated": 9,
-    "expired": 32,
+    "multiSource": 113,
+    "carried": 101,
+    "updated": 0,
+    "expired": 6,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
