@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T06:06:55.832Z",
+  "generatedAt": "2026-11-05T15:28:00.613Z",
   "mode": "daily",
   "events": [
     {
@@ -418,6 +418,50 @@
       "isBreaking": false
     },
     {
+      "id": "5225e1455d04",
+      "headline": "Mississippi US Senate Race Uncalled; Democrat Colom Leads Hyde-Smith by About 1,100 Votes",
+      "summary": "Democratic challenger Scott Colom held a roughly 1,100-vote lead over incumbent Republican Sen. Cindy Hyde-Smith as of November 5, with Mississippi's U.S. Senate race still too close to call. A Colom win would make him the first Black senator from Mississippi since Reconstruction.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 32.2988,
+      "lon": -90.1848,
+      "locationName": "Jackson, Mississippi, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MS",
+      "sources": [
+        {
+          "url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/mississippi-senate-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://time.com/article/2026/11/05/mississippi-senate-race-2026-midterm-elections-colom-hyde-smith/",
+          "domain": "time.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://thehill.com/homenews/campaign/6196987-mississippi-senate-race-too-close-to-call-ddhq/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
       "id": "88cabd1d7da2",
       "headline": "Polish President Nawrocki Confronts Judges as Riot Police Deployed in Court Standoff",
       "summary": "Poland's constitutional crisis escalated as President Karol Nawrocki had a physical confrontation with judges at the Constitutional Tribunal, prompting deployment of riot police. The standoff between Nawrocki and the Tusk government has already triggered the resignation of three Polish ambassadors.",
@@ -457,6 +501,51 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-04T06:07:32.098Z",
       "expiresAt": "2026-11-08T06:07:32.098Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bc2de94cfd4c",
+      "headline": "Keisha Lance Bottoms Wins Georgia Governor's Race, First Black Woman to Hold the Office",
+      "summary": "Former Atlanta Mayor Keisha Lance Bottoms (D) defeated Republican Rick Jackson 54.3%-45.7% to become Georgia's first Black woman governor and the state's first Democratic governor since 1998. Democrats also flipped the state House, positioning Carolyn Hugley to become its first Black woman speaker.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 33.749,
+      "lon": -84.388,
+      "locationName": "Atlanta, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
+      "sources": [
+        {
+          "url": "https://www.pbs.org/newshour/politics/live-results-georgia-governor-midterm-election",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/georgia-governor-election-2026-results-rick-jackson-keisha-lance-bottoms/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/georgia-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.wtvm.com/2026/11/05/bottoms-elected-georgia-governor-hugley-line-become-house-speaker/",
+          "domain": "wtvm.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 78,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -508,6 +597,98 @@
       "firstSeen": "2026-11-02T06:06:25.795Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-06T06:06:25.795Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7ce2544d8d14",
+      "headline": "Amy Acton Defeats Vivek Ramaswamy in Ohio Governor's Race, Becomes First Woman Elected Governor",
+      "summary": "Democrat Amy Acton defeated Republican Vivek Ramaswamy 52.0%-44.7% in Ohio's previously undecided governor's race, becoming the first woman elected governor of Ohio and the first Democrat elected to the post in two decades.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/amy-acton-democrat-ohio-gubernatorial-race-vivek-ramaswamy-gop-rcna603352",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://time.com/article/2026/11/04/amy-acton-ohio-governor-ramaswamy-midterm-election-bitter-race-against/",
+          "domain": "time.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.opb.org/article/2026/11/03/democrat-amy-acton-defeats-vivek-ramaswamy-in-ohio-governors-race/",
+          "domain": "opb.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ohiocapitaljournal.com/2026/11/01/ohio-governor-candidate-amy-acton-calls-vivek-ramaswamys-attack-ad-absolutely-despicable/",
+          "domain": "ohiocapitaljournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/2026_Ohio_Issue_3",
+          "domain": "wikipedia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 71,
+      "firstSeen": "2026-11-03T15:27:52.809Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1beef929291c",
+      "headline": "Alan Wilson Elected South Carolina Governor; Democrat Annie Andrews Wins US Senate Seat",
+      "summary": "Republican Alan Wilson won South Carolina's open governor's race with 51.6% of the vote, succeeding term-limited Gov. Henry McMaster as the state's first new governor in over a decade. Separately, Democrat Dr. Annie Andrews defeated interim GOP Sen. Darline Graham 51.1%-46.7%, becoming the first woman and Democrat elected to the U.S. Senate from South Carolina in decades, as state Democrats also flipped 10 House seats to break the GOP supermajority.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 34.0007,
+      "lon": -81.0348,
+      "locationName": "Columbia, South Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-SC",
+      "sources": [
+        {
+          "url": "https://thehill.com/homenews/campaign/6185074-alan-wilson-wins-south-carolina-governors-race-2026/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/live-results-south-carolina-senate-midterm-election",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://scdailygazette.com/2026/11/04/sc-democrats-flip-10-state-house-seats-undoing-gop-supermajority/",
+          "domain": "scdailygazette.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -572,40 +753,35 @@
       "isBreaking": false
     },
     {
-      "id": "580ee57e2024",
-      "headline": "US to Host Russia-Ukraine Trilateral Talks in Abu Dhabi on Nov 10-11",
-      "summary": "US officials Steve Witkoff and Jared Kushner will lead trilateral talks with Russian and Ukrainian delegations in Abu Dhabi on Nov 10-11, reviving a diplomatic track on post-war security arrangements that had been suspended since February.",
+      "id": "4a639ecf2a96",
+      "headline": "Jocelyn Benson Elected Michigan Governor; Abdul El-Sayed Wins US Senate Seat",
+      "summary": "Democratic Secretary of State Jocelyn Benson defeated Republican Rep. John James by roughly 11 points to win Michigan's governor's race on November 3. Abdul El-Sayed defeated Republican Mike Rogers by about 7 points for Michigan's open U.S. Senate seat, becoming the nation's first Muslim U.S. senator.",
       "category": "politics",
       "severity": 4,
-      "lat": 24.4539,
-      "lon": 54.3773,
-      "locationName": "Abu Dhabi, United Arab Emirates",
-      "countryCode": "AE",
+      "lat": 42.7325,
+      "lon": -84.5555,
+      "locationName": "Lansing, Michigan, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MI",
       "sources": [
         {
-          "url": "https://www.axios.com/2026/11/03/us-russia-ukraine-peace-talks-uae-trump-witkoff-kushner",
-          "domain": "axios.com",
-          "reliability": 80,
+          "url": "https://www.cbsnews.com/detroit/live-updates/michigan-2026-midterm-election-live-updates/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-02/us-to-hold-trilateral-talks-with-ukraine-russia-in-abu-dhabi-next-week-us-official",
-          "domain": "usnews.com",
-          "reliability": 75,
+          "url": "https://www.pbs.org/newshour/politics/democrat-abdul-el-sayed-wins-election-to-u-s-senate-from-michigan",
+          "domain": "pbs.org",
+          "reliability": 87,
           "bias": "center"
-        },
-        {
-          "url": "https://www.thenationalnews.com/news/us/2026/11/02/russia-ukraine-witkoff-abu-dhabi/",
-          "domain": "thenationalnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
       "trustScore": 66,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-07T06:07:11.564Z",
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -644,6 +820,119 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-06T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "580ee57e2024",
+      "headline": "US to Host Russia-Ukraine Trilateral Talks in Abu Dhabi on Nov 10-11",
+      "summary": "US officials Steve Witkoff and Jared Kushner will lead trilateral talks with Russian and Ukrainian delegations in Abu Dhabi on Nov 10-11, reviving a diplomatic track on post-war security arrangements that had been suspended since February.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 24.4539,
+      "lon": 54.3773,
+      "locationName": "Abu Dhabi, United Arab Emirates",
+      "countryCode": "AE",
+      "sources": [
+        {
+          "url": "https://www.axios.com/2026/11/03/us-russia-ukraine-peace-talks-uae-trump-witkoff-kushner",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-02/us-to-hold-trilateral-talks-with-ukraine-russia-in-abu-dhabi-next-week-us-official",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thenationalnews.com/news/us/2026/11/02/russia-ukraine-witkoff-abu-dhabi/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-03T06:07:11.564Z",
+      "lastUpdated": "2026-11-03T06:07:11.564Z",
+      "expiresAt": "2026-11-07T06:07:11.564Z",
+      "isBreaking": false
+    },
+    {
+      "id": "46ebdbb59265",
+      "headline": "Byron Donalds Elected Florida Governor, First Black Republican Governor in US History",
+      "summary": "Trump-backed Rep. Byron Donalds (R) narrowly defeated Democrat David Jolly, roughly 50.0% to 48.5%, to win Florida's open governor's race on November 3. Donalds, who succeeds term-limited Gov. Ron DeSantis, becomes the first elected Black Republican governor in U.S. history.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 30.4383,
+      "lon": -84.2807,
+      "locationName": "Tallahassee, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/florida-governor-donalds-jolly-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/miami/news/florida-governor-election-2026-results-byron-donalds-david-jolly/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/florida-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f922089c1914",
+      "headline": "Texas Flips: Democrat Gina Hinojosa Elected Governor, Ousting Greg Abbott",
+      "summary": "Democratic state Rep. Gina Hinojosa defeated incumbent Gov. Greg Abbott, becoming Texas's first Democratic governor since the 1990s and its first Hispanic governor. The same night, Democrat James Talarico defeated Sen. Ken Paxton for US Senate, Texas's first Democratic Senate win since 1988, and Vikki Goodwin unseated 10-year incumbent Lt. Gov. Dan Patrick.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 30.2672,
+      "lon": -97.7431,
+      "locationName": "Austin, Texas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TX",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/texas-governor-abbott-hinojosa-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/gina-hinojosa-win-texas-governor-race-greg-abbott-upset-election-rcna603360",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/texas-2026-senate-james-talarico-ken-paxton/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-08T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -688,44 +977,6 @@
       "firstSeen": "2026-11-02T06:06:25.795Z",
       "lastUpdated": "2026-11-02T06:06:25.795Z",
       "expiresAt": "2026-11-06T06:06:25.795Z",
-      "isBreaking": false
-    },
-    {
-      "id": "f922089c1914",
-      "headline": "Texas Flips: Democrat Gina Hinojosa Elected Governor, Ousting Greg Abbott",
-      "summary": "Democratic state Rep. Gina Hinojosa defeated incumbent Gov. Greg Abbott, becoming Texas's first Democratic governor since the 1990s and its first Hispanic governor. The same night, Democrat James Talarico defeated Sen. Ken Paxton for US Senate, Texas's first Democratic Senate win since 1988, and Vikki Goodwin unseated 10-year incumbent Lt. Gov. Dan Patrick.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 30.2672,
-      "lon": -97.7431,
-      "locationName": "Austin, Texas, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TX",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/texas-governor-abbott-hinojosa-live-updates/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/2026-election/gina-hinojosa-win-texas-governor-race-greg-abbott-upset-election-rcna603360",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/texas-2026-senate-james-talarico-ken-paxton/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-04T15:29:09.407Z",
-      "expiresAt": "2026-11-08T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -850,6 +1101,46 @@
       "firstSeen": "2026-11-02T11:59:46.260Z",
       "lastUpdated": "2026-11-02T11:59:46.260Z",
       "expiresAt": "2026-11-06T11:59:46.260Z",
+      "isBreaking": false
+    },
+    {
+      "id": "605333c45d0a",
+      "headline": "David Crowley Becomes Wisconsin's First Black Governor as Democrats Win Full Trifecta",
+      "summary": "Milwaukee County Executive David Crowley (D) defeated Rep. Tom Tiffany (R) 53.4%-46.6% to become Wisconsin's first Black governor. Democrats also flipped both the state Senate and Assembly, securing a full Democratic trifecta for the first time since 2010.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://wisconsinexaminer.com/2026/11/03/crowley-wins-election-becoming-wisconsins-first-black-governor/",
+          "domain": "wisconsinexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://spectrumnews1.com/wi/milwaukee/news/2026/11/04/wisconsin-democrats-secure-trifecta-for-first-time-in-nearly-two-decades",
+          "domain": "spectrumnews1.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -1411,6 +1702,59 @@
       "isBreaking": false
     },
     {
+      "id": "ce49c3a8b87c",
+      "headline": "Kansas Governor's Race Still Uncalled; Democrat Holscher Claims Victory, Mandatory Audit Triggered",
+      "summary": "Democrat Cindy Holscher declared victory over Republican Senate President Ty Masterson in Kansas's governor's race, with her lead growing to roughly 7,045 votes (about 50.3%-49.7%). Masterson has not conceded, and the narrow margin triggers a state-mandated close-race audit.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.0473,
+      "lon": -95.6752,
+      "locationName": "Topeka, Kansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-KS",
+      "sources": [
+        {
+          "url": "https://kansasreflector.com/2026/11/04/trailing-by-less-than-1-ty-masterson-calls-for-another-look-at-results-in-kansas-governors-race/",
+          "domain": "kansasreflector.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/local/kansas-city/2026/11/04/kansas-governor-race-holscher-masterson",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://fox4kc.com/politics/your-local-election-headquarters/holscher-claims-kansas-governor-victory-race-still-too-close-to-call/",
+          "domain": "fox4kc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.npr.org/2026/11/03/g-s1-151587/kansas-senate-race-hamilton-marshall",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://johnsoncountypost.com/2026/11/04/chris-mann-attorney-general-kobach-not-conceding-300995/",
+          "domain": "johnsoncountypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 72,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
       "id": "ce44b18c9ae6",
       "headline": "Localized Ceasefire Collapses in Ukraine's Kherson Region, Russia Resumes Attacks",
       "summary": "A localized ceasefire in Ukraine's Kherson region ended, and Russian forces resumed attacks on the area, prompting fresh civilian evacuations near Oleshky. Kyiv said the truce's collapse underscores the fragility of regional de-escalation efforts.",
@@ -1614,6 +1958,45 @@
       "isBreaking": false
     },
     {
+      "id": "bc9b9366927b",
+      "headline": "Pritzker Wins Historic Third Term as Illinois Governor; Stratton Wins Open US Senate Seat",
+      "summary": "Gov. JB Pritzker (D) defeated Darren Bailey roughly 60%-37% to become the first Illinois governor elected to a third term. Lt. Gov. Juliana Stratton defeated Don Tracy for the Senate seat vacated by retiring Sen. Dick Durbin, becoming the second Black woman to serve Illinois in the U.S. Senate.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.7817,
+      "lon": -89.6501,
+      "locationName": "Springfield, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/chicago/live-updates/illinois-midterm-election-results-2026-live/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/juliana-stratton-makes-history-with-black-women-in-the-senate",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fox32chicago.com/news/illinois-election-results-pritzker-stratton-dems-among-big-winners",
+          "domain": "fox32chicago.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
       "id": "e3700a34e46b",
       "headline": "Zelensky Presses Berlin for Faster Patriot Missile Deliveries",
       "summary": "Visiting Berlin for air-defense talks, Ukrainian President Volodymyr Zelensky told German officials Ukraine faces a chronic shortage of Patriot interceptors and pressed for faster deliveries from Chancellor Merz's government.",
@@ -1663,43 +2046,6 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6dd96f5e5844",
-      "headline": "RBA Raises Cash Rate to 4.85%, Highest Since 2008",
-      "summary": "Australia's central bank raised its cash rate by 25 basis points to 4.85% on Nov 3 in a 6-3 board vote, the fifth hike of 2026, citing annual inflation at 3.7% and spillover effects from Middle East oil-price volatility.",
-      "category": "economy",
-      "severity": 3,
-      "lat": -33.8688,
-      "lon": 151.2093,
-      "locationName": "Sydney, Australia",
-      "countryCode": "AU",
-      "sources": [
-        {
-          "url": "https://www.abc.net.au/news/2026-11-03/rba-lifts-interest-rates-november-2026-highest-rate-in-18-years/107340050",
-          "domain": "abc.net.au",
-          "reliability": 86,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
-          "domain": "rba.gov.au",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.sbs.com.au/news/live-blog/rba-november-2026-interest-rates-decision-live/f6csn2n1w",
-          "domain": "sbs.com.au",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 69,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-05T06:07:11.564Z",
       "isBreaking": false
     },
     {
@@ -1789,73 +2135,6 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-04T06:07:32.098Z",
       "expiresAt": "2026-11-06T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5553069c57fe",
-      "headline": "Rubio Hosts Venezuelan FM Blanco, Reaffirms Three-Phase Transition Plan",
-      "summary": "US Secretary of State Marco Rubio met Venezuela's new Foreign Minister Oliver Blanco on Nov 2, reaffirming a three-phase stabilization, economic-recovery and democratic-transition plan for Venezuela. Rubio urged the release of political prisoners, with Foro Penal counting 344 currently detained.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 38.91,
-      "lon": -77.04,
-      "locationName": "Washington, D.C., United States",
-      "countryCode": "US",
-      "subdivision": "US-DC",
-      "sources": [
-        {
-          "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-rubios-meeting-with-venezuelan-foreign-minister-blanco",
-          "domain": "state.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://gulfnews.com/world/americas/rubio-meets-new-venezuelan-fm-urges-release-of-political-prisoners-1.500733460",
-          "domain": "gulfnews.com",
-          "reliability": 66,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.washingtontimes.com/news/2026/nov/2/marco-rubio-meets-venezuelan-counterpart-us-presses-progress-election/",
-          "domain": "washingtontimes.com",
-          "reliability": 58,
-          "bias": "right"
-        }
-      ],
-      "trustScore": 67,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-05T06:07:11.564Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6897cf18cfbd",
-      "headline": "China's CXMT Completes Validation of Next-Generation 4F2 DRAM Chip",
-      "summary": "Chinese memory maker CXMT completed engineering-sample verification of its sixth-generation 4F2-architecture DRAM chip in early November, targeting DDR5 server modules by year-end. The breakthrough intensifies competition with Samsung and SK Hynix amid a global chip market selloff.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 35.9,
-      "lon": 104.2,
-      "locationName": "Hefei, Anhui, China",
-      "countryCode": "CN",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-10-13/china-s-cxmt-claims-memory-breakthrough-ahead-of-samsung-hynix",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://asia.nikkei.com/business/tech/semiconductors/memory-breakthrough-by-china-s-cxmt-puts-chip-rivals-on-back-foot",
-          "domain": "nikkei.com",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 67,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-05T06:07:11.564Z",
       "isBreaking": false
     },
     {
@@ -1977,6 +2256,52 @@
       "isBreaking": false
     },
     {
+      "id": "1dcd1b752de4",
+      "headline": "Republican Mike Mazzei Wins Oklahoma Governor's Race as Democrats Flip 6 House Seats",
+      "summary": "Republican Mike Mazzei defeated Democratic House Minority Leader Cyndi Munson 51.9%-45.9% to win Oklahoma's governor's race. Democrats flipped six GOP-held state House seats, their largest legislative gain in two decades, though Republicans retain their supermajority.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://thehill.com/homenews/6185051-mike-mazzei-oklahoma-governor/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://nondoc.com/2026/11/03/new-slate-of-8-mazzei-defeats-munson-republicans-sweep-statewide-offices/",
+          "domain": "nondoc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.newson6.com/oklahoma-politics/oklahoma-republicans-retain-control-as-democrats-flip-six-state-house-seats",
+          "domain": "newson6.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 64,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
       "id": "500bb41b4eb2",
       "headline": "New York State Reports First Measles Death in Over 30 Years",
       "summary": "Health officials in Lewis County, New York, confirmed the state's first measles-associated death in more than three decades. The case has intensified concern over declining vaccination rates in the US.",
@@ -2014,6 +2339,100 @@
       "isBreaking": false
     },
     {
+      "id": "cb00228a4411",
+      "headline": "Julia Letlow Becomes First Republican Woman Elected to US Senate From Louisiana",
+      "summary": "Rep. Julia Letlow (R) narrowly defeated Democrat Jamie Davis 51%-49% for Louisiana's open U.S. Senate seat, becoming the first Republican woman elected to the Senate from Louisiana. Her vacated 5th Congressional District seat now heads to a December 12 runoff between Democrat Pat Moore and Republican Gabe Firment.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 30.4515,
+      "lon": -91.1871,
+      "locationName": "Baton Rouge, Louisiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-LA",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-senate-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.wwno.org/politics/2026-11-03/julia-letlow-narrowly-wins-louisiana-u-s-senate-seat-in-tighter-race-than-expected",
+          "domain": "wwno.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/04/julia-letlow-projected-win-louisiana-senate-race/",
+          "domain": "wafb.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://lailluminator.com/2026/11/03/5th-district/",
+          "domain": "lailluminator.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "636fdaaeb211",
+      "headline": "Jonathan Kreiss-Tomkins (D) Elected Alaska Governor, Flipping Governor's Seat",
+      "summary": "Democrat Jonathan Kreiss-Tomkins, 37, won Alaska's governor's race with 49.1% of the vote, defeating Republican Bernadette Wilson's 29.2%, becoming the state's first Democratic governor since 2002 and its youngest ever. A ballot measure imposing a citizenship-only voting requirement was passing with roughly 70% support.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 58.3019,
+      "lon": -134.4197,
+      "locationName": "Juneau, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.adn.com/politics/2026/11/03/democrat-kreiss-tomkins-takes-early-lead-in-alaska-governors-race-as-ballot-counting-begins/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/11/03/jonathan-kreiss-tomkins-leading-in-alaskas-gubernatorial-race-in-early-results/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ktoo.org/2026/11/03/democrat-jonathan-kreiss-tomkins-leads-in-alaska-governors-race-2/",
+          "domain": "ktoo.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
       "id": "2303a1993104",
       "headline": "Taiwan Tightens Military Draft Exemption Rules Amid Rising Tensions With China",
       "summary": "Taiwan has altered its draft exemption rules to add thousands more personnel to its armed forces, as China conducts a record surge in military activity around the island. The policy shift reflects growing concern over cross-strait tensions.",
@@ -2044,81 +2463,42 @@
       "isBreaking": false
     },
     {
-      "id": "79a629e068c0",
-      "headline": "Sen. Chris Murphy Hospitalized After Suffering Stroke in Connecticut",
-      "summary": "Sen. Chris Murphy, 53, experienced arm numbness on Nov. 1 at his son's hockey game in Connecticut and was taken to a local hospital, where doctors determined he'd had a stroke. He was transferred to Johns Hopkins in Baltimore for monitoring; his office says he is awake, alert, and expected to make a full recovery.",
-      "category": "health",
-      "severity": 3,
-      "lat": 41.7658,
-      "lon": -72.6734,
-      "locationName": "Hartford, Connecticut, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CT",
-      "sources": [
-        {
-          "url": "https://ctmirror.org/2026/11/01/u-s-sen-chris-murphy-hospitalized-after-having-a-stroke/",
-          "domain": "ctmirror.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.cbsnews.com/news/chris-murphy-stroke-hospitalized/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/01/nx-s1-6025467/chris-murphy-stroke",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ce49c3a8b87c",
-      "headline": "Kansas Elects First Democratic US Senator Since 1932; Governor's Race Still Undecided",
-      "summary": "Democrat Adam Hamilton defeated incumbent Republican Sen. Roger Marshall in Kansas's most expensive race in state history, about $110 million. The governor's race between Democrat Cindy Holscher and Republican Ty Masterson remains too close to call with about 98% counted, while Democrat Chris Mann has declared victory for attorney general over incumbent Kris Kobach, who has not conceded.",
+      "id": "4ca6d8fb15ff",
+      "headline": "Democrat Hannah Pingree Elected Maine Governor",
+      "summary": "Democrat Hannah Pingree, Maine's former House speaker, won the state's open governor's race on November 3, defeating Republican Bobby Charles and independent Rick Bennett roughly 55% to 37% to 8%. She succeeds term-limited Gov. Janet Mills in January 2027.",
       "category": "politics",
       "severity": 3,
-      "lat": 39.0473,
-      "lon": -95.6752,
-      "locationName": "Topeka, Kansas, USA",
+      "lat": 44.3106,
+      "lon": -69.7795,
+      "locationName": "Augusta, Maine, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-KS",
+      "subdivision": "US-ME",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/11/03/g-s1-151587/kansas-senate-race-hamilton-marshall",
-          "domain": "npr.org",
-          "reliability": 87,
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/maine-governor-charles-pingree-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://www.axios.com/local/kansas-city/2026/11/04/kansas-governor-race-holscher-masterson",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
+          "url": "https://www.nbcnews.com/politics/2026-elections/maine-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
         },
         {
-          "url": "https://johnsoncountypost.com/2026/11/04/chris-mann-attorney-general-kobach-not-conceding-300995/",
-          "domain": "johnsoncountypost.com",
+          "url": "https://wgme.com/news/local/democrat-hannah-pingree-declares-victory-as-republican-bobby-charles-independent-rick-bennett-concede-in-maine-gubernatorial-race",
+          "domain": "wgme.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 60,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-04T15:29:09.407Z",
-      "expiresAt": "2026-11-06T15:29:09.407Z",
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -2223,36 +2603,6 @@
       "isBreaking": false
     },
     {
-      "id": "91f8c464f9a8",
-      "headline": "Thousands Rally in New Delhi Demanding Resignation of India's Election Chief",
-      "summary": "Opposition leader Rahul Gandhi led a rally in New Delhi on Nov 1 demanding the resignation of Chief Election Commissioner Gyanesh Kumar over a voter-roll revision that purged more than 130 million names. The opposition alleges the revision disproportionately benefits the ruling BJP.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 28.6139,
-      "lon": 77.209,
-      "locationName": "New Delhi, India",
-      "countryCode": "IN",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/1/thousands-rally-in-delhi-demanding-indias-election-chief-resign",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/01/thousands-join-indian-protest-demanding-election-chiefs-resignation-.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 56,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-05T06:07:11.564Z",
-      "isBreaking": false
-    },
-    {
       "id": "3d45012d633b",
       "headline": "Ethiopia Expels Sudanese Diplomats Over RSF Support Allegations",
       "summary": "Ethiopia expelled Sudanese diplomats from Addis Ababa after fresh allegations that Sudanese officials supported the paramilitary Rapid Support Forces. The move adds diplomatic strain amid Sudan's ongoing civil war.",
@@ -2321,117 +2671,43 @@
       "isBreaking": false
     },
     {
-      "id": "2b715353444b",
-      "headline": "PAHO Warns of Dengue and Chikungunya Resurgence Across the Americas",
-      "summary": "The Pan American Health Organization reports 1.69 million suspected dengue cases across the Americas as of mid-September 2026, including 3,413 severe cases and 571 deaths. Chikungunya is also resurging in Guyana, French Guiana, Suriname and Paraguay, prompting a US CDC health advisory.",
-      "category": "health",
-      "severity": 3,
-      "lat": -5,
-      "lon": -60,
-      "locationName": "Americas (Regional)",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.paho.org/en/news/21-10-2026-paho-calls-strengthened-surveillance-and-preparedness-amid-increases-dengue-and",
-          "domain": "paho.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.cdc.gov/han/php/notices/han00523.html",
-          "domain": "cdc.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cidrap.umn.edu/chikungunya/paho-warns-rising-chikungunya-cases-americas-some-fatal",
-          "domain": "umn.edu",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-05T06:07:11.564Z",
-      "isBreaking": false
-    },
-    {
-      "id": "69d8198069da",
-      "headline": "UN Peacekeeping Mission in Western Sahara Ends After 35 Years",
-      "summary": "The UN Security Council failed to renew the mandate of MINURSO, its peacekeeping mission in Western Sahara, triggering a wind-down that began Nov 1 after 35 years of operation.",
+      "id": "a055ac9b29b0",
+      "headline": "Tommy Tuberville Elected Alabama Governor; Republicans Retain Open US Senate Seat",
+      "summary": "Sen. Tommy Tuberville (R) defeated Democrat Doug Jones 52%-48% to become Alabama's governor. Republican Rep. Barry Moore won the open U.S. Senate seat Tuberville vacated, defeating Democrat Everett Wess roughly 54%-45%, meaning Republicans retained the seat.",
       "category": "politics",
       "severity": 3,
-      "lat": 27.15,
-      "lon": -13.2,
-      "locationName": "Laayoune, Western Sahara",
-      "countryCode": "EH",
+      "lat": 32.3792,
+      "lon": -86.3077,
+      "locationName": "Montgomery, Alabama, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AL",
       "sources": [
         {
-          "url": "https://news.un.org/en/story/2026/11/1168717",
-          "domain": "un.org",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://cphpost.dk/2026-11-02/global/un-peacekeeping-mission-in-western-sahara-ends-after-35-years/",
-          "domain": "cphpost.dk",
+          "url": "https://www.wsfa.com/2026/11/04/barry-moore-projected-win-alabamas-open-us-senate-seat/",
+          "domain": "wsfa.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.moroccoworldnews.com/2026/11/344638/western-sahara-minurso-mandate-officially-ends-after-35-years/",
-          "domain": "moroccoworldnews.com",
+          "url": "https://aldailynews.com/republican-barry-moore-wins-alabamas-us-senate-seat/",
+          "domain": "aldailynews.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/alabama-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
         }
       ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-05T06:07:11.564Z",
-      "isBreaking": false
-    },
-    {
-      "id": "821b519c4d93",
-      "headline": "Niger Receives First Algerian Fuel Convoy Under Joint Military Escort",
-      "summary": "Around 53-60 Algerian fuel trucks carrying roughly 1.65 million liters arrived in Agadez, Niger, on Oct 31-Nov 1 under joint military escort, marking Algeria's first troop deployment abroad since 1973.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 16.97,
-      "lon": 7.99,
-      "locationName": "Agadez, Niger",
-      "countryCode": "NE",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-02/niger-gets-first-algerian-fuel-shipment-escorted-by-troops",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.africanews.com/2026/11/02/niger-algerian-military-personnel-have-arrived-in-agadez-africanews-today/",
-          "domain": "africanews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://thesoufancenter.org/intelbrief-2026-november-3/",
-          "domain": "thesoufancenter.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-03T06:07:11.564Z",
-      "expiresAt": "2026-11-05T06:07:11.564Z",
+      "trustScore": 54,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -2511,83 +2787,43 @@
       "isBreaking": false
     },
     {
-      "id": "158a7a7dede6",
-      "headline": "Thornton Man Charged With Murder in Fatal Halloween-Night Shooting Near CU Boulder",
-      "summary": "Boulder police arrested 18-year-old Omar Perez of Thornton on Nov. 2, 2026, charging him with first-degree murder, assault and attempted murder in connection with a Halloween-night shooting at a party in Boulder's University Hill neighborhood. The shooting killed 19-year-old CU Boulder student Luca Hanlon and wounded a second student; it is reportedly Boulder's first homicide of 2026.",
-      "category": "society",
+      "id": "472e17f11e3a",
+      "headline": "Record Flash Flooding on Toccoa River Triggers Rescues, Evacuations in North Georgia",
+      "summary": "Torrential overnight rain sent the Toccoa River to a record crest early November 5, triggering what officials called a catastrophic flood event in McCaysville and surrounding north Georgia and southern Tennessee communities. Roughly 30 water rescues were conducted, schools closed, an emergency shelter opened, and a state of emergency was declared.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 40.0076,
-      "lon": -105.2659,
-      "locationName": "Boulder, Colorado, USA",
+      "lat": 34.987,
+      "lon": -84.3741,
+      "locationName": "McCaysville, Georgia, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-CO",
+      "subdivision": "US-GA",
       "sources": [
         {
-          "url": "https://www.cpr.org/2026/11/02/cu-boulder-halloween-shooting/",
-          "domain": "cpr.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.axios.com/local/boulder/2026/11/02/boulder-shooting-university-hill-arrest",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.denvergazette.com/2026/11/02/man-arrested-in-halloween-shooting-that-killed-cu-boulder-student/",
-          "domain": "denvergazette.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "0b36844a49de",
-      "headline": "Washington Reports Fatal Human H5N1 Bird Flu Case in Yakima County Dairy Worker",
-      "summary": "A Yakima County resident with underlying health conditions died on or around Nov. 1, 2026, after exposure to H5N1-infected dairy cattle, the first US avian influenza death of 2026 and Washington's second fatal avian-flu infection within roughly a year. The Yakima Health District also confirmed a third human case in the county; the outbreak has affected roughly 33 dairy herds in Washington since Oct. 8.",
-      "category": "health",
-      "severity": 3,
-      "lat": 46.6021,
-      "lon": -120.5059,
-      "locationName": "Yakima, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://www.cnn.com/2026/11/02/health/bird-flu-death-2026",
+          "url": "https://www.cnn.com/2026/11/05/weather/flooding-georgia-tennessee-mccaysville-copperhill-climate",
           "domain": "cnn.com",
           "reliability": 75,
           "bias": "center-left"
         },
         {
-          "url": "https://www.contagionlive.com/view/washington-reports-first-us-avian-influenza-death-of-2026-in-yakima-county",
-          "domain": "contagionlive.com",
+          "url": "https://www.wsbtv.com/news/local/live-updates-flash-flooding-north-georgia-closes-roads-forces-families-homes/AOJASI7HH5BVJAFJAKRTCPHNIM/",
+          "domain": "wsbtv.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.cidrap.umn.edu/avian-influenza-bird-flu/preliminary-human-bird-flu-case-reported-washington-state",
-          "domain": "umn.edu",
+          "url": "https://www.fox5atlanta.com/news/flash-flooding-triggers-evacuations-rescues-north-georgia",
+          "domain": "fox5atlanta.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 53,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -2618,6 +2854,39 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-04T06:07:32.098Z",
       "expiresAt": "2026-11-06T06:07:32.098Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dda518f40fb4",
+      "headline": "Democrat Aaron Ford Elected Nevada Governor as Democrats Sweep Statewide Offices",
+      "summary": "Democratic Attorney General Aaron Ford defeated Republican incumbent Gov. Joe Lombardo to become Nevada's first Black governor. Democrats also won lieutenant governor, attorney general and treasurer, and held secretary of state, marking a full statewide sweep for the first time in decades.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.1638,
+      "lon": -119.7674,
+      "locationName": "Carson City, Nevada, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NV",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/11/04/g-s1-151138/midterms-ford-nevada-governor-lombardo",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://thenevadaindependent.com/article/nevada-democrats-lead-governors-race-sweep-other-statewide-offices-in-historic-night",
+          "domain": "thenevadaindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -2652,33 +2921,164 @@
       "isBreaking": false
     },
     {
-      "id": "dda518f40fb4",
-      "headline": "Democrat Aaron Ford Elected Nevada Governor as Democrats Sweep Statewide Offices",
-      "summary": "Democratic Attorney General Aaron Ford defeated Republican incumbent Gov. Joe Lombardo to become Nevada's first Black governor. Democrats also won lieutenant governor, attorney general and treasurer, and held secretary of state, marking a full statewide sweep for the first time in decades.",
+      "id": "ee89e8b43296",
+      "headline": "Phil Scott Wins Record 6th Term as Vermont Governor Amid Democratic Legislative Gains",
+      "summary": "Republican Gov. Phil Scott won a record sixth term on November 3, defeating Democrat Amanda Janoo roughly 52%-45%. Vermont Democrats simultaneously regained veto-proof supermajorities in both legislative chambers.",
       "category": "politics",
       "severity": 3,
-      "lat": 39.1638,
-      "lon": -119.7674,
-      "locationName": "Carson City, Nevada, USA",
+      "lat": 44.2601,
+      "lon": -72.5754,
+      "locationName": "Montpelier, Vermont, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-NV",
+      "subdivision": "US-VT",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/11/04/g-s1-151138/midterms-ford-nevada-governor-lombardo",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
+          "url": "https://vtdigger.org/2026/11/03/republican-phil-scott-wins-record-6th-term-as-vermonts-governor/",
+          "domain": "vtdigger.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://thenevadaindependent.com/article/nevada-democrats-lead-governors-race-sweep-other-statewide-offices-in-historic-night",
-          "domain": "thenevadaindependent.com",
+          "url": "https://www.vermontpublic.org/local-news/2026-11-04/democrats-retake-supermajorities-vermont-legislature",
+          "domain": "vermontpublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcax.com/2026/11/04/scott-defeats-janoo-reelected-record-sixth-term/",
+          "domain": "wcax.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 50,
+      "trustScore": 49,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d88aa80f7e38",
+      "headline": "Missouri Democrats Break GOP Supermajority; Voters Reject Abortion Rollback, Pass Amendment 6",
+      "summary": "Missouri Democrats flipped 16 state House seats, their largest gain since 1974, ending the Republican legislative supermajority though the GOP retains a 95-68 majority. Voters also rejected Amendment 3, which would have rolled back 2024 abortion-rights protections, and approved Amendment 6, requiring an 80% supermajority to alter voter-approved ballot measures.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.5767,
+      "lon": -92.1735,
+      "locationName": "Jefferson City, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.kctv5.com/2026/11/05/missouri-democrats-break-republican-supermajority-with-largest-house-gain-since-1974/",
+          "domain": "kctv5.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://missouriindependent.com/2026/11/04/democrats-flip-16-missouri-house-seats-ending-republican-supermajority/",
+          "domain": "missouriindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ky3.com/2026/11/04/missouri-voters-reject-amendment-3-upholding-reproductive-rights-blocking-proposed-constitutional-bans/",
+          "domain": "ky3.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3e055e97f349",
+      "headline": "Sarah Huckabee Sanders Wins Re-Election as Arkansas Governor",
+      "summary": "Gov. Sarah Huckabee Sanders (R) won a second term on November 3, defeating Democrat Fred Love 53.9%-38.6% and Libertarian Colt Shelby 7.5%, as Republicans swept Arkansas's statewide offices.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 34.7465,
+      "lon": -92.2896,
+      "locationName": "Little Rock, Arkansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AR",
+      "sources": [
+        {
+          "url": "https://www.5newsonline.com/article/news/politics/elections/race-for-arkansas-governor-live-results-nov-3-2026/527-296c3385-0347-4a8e-9df3-20d253956bf9",
+          "domain": "5newsonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kait8.com/2026/11/04/ap-calls-arkansas-governors-race-sanders/",
+          "domain": "kait8.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arkansasonline.com/news/2026/nov/03/sanders-wins-reelection-defeating-love-and-shelby/",
+          "domain": "arkansasonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b7b9e0b9ebd3",
+      "headline": "Whistleblower Alleges Sanctioned Russian Firm Secretly Financed Alaska Gas Project",
+      "summary": "Former Polar LNG CEO Joel Riddle told the New York Times he resigned after discovering Russian energy giant Novatek, partially sanctioned over the Ukraine war, was financing and directing an Alaska North Slope gas export project despite being told funding came from a UAE firm. The allegations could trigger a US Treasury sanctions probe into the Trump-administration-linked deal; Polar LNG calls the claims unfounded and says it is investigating.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 70.33,
+      "lon": -149.72,
+      "locationName": "North Slope, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.adn.com/business-economy/energy/2026/10/28/former-ceo-alleges-russian-company-financed-alaska-project-raising-risk-of-us-sanctions-violations-polar-lng-denies-the-claims/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://alaskapublic.org/news/economy/energy/2026-11-03/russian-energy-giant-secretly-funded-alaska-natural-gas-project-according-to-new-york-times",
+          "domain": "alaskapublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://kyivindependent.com/sanctioned-russian-energy-giant-secretly-funded-us-gas-project-nyt-reports/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
       "firstSeen": "2026-11-04T15:29:09.407Z",
       "lastUpdated": "2026-11-04T15:29:09.407Z",
       "expiresAt": "2026-11-06T15:29:09.407Z",
@@ -2763,211 +3163,6 @@
       "isBreaking": false
     },
     {
-      "id": "b7b9e0b9ebd3",
-      "headline": "Whistleblower Alleges Sanctioned Russian Firm Secretly Financed Alaska Gas Project",
-      "summary": "Former Polar LNG CEO Joel Riddle told the New York Times he resigned after discovering Russian energy giant Novatek, partially sanctioned over the Ukraine war, was financing and directing an Alaska North Slope gas export project despite being told funding came from a UAE firm. The allegations could trigger a US Treasury sanctions probe into the Trump-administration-linked deal; Polar LNG calls the claims unfounded and says it is investigating.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 70.33,
-      "lon": -149.72,
-      "locationName": "North Slope, Alaska, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AK",
-      "sources": [
-        {
-          "url": "https://www.adn.com/business-economy/energy/2026/10/28/former-ceo-alleges-russian-company-financed-alaska-project-raising-risk-of-us-sanctions-violations-polar-lng-denies-the-claims/",
-          "domain": "adn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://alaskapublic.org/news/economy/energy/2026-11-03/russian-energy-giant-secretly-funded-alaska-natural-gas-project-according-to-new-york-times",
-          "domain": "alaskapublic.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://kyivindependent.com/sanctioned-russian-energy-giant-secretly-funded-us-gas-project-nyt-reports/",
-          "domain": "kyivindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-04T15:29:09.407Z",
-      "expiresAt": "2026-11-06T15:29:09.407Z",
-      "isBreaking": false
-    },
-    {
-      "id": "46722b694891",
-      "headline": "Virginia Voters Decide Amendments on Felon Voting Rights, Abortion, Same-Sex Marriage",
-      "summary": "Virginia's Nov. 3, 2026 ballot included a constitutional amendment to automatically restore voting rights to people upon release from incarceration, ending the current system requiring individual governor approval. Two companion amendments addressed reproductive rights and marriage equality; all three were referred to voters by the General Assembly.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 37.5407,
-      "lon": -77.436,
-      "locationName": "Richmond, Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-VA",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/2026_Virginia_Voting_Rights_Restoration_Amendment",
-          "domain": "wikipedia.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wsls.com/news/local/2026/10/30/virginia-voters-will-decide-whether-felons-should-automatically-regain-the-right-to-vote-after-release/",
-          "domain": "wsls.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.vpm.org/news/2026-09-07/va-constitution-civil-voting-rights-felony-conviction-criminal-justice/",
-          "domain": "vpm.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "839f9d5236ef",
-      "headline": "Federal and State Agents Raid Twin Cities Autism Service Providers in Medicaid Fraud Probe",
-      "summary": "State and federal agents, including the FBI, HHS-OIG, and Minnesota's AG Medicaid Fraud Control Unit, executed search warrants in late October 2026 at Iska Inc. in St. Louis Park and Bright Horizon Therapy Center in Edina, two autism-therapy providers accused of large-scale Medicaid overbilling. The raids followed an earlier spring round targeting additional centers, part of a broader multi-count fraud crackdown.",
-      "category": "society",
-      "severity": 3,
-      "lat": 44.9483,
-      "lon": -93.3475,
-      "locationName": "St. Louis Park, Minnesota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MN",
-      "sources": [
-        {
-          "url": "https://www.ag.state.mn.us/Office/Communications/2026/10/29_Medicaid-Fraud.asp",
-          "domain": "mn.us",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kare11.com/article/news/investigations/fraud/state-federal-agents-raid-2-businesses-suspected-of-autism-fraud/89-6aa8b711-592c-4991-aff0-ebdbcf8b8103",
-          "domain": "kare11.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.fox9.com/news/feds-raid-businesses-part-medicaid-fraud-investigations",
-          "domain": "fox9.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "3805423f5a58",
-      "headline": "Atmospheric River Triggers Flash Flooding, Evacuations in Northern New Mexico and Southeast Utah",
-      "summary": "An atmospheric-river storm triggered severe flash flooding Nov. 1-3, 2026, across northern New Mexico, where the Rio Chama overflowed its banks, forcing evacuation of hundreds of Chama-area residents and closing US-64/84. In southeastern Utah's San Juan County, historic flooding washed out roads including the Comb Wash bridge and prompted shelter-in-place orders in Bluff.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 36.9048,
-      "lon": -106.5783,
-      "locationName": "Chama, New Mexico, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NM",
-      "sources": [
-        {
-          "url": "https://www.krqe.com/news/new-mexico/floodwaters-force-evacuations-for-hundreds-of-residents-in-chama/",
-          "domain": "krqe.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.sltrib.com/news/2026/11/03/flooding-san-juan-county-sparks/",
-          "domain": "sltrib.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.abc4.com/news/southern-utah/significant-historic-flood-san-juan-county-bluff/",
-          "domain": "abc4.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4f64fa1ec7b7",
-      "headline": "LA and Long Beach Port Security Workers' Strike Delayed to Nov. 4 Deadline as Talks Continue",
-      "summary": "Port employers and ILWU Local 26, representing roughly 250 maritime watchmen and security workers, extended their contract negotiation deadline from Nov. 1 to 5 p.m. Pacific on Nov. 4, 2026, temporarily averting a strike. The terminals they guard handle roughly 85% of Long Beach's and 33% of LA's cargo.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 33.74,
-      "lon": -118.26,
-      "locationName": "Los Angeles, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.freightwaves.com/news/strike-threat-by-port-security-workers-at-los-angeles-long-beach",
-          "domain": "freightwaves.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://gcaptain.com/strike-threat-at-los-angeles-long-beach-ports-delayed-as-union-and-employers-extend-talks/",
-          "domain": "gcaptain.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.bairdmaritime.com/shipping/ports/strike-averted-at-los-angeles-and-long-beach-ports-after-deadline-extension",
-          "domain": "bairdmaritime.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
       "id": "4958dc83be5c",
       "headline": "Syria and Saudi Arabia Sign Defense Pact and $403 Million Loan Deal",
       "summary": "Syria's interim president Ahmed al-Sharaa visited Riyadh, where Syrian and Saudi defense ministries signed a cooperation agreement and Saudi Arabia pledged $403 million in loans. The deal underscores Gulf states' growing engagement with Syria's post-war government.",
@@ -3027,6 +3222,40 @@
       "firstSeen": "2026-11-05T06:06:55.832Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e56e305cf734",
+      "headline": "Utah Legislature Sees Democratic Gains; Ben McAdams Wins Back US House Seat",
+      "summary": "Early results showed roughly 15 Democratic and unaffiliated challengers leading or defeating Republican state legislative incumbents in historically GOP-dominated Utah. Democrat Ben McAdams won Utah's 1st Congressional District, and voters passed Amendment A removing newspaper-publication requirements from the state constitution while rejecting Amendment B, which would have raised the threshold for tax-related ballot initiatives.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.7608,
+      "lon": -111.891,
+      "locationName": "Salt Lake City, Utah, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-UT",
+      "sources": [
+        {
+          "url": "https://utahnewsdispatch.com/2026/11/03/utah-legislature-2026-election-results/",
+          "domain": "utahnewsdispatch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kuer.org/politics-government/2026-11-03/election-2026-utah-results-amendment-b-fails-amendment-a",
+          "domain": "kuer.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -3187,108 +3416,6 @@
       "firstSeen": "2026-11-05T06:06:55.832Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e56e305cf734",
-      "headline": "Utah Legislature Sees Democratic Gains; Ben McAdams Wins Back US House Seat",
-      "summary": "Early results showed roughly 15 Democratic and unaffiliated challengers leading or defeating Republican state legislative incumbents in historically GOP-dominated Utah. Democrat Ben McAdams won Utah's 1st Congressional District, and voters passed Amendment A removing newspaper-publication requirements from the state constitution while rejecting Amendment B, which would have raised the threshold for tax-related ballot initiatives.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 40.7608,
-      "lon": -111.891,
-      "locationName": "Salt Lake City, Utah, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-UT",
-      "sources": [
-        {
-          "url": "https://utahnewsdispatch.com/2026/11/03/utah-legislature-2026-election-results/",
-          "domain": "utahnewsdispatch.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kuer.org/politics-government/2026-11-03/election-2026-utah-results-amendment-b-fails-amendment-a",
-          "domain": "kuer.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-04T15:29:09.407Z",
-      "expiresAt": "2026-11-06T15:29:09.407Z",
-      "isBreaking": false
-    },
-    {
-      "id": "176f4efa4bec",
-      "headline": "Pennsylvania Legislature Control at Stake as Democrats Eye First Senate Majority Since 1978",
-      "summary": "Pennsylvania voters elected all 203 state House members and half the 50-seat state Senate on Nov. 3, 2026. Democrats held a narrow 103-100 House majority entering the election and sought to flip four GOP-held Senate seats, which combined with the governorship would create a Democratic trifecta.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 40.2732,
-      "lon": -76.8867,
-      "locationName": "Harrisburg, Pennsylvania, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-PA",
-      "sources": [
-        {
-          "url": "https://whyy.org/articles/pennsylvania-election-2026-state-house-senate-harrisburg-power-democratic-republican-parties/",
-          "domain": "whyy.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://ballotpedia.org/Pennsylvania_State_Senate_elections,_2026",
-          "domain": "ballotpedia.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
-      "isBreaking": false
-    },
-    {
-      "id": "7ce2544d8d14",
-      "headline": "Ohio Voters Decide Open Governor's Race Between Ramaswamy and Acton, Plus Voter ID Amendment",
-      "summary": "Ohio's Nov. 3, 2026 ballot featured an open-seat governor's race between Republican Vivek Ramaswamy and Democrat Amy Acton, former state health director, with pre-election polling showing Acton leading by roughly 5 points. Ohio Issue 3, a GOP-backed constitutional amendment enshrining the state's photo voter ID requirement, also appeared on the ballot.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 39.9612,
-      "lon": -82.9988,
-      "locationName": "Columbus, Ohio, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OH",
-      "sources": [
-        {
-          "url": "https://ohiocapitaljournal.com/2026/11/01/ohio-governor-candidate-amy-acton-calls-vivek-ramaswamys-attack-ad-absolutely-despicable/",
-          "domain": "ohiocapitaljournal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/2026_Ohio_Issue_3",
-          "domain": "wikipedia.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-03T15:27:52.809Z",
-      "expiresAt": "2026-11-05T15:27:52.809Z",
       "isBreaking": false
     },
     {
@@ -3701,6 +3828,100 @@
       "isBreaking": false
     },
     {
+      "id": "29ae99d183cd",
+      "headline": "Wyoming Voters Reject Property-Tax Cut Proposition 1 as Eric Barlow Wins Governor's Race",
+      "summary": "Republican Eric Barlow won Wyoming's open governor's race with 68.6% of the vote, succeeding term-limited Gov. Mark Gordon. Voters separately rejected Proposition 1, a proposed 50% cut to residential property taxes, by roughly 57%-43%.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 41.14,
+      "lon": -104.8202,
+      "locationName": "Cheyenne, Wyoming, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WY",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/wyoming-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://wtop.com/national/2026/11/republican-eric-barlow-wins-election-for-governor-in-wyoming/",
+          "domain": "wtop.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://cowboystatedaily.com/2026/11/03/voters-reject-proposition-1-to-cut-wyoming-property-tax-50/",
+          "domain": "cowboystatedaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wyofile.com/no-new-property-tax-cut-wyoming-voters-defeat-proposition-1/",
+          "domain": "wyofile.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T03:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8b6c19086c10",
+      "headline": "Gov. Josh Green Wins Landslide Re-Election; Green Party Makes History in Hawaii Legislature",
+      "summary": "Gov. Josh Green (D) won re-election in a landslide, defeating Republican Gary Cordery with about 74% of the vote. In West Maui, Green Party candidate Pa'ele Kiakona unseated Democratic incumbent Rep. Elle Cochran by 107 votes, becoming the first third-party candidate elected to Hawaii's Legislature since statehood.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 21.3069,
+      "lon": -157.8583,
+      "locationName": "Honolulu, Hawaii, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-HI",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/hawaii-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.sfchronicle.com/news/politics/article/democrat-josh-green-wins-reelection-for-governor-22510909.php",
+          "domain": "sfchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.civilbeat.org/2026/11/hawaii-green-party-candidate-makes-history-edges-democrat/",
+          "domain": "civilbeat.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.hawaiipublicradio.org/local-news/2026-11-04/5-takeaways-from-hawai%CA%BBis-midterm-election",
+          "domain": "hawaiipublicradio.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T03:28:00.613Z",
+      "isBreaking": false
+    },
+    {
       "id": "82bc1fcfa0b7",
       "headline": "Bomb Threats Disrupt Multiple Flights Across Poland, Spain and Bulgaria",
       "summary": "A wave of bomb threats forced the evacuation and diversion of several flights across Europe, including in Warsaw, Spain and Bulgaria. No explosives were found, and authorities are investigating the source of the coordinated threats.",
@@ -3735,6 +3956,38 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-04T06:07:32.098Z",
       "expiresAt": "2026-11-05T18:07:32.098Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6c4ed1454e8a",
+      "headline": "Wes Moore Wins Second Term as Maryland Governor in Landslide",
+      "summary": "Democrat Wes Moore defeated Republican Dan Cox by about 29 points, roughly 62.6%-33%, in a rematch of their 2022 race; Lt. Gov. Aruna Miller was also re-elected. Moore now faces a projected $3 billion state budget shortfall in his second term.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 38.9784,
+      "lon": -76.4922,
+      "locationName": "Annapolis, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/baltimore/news/wes-moore-defeats-dan-cox-second-term-maryland-governor/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/maryland-governor-cox-moore-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T03:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -3775,32 +4028,80 @@
       "isBreaking": false
     },
     {
-      "id": "6c4ed1454e8a",
-      "headline": "Wes Moore Wins Second Term as Maryland Governor in Landslide",
-      "summary": "Democrat Wes Moore defeated Republican Dan Cox by about 29 points, roughly 62.6%-33%, in a rematch of their 2022 race; Lt. Gov. Aruna Miller was also re-elected. Moore now faces a projected $3 billion state budget shortfall in his second term.",
+      "id": "f9888260444c",
+      "headline": "Helena Foulkes Wins Rhode Island Governor's Race; Voters Reject Two Bond Measures",
+      "summary": "Democrat Helena Foulkes won Rhode Island's governorship in a landslide on November 3, defeating independent Ken Block and Republican Aaron Guckian. Voters approved $450 million in bonds but rejected two of five bond questions worth $150 million, the state's first bond rejection in 20 years.",
       "category": "politics",
       "severity": 2,
-      "lat": 38.9784,
-      "lon": -76.4922,
-      "locationName": "Annapolis, Maryland, USA",
+      "lat": 41.824,
+      "lon": -71.4128,
+      "locationName": "Providence, Rhode Island, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-MD",
+      "subdivision": "US-RI",
       "sources": [
         {
-          "url": "https://www.cbsnews.com/baltimore/news/wes-moore-defeats-dan-cox-second-term-maryland-governor/",
+          "url": "https://www.wbur.org/news/2026/11/04/rhode-island-governor-helena-foulkes-wins",
+          "domain": "wbur.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wpri.com/news/elections/helena-foulkes-wins-election-for-ri-governor/",
+          "domain": "wpri.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://rhodeislandcurrent.com/2026/11/03/rhode-island-voters-reject-two-bond-questions-approve-450-million-in-borrowing/",
+          "domain": "rhodeislandcurrent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/05/metro/ri-ballot-questions-rejected-economic-development-data-centers/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T03:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "286d24b87b85",
+      "headline": "Amy Klobuchar Elected Minnesota's First Female Governor",
+      "summary": "US Sen. Amy Klobuchar (D) defeated Minnesota House Speaker Lisa Demuth (R) roughly 57%-43% in the open-seat race after Gov. Tim Walz declined to seek a third term. Klobuchar becomes Minnesota's first female governor.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 44.9537,
+      "lon": -93.09,
+      "locationName": "St. Paul, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/senator-amy-klobuchar-minnesota-governor-democrat-win-demuth-rcna603339",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/minnesota/news/klobuchar-wins-minnesota-governor-race-cbs-news-projects/",
           "domain": "cbsnews.com",
           "reliability": 82,
           "bias": "center"
-        },
-        {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/maryland-governor-cox-moore-live-updates/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
         }
       ],
-      "trustScore": 58,
+      "trustScore": 57,
       "firstSeen": "2026-11-04T15:29:09.407Z",
       "lastUpdated": "2026-11-04T15:29:09.407Z",
       "expiresAt": "2026-11-06T03:29:09.407Z",
@@ -3929,32 +4230,40 @@
       "isBreaking": false
     },
     {
-      "id": "286d24b87b85",
-      "headline": "Amy Klobuchar Elected Minnesota's First Female Governor",
-      "summary": "US Sen. Amy Klobuchar (D) defeated Minnesota House Speaker Lisa Demuth (R) roughly 57%-43% in the open-seat race after Gov. Tim Walz declined to seek a third term. Klobuchar becomes Minnesota's first female governor.",
+      "id": "1c70cf82ea1e",
+      "headline": "Marsha Blackburn Elected Tennessee's First Woman Governor",
+      "summary": "US Sen. Marsha Blackburn (R) won a narrower-than-expected race over Democrat Jerri Green to become Tennessee's first female governor. Voters also approved amendments expanding courts' ability to deny bail in certain violent-crime cases and permanently banning a state property tax.",
       "category": "politics",
       "severity": 2,
-      "lat": 44.9537,
-      "lon": -93.09,
-      "locationName": "St. Paul, Minnesota, USA",
+      "lat": 36.1627,
+      "lon": -86.7816,
+      "locationName": "Nashville, Tennessee, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-MN",
+      "subdivision": "US-TN",
       "sources": [
         {
-          "url": "https://www.nbcnews.com/politics/2026-election/senator-amy-klobuchar-minnesota-governor-democrat-win-demuth-rcna603339",
-          "domain": "nbcnews.com",
-          "reliability": 81,
+          "url": "https://tennesseelookout.com/2026/11/03/u-s-sen-marsha-blackburn-ekes-out-tennessee-governors-seat/",
+          "domain": "tennesseelookout.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.npr.org/2026/11/04/nx-s1-6028546/governor-candidates-history-election-2026",
+          "domain": "npr.org",
+          "reliability": 87,
           "bias": "center-left"
         },
         {
-          "url": "https://www.cbsnews.com/minnesota/news/klobuchar-wins-minnesota-governor-race-cbs-news-projects/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
+          "url": "https://www.wsmv.com/2026/11/04/tennessee-constitutional-amendment-1-which-expands-courts-ability-deny-bail-passes/",
+          "domain": "wsmv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 57,
+      "trustScore": 55,
       "firstSeen": "2026-11-04T15:29:09.407Z",
       "lastUpdated": "2026-11-04T15:29:09.407Z",
       "expiresAt": "2026-11-06T03:29:09.407Z",
@@ -4075,43 +4384,83 @@
       "isBreaking": false
     },
     {
-      "id": "1c70cf82ea1e",
-      "headline": "Marsha Blackburn Elected Tennessee's First Woman Governor",
-      "summary": "US Sen. Marsha Blackburn (R) won a narrower-than-expected race over Democrat Jerri Green to become Tennessee's first female governor. Voters also approved amendments expanding courts' ability to deny bail in certain violent-crime cases and permanently banning a state property tax.",
-      "category": "politics",
+      "id": "5a2a4c280003",
+      "headline": "Lithium-Ion Batteries Named Cause of Fatal Boston Firefighter Fire",
+      "summary": "Boston Fire Commissioner Rodney Marshall announced on November 4 that lithium-ion batteries stored in plastic toolboxes on a Dorchester porch underwent thermal runaway, sparking the May 23, 2026 Treadway Road fire that killed firefighter Robert 'Bobby' Kilduff Jr. The announcement concludes the department's investigation into the fatal fire.",
+      "category": "society",
       "severity": 2,
-      "lat": 36.1627,
-      "lon": -86.7816,
-      "locationName": "Nashville, Tennessee, USA",
+      "lat": 42.3016,
+      "lon": -71.0677,
+      "locationName": "Dorchester, Boston, Massachusetts, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-TN",
+      "subdivision": "US-MA",
       "sources": [
         {
-          "url": "https://tennesseelookout.com/2026/11/03/u-s-sen-marsha-blackburn-ekes-out-tennessee-governors-seat/",
-          "domain": "tennesseelookout.com",
+          "url": "https://www.cbsnews.com/boston/news/dorchester-fire-lithium-ion-batteries-robert-kilduff-death/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/04/metro/fatal-fire-update/",
+          "domain": "bostonglobe.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.npr.org/2026/11/04/nx-s1-6028546/governor-candidates-history-election-2026",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.wsmv.com/2026/11/04/tennessee-constitutional-amendment-1-which-expands-courts-ability-deny-bail-passes/",
-          "domain": "wsmv.com",
+          "url": "https://www.wwlp.com/news/massachusetts/massachusetts-firefighter-died-in-fire-sparked-by-lithium-ion-batteries/",
+          "domain": "wwlp.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-04T15:29:09.407Z",
-      "expiresAt": "2026-11-06T03:29:09.407Z",
+      "trustScore": 54,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T03:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "56c859f99083",
+      "headline": "Washington Voters Reject Repeal of 'Millionaires Tax' on High Incomes",
+      "summary": "Washington voters rejected Initiative 645, which would have repealed the state's 9.9% tax on income above $1 million, by roughly 58%-42%. A separate constitutional challenge to the tax, Petter v. Washington, remains pending in Klickitat County Superior Court.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 47.0379,
+      "lon": -122.9007,
+      "locationName": "Olympia, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.axios.com/local/seattle/2026/11/05/washington-i-645-election-results-millionaires-tax-repeal-2026",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/03/washington-voters-decide-to-keep-income-tax-on-mil/",
+          "domain": "spokesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://komonews.com/news/local/did-the-millionares-tax-pass-in-washington-state-midterm-election-results-ballot-vote-election-night-debate-politics-washington-state",
+          "domain": "komonews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T03:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -4568,91 +4917,15 @@
       "lastUpdated": "2026-11-04T06:07:32.098Z",
       "expiresAt": "2026-11-05T18:07:32.098Z",
       "isBreaking": false
-    },
-    {
-      "id": "9663e4d033e1",
-      "headline": "Egypt Retains WHO 'Gold Tier' Status as First Country to Maintain Hepatitis C Elimination Recognition",
-      "summary": "Egypt became the first country worldwide to maintain its WHO 'Gold Tier' status on the path to hepatitis C elimination. The recognition highlights Egypt's sustained public health screening and treatment program.",
-      "category": "health",
-      "severity": 1,
-      "lat": 30.04,
-      "lon": 31.24,
-      "locationName": "Cairo, Egypt",
-      "countryCode": "EG",
-      "sources": [
-        {
-          "url": "https://www.emro.who.int/media/news/egypt-is-the-first-country-globally-to-maintain-gold-tier-status-on-the-path-to-hepatitis-c-elimination.html",
-          "domain": "who.int",
-          "reliability": 92,
-          "bias": "center"
-        },
-        {
-          "url": "https://english.ahram.org.eg/UI/Front/Inner.aspx?NewsContentID=579017",
-          "domain": "ahram.org.eg",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.newarab.com/news/egypt-becomes-first-country-retain-who-gold-tier-hep-c-status",
-          "domain": "newarab.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 56,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-05T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
-      "id": "186b9e388fb4",
-      "headline": "Four Charged Over Planned Farm Attack on Donovan Marx in South Africa",
-      "summary": "South African police charged four people with attempted murder over a planned and premeditated farm attack targeting Donovan Marx near Ventersdorp. The arrests follow a broader pattern of farm attacks drawing national attention in South Africa.",
-      "category": "society",
-      "severity": 1,
-      "lat": -26.32,
-      "lon": 26.82,
-      "locationName": "Syferfontein farm, near Ventersdorp, South Africa",
-      "countryCode": "ZA",
-      "sources": [
-        {
-          "url": "https://www.news24.com/southafrica/news/donovan-marx-four-in-dock-for-planned-and-premeditated-farm-attack-20261103-0565",
-          "domain": "news24.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/four-charged-attempted-murder-south-112100017.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.capetownetc.com/news/suspects-arrested-donovan-marx-farm-attack/",
-          "domain": "capetownetc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-05T06:07:32.098Z",
-      "isBreaking": false
     }
   ],
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 115,
-    "carried": 71,
-    "updated": 18,
-    "expired": 24,
+    "multiSource": 119,
+    "carried": 97,
+    "updated": 2,
+    "expired": 17,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
