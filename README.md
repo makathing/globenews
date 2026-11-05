@@ -1,10 +1,12 @@
 # GlobeNews // Orbital Watch
 
 A 3D news radar: a dotted Earth from space where the dots light up in category colours wherever world news is happening.
-The dataset is produced by a multi-agent Claude pipeline: a worldwide batch once every 24 hours,
-plus a separate daily **US & state** batch with its own budget that adds state and metro news
-without taking room from the rest of the world. (A breaking-news monitor for events of **global
-scale** or affecting the **entire US** exists in the code but is not currently scheduled.)
+The dataset is produced by a multi-agent Claude pipeline: a worldwide **morning edition** once
+every 24 hours, a lighter worldwide **update desk** in the evening that re-checks the biggest
+stories and catches what broke since, and a separate daily **US & state** batch with its own
+budget that adds state and metro news without taking room from the rest of the world. A
+breaking-news **monitor** for events of **global scale** or affecting the **entire US** can run
+every few hours beside them (see the Routines table).
 
 ## How it works
 
@@ -13,7 +15,8 @@ scale** or affecting the **entire US** exists in the code but is not currently s
                        │        pipeline/ (Claude Agent SDK)        │
   Claude cloud Routine │                                            │
   daily 05:51 UTC ──▶  │  COORDINATOR (sonnet)                      │
-                       │   ├─ explorer ×4 regions (sonnet, search)  │
+                       │   ├─ explorer ×9 beats: 7 world areas +    │
+                       │   │    science/tech/health, climate/economy│
                        │   ├─ researcher batches (sonnet, verify    │
                        │   │    each event w/ 2+ indep. sources)    │
                        │   └─ synthesizer (opus, dedupe +           │
@@ -24,7 +27,11 @@ scale** or affecting the **entire US** exists in the code but is not currently s
                        │   └─ same researcher + synthesizer;        │
                        │      writes only "scope": "us" stories     │
                        │                                            │
-  (not scheduled) ──▶  │  MONITOR (haiku) — extremely high bar;     │
+  daily 17:51 UTC ──▶  │  UPDATE DESK (sonnet) — re-checks serious, │
+                       │    developing & storyline stories; one     │
+                       │    explorer for what broke since morning   │
+                       │                                            │
+  every 3h (opt.) ──▶  │  MONITOR (haiku) — extremely high bar;     │
                        │    escalates to researcher+synthesizer     │
                        │    only for global / entire-US events      │
                        └───────────────┬────────────────────────────┘
@@ -59,34 +66,61 @@ scale** or affecting the **entire US** exists in the code but is not currently s
   the regional and state-linked outlets that real runs actually surfaced.
 
 **Trust is computed, not vibes** — `pipeline/src/trust.ts` scores each event deterministically from
-corroboration count, average source reliability, and a cross-spectrum bonus (left + right outlets
-agreeing). Single-source stories are capped at 40 ("unverified"). The synthesizer never invents
-trust numbers.
+corroboration, average source reliability, and a cross-spectrum bonus. Corroboration counts
+**independent newsrooms, not domains**: `pipeline/src/syndication.ts` maps every source to its
+`origin`, so an AP or Reuters story reprinted by Yahoo, MSN, US News or local stations counts once,
+and a citation of an outlet's homepage (not an article) counts half. The cross-spectrum bonus needs a
+left-leaning and a right-leaning outlet, or three distinct center newsrooms. Stories with fewer
+than two independent reports are capped at 40 ("unverified"). Carried stories are re-scored every
+run, so a ratings-table change reaches the whole map. The synthesizer never invents trust numbers.
+
+**Coverage is balanced, and checked** — the world desk's nine explorer beats each search in the
+area's own languages within an explicit dated window. `finalize.ts` keeps at most four minor
+stories per country (per state on the US desk) per run, and when a scope is over its cap the top
+two stories of every category and the top story of every world area (`shared/areas.ts`) keep their
+places first. Every run records `stats.health` — new and updated counts, categories and areas
+covered, and `warnings` for a thin or lopsided run — so a bad day is visible instead of silent.
+`npm run report-unrated -w pipeline` lists the outlets the agents cite that the ratings table does
+not know yet.
+
+**Stories develop, and can be corrected** — sources carry a `published` date (a new story whose
+sources are all older than 72h is dropped as background). A story carries an optional `status`
+(`developing`, `confirmed`, `disputed`, `corrected`); a synthesizer `corrects` entry replaces a
+story and keeps its `correction` note for the rest of its life on the map. Updates record
+`whatChanged` and push the previous headline onto a `timeline` (last 6). Ongoing stories share a
+`storyline` (`{id, label}`), which readers can follow; minor storyline stories stay at least 72h.
 
 **Frontend** — `frontend/`: react-three-fiber globe with day/night shader, clouds, atmosphere,
 Natural Earth country outlines, a starfield whose stars streak with camera velocity (plus a
 full-frame motion smear), bloom, and a game-console HUD: legend filters, priority ticker,
-per-event panel with trust meter and per-source bias spectrum.
+per-event panel with trust meter and per-source bias spectrum. Reader tools: search (`?q=`), a
+briefing view, "since your last visit" badges, following places and storylines, opt-in near-me
+sorting (coarse, never stored), and per-story timeline, what-changed line, corrections and
+related stories.
 
 ## Scheduling & billing: tokenless Claude cloud Routines
 
 The pipeline is scheduled as **Claude Code cloud Routines** on the repo owner's Claude
 account — no API key, no tokens stored in GitHub, usage billed to the owner's Claude
-subscription. Both Routines fire into the same long-lived session, **"GlobeNews pipeline
+subscription. All Routines fire into the same long-lived session, **"GlobeNews pipeline
 runner"**, which has this repo attached: that attachment is what gives the session push
 credentials (a fresh session per firing has none and gets a 403 from the git proxy). Because
-they share one session, a firing that arrives while the other run is still working waits for
-it to finish — the two runs never write at the same time.
+they share one session, a firing that arrives while another run is still working waits for
+it to finish — no two runs ever write at the same time.
 
 | Routine | Schedule (UTC) | Runs | Budget |
 | --- | --- | --- | --- |
-| **GlobeNews daily news batch** | `51 5 * * *` (05:51) | `PIPELINE_GIT_SYNC=1 npm run daily -w pipeline` | `PIPELINE_MAX_BUDGET_USD`, default $8 |
+| **GlobeNews daily news batch** | `51 5 * * *` (05:51) | `PIPELINE_GIT_SYNC=1 npm run daily -w pipeline` | `PIPELINE_MAX_BUDGET_USD`, default $10 |
 | **GlobeNews US & state news batch** | `15 15 * * *` (15:15) | `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline` | `REGIONAL_MAX_BUDGET_USD`, default $8 |
+| **GlobeNews update desk** *(new — create it)* | `51 17 * * *` (17:51) | `PIPELINE_GIT_SYNC=1 npm run update -w pipeline` | `UPDATE_MAX_BUDGET_USD`, default $4 |
+| **GlobeNews breaking monitor** *(optional)* | `7 */3 * * *` | `PIPELINE_GIT_SYNC=1 npm run monitor -w pipeline` | `MONITOR_MAX_BUDGET_USD` $0.50 + `ESCALATION_MAX_BUDGET_USD` $3 when it escalates |
 
 The scripts only write files; the **Routine session** checks the result, commits `data/` and
 pushes to `main` (never force). A data push to `main` triggers the Pages deploy workflow.
-The hourly breaking-news monitor Routine and an earlier fresh-session daily Routine are
-**retired** (disabled, kept for their run history): a fresh session cannot push. Manage the
+The old hourly breaking-news monitor Routine and an earlier fresh-session daily Routine are
+**retired** (disabled, kept for their run history): a fresh session cannot push. The monitor
+now re-merges onto origin and archives like the batch runs, so it is safe to schedule again in
+the shared runner session; most of its firings cost only the $0.50 sweep. Manage the
 Routines (pause, edit, view run history) from the Routines panel on claude.ai / the Claude app.
 
 ### Scopes: the world desk and the US desk
@@ -133,7 +167,28 @@ running agents, for a push that lost a race.
 ### Routine prompts
 
 The daily Routine's prompt is unchanged except that step 3 reads
-`` `PIPELINE_GIT_SYNC=1 npm run daily -w pipeline` ``.
+`` `PIPELINE_GIT_SYNC=1 npm run daily -w pipeline` `` and step 4 adds the **health check** below.
+
+**Health check (add to step 4 of every Routine prompt):** after the existing checks, read
+`stats.health.warnings` in data/events.json. If it is non-empty, still commit and push (a thin
+map beats no map), but begin the final message with the single word `WARNING`, then list the
+warnings, so the run history shows the bad day.
+
+The **update desk** Routine ("GlobeNews update desk", cron `51 17 * * *`, same persistent
+session) uses the US prompt below with these changes: the title line is `World update desk run.`;
+step 3 runs `PIPELINE_GIT_SYNC=1 npm run update -w pipeline` ($4 default cap,
+`UPDATE_MAX_BUDGET_USD`, allow up to 25 minutes; it writes `data/archive/<date>-update.json`);
+step 4 requires at least one event WITHOUT a "scope" field to have `lastUpdated` equal to
+`generatedAt` and that every event WITH `"scope": "us"` in `git show HEAD:data/events.json` whose
+`expiresAt` is still in the future is present and unchanged; the commit message is
+`data: world update desk <today's UTC date>`; and there is no `--remerge-only` path — on a
+rebase conflict abort, reset to origin/main and report FAILED.
+
+The optional **breaking monitor** Routine ("GlobeNews breaking monitor", cron `7 */3 * * *`,
+same session): pull main, `npm ci`, run `PIPELINE_GIT_SYNC=1 npm run monitor -w pipeline`; if
+`git status` shows changes under data/, commit only data/ as `data: breaking update <UTC time>`
+and push (on rejection: `git pull --rebase origin main`, and on a conflict abort, reset to
+origin/main and report FAILED). If nothing changed, reply `quiet` and commit nothing.
 
 The US Routine ("GlobeNews US & state news batch", cron `15 15 * * *`, bound to the same
 persistent session as the daily batch) uses exactly this prompt:
@@ -146,7 +201,7 @@ The repository is already checked out in this session at ~/globenews on main. Th
 1. `cd ~/globenews && git checkout main && git pull origin main`
 2. `npm ci` at the repo root (npm workspace). Allow several minutes.
 3. `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline` — the budget-capped US & state batch ($8 default cap, `REGIONAL_MAX_BUDGET_USD`), on this session's own Claude credentials. If it reaches the cap after staging its stories it still publishes them (the log says "budget reached after staging") — that is a success, not a failure. It only adds, updates or expires stories with "scope": "us", and writes data/events.json plus data/archive/<date>-us.json. Allow it up to 40 minutes and do not interrupt it; it prints its own progress.
-4. Check the result before committing: data/events.json parses, its `generatedAt` is within the last hour, at least 5 events have "scope": "us" and a `lastUpdated` equal to `generatedAt`, and `stats.severityDefaulted` is 0. Also compare with `git show HEAD:data/events.json`: every event there WITHOUT a "scope" field whose `expiresAt` is still in the future must be present and unchanged. If any check fails, treat the run as failed.
+4. Check the result before committing: data/events.json parses, its `generatedAt` is within the last hour, at least 5 events have "scope": "us" and a `lastUpdated` equal to `generatedAt`, and `stats.severityDefaulted` is 0. Also compare with `git show HEAD:data/events.json`: every event there WITHOUT a "scope" field whose `expiresAt` is still in the future must be present and unchanged. If any check fails, treat the run as failed. Then read `stats.health.warnings`: if it is non-empty, carry on and publish, but begin your final message with the single word WARNING and list the warnings.
 5. If `git status` shows changes under data/: commit ONLY the data/ directory with message "data: US & state news batch <today's UTC date>" and `git push origin main`. If the push is rejected: `git pull --rebase origin main`. If that stops on a conflict in data/, run `git rebase --abort`, then `git reset --hard origin/main`, then `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline -- --remerge-only` (re-applies this run's US stories onto the new main without running any agents), then commit data/ and push again. Never force-push. The GitHub Pages deploy triggers itself on the push — do not run it yourself.
 6. On any failure: commit nothing, and begin your final message with the single word FAILED, then the step number and the last ~20 lines of output. Do not retry a run that failed on budget exhaustion.
 
@@ -166,7 +221,8 @@ time, replaces the text, and unions the sources. When the agent forgets, a conse
 match (same category, within 250 km, similar headline) catches a rewording — not a re-angled
 story, which would risk swallowing a genuinely separate one; a missed match costs a duplicate for
 a day, a false one loses a story. `stats.carried`, `updated` and
-`expired` record what each run did. The rule lives in `shared/retention.ts` so the frontend fades
+`expired` record what each run did (`expired` counts only the run's own scope). A story in an
+ongoing `storyline` stays at least 72h whatever its severity, so slow crises survive quiet days. The rule lives in `shared/retention.ts` so the frontend fades
 a story over the same span the pipeline keeps it.
 
 ### Why image enrichment happens at deploy time
@@ -247,7 +303,8 @@ restore the workflows from git history (`daily-batch.yml` / `breaking-monitor.ym
 removed in the "tokenless scheduling" commit); they support `CLAUDE_CODE_OAUTH_TOKEN`
 (subscription, via `claude setup-token`) or `ANTHROPIC_API_KEY` secrets.
 
-Budget caps (`PIPELINE_MAX_BUDGET_USD` ~$8/daily batch, `REGIONAL_MAX_BUDGET_USD` $8/US batch,
+Budget caps (`PIPELINE_MAX_BUDGET_USD` $10/daily batch, `REGIONAL_MAX_BUDGET_USD` $8/US batch,
+`UPDATE_MAX_BUDGET_USD` $4/update desk,
 `MONITOR_MAX_BUDGET_USD` $0.50, `ESCALATION_MAX_BUDGET_USD` $3) act as estimated-cost circuit
 breakers in every mode. If a daily or US batch hits its cap (or its turn limit) after the synthesizer
 has already written the staged stories, the run publishes those instead of failing — it logs
@@ -293,17 +350,21 @@ upgrades or prompt changes before trusting a full batch.
 | Path | What |
 | --- | --- |
 | `shared/news.ts` | Single source of truth: categories, colors, dataset types |
+| `shared/areas.ts` | The seven world areas: explorer beats, balance and health checks |
 | `pipeline/src/agents.ts` | Explorer / researcher / synthesizer / monitor prompts + models |
 | `pipeline/src/hooks.ts` | Pre/PostToolUse hooks (standardization, source-intel injection) |
 | `pipeline/src/source-ratings.ts` | Domain reliability/bias table + blocklist |
-| `pipeline/src/trust.ts` | Deterministic trust scoring |
-| `pipeline/src/run-daily.ts` | 24h worldwide batch entry point |
+| `pipeline/src/trust.ts` | Deterministic trust scoring (independent newsrooms) |
+| `pipeline/src/syndication.ts` | Source → origin newsroom (wire copy, aggregators) |
+| `pipeline/src/report-unrated.ts` | Most-cited outlets missing from the ratings table |
+| `pipeline/src/run-daily.ts` | Worldwide morning edition; `--update` for the update desk |
 | `pipeline/src/run-regional.ts` | US & state batch (`--region us`) |
 | `pipeline/src/batch.ts` | Shared coordinator retry loop + publish step |
 | `pipeline/src/finalize.ts` | Scoped merge, per-scope caps, `remergeScope` |
 | `pipeline/src/git-sync.ts` | `PIPELINE_GIT_SYNC=1` fetch + re-merge before writing |
 | `pipeline/src/gazetteer.ts` | Offline place names: countries, cities, 50 states + DC |
-| `pipeline/src/run-monitor.ts` | Breaking-news monitor + escalation (not scheduled) |
+| `pipeline/src/run-monitor.ts` | Breaking-news monitor + escalation (optional Routine) |
+| `frontend/src/lib/reader.ts` | Search, since-visit, follows, briefing, near me, related stories |
 | `frontend/src/scene/` | Dotted Earth with story dots and picking, starfield, sun, effects |
 | `frontend/src/ui/` | HUD: top bar, legend, ticker, event panel, tooltip, boot |
 | `data/events.json` | The dataset the globe renders (committed by the pipeline) |
