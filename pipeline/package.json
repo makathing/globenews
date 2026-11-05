@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "daily": "tsx src/run-daily.ts",
+    "update": "tsx src/run-daily.ts --update",
     "monitor": "tsx src/run-monitor.ts",
     "regional:us": "tsx src/run-regional.ts --region us",
     "test": "vitest run",

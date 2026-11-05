@@ -4,10 +4,12 @@ import { query } from '@anthropic-ai/claude-agent-sdk';
 import { MONITOR_PROMPT, SUBAGENTS } from './agents.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
-import { finalizeDataset, computeStats } from './finalize.ts';
+import { finalizeDataset, computeStats, countExpired } from './finalize.ts';
+import { gitExec, gitSyncEnabled, syncAndRemerge } from './git-sync.ts';
 import { enrichImages, probeEgress } from './enrich-images.ts';
 import { parseStagedOutput } from './schema.ts';
 import {
+  REPO_ROOT,
   STAGING_DIR,
   authMode,
   readCurrentDataset,
@@ -155,30 +157,32 @@ REASON: ${verdict.reason}
     return;
   }
 
+  // Another desk may have pushed while this one researched: re-merge this
+  // run's worldwide stories onto origin's latest, like the batch runs do,
+  // so the monitor can never overwrite a US-desk push.
+  const merged = gitSyncEnabled() ? syncAndRemerge(breakingDataset, 'global', gitExec(REPO_ROOT)) : breakingDataset;
+
   let enrichment: 'inline' | 'deferred' = 'deferred';
   if (await probeEgress()) {
     const icons = readOutletIcons();
-    await enrichImages(breakingDataset, icons);
+    await enrichImages(merged, icons);
     writeOutletIcons(icons);
     enrichment = 'inline';
   } else {
     console.warn('[monitor] publishers unreachable — deferring images to the build');
   }
-  // finalizeDataset already merged: this run's events plus every unexpired
-  // story from the previous file, minus the ones this run updated
-  const stats = computeStats(breakingDataset);
-  breakingDataset.stats = {
+  const stats = computeStats(merged);
+  merged.stats = {
     ...stats,
-    expired: (previous?.events.length ?? 0) - (stats.carried ?? 0) - (stats.updated ?? 0),
+    expired: countExpired(previous, merged, 'global'),
     enrichment,
   };
 
-  writeDataset(breakingDataset);
+  // archived beside the day's other runs; suffixed files stay out of the site's day picker
+  writeDataset(merged, { archive: true, archiveSuffix: '-breaking' });
   writeStagingDebug('monitor-ledger.json', ledger.toJSON());
   signalChanged(true);
-  console.log(
-    `[monitor] published ${fresh.length} breaking event(s); ${stats.carried} carried over`,
-  );
+  console.log(`[monitor] published ${fresh.length} breaking event(s); ${stats.carried} carried over`);
 }
 
 main().catch((error) => {

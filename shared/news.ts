@@ -130,6 +130,43 @@ export interface NewsEvent {
   status?: StoryStatus;
   /** What an earlier version of this story got wrong, when status is 'corrected'. */
   correction?: string;
+  /** One line on what is new since the previous report, set when a run updates the story. */
+  whatChanged?: string;
+  /** Earlier versions of this story, oldest first (at most MAX_TIMELINE). */
+  timeline?: TimelineEntry[];
+  /**
+   * The ongoing story this report belongs to ("Sudan war", "US midterms 2026"),
+   * shared across reports so readers can follow it. `id` is a slug of `label`.
+   */
+  storyline?: Storyline;
+}
+
+/** A previous version of a story, kept when a run updates it. */
+export interface TimelineEntry {
+  /** When that version was reported (its lastUpdated). */
+  at: string;
+  headline: string;
+  /** What that version said was new, if it said. */
+  change?: string;
+}
+
+export interface Storyline {
+  id: string;
+  label: string;
+}
+
+/** Earlier versions kept per story. */
+export const MAX_TIMELINE = 6;
+
+/** A storyline's id from its label: lowercase ascii slug. */
+export function storylineId(label: string): string {
+  return label
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60);
 }
 
 export const STORY_STATUSES = ['developing', 'confirmed', 'disputed', 'corrected'] as const;

@@ -5,6 +5,10 @@ import {
   type NewsDataset,
   type RunHealth,
   type StoryStatus,
+  type Storyline,
+  type TimelineEntry,
+  MAX_TIMELINE,
+  storylineId,
   type NewsEvent,
   type NewsScope,
   type NewsSource,
@@ -184,6 +188,31 @@ function placeKey(event: { countryCode: string; subdivision?: string }, scope: N
   return event.countryCode === 'XX' ? undefined : event.countryCode;
 }
 
+/** The storyline a report belongs to: what the synthesizer named, else the story's existing one. */
+function resolveStoryline(label: string | undefined, prev: NewsEvent | undefined): Storyline | undefined {
+  const trimmed = label?.trim();
+  if (trimmed) {
+    const id = storylineId(trimmed);
+    if (id) return { id, label: trimmed };
+  }
+  return prev?.storyline;
+}
+
+/**
+ * The story's history after an update: the previous version appended, unless
+ * the update did not change the headline (then there is nothing to show).
+ */
+export function extendTimeline(prev: NewsEvent, nextHeadline: string): TimelineEntry[] | undefined {
+  const history = prev.timeline ?? [];
+  if (prev.headline === nextHeadline) return history.length > 0 ? history : undefined;
+  const entry: TimelineEntry = {
+    at: prev.lastUpdated,
+    headline: prev.headline,
+    ...(prev.whatChanged ? { change: prev.whatChanged } : {}),
+  };
+  return [...history, entry].slice(-MAX_TIMELINE);
+}
+
 /** Fallback note when a correction arrives without one. */
 export const DEFAULT_CORRECTION = 'An earlier version of this story on the map has been corrected.';
 
@@ -320,6 +349,8 @@ export function finalizeScoped(
       coords.sub,
       stagedEvent.subdivision,
     );
+    const storyline = resolveStoryline(stagedEvent.storyline, prev);
+    const timeline = prev ? extendTimeline(prev, stagedEvent.headline) : undefined;
     const place = placeKey({ countryCode, subdivision }, scope);
     if (place && stagedEvent.severity < 4) {
       const count = placeCounts.get(place) ?? 0;
@@ -349,9 +380,12 @@ export function finalizeScoped(
       trustScore: computeTrustScore(sources),
       firstSeen: prev?.firstSeen ?? now,
       lastUpdated: now,
-      expiresAt: expiryIso(stagedEvent.severity, now),
+      expiresAt: expiryIso(stagedEvent.severity, now, storyline !== undefined),
       isBreaking: opts.markBreaking ?? false,
       ...storyStatus(stagedEvent, prev, corrected !== undefined),
+      ...(prev && stagedEvent.whatChanged ? { whatChanged: stagedEvent.whatChanged } : {}),
+      ...(timeline ? { timeline } : {}),
+      ...(storyline ? { storyline } : {}),
     });
   }
 
@@ -446,7 +480,11 @@ export const MIN_AREAS = 6;
  * Pure. A warning is not an error here: the dataset is still written, and the
  * Routine's pre-commit check decides what to do with it.
  */
-export function computeHealth(dataset: NewsDataset, scope: NewsScope): RunHealth {
+export function computeHealth(
+  dataset: NewsDataset,
+  scope: NewsScope,
+  mode: 'full' | 'update' = 'full',
+): RunHealth {
   const own = dataset.events.filter((event) => scopeOf(event) === scope);
   const thisRun = own.filter((event) => event.lastUpdated === dataset.generatedAt);
   const newStories = thisRun.filter((event) => event.firstSeen === event.lastUpdated).length;
@@ -455,8 +493,12 @@ export function computeHealth(dataset: NewsDataset, scope: NewsScope): RunHealth
   const areas = new Set(own.map((event) => areaOf(event)));
 
   const warnings: string[] = [];
-  if (newStories < MIN_NEW_STORIES[scope]) {
+  if (mode === 'full' && newStories < MIN_NEW_STORIES[scope]) {
     warnings.push(`only ${newStories} new ${scope} stories (expected at least ${MIN_NEW_STORIES[scope]})`);
+  }
+  // the update desk re-checks the map; a pass that touched nothing did not run properly
+  if (mode === 'update' && thisRun.length === 0) {
+    warnings.push('the update desk neither updated nor added a story');
   }
   if (scope === 'global') {
     const missing = CATEGORIES.filter((category) => !categories.has(category));

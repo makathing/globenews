@@ -324,6 +324,8 @@ export interface PublishOptions {
   archiveSuffix: string;
   ledger: RunLedger;
   ledgerName: string;
+  /** 'update' for the update desk: no minimum of new stories. Default 'full'. */
+  healthMode?: 'full' | 'update';
 }
 
 /**
@@ -368,7 +370,7 @@ export async function publishDataset(finalized: NewsDataset, opts: PublishOption
     severityDefaulted: opts.severityDefaulted,
     enrichment,
     ...(opts.stoppedEarly ? { stoppedEarly: opts.stoppedEarly } : {}),
-    health: computeHealth(dataset, scope),
+    health: computeHealth(dataset, scope, opts.healthMode ?? 'full'),
   };
   for (const warning of dataset.stats.health!.warnings) console.warn(`[${tag}] HEALTH WARNING: ${warning}`);
   validateDataset(dataset);

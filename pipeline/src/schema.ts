@@ -5,6 +5,7 @@ import {
   CATEGORY_LABELS,
   NEWS_SCOPES,
   STORY_STATUSES,
+  MAX_TIMELINE,
   type Category,
   type NewsDataset,
 } from '../../shared/news.ts';
@@ -67,6 +68,18 @@ export const NewsEventSchema = z.object({
   isBreaking: z.boolean(),
   status: z.enum(STORY_STATUSES).optional(),
   correction: z.string().min(1).max(300).optional(),
+  whatChanged: z.string().min(1).max(200).optional(),
+  timeline: z
+    .array(
+      z.object({
+        at: z.iso.datetime({ offset: true }),
+        headline: z.string().min(1).max(200),
+        change: z.string().max(200).optional(),
+      }),
+    )
+    .max(MAX_TIMELINE)
+    .optional(),
+  storyline: z.object({ id: z.string().min(1).max(60), label: z.string().min(1).max(60) }).optional(),
 });
 
 export const RunStatsSchema = z.object({
@@ -112,6 +125,8 @@ export const StagedEventSchema = NewsEventSchema.omit({
   id: true,
   // which run owns a story is the runner's call, never the model's
   scope: true,
+  timeline: true,
+  storyline: true,
   trustScore: true,
   firstSeen: true,
   lastUpdated: true,
@@ -124,6 +139,8 @@ export const StagedEventSchema = NewsEventSchema.omit({
   // the id of a story on the map whose key facts this event corrects; it
   // replaces that story, which is then marked 'corrected' with `correction`
   corrects: z.string().optional(),
+  // the ongoing story this belongs to, by label; the runner derives the id
+  storyline: z.string().min(2).max(60).optional(),
   sources: z
     .array(
       z
@@ -474,6 +491,17 @@ export function parseStagedOutput(raw: string): SalvageResult {
       }
       if (typeof fixed.correction === 'string') fixed.correction = truncateText(fixed.correction, 295);
       else delete fixed.correction;
+      if (typeof fixed.whatChanged === 'string') fixed.whatChanged = truncateText(fixed.whatChanged, 195);
+      else delete fixed.whatChanged;
+      // a storyline written as an object, or too long: keep its label, or drop it
+      if (fixed.storyline !== undefined) {
+        const raw = fixed.storyline as unknown;
+        const label =
+          typeof raw === 'string' ? raw : typeof (raw as { label?: unknown })?.label === 'string' ? (raw as { label: string }).label : '';
+        const trimmed = label.trim().slice(0, 60);
+        if (trimmed.length >= 2) fixed.storyline = trimmed;
+        else delete fixed.storyline;
+      }
       if (!(CATEGORIES as readonly string[]).includes(fixed.category as string)) {
         const category = normalizeCategory(fixed.category);
         if (category) fixed.category = category;

@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { US_SUBAGENTS, usCoordinatorPrompt, type CurrentStory } from './agents.ts';
+import { US_SUBAGENTS, toCurrentStory, usCoordinatorPrompt, type CurrentStory } from './agents.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_US_STAGED } from './mock-data.ts';
 import { finalizeScoped, keepInRegion, remergeScope } from './finalize.ts';
@@ -56,13 +56,7 @@ const MAX_BUDGET_USD = budgetFromEnv('REGIONAL_MAX_BUDGET_USD', DEFAULT_REGIONAL
 
 stripHarnessBackgroundEnv();
 
-const toStory = (event: NewsEvent): CurrentStory => ({
-  id: event.id,
-  headline: event.headline,
-  locationName: event.locationName,
-  firstSeen: event.firstSeen,
-  lastUpdated: event.lastUpdated,
-});
+const toStory = (event: NewsEvent): CurrentStory => toCurrentStory(event);
 
 async function remergeOnly(region: RegionConfig, tag: string, finalPath: string): Promise<void> {
   if (!existsSync(finalPath)) throw new Error(`nothing to re-merge: ${finalPath} is missing`);
@@ -128,10 +122,11 @@ async function main(): Promise<void> {
 
   const { kept, dropped } = keepInRegion(staged, region.countryCode);
   for (const line of dropped) console.warn(`[${tag}] dropped (outside the region): ${line}`);
-  const { dataset, skippedCrossScope, skippedPerPlace } = finalizeScoped(kept, previous, 'daily', { scope: region.scope });
+  const { dataset, skippedCrossScope, skippedPerPlace, skippedStale } = finalizeScoped(kept, previous, 'daily', { scope: region.scope });
   for (const headline of skippedCrossScope) {
     console.log(`[${tag}] skipped (already a world-desk story): ${headline}`);
   }
+  for (const headline of skippedStale) console.log(`[${tag}] skipped (all sources older than 72h): ${headline}`);
   for (const headline of skippedPerPlace) {
     console.log(`[${tag}] skipped (country/state already has its share this run): ${headline}`);
   }

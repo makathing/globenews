@@ -184,6 +184,12 @@ Tasks:
                contradict each other on the core claim — say how in the summary; omit otherwise),
      "updates": "<id>"  (ONLY when this event continues one of the STORIES ALREADY ON THE MAP —
                         copy that story's id exactly; omit the field for a new story),
+     "whatChanged": "<one line, <= 160 chars>"  (REQUIRED with "updates": what is new since the
+                        listed version — "Death toll rises to 41; airport reopens"),
+     "storyline": "<short label>"  (optional: the ongoing, multi-day story this belongs to, e.g.
+                        "Sudan war", "US midterms 2026", "Hurricane Melissa". Reuse an ACTIVE
+                        STORYLINES label exactly when one fits; create one only for a story that
+                        will clearly run for days; omit it for one-off events),
      "corrects": "<id>", "correction": "<one sentence>"  (ONLY when the research shows a story
                         ALREADY ON THE MAP got its key facts wrong: this event replaces it, and
                         "correction" says plainly what was wrong — e.g. "Earlier reports put the
@@ -217,6 +223,33 @@ export interface CurrentStory {
   firstSeen: string;
   /** When a run last reported it; the list is ordered newest first by this. */
   lastUpdated?: string;
+  severity?: number;
+  /** The ongoing storyline's label, if the story has one. */
+  storyline?: string;
+  status?: string;
+}
+
+/** A story as the agents see it, from a dataset event. */
+export function toCurrentStory(event: {
+  id: string;
+  headline: string;
+  locationName: string;
+  firstSeen: string;
+  lastUpdated: string;
+  severity: number;
+  storyline?: { label: string };
+  status?: string;
+}): CurrentStory {
+  return {
+    id: event.id,
+    headline: event.headline,
+    locationName: event.locationName,
+    firstSeen: event.firstSeen,
+    lastUpdated: event.lastUpdated,
+    severity: event.severity,
+    ...(event.storyline ? { storyline: event.storyline.label } : {}),
+    ...(event.status ? { status: event.status } : {}),
+  };
 }
 
 /** Most recent stories the prompt lists; the rest have aged past mattering to continuity. */
@@ -228,20 +261,34 @@ export function newestFirst(stories: CurrentStory[]): CurrentStory[] {
   return [...stories].sort((a, b) => at(b) - at(a));
 }
 
+function storyLine(story: CurrentStory): string {
+  const extras = [
+    story.severity ? `sev ${story.severity}` : '',
+    story.storyline ? `storyline: ${story.storyline}` : '',
+    story.status ?? '',
+  ].filter(Boolean);
+  return `  ${story.id} · ${story.firstSeen.slice(0, 10)} · ${story.headline.slice(0, 110)} · ${story.locationName}${
+    extras.length > 0 ? ` · ${extras.join(' · ')}` : ''
+  }`;
+}
+
+/** Labels of the storylines running on the map, most-reported first. */
+export function activeStorylines(current: CurrentStory[]): string[] {
+  const counts = new Map<string, number>();
+  for (const story of current) if (story.storyline) counts.set(story.storyline, (counts.get(story.storyline) ?? 0) + 1);
+  return [...counts].sort((a, b) => b[1] - a[1]).map(([label]) => label);
+}
+
 function currentStoriesBlock(current: CurrentStory[]): string {
   if (current.length === 0) return '';
-  const lines = newestFirst(current)
-    .slice(0, MAX_LISTED_STORIES)
-    .map(
-      (story) =>
-        `  ${story.id} · ${story.firstSeen.slice(0, 10)} · ${story.headline.slice(0, 110)} · ${story.locationName}`,
-    );
+  const lines = newestFirst(current).slice(0, MAX_LISTED_STORIES).map(storyLine);
+  const storylines = activeStorylines(current);
   return `
-STORIES ALREADY ON THE MAP (id · added · headline · place) — ${current.length} stories:
+STORIES ALREADY ON THE MAP (id · added · headline · place · extras) — ${current.length} stories:
 ${lines.join('\n')}
-A verified event that is a development of one of these is an UPDATE, not a new story. Pass this
-list to the synthesizer verbatim; it must set "updates": "<id>" on such events and write a headline
-that reflects the latest state. Do not re-report a listed story that has not developed.
+${storylines.length > 0 ? `ACTIVE STORYLINES (reuse these labels exactly): ${storylines.join(' | ')}\n` : ''}A verified event that is a development of one of these is an UPDATE, not a new story. Pass this
+list to the synthesizer verbatim; it must set "updates": "<id>" and "whatChanged" on such events and
+write a headline that reflects the latest state. Do not re-report a listed story that has not developed.
 `;
 }
 
@@ -271,6 +318,59 @@ ${beatList(WORLD_BEATS)}
 6. Reply with a one-paragraph run summary (counts of candidates, verified, discarded). If for any reason the file could not be written at all, your reply must instead contain the complete final JSON ({"events": [...]}) so the caller can recover it.
 
 Quality bar: only verified, multi-source events make the dataset. Trust scores are computed downstream — never invent numeric trust values.`;
+}
+
+// ——— Update desk (run-daily.ts --update) ———
+
+/** Stories the update desk re-checks: serious, still moving, or part of a storyline. */
+export function storiesToRecheck(current: CurrentStory[], max = 20): CurrentStory[] {
+  return newestFirst(current)
+    .filter((story) => (story.severity ?? 0) >= 3 || story.status === 'developing' || story.storyline)
+    .sort((a, b) => (b.severity ?? 0) - (a.severity ?? 0))
+    .slice(0, max);
+}
+
+/**
+ * The second, lighter world pass of the day. The morning batch runs at 05:51
+ * UTC — before the Americas' day and after Asia's — so by evening its biggest
+ * stories have moved on. This pass re-checks those and catches what broke
+ * since, without re-exploring the whole world.
+ */
+export function updateDeskPrompt(stagingPath: string, current: CurrentStory[] = []): string {
+  const recheck = storiesToRecheck(current);
+  return `You are the COORDINATOR of the UPDATE DESK of a multi-agent global news radar pipeline.
+${dateWindow()}
+The morning edition is already on the map. Your job is to keep it current: find what changed in
+its biggest stories, and catch major events that broke since the morning. Do NOT do the research
+yourself — delegate.
+${currentStoriesBlock(current)}
+STORIES TO RE-CHECK (${recheck.length}):
+${recheck.map(storyLine).join('\n')}
+
+CRITICAL: every Agent tool invocation MUST pass run_in_background: false and you MUST wait
+for each subagent's actual returned result before moving on. Never launch subagents async.
+
+Workflow (follow strictly, in order):
+1. Invoke the "explorer" subagent ONCE with the beat "Since the morning edition — worldwide": the
+   most significant events of the last 12 hours anywhere, especially the Americas (their day
+   started after the morning edition) — 4-7 candidates, skipping anything already listed above.
+2. Invoke the "researcher" subagent ONCE with: the STORIES TO RE-CHECK (ask it to search for
+   developments in the window for each — new figures, decisions, reversals, corrections — and to
+   say "no development" when there is none), plus the explorer's candidates to verify.
+3. Invoke the "synthesizer" subagent with the researcher output in full, the STORIES ALREADY ON THE
+   MAP list, and the ACTIVE STORYLINES, and tell it to write the final JSON to exactly this absolute
+   path: ${stagingPath}
+   Include ONLY (a) updates to listed stories that genuinely developed ("updates" + "whatChanged"),
+   (b) corrections ("corrects" + "correction") when research shows a listed story was wrong, and
+   (c) verified new events. Do not restate stories with no development. 3-20 events is normal.
+4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
+5. RE-READ the file and verify EVERY event object has all of: headline, summary, category,
+   severity (integer 1-5), lat, lon, locationName, countryCode, sources — and that every source
+   has a "url" starting with https://. Rewrite the file fixing any that fall short.
+6. Reply with a one-paragraph run summary (stories re-checked, updated, corrected, new). If the file could not be written at all, your reply must instead contain the complete final JSON ({"events": [...]}).
+
+BUDGET RULE: this run has a small hard cap. Never research a story twice and never add a second
+research pass. A short file that gets written beats a long one that does not.`;
 }
 
 // ——— US & state run (run-regional.ts --region us) ———

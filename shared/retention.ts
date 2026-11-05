@@ -43,8 +43,16 @@ export function expiryOf(event: Retainable): number {
   return Date.parse(event.lastUpdated) + lifetimeHours(event.severity) * HOUR_MS;
 }
 
-export function expiryIso(severity: number, lastUpdated: string): string {
-  return new Date(Date.parse(lastUpdated) + lifetimeHours(severity) * HOUR_MS).toISOString();
+/**
+ * The least a story in an ongoing storyline stays: slow crises (a siege, a
+ * drought) often have quiet days, and a 24-36h lifetime let them drop off
+ * the map between developments.
+ */
+export const STORYLINE_MIN_HOURS = 72;
+
+export function expiryIso(severity: number, lastUpdated: string, inStoryline = false): string {
+  const hours = inStoryline ? Math.max(lifetimeHours(severity), STORYLINE_MIN_HOURS) : lifetimeHours(severity);
+  return new Date(Date.parse(lastUpdated) + hours * HOUR_MS).toISOString();
 }
 
 export function isExpired(event: Retainable, now: number = Date.now()): boolean {
