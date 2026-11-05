@@ -4,7 +4,7 @@ import { readUrlState, writeUrlState, type UrlState } from './urlParams';
 
 /**
  * Deep links and back/forward. The open story (`?event=`), the region view
- * (`?region=`) and an archived day (`?date=`) all live in the URL; the pure
+ * (`?region=`), an archived day (`?date=`) and a search (`?q=`) all live in the URL; the pure
  * reading and writing is in urlParams.ts.
  *
  * Feedback loops are avoided by direction: URL → state happens only on load
@@ -15,7 +15,7 @@ import { readUrlState, writeUrlState, type UrlState } from './urlParams';
  */
 
 function stateToUrl(s: ReturnType<typeof useGlobeStore.getState>): UrlState {
-  return { event: s.selectedId, region: s.region, date: s.viewingDate };
+  return { event: s.selectedId, region: s.region, date: s.viewingDate, q: s.query || null };
 }
 
 function here(): string {
@@ -61,10 +61,19 @@ export function useUrlSync(): void {
     () =>
       useGlobeStore.subscribe((s, prev) => {
         if (!ready.current || applying.current) return;
-        if (s.selectedId === prev.selectedId && s.region === prev.region && s.viewingDate === prev.viewingDate) return;
+        if (
+          s.selectedId === prev.selectedId &&
+          s.region === prev.region &&
+          s.viewingDate === prev.viewingDate &&
+          s.query === prev.query
+        )
+          return;
         const next = writeUrlState(window.location.href, stateToUrl(s));
         if (next === here()) return;
-        const chosen = s.region !== prev.region || s.viewingDate !== prev.viewingDate || s.dataset === prev.dataset;
+        // typing a search replaces the entry: one history step per keystroke would bury "back"
+        const typing = s.query !== prev.query;
+        const chosen =
+          !typing && (s.region !== prev.region || s.viewingDate !== prev.viewingDate || s.dataset === prev.dataset);
         if (chosen) window.history.pushState(null, '', next);
         else window.history.replaceState(window.history.state, '', next);
       }),
@@ -82,6 +91,7 @@ export function useUrlSync(): void {
         const store = useGlobeStore.getState();
         const region = url.region ?? 'world';
         if (store.region !== region) store.setRegion(region);
+        if (store.query !== (url.q ?? '')) store.setQuery(url.q ?? '');
         const known = url.event && useGlobeStore.getState().dataset?.events.some((e) => e.id === url.event);
         useGlobeStore.getState().select(known ? url.event : null, { fromGlobe: true });
       } finally {

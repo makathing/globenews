@@ -5,7 +5,11 @@ import {
   type NewsEvent,
   type NewsSource,
 } from '../../../shared/news';
-import { CategoryIcon, ClockIcon, ShieldIcon } from './icons';
+import { CategoryIcon, ClockIcon, ShieldIcon, StarIcon } from './icons';
+import { independentCount, placeOf, relatedStories, syndicationLabel } from '../lib/reader';
+import { US_STATES } from '../lib/regions';
+import { useGlobeStore } from '../store';
+import { relativeTime } from '../lib/freshness';
 import { ShareButton } from './ShareButton';
 import { OutletMark } from './SourceLogos';
 import { outletName } from '../lib/outlets';
@@ -65,6 +69,112 @@ function SeverityTicks({ severity }: { severity: number }) {
   );
 }
 
+const STATUS_LABELS = {
+  developing: 'Developing',
+  confirmed: 'Confirmed',
+  disputed: 'Disputed',
+  corrected: 'Corrected',
+} as const;
+
+/** "France", "Texas" — what following a place is called. */
+function placeName(event: NewsEvent): string | null {
+  const place = placeOf(event);
+  if (!place) return null;
+  if (US_STATES[place]) return US_STATES[place];
+  // the country is the last part of "City, Country" for world stories
+  const parts = event.locationName.split(',').map((part) => part.trim());
+  return parts[parts.length - 1] || place;
+}
+
+/** Follow the story's place and, if it has one, its storyline. */
+function FollowButtons({ event }: { event: NewsEvent }) {
+  const follows = useGlobeStore((s) => s.follows);
+  const toggleFollowPlace = useGlobeStore((s) => s.toggleFollowPlace);
+  const toggleFollowStoryline = useGlobeStore((s) => s.toggleFollowStoryline);
+  const place = placeOf(event);
+  const name = placeName(event);
+  const storyline = event.storyline;
+  if (!place && !storyline) return null;
+  const followingPlace = place ? follows.places.includes(place) : false;
+  const followingStoryline = storyline ? follows.storylines.includes(storyline.id) : false;
+  return (
+    <div className="follow-row" role="group" aria-label="Follow">
+      {storyline && (
+        <button
+          className={`follow-btn ${followingStoryline ? 'on' : ''}`}
+          aria-pressed={followingStoryline}
+          onClick={() => toggleFollowStoryline(storyline.id)}
+        >
+          <StarIcon size={12} filled={followingStoryline} aria-hidden /> {storyline.label}
+        </button>
+      )}
+      {place && name && (
+        <button
+          className={`follow-btn ${followingPlace ? 'on' : ''}`}
+          aria-pressed={followingPlace}
+          onClick={() => toggleFollowPlace(place)}
+        >
+          <StarIcon size={12} filled={followingPlace} aria-hidden /> {name}
+        </button>
+      )}
+    </div>
+  );
+}
+
+/** Earlier versions of a developing story, newest first. */
+function Timeline({ event }: { event: NewsEvent }) {
+  const entries = event.timeline ?? [];
+  if (entries.length === 0) return null;
+  return (
+    <details className="timeline-block">
+      <summary className="panel-heading">How this story developed ({entries.length + 1} reports)</summary>
+      <ol className="timeline-list">
+        <li className="timeline-item current">
+          <span className="timeline-at">{utcMinute(event.lastUpdated)}</span>
+          <span className="timeline-headline">{event.headline}</span>
+          {event.whatChanged && <span className="timeline-change">{event.whatChanged}</span>}
+        </li>
+        {[...entries].reverse().map((entry) => (
+          <li key={entry.at} className="timeline-item">
+            <span className="timeline-at">{utcMinute(entry.at)}</span>
+            <span className="timeline-headline">{entry.headline}</span>
+            {entry.change && <span className="timeline-change">{entry.change}</span>}
+          </li>
+        ))}
+      </ol>
+    </details>
+  );
+}
+
+/** Stories to read next: same storyline, same place, same kind of story nearby. */
+function Related({ event }: { event: NewsEvent }) {
+  const events = useGlobeStore((s) => s.dataset?.events);
+  const select = useGlobeStore((s) => s.select);
+  const related = events ? relatedStories(event, events) : [];
+  if (related.length === 0) return null;
+  return (
+    <div className="related-block">
+      <div className="panel-heading">Related</div>
+      <ul className="related-list" role="list">
+        {related.map((other) => (
+          <li key={other.id}>
+            <button className="related-item" onClick={() => select(other.id, { fromGlobe: true })}>
+              <span className="card-icon" style={{ color: `var(--cat-${other.category})` }}>
+                <CategoryIcon category={other.category} size={12} />
+              </span>
+              <span className="related-headline">{other.headline}</span>
+              <span className="related-meta">
+                {other.storyline && other.storyline.id === event.storyline?.id ? `${other.storyline.label} · ` : ''}
+                {relativeTime(other.lastUpdated)}
+              </span>
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 /** Badges, share and (optionally) close: the top row of an open story. */
 export function StoryHeader({ event, children }: { event: NewsEvent; children?: ReactNode }) {
   return (
@@ -75,6 +185,9 @@ export function StoryHeader({ event, children }: { event: NewsEvent; children?: 
       </span>
       <SeverityTicks severity={event.severity} />
       {event.isBreaking && <span className="breaking-badge">Breaking</span>}
+      {event.status && event.status !== 'confirmed' && (
+        <span className={`status-badge status-${event.status}`}>{STATUS_LABELS[event.status]}</span>
+      )}
       <ShareButton eventId={event.id} headline={event.headline} />
       {children}
     </div>
@@ -89,7 +202,22 @@ export function StoryBody({ event, art, headingId }: { event: NewsEvent; art: Ar
 
       <h2 className="event-headline" id={headingId}>{event.headline}</h2>
       <div className="event-location">{event.locationName}</div>
+      {event.status === 'corrected' && event.correction && (
+        <p className="correction-note" role="note">
+          <strong>Correction:</strong> {event.correction}
+        </p>
+      )}
+      {event.whatChanged && event.lastUpdated !== event.firstSeen && (
+        <p className="what-changed">
+          <span className="what-changed-label">What changed</span> {event.whatChanged}
+        </p>
+      )}
       <p className="event-summary">{event.summary}</p>
+      {event.status === 'disputed' && (
+        <p className="status-note">Sources disagree on key facts in this story — see the summary and compare the sources below.</p>
+      )}
+      <FollowButtons event={event} />
+      <Timeline event={event} />
 
       <div className="trust-block">
         <div className="trust-row">
@@ -107,8 +235,9 @@ export function StoryBody({ event, art, headingId }: { event: NewsEvent; art: Ar
           />
         </div>
         <div className="trust-note">
-          {event.sources.length} independent source{event.sources.length === 1 ? '' : 's'} · scored
-          by corroboration, source reliability &amp; bias spread
+          {independentCount(event.sources)} independent newsroom{independentCount(event.sources) === 1 ? '' : 's'}
+          {independentCount(event.sources) < event.sources.length && <> ({event.sources.length} sources, some syndicated)</>}{' '}
+          · scored by corroboration, source reliability &amp; bias spread
         </div>
       </div>
 
@@ -134,6 +263,8 @@ export function StoryBody({ event, art, headingId }: { event: NewsEvent; art: Ar
               ) : (
                 source.domain
               )}
+              {syndicationLabel(source) && <span className="source-homepage"> · {syndicationLabel(source)}</span>}
+              {source.published && <span className="source-date"> · {source.published}</span>}
             </span>
             <span className="source-rel" title="Reliability (0-100)">
               {source.reliability}
@@ -151,6 +282,8 @@ export function StoryBody({ event, art, headingId }: { event: NewsEvent; art: Ar
           <div className="trust-note">* unrated domain — conservative default score</div>
         )}
       </div>
+
+      <Related event={event} />
 
       <div className="event-meta">
         <ClockIcon size={12} /> Added {utcMinute(event.firstSeen)}

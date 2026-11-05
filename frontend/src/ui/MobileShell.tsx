@@ -20,6 +20,7 @@ import { ThemeControls } from './ThemeControls';
 import { FilterMenu, RegionMenu } from './TopBarMenus';
 import { useStatusLine } from './Updated';
 import { useListStories, useStoryArtChain } from './useStoryArt';
+import { ReaderBar, SinceVisit } from './ReaderBar';
 import { ViewingBanner } from './ViewingBanner';
 
 /**
@@ -374,12 +375,16 @@ const BottomSheet = forwardRef<HTMLElement, { topBottom: number }>(function Bott
             <StoryBody event={event} art={art} headingId="m-story-heading" />
           </div>
         ) : (
-          <StoryList
-            stories={sorted}
-            chains={chains}
-            variant="compact"
-            empty={region === 'world' ? undefined : `No ${REGIONS[region].label} stories match the current filters.`}
-          />
+          <>
+            <SinceVisit className="since-visit-sheet" />
+            <ReaderBar className="reader-bar-sheet" />
+            <StoryList
+              stories={sorted}
+              chains={chains}
+              variant="compact"
+              empty={region === 'world' ? undefined : `No ${REGIONS[region].label} stories match the current filters.`}
+            />
+          </>
         )}
       </div>
     </section>

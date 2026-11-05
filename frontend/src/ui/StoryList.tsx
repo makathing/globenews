@@ -3,6 +3,7 @@ import { CATEGORY_LABELS, type NewsEvent } from '../../../shared/news';
 import type { ArtCandidate } from '../lib/illustration';
 import { freshness, isNew, isUpdated, relativeTime } from '../lib/freshness';
 import { groupByState } from '../lib/regions';
+import { sinceVisit } from '../lib/reader';
 import { useGlobeStore } from '../store';
 import { CategoryIcon } from './icons';
 import { SourceLogos } from './SourceLogos';
@@ -17,7 +18,14 @@ function artOpacity(event: NewsEvent, now: number): number {
 }
 
 function Marker({ event, now }: { event: NewsEvent; now: number }) {
+  const lastVisit = useGlobeStore((s) => (s.viewingDate ? null : s.lastVisit));
   if (event.isBreaking) return <span className="card-breaking">Breaking</span>;
+  if (event.status === 'corrected') return <span className="card-corrected">Corrected</span>;
+  // a returning reader: what changed since they last looked, not in the last few hours
+  const change = sinceVisit(event, lastVisit);
+  if (change === 'updated') return <span className="card-updated" title="Updated since your last visit">Updated</span>;
+  if (change === 'new') return <span className="card-new" title="New since your last visit">New</span>;
+  if (lastVisit !== null) return null;
   if (isUpdated(event, now)) return <span className="card-updated">Updated</span>;
   if (isNew(event, now)) return <span className="card-new">New</span>;
   return null;

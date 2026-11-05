@@ -5,6 +5,7 @@ import { RegionChips } from './RegionChips';
 import { StatusPanel } from './StatusPanel';
 import { StoryList } from './StoryList';
 import { useListStories } from './useStoryArt';
+import { ReaderBar, SinceVisit } from './ReaderBar';
 
 /** Desktop: the story rail on the left. */
 export function EventRail() {
@@ -22,6 +23,8 @@ export function EventRail() {
             {breaking > 0 && !viewing && <span className="rail-count-breaking"> · {breaking} breaking</span>}
           </span>
         </h1>
+        <SinceVisit />
+        <ReaderBar className="reader-bar-rail" />
         <CategoryChips />
         <RegionChips className="region-chips-rail" />
         <DayPicker className="day-picker-rail" />

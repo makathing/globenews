@@ -7,13 +7,14 @@ describe('readUrlState', () => {
       event: 'abc',
       region: 'us',
       date: '2026-10-20',
+      q: null,
     });
   });
 
   it('drops invalid values', () => {
-    expect(readUrlState('?region=mars&date=yesterday&event=')).toEqual({ event: null, region: null, date: null });
-    expect(readUrlState('?region=world')).toEqual({ event: null, region: null, date: null });
-    expect(readUrlState('')).toEqual({ event: null, region: null, date: null });
+    expect(readUrlState('?region=mars&date=yesterday&event=')).toEqual({ event: null, region: null, date: null, q: null });
+    expect(readUrlState('?region=world')).toEqual({ event: null, region: null, date: null, q: null });
+    expect(readUrlState('')).toEqual({ event: null, region: null, date: null, q: null });
   });
 });
 

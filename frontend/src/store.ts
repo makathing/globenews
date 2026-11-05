@@ -3,7 +3,17 @@ import { create } from 'zustand';
 import { useEffect, useState } from 'react';
 import type { Category, NewsDataset, NewsEvent } from '../../shared/news';
 import { fetchArchiveDay, fetchArchiveIndex, type ArchiveDay } from './lib/archive';
-import { loadHidden, loadRegion, storeHidden, storeRegion } from './lib/prefs';
+import {
+  loadFollows,
+  loadHidden,
+  loadLastVisit,
+  loadRegion,
+  storeFollows,
+  storeHidden,
+  storeLastVisit,
+  storeRegion,
+} from './lib/prefs';
+import { coarsen, regionForPoint, toggled, type Follows, type Point } from './lib/reader';
 import { inRegion, type RegionId } from './lib/regions';
 import { readUrlState } from './lib/urlParams';
 import {
@@ -86,6 +96,26 @@ interface GlobeStore {
   hoverId: (id: string | null) => void;
   select: (id: string | null, opts?: { fromGlobe?: boolean }) => void;
   clearScrollTo: () => void;
+  /** A search over the list (empty: no search). */
+  query: string;
+  setQuery: (query: string) => void;
+  /** 'all': every story in rail order; 'top': the short briefing. */
+  listView: 'all' | 'top';
+  setListView: (view: 'all' | 'top') => void;
+  /** Only stories the reader follows. */
+  followingOnly: boolean;
+  setFollowingOnly: (on: boolean) => void;
+  follows: Follows;
+  toggleFollowStoryline: (id: string) => void;
+  toggleFollowPlace: (place: string) => void;
+  /**
+   * When the reader last left the page, read once at load (epoch ms; null on
+   * a first visit). Stories added or updated after it are badged.
+   */
+  lastVisit: number | null;
+  /** The reader's coarse position, in memory only, once they asked for "near me". */
+  near: Point | null;
+  setNear: (point: Point | null) => void;
 }
 
 export const useGlobeStore = create<GlobeStore>((set, get) => ({
@@ -104,6 +134,36 @@ export const useGlobeStore = create<GlobeStore>((set, get) => ({
   liveCheckedAt: null,
   archiveDays: null,
   layoutInsets: { top: 0, bottom: 0, left: 0, right: 0 },
+  query: (typeof window !== 'undefined' && readUrlState(window.location.search).q) || '',
+  setQuery: (query) => set({ query: query.slice(0, 100) }),
+  listView: 'all',
+  setListView: (listView) => set({ listView }),
+  followingOnly: false,
+  setFollowingOnly: (followingOnly) => set({ followingOnly }),
+  follows: loadFollows(),
+  toggleFollowStoryline: (id) =>
+    set((state) => {
+      const follows = { ...state.follows, storylines: toggled(state.follows.storylines, id) };
+      storeFollows(follows);
+      return { follows };
+    }),
+  toggleFollowPlace: (place) =>
+    set((state) => {
+      const follows = { ...state.follows, places: toggled(state.follows.places, place) };
+      storeFollows(follows);
+      return { follows };
+    }),
+  lastVisit: loadLastVisit(),
+  near: null,
+  setNear: (point) => {
+    if (!point) {
+      set({ near: null });
+      return;
+    }
+    const near = coarsen(point);
+    set({ near });
+    get().setRegion(regionForPoint(near));
+  },
   setDataset: (dataset, opts) =>
     set((state) => {
       if (state.dataset === dataset) return {};
@@ -232,6 +292,16 @@ export function useListEvents(): NewsEvent[] {
     () => (region === 'world' ? events : events.filter((event) => inRegion(event, region))),
     [events, region],
   );
+}
+
+// The visit ends when the page is hidden for good or the tab goes to the
+// background: that moment, not this load, is what the next visit compares to.
+if (typeof window !== 'undefined') {
+  const leave = () => storeLastVisit(Date.now());
+  window.addEventListener('pagehide', leave);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') leave();
+  });
 }
 
 /**
