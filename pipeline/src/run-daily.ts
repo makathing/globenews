@@ -8,7 +8,7 @@ import { authMode, readCurrentDataset, stripHarnessBackgroundEnv } from './io.ts
 import { scopeOf } from '../../shared/news.ts';
 
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
-const MAX_BUDGET_USD = Number(process.env.PIPELINE_MAX_BUDGET_USD ?? 8);
+const MAX_BUDGET_USD = Number(process.env.PIPELINE_MAX_BUDGET_USD ?? 10);
 
 stripHarnessBackgroundEnv();
 
@@ -26,6 +26,7 @@ async function main(): Promise<void> {
       headline: event.headline,
       locationName: event.locationName,
       firstSeen: event.firstSeen,
+      lastUpdated: event.lastUpdated,
     }));
   let staged: StagedOutput;
   let severityDefaulted = 0;
@@ -47,9 +48,12 @@ async function main(): Promise<void> {
     ));
   }
 
-  const { dataset, skippedCrossScope } = finalizeScoped(staged, previous, 'daily', { scope: 'global' });
+  const { dataset, skippedCrossScope, skippedPerPlace } = finalizeScoped(staged, previous, 'daily', { scope: 'global' });
   for (const headline of skippedCrossScope) {
     console.log(`[daily] skipped (already a US-desk story): ${headline}`);
+  }
+  for (const headline of skippedPerPlace) {
+    console.log(`[daily] skipped (country/state already has its share this run): ${headline}`);
   }
   await publishDataset(dataset, {
     tag: 'daily',

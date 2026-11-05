@@ -8,6 +8,84 @@ import { CATEGORIES } from '../../shared/news.ts';
 
 const CATEGORY_LIST = CATEGORIES.join(' | ');
 
+/**
+ * The reporting window, spelled out with real dates. "The last 24 hours" alone
+ * left the explorers guessing what day it was, and the search hook only pins
+ * the month, so stale articles could pass as news.
+ */
+export function dateWindow(now: Date = new Date()): string {
+  const today = now.toISOString().slice(0, 10);
+  const from = new Date(now.getTime() - 30 * 3_600_000).toISOString().slice(0, 16).replace('T', ' ');
+  return `Today is ${today} (UTC). The reporting window is ${from} UTC until now — roughly the last 24-30 hours.`;
+}
+
+/** One explorer assignment of the worldwide desk. */
+export interface Beat {
+  name: string;
+  /** What the beat covers and how to search it, passed to the explorer verbatim. */
+  brief: string;
+}
+
+/**
+ * The worldwide desk's explorer beats: seven areas, so no explorer is asked to
+ * cover seventy countries, plus two topic beats for news that geographic
+ * sweeps miss — science and climate went whole weeks without a story when
+ * every explorer was a region.
+ */
+export const WORLD_BEATS: readonly Beat[] = [
+  {
+    name: 'North America',
+    brief:
+      'US national news (federal government, Congress, courts, national economy) and Canada. State and local US news belongs to a separate desk — skip it. Languages: English, French (Canada).',
+  },
+  {
+    name: 'Latin America & Caribbean',
+    brief:
+      'Mexico, Central America, the Caribbean and South America. Languages: Spanish, Portuguese (Brazil), French (Haiti) — search at least once in Spanish and once in Portuguese.',
+  },
+  {
+    name: 'Europe',
+    brief:
+      'EU and non-EU Europe including the UK, Ukraine, Russia, the Balkans and the Caucasus. Languages: English plus at least one of French, German, Spanish, Italian, Polish, Ukrainian.',
+  },
+  {
+    name: 'Middle East & North Africa',
+    brief:
+      'The Gulf, the Levant, Iraq, Iran, Turkey, Yemen, and North Africa from Morocco to Egypt. Languages: Arabic, French (Maghreb), Turkish, Persian — search at least once in Arabic.',
+  },
+  {
+    name: 'Sub-Saharan Africa',
+    brief:
+      'West, Central, East, Horn and Southern Africa. Cover more than the biggest conflict: elections, economies, health, climate and disasters too. Languages: English, French, Portuguese, Swahili, Amharic — search at least once in French.',
+  },
+  {
+    name: 'South & Central Asia',
+    brief:
+      'India, Pakistan, Bangladesh, Sri Lanka, Nepal, Afghanistan and the Central Asian republics. Languages: English, Hindi, Urdu, Bengali, Russian (Central Asia).',
+  },
+  {
+    name: 'East & Southeast Asia, Oceania',
+    brief:
+      'China, Japan, the Koreas, Taiwan, Southeast Asia, Australia, New Zealand and the Pacific islands. Languages: English, Chinese, Japanese, Korean, Indonesian, Vietnamese, Thai.',
+  },
+  {
+    name: 'Science, Tech & Health',
+    brief:
+      'TOPIC BEAT, worldwide: space missions and launches, major peer-reviewed research, AI and technology regulation, cybersecurity incidents of public consequence, disease outbreaks, public-health decisions, drug approvals. Anchor each event where it happened or at the deciding institution. Categories: science, health. Languages: English plus any.',
+  },
+  {
+    name: 'Climate, Environment & Economy',
+    brief:
+      'TOPIC BEAT, worldwide: climate records and policy, environmental disasters and conservation, central bank decisions, market moves, trade measures, major company and labour news. Anchor each event where it happened or at the deciding institution. Categories: climate, economy. Languages: English plus any.',
+  },
+];
+
+function beatList(beats: readonly Beat[]): string {
+  return beats
+    .map((beat, index) => `   (${String.fromCharCode(97 + index)}) ${beat.name} — ${beat.brief}`)
+    .join('\n');
+}
+
 export const SUBAGENTS = {
   explorer: {
     description:
@@ -18,18 +96,25 @@ export const SUBAGENTS = {
     // so every pipeline agent must run in-session.
     background: false,
     tools: ['WebSearch'],
-    prompt: `You are the EXPLORER agent for a global news radar.
+    prompt: `You are the EXPLORER agent for a global news radar. ${dateWindow()}
 
-Given a world region, run several targeted web searches to find the most significant
-news events there from roughly the LAST 24 HOURS, across these categories: ${CATEGORY_LIST}.
+You are given ONE beat: either a world area (e.g. "Sub-Saharan Africa") or a topic beat
+(e.g. "Science, Tech & Health"). Run several targeted web searches to find the most significant
+news on that beat from inside the window above, across these categories: ${CATEGORY_LIST}.
 
 Rules:
-- Prefer events with clear geographic anchors (a city, country, or region).
-- Skip celebrity gossip, sports scores, product launches, and opinion pieces.
+- Every event needs a geographic anchor (a city, country, or region). For a topic beat, anchor
+  it where it happened or where the deciding institution sits (the lab, agency, court, launch site).
+- Search beyond English: the beat brief names the languages to use for at least one search.
+  Local outlets often report first and in more depth than the international wires.
+- Check each candidate's publication date. Skip anything published before the window, and
+  skip background or explainer pieces about older events unless something new happened.
+- Skip celebrity gossip, sports scores, consumer product launches, and opinion pieces.
+  Major science, space, research, technology-policy, market and climate news IS in scope.
 - Note every [source-intel] annotation you receive — carry high-reliability source URLs forward.
 
-Return a concise markdown list of 5-10 candidate events, each as:
-- HEADLINE | location (city, country) | category | 1-2 sentence gist | candidate source URLs (2+ if seen)`,
+Return a concise markdown list of 4-7 candidate events (the strongest, not everything you saw), each as:
+- HEADLINE | location (city, country) | category | 1-2 sentence gist | publish date | candidate source URLs (2+ if seen)`,
   },
   researcher: {
     description:
@@ -58,7 +143,10 @@ Return for each VERIFIED event:
 - location: specific place name + country
 - category + suggested severity 1-5 (5 = historic global impact, 4 = major international, 3 = significant national, 2 = notable, 1 = minor)
 - 2-3 sentence factual summary (no editorializing)
-- ALL corroborating source URLs
+- ALL corroborating source URLs, each with its publish date when you can see it
+  ("https://... (2026-11-04)")
+Discard a candidate whose newest report is more than 3 days old unless something new happened
+in the window — that is background, not news.
 And a DISCARDED list with one-line reasons.`,
   },
   synthesizer: {
@@ -96,7 +184,9 @@ Tasks:
    bare outlet name ("Reuters", {"name": "BBC"}, {"outlet": "AP", "url": ""}) — sources
    without a URL are discarded, and an event left with none is dropped from the map.
 3. Balance the map: aim for 25-45 events spanning all inhabited continents; do not let one
-   story dominate. Severity must reflect real-world impact, not coverage volume.
+   story dominate. At most 4 events per country. Keep at least 2 events from every category
+   that has verified events (science, climate and health included). Severity must reflect
+   real-world impact, not coverage volume.
 4. Write the result as VALID JSON — {"events": [...]} — to the staging file path you were given,
    using the Write tool. Write JSON only, no markdown fences, no commentary.
 
@@ -111,14 +201,22 @@ export interface CurrentStory {
   headline: string;
   locationName: string;
   firstSeen: string;
+  /** When a run last reported it; the list is ordered newest first by this. */
+  lastUpdated?: string;
 }
 
 /** Most recent stories the prompt lists; the rest have aged past mattering to continuity. */
 const MAX_LISTED_STORIES = 120;
 
+/** Newest report first, so the cut at MAX_LISTED_STORIES drops the stalest, not the mildest. */
+export function newestFirst(stories: CurrentStory[]): CurrentStory[] {
+  const at = (story: CurrentStory) => Date.parse(story.lastUpdated ?? story.firstSeen) || 0;
+  return [...stories].sort((a, b) => at(b) - at(a));
+}
+
 function currentStoriesBlock(current: CurrentStory[]): string {
   if (current.length === 0) return '';
-  const lines = current
+  const lines = newestFirst(current)
     .slice(0, MAX_LISTED_STORIES)
     .map(
       (story) =>
@@ -136,14 +234,17 @@ that reflects the latest state. Do not re-report a listed story that has not dev
 export function coordinatorPrompt(stagingPath: string, current: CurrentStory[] = []): string {
   return `You are the COORDINATOR of a multi-agent global news radar pipeline. Today is ${new Date().toISOString().slice(0, 10)}.
 Orchestrate your subagents to build a verified 24-hour world news dataset. Do NOT do the research yourself — delegate.
+${dateWindow()}
 ${currentStoriesBlock(current)}
 CRITICAL: every Agent tool invocation MUST pass run_in_background: false and you MUST wait
 for each subagent's actual returned result before moving on. Never launch subagents async —
 a "launched in background" response means you did it wrong; re-invoke synchronously.
 
 Workflow (follow strictly, in order):
-1. Invoke the "explorer" subagent 4 times — once per region: (a) Americas, (b) Europe, (c) Middle East & Africa, (d) Asia-Pacific. These can run in parallel.
-2. Collect all candidates, then invoke the "researcher" subagent in 2-4 batches (group candidates by region) to verify them. Pass each batch the full candidate details.
+1. Invoke the "explorer" subagent ${WORLD_BEATS.length} times — once per beat, passing it the beat's name and brief verbatim:
+${beatList(WORLD_BEATS)}
+   These can run in parallel. Each returns 4-7 candidates.
+2. Collect all candidates and merge duplicates across beats. Pick at most 45 for research: keep every beat represented and keep the science, climate and health candidates — do not let the biggest conflict or election crowd them out. Then invoke the "researcher" subagent in 3-4 batches (group candidates by beat) to verify them. Pass each batch the full candidate details.
 3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full) and the STORIES ALREADY ON THE MAP list if you were given one, and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
 4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path and telling it the previous attempt failed to write. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
 5. RE-READ the file you just wrote and verify EVERY event object has all of:
@@ -170,6 +271,7 @@ export const US_REGIONS = [
 ] as const;
 
 const US_EXPLORER_PROMPT = `You are the EXPLORER agent for the US & state desk of a news radar map.
+${dateWindow()}
 A separate world desk already covers international news and national US politics; you cover
 what happens in the STATES and their cities.
 

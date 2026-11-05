@@ -4,7 +4,7 @@ import { query } from '@anthropic-ai/claude-agent-sdk';
 import { scopeOf, type NewsDataset, type NewsScope } from '../../shared/news.ts';
 import { buildHooks } from './hooks.ts';
 import { RunLedger } from './ledger.ts';
-import { computeStats } from './finalize.ts';
+import { computeHealth, computeStats, countExpired } from './finalize.ts';
 import { enrichImages, probeEgress } from './enrich-images.ts';
 import {
   parseStagedOutput,
@@ -364,11 +364,13 @@ export async function publishDataset(finalized: NewsDataset, opts: PublishOption
   const stats = computeStats(dataset);
   dataset.stats = {
     ...stats,
-    expired: Math.max(0, (opts.previous?.events.length ?? 0) - (stats.carried ?? 0) - (stats.updated ?? 0)),
+    expired: countExpired(opts.previous, dataset, scope),
     severityDefaulted: opts.severityDefaulted,
     enrichment,
     ...(opts.stoppedEarly ? { stoppedEarly: opts.stoppedEarly } : {}),
+    health: computeHealth(dataset, scope),
   };
+  for (const warning of dataset.stats.health!.warnings) console.warn(`[${tag}] HEALTH WARNING: ${warning}`);
   validateDataset(dataset);
   writeDataset(dataset, { archive: true, archiveSuffix: opts.archiveSuffix });
   writeStagingDebug(opts.ledgerName, opts.ledger.toJSON());

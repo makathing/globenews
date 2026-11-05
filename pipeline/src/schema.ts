@@ -63,6 +63,16 @@ export const RunStatsSchema = z.object({
   updated: z.number().min(0).optional(),
   expired: z.number().min(0).optional(),
   stoppedEarly: z.string().optional(),
+  health: z
+    .object({
+      scope: z.enum(NEWS_SCOPES),
+      newStories: z.number().min(0),
+      updatedStories: z.number().min(0),
+      categoriesCovered: z.number().min(0),
+      areasCovered: z.number().min(0),
+      warnings: z.array(z.string()),
+    })
+    .optional(),
 });
 
 export const NewsDatasetSchema = z.object({

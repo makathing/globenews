@@ -154,6 +154,28 @@ export interface RunStats {
    * SDK result subtype, e.g. `error_max_budget_usd`. Absent on a full run.
    */
   stoppedEarly?: string;
+  /** Whether the run produced a healthy map for its own scope; see RunHealth. */
+  health?: RunHealth;
+}
+
+/**
+ * A run's output checked against what a normal day looks like. Runs used to
+ * publish one new story, or none, with nothing to say anything was wrong;
+ * every warning here is meant to fail the Routine's pre-commit check.
+ */
+export interface RunHealth {
+  /** The scope this run owns and was checked on. */
+  scope: NewsScope;
+  /** Stories this run added for the first time. */
+  newStories: number;
+  /** Stories already on the map that this run re-reported. */
+  updatedStories: number;
+  /** Categories with at least one live story in the scope. */
+  categoriesCovered: number;
+  /** World areas (shared/areas.ts) with at least one live story in the scope. */
+  areasCovered: number;
+  /** Human-readable problems; empty on a healthy run. */
+  warnings: string[];
 }
 
 export interface NewsDataset {

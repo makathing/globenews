@@ -1,7 +1,9 @@
 import { createHash } from 'node:crypto';
 import {
+  CATEGORIES,
   scopeOf,
   type NewsDataset,
+  type RunHealth,
   type NewsEvent,
   type NewsScope,
   type NewsSource,
@@ -13,6 +15,7 @@ import { computeTrustScore } from './trust.ts';
 import { isHomepage, type StagedOutput } from './schema.ts';
 import { expiryIso, isExpired } from '../../shared/retention.ts';
 import { crossScopeMatch, matchPrevious } from './retention.ts';
+import { AREA_IDS, areaOf } from '../../shared/areas.ts';
 
 export function stableEventId(headline: string, lat: number, lon: number): string {
   const key = `${headline.toLowerCase().replace(/[^a-z0-9]+/g, '-')}|${Math.round(lat)}|${Math.round(lon)}`;
@@ -72,21 +75,70 @@ export interface FinalizeReport {
   dataset: NewsDataset;
   /** Headlines dropped because the story already belongs to another scope. */
   skippedCrossScope: string[];
+  /** Headlines dropped because their country or state already had MAX_PER_PLACE stories this run. */
+  skippedPerPlace: string[];
 }
 
 const bySeverityThenTrust = (a: NewsEvent, b: NewsEvent) =>
   b.severity - a.severity || b.trustScore - a.trustScore;
 
-/** Sort, then trim each scope to its own cap. */
-function capByScope(events: NewsEvent[], caps: Record<NewsScope, number>): NewsEvent[] {
+/** Stories per category guaranteed a place before the cap, when the category has any. */
+export const MIN_PER_CATEGORY = 2;
+
+/**
+ * The order a scope's stories claim places under its cap: first the top
+ * MIN_PER_CATEGORY of every category and the top story of every world area,
+ * then everything else by severity and trust. Without the first pass a big
+ * news week (a war, an election) fills the cap and science, climate or a
+ * whole continent silently drops off the map.
+ */
+export function balancedOrder(events: NewsEvent[]): NewsEvent[] {
   const sorted = [...events].sort(bySeverityThenTrust);
-  const counts = new Map<NewsScope, number>();
-  return sorted.filter((event) => {
+  const reserved = new Set<NewsEvent>();
+  const perCategory = new Map<string, number>();
+  const areasSeen = new Set<string>();
+  for (const event of sorted) {
+    const taken = perCategory.get(event.category) ?? 0;
+    if (taken < MIN_PER_CATEGORY) {
+      perCategory.set(event.category, taken + 1);
+      reserved.add(event);
+    }
+    const area = areaOf(event);
+    if (!areasSeen.has(area)) {
+      areasSeen.add(area);
+      reserved.add(event);
+    }
+  }
+  return [...sorted.filter((event) => reserved.has(event)), ...sorted.filter((event) => !reserved.has(event))];
+}
+
+/** Trim each scope to its own cap, balanced; the result is sorted by severity then trust. */
+function capByScope(events: NewsEvent[], caps: Record<NewsScope, number>): NewsEvent[] {
+  const byScope = new Map<NewsScope, NewsEvent[]>();
+  for (const event of events) {
     const scope = scopeOf(event);
-    const count = counts.get(scope) ?? 0;
-    counts.set(scope, count + 1);
-    return count < caps[scope];
-  });
+    const list = byScope.get(scope);
+    if (list) list.push(event);
+    else byScope.set(scope, [event]);
+  }
+  const kept: NewsEvent[] = [];
+  for (const [scope, list] of byScope) {
+    kept.push(...(list.length > caps[scope] ? balancedOrder(list).slice(0, caps[scope]) : list));
+  }
+  return kept.sort(bySeverityThenTrust);
+}
+
+/**
+ * Most stories one run may add or update for a single country (world desk) or
+ * state (US desk). Severity 4-5 stories are never cut by it: a war still gets
+ * its coverage, it just cannot also take five more slots with smaller angles.
+ */
+export const MAX_PER_PLACE = 4;
+
+/** Which bucket MAX_PER_PLACE counts in; undefined means uncounted (multi-country). */
+function placeKey(event: { countryCode: string; subdivision?: string }, scope: NewsScope): string | undefined {
+  if (scope === 'us') return event.subdivision;
+  return event.countryCode === 'XX' ? undefined : event.countryCode;
 }
 
 /**
@@ -149,7 +201,11 @@ export function finalizeScoped(
   const skippedCrossScope: string[] = [];
 
   const events: NewsEvent[] = [];
-  for (const stagedEvent of staged.events) {
+  const skippedPerPlace: string[] = [];
+  const placeCounts = new Map<string, number>();
+  // strongest first, so the per-place limit cuts the smallest angles
+  const ordered = [...staged.events].sort((a, b) => b.severity - a.severity);
+  for (const stagedEvent of ordered) {
     const sources = buildSources(stagedEvent.sources);
     if (sources.length === 0) continue;
 
@@ -194,6 +250,16 @@ export function finalizeScoped(
       coords.sub,
       stagedEvent.subdivision,
     );
+    const place = placeKey({ countryCode, subdivision }, scope);
+    if (place && stagedEvent.severity < 4) {
+      const count = placeCounts.get(place) ?? 0;
+      if (count >= MAX_PER_PLACE) {
+        if (prev) continued.delete(prev.id);
+        skippedPerPlace.push(`${stagedEvent.headline} (${place})`);
+        continue;
+      }
+      placeCounts.set(place, count + 1);
+    }
     events.push({
       id,
       headline: stagedEvent.headline,
@@ -238,6 +304,7 @@ export function finalizeScoped(
   return {
     dataset: { generatedAt: now, mode, events: capByScope(events, caps) },
     skippedCrossScope,
+    skippedPerPlace,
   };
 }
 
@@ -290,4 +357,58 @@ export function computeStats(dataset: NewsDataset): RunStats {
     updated: dataset.events.filter((event) => thisRun(event) && event.firstSeen !== event.lastUpdated)
       .length,
   };
+}
+
+/** The least a healthy run adds to its scope; fewer means something went wrong upstream. */
+export const MIN_NEW_STORIES: Record<NewsScope, number> = { global: 15, us: 8 };
+/** World desk: this many categories with no live story is a lopsided map. */
+export const MAX_MISSING_CATEGORIES = 2;
+/** World desk: at least this many of the seven areas should have a live story. */
+export const MIN_AREAS = 6;
+
+/**
+ * Check a finished run's own scope against what a normal day looks like.
+ * Pure. A warning is not an error here: the dataset is still written, and the
+ * Routine's pre-commit check decides what to do with it.
+ */
+export function computeHealth(dataset: NewsDataset, scope: NewsScope): RunHealth {
+  const own = dataset.events.filter((event) => scopeOf(event) === scope);
+  const thisRun = own.filter((event) => event.lastUpdated === dataset.generatedAt);
+  const newStories = thisRun.filter((event) => event.firstSeen === event.lastUpdated).length;
+  const updatedStories = thisRun.length - newStories;
+  const categories = new Set(own.map((event) => event.category));
+  const areas = new Set(own.map((event) => areaOf(event)));
+
+  const warnings: string[] = [];
+  if (newStories < MIN_NEW_STORIES[scope]) {
+    warnings.push(`only ${newStories} new ${scope} stories (expected at least ${MIN_NEW_STORIES[scope]})`);
+  }
+  if (scope === 'global') {
+    const missing = CATEGORIES.filter((category) => !categories.has(category));
+    if (missing.length > MAX_MISSING_CATEGORIES) {
+      warnings.push(`no live stories in ${missing.length} categories: ${missing.join(', ')}`);
+    }
+    if (areas.size < MIN_AREAS) {
+      const absent = AREA_IDS.filter((area) => !areas.has(area));
+      warnings.push(`only ${areas.size}/${AREA_IDS.length} world areas covered; missing ${absent.join(', ')}`);
+    }
+  }
+  return {
+    scope,
+    newStories,
+    updatedStories,
+    categoriesCovered: categories.size,
+    areasCovered: areas.size,
+    warnings,
+  };
+}
+
+/**
+ * Stories of `scope` on the previous map that are gone from the new one —
+ * expired or capped out. Counted per scope: another run's stories leaving is
+ * not this run's doing.
+ */
+export function countExpired(previous: NewsDataset | null, next: NewsDataset, scope: NewsScope): number {
+  const ids = new Set(next.events.map((event) => event.id));
+  return (previous?.events ?? []).filter((event) => scopeOf(event) === scope && !ids.has(event.id)).length;
 }

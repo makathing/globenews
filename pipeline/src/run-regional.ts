@@ -61,6 +61,7 @@ const toStory = (event: NewsEvent): CurrentStory => ({
   headline: event.headline,
   locationName: event.locationName,
   firstSeen: event.firstSeen,
+  lastUpdated: event.lastUpdated,
 });
 
 async function remergeOnly(region: RegionConfig, tag: string, finalPath: string): Promise<void> {
@@ -127,9 +128,12 @@ async function main(): Promise<void> {
 
   const { kept, dropped } = keepInRegion(staged, region.countryCode);
   for (const line of dropped) console.warn(`[${tag}] dropped (outside the region): ${line}`);
-  const { dataset, skippedCrossScope } = finalizeScoped(kept, previous, 'daily', { scope: region.scope });
+  const { dataset, skippedCrossScope, skippedPerPlace } = finalizeScoped(kept, previous, 'daily', { scope: region.scope });
   for (const headline of skippedCrossScope) {
     console.log(`[${tag}] skipped (already a world-desk story): ${headline}`);
+  }
+  for (const headline of skippedPerPlace) {
+    console.log(`[${tag}] skipped (country/state already has its share this run): ${headline}`);
   }
   const published = await publishDataset(dataset, {
     tag,
