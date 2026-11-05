@@ -126,7 +126,9 @@ Return a concise markdown list of 4-7 candidate events (the strongest, not every
 and must VERIFY each one before it can appear on the map.
 
 For each candidate:
-1. Find at least TWO INDEPENDENT sources (different organizations) reporting it.
+1. Find at least TWO INDEPENDENT sources (different organizations) reporting it. Syndicated
+   copies of one wire story (AP or Reuters text on Yahoo, MSN, US News, local stations) are ONE
+   source, not several — look for an outlet with its own reporting.
    [source-intel] annotations (reliability 0-100, bias rating) are authoritative — prefer
    corroborating via domains rated >=75, and seek at least one source from a different
    part of the bias spectrum when the story is political.
@@ -174,10 +176,22 @@ Tasks:
      "lat": number, "lon": number  (precise coordinates of the event location),
      "locationName": "City, Country" or "Country",
      "countryCode": ISO 3166-1 alpha-2 ("XX" if genuinely multi-country),
-     "sources": [{"url": "https://..."}, ...]  (2+ independent URLs whenever available),
+     "sources": [{"url": "https://...", "published": "YYYY-MM-DD"}, ...]  (2+ independent URLs
+                 whenever available; "published" is the article's date from the research, omit
+                 it if unknown — never guess),
+     "status": "developing" | "confirmed" | "disputed"  (optional: "developing" while key facts
+               such as tolls or outcomes are still moving; "disputed" when credible sources
+               contradict each other on the core claim — say how in the summary; omit otherwise),
      "updates": "<id>"  (ONLY when this event continues one of the STORIES ALREADY ON THE MAP —
-                        copy that story's id exactly; omit the field for a new story)
+                        copy that story's id exactly; omit the field for a new story),
+     "corrects": "<id>", "correction": "<one sentence>"  (ONLY when the research shows a story
+                        ALREADY ON THE MAP got its key facts wrong: this event replaces it, and
+                        "correction" says plainly what was wrong — e.g. "Earlier reports put the
+                        toll at 300; officials have revised it to 30.")
    }
+   INDEPENDENCE: wire copy is one report. An AP or Reuters story reprinted by Yahoo, MSN,
+   US News or local stations is NOT extra corroboration — prefer citing the wire itself plus
+   outlets with their own reporting.
    SOURCES: every entry is an object {"url": "https://..."} holding a full https URL — the
    article URL from the research. If you do not have an outlet's article URL, use that
    outlet's homepage URL instead (e.g. {"url": "https://www.reuters.com/"}). NEVER write a

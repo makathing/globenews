@@ -4,6 +4,7 @@ import {
   scopeOf,
   type NewsDataset,
   type RunHealth,
+  type StoryStatus,
   type NewsEvent,
   type NewsScope,
   type NewsSource,
@@ -12,6 +13,7 @@ import {
 import { normalizeDomain, rateDomain } from './source-ratings.ts';
 import { reconcileCoordinates, subdivisionFor, US_SUBDIVISIONS } from './gazetteer.ts';
 import { computeTrustScore } from './trust.ts';
+import { originOf } from './syndication.ts';
 import { isHomepage, type StagedOutput } from './schema.ts';
 import { expiryIso, isExpired } from '../../shared/retention.ts';
 import { crossScopeMatch, matchPrevious } from './retention.ts';
@@ -22,9 +24,9 @@ export function stableEventId(headline: string, lat: number, lon: number): strin
   return createHash('sha1').update(key).digest('hex').slice(0, 12);
 }
 
-function buildSources(staged: { url: string; homepage?: boolean }[]): NewsSource[] {
+function buildSources(staged: { url: string; homepage?: boolean; published?: string }[]): NewsSource[] {
   const byDomain = new Map<string, NewsSource>();
-  for (const { url, homepage } of staged) {
+  for (const { url, homepage, published } of staged) {
     let parsed: URL;
     try {
       parsed = new URL(url);
@@ -39,6 +41,7 @@ function buildSources(staged: { url: string; homepage?: boolean }[]): NewsSource
     if (existing && !(existing.homepage && !isHome)) continue;
     // rate the full host too: some outlets are rated on a subdomain (news.sky.com)
     const rating = rateDomain(host);
+    const origin = isHome ? domain : originOf(url);
     byDomain.set(domain, {
       url,
       domain,
@@ -46,9 +49,47 @@ function buildSources(staged: { url: string; homepage?: boolean }[]): NewsSource
       bias: rating.bias,
       ...(rating.unrated ? { unrated: true } : {}),
       ...(isHome ? { homepage: true } : {}),
+      // only when it differs: most sources are their own newsroom
+      ...(origin !== domain ? { origin } : {}),
+      ...(published ? { published } : {}),
     });
   }
   return [...byDomain.values()];
+}
+
+/**
+ * Re-derive what finalize stamps on a source from its URL: origin, and the
+ * rating (the table grows). Applied to carried stories so a story added
+ * before a scoring change does not keep an outdated trust score for days.
+ */
+function refreshSource(source: NewsSource): NewsSource {
+  const host = (() => {
+    try {
+      return new URL(source.url).hostname.toLowerCase().replace(/^www\./, '');
+    } catch {
+      return source.domain;
+    }
+  })();
+  const rating = rateDomain(host);
+  const origin = source.homepage ? source.domain : originOf(source.url);
+  const { origin: _origin, unrated: _unrated, ...rest } = source;
+  return {
+    ...rest,
+    reliability: rating.reliability,
+    bias: rating.bias,
+    ...(rating.unrated ? { unrated: true } : {}),
+    ...(origin !== source.domain ? { origin } : {}),
+  };
+}
+
+/** A new story whose newest dated source is older than this is background, not news. */
+export const STALE_AFTER_HOURS = 72;
+
+/** Whether every source is dated and the newest is older than STALE_AFTER_HOURS. */
+export function isStale(sources: NewsSource[], nowMs: number): boolean {
+  if (sources.length === 0 || sources.some((source) => !source.published)) return false;
+  const newest = Math.max(...sources.map((source) => Date.parse(`${source.published}T23:59:59Z`)));
+  return Number.isFinite(newest) && nowMs - newest > STALE_AFTER_HOURS * 3_600_000;
 }
 
 /** Schema cap on sources per event; an update keeps its old outlets up to this. */
@@ -77,6 +118,8 @@ export interface FinalizeReport {
   skippedCrossScope: string[];
   /** Headlines dropped because their country or state already had MAX_PER_PLACE stories this run. */
   skippedPerPlace: string[];
+  /** New stories dropped because every source was published more than STALE_AFTER_HOURS ago. */
+  skippedStale: string[];
 }
 
 const bySeverityThenTrust = (a: NewsEvent, b: NewsEvent) =>
@@ -141,6 +184,26 @@ function placeKey(event: { countryCode: string; subdivision?: string }, scope: N
   return event.countryCode === 'XX' ? undefined : event.countryCode;
 }
 
+/** Fallback note when a correction arrives without one. */
+export const DEFAULT_CORRECTION = 'An earlier version of this story on the map has been corrected.';
+
+/**
+ * A story's editorial status after this run. A correction marks the story
+ * 'corrected' and keeps that note for the rest of its life on the map, so a
+ * later update cannot quietly erase that it was once wrong.
+ */
+function storyStatus(
+  staged: { status?: StoryStatus; correction?: string },
+  prev: NewsEvent | undefined,
+  isCorrection: boolean,
+): Pick<NewsEvent, 'status' | 'correction'> {
+  if (isCorrection) return { status: 'corrected', correction: staged.correction ?? DEFAULT_CORRECTION };
+  if (prev?.status === 'corrected') {
+    return { status: 'corrected', correction: prev.correction ?? DEFAULT_CORRECTION };
+  }
+  return staged.status && staged.status !== 'corrected' ? { status: staged.status } : {};
+}
+
 /**
  * The state a US story is in: what the place name says, else the model's
  * (if it is a real US code), else the nearest known city's.
@@ -202,6 +265,7 @@ export function finalizeScoped(
 
   const events: NewsEvent[] = [];
   const skippedPerPlace: string[] = [];
+  const skippedStale: string[] = [];
   const placeCounts = new Map<string, number>();
   // strongest first, so the per-place limit cuts the smallest angles
   const ordered = [...staged.events].sort((a, b) => b.severity - a.severity);
@@ -215,10 +279,16 @@ export function finalizeScoped(
       skippedCrossScope.push(stagedEvent.headline);
       continue;
     }
-    let prev = retain ? matchPrevious(stagedEvent, coords, own, ownId) : prevById.get(ownId);
+    // a correction names the story it replaces; otherwise the usual continuity match
+    const corrected = stagedEvent.corrects ? prevById.get(stagedEvent.corrects) : undefined;
+    let prev = corrected ?? (retain ? matchPrevious(stagedEvent, coords, own, ownId) : prevById.get(ownId));
     // two staged events claiming the same story: the first is the update,
     // the second stands on its own
     if (prev && continued.has(prev.id)) prev = undefined;
+    if (!prev && isStale(sources, nowMs)) {
+      skippedStale.push(stagedEvent.headline);
+      continue;
+    }
     if (prev) continued.add(prev.id);
     const id = prev?.id ?? ownId;
 
@@ -281,14 +351,18 @@ export function finalizeScoped(
       lastUpdated: now,
       expiresAt: expiryIso(stagedEvent.severity, now),
       isBreaking: opts.markBreaking ?? false,
+      ...storyStatus(stagedEvent, prev, corrected !== undefined),
     });
   }
 
   if (retain) {
     for (const event of own) {
       if (continued.has(event.id) || isExpired(event, nowMs)) continue;
+      const sources = event.sources.map(refreshSource);
       events.push({
         ...event,
+        sources,
+        trustScore: computeTrustScore(sources),
         expiresAt: event.expiresAt ?? expiryIso(event.severity, event.lastUpdated),
         // breaking means "this hour"; the next daily batch is when it stops being that
         isBreaking: mode === 'daily' ? false : event.isBreaking,
@@ -305,6 +379,7 @@ export function finalizeScoped(
     dataset: { generatedAt: now, mode, events: capByScope(events, caps) },
     skippedCrossScope,
     skippedPerPlace,
+    skippedStale,
   };
 }
 

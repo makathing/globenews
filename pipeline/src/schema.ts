@@ -4,6 +4,7 @@ import {
   CATEGORIES,
   CATEGORY_LABELS,
   NEWS_SCOPES,
+  STORY_STATUSES,
   type Category,
   type NewsDataset,
 } from '../../shared/news.ts';
@@ -14,6 +15,19 @@ import { normalizeDomain } from './source-ratings.ts';
 /** ISO 3166-2, e.g. 'US-TX', 'US-DC'. */
 export const SUBDIVISION_PATTERN = /^[A-Z]{2}-[A-Z0-9]{1,3}$/;
 
+/** A publish date as stored: YYYY-MM-DD. */
+export const PUBLISHED_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+/** YYYY-MM-DD from whatever date-ish string the agents wrote, if it holds a plausible one. */
+export function normalizePublished(value: unknown): string | undefined {
+  if (typeof value !== 'string') return undefined;
+  const match = value.match(/(20\d{2})-(\d{2})-(\d{2})/);
+  if (!match) return undefined;
+  const [, , month, day] = match;
+  if (Number(month) < 1 || Number(month) > 12 || Number(day) < 1 || Number(day) > 31) return undefined;
+  return match[0];
+}
+
 export const NewsSourceSchema = z.object({
   url: z.url(),
   domain: z.string().min(3),
@@ -21,6 +35,8 @@ export const NewsSourceSchema = z.object({
   bias: z.enum(BIAS_RATINGS),
   unrated: z.boolean().optional(),
   homepage: z.boolean().optional(),
+  origin: z.string().min(1).optional(),
+  published: z.string().regex(PUBLISHED_PATTERN).optional(),
   image: z.url().optional(),
   icon: z.url().optional(),
 });
@@ -49,6 +65,8 @@ export const NewsEventSchema = z.object({
   lastUpdated: z.iso.datetime({ offset: true }),
   expiresAt: z.iso.datetime({ offset: true }).optional(),
   isBreaking: z.boolean(),
+  status: z.enum(STORY_STATUSES).optional(),
+  correction: z.string().min(1).max(300).optional(),
 });
 
 export const RunStatsSchema = z.object({
@@ -103,10 +121,17 @@ export const StagedEventSchema = NewsEventSchema.omit({
   // the id of the story already on the map that this event continues; the
   // runner uses it to keep that story's id and added time
   updates: z.string().optional(),
+  // the id of a story on the map whose key facts this event corrects; it
+  // replaces that story, which is then marked 'corrected' with `correction`
+  corrects: z.string().optional(),
   sources: z
     .array(
       z
-        .object({ url: z.url(), homepage: z.boolean().optional() })
+        .object({
+          url: z.url(),
+          homepage: z.boolean().optional(),
+          published: z.string().regex(PUBLISHED_PATTERN).optional(),
+        })
         .or(z.url().transform((url) => ({ url }))),
     )
     .min(1)
@@ -139,7 +164,11 @@ export interface StagedSource {
   url: string;
   /** The outlet's homepage, recovered from a bare outlet name — not the article itself. */
   homepage?: boolean;
+  /** Publish date, YYYY-MM-DD, when the agents gave one. */
+  published?: string;
 }
+
+const PUBLISHED_KEYS = ['published', 'publishedAt', 'published_at', 'date', 'datePublished'] as const;
 
 const URL_KEYS = ['url', 'link', 'href', 'source'] as const;
 const NAME_KEYS = ['name', 'outlet', 'publisher', 'domain', 'title', 'source', 'site'] as const;
@@ -207,6 +236,9 @@ export function normalizeStagedSources(value: unknown): StagedSource[] | undefin
     let source: StagedSource | undefined;
     if (typeof entry === 'string') {
       source = urlFrom(entry) ?? homepageFrom(entry);
+      // "https://... (2026-11-04)": the researcher's dated-URL format
+      const published = normalizePublished(entry.replace(/https?:\/\/\S+/, ''));
+      if (source && published) source.published = published;
     } else if (entry && typeof entry === 'object') {
       const record = entry as Record<string, unknown>;
       const strings = (keys: readonly string[]) =>
@@ -221,6 +253,8 @@ export function normalizeStagedSources(value: unknown): StagedSource[] | undefin
           if (source) break;
         }
       }
+      const published = strings(PUBLISHED_KEYS).map(normalizePublished).find(Boolean);
+      if (source && published) source.published = published;
     }
     if (source) found.push(source);
   }
@@ -432,6 +466,14 @@ export function parseStagedOutput(raw: string): SalvageResult {
       }
       const sources = normalizeStagedSources(fixed.sources);
       if (sources) fixed.sources = sources;
+      // editorial status is optional: fix the case, or drop a value off the list
+      if (fixed.status !== undefined) {
+        const status = typeof fixed.status === 'string' ? fixed.status.trim().toLowerCase() : '';
+        if ((STORY_STATUSES as readonly string[]).includes(status)) fixed.status = status;
+        else delete fixed.status;
+      }
+      if (typeof fixed.correction === 'string') fixed.correction = truncateText(fixed.correction, 295);
+      else delete fixed.correction;
       if (!(CATEGORIES as readonly string[]).includes(fixed.category as string)) {
         const category = normalizeCategory(fixed.category);
         if (category) fixed.category = category;

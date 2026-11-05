@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit",
     "enrich": "tsx src/enrich-existing.ts",
     "backfill-severity": "tsx src/backfill-severity.ts",
+    "report-unrated": "tsx src/report-unrated.ts",
     "photo-library": "tsx src/build-photo-library.ts",
     "photo-library:localise": "tsx src/localise-photo-library.ts"
   },

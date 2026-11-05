@@ -52,6 +52,14 @@ export interface NewsSource {
   /** True when the domain was not in the ratings table. */
   unrated?: boolean;
   /**
+   * The newsroom whose reporting this is, when it is not the outlet itself:
+   * syndicated wire copy ('apnews.com', 'reuters.com', 'afp.com', or 'wire'
+   * for unattributed aggregator copy). Trust counts distinct origins.
+   */
+  origin?: string;
+  /** When the article was published (YYYY-MM-DD or ISO), as the researcher saw it. */
+  published?: string;
+  /**
    * `url` is the outlet's homepage, not the article: the synthesizer named the
    * outlet without linking the story. Still rated by its domain.
    */
@@ -113,7 +121,19 @@ export interface NewsEvent {
    */
   expiresAt?: string;
   isBreaking: boolean;
+  /**
+   * Editorial state, when there is something to say: 'developing' (facts
+   * still moving), 'confirmed', 'disputed' (credible sources contradict each
+   * other), or 'corrected' (an earlier version on the map was wrong — see
+   * `correction`). Absent means an ordinary verified report.
+   */
+  status?: StoryStatus;
+  /** What an earlier version of this story got wrong, when status is 'corrected'. */
+  correction?: string;
 }
+
+export const STORY_STATUSES = ['developing', 'confirmed', 'disputed', 'corrected'] as const;
+export type StoryStatus = (typeof STORY_STATUSES)[number];
 
 /**
  * What a run actually produced. Recorded because image enrichment fails
