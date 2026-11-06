@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T06:05:32.623Z",
+  "generatedAt": "2026-11-06T15:28:33.350Z",
   "mode": "daily",
   "events": [
     {
@@ -49,60 +49,6 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-12T06:06:55.832Z",
-      "isBreaking": false
-    },
-    {
-      "id": "418ddcf3a3f4",
-      "headline": "Urda Rail Crash Probe Focuses on Signal-Override Order From Madrid Control Centre",
-      "summary": "Investigators probing the Oct 28 high-speed rail collision near Urda (at least 68-69 killed) say that after a computer failure disabled the automatic safety system, an operator at Adif's Madrid-Atocha control centre told the AVE driver to resume normal running despite a red signal, even though the other train had reported it was still stopped on the track. Spain's rail accident authority has widened the investigation.",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 39.4667,
-      "lon": -3.7167,
-      "locationName": "Urda, Toledo, Spain",
-      "countryCode": "ES",
-      "sources": [
-        {
-          "url": "https://abcnews.com/International/10-killed-train-collision-high-speed-line-spain/story?id=137633323",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/29/what-we-know-about-spains-second-high-speed-rail-tragedy-this-year",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/spain-train-crash-toledo-urda/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/10/28/spain-high-speed-train-crash.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6020217/spain-train-disaster",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnn.com/2026/10/28/world/live-news/spain-train-crash-collision-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 88,
-      "firstSeen": "2026-10-29T06:23:58.774Z",
-      "lastUpdated": "2026-11-02T06:06:25.795Z",
-      "expiresAt": "2026-11-06T06:06:25.795Z",
       "isBreaking": false
     },
     {
@@ -415,48 +361,6 @@
       "isBreaking": false
     },
     {
-      "id": "88cabd1d7da2",
-      "headline": "Polish President Nawrocki Confronts Judges as Riot Police Deployed in Court Standoff",
-      "summary": "Poland's constitutional crisis escalated as President Karol Nawrocki had a physical confrontation with judges at the Constitutional Tribunal, prompting deployment of riot police. The standoff between Nawrocki and the Tusk government has already triggered the resignation of three Polish ambassadors.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 52.2297,
-      "lon": 21.0122,
-      "locationName": "Warsaw, Poland",
-      "countryCode": "PL",
-      "sources": [
-        {
-          "url": "https://www.cnn.com/2026/11/01/europe/poland-constitutional-tribunal-tusk-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/1/polish-president-holds-crisis-talks-in-court-standoff",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.euronews.com/2026/10/31/poland-political-crisis-constitutional-court-in-chaos-as-nawrocki-accuses-government-of-st",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-10-30/poland-moves-against-top-court-in-a-showdown-with-the-opposition",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 80,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-08T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
       "id": "5225e1455d04",
       "headline": "Mississippi US Senate Race Uncalled; Democrat Colom Leads Hyde-Smith by About 1,100 Votes",
       "summary": "Democratic challenger Scott Colom held a roughly 1,100-vote lead over incumbent Republican Sen. Cindy Hyde-Smith as of November 5, with Mississippi's U.S. Senate race still too close to call. A Colom win would make him the first Black senator from Mississippi since Reconstruction.",
@@ -498,6 +402,48 @@
       "firstSeen": "2026-11-05T15:28:00.613Z",
       "lastUpdated": "2026-11-05T15:28:00.613Z",
       "expiresAt": "2026-11-09T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "88cabd1d7da2",
+      "headline": "Polish President Nawrocki Confronts Judges as Riot Police Deployed in Court Standoff",
+      "summary": "Poland's constitutional crisis escalated as President Karol Nawrocki had a physical confrontation with judges at the Constitutional Tribunal, prompting deployment of riot police. The standoff between Nawrocki and the Tusk government has already triggered the resignation of three Polish ambassadors.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 52.2297,
+      "lon": 21.0122,
+      "locationName": "Warsaw, Poland",
+      "countryCode": "PL",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/01/europe/poland-constitutional-tribunal-tusk-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/1/polish-president-holds-crisis-talks-in-court-standoff",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.euronews.com/2026/10/31/poland-political-crisis-constitutional-court-in-chaos-as-nawrocki-accuses-government-of-st",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-10-30/poland-moves-against-top-court-in-a-showdown-with-the-opposition",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-11-03T06:07:11.564Z",
+      "lastUpdated": "2026-11-04T06:07:32.098Z",
+      "expiresAt": "2026-11-08T06:07:32.098Z",
       "isBreaking": false
     },
     {
@@ -595,54 +541,41 @@
       "isBreaking": false
     },
     {
-      "id": "632a1e9e60d9",
-      "headline": "Al-Shabaab Claims Mass-Casualty Ambush on Somali Convoy in Lower Shabelle",
-      "summary": "On Oct 26-27, 2026, al-Shabaab ambushed a Somali government/allied-militia convoy near Leego, Lower Shabelle region, during Operation Banooda, using explosive-laden vehicles; al-Shabaab claims it killed over 300 troops, while Somali officials counter it was a major assault by government forces. The death toll is independently unconfirmed, but analysts call it the army's worst setback since 2023.",
-      "category": "conflict",
+      "id": "dd1570c9384e",
+      "headline": "Pennsylvania Confirms Sixth Measles-Linked Death as Nation's Largest Outbreak in Decades Grows",
+      "summary": "Pennsylvania health officials confirmed on Nov. 4, 2026 that an unvaccinated Jefferson County resident became the state's sixth measles-associated death this year. The statewide outbreak has grown to more than 1,467 cases, the largest in the US in more than 30 years.",
+      "category": "health",
       "severity": 4,
-      "lat": 1.95,
-      "lon": 44.5,
-      "locationName": "Leego, Lower Shabelle, Somalia",
-      "countryCode": "SO",
+      "lat": 41.1587,
+      "lon": -79.0836,
+      "locationName": "Jefferson County, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
       "sources": [
         {
-          "url": "https://www.usnews.com/news/world/articles/2026-10-27/dozens-of-somali-soldiers-killed-in-battle-with-al-shabaab-soldiers-say",
+          "url": "https://abcnews.com/US/pennsylvania-reports-6th-measles-death-amid-outbreak-health/story?id=137857546",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/US/2026/11/05/Pennsylvania-sixth-measles-death/2431793858122",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/us/articles/2026-11-04/pennsylvania-reports-sixth-measles-linked-death-as-cases-rise",
           "domain": "usnews.com",
           "reliability": 75,
           "bias": "center"
-        },
-        {
-          "url": "https://cphpost.dk/2026-10-27/global/al-shabab-claims-it-killed-321-somali-troops-and-allied-fighters-in-ambush/",
-          "domain": "cphpost.dk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.somaliguardian.com/news/somalia-news/somali-army-convoy-ambushed-al-shabaab-deadliest-attack/",
-          "domain": "somaliguardian.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.arabnews.com/world/many-killed-in-somali-army-clash-with-militants-3008481",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
-        },
-        {
-          "url": "https://addisstandard.com/brief/n-60482/",
-          "domain": "addisstandard.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
-      "trustScore": 77,
-      "firstSeen": "2026-11-02T06:06:25.795Z",
-      "lastUpdated": "2026-11-02T06:06:25.795Z",
-      "expiresAt": "2026-11-06T06:06:25.795Z",
+      "trustScore": 72,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-10T15:28:33.350Z",
       "isBreaking": false
     },
     {
@@ -738,64 +671,35 @@
       "isBreaking": false
     },
     {
-      "id": "7e888e3a0625",
-      "headline": "Mandatory Evacuations in Pagosa Springs, Colorado, as San Juan River Nears Record Crest",
-      "summary": "A second storm wave triggered mandatory evacuations in Archuleta County, Colorado, as the San Juan River rose to 16.8 feet/11,200 cfs — the second-highest stage on record, just below the historic 1911 mark of 17.8 feet. Highway 160 closed, Red Cross shelters opened, and the Colorado National Guard deployed.",
-      "category": "disaster",
+      "id": "4a639ecf2a96",
+      "headline": "Jocelyn Benson Elected Michigan Governor; Abdul El-Sayed Wins US Senate Seat",
+      "summary": "Democratic Secretary of State Jocelyn Benson defeated Republican Rep. John James by roughly 11 points to win Michigan's governor's race on November 3. Abdul El-Sayed defeated Republican Mike Rogers by about 7 points for Michigan's open U.S. Senate seat, becoming the nation's first Muslim U.S. senator.",
+      "category": "politics",
       "severity": 4,
-      "lat": 37.2696,
-      "lon": -107.0098,
-      "locationName": "Pagosa Springs, Colorado, USA",
+      "lat": 42.7325,
+      "lon": -84.5555,
+      "locationName": "Lansing, Michigan, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-CO",
+      "subdivision": "US-MI",
       "sources": [
         {
-          "url": "https://www.cpr.org/2026/11/01/southwest-colorado-pagosa-springs-flooding-san-luis-valley-november-2026/",
-          "domain": "cpr.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://coloradosun.com/2026/11/01/another-storm-southwest-colorado-flooding-evacuations/",
-          "domain": "coloradosun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.cbsnews.com/colorado/news/rushing-water-flooding-evacuations-pagosa-springs-southwestern-colorado-record-breaking-rain",
+          "url": "https://www.cbsnews.com/detroit/live-updates/michigan-2026-midterm-election-live-updates/",
           "domain": "cbsnews.com",
           "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.sltrib.com/news/2026/11/01/san-juan-county-hit-with-lot-rain/",
-          "domain": "sltrib.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.abc4.com/news/southern-utah/significant-historic-flood-san-juan-county-bluff/",
-          "domain": "abc4.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://navajotimes.com/reznews/san-juan-river-forecast-to-flood-again-at-shiprock-as-heavy-rain-hits-region/",
-          "domain": "navajotimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.pbs.org/newshour/politics/democrat-abdul-el-sayed-wins-election-to-u-s-senate-from-michigan",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
         }
       ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T15:48:07.539Z",
-      "expiresAt": "2026-11-06T15:48:07.539Z",
+      "trustScore": 66,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-09T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -833,120 +737,6 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-03T06:07:11.564Z",
       "expiresAt": "2026-11-07T06:07:11.564Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4a639ecf2a96",
-      "headline": "Jocelyn Benson Elected Michigan Governor; Abdul El-Sayed Wins US Senate Seat",
-      "summary": "Democratic Secretary of State Jocelyn Benson defeated Republican Rep. John James by roughly 11 points to win Michigan's governor's race on November 3. Abdul El-Sayed defeated Republican Mike Rogers by about 7 points for Michigan's open U.S. Senate seat, becoming the nation's first Muslim U.S. senator.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 42.7325,
-      "lon": -84.5555,
-      "locationName": "Lansing, Michigan, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MI",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/detroit/live-updates/michigan-2026-midterm-election-live-updates/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/politics/democrat-abdul-el-sayed-wins-election-to-u-s-senate-from-michigan",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-05T15:28:00.613Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-09T15:28:00.613Z",
-      "isBreaking": false
-    },
-    {
-      "id": "376a7929c446",
-      "headline": "Federal Judge Rejects DOJ Bid to Segregate About 20,000 'Likely Non-Citizen' California Ballots",
-      "summary": "A federal judge denied a DOJ emergency request to force California to segregate roughly 20,000 ballots the department claims belong to likely non-citizens, two days before the Nov. 3 election, ruling it would \"wreak havoc\" on the vote. An appeals panel also rejected a similar request.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 34.0537,
-      "lon": -118.2428,
-      "locationName": "Los Angeles, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6021478/doj-california-ballots-denied",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://abcnews.com/Politics/judge-rejects-trump-administration-request-order-segregate-20000/story?id=137660006",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/justice-department/judge-rules-california-ballots-alleged-non-citizen-voters-trump-doj-rcna606100",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-06T11:59:46.260Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6769be7a0b25",
-      "headline": "UN Investigation Finds Hallmarks of Genocide in El Fasher One Year After RSF Takeover",
-      "summary": "A UN fact-finding mission concluded that mass killings, gang rapes and deliberate starvation by the RSF in El Fasher, North Darfur, constitute \"the hallmarks of genocide.\" One year after the city's October 2025 capture, North Darfur's governor alleges RSF forces committed 320 gang-rape cases at El Fasher University and 140 mass graves have been identified; Amnesty International's October 2026 follow-up found ongoing unlawful killings, detention, starvation and torture of civilians.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 13.6289,
-      "lon": 25.3493,
-      "locationName": "El Fasher, North Darfur, Sudan",
-      "countryCode": "SD",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/7/9/un-probe-finds-mass-killings-gang-rapes-by-sudans-rsf-amount-to-genocide",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://news.un.org/en/story/2026/02/1166997",
-          "domain": "un.org",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.amnesty.org/en/latest/news/2026/10/sudan-el-fasher-civilians-suffer-unlawful-killings-detention-and-torture-one-year-after-citys-capture-by-the-rsf-new-testimony/",
-          "domain": "amnesty.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://allafrica.com/stories/202610270060.html",
-          "domain": "allafrica.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-02T06:06:25.795Z",
-      "lastUpdated": "2026-11-02T06:06:25.795Z",
-      "expiresAt": "2026-11-06T06:06:25.795Z",
       "isBreaking": false
     },
     {
@@ -1026,6 +816,38 @@
       "isBreaking": false
     },
     {
+      "id": "c2f0476c3379",
+      "headline": "3M Agrees to Pay Up to $7.35 Billion to Settle 'Forever Chemical' Contamination Claims",
+      "summary": "3M agreed on Nov. 4-5, 2026 to pay up to $7.35 billion over nine years to settle PFAS personal-injury claims brought by roughly 120,000 plaintiffs near military bases and airports. The company made no admission of wrongdoing in the settlement.",
+      "category": "health",
+      "severity": 4,
+      "lat": 44.9537,
+      "lon": -93.09,
+      "locationName": "St. Paul, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/minnesota/news/3m-7-billion-dollar-forever-chemical-settlement-pfas/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/business/articles/2026-11-04/3m-agrees-to-pay-more-than-7-billion-to-settle-forever-chemical-groundwater-contamination-claims",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 63,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-10T15:28:33.350Z",
+      "isBreaking": false
+    },
+    {
       "id": "461908a09a6f",
       "headline": "Nearly 6 Million Face Acute Hunger in Haiti Amid Gang Violence and El Nino Drought",
       "summary": "The UN estimates nearly 5.94 million Haitians face acute food insecurity, a figure projected to rise to 6.35 million by mid-2027, driven by gang violence and El Nino-linked drought. Separately, the UN human rights office reports more than 5,700 people killed or wounded by gang violence between January and mid-September, including over 1,000 rapes and 230 kidnappings.",
@@ -1071,82 +893,42 @@
       "isBreaking": false
     },
     {
-      "id": "35ea5d36a5da",
-      "headline": "Historic Flash Flooding Triggers Mass Evacuations in Sedona, Arizona",
-      "summary": "A second Pacific storm dumped up to 4 inches of rain across the Southwest on Nov. 1-2, triggering mandatory evacuations in Sedona zones near Oak Creek and prompting water rescues. The same system caused severe flooding in southern Colorado, where Gov. Polis issued a disaster declaration.",
-      "category": "disaster",
+      "id": "68b97b22f6ca",
+      "headline": "Newsom Moves to Commute All 548 California Death Sentences to Life Without Parole",
+      "summary": "Gov. Gavin Newsom announced he will commute every death sentence in California, affecting 548 people on the Western Hemisphere's largest death row, to life without parole. The move comes about eight years after he imposed an execution moratorium; the California Supreme Court must still approve roughly 382 of the commutations involving repeat felons.",
+      "category": "politics",
       "severity": 4,
-      "lat": 34.8697,
-      "lon": -111.761,
-      "locationName": "Sedona, Arizona, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AZ",
-      "sources": [
-        {
-          "url": "https://www.azfamily.com/2026/11/01/flash-flooding-triggers-immediate-evacuations-parts-sedona/",
-          "domain": "azfamily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.cbsnews.com/colorado/news/pagosa-springs-colorado-extreme-flooding-evacuations",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.washingtontimes.com/news/2026/nov/1/flash-floods-trigger-evacuations-arizona-colorado-amid-heavy-rains/",
-          "domain": "washingtontimes.com",
-          "reliability": 58,
-          "bias": "right"
-        }
-      ],
-      "trustScore": 56,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-06T11:59:46.260Z",
-      "isBreaking": false
-    },
-    {
-      "id": "38041f40d5cf",
-      "headline": "Palisades Fire Arson Retrial Begins in Los Angeles Federal Court",
-      "summary": "Jury selection began Nov. 2 in the federal retrial of Jonathan Rinderknecht, who is accused of igniting the Palisades Fire. His first trial ended in a hung jury in June 2026.",
-      "category": "society",
-      "severity": 4,
-      "lat": 34.0522,
-      "lon": -118.2437,
-      "locationName": "Los Angeles, California, USA",
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
       "countryCode": "US",
       "scope": "us",
       "subdivision": "US-CA",
       "sources": [
         {
-          "url": "https://www.nbclosangeles.com/investigations/palisades-fire-arson-retrial-set-for-november/3931320/",
-          "domain": "nbclosangeles.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.cnn.com/2026/11/05/us/california-death-row-commutation",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.justice.gov/usao-cdca/united-states-v-jonathan-rinderknecht",
-          "domain": "justice.gov",
-          "reliability": 85,
+          "url": "https://www.cbsnews.com/sacramento/news/gavin-newsom-california-death-row-commuted-life-in-prison/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://1027wbow.com/2026/11/02/accused-arsonist-in-los-angeles-deadly-palisades-fire-returns-for-federal-retrial/",
-          "domain": "1027wbow.com",
+          "url": "https://www.sfchronicle.com/politics/article/newsom-death-penalty-california-22512509.php",
+          "domain": "sfchronicle.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-06T11:59:46.260Z",
+      "trustScore": 59,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-10T15:28:33.350Z",
       "isBreaking": false
     },
     {
@@ -1187,46 +969,6 @@
       "firstSeen": "2026-11-05T15:28:00.613Z",
       "lastUpdated": "2026-11-05T15:28:00.613Z",
       "expiresAt": "2026-11-09T15:28:00.613Z",
-      "isBreaking": false
-    },
-    {
-      "id": "60fb374992e3",
-      "headline": "Learjet Crashes Near Greenacres, Florida, Killing All 9 Aboard",
-      "summary": "A Learjet 60 flying from Austin, Texas, to North Eleuthera, Bahamas, crashed near a residential area in Greenacres, Florida, around 12:50 p.m. on Nov. 1, killing all nine people aboard. Gov. Ron DeSantis called the crash \"cataclysmic.\"",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 26.619,
-      "lon": -80.1253,
-      "locationName": "Greenacres, Florida, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-FL",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/nine-people-dead-after-learjet-crashes-in-florida",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.nbcmiami.com/news/local/officials-respond-to-fiery-aircraft-incident-in-palm-beach-county/3881532/",
-          "domain": "nbcmiami.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://cbs12.com/news/local/explosion-fire-shut-down-military-trail-in-both-directions-military-trail-s-military-trail-diamond-road-explosion-fire-loud-boom-boom-heard-for-miles-road-closure-traffic-alert-road-damage-broken-pavement-debris",
-          "domain": "cbs12.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-02T11:59:46.260Z",
-      "lastUpdated": "2026-11-02T11:59:46.260Z",
-      "expiresAt": "2026-11-06T11:59:46.260Z",
       "isBreaking": false
     },
     {
@@ -1306,45 +1048,6 @@
       "isBreaking": false
     },
     {
-      "id": "a869bcb730fc",
-      "headline": "Houthi Attack Death Toll at Qataba Training Camp Disputed, Estimates Range From Dozens to Over 70",
-      "summary": "Casualty estimates from a Houthi missile attack on a Yemeni government military training camp in Qataba, Al Dhale'e governorate, continue to diverge sharply across sources, ranging from roughly 14 to over 73 dead, with one wire report citing 73 killed. The attack struck trainees at the camp.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 13.76,
-      "lon": 44.37,
-      "locationName": "Qataba, Al Dhale'e Governorate, Yemen",
-      "countryCode": "YE",
-      "sources": [
-        {
-          "url": "https://www.newarab.com/news/houthi-missile-attack-kills-dozens-military-camp-yemen",
-          "domain": "newarab.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.streetinsider.com/General+News/Death+toll+from+Houthi+attack+on+Yemen+training+camp+rises+to+73+-+AP/27207062.html",
-          "domain": "streetinsider.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://english.news.cn/20261105/33779a75a23741e6a1741058b7cfbc80/c.html",
-          "domain": "news.cn",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-05T06:06:55.832Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-10T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
       "id": "8fe5e3876d2a",
       "headline": "Oregon's 2026 Wildfire Season Becomes Largest on Record, Nearly 2 Million Acres Burned",
       "summary": "Oregon's 2026 wildfire season burned roughly 2 to 2.3 million acres, surpassing the prior record of about 1.93 million acres set in 2024, at a suppression cost near $1.4 billion. FEMA reversed an earlier denial of federal fire-management assistance for the Rowe Creek Complex fire after appeals from Oregon lawmakers.",
@@ -1383,6 +1086,45 @@
       "firstSeen": "2026-11-03T15:27:52.809Z",
       "lastUpdated": "2026-11-03T15:27:52.809Z",
       "expiresAt": "2026-11-07T15:27:52.809Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a869bcb730fc",
+      "headline": "Houthi Attack Death Toll at Qataba Training Camp Disputed, Estimates Range From Dozens to Over 70",
+      "summary": "Casualty estimates from a Houthi missile attack on a Yemeni government military training camp in Qataba, Al Dhale'e governorate, continue to diverge sharply across sources, ranging from roughly 14 to over 73 dead, with one wire report citing 73 killed. The attack struck trainees at the camp.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 13.76,
+      "lon": 44.37,
+      "locationName": "Qataba, Al Dhale'e Governorate, Yemen",
+      "countryCode": "YE",
+      "sources": [
+        {
+          "url": "https://www.newarab.com/news/houthi-missile-attack-kills-dozens-military-camp-yemen",
+          "domain": "newarab.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.streetinsider.com/General+News/Death+toll+from+Houthi+attack+on+Yemen+training+camp+rises+to+73+-+AP/27207062.html",
+          "domain": "streetinsider.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://english.news.cn/20261105/33779a75a23741e6a1741058b7cfbc80/c.html",
+          "domain": "news.cn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-05T06:06:55.832Z",
+      "lastUpdated": "2026-11-06T06:05:32.623Z",
+      "expiresAt": "2026-11-10T06:05:32.623Z",
       "isBreaking": false
     },
     {
@@ -1652,68 +1394,6 @@
       "isBreaking": false
     },
     {
-      "id": "fb82c35e8dd5",
-      "headline": "US Military Boat-Strike Campaign Continues; Cumulative Drug-Boat Death Toll Tops 240",
-      "summary": "The US military carried out additional strikes on suspected drug-smuggling boats in the Caribbean and Eastern Pacific, pushing the cumulative death toll from the campaign past 240. The strikes continue a controversial campaign that has drawn criticism over its legality and lack of transparency.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 15,
-      "lon": -75,
-      "locationName": "Caribbean Sea / Eastern Pacific",
-      "countryCode": "XX",
-      "sources": [
-        {
-          "url": "https://www.nbcnews.com/politics/trump-administration/us-military-says-latest-strike-alleged-drug-smuggling-boat-caribbean-k-rcna601550",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/world/u-s-military-says-5-were-killed-by-a-strike-on-an-alleged-drug-smuggling-boat-in-the-eastern-pacific",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://upi.com/Top_News/US/2026/10/28/SOUTHCOM-boat-strike/5591793158414",
-          "domain": "upi.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/27/us-says-it-killed-five-people-in-strike-on-alleged-drug-boat",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://taskandpurpose.com/news/military-drug-boat-240-killed/",
-          "domain": "taskandpurpose.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://news.usni.org",
-          "domain": "usni.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://yahoo.com",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 83,
-      "firstSeen": "2026-10-25T06:07:01.691Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
       "id": "3d45012d633b",
       "headline": "Sudan and Ethiopia Trade Tit-for-Tat Consulate Closures as Diplomatic Rupture Deepens",
       "summary": "Sudan and Ethiopia escalated a diplomatic rupture by ordering reciprocal consulate closures, with Sudan closing Ethiopia's consulate in Gedaref after Ethiopia expelled Sudanese diplomats over allegations that Ethiopia supports Sudan's Rapid Support Forces paramilitary group.",
@@ -1814,61 +1494,84 @@
       "isBreaking": false
     },
     {
-      "id": "945bb4754b50",
-      "headline": "UN Rapporteur Calls Myanmar's Human Rights Situation 'Catastrophic' Amid Junta Attacks on Civilians",
-      "summary": "A UN Special Rapporteur described Myanmar's human rights situation as catastrophic, saying the junta is attacking civilians to terrorize them while continuing arms purchases to fuel the war. The statement follows junta airstrikes that killed children at a school in Karenni State and bombed villages in Rakhine.",
-      "category": "conflict",
+      "id": "7e888e3a0625",
+      "headline": "Southwest Colorado Flood Damage Tally Hits $65 Million, Wolf Creek Pass Still Closed",
+      "summary": "The Colorado Department of Transportation now estimates more than $65 million in road and bridge damage from San Juan River flooding, with a 33-mile stretch of Wolf Creek Pass closed. Multiple sites need emergency repair after mudslides and a collapsed bridge pier, following the mandatory evacuations ordered in Pagosa Springs in early November.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 21.9162,
-      "lon": 95.956,
-      "locationName": "Myanmar",
-      "countryCode": "MM",
+      "lat": 37.2696,
+      "lon": -107.0101,
+      "locationName": "Pagosa Springs, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
       "sources": [
         {
-          "url": "https://news.un.org/en/story/2026/10/1168705",
-          "domain": "un.org",
-          "reliability": 88,
+          "url": "https://www.codot.gov/news/2026/october-2026-news/swco-highways-additional-flood-damage",
+          "domain": "codot.gov",
+          "reliability": 85,
           "bias": "center"
         },
         {
-          "url": "https://www.usnews.com/news/us/articles/2026-10-30/un-investigator-myanmar-junta-attacks-civilians-to-terrorize-them-as-arms-buys-fuel-war",
-          "domain": "usnews.com",
-          "reliability": 75,
+          "url": "https://gazette.com/2026/11/03/what-roads-in-southwest-colorado-are-closed-damaged-from-flooding/",
+          "domain": "gazette.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.durangoherald.com/articles/news/sections-of-u-s-highway-160-remain-closed-after-flood-damage/",
+          "domain": "durangoherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cpr.org/2026/11/01/southwest-colorado-pagosa-springs-flooding-san-luis-valley-november-2026/",
+          "domain": "cpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://coloradosun.com/2026/11/01/another-storm-southwest-colorado-flooding-evacuations/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/colorado/news/rushing-water-flooding-evacuations-pagosa-springs-southwestern-colorado-record-breaking-rain",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.irrawaddy.com/news/burma/myanmar-junta-warplanes-bomb-school-in-karenni-state-killing-4-children.html",
-          "domain": "irrawaddy.com",
+          "url": "https://www.sltrib.com/news/2026/11/01/san-juan-county-hit-with-lot-rain/",
+          "domain": "sltrib.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-airstrike-kills-displaced-civilian-destroys-school-karenni-state",
-          "domain": "bnionline.net",
+          "url": "https://www.abc4.com/news/southern-utah/significant-historic-flood-san-juan-county-bluff/",
+          "domain": "abc4.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://english.dvb.no/airstrikes-kill-12-in-rakhine-state-as-bombs-target-bridge-and-maternity-clinic/",
-          "domain": "dvb.no",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.narinjara.com/news/detail/6aca3c0df640f010e9cb38a9",
-          "domain": "narinjara.com",
+          "url": "https://navajotimes.com/reznews/san-juan-river-forecast-to-flood-again-at-shiprock-as-heavy-rain-hits-region/",
+          "domain": "navajotimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 78,
-      "firstSeen": "2026-11-02T06:06:25.795Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
+      "trustScore": 77,
+      "firstSeen": "2026-11-02T11:59:46.260Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
@@ -1937,6 +1640,52 @@
       "isBreaking": false
     },
     {
+      "id": "3f2d791e2a2b",
+      "headline": "Six Killed in Sunset Park Brooklyn Rowhouse Fire; Lithium-Ion Batteries Investigated",
+      "summary": "A fast-moving fire tore through a two-story home in Sunset Park, Brooklyn in the early morning of Nov. 5, 2026, killing six people and injuring nine others. FDNY recovered dozens of lithium-ion battery packs and cells at the scene and is investigating them as a possible cause of the blaze.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 40.645,
+      "lon": -74.0097,
+      "locationName": "Brooklyn, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://gothamist.com/news/brooklyn-fire-kills-6-people-injures-7-others-in-sunset-park",
+          "domain": "gothamist.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/newyork/news/lithium-ion-batteries-found-on-scene-of-brooklyn-fire-cause-under-investigation",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nyc.gov/site/fdny/news/Y10-16/fdny-commissioner-robert-s-tucker-provides-update-deadly-lithium-ion-battery-fire-brooklyn",
+          "domain": "nyc.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fox5ny.com/news/6-killed-after-suspected-lithium-ion-battery-fire-traps-residents-inside-burning-brooklyn-home",
+          "domain": "fox5ny.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 73,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
+      "isBreaking": false
+    },
+    {
       "id": "f0646cde52e9",
       "headline": "Learjet 60 Crash in Florida Kills All 9 Aboard; NTSB Cites In-Flight Breakup",
       "summary": "A Learjet 60 crashed near Palm Beach, Florida, killing all nine people aboard. US transportation officials and the NTSB said the aircraft suffered an in-flight structural breakup before impact.",
@@ -1971,6 +1720,59 @@
       "firstSeen": "2026-11-05T06:06:55.832Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ce49c3a8b87c",
+      "headline": "Kansas Governor's Race Still Uncalled; Democrat Holscher Claims Victory, Mandatory Audit Triggered",
+      "summary": "Democrat Cindy Holscher declared victory over Republican Senate President Ty Masterson in Kansas's governor's race, with her lead growing to roughly 7,045 votes (about 50.3%-49.7%). Masterson has not conceded, and the narrow margin triggers a state-mandated close-race audit.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.0473,
+      "lon": -95.6752,
+      "locationName": "Topeka, Kansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-KS",
+      "sources": [
+        {
+          "url": "https://kansasreflector.com/2026/11/04/trailing-by-less-than-1-ty-masterson-calls-for-another-look-at-results-in-kansas-governors-race/",
+          "domain": "kansasreflector.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/local/kansas-city/2026/11/04/kansas-governor-race-holscher-masterson",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://fox4kc.com/politics/your-local-election-headquarters/holscher-claims-kansas-governor-victory-race-still-too-close-to-call/",
+          "domain": "fox4kc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.npr.org/2026/11/03/g-s1-151587/kansas-senate-race-hamilton-marshall",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://johnsoncountypost.com/2026/11/04/chris-mann-attorney-general-kobach-not-conceding-300995/",
+          "domain": "johnsoncountypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 72,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -2098,59 +1900,6 @@
       "isBreaking": false
     },
     {
-      "id": "ce49c3a8b87c",
-      "headline": "Kansas Governor's Race Still Uncalled; Democrat Holscher Claims Victory, Mandatory Audit Triggered",
-      "summary": "Democrat Cindy Holscher declared victory over Republican Senate President Ty Masterson in Kansas's governor's race, with her lead growing to roughly 7,045 votes (about 50.3%-49.7%). Masterson has not conceded, and the narrow margin triggers a state-mandated close-race audit.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 39.0473,
-      "lon": -95.6752,
-      "locationName": "Topeka, Kansas, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-KS",
-      "sources": [
-        {
-          "url": "https://kansasreflector.com/2026/11/04/trailing-by-less-than-1-ty-masterson-calls-for-another-look-at-results-in-kansas-governors-race/",
-          "domain": "kansasreflector.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.axios.com/local/kansas-city/2026/11/04/kansas-governor-race-holscher-masterson",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://fox4kc.com/politics/your-local-election-headquarters/holscher-claims-kansas-governor-victory-race-still-too-close-to-call/",
-          "domain": "fox4kc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.npr.org/2026/11/03/g-s1-151587/kansas-senate-race-hamilton-marshall",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://johnsoncountypost.com/2026/11/04/chris-mann-attorney-general-kobach-not-conceding-300995/",
-          "domain": "johnsoncountypost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 72,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-07T15:28:00.613Z",
-      "isBreaking": false
-    },
-    {
       "id": "653bb11c74cf",
       "headline": "Brazil Summons Argentine Envoy Over Flávio Bolsonaro's Escape to US via Argentina",
       "summary": "Brazil formally summoned Argentina's diplomatic representative after Flávio Bolsonaro fled to the United States via Argentine territory. Brasília is seeking clarification on how the transit was permitted.",
@@ -2267,54 +2016,42 @@
       "isBreaking": false
     },
     {
-      "id": "9a0223925e6c",
-      "headline": "Pakistan Launches Counter-Strikes on Afghan Taliban Border Posts in South Waziristan",
-      "summary": "Pakistani forces struck Afghan Taliban border posts in South Waziristan in response to what officials called unprovoked cross-border firing. The clash escalates tensions beyond the diplomatic track, even as Pakistan continues pressing the Taliban over the TTP with US mediation offered.",
-      "category": "conflict",
+      "id": "bc9b9366927b",
+      "headline": "Pritzker Wins Historic Third Term as Illinois Governor; Stratton Wins Open US Senate Seat",
+      "summary": "Gov. JB Pritzker (D) defeated Darren Bailey roughly 60%-37% to become the first Illinois governor elected to a third term. Lt. Gov. Juliana Stratton defeated Don Tracy for the Senate seat vacated by retiring Sen. Dick Durbin, becoming the second Black woman to serve Illinois in the U.S. Senate.",
+      "category": "politics",
       "severity": 3,
-      "lat": 32.3,
-      "lon": 69.78,
-      "locationName": "South Waziristan, Pakistan",
-      "countryCode": "PK",
+      "lat": 39.7817,
+      "lon": -89.6501,
+      "locationName": "Springfield, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
       "sources": [
         {
-          "url": "https://tribune.com.pk/story/2638119/pakistani-forces-respond-to-unprovoked-firing-from-afghan-border-posts-says-dc",
-          "domain": "tribune.com.pk",
-          "reliability": 68,
+          "url": "https://www.cbsnews.com/chicago/live-updates/illinois-midterm-election-results-2026-live/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://en.dailypakistan.com.pk/02-Nov-2026/pakistan-again-hits-afghan-taliban-border-posts-amid-unprovoked-cross-border-firing",
-          "domain": "dailypakistan.com.pk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.pbs.org/newshour/politics/juliana-stratton-makes-history-with-black-women-in-the-senate",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
         },
         {
-          "url": "https://www.brecorder.com/news/40446980/forces-target-taliban-posts-after-unprovoked-firing",
-          "domain": "brecorder.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.aljazeera.com/amp/news/2026/10/1/afghanistan-says-nine-killed-in-pakistani-air-raids-on-kunar-helmand",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://dawn.com/news/2041358",
-          "domain": "dawn.com",
+          "url": "https://www.fox32chicago.com/news/illinois-election-results-pritzker-stratton-dems-among-big-winners",
+          "domain": "fox32chicago.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 70,
-      "firstSeen": "2026-11-02T06:06:25.795Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
+      "trustScore": 69,
+      "firstSeen": "2026-11-05T15:28:00.613Z",
+      "lastUpdated": "2026-11-05T15:28:00.613Z",
+      "expiresAt": "2026-11-07T15:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -2367,134 +2104,6 @@
       "firstSeen": "2026-11-04T06:07:32.098Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
-      "isBreaking": false
-    },
-    {
-      "id": "bc9b9366927b",
-      "headline": "Pritzker Wins Historic Third Term as Illinois Governor; Stratton Wins Open US Senate Seat",
-      "summary": "Gov. JB Pritzker (D) defeated Darren Bailey roughly 60%-37% to become the first Illinois governor elected to a third term. Lt. Gov. Juliana Stratton defeated Don Tracy for the Senate seat vacated by retiring Sen. Dick Durbin, becoming the second Black woman to serve Illinois in the U.S. Senate.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 39.7817,
-      "lon": -89.6501,
-      "locationName": "Springfield, Illinois, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IL",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/chicago/live-updates/illinois-midterm-election-results-2026-live/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/politics/juliana-stratton-makes-history-with-black-women-in-the-senate",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.fox32chicago.com/news/illinois-election-results-pritzker-stratton-dems-among-big-winners",
-          "domain": "fox32chicago.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 69,
-      "firstSeen": "2026-11-05T15:28:00.613Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-07T15:28:00.613Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a7c546937372",
-      "headline": "Poland Says It Blocked Overnight Sabotage Provocation Near Kaliningrad Border",
-      "summary": "Polish authorities said they blocked an overnight provocation involving individuals using flashlights near the border with Russia's Kaliningrad exclave, who withdrew before being intercepted. The incident follows Poland's deployment of counter-terrorism police to the region over sabotage warnings.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 54,
-      "lon": 21,
-      "locationName": "Warmian-Masurian Voivodeship, Poland",
-      "countryCode": "PL",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/news/poland-russia-border-operation-kaliningrad-sabotage-provocation-nato/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.themoscowtimes.com/2026/11/03/poland-accuses-russia-of-flashlight-provocation-along-kaliningrad-border-a94167",
-          "domain": "themoscowtimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://notesfrompoland.com/2026/11/02/poland-launches-operation-along-russian-border-in-response-to-reports-of-planned-sabotage/",
-          "domain": "notesfrompoland.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://tvpworld.com/96261985/kaliningrad-polish-police-chief-warns-of-sabotage-threat",
-          "domain": "tvpworld.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.aa.com.tr/en/europe/-poland-deploys-counterterrorism-police-near-russian-border-over-sabotage-threats/4109070",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
-      "id": "63eceec7272d",
-      "headline": "China Conducts Record Surge in Military Activity Around Taiwan",
-      "summary": "Taiwan's defense ministry reported a record daily surge in Chinese military activity around the island, including 49 aircraft, six warships and six government vessels. The surge marks one of the largest single-day shows of force in recent months.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 23.6978,
-      "lon": 120.9605,
-      "locationName": "Taiwan",
-      "countryCode": "TW",
-      "sources": [
-        {
-          "url": "https://www.mnd.gov.tw/en/news/plaact/88110",
-          "domain": "mnd.gov.tw",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/04/2003867122",
-          "domain": "taipeitimes.com",
-          "reliability": 72,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.taiwanplus.com/news/newscasts/taiwanplus-news/261103019/massive-surge-in-chinese-military-activity-nov-3-2026",
-          "domain": "taiwanplus.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 67,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
       "isBreaking": false
     },
     {
@@ -2705,79 +2314,6 @@
       "isBreaking": false
     },
     {
-      "id": "72f90a1afcbe",
-      "headline": "EUFOR Chinook Helicopter Crash Near Brčko, Bosnia and Herzegovina Kills Four",
-      "summary": "An Italian military Chinook helicopter serving with the EU peacekeeping force EUFOR crashed near Brčko, Bosnia and Herzegovina, killing four crew members. The cause of the crash is under investigation.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 44.8697,
-      "lon": 18.8125,
-      "locationName": "Brčko District, Bosnia and Herzegovina",
-      "countryCode": "BA",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/10/29/bosnia-eufor-crash-helicopter/17b53714-d3c1-11f1-9931-2a41b76fc976_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/30/eu-force-helicopter-crash-kills-four-in-bosnia",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.euronews.com/2026/10/29/italian-military-helicopter-on-eu-peacekeeping-mission-crashes-in-bosnia",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
-      "id": "500bb41b4eb2",
-      "headline": "New York State Reports First Measles Death in Over 30 Years",
-      "summary": "Health officials in Lewis County, New York, confirmed the state's first measles-associated death in more than three decades. The case has intensified concern over declining vaccination rates in the US.",
-      "category": "health",
-      "severity": 3,
-      "lat": 43.7812,
-      "lon": -75.4502,
-      "locationName": "Lewis County, New York, United States",
-      "countryCode": "US",
-      "subdivision": "US-NY",
-      "sources": [
-        {
-          "url": "https://abcnews.com/Health/new-york-state-reports-1st-measles-death-30/story?id=137787620",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.washingtonpost.com/health/2026/11/02/new-york-reports-its-first-measles-associated-death-more-than-30-years/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/02/health/new-york-measles-death",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 64,
-      "firstSeen": "2026-11-05T06:06:55.832Z",
-      "lastUpdated": "2026-11-05T06:06:55.832Z",
-      "expiresAt": "2026-11-07T06:06:55.832Z",
-      "isBreaking": false
-    },
-    {
       "id": "1dcd1b752de4",
       "headline": "Republican Mike Mazzei Wins Oklahoma Governor's Race as Democrats Flip 6 House Seats",
       "summary": "Republican Mike Mazzei defeated Democratic House Minority Leader Cyndi Munson 51.9%-45.9% to win Oklahoma's governor's race. Democrats flipped six GOP-held state House seats, their largest legislative gain in two decades, though Republicans retain their supermajority.",
@@ -2824,66 +2360,37 @@
       "isBreaking": false
     },
     {
-      "id": "b9176f072a39",
-      "headline": "Israeli Fire Kills Four Palestinians, Including a Child, in Gaza Despite Ceasefire",
-      "summary": "Israeli fire killed four to five Palestinians across Gaza on Nov 5, 2026, including a 54-year-old woman in Al-Mawasi near Khan Younis and a child in the Bureij refugee camp, despite the ongoing ceasefire. The incidents add to a pattern of fatal Israeli strikes inside Gaza since the truce began.",
-      "category": "conflict",
+      "id": "500bb41b4eb2",
+      "headline": "New York State Reports First Measles Death in Over 30 Years",
+      "summary": "Health officials in Lewis County, New York, confirmed the state's first measles-associated death in more than three decades. The case has intensified concern over declining vaccination rates in the US.",
+      "category": "health",
       "severity": 3,
-      "lat": 31.34,
-      "lon": 34.31,
-      "locationName": "Khan Younis and Bureij, Gaza Strip",
-      "countryCode": "PS",
+      "lat": 43.7812,
+      "lon": -75.4502,
+      "locationName": "Lewis County, New York, United States",
+      "countryCode": "US",
+      "subdivision": "US-NY",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza",
-          "domain": "aljazeera.com",
-          "reliability": 78,
+          "url": "https://abcnews.com/Health/new-york-state-reports-1st-measles-death-30/story?id=137787620",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/health/2026/11/02/new-york-reports-its-first-measles-associated-death-more-than-30-years/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://www.haaretz.com/gaza/2026-11-05/ty-article/.premium/four-palestinians-including-child-reportedly-killed-by-israeli-fire-in-gaza/000001a1-acd3-d041-a5f9-edf3697b0000",
-          "domain": "haaretz.com",
-          "reliability": 80,
+          "url": "https://www.cnn.com/2026/11/02/health/new-york-measles-death",
+          "domain": "cnn.com",
+          "reliability": 75,
           "bias": "center-left"
-        },
-        {
-          "url": "https://www.arabnews.com/middle-east/israeli-fire-kills-four-in-gaza-including-child-civil-defense-3010018",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
         }
       ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "2303a1993104",
-      "headline": "Taiwan Tightens Military Draft Exemption Rules Amid Rising Tensions With China",
-      "summary": "Taiwan has altered its draft exemption rules to add thousands more personnel to its armed forces, as China conducts a record surge in military activity around the island. The policy shift reflects growing concern over cross-strait tensions.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 25.03,
-      "lon": 121.57,
-      "locationName": "Taipei, Taiwan",
-      "countryCode": "TW",
-      "sources": [
-        {
-          "url": "https://www.scmp.com/news/china/military/article/3373011/raising-bar-taiwan-alters-draft-exemption-rules-add-thousands-armed-forces",
-          "domain": "scmp.com",
-          "reliability": 76,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/10/01/2003865178",
-          "domain": "taipeitimes.com",
-          "reliability": 72,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 61,
+      "trustScore": 64,
       "firstSeen": "2026-11-05T06:06:55.832Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
@@ -2981,6 +2488,72 @@
       "firstSeen": "2026-11-05T15:28:00.613Z",
       "lastUpdated": "2026-11-05T15:28:00.613Z",
       "expiresAt": "2026-11-07T15:28:00.613Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b9176f072a39",
+      "headline": "Israeli Fire Kills Four Palestinians, Including a Child, in Gaza Despite Ceasefire",
+      "summary": "Israeli fire killed four to five Palestinians across Gaza on Nov 5, 2026, including a 54-year-old woman in Al-Mawasi near Khan Younis and a child in the Bureij refugee camp, despite the ongoing ceasefire. The incidents add to a pattern of fatal Israeli strikes inside Gaza since the truce began.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 31.34,
+      "lon": 34.31,
+      "locationName": "Khan Younis and Bureij, Gaza Strip",
+      "countryCode": "PS",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.haaretz.com/gaza/2026-11-05/ty-article/.premium/four-palestinians-including-child-reportedly-killed-by-israeli-fire-in-gaza/000001a1-acd3-d041-a5f9-edf3697b0000",
+          "domain": "haaretz.com",
+          "reliability": 80,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/israeli-fire-kills-four-in-gaza-including-child-civil-defense-3010018",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-06T06:05:32.623Z",
+      "lastUpdated": "2026-11-06T06:05:32.623Z",
+      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2303a1993104",
+      "headline": "Taiwan Tightens Military Draft Exemption Rules Amid Rising Tensions With China",
+      "summary": "Taiwan has altered its draft exemption rules to add thousands more personnel to its armed forces, as China conducts a record surge in military activity around the island. The policy shift reflects growing concern over cross-strait tensions.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 25.03,
+      "lon": 121.57,
+      "locationName": "Taipei, Taiwan",
+      "countryCode": "TW",
+      "sources": [
+        {
+          "url": "https://www.scmp.com/news/china/military/article/3373011/raising-bar-taiwan-alters-draft-exemption-rules-add-thousands-armed-forces",
+          "domain": "scmp.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/10/01/2003865178",
+          "domain": "taipeitimes.com",
+          "reliability": 72,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-05T06:06:55.832Z",
+      "lastUpdated": "2026-11-05T06:06:55.832Z",
+      "expiresAt": "2026-11-07T06:06:55.832Z",
       "isBreaking": false
     },
     {
@@ -3155,79 +2728,43 @@
       "isBreaking": false
     },
     {
-      "id": "78b51faf311b",
-      "headline": "Cartel Violence Kills Seven, Including US Citizen Child, After Gulf Cartel Lieutenant's Arrest",
-      "summary": "Violence erupted in Matamoros, Mexico after the arrest of a senior Gulf Cartel lieutenant, leaving seven people dead including a US citizen child. Mexican authorities deployed roughly 450 additional troops to the border city to restore order.",
-      "category": "conflict",
+      "id": "bfe95fcc3e59",
+      "headline": "San Juan County Floods Force 20,000+ Evacuation Notices, Topple Iconic Desert Hoodoos",
+      "summary": "Renewed heavy rain flooded the Animas, La Plata and San Juan rivers near Farmington, New Mexico, prompting evacuation notices for more than 20,000 residents. Two iconic rock formations, the 'Alien Throne' and 'King of Wings' hoodoos, collapsed amid the deluge.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 25.8697,
-      "lon": -97.5027,
-      "locationName": "Matamoros, Tamaulipas, Mexico",
-      "countryCode": "MX",
+      "lat": 36.7281,
+      "lon": -108.2187,
+      "locationName": "Farmington, New Mexico, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NM",
       "sources": [
         {
-          "url": "https://www.upi.com/Top_News/World-News/2026/10/30/latam-mexico-cartel-leader-arrested-violence/2021793378843/",
-          "domain": "upi.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://mexiconewsdaily.com/news/450-troops-deployed-matamoros/",
-          "domain": "mexiconewsdaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.krgv.com/news/6-dead-following-arrest-of-gulf-cartel-leader-in-matamoros",
-          "domain": "krgv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a6464d910745",
-      "headline": "Serbia Detains Senior Police Officials Over Torture and Abuse-of-Office Allegations",
-      "summary": "Serbian authorities detained several senior police officials, including a police chief, on allegations of torture and abuse of office. The arrests come amid continued political turmoil in Serbia following recent elections.",
-      "category": "society",
-      "severity": 3,
-      "lat": 44.7866,
-      "lon": 20.4489,
-      "locationName": "Belgrade, Serbia",
-      "countryCode": "RS",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/1/serbia-arrests-police-chief-over-abuse-of-office-allegations",
-          "domain": "aljazeera.com",
-          "reliability": 78,
+          "url": "https://www.washingtonpost.com/national/2026/11/06/new-mexico-desert-hoodoos-collapse-rain/ceebca18-d99f-11f1-930a-e08f8086f5ac_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://balkaninsight.com/2026/11/03/serbia-detains-police-officials-over-abuse-of-position-torture-allegations/bi/",
-          "domain": "balkaninsight.com",
+          "url": "https://www.santafenewmexican.com/ap/national/desert-icons-collapse-as-southwestern-us-gets-pummeled-with-rain-and-flooding/article_61fab7dd-6f5c-5781-b98e-b9f46be9ff55.html",
+          "domain": "santafenewmexican.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.rferl.org/a/serbia-post-election-happenings-arrests-resignations-vucic/33888976.html",
-          "domain": "rferl.org",
+          "url": "https://www.krqe.com/news/new-mexico/let-the-site-rest-photos-show-collapse-of-northwest-new-mexico-rock-formation/",
+          "domain": "krqe.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
+      "trustScore": 55,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
@@ -3311,33 +2848,43 @@
       "isBreaking": false
     },
     {
-      "id": "824aa3546768",
-      "headline": "Yemeni Government Forces Advance in Al-Jawf Under 'Operation Dawn of Yemen'",
-      "summary": "Yemeni government forces seized strategic positions in Al-Jawf governorate as part of 'Operation Dawn of Yemen,' while the Saudi-led coalition intercepted a Houthi missile amid intensifying fighting. Yemeni forces reported over 1,200 strikes on Houthi positions in 24 hours.",
-      "category": "conflict",
+      "id": "8ab076375fd8",
+      "headline": "Democrats Sweep All Four Texas Supreme Court Seats, Narrowing GOP Majority to 5-4",
+      "summary": "On Nov. 3, 2026, Democrats Maggie Ellis, Chari Kelly, Kristen Hawkins and Gisela Triana defeated all four Republican incumbents or nominees for the Texas Supreme Court, including Chief Justice Jimmy Blacklock. It marked the first Democratic wins on the court since 1994, narrowing the GOP majority to 5-4.",
+      "category": "politics",
       "severity": 3,
-      "lat": 16.17,
-      "lon": 44.8,
-      "locationName": "Al-Hazm, Al-Jawf Governorate, Yemen",
-      "countryCode": "YE",
+      "lat": 30.2672,
+      "lon": -97.7431,
+      "locationName": "Austin, Texas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TX",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/1/yemeni-government-forces-seize-strategic-positions-in-al-jawf",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
+          "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+          "domain": "texastribune.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.arabnews.com/middle-east/yemeni-forces-report-1272-strikes-on-houthis-in-24-hours-retake-positions-in-al-jawf-3009284",
-          "domain": "arabnews.com",
-          "reliability": 64,
+          "url": "https://www.ksat.com/news/texas/2026/11/04/texas-democrats-break-republican-hold-on-statewide-courts/",
+          "domain": "ksat.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/texas-democrats-break-republican-hold-165250047.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
           "bias": "center"
         }
       ],
-      "trustScore": 52,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-06T06:07:32.098Z",
+      "trustScore": 51,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
@@ -3376,6 +2923,39 @@
       "firstSeen": "2026-11-06T06:05:32.623Z",
       "lastUpdated": "2026-11-06T06:05:32.623Z",
       "expiresAt": "2026-11-08T06:05:32.623Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dda518f40fb4",
+      "headline": "Democrat Aaron Ford Elected Nevada Governor as Democrats Sweep Statewide Offices",
+      "summary": "Democratic Attorney General Aaron Ford defeated Republican incumbent Gov. Joe Lombardo to become Nevada's first Black governor. Democrats also won lieutenant governor, attorney general and treasurer, and held secretary of state, marking a full statewide sweep for the first time in decades.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.1638,
+      "lon": -119.7674,
+      "locationName": "Carson City, Nevada, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NV",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/11/04/g-s1-151138/midterms-ford-nevada-governor-lombardo",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://thenevadaindependent.com/article/nevada-democrats-lead-governors-race-sweep-other-statewide-offices-in-historic-night",
+          "domain": "thenevadaindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-04T15:29:09.407Z",
+      "lastUpdated": "2026-11-04T15:29:09.407Z",
+      "expiresAt": "2026-11-06T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -3441,192 +3021,208 @@
       "isBreaking": false
     },
     {
-      "id": "dda518f40fb4",
-      "headline": "Democrat Aaron Ford Elected Nevada Governor as Democrats Sweep Statewide Offices",
-      "summary": "Democratic Attorney General Aaron Ford defeated Republican incumbent Gov. Joe Lombardo to become Nevada's first Black governor. Democrats also won lieutenant governor, attorney general and treasurer, and held secretary of state, marking a full statewide sweep for the first time in decades.",
+      "id": "695b7aef682a",
+      "headline": "North Carolina Democrats Flip State House Majority for First Time Since 2010",
+      "summary": "Democrats won control of the North Carolina House in the Nov. 3, 2026 election, securing about 70 of 120 seats and ending roughly 15-16 years of Republican control. Republicans retained a narrow Senate majority but lost their supermajority.",
       "category": "politics",
       "severity": 3,
-      "lat": 39.1638,
-      "lon": -119.7674,
-      "locationName": "Carson City, Nevada, USA",
+      "lat": 35.7796,
+      "lon": -78.6382,
+      "locationName": "Raleigh, North Carolina, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-NV",
+      "subdivision": "US-NC",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/11/04/g-s1-151138/midterms-ford-nevada-governor-lombardo",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://thenevadaindependent.com/article/nevada-democrats-lead-governors-race-sweep-other-statewide-offices-in-historic-night",
-          "domain": "thenevadaindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 50,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-04T15:29:09.407Z",
-      "expiresAt": "2026-11-06T15:29:09.407Z",
-      "isBreaking": false
-    },
-    {
-      "id": "1f81ba4c1337",
-      "headline": "Mexican Federal Forces Kill Cartel Leader 'El General' in Shootout Near Mexico City",
-      "summary": "Mexican federal forces killed Édgar Aarón Vázquez Alvarado, alias 'El General,' founder of the Cártel Nuevo Imperio, in a shootout in the Lomas Verdes area of Naucalpan, State of Mexico, on Nov 5, 2026. Security Secretary Omar García Harfuch confirmed the operation.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 19.4766,
-      "lon": -99.2394,
-      "locationName": "Naucalpan de Juárez, Mexico",
-      "countryCode": "MX",
-      "sources": [
-        {
-          "url": "https://www.milenio.com/policia/abaten-edomex-presunto-lider-cartel-imperio",
-          "domain": "milenio.com",
+          "url": "https://www.wral.com/news/nccapitol/nc-legislature-state-house-senate-democrats-flip-majority-break-supermajority-november-2026/",
+          "domain": "wral.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.riotimesonline.com/el-general-nuevo-imperio-cartel-boss-killed-mexico/",
-          "domain": "riotimesonline.com",
+          "url": "https://www.witn.com/2026/11/04/democrats-seize-control-nc-house-senate-could-be-split/",
+          "domain": "witn.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yucatan.com.mx/mexico/2026/11/05/abaten-el-general-lider-cartel-nuevo-imperio-naucalpan-edomex-asesinato-mando-policiaco.html",
-          "domain": "yucatan.com.mx",
+          "url": "https://www.wcnc.com/article/news/politics/elections/democrats-win-north-carolina-house-gain-seats-senate-general-assembly-2026-midterm-results/275-749d1798-af36-4d3e-8fe2-b37197d05eac",
+          "domain": "wcnc.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
-      "id": "b0151d88ec4f",
-      "headline": "Brazil's Senate Approves Constitutional Amendment Expanding Federal Powers Against Gangs",
-      "summary": "Brazil's Senate unanimously approved the 'PEC da Segurança' constitutional amendment (PEC 18/2025) on Nov 3, 2026, enshrining a Unified Public Security System targeting organized crime groups like the PCC and Comando Vermelho with tougher penalties. President Lula plans to create a standalone Ministry of Public Security.",
+      "id": "50ebd15f87d1",
+      "headline": "Virginia Voters Approve Constitutional Amendments on Abortion, Marriage Equality, Felon Voting",
+      "summary": "Virginia voters approved three constitutional amendments on Nov. 3, 2026: a right to reproductive freedom, repeal of the same-sex marriage ban in favor of a universal marriage right, and automatic restoration of felon voting rights upon release. The amendments take effect Jan. 1, 2027.",
       "category": "politics",
       "severity": 3,
-      "lat": -15.7801,
-      "lon": -47.9292,
-      "locationName": "Brasília, Brazil",
-      "countryCode": "BR",
+      "lat": 37.5407,
+      "lon": -77.436,
+      "locationName": "Richmond, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
       "sources": [
         {
-          "url": "https://www.courthousenews.com/brazil-expands-federal-powers-over-public-security/",
-          "domain": "courthousenews.com",
+          "url": "https://www.vpm.org/elections/2026-11-03/va-constitutional-amendments-results/",
+          "domain": "vpm.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.news4jax.com/news/world/2026/11/04/brazils-senate-approves-lulas-main-bet-to-tackle-criminal-gangs/",
-          "domain": "news4jax.com",
+          "url": "https://cardinalnews.org/2026/11/03/virginia-voters-are-etching-reproductive-rights-same-sex-marriage-and-voting-restoration-into-constitution/",
+          "domain": "cardinalnews.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.riotimesonline.com/brazil-pec-da-seguranca-explained-what-changes-after-senate-vote-2026/",
-          "domain": "riotimesonline.com",
+          "url": "https://www.whsv.com/2026/11/04/three-constitutional-amendments-win-voter-approval-virginia/",
+          "domain": "whsv.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
-      "id": "7c9f53f5e56f",
-      "headline": "RSF Drone Swarm Hits Ed Damazin, Sudan as SAF-Allied Commander Killed in Kordofan",
-      "summary": "Sudan's Rapid Support Forces carried out a drone-swarm strike on Ed Damazin, the capital of Blue Nile State, around Nov 3-4, 2026, hitting military infrastructure. Separately, Brigadier General Haroun Mersal, a commander of the SAF-allied Joint Force, was killed on Nov 3 in fighting in Kordofan.",
-      "category": "conflict",
+      "id": "4479b9b8e38d",
+      "headline": "Ohio Voters Pass Issue 3, Enshrining Photo Voter ID Requirement in State Constitution",
+      "summary": "Ohio voters approved Issue 3 on Nov. 3-4, 2026 with about 65% support, writing the state's existing photo-ID voting requirement into the Ohio Constitution. Any future rollback of the requirement would now need to go back before voters.",
+      "category": "politics",
       "severity": 3,
-      "lat": 11.78,
-      "lon": 34.35,
-      "locationName": "Ed Damazin, Blue Nile State, Sudan",
-      "countryCode": "SD",
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
       "sources": [
         {
-          "url": "https://sudantribune.com/article/318734",
-          "domain": "sudantribune.com",
+          "url": "https://www.13abc.com/2026/11/04/ohio-issue-3-passes-enshrining-photo-id-requirement-ohio-constitution/",
+          "domain": "13abc.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.dabangasudan.org/en/all-news/article/sudan-war-fighting-on-ethiopian-border-drone-attacks-on-ed-damazin",
-          "domain": "dabangasudan.org",
+          "url": "https://spectrumnews1.com/oh/toledo/news/2026/11/04/ohio-voters-pass-issue-3",
+          "domain": "spectrumnews1.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://martinplaut.com/2026/11/05/eepa-situation-report-horn-of-africa-no-777-5-november-2026/",
-          "domain": "martinplaut.com",
+          "url": "https://www.fox19.com/2026/11/04/ohioans-enshrine-voter-photo-id-amendment-into-state-constitution/",
+          "domain": "fox19.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
-      "id": "876467bb3b90",
-      "headline": "RSF Claims Capture of Sali Military Base in Sudan's Blue Nile State",
-      "summary": "Sudan's Rapid Support Forces and allied rebels claim to have captured the Sali military base in Blue Nile state, though the Sudanese army says it repelled the attack and inflicted heavy losses. The contested claim marks a new flashpoint in the civil war.",
-      "category": "conflict",
+      "id": "c7fbf7af1509",
+      "headline": "Arizona Voters Pass Four GOP-Backed Propositions; Democrats Break GOP Grip on Corporation Commission",
+      "summary": "Arizona voters approved four propositions on Nov. 3, 2026: a grocery-tax cap, labeling cartels terrorist organizations, restricting transgender student-athlete participation, and requiring voter approval for photo-radar programs. Democrats Clara Pratte and Jonathon Hill won two Corporation Commission seats, breaking the body's all-GOP majority.",
+      "category": "politics",
       "severity": 3,
-      "lat": 11.3,
-      "lon": 34.37,
-      "locationName": "Blue Nile State, Sudan",
-      "countryCode": "SD",
+      "lat": 33.4484,
+      "lon": -112.074,
+      "locationName": "Phoenix, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
       "sources": [
         {
-          "url": "https://sudantribune.com/article/318007",
-          "domain": "sudantribune.com",
+          "url": "https://ktar.com/arizona-politics-news/election/arizona-ballot-measure-proposition-results-2026-pass-fail",
+          "domain": "ktar.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.sudanspost.com/rsf-and-allied-rebels-capture-sali-base-in-sudans-blue-nile/",
-          "domain": "sudanspost.com",
+          "url": "https://azcapitoltimes.com/news/2026/11/05/democrats-break-up-all-republican-majority-on-corporation-commission/",
+          "domain": "azcapitoltimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.aa.com.tr/en/middle-east/sudanese-army-says-it-repelled-rsf-attacks-in-blue-nile-inflicted-heavy-losses-/4109114",
-          "domain": "aa.com.tr",
+          "url": "https://www.kold.com/2026/11/06/democrats-likely-win-2-open-arizona-corporation-commission-seats/",
+          "domain": "kold.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-05T06:06:55.832Z",
-      "lastUpdated": "2026-11-05T06:06:55.832Z",
-      "expiresAt": "2026-11-07T06:06:55.832Z",
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
+      "isBreaking": false
+    },
+    {
+      "id": "48867a108f17",
+      "headline": "King County Judge Orders Albertsons to Pay $900 Million in Washington State Opioid Case",
+      "summary": "King County Superior Court Judge Janet Helson ruled that Albertsons must pay $900 million, the largest verdict in Washington state history, after a nine-week trial found the chain's pharmacies failed to prevent opioid diversion from 2006 to 2022. The ruling found the company dispensed more than 641 million pills and unlawfully filled red-flagged prescriptions over 6.5 million times.",
+      "category": "health",
+      "severity": 3,
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "locationName": "Seattle, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://komonews.com/news/local/washington-wins-900-million-verdict-against-albertsons-safey-haggen-grocery-stores-in-opioid-case-opioid-pills-pharmacy-documents-exposed-pill-mill-north-bend-olympia",
+          "domain": "komonews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kiro7.com/news/local/albertsons-faces-900-million-penalty-failing-stop-opioid-misuse/QODQ6TNMIZEKHL2MXHU24QZBVI/",
+          "domain": "kiro7.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/05/albertsons-must-pay-900m-for-role-in-wa-opioid-cri/",
+          "domain": "spokesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
@@ -3794,6 +3390,162 @@
       "isBreaking": false
     },
     {
+      "id": "1f81ba4c1337",
+      "headline": "Mexican Federal Forces Kill Cartel Leader 'El General' in Shootout Near Mexico City",
+      "summary": "Mexican federal forces killed Édgar Aarón Vázquez Alvarado, alias 'El General,' founder of the Cártel Nuevo Imperio, in a shootout in the Lomas Verdes area of Naucalpan, State of Mexico, on Nov 5, 2026. Security Secretary Omar García Harfuch confirmed the operation.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 19.4766,
+      "lon": -99.2394,
+      "locationName": "Naucalpan de Juárez, Mexico",
+      "countryCode": "MX",
+      "sources": [
+        {
+          "url": "https://www.milenio.com/policia/abaten-edomex-presunto-lider-cartel-imperio",
+          "domain": "milenio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.riotimesonline.com/el-general-nuevo-imperio-cartel-boss-killed-mexico/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yucatan.com.mx/mexico/2026/11/05/abaten-el-general-lider-cartel-nuevo-imperio-naucalpan-edomex-asesinato-mando-policiaco.html",
+          "domain": "yucatan.com.mx",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-06T06:05:32.623Z",
+      "lastUpdated": "2026-11-06T06:05:32.623Z",
+      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b0151d88ec4f",
+      "headline": "Brazil's Senate Approves Constitutional Amendment Expanding Federal Powers Against Gangs",
+      "summary": "Brazil's Senate unanimously approved the 'PEC da Segurança' constitutional amendment (PEC 18/2025) on Nov 3, 2026, enshrining a Unified Public Security System targeting organized crime groups like the PCC and Comando Vermelho with tougher penalties. President Lula plans to create a standalone Ministry of Public Security.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -15.7801,
+      "lon": -47.9292,
+      "locationName": "Brasília, Brazil",
+      "countryCode": "BR",
+      "sources": [
+        {
+          "url": "https://www.courthousenews.com/brazil-expands-federal-powers-over-public-security/",
+          "domain": "courthousenews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.news4jax.com/news/world/2026/11/04/brazils-senate-approves-lulas-main-bet-to-tackle-criminal-gangs/",
+          "domain": "news4jax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.riotimesonline.com/brazil-pec-da-seguranca-explained-what-changes-after-senate-vote-2026/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-06T06:05:32.623Z",
+      "lastUpdated": "2026-11-06T06:05:32.623Z",
+      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7c9f53f5e56f",
+      "headline": "RSF Drone Swarm Hits Ed Damazin, Sudan as SAF-Allied Commander Killed in Kordofan",
+      "summary": "Sudan's Rapid Support Forces carried out a drone-swarm strike on Ed Damazin, the capital of Blue Nile State, around Nov 3-4, 2026, hitting military infrastructure. Separately, Brigadier General Haroun Mersal, a commander of the SAF-allied Joint Force, was killed on Nov 3 in fighting in Kordofan.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 11.78,
+      "lon": 34.35,
+      "locationName": "Ed Damazin, Blue Nile State, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://sudantribune.com/article/318734",
+          "domain": "sudantribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.dabangasudan.org/en/all-news/article/sudan-war-fighting-on-ethiopian-border-drone-attacks-on-ed-damazin",
+          "domain": "dabangasudan.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://martinplaut.com/2026/11/05/eepa-situation-report-horn-of-africa-no-777-5-november-2026/",
+          "domain": "martinplaut.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-06T06:05:32.623Z",
+      "lastUpdated": "2026-11-06T06:05:32.623Z",
+      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "isBreaking": false
+    },
+    {
+      "id": "876467bb3b90",
+      "headline": "RSF Claims Capture of Sali Military Base in Sudan's Blue Nile State",
+      "summary": "Sudan's Rapid Support Forces and allied rebels claim to have captured the Sali military base in Blue Nile state, though the Sudanese army says it repelled the attack and inflicted heavy losses. The contested claim marks a new flashpoint in the civil war.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 11.3,
+      "lon": 34.37,
+      "locationName": "Blue Nile State, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://sudantribune.com/article/318007",
+          "domain": "sudantribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sudanspost.com/rsf-and-allied-rebels-capture-sali-base-in-sudans-blue-nile/",
+          "domain": "sudanspost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aa.com.tr/en/middle-east/sudanese-army-says-it-repelled-rsf-attacks-in-blue-nile-inflicted-heavy-losses-/4109114",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-05T06:06:55.832Z",
+      "lastUpdated": "2026-11-05T06:06:55.832Z",
+      "expiresAt": "2026-11-07T06:06:55.832Z",
+      "isBreaking": false
+    },
+    {
       "id": "fc3752c1c0f4",
       "headline": "New Zealand Heads Into Knife-Edge General Election",
       "summary": "New Zealand heads into a tightly contested general election on Nov 7, 2026, with the National and Labour parties neck-and-neck in polling ahead of the vote. Unemployment has risen to 5.7%, an 11-year high, and the Opportunities Party could hold the balance of power.",
@@ -3856,6 +3608,38 @@
       "isBreaking": false
     },
     {
+      "id": "8d9a74867431",
+      "headline": "Indiana Executes Jeffrey Weisheit for 2010 Murders of Two Children After Clemency Denied",
+      "summary": "Jeffrey Weisheit, 50, was executed by lethal injection just after midnight on Nov. 5, 2026 for the 2010 arson murders of his girlfriend's children, Alyssa, 8, and Caleb Lynch, 5. Gov. Mike Braun denied clemency and the Indiana Supreme Court rejected a last-minute challenge 3-2.",
+      "category": "society",
+      "severity": 3,
+      "lat": 41.7075,
+      "lon": -86.8952,
+      "locationName": "Michigan City, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
+      "sources": [
+        {
+          "url": "https://www.newsweek.com/indiana-executes-murderer-with-drug-linked-to-pharmacy-facing-state-probe-12670034",
+          "domain": "newsweek.com",
+          "reliability": 62,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.foxnews.com/us/florida-alabama-indiana-triple-executions",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
+        }
+      ],
+      "trustScore": 47,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
+      "isBreaking": false
+    },
+    {
       "id": "32918cd09282",
       "headline": "Mexico's Electoral Authority Crisis Deepens Amid Corruption Allegations and Asset Freezes",
       "summary": "The head of Mexico's electoral institute (INE) resigned amid corruption allegations, deepening a crisis at the body ahead of upcoming votes. Authorities have also frozen assets linked to the investigation.",
@@ -3884,6 +3668,74 @@
       "firstSeen": "2026-11-05T06:06:55.832Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4848a3c5a243",
+      "headline": "Flash Flooding Kills Two in Palm Bay as Historic Rainfall Swamps Central Florida",
+      "summary": "Record rainfall of up to 20 inches in 14 hours triggered a flash-flood emergency in Palm Bay around Election Day 2026, killing two people aged 34 and 78 and causing sinkholes and road washouts. More than 60 people were rescued from floodwaters.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 28.0345,
+      "lon": -80.5887,
+      "locationName": "Palm Bay, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.clickorlando.com/news/local/2026/11/03/flooding-leaves-2-dead-massive-sinkholes-and-damaged-homes-in-palm-bay/",
+          "domain": "clickorlando.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wsvn.com/news/local/florida/florida-flash-flood-emergency/",
+          "domain": "wsvn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2b15bba1351c",
+      "headline": "California Voters Reject Billionaire Tax Prop 40, Pass Measure Barring Retroactive Wealth Taxes",
+      "summary": "California voters rejected Proposition 40, a one-time 5% tax on the state's roughly 200 billionaires to fund health care, by about 55%-45%. They passed Proposition 42, which bars retroactive state taxes on personal property and financial assets, a measure promoted by billionaire-backed groups to neutralize Prop 40.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://calmatters.org/health/2026/11/california-election-2026-prop-40-41-42/",
+          "domain": "calmatters.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://missionlocal.org/2026/11/california-billionaire-tax-election-results-2026/",
+          "domain": "missionlocal.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-06T15:28:33.350Z",
+      "lastUpdated": "2026-11-06T15:28:33.350Z",
+      "expiresAt": "2026-11-08T15:28:33.350Z",
       "isBreaking": false
     },
     {
@@ -4076,40 +3928,6 @@
       "firstSeen": "2026-11-05T06:06:55.832Z",
       "lastUpdated": "2026-11-05T06:06:55.832Z",
       "expiresAt": "2026-11-07T06:06:55.832Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e56e305cf734",
-      "headline": "Utah Legislature Sees Democratic Gains; Ben McAdams Wins Back US House Seat",
-      "summary": "Early results showed roughly 15 Democratic and unaffiliated challengers leading or defeating Republican state legislative incumbents in historically GOP-dominated Utah. Democrat Ben McAdams won Utah's 1st Congressional District, and voters passed Amendment A removing newspaper-publication requirements from the state constitution while rejecting Amendment B, which would have raised the threshold for tax-related ballot initiatives.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 40.7608,
-      "lon": -111.891,
-      "locationName": "Salt Lake City, Utah, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-UT",
-      "sources": [
-        {
-          "url": "https://utahnewsdispatch.com/2026/11/03/utah-legislature-2026-election-results/",
-          "domain": "utahnewsdispatch.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kuer.org/politics-government/2026-11-03/election-2026-utah-results-amendment-b-fails-amendment-a",
-          "domain": "kuer.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-04T15:29:09.407Z",
-      "lastUpdated": "2026-11-04T15:29:09.407Z",
-      "expiresAt": "2026-11-06T15:29:09.407Z",
       "isBreaking": false
     },
     {
@@ -4387,100 +4205,6 @@
       "isBreaking": false
     },
     {
-      "id": "29ae99d183cd",
-      "headline": "Wyoming Voters Reject Property-Tax Cut Proposition 1 as Eric Barlow Wins Governor's Race",
-      "summary": "Republican Eric Barlow won Wyoming's open governor's race with 68.6% of the vote, succeeding term-limited Gov. Mark Gordon. Voters separately rejected Proposition 1, a proposed 50% cut to residential property taxes, by roughly 57%-43%.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 41.14,
-      "lon": -104.8202,
-      "locationName": "Cheyenne, Wyoming, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WY",
-      "sources": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/wyoming-governor-results",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://wtop.com/national/2026/11/republican-eric-barlow-wins-election-for-governor-in-wyoming/",
-          "domain": "wtop.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://cowboystatedaily.com/2026/11/03/voters-reject-proposition-1-to-cut-wyoming-property-tax-50/",
-          "domain": "cowboystatedaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://wyofile.com/no-new-property-tax-cut-wyoming-voters-defeat-proposition-1/",
-          "domain": "wyofile.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-05T15:28:00.613Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-07T03:28:00.613Z",
-      "isBreaking": false
-    },
-    {
-      "id": "8b6c19086c10",
-      "headline": "Gov. Josh Green Wins Landslide Re-Election; Green Party Makes History in Hawaii Legislature",
-      "summary": "Gov. Josh Green (D) won re-election in a landslide, defeating Republican Gary Cordery with about 74% of the vote. In West Maui, Green Party candidate Pa'ele Kiakona unseated Democratic incumbent Rep. Elle Cochran by 107 votes, becoming the first third-party candidate elected to Hawaii's Legislature since statehood.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 21.3069,
-      "lon": -157.8583,
-      "locationName": "Honolulu, Hawaii, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-HI",
-      "sources": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/hawaii-governor-results",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.sfchronicle.com/news/politics/article/democrat-josh-green-wins-reelection-for-governor-22510909.php",
-          "domain": "sfchronicle.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.civilbeat.org/2026/11/hawaii-green-party-candidate-makes-history-edges-democrat/",
-          "domain": "civilbeat.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.hawaiipublicradio.org/local-news/2026-11-04/5-takeaways-from-hawai%CA%BBis-midterm-election",
-          "domain": "hawaiipublicradio.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-05T15:28:00.613Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-07T03:28:00.613Z",
-      "isBreaking": false
-    },
-    {
       "id": "5880afb10c06",
       "headline": "British Aid Worker With Ebola Flown From DR Congo to London for Treatment",
       "summary": "A British aid worker tested positive for Ebola while working in the Democratic Republic of Congo and was flown back to London's Royal Free Hospital on Nov 5, 2026 for specialist isolation treatment. The UK Health Security Agency said the risk to the UK public remains low, and four other individuals are being assessed.",
@@ -4594,54 +4318,6 @@
       "isBreaking": false
     },
     {
-      "id": "f9888260444c",
-      "headline": "Helena Foulkes Wins Rhode Island Governor's Race; Voters Reject Two Bond Measures",
-      "summary": "Democrat Helena Foulkes won Rhode Island's governorship in a landslide on November 3, defeating independent Ken Block and Republican Aaron Guckian. Voters approved $450 million in bonds but rejected two of five bond questions worth $150 million, the state's first bond rejection in 20 years.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 41.824,
-      "lon": -71.4128,
-      "locationName": "Providence, Rhode Island, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-RI",
-      "sources": [
-        {
-          "url": "https://www.wbur.org/news/2026/11/04/rhode-island-governor-helena-foulkes-wins",
-          "domain": "wbur.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wpri.com/news/elections/helena-foulkes-wins-election-for-ri-governor/",
-          "domain": "wpri.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://rhodeislandcurrent.com/2026/11/03/rhode-island-voters-reject-two-bond-questions-approve-450-million-in-borrowing/",
-          "domain": "rhodeislandcurrent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/05/metro/ri-ballot-questions-rejected-economic-development-data-centers/",
-          "domain": "bostonglobe.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-05T15:28:00.613Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-07T03:28:00.613Z",
-      "isBreaking": false
-    },
-    {
       "id": "f61e232709ca",
       "headline": "Shooting at Tampa-Area Office Complex Kills Employee and Gunman Amid Debt Dispute",
       "summary": "A gunman, Jacob Pearson, drove through a fence at the Citi Sabal Center office complex near Tampa, Florida, on Nov 4, 2026 and fatally shot employee Leanne Selman amid a dispute over a $2,500 debt. A security guard fatally shot the gunman during an exchange of gunfire inside the complex's cafeteria, and several others were injured.",
@@ -4678,86 +4354,6 @@
       "firstSeen": "2026-11-06T06:05:32.623Z",
       "lastUpdated": "2026-11-06T06:05:32.623Z",
       "expiresAt": "2026-11-07T18:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5a2a4c280003",
-      "headline": "Lithium-Ion Batteries Named Cause of Fatal Boston Firefighter Fire",
-      "summary": "Boston Fire Commissioner Rodney Marshall announced on November 4 that lithium-ion batteries stored in plastic toolboxes on a Dorchester porch underwent thermal runaway, sparking the May 23, 2026 Treadway Road fire that killed firefighter Robert 'Bobby' Kilduff Jr. The announcement concludes the department's investigation into the fatal fire.",
-      "category": "society",
-      "severity": 2,
-      "lat": 42.3016,
-      "lon": -71.0677,
-      "locationName": "Dorchester, Boston, Massachusetts, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MA",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/boston/news/dorchester-fire-lithium-ion-batteries-robert-kilduff-death/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/04/metro/fatal-fire-update/",
-          "domain": "bostonglobe.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wwlp.com/news/massachusetts/massachusetts-firefighter-died-in-fire-sparked-by-lithium-ion-batteries/",
-          "domain": "wwlp.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-05T15:28:00.613Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-07T03:28:00.613Z",
-      "isBreaking": false
-    },
-    {
-      "id": "56c859f99083",
-      "headline": "Washington Voters Reject Repeal of 'Millionaires Tax' on High Incomes",
-      "summary": "Washington voters rejected Initiative 645, which would have repealed the state's 9.9% tax on income above $1 million, by roughly 58%-42%. A separate constitutional challenge to the tax, Petter v. Washington, remains pending in Klickitat County Superior Court.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 47.0379,
-      "lon": -122.9007,
-      "locationName": "Olympia, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://www.axios.com/local/seattle/2026/11/05/washington-i-645-election-results-millionaires-tax-repeal-2026",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/03/washington-voters-decide-to-keep-income-tax-on-mil/",
-          "domain": "spokesman.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://komonews.com/news/local/did-the-millionares-tax-pass-in-washington-state-midterm-election-results-ballot-vote-election-night-debate-politics-washington-state",
-          "domain": "komonews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-05T15:28:00.613Z",
-      "lastUpdated": "2026-11-05T15:28:00.613Z",
-      "expiresAt": "2026-11-07T03:28:00.613Z",
       "isBreaking": false
     },
     {
@@ -5156,10 +4752,10 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 123,
-    "carried": 87,
-    "updated": 13,
-    "expired": 20,
+    "multiSource": 115,
+    "carried": 101,
+    "updated": 1,
+    "expired": 22,
     "severityDefaulted": 0,
     "enrichment": "deferred"
   }
