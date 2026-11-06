@@ -6,8 +6,9 @@ import { useGlobeStore } from '../store';
 import { CategoryIcon } from './icons';
 
 /**
- * The desktop rail's colour key and category filter in one: each chip is the
- * category's icon in its globe colour, its name and how many stories it has in the current region.
+ * The desktop rail's colour key and category filter in one: each chip is a
+ * small tile with the category's icon in its globe colour, how many stories
+ * it has in the current region, and its name; eight tiles in two rows.
  * Pressed = shown on the globe and in the list.
  */
 export function CategoryChips() {
@@ -39,14 +40,14 @@ export function CategoryChips() {
             aria-label={`${CATEGORY_LABELS[category]}, ${count} ${count === 1 ? 'story' : 'stories'}`}
             title={`${off ? 'Show' : 'Hide'} ${CATEGORY_LABELS[category]}`}
           >
-            <span className="cat-icon" style={{ color: `var(--cat-${category})` }} aria-hidden>
-              <CategoryIcon category={category} size={14} />
+            <span className="cat-chip-top" aria-hidden>
+              <span className="cat-icon" style={{ color: `var(--cat-${category})` }}>
+                <CategoryIcon category={category} size={14} />
+              </span>
+              <span className="cat-count">{count}</span>
             </span>
             <span className="cat-name" aria-hidden>
               {CATEGORY_SHORT[category]}
-            </span>
-            <span className="cat-count" aria-hidden>
-              {count}
             </span>
           </button>
         );

@@ -10,10 +10,11 @@ import { CameraRig } from './CameraRig';
 import { Effects } from './Effects';
 import { RenderStats } from './RenderStats';
 import { ViewFraming } from './ViewFraming';
+import { DebugProbe } from './DebugProbe';
 import * as THREE from 'three';
 import { framedDistance } from '../lib/framing';
 import { snapHeights } from '../lib/sheet';
-import { narrowViewport, useGlobeStore, useSpaceView, useTheme } from '../store';
+import { narrowViewport, useSpaceView, useTheme } from '../store';
 
 /** The top bar's height before it is measured (styles.css .m-topbar). */
 const PHONE_TOP_GUESS_PX = 56;
@@ -39,7 +40,6 @@ function startPosition(): [number, number, number] {
 const START_POSITION = startPosition();
 
 export function SceneRoot() {
-  const select = useGlobeStore((s) => s.select);
   const theme = useTheme();
   // Off by default: the globe sits on the flat page background with a soft
   // halo, as in the mockups. The space view is the viewer's opt-in.
@@ -52,7 +52,8 @@ export function SceneRoot() {
       // start well back so the whole planet reads as "Earth in space"
       camera={{ position: START_POSITION, fov: FOV, near: 0.1, far: 120 }}
       gl={{ antialias: false, powerPreference: 'high-performance' }}
-      onPointerMissed={() => select(null)}
+      // no onPointerMissed here: the earth's own handler (eventPicking.ts)
+      // checks a tap just off the limb for a story before clearing
       style={{ position: 'absolute', inset: 0, background }}
     >
       <color attach="background" args={[background]} />
@@ -71,6 +72,7 @@ export function SceneRoot() {
       {space && theme.starBrightness > 0 && <Ambience />}
       <CameraRig />
       <ViewFraming />
+      <DebugProbe />
       <Effects space={space} />
       {import.meta.env.DEV && <RenderStats />}
     </Canvas>
