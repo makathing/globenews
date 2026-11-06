@@ -27,6 +27,8 @@ interface FlyTarget {
  *    (drives star streaks + the motion-smear pass)
  *  - flies the camera to a story when it is selected, and to a region view
  *    when one is picked (direction and distance)
+ *  - on a phone, fits the globe to the band an open story's sheet leaves
+ *    free, and restores the distance when the story closes
  */
 export function CameraRig() {
   const controlsRef = useRef<OrbitControlsImpl | null>(null);
@@ -41,6 +43,9 @@ export function CameraRig() {
   const lastInteraction = useRef(0);
   const touched = useRef(false);
   const flyTarget = useRef<FlyTarget | null>(null);
+  /** Set when the viewer changes the zoom themselves; a framing the rig chooses clears it. */
+  const userZoomed = useRef(false);
+  const lengthAtStart = useRef(0);
 
   /**
    * The whole-globe distance for this screen: on a phone, fitted to the band
@@ -54,7 +59,7 @@ export function CameraRig() {
   };
 
   // a story is a patch of lit dots, so it reads best looked at straight on;
-  // keep the current distance
+  // keep the current distance (on a phone the effect below picks one)
   useEffect(() => {
     if (!selectedId || !dataset) {
       if (flyTarget.current?.distance === null) flyTarget.current = null;
@@ -64,6 +69,31 @@ export function CameraRig() {
     if (!event) return;
     flyTarget.current = { dir: latLonToVec3(event.lat, event.lon, 1).normalize(), distance: null };
   }, [selectedId, dataset]);
+
+  // On a phone an open story raises the sheet, so the band left for the
+  // globe shrinks: fit the planet to it (centred on the story, which the
+  // effect above turns to), and put the distance back when the story closes.
+  // Re-fits whenever the sheet's settled height changes. A viewer who zoomed
+  // by hand keeps their zoom.
+  const phone = narrowViewport || insets.top > 0;
+  const storyBase = useRef<number | null>(null);
+  useEffect(() => {
+    if (!phone) return;
+    if (selectedId) {
+      if (storyBase.current === null) storyBase.current = camera.position.length();
+      if (userZoomed.current) return;
+      const distance = worldDistance();
+      const dir = flyTarget.current?.dir ?? camera.position.clone().normalize();
+      flyTarget.current = { dir, distance };
+    } else if (storyBase.current !== null) {
+      const distance = storyBase.current;
+      storyBase.current = null;
+      if (userZoomed.current) return;
+      flyTarget.current = { dir: flyTarget.current?.dir ?? camera.position.clone().normalize(), distance };
+    }
+    // worldDistance reads the insets and size listed here
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedId, phone, insets.top, insets.bottom, size.width, size.height]);
 
   // a region view: look at it from a distance that frames it
   const regionSeen = useRef<string | null>(null);
@@ -81,6 +111,7 @@ export function CameraRig() {
         ? camera.position.clone().normalize().setY(0.21).normalize()
         : latLonToVec3(view.lat, view.lon, 1).normalize();
     flyTarget.current = { dir, distance };
+    userZoomed.current = false;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [region]);
 
@@ -161,6 +192,10 @@ export function CameraRig() {
         lastInteraction.current = performance.now();
         touched.current = true;
         flyTarget.current = null; // user takes over
+        lengthAtStart.current = camera.position.length();
+      }}
+      onEnd={() => {
+        if (Math.abs(camera.position.length() - lengthAtStart.current) > 0.02) userZoomed.current = true;
       }}
     />
   );

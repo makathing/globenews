@@ -29,6 +29,17 @@ describe('framing', () => {
     expect(short).toBeGreaterThan(tall);
   });
 
+  it('fits the band an open story leaves, with a margin to the top bar and the sheet', () => {
+    // 390×844 with a story open: top bar 52, half sheet 490 → a 302px band;
+    // the peek framing (~304px wide) would touch both edges
+    const peek = framedDistance({ bandPx: 844 - 52 - 215, widthPx: 390, heightPx: 844, fovDeg: 45 });
+    expect(diameterAt(peek, 844)).toBeGreaterThan(302);
+    const open = framedDistance({ bandPx: 302, widthPx: 390, heightPx: 844, fovDeg: 45 });
+    expect(diameterAt(open, 844)).toBeCloseTo(PHONE_BAND_FILL * 302, 5);
+    expect((302 - diameterAt(open, 844)) / 2).toBeGreaterThanOrEqual(15);
+    expect(open).toBeGreaterThan(peek);
+  });
+
   it('diameter is the smaller of the width and band limits', () => {
     expect(framedDiameter(600, 390)).toBeCloseTo(390 * PHONE_WIDTH_FILL);
     expect(framedDiameter(300, 390)).toBeCloseTo(300 * PHONE_BAND_FILL);

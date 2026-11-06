@@ -5,25 +5,29 @@ import { inRegion, REGION_IDS, REGIONS } from '../lib/regions';
 import { useGlobeStore } from '../store';
 import { DropMenu } from './DropMenu';
 import { CategoryIcon, CheckIcon, ChevronDownIcon, FilterIcon, RegionIcon } from './icons';
-import { REGION_SHORT, useRegionCounts } from './RegionChips';
+import { REGION_SHORT, useRegionCounts } from './regionCounts';
 
 const plural = (n: number) => `${n} ${n === 1 ? 'story' : 'stories'}`;
 
-/** The phone top bar's left end: which region is on screen, and the others. */
-export function RegionMenu() {
+/**
+ * Which region is on screen, and the others: the phone top bar's left end,
+ * and (with `variant="rail"`) the desktop rail's header.
+ */
+export function RegionMenu({ variant = 'topbar' }: { variant?: 'topbar' | 'rail' }) {
+  const rail = variant === 'rail';
   const region = useGlobeStore((s) => s.region);
   const setRegion = useGlobeStore((s) => s.setRegion);
   const counts = useRegionCounts();
   return (
     <DropMenu
-      className="m-region"
-      buttonClassName="m-region-btn"
+      className={rail ? 'm-region rail-region' : 'm-region'}
+      buttonClassName={rail ? 'm-region-btn rail-region-btn' : 'm-region-btn'}
       buttonLabel={`Region: ${REGIONS[region].label}. Change region`}
       menuLabel="Region"
-      align="start"
+      align={rail ? 'end' : 'start'}
       buttonContent={
         <>
-          <RegionIcon region={region} size={18} className="m-region-icon" />
+          <RegionIcon region={region} size={rail ? 15 : 18} className="m-region-icon" />
           <span className="m-region-name">{REGION_SHORT[region]}</span>
           <ChevronDownIcon size={14} className="m-chevron" />
         </>

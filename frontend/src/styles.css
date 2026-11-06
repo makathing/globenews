@@ -549,10 +549,18 @@ body,
   border-bottom: 1px solid var(--hairline);
   flex: none;
 }
-.rail-brand {
+.rail-brand-row {
   display: flex;
   align-items: center;
-  gap: 9px;
+  justify-content: space-between;
+  gap: 10px;
+}
+.rail-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
   margin: 0;
   font-size: 15px;
   font-weight: 650;
@@ -562,6 +570,10 @@ body,
   color: var(--text);
 }
 .rail-count {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 11px;
   font-weight: 600;
   color: var(--text-secondary);
@@ -572,10 +584,33 @@ body,
 }
 /* ————— category chips: the colour key and the filter (CategoryChips.tsx) ————— */
 .cat-chips-rail {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 4px;
   margin-top: 12px;
+}
+/* in the rail each chip is a two-line tile: icon and count, then the name */
+.cat-chips-rail .cat-chip {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  min-width: 0;
+  padding: 4px 2px 3px;
+  border-radius: var(--radius-sm);
+}
+.cat-chip-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.cat-chips-rail .cat-name {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 550;
+  color: var(--text-secondary);
 }
 .cat-chip {
   display: inline-flex;
@@ -632,45 +667,6 @@ body,
 }
 .cat-chip.off .cat-count {
   color: var(--text-dim);
-}
-
-/* ————— region chips (RegionChips.tsx) ————— */
-.region-chips {
-  display: flex;
-  gap: 4px;
-}
-.region-chips-rail {
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-.region-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex: none;
-  background: none;
-  border: 1px solid var(--panel-border);
-  border-radius: var(--radius-sm);
-  color: var(--text-secondary);
-  font-family: var(--font);
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 9px;
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s;
-}
-.region-count {
-  font-variant-numeric: tabular-nums;
-  font-weight: 500;
-  color: var(--text-dim);
-}
-.region-chip.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-}
-.region-chip.active .region-count {
-  color: var(--accent-ink);
 }
 
 /* ————— timeline (DayPicker.tsx, ViewingBanner.tsx) ————— */
@@ -1268,6 +1264,16 @@ a.art-credit:focus-visible {
 .m-region-btn[aria-expanded='true'] .m-chevron {
   transform: rotate(180deg);
 }
+/* the same region menu in the desktop rail's header: a smaller button */
+.rail-region {
+  flex: none;
+}
+.rail-region-btn {
+  height: 32px;
+  padding: 0 6px 0 9px;
+  gap: 5px;
+  font-size: 13px;
+}
 
 /* ————— drop-down menus (DropMenu.tsx): region and categories ————— */
 .drop {
@@ -1774,7 +1780,6 @@ a.art-credit:focus-visible {
    Every control a finger has to hit is at least 44×44 CSS px. */
 @media (pointer: coarse) {
   .cat-chip,
-  .region-chip,
   .day-chip,
   .theme-btn,
   .space-toggle,
@@ -1832,10 +1837,6 @@ a.art-credit:focus-visible {
   .cat-chip:hover,
   .day-chip:hover {
     background: rgba(var(--tint), 0.1);
-  }
-  .region-chip:not(.active):hover {
-    background: rgba(var(--tint), 0.08);
-    color: var(--text);
   }
   .event-card:hover {
     background: rgba(var(--tint), 0.05);
