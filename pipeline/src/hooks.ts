@@ -1,5 +1,6 @@
 import { isBlockedDomain, rateDomain, normalizeDomain } from './source-ratings.ts';
 import { RunLedger, extractDomains } from './ledger.ts';
+import { recordAgentFinding, type SubagentFindings } from './findings.ts';
 
 /**
  * Pre/PostToolUse hooks for the Claude Agent SDK.
@@ -143,7 +144,11 @@ export function postToolUseLogic(
 }
 
 /** Build the SDK `options.hooks` object wired to a run ledger. */
-export function buildHooks(ledger: RunLedger) {
+/**
+ * With `findings`, a second PostToolUse hook keeps every subagent's returned
+ * text so a budget stop can still publish what was found (batch.ts).
+ */
+export function buildHooks(ledger: RunLedger, findings?: SubagentFindings) {
   return {
     PreToolUse: [
       {
@@ -190,6 +195,19 @@ export function buildHooks(ledger: RunLedger) {
           },
         ],
       },
+      ...(findings
+        ? [
+            {
+              matcher: 'Agent|Task',
+              hooks: [
+                async (input: unknown) => {
+                  recordAgentFinding(input as HookInputLike, findings);
+                  return {};
+                },
+              ],
+            },
+          ]
+        : []),
     ],
   };
 }

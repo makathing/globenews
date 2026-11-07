@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { US_SUBAGENTS, usCoordinatorPrompt, type CurrentStory } from './agents.ts';
+import { US_SUBAGENTS, rescuePrompt, usCoordinatorPrompt, type CurrentStory } from './agents.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_US_STAGED } from './mock-data.ts';
 import { finalizeScoped, keepInRegion, remergeScope } from './finalize.ts';
@@ -120,6 +120,8 @@ async function main(): Promise<void> {
         budgetUsd: MAX_BUDGET_USD,
         agents: US_SUBAGENTS,
         prompt: (stagingPath) => usCoordinatorPrompt(stagingPath, current, covered),
+        rescuePrompt: (stagingPath, material) =>
+          rescuePrompt(US_SUBAGENTS.synthesizer.prompt, stagingPath, material, current, covered),
       },
       ledger,
     ));

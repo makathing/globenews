@@ -80,7 +80,7 @@ it to finish — the two runs never write at the same time.
 
 | Routine | Schedule (UTC) | Runs | Budget |
 | --- | --- | --- | --- |
-| **GlobeNews daily news batch** | `51 5 * * *` (05:51) | `PIPELINE_GIT_SYNC=1 npm run daily -w pipeline` | `PIPELINE_MAX_BUDGET_USD`, default $8 |
+| **GlobeNews daily news batch** | `51 5 * * *` (05:51) | `PIPELINE_GIT_SYNC=1 npm run daily -w pipeline` | `PIPELINE_MAX_BUDGET_USD`, default $12 |
 | **GlobeNews US & state news batch** | `15 15 * * *` (15:15) | `PIPELINE_GIT_SYNC=1 npm run regional:us -w pipeline` | `REGIONAL_MAX_BUDGET_USD`, default $8 |
 
 The scripts only write files; the **Routine session** checks the result, commits `data/` and
@@ -123,7 +123,7 @@ Central & Mountain; West Coast, Alaska & Hawaii) each return their 4–6 stronge
 education, infrastructure — skipping national politics the world desk covers. The same
 researcher (2+ independent sources) and severity scale apply, in at most two batches; the
 coordinator stops researching once about 25 stories are verified or roughly 60% of its effort
-is spent, so the synthesizer always gets to write the file inside the $8 cap. The synthesizer
+is spent, so the synthesizer gets to write the file inside the $8 cap. The synthesizer
 aims for 20–40 stories (in practice up to 30) across as many states as possible, as
 `"City, State, USA"` with a `subdivision`.
 `--mock` publishes bundled sample US stories without any API call; `--remerge-only` re-merges
@@ -247,13 +247,23 @@ restore the workflows from git history (`daily-batch.yml` / `breaking-monitor.ym
 removed in the "tokenless scheduling" commit); they support `CLAUDE_CODE_OAUTH_TOKEN`
 (subscription, via `claude setup-token`) or `ANTHROPIC_API_KEY` secrets.
 
-Budget caps (`PIPELINE_MAX_BUDGET_USD` ~$8/daily batch, `REGIONAL_MAX_BUDGET_USD` $8/US batch,
+Budget caps (`PIPELINE_MAX_BUDGET_USD` $12/daily batch, `REGIONAL_MAX_BUDGET_USD` $8/US batch,
 `MONITOR_MAX_BUDGET_USD` $0.50, `ESCALATION_MAX_BUDGET_USD` $3) act as estimated-cost circuit
-breakers in every mode. If a daily or US batch hits its cap (or its turn limit) after the synthesizer
-has already written the staged stories, the run publishes those instead of failing — it logs
-`[us] budget reached after staging — publishing N staged stories` and records
-`stats.stoppedEarly` (e.g. `"error_max_budget_usd"`) in `data/events.json`. A cap hit before
-anything was staged still fails the run, and is never retried.
+breakers in every mode. Both batches stop researching once about 60% of their effort is spent, so
+the synthesizer gets to write the file inside the cap. If a batch still hits its cap (or its turn
+limit), it publishes what it found instead of failing:
+
+- **after the synthesizer wrote the staged stories:** those are published — the log says
+  `budget reached after staging — publishing N staged stories`, and `stats.stoppedEarly` is
+  `"error_max_budget_usd"`.
+- **before anything was staged:** the coordinator only ever spends the cap less a $1.50 reserve.
+  A PostToolUse hook keeps what every explorer and researcher returned, and the reserve pays for
+  one Write-only rescue synthesis from it (verified research when any came back, otherwise
+  explorer candidates with 2+ sources). The log says `budget reached before staging — publishing
+  N stories from a rescue synthesis`, and `stats.stoppedEarly` is `"error_max_budget_usd+rescue"`.
+
+Only when no subagent returned anything, or the rescue writes nothing usable, does a cap fail the
+run — and that is never retried.
 
 ## Setup (one time, after merging to `main`)
 

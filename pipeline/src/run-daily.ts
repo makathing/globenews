@@ -1,14 +1,14 @@
-import { SUBAGENTS, coordinatorPrompt, type CurrentStory } from './agents.ts';
+import { SUBAGENTS, coordinatorPrompt, rescuePrompt, type CurrentStory } from './agents.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_STAGED } from './mock-data.ts';
 import { finalizeScoped } from './finalize.ts';
-import { publishDataset, runBatchAgents } from './batch.ts';
+import { DEFAULT_DAILY_BUDGET_USD, budgetFromEnv, publishDataset, runBatchAgents } from './batch.ts';
 import type { StagedOutput } from './schema.ts';
 import { authMode, readCurrentDataset, stripHarnessBackgroundEnv } from './io.ts';
 import { scopeOf } from '../../shared/news.ts';
 
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
-const MAX_BUDGET_USD = Number(process.env.PIPELINE_MAX_BUDGET_USD ?? 8);
+const MAX_BUDGET_USD = budgetFromEnv('PIPELINE_MAX_BUDGET_USD', DEFAULT_DAILY_BUDGET_USD);
 
 stripHarnessBackgroundEnv();
 
@@ -42,6 +42,8 @@ async function main(): Promise<void> {
         budgetUsd: MAX_BUDGET_USD,
         agents: SUBAGENTS,
         prompt: (stagingPath) => coordinatorPrompt(stagingPath, current),
+        rescuePrompt: (stagingPath, material) =>
+          rescuePrompt(SUBAGENTS.synthesizer.prompt, stagingPath, material, current),
       },
       ledger,
     ));

@@ -144,6 +144,7 @@ a "launched in background" response means you did it wrong; re-invoke synchronou
 Workflow (follow strictly, in order):
 1. Invoke the "explorer" subagent 4 times — once per region: (a) Americas, (b) Europe, (c) Middle East & Africa, (d) Asia-Pacific. These can run in parallel.
 2. Collect all candidates, then invoke the "researcher" subagent in 2-4 batches (group candidates by region) to verify them. Pass each batch the full candidate details.
+   BUDGET RULE: this run has a hard spending cap, and if it runs out before the synthesizer writes the file the day's research is wasted. Stop researching and go straight to step 3 as soon as about 50 stories are verified, or once roughly 60% of your effort has gone into exploring and researching — whichever comes first. A smaller dataset that gets written beats a larger one that does not.
 3. Invoke the "synthesizer" subagent with ALL verified events (paste the researcher outputs in full) and the STORIES ALREADY ON THE MAP list if you were given one, and tell it to write the final JSON to exactly this absolute path: ${stagingPath}
 4. VERIFY the file exists by Reading ${stagingPath}. If it is missing or empty, re-invoke the synthesizer ONCE, repeating the exact absolute path and telling it the previous attempt failed to write. If it is STILL missing, write the file YOURSELF with the Write tool from the synthesizer's reply.
 5. RE-READ the file you just wrote and verify EVERY event object has all of:
@@ -275,3 +276,34 @@ Reply with ONLY this JSON (no markdown fences):
 {"breaking": boolean, "confidence": "low"|"medium"|"high", "headline": string|null, "location": string|null, "reason": string}
 
 If in doubt, "breaking" is false. False alarms are worse than a one-hour delay.`;
+
+// ——— rescue synthesis (batch.ts, after a budget stop with nothing staged) ———
+
+/**
+ * A single-agent synthesis from what the subagents returned before the cap:
+ * the synthesizer's own instructions, the material, the continuity lists, and
+ * the path to write. Runs on a small reserved budget, so it is told to write
+ * first and stop.
+ */
+export function rescuePrompt(
+  synthesizerPrompt: string,
+  stagingPath: string,
+  material: { basis: 'researcher' | 'explorer'; text: string },
+  current: CurrentStory[] = [],
+  covered: CurrentStory[] = [],
+): string {
+  const basis =
+    material.basis === 'researcher'
+      ? 'Below is the VERIFIED research the researchers returned before the run stopped.'
+      : 'No research came back before the run stopped. Below are the explorers\' raw CANDIDATES: keep ONLY candidates that list two or more independent source URLs, and drop the rest.';
+  return `${synthesizerPrompt}
+
+The coordinator ran out of budget before you were invoked, so you are working directly from what its
+subagents returned. ${basis}
+Do not search or fetch anything — you have no tools but Write. Write the file FIRST, with every
+usable event, to exactly this absolute path: ${stagingPath}
+${currentStoriesBlock(current)}${coveredStoriesBlock(covered)}
+===== MATERIAL =====
+${material.text}
+===== END MATERIAL =====`;
+}

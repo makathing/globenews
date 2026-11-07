@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import { scopeOf, type NewsDataset, type NewsScope } from '../../shared/news.ts';
 import { buildHooks } from './hooks.ts';
+import { SubagentFindings, rescueMaterial, type RescueMaterial } from './findings.ts';
 import { RunLedger } from './ledger.ts';
 import { computeStats } from './finalize.ts';
 import { enrichImages, probeEgress } from './enrich-images.ts';
@@ -45,6 +46,26 @@ export class PipelineError extends Error {
 /** Default `REGIONAL_MAX_BUDGET_USD`: the US run's five explorers need about what the daily run does. */
 export const DEFAULT_REGIONAL_BUDGET_USD = 8;
 
+/**
+ * Default `PIPELINE_MAX_BUDGET_USD` for the worldwide daily run. Normal days
+ * cost $5-7.50; $8 left no headroom, and a busy news day hit the cap before
+ * anything was written.
+ */
+export const DEFAULT_DAILY_BUDGET_USD = 12;
+
+/**
+ * Held back from the coordinator's cap to pay for a rescue synthesis when it
+ * stops before staging anything. The two together never exceed the run's
+ * budget. A synthesis from pasted text with Write alone costs well under this.
+ */
+export const RESCUE_RESERVE_USD = 1.5;
+
+/** What the coordinator may spend: the run's budget less the rescue reserve, when a rescue is configured. */
+export function coordinatorBudget(config: Pick<CoordinatorConfig, 'budgetUsd' | 'rescuePrompt'>): number {
+  if (!config.rescuePrompt) return config.budgetUsd;
+  return Math.max(config.budgetUsd - RESCUE_RESERVE_USD, config.budgetUsd / 2);
+}
+
 /** A USD budget from the environment, falling back when unset or not a positive number. */
 export function budgetFromEnv(
   name: string,
@@ -67,6 +88,12 @@ export interface CoordinatorConfig {
   agents: unknown;
   /** The coordinator prompt for a given staging path. */
   prompt: (stagingPath: string) => string;
+  /**
+   * The rescue synthesis prompt, used when the coordinator hits its cap before
+   * staging anything: write `stagingPath` from what the subagents returned.
+   * Without it a cap with nothing staged loses the run, as before.
+   */
+  rescuePrompt?: (stagingPath: string, material: RescueMaterial) => string;
   /** Test seam: the Agent SDK's `query` (default) or a fake that yields messages. */
   query?: (params: { prompt: string; options?: Record<string, unknown> }) => AsyncIterable<CoordinatorMessage>;
   /** Test seam: where staging files go (default pipeline/.staging). */
@@ -91,7 +118,10 @@ export const SALVAGEABLE_SUBTYPES: ReadonlySet<string> = new Set(['error_max_bud
 export interface BatchResult {
   staged: StagedOutput;
   severityDefaulted: number;
-  /** Set when the coordinator hit a cap after staging: the SDK result subtype. */
+  /**
+   * Set when the coordinator hit a cap: the SDK result subtype, with
+   * '+rescue' when the stories came from the rescue synthesis.
+   */
   stoppedEarly?: string;
 }
 
@@ -162,44 +192,133 @@ function parseStaged(config: CoordinatorConfig, raw: string): SalvageResult {
 
 /**
  * The coordinator stopped on a cap. If the staging file is already there with
- * at least one valid event, publish that rather than throw the day away;
- * otherwise rethrow the cap error.
+ * at least one valid event, publish that. Otherwise, if the subagents brought
+ * anything back, spend the reserve on a rescue synthesis and publish that.
+ * Only when both come up empty is the cap error rethrown.
  */
-function salvageAfterCap(
+async function salvageAfterCap(
   config: CoordinatorConfig,
   stagingPath: string,
   subtype: string,
   capError: PipelineError,
-): BatchResult {
+  findings: SubagentFindings,
+  attempt: number,
+): Promise<BatchResult> {
+  const { tag } = config;
+  const what = subtype === 'error_max_turns' ? 'turn limit' : 'budget';
+  const staged = readStagedForSalvage(config, stagingPath, subtype);
+  if (staged) {
+    console.warn(
+      `[${tag}] ${what} reached after staging — publishing ${staged.staged.events.length} staged stories ` +
+        `(partial run: ${subtype}; the coordinator's final checks did not run)`,
+    );
+    warnDefaulted(tag, staged);
+    return { ...staged, stoppedEarly: subtype };
+  }
+
+  const rescued = await rescueSynthesis(config, findings, attempt);
+  if (!rescued) throw capError;
+  console.warn(
+    `[${tag}] ${what} reached before staging — publishing ${rescued.staged.events.length} stories ` +
+      `from a rescue synthesis of what the subagents had found (partial run: ${subtype})`,
+  );
+  warnDefaulted(tag, rescued);
+  return { ...rescued, stoppedEarly: `${subtype}+rescue` };
+}
+
+function warnDefaulted(tag: string, result: SalvageResult): void {
+  if (result.severityDefaulted > 0) {
+    console.warn(
+      `[${tag}] ${result.severityDefaulted}/${result.staged.events.length} event(s) had no severity and took the default`,
+    );
+  }
+}
+
+/** The staged file's valid events, or undefined (with the reason logged) when there are none. */
+function readStagedForSalvage(
+  config: CoordinatorConfig,
+  stagingPath: string,
+  subtype: string,
+): SalvageResult | undefined {
   const { tag } = config;
   if (!existsSync(stagingPath)) {
-    console.warn(`[${tag}] ${subtype} before the synthesizer wrote ${stagingPath} — nothing to salvage`);
-    throw capError;
+    console.warn(`[${tag}] ${subtype} before anything was written to ${stagingPath}`);
+    return undefined;
   }
   let salvage: SalvageResult;
   try {
     salvage = parseStaged(config, readFileSync(stagingPath, 'utf8'));
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error);
-    console.warn(`[${tag}] ${subtype} and the staged file is unusable (${reason}) — nothing to salvage`);
-    throw capError;
+    console.warn(`[${tag}] ${subtype} and the staged file is unusable (${reason})`);
+    return undefined;
   }
-  const { staged, severityDefaulted } = salvage;
-  if (staged.events.length === 0) {
-    console.warn(`[${tag}] ${subtype} and the staged file has no events — nothing to salvage`);
-    throw capError;
+  if (salvage.staged.events.length === 0) {
+    console.warn(`[${tag}] ${subtype} and the staged file has no events`);
+    return undefined;
   }
-  const what = subtype === 'error_max_turns' ? 'turn limit' : 'budget';
+  return salvage;
+}
+
+/**
+ * One short Write-only synthesis from the subagents' returned text, on the
+ * reserved budget. Returns undefined — and the caller rethrows the cap — when
+ * there is no rescue prompt, nothing came back, or the rescue writes nothing
+ * usable.
+ */
+async function rescueSynthesis(
+  config: CoordinatorConfig,
+  findings: SubagentFindings,
+  attempt: number,
+): Promise<SalvageResult | undefined> {
+  const { tag } = config;
+  if (!config.rescuePrompt) {
+    console.warn(`[${tag}] nothing to salvage`);
+    return undefined;
+  }
+  const material = rescueMaterial(findings);
+  if (!material) {
+    console.warn(`[${tag}] no subagent returned anything before the cap — nothing to salvage`);
+    return undefined;
+  }
+  // a fresh name per rescue, so a stale file from an earlier run can never pass for this one
+  const stagingDir = config.stagingDir ?? STAGING_DIR;
+  const rescuePath = resolve(stagingDir, `${config.stagingStem}.raw.rescue${attempt}-${Date.now()}.json`);
   console.warn(
-    `[${tag}] ${what} reached after staging — publishing ${staged.events.length} staged stories ` +
-      `(partial run: ${subtype}; the coordinator's final checks did not run)`,
+    `[${tag}] rescuing from ${findings.of(material.basis).length} ${material.basis} result(s) ` +
+      `on the $${RESCUE_RESERVE_USD.toFixed(2)} reserve`,
   );
-  if (severityDefaulted > 0) {
-    console.warn(
-      `[${tag}] ${severityDefaulted}/${staged.events.length} event(s) had no severity and took the default`,
-    );
+
+  const runQuery = config.query ?? (query as unknown as NonNullable<CoordinatorConfig['query']>);
+  try {
+    const run = runQuery({
+      prompt: config.rescuePrompt(rescuePath, material),
+      options: {
+        model: 'sonnet',
+        allowedTools: ['Write'],
+        permissionMode: 'dontAsk',
+        maxTurns: 6,
+        maxBudgetUsd: RESCUE_RESERVE_USD,
+        settingSources: [],
+      },
+    });
+    for await (const message of run) {
+      if (message.type === 'result') {
+        console.log(
+          `[${tag}] rescue synthesis finished: ${String(message.subtype)}, cost=$${message.total_cost_usd?.toFixed?.(2)}`,
+        );
+      }
+    }
+  } catch (error) {
+    // it may still have written the file before failing
+    console.warn(`[${tag}] rescue synthesis failed: ${error instanceof Error ? error.message : String(error)}`);
   }
-  return { staged, severityDefaulted, stoppedEarly: subtype };
+
+  if (!(await waitForFile(rescuePath))) {
+    console.warn(`[${tag}] rescue synthesis wrote nothing — nothing to salvage`);
+    return undefined;
+  }
+  return readStagedForSalvage(config, rescuePath, 'rescue');
 }
 
 async function runCoordinator(
@@ -221,6 +340,8 @@ async function runCoordinator(
   }
 
   let finalReply = '';
+  // what each subagent returns, kept for a rescue if the cap lands before staging
+  const findings = new SubagentFindings();
   const runQuery = config.query ?? (query as unknown as NonNullable<CoordinatorConfig['query']>);
   const run = runQuery({
     prompt,
@@ -232,9 +353,9 @@ async function runCoordinator(
       // (bypassPermissions also refuses to run as root, e.g. in containers)
       permissionMode: 'dontAsk',
       maxTurns: 100,
-      maxBudgetUsd: config.budgetUsd,
+      maxBudgetUsd: coordinatorBudget(config),
       settingSources: [],
-      hooks: buildHooks(ledger) as never,
+      hooks: buildHooks(ledger, findings) as never,
     },
   });
 
@@ -246,7 +367,9 @@ async function runCoordinator(
         console.log(`[${tag}] coordinator finished: ${subtype}, cost=$${cost?.toFixed?.(2)}`);
         if (subtype !== 'success') {
           const capError = new PipelineError(`Coordinator run failed: ${subtype}`, !isNonRetryable(subtype));
-          if (SALVAGEABLE_SUBTYPES.has(subtype)) return salvageAfterCap(config, stagingPath, subtype, capError);
+          if (SALVAGEABLE_SUBTYPES.has(subtype)) {
+            return await salvageAfterCap(config, stagingPath, subtype, capError, findings, attempt);
+          }
           throw capError;
         }
         if ('result' in message) finalReply = String(message.result);
