@@ -265,6 +265,14 @@ limit), it publishes what it found instead of failing:
 Only when no subagent returned anything, or the rescue writes nothing usable, does a cap fail the
 run — and that is never retried.
 
+Early warning, so a cap is seen coming rather than hit: every batch records what it spent and its
+cap in `stats.costUsd` / `stats.budgetUsd` (and so in each archive). A run that spends 80%+ of its
+cap logs `BUDGET WARNING: this run cost $X, N% of its $Y cap`, and each batch checks its last seven
+archived runs before starting and logs the same warning if any came that close — raise
+`PIPELINE_MAX_BUDGET_USD` / `REGIONAL_MAX_BUDGET_USD` when you see one. `test/budget-guard.test.ts`
+pins the guards themselves (the rescue, the reserve, the coordinators' budget rule, the $12 daily
+default) and runs in the **Pipeline tests** workflow on every pull request and code push.
+
 ## Setup (one time, after merging to `main`)
 
 1. **Enable Pages**: repo → Settings → Pages → Source: **GitHub Actions**.

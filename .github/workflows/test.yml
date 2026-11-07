@@ -1,0 +1,32 @@
+name: Pipeline tests
+
+# Runs the pipeline's tests and typecheck on every pull request and on code
+# pushes to main. Among them, test/budget-guard.test.ts pins the guards
+# against a batch running out of budget before it publishes anything — a
+# change that removes one turns this red.
+#
+# Separate from deploy.yml on purpose: a failing test must never hold back
+# the daily news from going live. The routine's data-only pushes skip it.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck -w pipeline
+      - run: npm test -w pipeline

@@ -154,6 +154,10 @@ export interface RunStats {
    * SDK result subtype, e.g. `error_max_budget_usd`. Absent on a full run.
    */
   stoppedEarly?: string;
+  /** What the run spent, USD — the coordinator's attempts plus any rescue. Absent in mock runs. */
+  costUsd?: number;
+  /** The run's budget cap, USD. A cost near it is the warning sign (pipeline/src/budget-guard.ts). */
+  budgetUsd?: number;
 }
 
 export interface NewsDataset {

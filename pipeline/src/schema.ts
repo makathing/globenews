@@ -63,6 +63,8 @@ export const RunStatsSchema = z.object({
   updated: z.number().min(0).optional(),
   expired: z.number().min(0).optional(),
   stoppedEarly: z.string().optional(),
+  costUsd: z.number().min(0).optional(),
+  budgetUsd: z.number().min(0).optional(),
 });
 
 export const NewsDatasetSchema = z.object({

@@ -1,10 +1,12 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { US_SUBAGENTS, rescuePrompt, usCoordinatorPrompt, type CurrentStory } from './agents.ts';
+import type { CurrentStory } from './agents.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_US_STAGED } from './mock-data.ts';
 import { finalizeScoped, keepInRegion, remergeScope } from './finalize.ts';
-import { DEFAULT_REGIONAL_BUDGET_USD, budgetFromEnv, publishDataset, runBatchAgents } from './batch.ts';
+import { publishDataset, runBatchAgents } from './batch.ts';
+import { REGIONAL_BUDGET_ENV, usBatchConfig } from './batch-configs.ts';
+import { checkBudgetTrend } from './budget-guard.ts';
 import { gitExec, gitSyncEnabled, syncFromRemote } from './git-sync.ts';
 import { validateDataset, type StagedOutput } from './schema.ts';
 import {
@@ -52,7 +54,6 @@ function argValue(flag: string): string | undefined {
 
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
 const REMERGE_ONLY = process.argv.includes('--remerge-only');
-const MAX_BUDGET_USD = budgetFromEnv('REGIONAL_MAX_BUDGET_USD', DEFAULT_REGIONAL_BUDGET_USD);
 
 stripHarnessBackgroundEnv();
 
@@ -109,22 +110,16 @@ async function main(): Promise<void> {
   let staged: StagedOutput;
   let severityDefaulted = 0;
   let stoppedEarly: string | undefined;
+  let costUsd: number | undefined;
+  let budgetUsd: number | undefined;
   if (MOCK) {
     console.log(`[${tag}] MOCK_MODE — using bundled sample ${region.label} events`);
     staged = MOCK_US_STAGED;
   } else {
-    ({ staged, severityDefaulted, stoppedEarly } = await runBatchAgents(
-      {
-        tag,
-        stagingStem: region.scope,
-        budgetUsd: MAX_BUDGET_USD,
-        agents: US_SUBAGENTS,
-        prompt: (stagingPath) => usCoordinatorPrompt(stagingPath, current, covered),
-        rescuePrompt: (stagingPath, material) =>
-          rescuePrompt(US_SUBAGENTS.synthesizer.prompt, stagingPath, material, current, covered),
-      },
-      ledger,
-    ));
+    const config = usBatchConfig(tag, region.scope, current, covered);
+    budgetUsd = config.budgetUsd;
+    checkBudgetTrend(tag, `-${region.scope}`, budgetUsd, REGIONAL_BUDGET_ENV);
+    ({ staged, severityDefaulted, stoppedEarly, costUsd } = await runBatchAgents(config, ledger));
   }
 
   const { kept, dropped } = keepInRegion(staged, region.countryCode);
@@ -140,6 +135,9 @@ async function main(): Promise<void> {
     previous,
     severityDefaulted,
     stoppedEarly,
+    costUsd,
+    budgetUsd,
+    budgetEnv: REGIONAL_BUDGET_ENV,
     archiveSuffix: `-${region.scope}`,
     ledger,
     ledgerName: `${region.scope}-ledger.json`,

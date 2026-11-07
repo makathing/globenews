@@ -4,6 +4,7 @@ import { query } from '@anthropic-ai/claude-agent-sdk';
 import { scopeOf, type NewsDataset, type NewsScope } from '../../shared/news.ts';
 import { buildHooks } from './hooks.ts';
 import { SubagentFindings, rescueMaterial, type RescueMaterial } from './findings.ts';
+import { costWarning } from './budget-guard.ts';
 import { RunLedger } from './ledger.ts';
 import { computeStats } from './finalize.ts';
 import { enrichImages, probeEgress } from './enrich-images.ts';
@@ -123,6 +124,13 @@ export interface BatchResult {
    * '+rescue' when the stories came from the rescue synthesis.
    */
   stoppedEarly?: string;
+  /** What the whole batch spent: every coordinator attempt plus any rescue. */
+  costUsd: number;
+}
+
+/** Running total of a batch's spend, shared by its attempts and its rescue. */
+interface Spend {
+  usd: number;
 }
 
 /** "sources.3: Invalid input; sources.7: Invalid input" -> "sources.*: Invalid input". */
@@ -203,6 +211,7 @@ async function salvageAfterCap(
   capError: PipelineError,
   findings: SubagentFindings,
   attempt: number,
+  spend: Spend,
 ): Promise<BatchResult> {
   const { tag } = config;
   const what = subtype === 'error_max_turns' ? 'turn limit' : 'budget';
@@ -213,17 +222,17 @@ async function salvageAfterCap(
         `(partial run: ${subtype}; the coordinator's final checks did not run)`,
     );
     warnDefaulted(tag, staged);
-    return { ...staged, stoppedEarly: subtype };
+    return { ...staged, stoppedEarly: subtype, costUsd: spend.usd };
   }
 
-  const rescued = await rescueSynthesis(config, findings, attempt);
+  const rescued = await rescueSynthesis(config, findings, attempt, spend);
   if (!rescued) throw capError;
   console.warn(
     `[${tag}] ${what} reached before staging — publishing ${rescued.staged.events.length} stories ` +
       `from a rescue synthesis of what the subagents had found (partial run: ${subtype})`,
   );
   warnDefaulted(tag, rescued);
-  return { ...rescued, stoppedEarly: `${subtype}+rescue` };
+  return { ...rescued, stoppedEarly: `${subtype}+rescue`, costUsd: spend.usd };
 }
 
 function warnDefaulted(tag: string, result: SalvageResult): void {
@@ -270,6 +279,7 @@ async function rescueSynthesis(
   config: CoordinatorConfig,
   findings: SubagentFindings,
   attempt: number,
+  spend: Spend,
 ): Promise<SalvageResult | undefined> {
   const { tag } = config;
   if (!config.rescuePrompt) {
@@ -304,6 +314,7 @@ async function rescueSynthesis(
     });
     for await (const message of run) {
       if (message.type === 'result') {
+        spend.usd += message.total_cost_usd ?? 0;
         console.log(
           `[${tag}] rescue synthesis finished: ${String(message.subtype)}, cost=$${message.total_cost_usd?.toFixed?.(2)}`,
         );
@@ -325,6 +336,7 @@ async function runCoordinator(
   config: CoordinatorConfig,
   ledger: RunLedger,
   attempt: number,
+  spend: Spend,
   feedback?: string,
 ): Promise<BatchResult> {
   const { tag } = config;
@@ -363,12 +375,13 @@ async function runCoordinator(
     for await (const message of run) {
       if (message.type === 'result') {
         const cost = message.total_cost_usd;
+        spend.usd += cost ?? 0;
         const subtype = String(message.subtype);
         console.log(`[${tag}] coordinator finished: ${subtype}, cost=$${cost?.toFixed?.(2)}`);
         if (subtype !== 'success') {
           const capError = new PipelineError(`Coordinator run failed: ${subtype}`, !isNonRetryable(subtype));
           if (SALVAGEABLE_SUBTYPES.has(subtype)) {
-            return await salvageAfterCap(config, stagingPath, subtype, capError, findings, attempt);
+            return await salvageAfterCap(config, stagingPath, subtype, capError, findings, attempt, spend);
           }
           throw capError;
         }
@@ -415,16 +428,17 @@ async function runCoordinator(
       true,
     );
   }
-  return { staged, severityDefaulted };
+  return { staged, severityDefaulted, costUsd: spend.usd };
 }
 
 /** The coordinator with up to MAX_ATTEMPTS tries, feeding each failure back into the next. */
 export async function runBatchAgents(config: CoordinatorConfig, ledger: RunLedger): Promise<BatchResult> {
   let attempt = 0;
   let feedback: string | undefined;
+  const spend: Spend = { usd: 0 };
   for (;;) {
     try {
-      return await runCoordinator(config, ledger, attempt + 1, feedback);
+      return await runCoordinator(config, ledger, attempt + 1, spend, feedback);
     } catch (error) {
       if (error instanceof PipelineError && !error.retryable) throw error;
       attempt += 1;
@@ -445,6 +459,11 @@ export interface PublishOptions {
   stoppedEarly?: string;
   /** Appended to the archive name: '' for the daily batch, '-us' for the US run. */
   archiveSuffix: string;
+  /** What the batch spent and its cap; recorded in stats, and warned on when close. Absent in mock runs. */
+  costUsd?: number;
+  budgetUsd?: number;
+  /** The env var that raises this batch's cap, named in the warning. */
+  budgetEnv?: string;
   ledger: RunLedger;
   ledgerName: string;
 }
@@ -491,6 +510,8 @@ export async function publishDataset(finalized: NewsDataset, opts: PublishOption
     severityDefaulted: opts.severityDefaulted,
     enrichment,
     ...(opts.stoppedEarly ? { stoppedEarly: opts.stoppedEarly } : {}),
+    ...(opts.costUsd !== undefined ? { costUsd: Math.round(opts.costUsd * 100) / 100 } : {}),
+    ...(opts.budgetUsd !== undefined ? { budgetUsd: opts.budgetUsd } : {}),
   };
   validateDataset(dataset);
   writeDataset(dataset, { archive: true, archiveSuffix: opts.archiveSuffix });
@@ -503,5 +524,9 @@ export async function publishDataset(finalized: NewsDataset, opts: PublishOption
       `${opts.ledger.uniqueDomains().length} domains scored)` +
       (opts.stoppedEarly ? ` — PARTIAL run, coordinator stopped early (${opts.stoppedEarly})` : ''),
   );
+  if (opts.costUsd !== undefined && opts.budgetUsd !== undefined) {
+    const warning = costWarning(tag, opts.costUsd, opts.budgetUsd, opts.budgetEnv ?? 'the budget cap');
+    if (warning) console.warn(warning);
+  }
   return dataset;
 }

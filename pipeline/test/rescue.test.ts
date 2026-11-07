@@ -116,6 +116,8 @@ describe('rescue synthesis after a budget stop with nothing staged', () => {
     expect(result.staged.events).toHaveLength(1);
     expect(result.stoppedEarly).toBe('error_max_budget_usd+rescue');
     expect(calls).toHaveLength(2);
+    // the spend covers both the coordinator and the rescue
+    expect(result.costUsd).toBeCloseTo(10.51 + 0.4, 5);
     // the coordinator spends the budget less the reserve; the rescue spends the reserve
     expect(calls[0].options.maxBudgetUsd).toBe(12 - RESCUE_RESERVE_USD);
     expect(calls[1].options.maxBudgetUsd).toBe(RESCUE_RESERVE_USD);

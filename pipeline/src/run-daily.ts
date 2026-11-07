@@ -1,14 +1,15 @@
-import { SUBAGENTS, coordinatorPrompt, rescuePrompt, type CurrentStory } from './agents.ts';
+import type { CurrentStory } from './agents.ts';
 import { RunLedger } from './ledger.ts';
 import { MOCK_STAGED } from './mock-data.ts';
 import { finalizeScoped } from './finalize.ts';
-import { DEFAULT_DAILY_BUDGET_USD, budgetFromEnv, publishDataset, runBatchAgents } from './batch.ts';
+import { publishDataset, runBatchAgents } from './batch.ts';
+import { DAILY_BUDGET_ENV, dailyBatchConfig } from './batch-configs.ts';
+import { checkBudgetTrend } from './budget-guard.ts';
 import type { StagedOutput } from './schema.ts';
 import { authMode, readCurrentDataset, stripHarnessBackgroundEnv } from './io.ts';
 import { scopeOf } from '../../shared/news.ts';
 
 const MOCK = process.env.MOCK_MODE === '1' || process.argv.includes('--mock');
-const MAX_BUDGET_USD = budgetFromEnv('PIPELINE_MAX_BUDGET_USD', DEFAULT_DAILY_BUDGET_USD);
 
 stripHarnessBackgroundEnv();
 
@@ -30,23 +31,17 @@ async function main(): Promise<void> {
   let staged: StagedOutput;
   let severityDefaulted = 0;
   let stoppedEarly: string | undefined;
+  let costUsd: number | undefined;
+  let budgetUsd: number | undefined;
 
   if (MOCK) {
     console.log('[daily] MOCK_MODE — using bundled sample events');
     staged = MOCK_STAGED;
   } else {
-    ({ staged, severityDefaulted, stoppedEarly } = await runBatchAgents(
-      {
-        tag: 'daily',
-        stagingStem: 'events',
-        budgetUsd: MAX_BUDGET_USD,
-        agents: SUBAGENTS,
-        prompt: (stagingPath) => coordinatorPrompt(stagingPath, current),
-        rescuePrompt: (stagingPath, material) =>
-          rescuePrompt(SUBAGENTS.synthesizer.prompt, stagingPath, material, current),
-      },
-      ledger,
-    ));
+    const config = dailyBatchConfig(current);
+    budgetUsd = config.budgetUsd;
+    checkBudgetTrend('daily', '', budgetUsd, DAILY_BUDGET_ENV);
+    ({ staged, severityDefaulted, stoppedEarly, costUsd } = await runBatchAgents(config, ledger));
   }
 
   const { dataset, skippedCrossScope } = finalizeScoped(staged, previous, 'daily', { scope: 'global' });
@@ -60,6 +55,9 @@ async function main(): Promise<void> {
     previous,
     severityDefaulted,
     stoppedEarly,
+    costUsd,
+    budgetUsd,
+    budgetEnv: DAILY_BUDGET_ENV,
     archiveSuffix: '',
     ledger,
     ledgerName: 'ledger.json',
