@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T06:05:19.540Z",
+  "generatedAt": "2026-11-08T15:27:11.860Z",
   "mode": "daily",
   "events": [
     {
@@ -432,48 +432,6 @@
       "firstSeen": "2026-11-06T06:05:32.623Z",
       "lastUpdated": "2026-11-06T06:05:32.623Z",
       "expiresAt": "2026-11-10T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "88cabd1d7da2",
-      "headline": "Polish President Nawrocki Confronts Judges as Riot Police Deployed in Court Standoff",
-      "summary": "Poland's constitutional crisis escalated as President Karol Nawrocki had a physical confrontation with judges at the Constitutional Tribunal, prompting deployment of riot police. The standoff between Nawrocki and the Tusk government has already triggered the resignation of three Polish ambassadors.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 52.2297,
-      "lon": 21.0122,
-      "locationName": "Warsaw, Poland",
-      "countryCode": "PL",
-      "sources": [
-        {
-          "url": "https://www.cnn.com/2026/11/01/europe/poland-constitutional-tribunal-tusk-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/1/polish-president-holds-crisis-talks-in-court-standoff",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.euronews.com/2026/10/31/poland-political-crisis-constitutional-court-in-chaos-as-nawrocki-accuses-government-of-st",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-10-30/poland-moves-against-top-court-in-a-showdown-with-the-opposition",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 80,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-04T06:07:32.098Z",
-      "expiresAt": "2026-11-08T06:07:32.098Z",
       "isBreaking": false
     },
     {
@@ -1317,176 +1275,6 @@
       "isBreaking": false
     },
     {
-      "id": "1966afddfa47",
-      "headline": "North Korea Claims Cluster-Warhead Cruise Missile Advance, Vows Deployment by Year-End",
-      "summary": "North Korea claimed its first successful test of cluster warheads mounted on cruise missiles, part of continued missile testing near Sondok, and said it would achieve operational deployment of the new weapons by the end of 2026.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 39.8,
-      "lon": 127.6,
-      "locationName": "Sondok, South Hamgyong Province, North Korea",
-      "countryCode": "KP",
-      "sources": [
-        {
-          "url": "https://www.nknews.org/2026/11/north-korea-claims-first-test-of-smaller-cluster-warheads-on-cruise-missiles/",
-          "domain": "nknews.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.koreaherald.com/article/10923504",
-          "domain": "koreaherald.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbcnews.com/world/asia/north-korea-says-tested-air-defense-missile-cruise-missile-drill-rcna607583",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-04/north-korea-test-fires-new-air-defence-missile-system-kcna-reports",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/11/04/asia-pacific/north-korea-missile-test-november-4/",
-          "domain": "japantimes.co.jp",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://aljazeera.com/news/2026/11/4/n-korea-fires-multiple-missiles-denies-us-claims-on-binance-hack",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 83,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "3d45012d633b",
-      "headline": "Sudan and Ethiopia Trade Tit-for-Tat Consulate Closures as Diplomatic Rupture Deepens",
-      "summary": "Sudan and Ethiopia escalated a diplomatic rupture by ordering reciprocal consulate closures, with Sudan closing Ethiopia's consulate in Gedaref after Ethiopia expelled Sudanese diplomats over allegations that Ethiopia supports Sudan's Rapid Support Forces paramilitary group.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 14.04,
-      "lon": 35.38,
-      "locationName": "Gedaref, Sudan",
-      "countryCode": "SD",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/04/ethiopia-sudan-egypt-eritrea-diplomats-expulsions-drone-attacks/7cdc873a-d878-11f1-930a-e08f8086f5ac_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/4/sudan-ethiopia-order-tit-for-tat-diplomatic-expulsions",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/05/sudan-and-ethiopia-in-tit-for-tat-expulsions-of-diplomats-as-tensions-rise/",
-          "domain": "thenationalnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.arabnews.com/middle-east/ethiopia-expels-sudanese-diplomats-after-fresh-allegations-of-support-for-rsf-3009806",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/ethiopia-expels-sudanese-diplomats-fresh-114327930.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 82,
-      "firstSeen": "2026-11-05T06:06:55.832Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "30356aa227ef",
-      "headline": "South Africa's ANC Posts Worst-Ever Local Election Result, Narrowly Ahead of DA",
-      "summary": "Early results from South Africa's municipal elections show the ruling ANC at roughly 32% against the DA's 27%, with about 36% of votes counted, marking the ANC's worst-ever electoral performance. The tight race reflects continued erosion of ANC dominance three decades after the end of apartheid.",
-      "category": "politics",
-      "severity": 3,
-      "lat": -25.75,
-      "lon": 28.19,
-      "locationName": "South Africa",
-      "countryCode": "ZA",
-      "sources": [
-        {
-          "url": "https://www.cnbcafrica.com/2026/anc-narrowly-leads-da-in-early-south-africa-municipal-election-results",
-          "domain": "cnbcafrica.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.polity.org.za/article/anc-support-falls-sharply-in-early-south-africa-municipal-election-results-2026-11-05",
-          "domain": "polity.org.za",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-04/south-africas-anc-on-32-of-vote-with-12-of-votes-counted-in-municipal-election",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.sabcnews.com/sabcnews/iec-releases-first-2026-lge-results-from-eastern-cape/",
-          "domain": "sabcnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.sanews.gov.za/south-africa/president-sets-4-november-2026-date-local-government-elections",
-          "domain": "sanews.gov.za",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://iol.co.za/news/politics/breaking-or-its-official-sa-votes-on-november-4/",
-          "domain": "iol.co.za",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.dailymaverick.co.za/article/2026-10-01-local-government-elections-2026/",
-          "domain": "dailymaverick.co.za",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 77,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
       "id": "7e888e3a0625",
       "headline": "Southwest Colorado Flood Damage Tally Hits $65 Million, Wolf Creek Pass Still Closed",
       "summary": "The Colorado Department of Transportation now estimates more than $65 million in road and bridge damage from San Juan River flooding, with a 33-mile stretch of Wolf Creek Pass closed. Multiple sites need emergency repair after mudslides and a collapsed bridge pier, following the mandatory evacuations ordered in Pagosa Springs in early November.",
@@ -1695,43 +1483,6 @@
       "isBreaking": false
     },
     {
-      "id": "d4594284d19c",
-      "headline": "Trump Says US Will End $4 Billion Annual Military Aid to Israel by End of 2026",
-      "summary": "President Trump said the United States will end its roughly $4 billion in annual military aid to Israel by the end of 2026, a claim that appears to conflict with the existing 10-year US-Israel military aid memorandum of understanding. The announcement's legal and practical status remains disputed.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 38.9072,
-      "lon": -77.0369,
-      "locationName": "Washington, D.C., United States",
-      "countryCode": "US",
-      "subdivision": "US-DC",
-      "sources": [
-        {
-          "url": "https://abcnews.go.com/Politics/trump-us-end-military-aid-israel-end-year/story?id=137809564",
-          "domain": "go.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.timesofisrael.com/liveblog_entry/trump-claims-us-will-halt-all-military-aid-to-israel-4-billion-annually-by-end-of-2026/",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/2026-election/trump-says-us-will-stop-4b-military-aid-israel-end-2026-rcna607210",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 72,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
       "id": "2d79be8effe2",
       "headline": "Ukrainian Drones Strike Saratov Oil Refinery in Russia as Attacks on Energy Sites Continue",
       "summary": "Overnight Nov 6-7, Ukrainian drones struck the Rosneft-owned Saratov Oil Refinery, igniting a fire, while cruise missiles also hit the Proton-Elektroteks defense plant in Oryol. It is one of several 2026 strikes on this refinery as part of Ukraine's ongoing campaign against Russian energy infrastructure.",
@@ -1790,6 +1541,83 @@
       "isBreaking": false
     },
     {
+      "id": "ed50571e3442",
+      "headline": "Georgia Opens Investigation After Uncounted Votes Flip State House Race",
+      "summary": "Georgia Secretary of State Brad Raffensperger opened a formal investigation after a memory card holding about 388 uncounted votes surfaced in Seminole County, flipping House District 154 from Democrat Harry James to Republican Gerald Greene, who now leads by 262 votes. The late upload has raised questions about the county's election-night procedures.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 30.998,
+      "lon": -84.8766,
+      "locationName": "Donalsonville, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
+      "sources": [
+        {
+          "url": "https://sos.ga.gov/news/raffensperger-opens-investigation-seminole-countys-late-upload-election-day-results",
+          "domain": "ga.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/georgia-secretary-of-state-investigating-countys-late-upload-of-votes-that-could-flip-house-seat/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://wsbradio.com/news/local/memory-card-found-with-uncounted-ballots-could-impact-house-race-south-georgia/C44UCASJVBCHLFI73A2DAZ35FA",
+          "domain": "wsbradio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a0c987a6c54e",
+      "headline": "Xavier Becerra Elected California Governor, First Latino Governor Since 1875",
+      "summary": "Democrat Xavier Becerra defeated Republican Steve Hilton 65.2%-34.8% on Nov 3 to become California's 41st governor, succeeding term-limited Gavin Newsom. He is the first Latino elected governor of California since Romualdo Pacheco in 1875.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/california-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/california-governor-becerra-hilton-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.npr.org/2026/06/05/nx-s1-5845847/xavier-becerra-california-governor-hilton-steyer-newsom",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
+      "isBreaking": false
+    },
+    {
       "id": "aaeb90a729f5",
       "headline": "Eurozone Annual Inflation Accelerates to 4.0% in October, Highest Since 2023",
       "summary": "Eurostat's preliminary estimate put October eurozone inflation at 4.0%, up from 3.8% in September, driven by a 20.8% year-on-year surge in energy prices. Core inflation held at 2.5%, well above the ECB's 2% target, raising prospects of a December rate hike.",
@@ -1817,131 +1645,6 @@
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ec164650784c",
-      "headline": "Hong Kong Court Sentences Activist Joshua Wong to 10 Years Under National Security Law",
-      "summary": "A Hong Kong court sentenced pro-democracy activist Joshua Wong to 10 years in prison on Nov 5, 2026 under the national security law for 'colluding with foreign forces,' his second such conviction. The US consulate condemned the sentence as politically motivated.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 22.303,
-      "lon": 114.162,
-      "locationName": "Hong Kong",
-      "countryCode": "HK",
-      "sources": [
-        {
-          "url": "https://www.npr.org/2026/11/05/nx-s1-6027761/hong-kong-activist-joshua-wong-sentenced-to-10-years-in-prison",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/04/hong-kong-joshua-wong-sentencing-national-security/d28e79ce-d8a3-11f1-930a-e08f8086f5ac_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/5/hong-kong-democracy-activist-joshua-wong-sentenced-to-10-years-in-jail",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "67eaba1eb39d",
-      "headline": "Bulgaria Elects Iliana Iotova as First Female President",
-      "summary": "Iliana Iotova won Bulgaria's presidential runoff election on Nov 1, 2026 with 57.6% of the vote against challenger Gyurov's 39.5%, becoming the country's first elected female head of state.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 42.6977,
-      "lon": 23.3219,
-      "locationName": "Sofia, Bulgaria",
-      "countryCode": "BG",
-      "sources": [
-        {
-          "url": "https://www.nbcnews.com/world/europe/iliana-yotova-wins-runoff-become-bulgarias-first-elected-female-presid-rcna606969",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-01/incumbent-yotova-wins-bulgarian-president-vote-exit-poll-shows",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6445d7826a84",
-      "headline": "Storm Agneta Flooding Expands to Southern Italy After Battering Rhodes, Greece",
-      "summary": "Storm Agneta, which triggered severe flooding on the Greek island of Rhodes, expanded its reach to southern Italy's Apulia region, including Taranto and Bari, prompting an orange weather alert on Nov 3-4, 2026. Weather alerts related to the storm system also extended to parts of Spain.",
-      "category": "climate",
-      "severity": 3,
-      "lat": 41.1177,
-      "lon": 16.8512,
-      "locationName": "Apulia region, Italy",
-      "countryCode": "IT",
-      "sources": [
-        {
-          "url": "https://en.protothema.gr/2026/11/03/new-emergency-weather-bulletin-for-storm-agneta-the-8-areas-facing-heavy-rain-and-thunderstorms-until-this-afternoon/",
-          "domain": "protothema.gr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ilmattino.it/en/violent_storms_and_sudden_cold_snap_sweep_across_italy-9863849.html",
-          "domain": "ilmattino.it",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://greekreporter.com/2026/11/02/storm-agneta-greece-flooding/",
-          "domain": "greekreporter.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.news247.gr/en/storm-agneta-storm-seven-areas-on-red-code-alert-where-severe-storms-and-flooding-are-expected/",
-          "domain": "news247.gr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://en.rua.gr/2026/11/02/flooding-in-rhodes-dozens-of-cars-damaged-storm-agneta-moves-on/",
-          "domain": "rua.gr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
       "isBreaking": false
     },
     {
@@ -1981,39 +1684,159 @@
       "isBreaking": false
     },
     {
-      "id": "b9176f072a39",
-      "headline": "Israeli Fire Kills Four Palestinians, Including a Child, in Gaza Despite Ceasefire",
-      "summary": "Israeli fire killed four to five Palestinians across Gaza on Nov 5, 2026, including a 54-year-old woman in Al-Mawasi near Khan Younis and a child in the Bureij refugee camp, despite the ongoing ceasefire. The incidents add to a pattern of fatal Israeli strikes inside Gaza since the truce began.",
-      "category": "conflict",
+      "id": "62aa7e7c54c6",
+      "headline": "Amy Klobuchar Elected Minnesota's First Woman Governor as Democrats Win Full Trifecta",
+      "summary": "Sitting US Sen. Amy Klobuchar defeated Republican Lisa Demuth 55.5%-42.6% on Nov 3 to become Minnesota's first woman governor. Lt. Gov. Peggy Flanagan won the open US Senate seat, and Democrats broke a 67-67 tie in the state House to secure full trifecta control of Minnesota government.",
+      "category": "politics",
       "severity": 3,
-      "lat": 31.34,
-      "lon": 34.31,
-      "locationName": "Khan Younis and Bureij, Gaza Strip",
-      "countryCode": "PS",
+      "lat": 44.9537,
+      "lon": -93.09,
+      "locationName": "St. Paul, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza",
-          "domain": "aljazeera.com",
-          "reliability": 78,
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/minnesota-governor-demuth-klobuchar-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://www.haaretz.com/gaza/2026-11-05/ty-article/.premium/four-palestinians-including-child-reportedly-killed-by-israeli-fire-in-gaza/000001a1-acd3-d041-a5f9-edf3697b0000",
-          "domain": "haaretz.com",
+          "url": "https://www.axios.com/local/twin-cities/2026/11/04/minnesota-governor-race-results-amy-klobuchar-lisa-demuth",
+          "domain": "axios.com",
           "reliability": 80,
-          "bias": "center-left"
+          "bias": "center"
         },
         {
-          "url": "https://www.arabnews.com/middle-east/israeli-fire-kills-four-in-gaza-including-child-civil-defense-3010018",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
+          "url": "https://www.minnpost.com/elections/2026/11/minnesota-election-results-live-updates/",
+          "domain": "minnpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "trustScore": 60,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f3dd3efd791a",
+      "headline": "Philadelphia Foster Mother Charged with Murder of 10-Year-Old Girl",
+      "summary": "Carprice Williams was charged with murder in the death of 10-year-old foster child Malayshia Alford, whose body was found in Lindenwold, New Jersey. A New Jersey medical examiner ruled the death a homicide caused by blunt force trauma; Williams was denied bail.",
+      "category": "society",
+      "severity": 3,
+      "lat": 39.9712,
+      "lon": -75.22,
+      "locationName": "Philadelphia, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/05/us/carprice-williams-foster-mother-murder-charge",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/philadelphia/news/malayshia-alford-missing-girl-body-found-lindenwold-nj/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fox29.com/news/philadelphia-foster-mother-charged-murder-10-year-old-malayshia-alford-da",
+          "domain": "fox29.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 59,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
+      "isBreaking": false
+    },
+    {
+      "id": "eb8dc072edfc",
+      "headline": "97 Rescued as Record Flash Flooding Hits North Georgia Mountain Towns",
+      "summary": "Record flash flooding on the Toccoa/Ocoee River prompted 97 water rescues in McCaysville, Georgia, with no confirmed fatalities, though one death was reported in neighboring Gilmer County pending confirmation. Gov. Brian Kemp declared a state of emergency for four counties as recovery continues.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 34.9862,
+      "lon": -84.3694,
+      "locationName": "McCaysville, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/05/weather/flooding-georgia-tennessee-mccaysville-copperhill-climate",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/mccaysville-declares-state-of-emergency-as-flooding-impacts-homes-and-businesses/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fox5atlanta.com/news/record-flooding-devastates-georgia-tennessee-mountain-towns",
+          "domain": "fox5atlanta.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 59,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2f84b4be2a5c",
+      "headline": "Utah Mink Farm Expected to Lose 80% of Herd to Uncontrolled H5N1 Bird Flu",
+      "summary": "C&T Fenn Farms south of Salt Lake City is expected to lose about 80% of its mink to an H5N1 outbreak from the same B3.13 strain lineage behind the US dairy cattle outbreak, after regulators declined to mandate culling. Alarm has renewed following a bird flu death reported in Washington state on Nov 6.",
+      "category": "health",
+      "severity": 3,
+      "lat": 40.7608,
+      "lon": -111.891,
+      "locationName": "Salt Lake City, Utah, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-UT",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/10/26/health/bird-flu-mink-farm-propublica",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.axios.com/local/salt-lake-city/2026/10/26/utah-mink-bird-flu-propublica",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.sltrib.com/news/environment/2026/10/26/utah-bird-flu-outbreak-could-spark/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
       "isBreaking": false
     },
     {
@@ -2047,37 +1870,6 @@
       "isBreaking": false
     },
     {
-      "id": "396ee9904a5d",
-      "headline": "Nasdaq Tumbles 5.5% as Democrats' Midterm Win Stokes AI Regulation Fears",
-      "summary": "The Nasdaq fell roughly 5.5% on Nov 5, 2026, led by a selloff in AI and data-center-related stocks, as investors grew concerned that Democrats' retaking of Congress in the midterms could lead to new regulation of the AI and data-center sector. The drop contrasted with broader market gains elsewhere the same day.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 40.7128,
-      "lon": -74.006,
-      "locationName": "New York, United States",
-      "countryCode": "US",
-      "subdivision": "US-NY",
-      "sources": [
-        {
-          "url": "https://www.npr.org/2026/11/05/nx-s1-6031987/stock-markets-ai-midterm-elections",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
       "id": "740098e3b25d",
       "headline": "Saudi-Led Coalition Intercepts Houthi Ballistic Missiles Targeting Riyadh and Eastern Province",
       "summary": "Saudi air defenses intercepted two Houthi ballistic missiles aimed at Riyadh on Nov 7-8 and a separate missile targeting the Eastern Province, part of a pattern of at least 15 missile/drone interceptions this month. Houthis claimed six operations against Saudi targets including an airport and an Aramco facility.",
@@ -2108,33 +1900,43 @@
       "isBreaking": false
     },
     {
-      "id": "225b02fe7887",
-      "headline": "Guatemalan Congressman and Three Police Officers Killed in Armed Ambush in Zacapa",
-      "summary": "Lawmaker Julio César Portillo Paz and three National Civil Police officers were killed Nov 6 in an attack along the Atlantic Highway near Río Hondo, Zacapa, a region with heavy drug-trafficking activity. President Arévalo confirmed the deaths; no suspects identified yet, following the recent killing of a former anti-corruption prosecutor.",
-      "category": "society",
+      "id": "2e236a6f496b",
+      "headline": "Missouri Voters Reject Abortion and Trans-Care Ban as Democrats Break GOP Supermajority",
+      "summary": "Missouri's Amendment 3, which would have imposed a near-total abortion ban and barred gender-affirming care for minors, failed with about 55% voting no on Nov 3. Democrats also flipped 16 Missouri House seats, their largest gain since 1974, breaking the GOP's veto-proof two-thirds supermajority though Republicans retain an overall majority.",
+      "category": "politics",
       "severity": 3,
-      "lat": 15.05,
-      "lon": -89.36,
-      "locationName": "Río Hondo, Zacapa, Guatemala",
-      "countryCode": "GT",
+      "lat": 38.5767,
+      "lon": -92.1735,
+      "locationName": "Jefferson City, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/7/guatemalan-lawmaker-and-three-police-officers-killed-in-armed-attack",
-          "domain": "aljazeera.com",
-          "reliability": 78,
+          "url": "https://www.npr.org/2026/11/03/g-s1-151063/missouri-abortion-ban-transgender",
+          "domain": "npr.org",
+          "reliability": 87,
           "bias": "center-left"
         },
         {
-          "url": "https://www.scmp.com/news/world/americas/article/3373663/guatemalan-lawmaker-3-police-officers-killed-armed-attack",
-          "domain": "scmp.com",
-          "reliability": 76,
-          "bias": "center"
+          "url": "https://www.kcur.org/politics-elections-and-government/2026-11-04/missouri-democrats-break-republicans-state-house-supermajority-with-16-flipped-seats",
+          "domain": "kcur.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://missouriindependent.com/2026/11/04/democrats-flip-16-missouri-house-seats-ending-republican-supermajority/",
+          "domain": "missouriindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
       "trustScore": 55,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
       "isBreaking": false
     },
     {
@@ -2178,33 +1980,113 @@
       "isBreaking": false
     },
     {
-      "id": "94059e5f48b8",
-      "headline": "Malaysia's King Warns Against Challenging His Order Allowing House Arrest for Ex-PM Najib",
-      "summary": "Sultan Ibrahim warned on Nov 7 that challenging his royal order allowing Najib Razak's transfer from jail to house arrest could amount to defying his decree. The warning came a day after authorities delayed the transfer after the Attorney General's office raised legal questions about interpretation of Najib's September royal pardon.",
-      "category": "politics",
+      "id": "225b02fe7887",
+      "headline": "Guatemalan Congressman and Three Police Officers Killed in Armed Ambush in Zacapa",
+      "summary": "Lawmaker Julio César Portillo Paz and three National Civil Police officers were killed Nov 6 in an attack along the Atlantic Highway near Río Hondo, Zacapa, a region with heavy drug-trafficking activity. President Arévalo confirmed the deaths; no suspects identified yet, following the recent killing of a former anti-corruption prosecutor.",
+      "category": "society",
       "severity": 3,
-      "lat": 3.14,
-      "lon": 101.69,
-      "locationName": "Kuala Lumpur, Malaysia",
-      "countryCode": "MY",
+      "lat": 15.05,
+      "lon": -89.36,
+      "locationName": "Río Hondo, Zacapa, Guatemala",
+      "countryCode": "GT",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/7/malaysian-king-warns-against-defying-house-arrest-order-for-ex-pm-najib",
+          "url": "https://www.aljazeera.com/news/2026/11/7/guatemalan-lawmaker-and-three-police-officers-killed-in-armed-attack",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-07/malaysias-king-warns-against-challenging-his-order-allowing-house-arrest-for-ex-pm-najib",
-          "domain": "usnews.com",
-          "reliability": 75,
+          "url": "https://www.scmp.com/news/world/americas/article/3373663/guatemalan-lawmaker-3-police-officers-killed-armed-attack",
+          "domain": "scmp.com",
+          "reliability": 76,
           "bias": "center"
         }
       ],
-      "trustScore": 54,
+      "trustScore": 55,
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-10T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
+      "id": "df45bb778427",
+      "headline": "Palm Bay, Florida Digs Out from Deadly Floods That Killed Two, Opened Sinkhole",
+      "summary": "Record rainfall of up to 24 inches triggered a flash flood emergency in Palm Bay and Melbourne, Florida, killing two people, Joshua Bennett, 34, and Archie Richards, 78, and prompting more than 60 rescues. A large sinkhole in Palm Bay Estates destroyed a road and water main, leaving a boil-water advisory in effect.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 27.9814,
+      "lon": -80.6381,
+      "locationName": "Palm Bay, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.clickorlando.com/news/local/2026/11/03/flooding-leaves-2-dead-massive-sinkholes-and-damaged-homes-in-palm-bay/",
+          "domain": "clickorlando.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abcnews.com/US/2-dead-hundreds-rescued-amid-severe-flooding-florida/story?id=137819002",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://mynews13.com/fl/orlando/news/2026/11/03/historic-flooding-leaves-extensive-damage-behind-in-brevard-county",
+          "domain": "mynews13.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
+      "isBreaking": false
+    },
+    {
+      "id": "797226980170",
+      "headline": "Federal Government Approves New $15-18 Billion Chesapeake Bay Bridge",
+      "summary": "The Maryland Transportation Authority and Federal Highway Administration published a final environmental review and Record of Decision for two new four-lane spans across the Chesapeake Bay, estimated to cost $14.8-17.6 billion. Design work is set to begin around 2028, with construction targeted for 2032.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 38.9784,
+      "lon": -76.4922,
+      "locationName": "Annapolis, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/baltimore/news/chesapeake-bay-bridge-final-environmental-approval/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://wtop.com/maryland/2026/11/maryland-takes-key-step-toward-constructing-new-chesapeake-bay-bridge/",
+          "domain": "wtop.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://marylandmatters.org/2026/11/06/maryland-takes-key-step-toward-constructing-new-chesapeake-bay-bridge/",
+          "domain": "marylandmatters.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
       "isBreaking": false
     },
     {
@@ -2248,6 +2130,36 @@
       "isBreaking": false
     },
     {
+      "id": "94059e5f48b8",
+      "headline": "Malaysia's King Warns Against Challenging His Order Allowing House Arrest for Ex-PM Najib",
+      "summary": "Sultan Ibrahim warned on Nov 7 that challenging his royal order allowing Najib Razak's transfer from jail to house arrest could amount to defying his decree. The warning came a day after authorities delayed the transfer after the Attorney General's office raised legal questions about interpretation of Najib's September royal pardon.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 3.14,
+      "lon": 101.69,
+      "locationName": "Kuala Lumpur, Malaysia",
+      "countryCode": "MY",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/malaysian-king-warns-against-defying-house-arrest-order-for-ex-pm-najib",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-07/malaysias-king-warns-against-challenging-his-order-allowing-house-arrest-for-ex-pm-najib",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-08T06:05:19.540Z",
+      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
       "id": "5b1839d33191",
       "headline": "First Winter Storm Floods Roughly 70,000 Tents Sheltering Displaced Palestinians in Gaza",
       "summary": "Gaza's Government Media Office reported roughly 70,000 tents sheltering displaced families were flooded within 12 hours of the season's first winter storm on Nov 7. Partial building collapses occurred in war-damaged structures, and fuel shortages left civil defense unable to respond; the UN estimates about 950,000 displaced people are in flood-exposed areas.",
@@ -2275,82 +2187,6 @@
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "eb0c0ed31417",
-      "headline": "Storm Warnings Disrupt São Paulo F1 Qualifying Days After Deadly Tornadoes Hit Santa Catarina",
-      "summary": "Twin tornadoes struck Santa Catarina state on Nov 4, killing two people and damaging over 5,300 homes. On Nov 7 Brazil's Civil Defense issued a storm danger alert for São Paulo and F1 Brazilian Grand Prix qualifying at Interlagos was red-flagged due to a severe thunderstorm.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": -23.7036,
-      "lon": -46.6997,
-      "locationName": "São Paulo, Brazil",
-      "countryCode": "BR",
-      "sources": [
-        {
-          "url": "https://sports.yahoo.com/articles/storm-warning-sounded-sao-paulo-143951860.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.gpfans.com/en/f1-news/1092612/fia-confirm-brazilian-grand-prix-qualifying-red-flag-rain-sao-paulo/",
-          "domain": "gpfans.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.latintimes.com/twin-tornadoes-santa-catarina-damage-600953",
-          "domain": "latintimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "27b237ba9148",
-      "headline": "Codelco Confirms It Overstated Copper Output by 42,100 Tonnes, Cuts 2026 Guidance",
-      "summary": "Chilean state copper miner Codelco disclosed on Nov 5, 2026 that it overstated copper production by 42,100 tonnes across 2024-2025 and cut its 2026 output guidance to about 1.2 million tonnes from a 1.34 million tonne target. Nine staff were dismissed, and a separate inventory discrepancy of 17,000 tonnes worth $120-140 million was also disclosed.",
-      "category": "economy",
-      "severity": 3,
-      "lat": -33.4489,
-      "lon": -70.6693,
-      "locationName": "Santiago, Chile",
-      "countryCode": "CL",
-      "sources": [
-        {
-          "url": "https://ca.finance.yahoo.com/news/codelco-lowers-2026-guidance-confirms-180151789.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.mining.com/codelcos-inflated-copper-output-scandal-hits-42100-tonnes/",
-          "domain": "mining.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://mining.com.au/codelco-reveals-overstated-copper-production-figures/",
-          "domain": "mining.com.au",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
       "isBreaking": false
     },
     {
@@ -2394,65 +2230,41 @@
       "isBreaking": false
     },
     {
-      "id": "baeab1188f16",
-      "headline": "AFRICOM and Turkish Forces Conduct Separate Airstrikes Against Al-Shabaab in Somalia",
-      "summary": "US Africa Command confirmed a strike targeting al-Shabaab near Jamaame on Nov 5, part of 68 AFRICOM strikes in Somalia this year. Separately, Turkish F-16s conducted strikes against al-Shabaab vehicles and positions in early November in response to an al-Shabaab attack on Somali government troops.",
-      "category": "conflict",
+      "id": "eb0c0ed31417",
+      "headline": "Storm Warnings Disrupt São Paulo F1 Qualifying Days After Deadly Tornadoes Hit Santa Catarina",
+      "summary": "Twin tornadoes struck Santa Catarina state on Nov 4, killing two people and damaging over 5,300 homes. On Nov 7 Brazil's Civil Defense issued a storm danger alert for São Paulo and F1 Brazilian Grand Prix qualifying at Interlagos was red-flagged due to a severe thunderstorm.",
+      "category": "disaster",
       "severity": 3,
-      "lat": -0.08,
-      "lon": 42.75,
-      "locationName": "Jamaame, Lower Jubba, Somalia",
-      "countryCode": "SO",
+      "lat": -23.7036,
+      "lon": -46.6997,
+      "locationName": "São Paulo, Brazil",
+      "countryCode": "BR",
       "sources": [
         {
-          "url": "https://www.africom.mil/pressrelease/37104/us-forces-conduct-strikes-targeting-al-shabaab",
-          "domain": "africom.mil",
-          "reliability": 85,
+          "url": "https://sports.yahoo.com/articles/storm-warning-sounded-sao-paulo-143951860.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
           "bias": "center"
         },
         {
-          "url": "https://www.dropsitenews.com/p/us-iran-qeshm-gaza-israel-rafah-aid-turkey-somalia-shabaab",
-          "domain": "dropsitenews.com",
+          "url": "https://www.gpfans.com/en/f1-news/1092612/fia-confirm-brazilian-grand-prix-qualifying-red-flag-rain-sao-paulo/",
+          "domain": "gpfans.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.latintimes.com/twin-tornadoes-santa-catarina-damage-600953",
+          "domain": "latintimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 50,
+      "trustScore": 51,
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "107f3f855c30",
-      "headline": "France's National Assembly Rejects 2027 Budget Bill 458-0",
-      "summary": "France's National Assembly unanimously rejected the revenue section of the 2027 budget bill by a vote of 458-0 on Nov 5, 2026. The bill now moves to the Senate, following a nationwide strike over austerity measures the previous day.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 48.8566,
-      "lon": 2.3522,
-      "locationName": "Paris, France",
-      "countryCode": "FR",
-      "sources": [
-        {
-          "url": "https://www.france24.com/fr/france/20261104-assemblee-nationale-rejette-unanimite-en-premiere-lecture-budget-etat-2027-pib-finances",
-          "domain": "france24.com",
-          "reliability": 84,
-          "bias": "center"
-        },
-        {
-          "url": "https://en.coinotag.com/france-assembly-rejects-2027-budget-revenue-crypto-tax-amendments",
-          "domain": "coinotag.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 50,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
       "isBreaking": false
     },
     {
@@ -2489,151 +2301,116 @@
       "isBreaking": false
     },
     {
-      "id": "2ce698623277",
-      "headline": "US Sanctions Rwanda's Defence Ministry Over M23 Support as DRC Talks Continue",
-      "summary": "The US Treasury sanctioned Rwanda's Ministry of Defence and the Zigama savings society on Oct 28 over alleged support to the M23 rebel group and its political wing, and intends to end Rwanda's AGOA trade preferences from Jan 1, 2027. M23 remains in Qatar-mediated negotiations with the Congolese government in Doha, though no confirmed November date has been set.",
-      "category": "politics",
+      "id": "baeab1188f16",
+      "headline": "AFRICOM and Turkish Forces Conduct Separate Airstrikes Against Al-Shabaab in Somalia",
+      "summary": "US Africa Command confirmed a strike targeting al-Shabaab near Jamaame on Nov 5, part of 68 AFRICOM strikes in Somalia this year. Separately, Turkish F-16s conducted strikes against al-Shabaab vehicles and positions in early November in response to an al-Shabaab attack on Somali government troops.",
+      "category": "conflict",
       "severity": 3,
-      "lat": -1.95,
-      "lon": 30.06,
-      "locationName": "Kigali, Rwanda",
-      "countryCode": "RW",
+      "lat": -0.08,
+      "lon": 42.75,
+      "locationName": "Jamaame, Lower Jubba, Somalia",
+      "countryCode": "SO",
       "sources": [
         {
-          "url": "https://www.riotimesonline.com/us-sanctions-rwanda-defence-ministry-zigama-m23-2026/",
-          "domain": "riotimesonline.com",
+          "url": "https://www.africom.mil/pressrelease/37104/us-forces-conduct-strikes-targeting-al-shabaab",
+          "domain": "africom.mil",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.dropsitenews.com/p/us-iran-qeshm-gaza-israel-rafah-aid-turkey-somalia-shabaab",
+          "domain": "dropsitenews.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
-        },
-        {
-          "url": "https://www.euronews.com/tag/m23",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
         }
       ],
-      "trustScore": 49,
+      "trustScore": 50,
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-10T06:05:19.540Z",
       "isBreaking": false
     },
     {
-      "id": "1f81ba4c1337",
-      "headline": "Mexican Federal Forces Kill Cartel Leader 'El General' in Shootout Near Mexico City",
-      "summary": "Mexican federal forces killed Édgar Aarón Vázquez Alvarado, alias 'El General,' founder of the Cártel Nuevo Imperio, in a shootout in the Lomas Verdes area of Naucalpan, State of Mexico, on Nov 5, 2026. Security Secretary Omar García Harfuch confirmed the operation.",
-      "category": "conflict",
+      "id": "3af7f36e9718",
+      "headline": "Families Sue Ohio Hospitals Over Doctor's Alleged Trove of Child Exploitation Images",
+      "summary": "A federal lawsuit filed on behalf of 13 children alleges former Toledo pediatric urologist Bryan Sack kept a Dropbox account with more than 27,000 files, including child sexual abuse material and genital images of patients. Families are seeking over $5 million and class-action status covering up to 2,500 patients, naming Nationwide Children's Hospital and Mercy Health St. Vincent as defendants.",
+      "category": "society",
       "severity": 3,
-      "lat": 19.4766,
-      "lon": -99.2394,
-      "locationName": "Naucalpan de Juárez, Mexico",
-      "countryCode": "MX",
+      "lat": 41.6528,
+      "lon": -83.5379,
+      "locationName": "Toledo, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
       "sources": [
         {
-          "url": "https://www.milenio.com/policia/abaten-edomex-presunto-lider-cartel-imperio",
-          "domain": "milenio.com",
+          "url": "https://www.13abc.com/2026/11/06/former-toledo-doctor-indicted-csam-photographed-patients-genitals-lawsuit-alleges/",
+          "domain": "13abc.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.riotimesonline.com/el-general-nuevo-imperio-cartel-boss-killed-mexico/",
-          "domain": "riotimesonline.com",
+          "url": "https://www.ibtimes.co.uk/families-sue-hospitals-doctor-dropbox-medical-images-1830821",
+          "domain": "ibtimes.co.uk",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yucatan.com.mx/mexico/2026/11/05/abaten-el-general-lider-cartel-nuevo-imperio-naucalpan-edomex-asesinato-mando-policiaco.html",
-          "domain": "yucatan.com.mx",
+          "url": "https://clickondetroit.com/news/local/2026/11/06/families-of-13-children-sue-hospitals-michigan-doctor-over-alleged-misuse-of-pediatric-medical-images",
+          "domain": "clickondetroit.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
       "isBreaking": false
     },
     {
-      "id": "b0151d88ec4f",
-      "headline": "Brazil's Senate Approves Constitutional Amendment Expanding Federal Powers Against Gangs",
-      "summary": "Brazil's Senate unanimously approved the 'PEC da Segurança' constitutional amendment (PEC 18/2025) on Nov 3, 2026, enshrining a Unified Public Security System targeting organized crime groups like the PCC and Comando Vermelho with tougher penalties. President Lula plans to create a standalone Ministry of Public Security.",
+      "id": "aa1c9b769c5c",
+      "headline": "Arkansas AG Moves to End 1991 Consent Decree Creating Black-Majority Judicial Districts",
+      "summary": "Arkansas Attorney General Tim Griffin filed a federal motion on Nov 5 to terminate the 1991 Hunt v. Arkansas consent decree, which created Black-majority judicial subdistricts in the state. The NAACP Legal Defense Fund has said it will oppose the move.",
       "category": "politics",
       "severity": 3,
-      "lat": -15.7801,
-      "lon": -47.9292,
-      "locationName": "Brasília, Brazil",
-      "countryCode": "BR",
+      "lat": 34.7465,
+      "lon": -92.2896,
+      "locationName": "Little Rock, Arkansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AR",
       "sources": [
         {
-          "url": "https://www.courthousenews.com/brazil-expands-federal-powers-over-public-security/",
-          "domain": "courthousenews.com",
+          "url": "https://arkansasadvocate.com/2026/11/05/arkansas-attorney-general-seeks-end-to-order-establishing-majority-black-judicial-districts/",
+          "domain": "arkansasadvocate.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.news4jax.com/news/world/2026/11/04/brazils-senate-approves-lulas-main-bet-to-tackle-criminal-gangs/",
-          "domain": "news4jax.com",
+          "url": "https://talkbusiness.net/2026/11/griffin-seeks-to-end-to-decree-creating-black-majority-judicial-districts/",
+          "domain": "talkbusiness.net",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.riotimesonline.com/brazil-pec-da-seguranca-explained-what-changes-after-senate-vote-2026/",
-          "domain": "riotimesonline.com",
+          "url": "https://www.arkansasonline.com/news/2026/nov/05/arkansas-attorney-general-moves-to-dissolve-1991/",
+          "domain": "arkansasonline.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "7c9f53f5e56f",
-      "headline": "RSF Drone Swarm Hits Ed Damazin, Sudan as SAF-Allied Commander Killed in Kordofan",
-      "summary": "Sudan's Rapid Support Forces carried out a drone-swarm strike on Ed Damazin, the capital of Blue Nile State, around Nov 3-4, 2026, hitting military infrastructure. Separately, Brigadier General Haroun Mersal, a commander of the SAF-allied Joint Force, was killed on Nov 3 in fighting in Kordofan.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 11.78,
-      "lon": 34.35,
-      "locationName": "Ed Damazin, Blue Nile State, Sudan",
-      "countryCode": "SD",
-      "sources": [
-        {
-          "url": "https://sudantribune.com/article/318734",
-          "domain": "sudantribune.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.dabangasudan.org/en/all-news/article/sudan-war-fighting-on-ethiopian-border-drone-attacks-on-ed-damazin",
-          "domain": "dabangasudan.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://martinplaut.com/2026/11/05/eepa-situation-report-horn-of-africa-no-777-5-november-2026/",
-          "domain": "martinplaut.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
       "isBreaking": false
     },
     {
@@ -2924,6 +2701,37 @@
       "isBreaking": false
     },
     {
+      "id": "2ce698623277",
+      "headline": "US Sanctions Rwanda's Defence Ministry Over M23 Support as DRC Talks Continue",
+      "summary": "The US Treasury sanctioned Rwanda's Ministry of Defence and the Zigama savings society on Oct 28 over alleged support to the M23 rebel group and its political wing, and intends to end Rwanda's AGOA trade preferences from Jan 1, 2027. M23 remains in Qatar-mediated negotiations with the Congolese government in Doha, though no confirmed November date has been set.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -1.95,
+      "lon": 30.06,
+      "locationName": "Kigali, Rwanda",
+      "countryCode": "RW",
+      "sources": [
+        {
+          "url": "https://www.riotimesonline.com/us-sanctions-rwanda-defence-ministry-zigama-m23-2026/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.euronews.com/tag/m23",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-08T06:05:19.540Z",
+      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
       "id": "8d9a74867431",
       "headline": "Indiana Executes Jeffrey Weisheit for 2010 Murders of Two Children After Clemency Denied",
       "summary": "Jeffrey Weisheit, 50, was executed by lethal injection just after midnight on Nov. 5, 2026 for the 2010 arson murders of his girlfriend's children, Alyssa, 8, and Caleb Lynch, 5. Gov. Mike Braun denied clemency and the Indiana Supreme Court rejected a last-minute challenge 3-2.",
@@ -2953,6 +2761,40 @@
       "firstSeen": "2026-11-06T15:28:33.350Z",
       "lastUpdated": "2026-11-06T15:28:33.350Z",
       "expiresAt": "2026-11-08T15:28:33.350Z",
+      "isBreaking": false
+    },
+    {
+      "id": "879196db9c83",
+      "headline": "North Carolina Voters Approve Constitutional Amendment Limiting Local Property Tax Increases",
+      "summary": "North Carolina voters approved a constitutional amendment requiring the legislature to set limits on local property tax increases, passing with about 60% support. A UNC School of Government analysis estimates it could cut statewide local government revenue by up to $321 million depending on how limits are structured.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 35.7796,
+      "lon": -78.6382,
+      "locationName": "Raleigh, North Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NC",
+      "sources": [
+        {
+          "url": "https://ncnewsline.com/2026/11/04/nc-voters-approve-all-three-constitutional-amendments-on-ballot/",
+          "domain": "ncnewsline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ballotpedia.org/North_Carolina_Property_Tax_Levy_Limit_Amendment_(2026)",
+          "domain": "ballotpedia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-07T15:26:24.806Z",
+      "lastUpdated": "2026-11-07T15:26:24.806Z",
+      "expiresAt": "2026-11-09T15:26:24.806Z",
       "isBreaking": false
     },
     {
@@ -3081,104 +2923,6 @@
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "1ea3cc893e79",
-      "headline": "US Says Venezuelan Elections Could 'Ideally' Happen in 2027",
-      "summary": "US Secretary of State Marco Rubio said on Nov 5, 2026 that Venezuelan elections would 'ideally' take place in 2027, contingent on judicial, electoral, and security-force reforms along with debt restructuring. He declined to commit to holding a vote before the end of the Trump administration's term and pressed for the release of political prisoners.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 10.4806,
-      "lon": -66.9036,
-      "locationName": "Caracas, Venezuela",
-      "countryCode": "VE",
-      "sources": [
-        {
-          "url": "https://www.aa.com.tr/en/americas/rubio-says-venezuela-elections-could-be-held-in-2027/4113558",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.investing.com/news/economy-news/us-proposes-venezuela-elections-for-2027-opposition-leader-machado-says-4984949",
-          "domain": "investing.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "307dd8ae238d",
-      "headline": "Pakistani Troops Clash With Afghan Taliban Forces in Kurram Border Sector",
-      "summary": "Pakistani forces intercepted an infiltration attempt from Afghanistan in the Shalozan sector of Upper Kurram on Nov 5, 2026, arresting one Afghan national. Pakistan said Afghan Taliban forces then opened fire, prompting Pakistani troops to respond with heavy weapons.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 33.9,
-      "lon": 70.1,
-      "locationName": "Upper Kurram, Khyber Pakhtunkhwa, Pakistan",
-      "countryCode": "PK",
-      "sources": [
-        {
-          "url": "https://www.dawn.com/news/2037853/security-forces-respond-to-unprovoked-firing-by-afghan-taliban-along-kurram-border-state-media",
-          "domain": "dawn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://dailytimes.com.pk/1577508/pakistani-security-forces-foil-border-infiltration-attempt-and-destroy-afghan-taliban-posts-in-kurram/",
-          "domain": "dailytimes.com.pk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-08T06:05:32.623Z",
-      "isBreaking": false
-    },
-    {
-      "id": "879196db9c83",
-      "headline": "North Carolina Voters Approve Constitutional Amendment Limiting Local Property Tax Increases",
-      "summary": "North Carolina voters approved a constitutional amendment requiring the legislature to set limits on local property tax increases, passing with about 60% support. A UNC School of Government analysis estimates it could cut statewide local government revenue by up to $321 million depending on how limits are structured.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 35.7796,
-      "lon": -78.6382,
-      "locationName": "Raleigh, North Carolina, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NC",
-      "sources": [
-        {
-          "url": "https://ncnewsline.com/2026/11/04/nc-voters-approve-all-three-constitutional-amendments-on-ballot/",
-          "domain": "ncnewsline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://ballotpedia.org/North_Carolina_Property_Tax_Levy_Limit_Amendment_(2026)",
-          "domain": "ballotpedia.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-07T15:26:24.806Z",
-      "lastUpdated": "2026-11-07T15:26:24.806Z",
-      "expiresAt": "2026-11-09T15:26:24.806Z",
       "isBreaking": false
     },
     {
@@ -3590,13 +3334,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 88,
-    "carried": 50,
-    "updated": 9,
-    "expired": 20,
+    "multiSource": 82,
+    "carried": 72,
+    "updated": 0,
+    "expired": 17,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 6.27,
-    "budgetUsd": 12
+    "costUsd": 4.16,
+    "budgetUsd": 8
   }
 }
