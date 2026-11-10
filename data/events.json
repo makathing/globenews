@@ -1,7 +1,61 @@
 {
-  "generatedAt": "2026-11-09T15:30:49.548Z",
+  "generatedAt": "2026-11-10T06:07:21.759Z",
   "mode": "daily",
   "events": [
+    {
+      "id": "c80b6c062c2f",
+      "headline": "First US-Russia-Ukraine Trilateral Talks Since February Open in Abu Dhabi",
+      "summary": "Negotiators from Russia, Ukraine and the US opened two days of talks in Abu Dhabi on ending the war, post-war security guarantees and reconstruction — the first full trilateral session since talks were suspended in February amid the Iran conflict, building on the Kherson-ceasefire discussions hosted by Melania Trump at the White House. UK, French, German, Italian, NATO and EU officials held parallel side meetings with the Ukrainian delegation.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 24.4539,
+      "lon": 54.3773,
+      "locationName": "Abu Dhabi, United Arab Emirates",
+      "countryCode": "AE",
+      "sources": [
+        {
+          "url": "https://www.axios.com/2026/11/09/ukraine-russia-zelensky-putin-peace-abu-dhabi",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/03/russia-ukraine-peace-talks-abu-dhabi-trump-putin-xi.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/05/nx-s1-6030662/melania-trump-touts-rare-agreement-she-brokered-between-russia-and-ukraine",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/trump-meets-putin-envoy-kirill-dmitriev-at-the-white-house",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/ukraine/melania-trump-host-russia-ukraine-representatives-white-house-rare-mee-rcna607390",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-to-convene-russian-and-ukrainian-representatives-at-the-white-house/",
+          "domain": "whitehouse.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 90,
+      "firstSeen": "2026-11-06T06:05:32.623Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
+      "isBreaking": false
+    },
     {
       "id": "22ca32586157",
       "headline": "Israel's President Gives Eisenkot First Chance to Form Next Government Over Netanyahu",
@@ -249,86 +303,6 @@
       "isBreaking": false
     },
     {
-      "id": "6a885e614bc2",
-      "headline": "US Confirms New Strikes on Iran's Qeshm Island as Hormuz Blockade Escalates",
-      "summary": "President Trump confirmed US forces carried out 'minor strikes' against an Iranian air-defense system on Qeshm Island Nov 7, with explosions also reported at Jask port. Separately, a US aircraft disabled the cargo vessel M/V Huda in the Gulf of Oman after it allegedly tried to breach the US naval blockade on Iran, the 11th vessel disabled since July; Iran's IRGC separately claimed, without independent confirmation, that two more tankers caught fire in the Strait of Hormuz.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 26.78,
-      "lon": 56.27,
-      "locationName": "Qeshm Island, Iran",
-      "countryCode": "IR",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/iran/us-conducted-defensive-strikes-iranian-targets-strait-hormuz-us-offici-rcna607161",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://english.alarabiya.net/amp/News/middle-east/2026/11/05/iran-says-two-tankers-and-tugboat-caught-fire-in-strait-of-hormuz",
-          "domain": "alarabiya.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/irans-irgc-says-two-tankers-042107548.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/02/politics/us-strikes-iran-qeshm-island",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://abcnews.com/International/us-carries-defensive-airstrikes-irans-qeshm-island-officials/story?id=137792518",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.timesofisrael.com/liveblog-november-5-2026/",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.thenationalnews.com/news/us/2026/11/03/us-strike-qeshm-iran-hormuz/",
-          "domain": "thenationalnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 84,
-      "firstSeen": "2026-11-03T06:07:11.564Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-12T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
       "id": "31653a8f2799",
       "headline": "Death Toll From Russian Strike on Komyshuvakha Aid Site Rises to 55",
       "summary": "The Nov 2 Russian strike on a school used as a humanitarian aid-distribution point in Komyshuvakha has seen its confirmed death toll climb to 55 per Ukraine's State Emergency Service, up from nearly 40 reported Nov 3. Rescuers continue pulling bodies from rubble in what is now the deadliest single attack on Zaporizhzhia Oblast civilians of the war.",
@@ -391,46 +365,40 @@
       "isBreaking": false
     },
     {
-      "id": "c80b6c062c2f",
-      "headline": "Melania Trump Hosts Russian and Ukrainian Envoys at White House Over Kherson Ceasefire",
-      "summary": "First Lady Melania Trump hosted Ukrainian representatives (David Arakhamia, Dmytro Lubinets) and Russian envoy Kirill Dmitriev at the White House on Nov 5, 2026, marking a six-day humanitarian ceasefire she helped broker in Oleshky, Kherson Oblast. President Trump separately met Dmitriev in the Oval Office and said a broader deal was 'near.'",
-      "category": "politics",
+      "id": "12904e2994a0",
+      "headline": "US Measles Outbreak Surpasses 5,000 Cases, Highest Count Since 1991",
+      "summary": "The CDC confirmed 5,182 measles cases in 2026 across 46 states, the highest total since the US eliminated domestic transmission, driven by declining vaccination rates; several deaths have been reported this year, almost entirely among unvaccinated individuals. Officials warn the outbreak threatens the country's 'measles elimination' status.",
+      "category": "health",
       "severity": 4,
-      "lat": 38.8977,
-      "lon": -77.0365,
-      "locationName": "Washington, D.C., United States",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "United States",
       "countryCode": "US",
-      "subdivision": "US-DC",
+      "subdivision": "US-VA",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/11/05/nx-s1-6030662/melania-trump-touts-rare-agreement-she-brokered-between-russia-and-ukraine",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/trump-meets-putin-envoy-kirill-dmitriev-at-the-white-house",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/us-measles-cases-top-5-000-for-the-first-time-since-the-1990s",
           "domain": "bloomberg.com",
           "reliability": 88,
           "bias": "center"
         },
         {
-          "url": "https://www.nbcnews.com/world/ukraine/melania-trump-host-russia-ukraine-representatives-white-house-rare-mee-rcna607390",
-          "domain": "nbcnews.com",
-          "reliability": 81,
+          "url": "https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years",
+          "domain": "aljazeera.com",
+          "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-to-convene-russian-and-ukrainian-representatives-at-the-white-house/",
-          "domain": "whitehouse.gov",
-          "reliability": 85,
+          "url": "https://www.euronews.com/2026/11/06/us-measles-cases-exceed-5000-in-2026-reaching-their-highest-level-in-35-years",
+          "domain": "euronews.com",
+          "reliability": 80,
           "bias": "center"
         }
       ],
-      "trustScore": 83,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-10T06:05:32.623Z",
+      "trustScore": 73,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -499,6 +467,50 @@
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-12T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ea512854c85d",
+      "headline": "EU Activates Emergency Civil Protection Mechanism as Russian Strikes Keep Battering Ukraine's Power Grid",
+      "summary": "Russian forces struck four electrical substations across Kyiv, Dnipropetrovsk, Cherkasy and Vinnytsia regions on Nov 9, compounding the damage from the Nov 8 strikes on Kyiv's bridge and power grid. The European Commission and Ukrainian officials convened to deploy the EU Civil Protection Mechanism for emergency power, heating and water assistance ahead of winter.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 50.4501,
+      "lon": 30.5234,
+      "locationName": "Kyiv, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/09/8061955/",
+          "domain": "pravda.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cp24.com/news/world/2026/11/09/russia-and-ukraine-batter-each-other-with-long-range-strikes-a-day-before-us-brokered-talks/",
+          "domain": "cp24.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/zelenskyy-russia-attacks-us-talks/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -596,36 +608,6 @@
       "isBreaking": false
     },
     {
-      "id": "a3bf1ee3d3ab",
-      "headline": "China Deploys Over 100 Navy and Coast Guard Vessels Across Western Pacific Near Taiwan",
-      "summary": "Taiwan's National Security Council said China deployed more than 100 PLA Navy and Coast Guard vessels across the Western Pacific in two clusters, one between Taiwan and Guam including the Liaoning carrier group, and one ringing Taiwan. Taiwanese officials and US think tanks describe the unannounced deployment, coordinated across three Theater Commands, as a rehearsal for isolating or blockading Taiwan.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 23.6978,
-      "lon": 120.9605,
-      "locationName": "Taiwan Strait, Taiwan",
-      "countryCode": "TW",
-      "sources": [
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/10/29/asia-pacific/politics/taiwan-50-chinese-vessels/",
-          "domain": "japantimes.co.jp",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/08/2003867351",
-          "domain": "taipeitimes.com",
-          "reliability": 72,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 63,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-13T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
       "id": "68b97b22f6ca",
       "headline": "Newsom Moves to Commute All 548 California Death Sentences to Life Without Parole",
       "summary": "Gov. Gavin Newsom announced he will commute every death sentence in California, affecting 548 people on the Western Hemisphere's largest death row, to life without parole. The move comes about eight years after he imposed an execution moratorium; the California Supreme Court must still approve roughly 382 of the commutations involving repeat felons.",
@@ -665,6 +647,36 @@
       "isBreaking": false
     },
     {
+      "id": "31c63fe2ec34",
+      "headline": "Houthis Capture Al-Majza'a in Lahej as Airstrike on Taiz Market Kills About 30",
+      "summary": "Airstrikes hit the al-Hadara market in al-Waziyah, Taiz, killing at least 30 people; Houthi officials blamed Saudi-led coalition aircraft, while the Yemeni government blamed a Houthi ballistic missile and called it a war crime. Separately, Houthi forces captured the town of Al-Majza'a in Lahej Governorate, expanding their territorial control.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 13.5795,
+      "lon": 44.0209,
+      "locationName": "Taiz, Yemen",
+      "countryCode": "YE",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/world/yemen/airstrikes-market-southwestern-yemen-kill-least-30-houthis-say-rcna607908",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/06/yemen-airstrikes-market-houthis/c753be6c-d9e7-11f1-930a-e08f8086f5ac_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
       "id": "f0a56a50b55b",
       "headline": "WHO Warns Violence in Northern Ethiopia Is Pushing Health System Toward Collapse",
       "summary": "WHO Director-General Tedros warned that renewed fighting between Tigrayan forces and Addis Ababa, plus drone strikes, is pushing Ethiopia's health system in the north toward collapse. He cited shortages of health workers and medicine and limited ambulance access, amid deteriorating Ethiopia-Eritrea relations over reported Eritrean military incursions.",
@@ -695,171 +707,173 @@
       "isBreaking": false
     },
     {
-      "id": "ea512854c85d",
-      "headline": "Russia Fires 36 Missiles and 172 Drones at Kyiv, Damaging Bridge and Power Grid",
-      "summary": "Russia launched three waves of ballistic missiles plus 172 drones at Kyiv and surrounding oblasts overnight Nov 6-7, damaging the Northern Bridge over the Dnipro, a kindergarten, homes and energy infrastructure, causing outages. At least 9 people were wounded including a child; Zelensky linked the timing to upcoming Russia-Ukraine-US talks in Abu Dhabi.",
+      "id": "faa66019dc2d",
+      "headline": "Israeli Strike Kills Three Sisters and Grandmother in Aynata, Southern Lebanon",
+      "summary": "An Israeli strike hit a civilian car traveling between the villages of Aynata and Aitaroun, killing three sisters (ages 10-14) and their grandmother; their mother survived and was hospitalized. The strike, amid continued Israeli demolition and search operations in southern Lebanon, sparked domestic outrage over a possible violation of international law.",
       "category": "conflict",
       "severity": 4,
-      "lat": 50.45,
-      "lon": 30.52,
-      "locationName": "Kyiv, Ukraine",
-      "countryCode": "UA",
+      "lat": 33.15,
+      "lon": 35.42,
+      "locationName": "Aynata, southern Lebanon",
+      "countryCode": "LB",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/zelenskyy-russia-attacks-us-talks/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 56,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-12T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "dd26af38a3e1",
-      "headline": "ICJ to Rule November 19 on Rohingya Genocide Case Against Myanmar",
-      "summary": "The International Court of Justice will deliver its judgment on Nov 19, 2026 in The Gambia's genocide case against Myanmar over the 2017 crackdown on Rohingya Muslims in Rakhine State. It will be only the third merits ruling in ICJ history on genocide.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 52.08,
-      "lon": 4.29,
-      "locationName": "The Hague, Netherlands",
-      "countryCode": "NL",
-      "sources": [
-        {
-          "url": "https://tribune.com.pk/story/2638662/icj-to-rule-on-myanmar-genocide-case-over-rohingya-on-nov-19",
-          "domain": "tribune.com.pk",
-          "reliability": 68,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.malaymail.com/news/world/2026/11/05/myanmar-faces-landmark-icj-ruling-on-rohingya-genocide-allegations-on-nov-19/241942",
-          "domain": "malaymail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.middleeasteye.net/news/icj-rule-rohingya-genocide-case-imminently-heres-what-you-need-know",
+          "url": "https://www.middleeasteye.net/news/israel-lebanon-children-grandmother-killed-israel-strike",
           "domain": "middleeasteye.net",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
+        },
+        {
+          "url": "https://www.ynetnews.com/article/hkfjlib76",
+          "domain": "ynetnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aa.com.tr/en/middle-east/israeli-army-continues-strikes-in-southern-lebanon-despite-framework-deal/4115101",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://shafaq.com/en/Middle-East/Israeli-shelling-demolitions-hit-southern-Lebanon",
+          "domain": "shafaq.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 52,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-10T06:05:32.623Z",
+      "trustScore": 57,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
       "isBreaking": false
     },
     {
-      "id": "a869bcb730fc",
-      "headline": "Houthi Attack Death Toll at Qataba Training Camp Disputed, Estimates Range From Dozens to Over 70",
-      "summary": "Casualty estimates from a Houthi missile attack on a Yemeni government military training camp in Qataba, Al Dhale'e governorate, continue to diverge sharply across sources, ranging from roughly 14 to over 73 dead, with one wire report citing 73 killed. The attack struck trainees at the camp.",
-      "category": "conflict",
+      "id": "adcc57286118",
+      "headline": "Simultaneous El Niño and La Niña Flooding Displaces Over 158,000 Across Argentina, Paraguay, Uruguay and Colombia",
+      "summary": "El Niño-driven Paraná and Uruguay River flooding has forced mass evacuations across northeastern Argentina, Paraguay and Uruguay, while La Niña-driven rains simultaneously flood much of Colombia. Combined, the disasters have displaced more than 158,000 people and killed at least 16; Argentina's Entre Ríos province saw the Uruguay River reach its highest level in nearly a century.",
+      "category": "climate",
       "severity": 4,
-      "lat": 13.76,
-      "lon": 44.37,
-      "locationName": "Qataba, Al Dhale'e Governorate, Yemen",
-      "countryCode": "YE",
+      "lat": -38.4,
+      "lon": -63.6,
+      "locationName": "Argentina, Paraguay, Uruguay & Colombia",
+      "countryCode": "AR",
       "sources": [
         {
-          "url": "https://www.newarab.com/news/houthi-missile-attack-kills-dozens-military-camp-yemen",
-          "domain": "newarab.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://abcnews.com/International/wireStory/el-nio-rains-flood-south-america-sending-residents-fleeing-and-cattle-137330862",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
         },
         {
-          "url": "https://www.streetinsider.com/General+News/Death+toll+from+Houthi+attack+on+Yemen+training+camp+rises+to+73+-+AP/27207062.html",
-          "domain": "streetinsider.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://english.news.cn/20261105/33779a75a23741e6a1741058b7cfbc80/c.html",
-          "domain": "news.cn",
+          "url": "https://www.latintimes.com/colombia-argentina-floods-displace-158000-people-600843",
+          "domain": "latintimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-05T06:06:55.832Z",
-      "lastUpdated": "2026-11-06T06:05:32.623Z",
-      "expiresAt": "2026-11-10T06:05:32.623Z",
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
       "isBreaking": false
     },
     {
-      "id": "9143fccfead8",
-      "headline": "Taiwan Stocks Rally 5% as Markets Shrug Off Nvidia CEO Huang's China Spy Scandal Probe",
-      "summary": "Nvidia's board launched an independent investigation after CEO Jensen Huang admitted an affair with a Chinese national whom US officials reportedly believe was cultivated by Chinese intelligence; Nvidia says it found no evidence of compromised secrets and Huang remains CEO. Asian equities rallied on Nov 9, with Taiwan's TAIEX jumping about 5% after regulators activated a market stabilization fund.",
-      "category": "economy",
+      "id": "5d063f5872a5",
+      "headline": "Pope Leo XIV Delivers Veiled Rebuke of Milei's Austerity Program During Argentina Visit",
+      "summary": "On the first papal visit to Argentina in nearly four decades, Pope Leo XIV told President Javier Milei that economic growth 'must benefit all' and that leaders must prioritize people over economic metrics, a pointed but diplomatic critique of Milei's austerity cuts. Milei, who has previously clashed rhetorically with the Vatican, greeted the pope cordially.",
+      "category": "politics",
       "severity": 3,
-      "lat": 25.033,
-      "lon": 121.5654,
-      "locationName": "Taipei, Taiwan",
-      "countryCode": "TW",
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "locationName": "Buenos Aires, Argentina",
+      "countryCode": "AR",
       "sources": [
         {
-          "url": "https://www.washingtonpost.com/business/2026/11/08/nvidia-opens-investigation-into-ceo-over-relationship-with-suspected-chinese-spy/",
+          "url": "https://www.france24.com/en/americas/20261108-pope-leo-argentina-visit-milei",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/09/pope-leo-delivers-veiled-rebuke-austerity-measures-argentina/",
           "domain": "washingtonpost.com",
           "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://www.npr.org/2026/11/08/nx-s1-6034036/nvidia-launches-investigation-into-ceos-alleged-relationship-with-chinese-spy",
-          "domain": "npr.org",
+          "url": "https://www.pbs.org/newshour/world/pope-arrives-in-argentina-and-tells-milei-that-people-not-the-economy-should-come-first",
+          "domain": "pbs.org",
           "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://www.aljazeera.com/economy/2026/11/9/asian-stock-markets-climb-after-earlier-tech-rout",
+          "url": "https://www.cnn.com/2026/11/08/americas/pope-visit-argentina-latam-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/8/5/pope-leo-xiv-to-visit-peru-argentina-and-uruguay-in-november",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-06/taiwan-to-deploy-market-stabilization-fund-after-stock-rout",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
+          "url": "https://www.batimes.com.ar/news/argentina/milei-welcome-broadcasts-and-a-vp-thaw-quirno-confirms-details-of-pope-leos-visit-to-argentina.phtml",
+          "domain": "batimes.com.ar",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6026702/pope-leo-begins-12-day-3-country-tour-after-cancer-surgery",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
         }
       ],
-      "trustScore": 90,
+      "trustScore": 87,
       "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
       "id": "f44e6a94ea89",
-      "headline": "Haiti's '400 Mawozo' Gang Proposes Peace Talks With Government Amid Anti-Gang Campaign",
-      "summary": "Haiti's '400 Mawozo' gang reached out to the government's disarmament commission proposing dialogue, following gang leader Wilson Joseph's earlier letter to the UN Secretary-General. Gunfights with rival factions and state forces persist amid fears that a planned Salvadoran troop deployment could escalate violence.",
+      "headline": "Haiti's '400 Mawozo' Gang Leader Formally Reaches Out to UN and Disarmament Commission for Peace Talks",
+      "summary": "400 Mawozo gang leader Wilson Joseph wrote to the UN Secretary-General and Haiti's National Disarmament, Demobilization and Reintegration Commission requesting dialogue and a pause in operations, amid an intensified security push involving 2,500 Salvadoran troops deployed since late October. A rival gang leader, Mathias Saintil, was separately killed Nov 5 in a strike by Haitian police and allied forces.",
       "category": "conflict",
       "severity": 3,
-      "lat": 18.575,
-      "lon": -72.226,
+      "lat": 18.5944,
+      "lon": -72.3074,
       "locationName": "Port-au-Prince, Haiti",
       "countryCode": "HT",
       "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-02/haiti-gang-leader-calls-for-peace-after-el-salvador-sends-troops",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.taipeitimes.com/News/world/archives/2026/11/08/2003867378",
+          "domain": "taipeitimes.com",
+          "reliability": 72,
+          "bias": "center"
+        },
+        {
+          "url": "https://haitiantimes.com/2026/11/09/haiti-400-mawozo-gang-disarmament-peace-talks/",
+          "domain": "haitiantimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
         {
           "url": "https://www.washingtonpost.com/world/2026/11/06/haiti-400-mawozo-gang-disarmament-bukele-salvador/",
           "domain": "washingtonpost.com",
@@ -870,18 +884,6 @@
           "url": "https://abcnews.com/International/wireStory/powerful-haitian-gang-reaches-state-disarmament-group-gunfights-137932356",
           "domain": "abcnews.com",
           "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.taipeitimes.com/News/world/archives/2026/11/08/2003867378",
-          "domain": "taipeitimes.com",
-          "reliability": 72,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-07/haiti-kills-gang-chief-as-el-salvador-merceneries-add-pressure",
-          "domain": "bloomberg.com",
-          "reliability": 88,
           "bias": "center"
         },
         {
@@ -913,18 +915,12 @@
           "domain": "upi.com",
           "reliability": 82,
           "bias": "center"
-        },
-        {
-          "url": "https://www.cnn.com/2026/10/19/americas/haiti-el-salvador-ambush-latam-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
         }
       ],
-      "trustScore": 87,
+      "trustScore": 86,
       "firstSeen": "2026-10-20T02:10:00.145Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -992,6 +988,149 @@
       "firstSeen": "2026-11-03T06:07:11.564Z",
       "lastUpdated": "2026-11-09T06:07:51.346Z",
       "expiresAt": "2026-11-11T06:07:51.346Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6a885e614bc2",
+      "headline": "US Evacuates Aircraft From Second UK Base, RAF Mildenhall, as Iran Tensions Persist After Qeshm Strikes",
+      "summary": "The US military evacuated refueling tankers and other aircraft from RAF Mildenhall in Suffolk following an Iran-linked threat, relocating assets to Germany — the second UK base, after RAF Fairford, from which US aircraft have been pulled amid continued Hormuz-blockade tensions following strikes on Iran's Qeshm Island.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 52.3611,
+      "lon": 0.4864,
+      "locationName": "RAF Mildenhall, Suffolk, United Kingdom",
+      "countryCode": "GB",
+      "sources": [
+        {
+          "url": "http://www.jpost.com/international/article-914408",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        },
+        {
+          "url": "https://www.arabnews.com/world/us-aircraft-evacuated-from-second-uk-base-due-to-iran-threat-wsj-reports-3010869",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/iran/us-conducted-defensive-strikes-iranian-targets-strait-hormuz-us-offici-rcna607161",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://english.alarabiya.net/amp/News/middle-east/2026/11/05/iran-says-two-tankers-and-tugboat-caught-fire-in-strait-of-hormuz",
+          "domain": "alarabiya.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/irans-irgc-says-two-tankers-042107548.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/02/politics/us-strikes-iran-qeshm-island",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/International/us-carries-defensive-airstrikes-irans-qeshm-island-officials/story?id=137792518",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 84,
+      "firstSeen": "2026-11-03T06:07:11.564Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2d79be8effe2",
+      "headline": "Ukrainian Drones Strike Kirishi Refinery, Russia's Second-Largest, Extending Energy Campaign",
+      "summary": "Ukrainian drones struck the Kirishinefteorgsintez (KINEF) refinery in Russia's Leningrad Oblast, sparking fires; a woman was killed in nearby Vsevolozhsk by debris from an intercepted drone. It is the latest in Ukraine's expanding campaign against Russian energy infrastructure, following last week's strike on the Saratov refinery.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 60,
+      "lon": 90,
+      "locationName": "Kirishi, Leningrad Oblast, Russia",
+      "countryCode": "RU",
+      "sources": [
+        {
+          "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-09/ukrainian-drone-attack-at-russia-kirishi-refinery-woman-dies/107365888",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.ukrinform.net/rubric-ato/4182343-saratov-oil-refinery-on-fire-after-drone-attack-in-russia-media.html",
+          "domain": "ukrinform.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/5/russia-says-it-hit-ukrainian-postal-hub-and-ship-as-ukraine-strikes-ryazan",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://meduza.io/en/news/2026/11/05/ukrainian-drones-strike-russia-s-ryazan-region-with-fires-reported-at-oil-refinery-and-wildberries-warehouse",
+          "domain": "meduza.io",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-03/drones-hit-russia-s-yanos-refinery-as-ukraine-steps-up-strikes",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162",
+          "domain": "themoscowtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-11-04T06:07:32.098Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -1094,46 +1233,45 @@
       "isBreaking": false
     },
     {
-      "id": "fc3752c1c0f4",
-      "headline": "New Zealand Election Produces Knife-Edge Result; Right-Bloc Coalition Projected to Retain Narrow Majority",
-      "summary": "National and Labour finished in a near-dead heat in preliminary counting at about 29.3% each. The incumbent National-ACT-NZ First coalition is projected to reach 68 of 131 seats, a narrow majority of three; final results including special votes, which historically favor the left, won't be certified until Nov 27.",
-      "category": "politics",
+      "id": "a3bf1ee3d3ab",
+      "headline": "US Calls China's Coast Guard Standoff With Taiwan Near Pratas Islands 'Deeply Destabilizing'",
+      "summary": "Taiwan's coast guard confronted a Chinese coast guard vessel that entered restricted waters near the Pratas Islands, coming within 1 nautical mile of a Taiwanese ship before being told to leave — part of a pattern of Chinese incursions near Pratas in 2026. A US State Department spokesperson called China's actions 'deeply destabilizing', amid China's broader naval buildup of 100+ vessels near Taiwan.",
+      "category": "conflict",
       "severity": 3,
-      "lat": -41.29,
-      "lon": 174.78,
-      "locationName": "Wellington, New Zealand",
-      "countryCode": "NZ",
+      "lat": 20.7,
+      "lon": 116.83,
+      "locationName": "Pratas Islands, Taiwan",
+      "countryCode": "TW",
       "sources": [
         {
-          "url": "https://www.abc.net.au/news/2026-11-07/nz-election-2026-live-blog/107355448",
-          "domain": "abc.net.au",
-          "reliability": 86,
-          "bias": "center"
+          "url": "https://www.washingtonpost.com/world/2026/11/01/china-taiwan-coast-guard-pratas-islands/daa6c00e-d5f5-11f1-930a-e08f8086f5ac_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-07/new-zealand-vote-leaves-national-labour-nearly-deadlocked",
+          "url": "https://www.usnews.com/news/world/articles/2026-10-31/taiwan-says-china-harassing-shipping-with-east-coast-patrol",
           "domain": "usnews.com",
           "reliability": 75,
           "bias": "center"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/5/new-zealand-braces-for-knife-edge-election-what-you-need-to-know",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
+          "url": "https://www.japantimes.co.jp/news/2026/10/29/asia-pacific/politics/taiwan-50-chinese-vessels/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
         },
         {
-          "url": "https://www.odt.co.nz/news/national/what-you-need-to-know-ahead-of-the-election-tkdkzeea",
-          "domain": "odt.co.nz",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/08/2003867351",
+          "domain": "taipeitimes.com",
+          "reliability": 72,
+          "bias": "center"
         }
       ],
-      "trustScore": 76,
-      "firstSeen": "2026-11-06T06:05:32.623Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "trustScore": 79,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -1170,6 +1308,93 @@
       "firstSeen": "2026-11-09T06:07:51.346Z",
       "lastUpdated": "2026-11-09T06:07:51.346Z",
       "expiresAt": "2026-11-11T06:07:51.346Z",
+      "isBreaking": false
+    },
+    {
+      "id": "47907ff8c64c",
+      "headline": "US Military Conducts New Lethal Strikes on Suspected Drug Boats in Caribbean",
+      "summary": "US forces carried out additional strikes against vessels suspected of smuggling narcotics in the Caribbean near Venezuela, continuing SOUTHCOM's 'Southern Spear' campaign that has killed over 235 people in 70+ strikes since September 2025. Lawmakers and Colombian/Venezuelan officials have disputed the intelligence behind the targeting claims.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 11,
+      "lon": -66,
+      "locationName": "Caribbean Sea, near Venezuela",
+      "countryCode": "XX",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/trump-administration/us-military-says-latest-strike-alleged-drug-smuggling-boat-caribbean-k-rcna601550",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/u-s-kills-2-during-latest-strike-on-alleged-drug-boats-traveling-in-the-caribbean-sea",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6100257-us-strike-caribbean-boat-deaths/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 73,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bb3fa3ead8a5",
+      "headline": "Colombia Attributes Deadly Drone Attack on Military Base to ELN, Links It to New US Reaper Drone Operations",
+      "summary": "Colombian authorities formally attributed the Nov 7 drone attack that killed three soldiers and wounded 8-16 at an army base in Santa Rosa del Sur, Bolívar, to the ELN; reporting links the strike to the recent operational debut of US-supplied MQ-9 Reaper drones in the region. President de la Espriella vowed retaliation. The specific ELN attribution comes from a specialist outlet and is pending wider confirmation from a major wire service.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 7.9667,
+      "lon": -74.0667,
+      "locationName": "Santa Rosa del Sur, Bolívar, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aa.com.tr/en/americas/at-least-3-colombian-soldiers-killed-8-seriously-injured-in-drone-attack-on-military-base/4115623",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dronexl.co/2026/11/09/colombia-eln-drone-strike-santa-rosa-del-sur-us-reapers/",
+          "domain": "dronexl.co",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/drone-attack-colombian-military-base-leaves-3-soldiers-137945487",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.infobae.com/colombia/2026/11/07/ataque-terrorista-con-drones-contra-canton-militar-en-santa-rosa-del-sur-bolivar-3-uniformados-muertos-y-8-heridos/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 71,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -1224,61 +1449,92 @@
       "isBreaking": false
     },
     {
-      "id": "2d79be8effe2",
-      "headline": "Ukrainian Drones Strike Saratov Oil Refinery in Russia as Attacks on Energy Sites Continue",
-      "summary": "Overnight Nov 6-7, Ukrainian drones struck the Rosneft-owned Saratov Oil Refinery, igniting a fire, while cruise missiles also hit the Proton-Elektroteks defense plant in Oryol. It is one of several 2026 strikes on this refinery as part of Ukraine's ongoing campaign against Russian energy infrastructure.",
-      "category": "conflict",
+      "id": "5a30729ba893",
+      "headline": "Storm Bruna Leaves Madeira Residents Homeless as Storm Charles Threatens Iberia With 130km/h Winds",
+      "summary": "Storm Bruna brought flooding to Madeira, leaving ten people homeless and one still missing; a second system, Storm Charles, is forecast to bring heavy rain and gusts of up to 130 km/h to Madeira, mainland Portugal and Spain through Nov 11-13, prompting orange weather alerts.",
+      "category": "climate",
       "severity": 3,
-      "lat": 60,
-      "lon": 90,
-      "locationName": "Saratov, Russia",
-      "countryCode": "RU",
+      "lat": 39.6,
+      "lon": -8,
+      "locationName": "Funchal, Madeira, Portugal",
+      "countryCode": "PT",
       "sources": [
         {
-          "url": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
-          "domain": "kyivindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ukrinform.net/rubric-ato/4182343-saratov-oil-refinery-on-fire-after-drone-attack-in-russia-media.html",
-          "domain": "ukrinform.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/5/russia-says-it-hit-ukrainian-postal-hub-and-ship-as-ukraine-strikes-ryazan",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://meduza.io/en/news/2026/11/05/ukrainian-drones-strike-russia-s-ryazan-region-with-fires-reported-at-oil-refinery-and-wildberries-warehouse",
-          "domain": "meduza.io",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-03/drones-hit-russia-s-yanos-refinery-as-ukraine-steps-up-strikes",
-          "domain": "bloomberg.com",
-          "reliability": 88,
+          "url": "https://www.euronews.com/2026/11/09/storm-charles-to-hit-portugal-and-spain-with-torrential-rain-and-120-kmh-winds",
+          "domain": "euronews.com",
+          "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://www.themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162",
-          "domain": "themoscowtimes.com",
+          "url": "https://www.portugalresident.com/bad-weather-bruna-gives-way-to-charles-which-could-bring-severe-situation/",
+          "domain": "portugalresident.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.tsf.pt/sociedade/artigo/depressao-bruna-traz-chuva-vento-e-agitacao-maritima-continente-madeira-e-grupo-oriental-dos-acores-sob-avisos/18145182",
+          "domain": "tsf.pt",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.theportugalnews.com/news/2026-11-06/weather-warning-issued-in-portugal-as-storms-are-coming/1112047",
+          "domain": "theportugalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thespanisheye.com/2026/11/07/storm-bruna-sparks-weather-alerts-in-malaga-cadiz-sevilla-and-huelva/",
+          "domain": "thespanisheye.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 71,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "trustScore": 68,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c2b3e24db7f4",
+      "headline": "Qatar's PM to Meet Trump at White House Over Iran Diplomacy and Gaza Peace Plan",
+      "summary": "Qatar's Prime Minister and Foreign Minister Sheikh Mohammed bin Abdulrahman Al Thani is scheduled to meet Trump at the White House on Nov 10 to discuss Iran diplomacy and ceasefire mediation. Trump reportedly pressed Netanyahu by phone on Nov 5 to advance implementation of the Gaza peace plan.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "Washington, D.C., United States",
+      "countryCode": "US",
+      "subdivision": "US-DC",
+      "sources": [
+        {
+          "url": "https://www.arabnews.com/middle-east/trump-to-meet-qatars-prime-minister-as-iran-diplomacy-faces-hurdles-3010661",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.jpost.com/international/article-914285",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/08/trump-netanyahu-implement-gaza-peace-plan",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-09T06:07:51.346Z",
+      "expiresAt": "2026-11-11T06:07:51.346Z",
       "isBreaking": false
     },
     {
@@ -1321,121 +1577,33 @@
       "isBreaking": false
     },
     {
-      "id": "5d063f5872a5",
-      "headline": "Pope Leo XIV Arrives in Argentina, First Papal Visit in 39 Years, as South America Tour Continues",
-      "summary": "Pope Leo XIV arrived in Buenos Aires on Nov 8 after visiting Uruguay, marking the first papal visit to Argentina in 39 years. Argentina declared Nov 9 a national holiday for a papal Mass, with further regional holidays on Nov 10-11.",
-      "category": "society",
+      "id": "96a426113634",
+      "headline": "Train Collision Near El Ayyat, Giza Kills Seven, Injures Over 100 in Egypt",
+      "summary": "A passenger train from Giza to Faiyum collided with the rear of a stationary train on the Cairo-Aswan line near El Ayyat, derailing multiple cars. At least 7 people were killed, including the driver, and more than 100 injured; President Sisi ordered an investigation amid domestic calls for the transport minister's resignation.",
+      "category": "disaster",
       "severity": 3,
-      "lat": -34.6037,
-      "lon": -58.3816,
-      "locationName": "Buenos Aires, Argentina",
-      "countryCode": "AR",
+      "lat": 29.61,
+      "lon": 31.26,
+      "locationName": "El Ayyat, Giza, Egypt",
+      "countryCode": "EG",
       "sources": [
         {
-          "url": "https://www.cnn.com/2026/11/08/americas/pope-visit-argentina-latam-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/8/5/pope-leo-xiv-to-visit-peru-argentina-and-uruguay-in-november",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.batimes.com.ar/news/argentina/milei-welcome-broadcasts-and-a-vp-thaw-quirno-confirms-details-of-pope-leos-visit-to-argentina.phtml",
-          "domain": "batimes.com.ar",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.npr.org/2026/11/06/nx-s1-6026702/pope-leo-begins-12-day-3-country-tour-after-cancer-surgery",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c2b3e24db7f4",
-      "headline": "Qatar's PM to Meet Trump at White House Over Iran Diplomacy and Gaza Peace Plan",
-      "summary": "Qatar's Prime Minister and Foreign Minister Sheikh Mohammed bin Abdulrahman Al Thani is scheduled to meet Trump at the White House on Nov 10 to discuss Iran diplomacy and ceasefire mediation. Trump reportedly pressed Netanyahu by phone on Nov 5 to advance implementation of the Gaza peace plan.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 38.9072,
-      "lon": -77.0369,
-      "locationName": "Washington, D.C., United States",
-      "countryCode": "US",
-      "subdivision": "US-DC",
-      "sources": [
-        {
-          "url": "https://www.arabnews.com/middle-east/trump-to-meet-qatars-prime-minister-as-iran-diplomacy-faces-hurdles-3010661",
-          "domain": "arabnews.com",
-          "reliability": 64,
+          "url": "https://www.cbsnews.com/news/trains-collision-egypt-giza/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.jpost.com/international/article-914285",
-          "domain": "jpost.com",
-          "reliability": 72,
-          "bias": "center-right"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/08/trump-netanyahu-implement-gaza-peace-plan",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a0c987a6c54e",
-      "headline": "Xavier Becerra Elected California Governor, First Latino Governor Since 1875",
-      "summary": "Democrat Xavier Becerra defeated Republican Steve Hilton 65.2%-34.8% on Nov 3 to become California's 41st governor, succeeding term-limited Gavin Newsom. He is the first Latino elected governor of California since Romualdo Pacheco in 1875.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 38.5816,
-      "lon": -121.4944,
-      "locationName": "Sacramento, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/california-governor-results",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/california-governor-becerra-hilton-live-updates/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.npr.org/2026/06/05/nx-s1-5845847/xavier-becerra-california-governor-hilton-steyer-newsom",
-          "domain": "npr.org",
+          "url": "https://www.pbs.org/newshour/world/collision-between-2-trains-in-egypt-kills-7-and-injures-more-than-100",
+          "domain": "pbs.org",
           "reliability": 87,
-          "bias": "center-left"
+          "bias": "center"
         }
       ],
       "trustScore": 66,
-      "firstSeen": "2026-11-08T15:27:11.860Z",
-      "lastUpdated": "2026-11-08T15:27:11.860Z",
-      "expiresAt": "2026-11-10T15:27:11.860Z",
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -1491,106 +1659,71 @@
       "isBreaking": false
     },
     {
-      "id": "aaeb90a729f5",
-      "headline": "Eurozone Annual Inflation Accelerates to 4.0% in October, Highest Since 2023",
-      "summary": "Eurostat's preliminary estimate put October eurozone inflation at 4.0%, up from 3.8% in September, driven by a 20.8% year-on-year surge in energy prices. Core inflation held at 2.5%, well above the ECB's 2% target, raising prospects of a December rate hike.",
-      "category": "economy",
+      "id": "a0c987a6c54e",
+      "headline": "Xavier Becerra Elected California Governor, First Latino Governor Since 1875",
+      "summary": "Democrat Xavier Becerra defeated Republican Steve Hilton 65.2%-34.8% on Nov 3 to become California's 41st governor, succeeding term-limited Gavin Newsom. He is the first Latino elected governor of California since Romualdo Pacheco in 1875.",
+      "category": "politics",
       "severity": 3,
-      "lat": 49.61,
-      "lon": 6.13,
-      "locationName": "Luxembourg (Eurozone-wide)",
-      "countryCode": "LU",
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
       "sources": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-04/euro-zone-inflation-accelerates-to-double-the-ecb-s-target",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
+          "url": "https://www.nbcnews.com/politics/2026-elections/california-governor-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.euronews.com/2026/11/04/eurozone-inflation-hits-4-which-countries-saw-prices-jump-the-most",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/california-governor-becerra-hilton-live-updates/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.npr.org/2026/06/05/nx-s1-5845847/xavier-becerra-california-governor-hilton-steyer-newsom",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
         }
       ],
       "trustScore": 66,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "firstSeen": "2026-11-08T15:27:11.860Z",
+      "lastUpdated": "2026-11-08T15:27:11.860Z",
+      "expiresAt": "2026-11-10T15:27:11.860Z",
       "isBreaking": false
     },
     {
-      "id": "30c8151f9128",
-      "headline": "Indonesia Battles Decade's Worst Wildfire Season as Haze Drifts to Philippines, Helicopter Crash Kills Three",
-      "summary": "Indonesia is battling its most intense wildfire season in roughly a decade across Sumatra, Kalimantan and Papua, driven by El Niño conditions. Australia deployed aircraft to assist water-bombing operations Nov 6-12, but a water-bombing helicopter crashed in Central Kalimantan killing three crew, while toxic haze drifted 800km to the Philippines.",
-      "category": "disaster",
+      "id": "97a55abbbdd5",
+      "headline": "Le Pen and Mélenchon Lead Early 2027 French Presidential Polling as Lecornu Accelerates Minimum-Wage Hike",
+      "summary": "A new poll shows Marine Le Pen (34-36%) and Jean-Luc Mélenchon (18-19%) consolidating leads for the first round of France's 2027 presidential race. Separately, PM Sébastien Lecornu, facing weeks of cost-of-living protests, announced bringing forward a 1.6% minimum-wage increase from January to December after talks with unions, though unions called the raise insufficient.",
+      "category": "politics",
       "severity": 3,
-      "lat": -2.2096,
-      "lon": 113.9213,
-      "locationName": "Central Kalimantan, Indonesia",
-      "countryCode": "ID",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
       "sources": [
         {
-          "url": "https://www.abc.net.au/news/2026-11-08/indonesia-helicopter-crash-borneo-australians/107361384",
-          "domain": "abc.net.au",
-          "reliability": 86,
+          "url": "https://www.france24.com/en/france/20261109-french-pm-lecornu-announces-increase-minimum-wage-bid-to-calm-protests",
+          "domain": "france24.com",
+          "reliability": 84,
           "bias": "center"
         },
         {
-          "url": "https://www.thejakartapost.com/world/2026/11/06/australia-to-join-indonesias-wildfire-waterbombing-operations",
-          "domain": "thejakartapost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.arabnews.com/world/australia-to-join-indonesias-wildfire-waterbombing-operations-3010064",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c79357b0f663",
-      "headline": "New Wave of Hoax Bomb Threats Disrupts Dozens of Flights Across Europe",
-      "summary": "Beginning Nov 2 and recurring almost daily, hoax bomb threats forced emergency diversions or landings of at least 27 flights on Nov 5 alone, affecting airports in Vienna, Milan and Rome among others. All threats investigated so far have been confirmed hoaxes, raising concern of a deliberate harassment campaign against European aviation.",
-      "category": "society",
-      "severity": 3,
-      "lat": 48.21,
-      "lon": 16.37,
-      "locationName": "Vienna, Austria",
-      "countryCode": "AT",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/05/world/live-news/plane-flights-bomb-threats-europe-intl",
-          "domain": "cnn.com",
+          "url": "https://www.usnews.com/news/world/articles/2026-11-09/le-pen-and-melenchon-ahead-in-2027-french-presidential-race-poll-shows",
+          "domain": "usnews.com",
           "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://time.com/article/2026/11/07/europe-bomb-threats-raise-fear-new-warfare/",
-          "domain": "time.com",
-          "reliability": 78,
-          "bias": "center-left"
+          "bias": "center"
         }
       ],
-      "trustScore": 63,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "trustScore": 64,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -1711,6 +1844,36 @@
       "isBreaking": false
     },
     {
+      "id": "33ec1ec1b997",
+      "headline": "German 'Gen Z' Protests Turn Violent in Frankfurt and Other Cities, More Planned Nov 14",
+      "summary": "The 'Gen Z regelt' youth movement organized demonstrations in about 34 German cities with roughly 120,000 participants on Oct 31. Protests in Frankfurt and elsewhere turned violent on Nov 1, with looting, smashed windows and injured police; further demonstrations are planned for Nov 14 and a student strike on Nov 20.",
+      "category": "society",
+      "severity": 3,
+      "lat": 50.1109,
+      "lon": 8.6821,
+      "locationName": "Frankfurt am Main, Germany",
+      "countryCode": "DE",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/01/violence-arrests-frankfurt-other-german-cities-after-protests/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.france24.com/en/europe/20261031-german-police-protesters-clash-after-gen-z-demos",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-09T06:07:51.346Z",
+      "expiresAt": "2026-11-11T06:07:51.346Z",
+      "isBreaking": false
+    },
+    {
       "id": "2f84b4be2a5c",
       "headline": "Utah Mink Farm Expected to Lose 80% of Herd to Uncontrolled H5N1 Bird Flu",
       "summary": "C&T Fenn Farms south of Salt Lake City is expected to lose about 80% of its mink to an H5N1 outbreak from the same B3.13 strain lineage behind the US dairy cattle outbreak, after regulators declined to mandate culling. Alarm has renewed following a bird flu death reported in Washington state on Nov 6.",
@@ -1750,30 +1913,38 @@
       "isBreaking": false
     },
     {
-      "id": "33ec1ec1b997",
-      "headline": "German 'Gen Z' Protests Turn Violent in Frankfurt and Other Cities, More Planned Nov 14",
-      "summary": "The 'Gen Z regelt' youth movement organized demonstrations in about 34 German cities with roughly 120,000 participants on Oct 31. Protests in Frankfurt and elsewhere turned violent on Nov 1, with looting, smashed windows and injured police; further demonstrations are planned for Nov 14 and a student strike on Nov 20.",
-      "category": "society",
+      "id": "ba3e24da6639",
+      "headline": "COP31 UN Climate Conference Opens in Antalya, Türkiye, Running Through Nov 20",
+      "summary": "The COP31 UN Climate Change Conference formally opened in Antalya, Türkiye on Nov 9 and will run through Nov 20. Turkish Environment Minister Murat Kurum is COP President, with Australian minister Chris Bowen co-presiding; a world leaders' summit is scheduled for Nov 11-12 with about 100,000 participants expected.",
+      "category": "climate",
       "severity": 3,
-      "lat": 50.1109,
-      "lon": 8.6821,
-      "locationName": "Frankfurt am Main, Germany",
-      "countryCode": "DE",
+      "lat": 36.8969,
+      "lon": 30.7133,
+      "locationName": "Antalya, Turkey",
+      "countryCode": "TR",
       "sources": [
         {
-          "url": "https://www.washingtonpost.com/world/2026/11/01/violence-arrests-frankfurt-other-german-cities-after-protests/",
-          "domain": "washingtonpost.com",
+          "url": "https://unfccc.int/cop31/the-road-to-antalya",
+          "domain": "unfccc.int",
           "reliability": 85,
-          "bias": "center-left"
+          "bias": "center"
         },
         {
-          "url": "https://www.france24.com/en/europe/20261031-german-police-protesters-clash-after-gen-z-demos",
-          "domain": "france24.com",
-          "reliability": 84,
-          "bias": "center"
+          "url": "https://www.climateandcapitalmedia.com/cop31-antalya-preview/",
+          "domain": "climateandcapitalmedia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.genevaenvironmentnetwork.org/resources/updates/climate-action-from-geneva-to-antalya-un-climate-change-conference-cop31/",
+          "domain": "genevaenvironmentnetwork.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 58,
+      "trustScore": 55,
       "firstSeen": "2026-11-09T06:07:51.346Z",
       "lastUpdated": "2026-11-09T06:07:51.346Z",
       "expiresAt": "2026-11-11T06:07:51.346Z",
@@ -1820,71 +1991,79 @@
       "isBreaking": false
     },
     {
-      "id": "ba3e24da6639",
-      "headline": "COP31 UN Climate Conference Opens in Antalya, Türkiye, Running Through Nov 20",
-      "summary": "The COP31 UN Climate Change Conference formally opened in Antalya, Türkiye on Nov 9 and will run through Nov 20. Turkish Environment Minister Murat Kurum is COP President, with Australian minister Chris Bowen co-presiding; a world leaders' summit is scheduled for Nov 11-12 with about 100,000 participants expected.",
-      "category": "climate",
+      "id": "6d1ed6690633",
+      "headline": "Mexico Captures CJNG Cell Leader 'El R2' in Jalisco Operation, 19 Others Detained",
+      "summary": "Mexican forces arrested Rafael Álvarez Ayala, alias 'El R2,' a CJNG cell leader, in Zapopan, Jalisco, after an armed confrontation. A nationwide operation using CNI and DEA intelligence led to the detention of 19 other suspects.",
+      "category": "conflict",
       "severity": 3,
-      "lat": 36.8969,
-      "lon": 30.7133,
-      "locationName": "Antalya, Turkey",
-      "countryCode": "TR",
+      "lat": 20.72,
+      "lon": -103.384,
+      "locationName": "Zapopan, Mexico",
+      "countryCode": "MX",
       "sources": [
         {
-          "url": "https://unfccc.int/cop31/the-road-to-antalya",
-          "domain": "unfccc.int",
-          "reliability": 85,
-          "bias": "center"
+          "url": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.climateandcapitalmedia.com/cop31-antalya-preview/",
-          "domain": "climateandcapitalmedia.com",
+          "url": "https://www.infobae.com/mexico/2026/11/08/tras-enfrentamiento-detienen-en-jalisco-a-rafael-n-alias-el-r2-cabecilla-de-los-rs-del-cjng/",
+          "domain": "infobae.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.genevaenvironmentnetwork.org/resources/updates/climate-action-from-geneva-to-antalya-un-climate-change-conference-cop31/",
-          "domain": "genevaenvironmentnetwork.org",
+          "url": "https://www.ellitoral.com/internacionales/carteljalisconuevageneracion-rafaelalvarez-dea-r2-michoacan-carteldejalisco-narcotrafico-estadosunidos-elmencho-detencion_0_kme00XaiZL.html",
+          "domain": "ellitoral.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 55,
+      "trustScore": 54,
       "firstSeen": "2026-11-09T06:07:51.346Z",
       "lastUpdated": "2026-11-09T06:07:51.346Z",
       "expiresAt": "2026-11-11T06:07:51.346Z",
       "isBreaking": false
     },
     {
-      "id": "225b02fe7887",
-      "headline": "Guatemalan Congressman and Three Police Officers Killed in Armed Ambush in Zacapa",
-      "summary": "Lawmaker Julio César Portillo Paz and three National Civil Police officers were killed Nov 6 in an attack along the Atlantic Highway near Río Hondo, Zacapa, a region with heavy drug-trafficking activity. President Arévalo confirmed the deaths; no suspects identified yet, following the recent killing of a former anti-corruption prosecutor.",
+      "id": "80f208e7d919",
+      "headline": "Kenyan Court Sentences Shakahola Cult Leader Paul Mackenzie to 200 Years",
+      "summary": "A Kenyan court sentenced Shakahola cult leader Paul Mackenzie to a cumulative 200 years in prison on Nov 6 for the deaths of 190 children and one adult through starvation and direct homicide. Twenty-eight co-accused were also convicted, receiving sentences ranging from 10 to 160 years, in a broader tragedy believed to have killed over 400 people.",
       "category": "society",
       "severity": 3,
-      "lat": 15.05,
-      "lon": -89.36,
-      "locationName": "Río Hondo, Zacapa, Guatemala",
-      "countryCode": "GT",
+      "lat": -4.0435,
+      "lon": 39.6682,
+      "locationName": "Mombasa, Kenya",
+      "countryCode": "KE",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/7/guatemalan-lawmaker-and-three-police-officers-killed-in-armed-attack",
+          "url": "https://www.aljazeera.com/news/2026/11/6/kenyan-court-sentences-starvation-cult-leader-to-200-years",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.scmp.com/news/world/americas/article/3373663/guatemalan-lawmaker-3-police-officers-killed-armed-attack",
-          "domain": "scmp.com",
-          "reliability": 76,
-          "bias": "center"
+          "url": "https://www.dailysabah.com/world/africa/kenya-sentences-cult-leader-to-200-years-over-shakahola-massacre",
+          "domain": "dailysabah.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.hngn.com/articles/273736/20261106/kenya-court-sentences-cult-leader-paul-mackenzie-200-years.htm",
+          "domain": "hngn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "trustScore": 54,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-09T06:07:51.346Z",
+      "expiresAt": "2026-11-11T06:07:51.346Z",
       "isBreaking": false
     },
     {
@@ -1968,150 +2147,6 @@
       "isBreaking": false
     },
     {
-      "id": "6d1ed6690633",
-      "headline": "Mexico Captures CJNG Cell Leader 'El R2' in Jalisco Operation, 19 Others Detained",
-      "summary": "Mexican forces arrested Rafael Álvarez Ayala, alias 'El R2,' a CJNG cell leader, in Zapopan, Jalisco, after an armed confrontation. A nationwide operation using CNI and DEA intelligence led to the detention of 19 other suspects.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 20.72,
-      "lon": -103.384,
-      "locationName": "Zapopan, Mexico",
-      "countryCode": "MX",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.infobae.com/mexico/2026/11/08/tras-enfrentamiento-detienen-en-jalisco-a-rafael-n-alias-el-r2-cabecilla-de-los-rs-del-cjng/",
-          "domain": "infobae.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ellitoral.com/internacionales/carteljalisconuevageneracion-rafaelalvarez-dea-r2-michoacan-carteldejalisco-narcotrafico-estadosunidos-elmencho-detencion_0_kme00XaiZL.html",
-          "domain": "ellitoral.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "bb3fa3ead8a5",
-      "headline": "Drone Attack Kills Three Soldiers at Colombian Military Base, Blamed on ELN",
-      "summary": "A drone attack killed three soldiers and wounded up to eight others at a military base in Santa Rosa del Sur, Bolívar, Colombia. The Defense Ministry blamed the ELN rebel group, calling it retaliation for the recent capture of an alias 'Carrito.'",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 7.962,
-      "lon": -74.047,
-      "locationName": "Santa Rosa del Sur, Colombia",
-      "countryCode": "CO",
-      "sources": [
-        {
-          "url": "https://abcnews.com/International/wireStory/drone-attack-colombian-military-base-leaves-3-soldiers-137945487",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aa.com.tr/en/americas/at-least-3-colombian-soldiers-killed-8-seriously-injured-in-drone-attack-on-military-base/4115623",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.infobae.com/colombia/2026/11/07/ataque-terrorista-con-drones-contra-canton-militar-en-santa-rosa-del-sur-bolivar-3-uniformados-muertos-y-8-heridos/",
-          "domain": "infobae.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "80f208e7d919",
-      "headline": "Kenyan Court Sentences Shakahola Cult Leader Paul Mackenzie to 200 Years",
-      "summary": "A Kenyan court sentenced Shakahola cult leader Paul Mackenzie to a cumulative 200 years in prison on Nov 6 for the deaths of 190 children and one adult through starvation and direct homicide. Twenty-eight co-accused were also convicted, receiving sentences ranging from 10 to 160 years, in a broader tragedy believed to have killed over 400 people.",
-      "category": "society",
-      "severity": 3,
-      "lat": -4.0435,
-      "lon": 39.6682,
-      "locationName": "Mombasa, Kenya",
-      "countryCode": "KE",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/6/kenyan-court-sentences-starvation-cult-leader-to-200-years",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.dailysabah.com/world/africa/kenya-sentences-cult-leader-to-200-years-over-shakahola-massacre",
-          "domain": "dailysabah.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.hngn.com/articles/273736/20261106/kenya-court-sentences-cult-leader-paul-mackenzie-200-years.htm",
-          "domain": "hngn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "94059e5f48b8",
-      "headline": "Malaysia's King Warns Against Challenging His Order Allowing House Arrest for Ex-PM Najib",
-      "summary": "Sultan Ibrahim warned on Nov 7 that challenging his royal order allowing Najib Razak's transfer from jail to house arrest could amount to defying his decree. The warning came a day after authorities delayed the transfer after the Attorney General's office raised legal questions about interpretation of Najib's September royal pardon.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 3.14,
-      "lon": 101.69,
-      "locationName": "Kuala Lumpur, Malaysia",
-      "countryCode": "MY",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/7/malaysian-king-warns-against-defying-house-arrest-order-for-ex-pm-najib",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-07/malaysias-king-warns-against-challenging-his-order-allowing-house-arrest-for-ex-pm-najib",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
       "id": "436fa0310622",
       "headline": "South Africa's ANC Vote Share Collapses to 30.76% in Municipal Elections, Ending Dominance",
       "summary": "South Africa's ANC national vote share fell to 30.76% from 45.59% in 2021 in Nov 4 municipal elections, with official results confirmed Nov 8, while the DA rose to 24.64%. Hung councils rose to 142 from 70 in 2021, ending the ANC's uncontested dominance in many municipalities including Johannesburg.",
@@ -2150,72 +2185,112 @@
       "isBreaking": false
     },
     {
-      "id": "eb0c0ed31417",
-      "headline": "Storm Warnings Disrupt São Paulo F1 Qualifying Days After Deadly Tornadoes Hit Santa Catarina",
-      "summary": "Twin tornadoes struck Santa Catarina state on Nov 4, killing two people and damaging over 5,300 homes. On Nov 7 Brazil's Civil Defense issued a storm danger alert for São Paulo and F1 Brazilian Grand Prix qualifying at Interlagos was red-flagged due to a severe thunderstorm.",
-      "category": "disaster",
+      "id": "0501667445d7",
+      "headline": "US Lame-Duck Congress Faces Dec 11 Shutdown Deadline Amid Push to Impeach Hegseth",
+      "summary": "Congress returned for a lame-duck session following Republicans' midterm losses, facing a Dec 11 government funding deadline and an impeachment push against Defense Secretary Pete Hegseth filed by outgoing Rep. Thomas Massie over Iran-strike and Caribbean boat-strike actions. House Minority Leader Hakeem Jeffries said he would be a 'hard yes' on impeachment.",
+      "category": "politics",
       "severity": 3,
-      "lat": -23.7036,
-      "lon": -46.6997,
-      "locationName": "São Paulo, Brazil",
-      "countryCode": "BR",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "Washington, D.C., United States",
+      "countryCode": "US",
+      "subdivision": "US-DC",
       "sources": [
         {
-          "url": "https://sports.yahoo.com/articles/storm-warning-sounded-sao-paulo-143951860.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
+          "url": "https://www.axios.com/2026/11/09/congress-senioritis-lame-duck-shutdown-2026",
+          "domain": "axios.com",
+          "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://www.gpfans.com/en/f1-news/1092612/fia-confirm-brazilian-grand-prix-qualifying-red-flag-rain-sao-paulo/",
-          "domain": "gpfans.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.latintimes.com/twin-tornadoes-santa-catarina-damage-600953",
-          "domain": "latintimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.foxnews.com/politics/congress-returns-brutal-lame-duck-stretch-shutdown-deadline-leadership-races-closet-full-s",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
         }
       ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "trustScore": 52,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
-      "id": "baeab1188f16",
-      "headline": "AFRICOM and Turkish Forces Conduct Separate Airstrikes Against Al-Shabaab in Somalia",
-      "summary": "US Africa Command confirmed a strike targeting al-Shabaab near Jamaame on Nov 5, part of 68 AFRICOM strikes in Somalia this year. Separately, Turkish F-16s conducted strikes against al-Shabaab vehicles and positions in early November in response to an al-Shabaab attack on Somali government troops.",
+      "id": "a47ad86c2348",
+      "headline": "Myanmar Military Jet Bombs Resistance-Run Hospital in Sagaing Region, Killing Health Workers",
+      "summary": "A Myanmar military jet bombed a resistance-operated hospital in Hlyawhpyukone village, Kawlin Township, Sagaing Region, on Nov 4, killing several healthcare workers including a senior doctor, with death tolls reported between five and eight. The UN has demanded an investigation into the attack.",
       "category": "conflict",
       "severity": 3,
-      "lat": -0.08,
-      "lon": 42.75,
-      "locationName": "Jamaame, Lower Jubba, Somalia",
-      "countryCode": "SO",
+      "lat": 23.87,
+      "lon": 95.65,
+      "locationName": "Kawlin Township, Sagaing Region, Myanmar",
+      "countryCode": "MM",
       "sources": [
         {
-          "url": "https://www.africom.mil/pressrelease/37104/us-forces-conduct-strikes-targeting-al-shabaab",
-          "domain": "africom.mil",
-          "reliability": 85,
-          "bias": "center"
+          "url": "https://www.irrawaddy.com/news/burma/un-demands-probe-after-junta-attack-on-myanmar-hospital.html",
+          "domain": "irrawaddy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.dropsitenews.com/p/us-iran-qeshm-gaza-israel-rafah-aid-turkey-somalia-shabaab",
-          "domain": "dropsitenews.com",
+          "url": "https://myanmar-now.org/en/news/myanmar-regime-kills-three-in-airstrikes-on-hospital-in-resistance-stronghold/",
+          "domain": "myanmar-now.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://euro-burma.eu/junta-airstrike-kills-senior-doctor-4-healthcare-workers-at-hospital-in-sagaing-region/",
+          "domain": "euro-burma.eu",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 50,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
+      "trustScore": 49,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-09T06:07:51.346Z",
+      "expiresAt": "2026-11-11T06:07:51.346Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ea4485ea5878",
+      "headline": "Pakistani Forces Repel Border Infiltration in Kurram as Bank Alfalah Completes Afghanistan Exit",
+      "summary": "Pakistan's Bank Alfalah completed its exit from Afghanistan effective Nov 5, transferring its Kabul and Herat branches to Ghazanfar Bank after more than 20 years. Separately, Pakistani forces reported repelling an armed infiltration attempt by militants in Kurram's Shalozan sector, alleging covering fire from Afghan Taliban border forces, which Pakistan says it struck in response.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 33.9,
+      "lon": 70.08,
+      "locationName": "Kurram District, Pakistan",
+      "countryCode": "PK",
+      "sources": [
+        {
+          "url": "https://www.dawn.com/news/2042687/bank-alfalah-quits-kabul-after-20-years",
+          "domain": "dawn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.khaama.com/bank-alfalah-exits-afghanistan/",
+          "domain": "khaama.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dailytimes.com.pk/1577508/pakistani-security-forces-foil-border-infiltration-attempt-and-destroy-afghan-taliban-posts-in-kurram/",
+          "domain": "dailytimes.com.pk",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-09T06:07:51.346Z",
+      "expiresAt": "2026-11-11T06:07:51.346Z",
       "isBreaking": false
     },
     {
@@ -2408,81 +2483,34 @@
       "isBreaking": false
     },
     {
-      "id": "a47ad86c2348",
-      "headline": "Myanmar Military Jet Bombs Resistance-Run Hospital in Sagaing Region, Killing Health Workers",
-      "summary": "A Myanmar military jet bombed a resistance-operated hospital in Hlyawhpyukone village, Kawlin Township, Sagaing Region, on Nov 4, killing several healthcare workers including a senior doctor, with death tolls reported between five and eight. The UN has demanded an investigation into the attack.",
-      "category": "conflict",
+      "id": "b88c5131b1f8",
+      "headline": "Ecuador: Thousands Protest Pretrial Detention of Opposition Leader Luisa González; Flooding Forces Evacuations in Milagro",
+      "summary": "Thousands marched in Quito, Guayaquil and Cuenca on Nov 7 demanding President Daniel Noboa's resignation and the release of opposition leader Luisa González, held in pretrial detention since late October in a money-laundering case she calls political persecution. Separately, flooding from overflowing rivers forced evacuations and school closures in Milagro, Guayas province, prompting a government aid delivery.",
+      "category": "politics",
       "severity": 3,
-      "lat": 23.87,
-      "lon": 95.65,
-      "locationName": "Kawlin Township, Sagaing Region, Myanmar",
-      "countryCode": "MM",
+      "lat": -0.1807,
+      "lon": -78.4678,
+      "locationName": "Quito, Ecuador",
+      "countryCode": "EC",
       "sources": [
         {
-          "url": "https://www.irrawaddy.com/news/burma/un-demands-probe-after-junta-attack-on-myanmar-hospital.html",
-          "domain": "irrawaddy.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.aljazeera.com/news/2026/10/23/ecuador-judge-orders-pre-trial-detention-of-leftist-presidential-candidate",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
         },
         {
-          "url": "https://myanmar-now.org/en/news/myanmar-regime-kills-three-in-airstrikes-on-hospital-in-resistance-stronghold/",
-          "domain": "myanmar-now.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://euro-burma.eu/junta-airstrike-kills-senior-doctor-4-healthcare-workers-at-hospital-in-sagaing-region/",
-          "domain": "euro-burma.eu",
+          "url": "https://www.elcomercio.com/actualidad/ecuador/lluvias-inundaciones-manabi-santa-elena-milagro-familias-evacuadas/",
+          "domain": "elcomercio.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ea4485ea5878",
-      "headline": "Pakistani Forces Repel Border Infiltration in Kurram as Bank Alfalah Completes Afghanistan Exit",
-      "summary": "Pakistan's Bank Alfalah completed its exit from Afghanistan effective Nov 5, transferring its Kabul and Herat branches to Ghazanfar Bank after more than 20 years. Separately, Pakistani forces reported repelling an armed infiltration attempt by militants in Kurram's Shalozan sector, alleging covering fire from Afghan Taliban border forces, which Pakistan says it struck in response.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 33.9,
-      "lon": 70.08,
-      "locationName": "Kurram District, Pakistan",
-      "countryCode": "PK",
-      "sources": [
-        {
-          "url": "https://www.dawn.com/news/2042687/bank-alfalah-quits-kabul-after-20-years",
-          "domain": "dawn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.khaama.com/bank-alfalah-exits-afghanistan/",
-          "domain": "khaama.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://dailytimes.com.pk/1577508/pakistani-security-forces-foil-border-infiltration-attempt-and-destroy-afghan-taliban-posts-in-kurram/",
-          "domain": "dailytimes.com.pk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-11T06:07:51.346Z",
+      "trustScore": 48,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -2516,6 +2544,133 @@
       "firstSeen": "2026-11-09T15:30:49.548Z",
       "lastUpdated": "2026-11-09T15:30:49.548Z",
       "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d9e900a07916",
+      "headline": "Gunmen Kill 11 Relatives of Vigilante, Abduct 13 Others in Zamfara, Nigeria",
+      "summary": "Gunmen attacked the home of a government-backed vigilante volunteer in Gidan Taba village, Maradun LGA, after he helped security forces resist gang incursions, barricading and setting the home ablaze, killing 11 occupants. Thirteen others were abducted; security forces have since deployed to the area.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 12.8,
+      "lon": 6.4,
+      "locationName": "Gidan Taba, Zamfara State, Nigeria",
+      "countryCode": "NG",
+      "sources": [
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-09/gunmen-kill-11-relatives-of-security-volunteer-in-northwest-nigeria-abduct-13",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://saharareporters.com/2026/11/09/gunmen-kill-11-family-members-vigilante-zamfara-abduct-13-others",
+          "domain": "saharareporters.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 47,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0ba6357effa1",
+      "headline": "Russian Strike Kills Three at Odesa Food Warehouse Day Before Abu Dhabi Peace Talks",
+      "summary": "A Russian strike on Odesa killed three people and wounded one, setting ablaze a warehouse storing food supplies for the city's kindergartens and schools, roughly 24 hours before the start of US-brokered trilateral peace talks in Abu Dhabi.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 46.4825,
+      "lon": 30.7233,
+      "locationName": "Odesa, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://euromaidanpress.com/2026/11/09/russian-attack-kills-three-in-odesa-and-sets-a-warehouse-of-food-for-schools-ablaze-a-day-before-abu-dhabi-peace-talks/",
+          "domain": "euromaidanpress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kyivpost.com/post/89546",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1a38a4d1f94f",
+      "headline": "Serbia's New Parliament to Convene Nov 17 After Student List Election Win; Vučić's Last-Day Pardons Face Legal Challenge",
+      "summary": "Serbia's new 250-seat parliament, in which the student-led 'Student List' won 140 seats against the SNS-led list's 103, will hold its first session Nov 17. Separately, 49 pardons issued by Aleksandar Vučić on his last day as president — including of a man charged with attempted murder of a protester — are under investigation by Serbia's organized-crime prosecutor.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 44.7866,
+      "lon": 20.4489,
+      "locationName": "Belgrade, Serbia",
+      "countryCode": "RS",
+      "sources": [
+        {
+          "url": "https://wtop.com/national/2026/11/serbias-parliament-to-meet-on-nov-17-after-student-led-movement-won-election-over-strongman-vucic",
+          "domain": "wtop.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://balkaninsight.com/2026/11/06/serbian-presidents-controversial-last-minute-pardons-face-legal-challenges/bi/",
+          "domain": "balkaninsight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a1c95dacf49a",
+      "headline": "China's October Trade Surplus Tops $1 Trillion for Second Straight Year as Exports Surge 35.2%",
+      "summary": "China's October exports rose 35.2% year-on-year, beating forecasts, driven by AI-hardware and integrated-circuit shipments, pushing the year-to-date trade surplus above $1.04 trillion for a second consecutive year; imports also surged 41.6%, narrowing the monthly surplus from September's level.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969",
+          "domain": "investing.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.theglobeandmail.com/investing/markets/indices/NXTQ/pressreleases/8747559/china-s-trade-surplus-surpasses-1-trillion-for-a-2nd-straight-year-as-exports-surge-35/",
+          "domain": "theglobeandmail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -2825,134 +2980,6 @@
       "isBreaking": false
     },
     {
-      "id": "97f43b92f59b",
-      "headline": "Cyberattack Wipes Cloud Infrastructure at Russian Hosting Giant Beget, Affecting ~500,000 Sites",
-      "summary": "Overnight Nov 1-2, attackers compromised Beget's management plane and ran data-wiping scripts against VPS, S3 and Kubernetes environments, wiping backups for roughly half of affected customers. Beget declared force majeure; around 500,000 hosted websites were disrupted, with over 60% restored by Nov 5-6.",
-      "category": "society",
-      "severity": 3,
-      "lat": 60,
-      "lon": 90,
-      "locationName": "St. Petersburg, Russia",
-      "countryCode": "RU",
-      "sources": [
-        {
-          "url": "https://oodaloop.com/briefs/cyber/massive-cyberattack-wipes-cloud-infrastructure-at-russian-hosting-provider-beget/",
-          "domain": "oodaloop.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://iz.ru/en/node/2195010",
-          "domain": "iz.ru",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "02e96eba8f56",
-      "headline": "Germany Says It Has Exhausted Capacity to Supply More Patriot Systems to Ukraine",
-      "summary": "German Defense Minister Pistorius said Berlin cannot supply additional Patriot systems or interceptor missiles to Ukraine 'for the time being' without creating its own defense gaps, citing limited US PAC-2/PAC-3 supply. He called on allies to contribute more ahead of a mid-November Ukraine Defense Contact Group meeting.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 52.52,
-      "lon": 13.4,
-      "locationName": "Berlin, Germany",
-      "countryCode": "DE",
-      "sources": [
-        {
-          "url": "https://kyivindependent.com/germany-cannot-provide-ukraine-with-more-patriot-systems-for-now-defense-minister-says/",
-          "domain": "kyivindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.pravda.com.ua/eng/news/2026/11/07/8061743/",
-          "domain": "pravda.com.ua",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "faa66019dc2d",
-      "headline": "Israeli Forces Conduct New Demolitions and Search Operations in Southern Lebanon",
-      "summary": "Israeli forces carried out a demolition operation in Bani Hayyan and search operations in Khiam on Nov 7, alongside shelling near Wadi al-Hujair, Baraachit and Wadi Zibqin. The actions continue despite the US-brokered framework agreement calling for a gradual Israeli withdrawal from southern Lebanon.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 33.33,
-      "lon": 35.64,
-      "locationName": "Khiam, southern Lebanon",
-      "countryCode": "LB",
-      "sources": [
-        {
-          "url": "https://www.aa.com.tr/en/middle-east/israeli-army-continues-strikes-in-southern-lebanon-despite-framework-deal/4115101",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://shafaq.com/en/Middle-East/Israeli-shelling-demolitions-hit-southern-Lebanon",
-          "domain": "shafaq.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "688492cb3747",
-      "headline": "Drone Strike Kills Two Civilians in Al Malha, North Darfur, Attribution Disputed",
-      "summary": "A drone strike hit a commercial vehicle carrying civilians toward a weekly market in RSF-controlled Al Malha locality on Nov 1, killing two named civilians. Local accounts attribute the strike to the Sudanese Armed Forces, though monitors could not independently confirm the operator.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 15.9,
-      "lon": 26.1,
-      "locationName": "Al Malha, North Darfur, Sudan",
-      "countryCode": "SD",
-      "sources": [
-        {
-          "url": "https://allafrica.com/stories/202611020388.html",
-          "domain": "allafrica.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.radiotamazuj.org/en/news/article/2-killed-as-drone-strikes-vehicle-in-wadi-majrur-north-darfur",
-          "domain": "radiotamazuj.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-10T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
       "id": "afea5ae5ef92",
       "headline": "Trump Says Midterm Losses Partly Driven by Voter 'Dislike' for Israel Policy, Gas Prices",
       "summary": "In a CBS '60 Minutes' interview, Trump said he did not disagree that the Iran war hurt Republicans in the Nov 3 midterms, citing a 'great dislike' for Israel among voters and rising gas prices. He has previously vowed no change to his policy course after Democrats retook the House and Senate.",
@@ -3020,105 +3047,205 @@
       "isBreaking": false
     },
     {
-      "id": "e55c974d63c2",
-      "headline": "Italy's Meloni Blames Pro-Russian Hackers After FM Tajani's Personal Data Leaked Online",
-      "summary": "FM Antonio Tajani said Nov 7 his personal data had been circulating on the dark web for days, with attackers seeking information on his family. He was listed on a dark-web roster of 18 'citizens hostile to Russia' reviewed by Reuters; PM Meloni publicly blamed pro-Russian hackers.",
-      "category": "society",
+      "id": "9143fccfead8",
+      "headline": "Asian Stocks Rally Sharply as Semiconductor Rebound Lifts Nikkei, KOSPI After Taiwan's Earlier 5% Surge",
+      "summary": "Japan's Nikkei rose roughly 2.5-3% and South Korea's KOSPI climbed as much as 4-5%, triggering a circuit breaker in one session, driven by a rebound in AI/semiconductor stocks following a surge in the Philadelphia Semiconductor Index; SoftBank, SK Hynix and Samsung all gained strongly, extending the tech-led rally that had already lifted Taiwan's market 5% earlier in the week.",
+      "category": "economy",
       "severity": 2,
-      "lat": 41.9,
-      "lon": 12.5,
-      "locationName": "Rome, Italy",
-      "countryCode": "IT",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "locationName": "Tokyo, Japan",
+      "countryCode": "JP",
       "sources": [
         {
-          "url": "https://www.washingtonpost.com/business/2026/11/07/italy-minister-tajani-cyberattack/3dac30f0-da95-11f1-930a-e08f8086f5ac_story.html",
+          "url": "https://www.fxstreet.com/news/asia-stocks-rally-sharply-amid-tech-surge-and-iran-jitters-ahead-of-us-cpi-202611100521",
+          "domain": "fxstreet.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.zeebiz.com/market-news/news-kospi-and-nikkei-gain-up-to-5-softbank-jumps-15-whats-behind-tuesdays-asian-market-rally-405352",
+          "domain": "zeebiz.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/08/nvidia-opens-investigation-into-ceo-over-relationship-with-suspected-chinese-spy/",
           "domain": "washingtonpost.com",
           "reliability": 85,
           "bias": "center-left"
         },
         {
-          "url": "https://www.nbcnews.com/world/italy/italys-giorgia-meloni-blames-russian-hackers-leak-foreign-ministers-da-rcna607974",
-          "domain": "nbcnews.com",
-          "reliability": 81,
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6034036/nvidia-launches-investigation-into-ceos-alleged-relationship-with-chinese-spy",
+          "domain": "npr.org",
+          "reliability": 87,
           "bias": "center-left"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/7/pro-russian-hackers-leak-italian-foreign-ministers-data-on-dark-web",
+          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/economy/2026/11/9/asian-stock-markets-climb-after-earlier-tech-rout",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/taiwan-to-deploy-market-stabilization-fund-after-stock-rout",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
         }
       ],
-      "trustScore": 65,
+      "trustScore": 85,
       "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
       "isBreaking": false
     },
     {
-      "id": "161a8b1b02a1",
-      "headline": "South Africa's Treasury Lowers Peak Debt-to-GDP Forecast to 74.6% After GDP Rebasing",
-      "summary": "South Africa's Treasury confirmed on Nov 5 that a GDP rebasing by Statistics SA, which revised the economy about 5.3% larger, lowered the peak debt-to-GDP ratio to 74.6% from a prior 78.4% projection. Debt is now expected to fall below 70% a year earlier than forecast, by 2032/33.",
-      "category": "economy",
+      "id": "30c8151f9128",
+      "headline": "Second Firefighting Helicopter Crashes in Indonesia's Worst Wildfire Season in a Decade, One Killed",
+      "summary": "A BNPB-operated Super Puma helicopter crashed into the Barito River in South Kalimantan while collecting water for wildfire operations, killing one Indonesian crew member while two foreign pilots survived. It is a second, distinct crash in Indonesia's wildfire season after an earlier Mi-17 crash in Central Kalimantan killed three; South Kalimantan has since suspended aerial firefighting.",
+      "category": "disaster",
       "severity": 2,
-      "lat": -25.7,
-      "lon": 28.2,
-      "locationName": "Pretoria, South Africa",
-      "countryCode": "ZA",
+      "lat": -3.2,
+      "lon": 114.6,
+      "locationName": "Barito River, South Kalimantan, Indonesia",
+      "countryCode": "ID",
       "sources": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/south-africa-debt-ratios-lowered-by-data-overhaul-treasury-says",
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/09/indonesia-fatal-helicopter-crash/4861794204618",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://en.antaranews.com/news/441139/bnpbs-super-puma-crashes-in-barito-river",
+          "domain": "antaranews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-08/indonesia-helicopter-crash-borneo-australians/107361384",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thejakartapost.com/world/2026/11/06/australia-to-join-indonesias-wildfire-waterbombing-operations",
+          "domain": "thejakartapost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arabnews.com/world/australia-to-join-indonesias-wildfire-waterbombing-operations-3010064",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 81,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "31b82c0a97a2",
+      "headline": "Japan's Household Spending Plunges 6.8% in September, Steepest Drop Since 2020",
+      "summary": "Japan's household spending fell 6.8% year-on-year in September, far below expectations, marking a 10th consecutive monthly decline and the sharpest drop since 2020, driven by weakness in transport, education, utilities and healthcare spending; officials partly blamed poor weather, while markets still expect a BOJ rate hike in December.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "locationName": "Tokyo, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/japan-household-outlays-fall-for-10th-month-as-inflation-lingers",
           "domain": "bloomberg.com",
           "reliability": 88,
           "bias": "center"
         },
         {
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-05/south-africas-treasury-says-gdp-rebasing-has-improved-key-fiscal-metrics",
+          "url": "https://www.japantimes.co.jp/business/2026/11/10/economy/japan-household-spending-sept-plunge/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 67,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "42f59b5f0e58",
+      "headline": "France Confirms First-Ever Human Case of Shamonda Virus, Previously Found Only in Livestock",
+      "summary": "French health authorities reported the first-ever human infection with Shamonda virus in a severely immunocompromised patient who died in early October, believed infected via a midge bite in eastern France, where the virus has circulated in livestock since spring 2026. ECDC says no risk to the general population has been identified to date.",
+      "category": "health",
+      "severity": 2,
+      "lat": 48.5734,
+      "lon": 7.7521,
+      "locationName": "Eastern France (Grand Est region)",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.ecdc.europa.eu/en/news-events/severely-ill-patient-france-becomes-first-ever-human-infected-shamonda-virus",
+          "domain": "europa.eu",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.euronews.com/2026/10/22/france-confirms-first-human-case-of-shamonda-virus-previously-found-only-in-animals",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5fc2ae9b1f46",
+      "headline": "Germany's Merz Warns of 'Historic Test' Over Rising Antisemitism on Kristallnacht Anniversary",
+      "summary": "Speaking at Munich's Ohel Jakob Synagogue on the 88th anniversary of Kristallnacht, Chancellor Friedrich Merz said Germany faces a 'historic test' over antisemitism he called 'once again omnipresent' in schools, streets and parliaments, decrying the need for armed protection at synagogues and kindergartens and pledging stronger government action.",
+      "category": "society",
+      "severity": 2,
+      "lat": 48.1351,
+      "lon": 11.582,
+      "locationName": "Munich, Germany",
+      "countryCode": "DE",
+      "sources": [
+        {
+          "url": "https://www.timesofisrael.com/liveblog_entry/merz-decries-horrifying-antisemitism-in-germany-reiterates-commitment-to-protecting-countrys-jews-on-kristallnacht-anniversary/",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-09/merz-says-germany-faces-historic-test-over-rise-in-antisemitism",
           "domain": "usnews.com",
           "reliability": 75,
           "bias": "center"
         }
       ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "f9083f7c1311",
-      "headline": "Magnitude 5.7 Earthquake Shakes Central Japan, Injuring at Least 22",
-      "summary": "A magnitude-5.7 earthquake struck central Japan at 1:04am local time on Nov 8, centered in Shizuoka Prefecture, injuring at least 22 and shattering store windows across Aichi, Yamanashi, Gifu, Kyoto and Nara. No tsunami warning was issued and no deaths were reported; Shinkansen services were briefly suspended.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 34.77,
-      "lon": 138.39,
-      "locationName": "Shizuoka Prefecture, Japan",
-      "countryCode": "JP",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/07/earthquake-japan/7208075c-db03-11f1-930a-e08f8086f5ac_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/11/08/japan/earthquake-aichi-sunday/",
-          "domain": "japantimes.co.jp",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
+      "trustScore": 62,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -3162,51 +3289,6 @@
       ],
       "trustScore": 61,
       "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-10T18:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5a30729ba893",
-      "headline": "Storm Bruna Forces Evacuations in Madeira as Heavy Rain and Wind Continue Through Nov 13",
-      "summary": "Storm Bruna brought heavy rain, wind gusts to 130km/h and swells up to 6m to the Azores, Madeira, mainland Portugal and Spain, prompting orange and red alerts. At least nine people were evacuated in Madeira, with impacts expected to continue through Nov 13.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 39.6,
-      "lon": -8,
-      "locationName": "Funchal, Madeira, Portugal",
-      "countryCode": "PT",
-      "sources": [
-        {
-          "url": "https://pt.euronews.com/2026/11/08/depressao-bruna-continente-sob-aviso-amarelo-e-varios-desalojados-na-madeira",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.tsf.pt/sociedade/artigo/depressao-bruna-traz-chuva-vento-e-agitacao-maritima-continente-madeira-e-grupo-oriental-dos-acores-sob-avisos/18145182",
-          "domain": "tsf.pt",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.theportugalnews.com/news/2026-11-06/weather-warning-issued-in-portugal-as-storms-are-coming/1112047",
-          "domain": "theportugalnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thespanisheye.com/2026/11/07/storm-bruna-sparks-weather-alerts-in-malaga-cadiz-sevilla-and-huelva/",
-          "domain": "thespanisheye.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-09T06:07:51.346Z",
       "expiresAt": "2026-11-10T18:07:51.346Z",
       "isBreaking": false
@@ -3272,66 +3354,6 @@
       "isBreaking": false
     },
     {
-      "id": "a81c58fc3e8f",
-      "headline": "Pakistani Astronaut Set to Become First Foreign National Aboard China's Space Station",
-      "summary": "China announced a Pakistani astronaut will join the Shenzhou-24 mission, planned to launch around Nov 25, making him the first foreign national to board China's Tiangong space station. He will spend about a week aboard under a China-Pakistan agreement signed in February 2025.",
-      "category": "science",
-      "severity": 2,
-      "lat": 40.96,
-      "lon": 100.29,
-      "locationName": "Jiuquan Satellite Launch Center, China",
-      "countryCode": "CN",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/06/china-pakistani-astronaut-space-station/9b0e12f8-da64-11f1-930a-e08f8086f5ac_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/7/pakistani-astronaut-to-join-chinas-next-space-station-mission",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e9ba3e07bc65",
-      "headline": "Tel Aviv Protesters Demand Firing of Shin Bet Chief Over Election-Interference Probe",
-      "summary": "Roughly 200 people protested at Habima Square in Tel Aviv on Nov 7, accusing Shin Bet chief David Zini of manufacturing an investigation into alleged foreign interference in the recent Knesset election to serve PM Netanyahu's interests. Former Shin Bet chief Ami Ayalon spoke at the protest.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 32.07,
-      "lon": 34.78,
-      "locationName": "Tel Aviv, Israel",
-      "countryCode": "IL",
-      "sources": [
-        {
-          "url": "https://www.timesofisrael.com/liveblog-november-07-2026/",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.haaretz.com/israel-news/israel-politics/2026-11-04/ty-article/.premium/former-senior-officials-appalled-by-shin-bet-chiefs-election-probe-demands/000001a1-a601-dd7a-a3ed-e74198470000",
-          "domain": "haaretz.com",
-          "reliability": 80,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 56,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
-      "isBreaking": false
-    },
-    {
       "id": "0ecebae5dfa8",
       "headline": "North Korea Tests New Air Defense Missile and Cruise Missile in Fourth Weapons Drill in a Month",
       "summary": "North Korean state media reported tests of a new anti-aircraft and surface-to-air missile system, along with a separate cruise-missile drill simulating a cluster-munition strike on an enemy airport runway targeting more than 20 aircraft-shaped mock targets. It marks the fourth North Korean weapons-launch event in a month.",
@@ -3362,131 +3384,73 @@
       "isBreaking": false
     },
     {
-      "id": "c5f8d149cc66",
-      "headline": "Mexico's Central Bank Surprises Markets With Rate Cut to 6.25%, a Four-Year Low",
-      "summary": "Banxico's board voted 3-2 on Nov 5-6 to cut its benchmark rate 25bps to 6.25%, defying expectations of a hold and reaching the lowest level since Feb 2022. The move was characterized as a one-off 'fine adjustment,' with the Q4 inflation forecast raised to 3.7%.",
-      "category": "economy",
+      "id": "f25da3a4e169",
+      "headline": "Two Egyptian Border Guard Officers Killed Near Sudan Border in Clash With Illegal Gold Miners",
+      "summary": "Two Egyptian army border-guard officers were killed in an exchange of fire during an operation targeting illegal gold-mining groups near Egypt's southern border with Sudan in the Halayeb/Shalateen area. Saudi Arabia, Qatar, Jordan and the Arab League issued condemnations and condolences.",
+      "category": "conflict",
       "severity": 2,
-      "lat": 19.4326,
-      "lon": -99.1332,
-      "locationName": "Mexico City, Mexico",
-      "countryCode": "MX",
+      "lat": 23.5,
+      "lon": 35.5,
+      "locationName": "Halayeb-Shalateen border area, Egypt",
+      "countryCode": "EG",
       "sources": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/mexico-unexpectedly-cuts-interest-rate-to-four-year-low-of-6-25",
-          "domain": "bloomberg.com",
-          "reliability": 88,
+          "url": "https://www.spa.gov.sa/en/N2719572",
+          "domain": "spa.gov.sa",
+          "reliability": 85,
           "bias": "center"
         },
         {
-          "url": "https://mexiconewsdaily.com/business/bucking-expectations-banxico-lowers-interest-rate-despite-some-inflation-concerns/",
-          "domain": "mexiconewsdaily.com",
+          "url": "https://egyptianstreets.com/2026/11/07/saudi-arabia-qatar-and-jordan-condemn-attack-on-egyptian-border-guards/",
+          "domain": "egyptianstreets.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
+      "trustScore": 50,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
       "isBreaking": false
     },
     {
-      "id": "7d9573af59b7",
-      "headline": "S&P Warns Colombia Faces Fiscal Deficits Above 5% of GDP for Four Straight Years",
-      "summary": "S&P Global Ratings warned Colombia faces a prolonged fiscal adjustment, projecting deficits over 5% of GDP for four consecutive years amid widening revenue-spending gaps and accelerating debt growth. The warning follows S&P's April 2026 downgrade of Colombia to BB-.",
-      "category": "economy",
+      "id": "e09beaaeb6a2",
+      "headline": "Brazil's Supreme Court Closes Seven-Year 'Fake News' Inquiry at Prosecutor-General's Request",
+      "summary": "Brazil's Prosecutor-General Paulo Gonet asked the Supreme Federal Court (STF) to archive the seven-year 'fake news' inquiry opened in 2019 to probe threats against the Court, arguing its objective had been exhausted; STF President Edson Fachin granted the request the same day. The closure does not nullify evidence already gathered or invalidate derivative criminal cases still proceeding separately.",
+      "category": "politics",
       "severity": 2,
-      "lat": 4.711,
-      "lon": -74.0721,
-      "locationName": "Bogotá, Colombia",
-      "countryCode": "CO",
+      "lat": -15.7975,
+      "lon": -47.8919,
+      "locationName": "Brasília, Brazil",
+      "countryCode": "BR",
       "sources": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-04-08/colombia-downgraded-by-s-p-ratings-amid-growing-fiscal-concerns",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_S0N3Z107W:0-moody-s-sees-colombia-2026-fiscal-deficit-above-6-of-gdp-exceeding-target/",
-          "domain": "tradingview.com",
+          "url": "https://www.brasildefato.com.br/2026/11/09/stf-fachin-arquiva-definitivamente-inquerito-das-fake-news-mas-mantem-processos-derivados/",
+          "domain": "brasildefato.com.br",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ab5efa06a632",
-      "headline": "Bomb Threat Forces Evacuation of The Henry Ford Museum in Dearborn",
-      "summary": "A phoned-in bomb threat on the evening of Nov. 7 forced evacuation of a wedding reception and fundraiser at The Henry Ford museum. Dearborn police and a K-9 unit found no threat, and normal operations resumed Nov. 8.",
-      "category": "society",
-      "severity": 2,
-      "lat": 42.3223,
-      "lon": -83.1763,
-      "locationName": "Dearborn, Michigan, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MI",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/detroit/news/henry-ford-museum-evacuated-bomb-threat/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
         },
         {
-          "url": "https://www.clickondetroit.com/news/local/2026/11/08/the-henry-ford-evacuates-campus-events-after-reported-bomb-threat/",
-          "domain": "clickondetroit.com",
+          "url": "https://jurinews.com.br/en/destaque-nacional/upon-the-request-of-pgr-fachin-closes-the-investigation-of-fake-news",
+          "domain": "jurinews.com.br",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://correiobraziliense.com.br/politica/2026/11/7535584-pgr-solicita-a-fachin-o-arquivamento-do-inquerito-das-fake-news.html",
+          "domain": "correiobraziliense.com.br",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-09T15:30:49.548Z",
-      "lastUpdated": "2026-11-09T15:30:49.548Z",
-      "expiresAt": "2026-11-11T03:30:49.548Z",
-      "isBreaking": false
-    },
-    {
-      "id": "2ac20e494def",
-      "headline": "Louisiana Becomes Only US State With 'High' Flu Activity as Season Surges Early",
-      "summary": "CDC and Louisiana Department of Health data show Louisiana is the only state with 'high' influenza-like-illness activity this season, with 4.3% of outpatient visits flu-related and a 10.9% test positivity rate versus a 7.6% national average. The early surge is being driven by H1N1.",
-      "category": "health",
-      "severity": 2,
-      "lat": 29.9511,
-      "lon": -90.0715,
-      "locationName": "New Orleans, Louisiana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-LA",
-      "sources": [
-        {
-          "url": "https://www.axios.com/local/new-orleans/2026/11/04/louisiana-flu-activity-high-level",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.knoe.com/2026/11/07/louisiana-has-highest-flu-activity-us-health-department-data-shows/",
-          "domain": "knoe.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-09T15:30:49.548Z",
-      "lastUpdated": "2026-11-09T15:30:49.548Z",
-      "expiresAt": "2026-11-11T03:30:49.548Z",
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
       "isBreaking": false
     },
     {
@@ -3607,34 +3571,197 @@
       "isBreaking": false
     },
     {
-      "id": "2b7cf91dc7fe",
-      "headline": "Egypt Reopens Embassy in Tripoli After 12-Year Closure",
-      "summary": "Egypt reopened its embassy in Tripoli on Nov 7, closed since January 2014 amid Libya's security deterioration. Egyptian FM Badr Abdelatty inaugurated the building with Libya's acting FM El-Taher El-Baour present, marking a shift for Cairo toward engagement with the Tripoli-based government.",
-      "category": "politics",
+      "id": "ab5efa06a632",
+      "headline": "Bomb Threat Forces Evacuation of The Henry Ford Museum in Dearborn",
+      "summary": "A phoned-in bomb threat on the evening of Nov. 7 forced evacuation of a wedding reception and fundraiser at The Henry Ford museum. Dearborn police and a K-9 unit found no threat, and normal operations resumed Nov. 8.",
+      "category": "society",
       "severity": 2,
-      "lat": 32.89,
-      "lon": 13.19,
-      "locationName": "Tripoli, Libya",
-      "countryCode": "LY",
+      "lat": 42.3223,
+      "lon": -83.1763,
+      "locationName": "Dearborn, Michigan, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MI",
       "sources": [
         {
-          "url": "https://www.arabnews.com/middle-east/egypt-reopens-embassy-in-libyas-tripoli-after-12-year-closure-3010410",
-          "domain": "arabnews.com",
-          "reliability": 64,
+          "url": "https://www.cbsnews.com/detroit/news/henry-ford-museum-evacuated-bomb-threat/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/07/egypt-reopens-embassy-in-libya-s-tripoli-after-12-year-closure",
-          "domain": "internazionale.it",
+          "url": "https://www.clickondetroit.com/news/local/2026/11/08/the-henry-ford-evacuates-campus-events-after-reported-bomb-threat/",
+          "domain": "clickondetroit.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 45,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
+      "trustScore": 49,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T03:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2ac20e494def",
+      "headline": "Louisiana Becomes Only US State With 'High' Flu Activity as Season Surges Early",
+      "summary": "CDC and Louisiana Department of Health data show Louisiana is the only state with 'high' influenza-like-illness activity this season, with 4.3% of outpatient visits flu-related and a 10.9% test positivity rate versus a 7.6% national average. The early surge is being driven by H1N1.",
+      "category": "health",
+      "severity": 2,
+      "lat": 29.9511,
+      "lon": -90.0715,
+      "locationName": "New Orleans, Louisiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-LA",
+      "sources": [
+        {
+          "url": "https://www.axios.com/local/new-orleans/2026/11/04/louisiana-flu-activity-high-level",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.knoe.com/2026/11/07/louisiana-has-highest-flu-activity-us-health-department-data-shows/",
+          "domain": "knoe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T03:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2666e87432a0",
+      "headline": "DNA Testing Identifies Three More 1999 Kosovo War Disappearance Victims From Mass Grave",
+      "summary": "Kosovo PM Albin Kurti confirmed DNA analysis conducted at The Hague identified three more victims of enforced disappearance from the 1998-99 war — Adem Ademi, Fatmir Fazlija and Ali Haliti — among at least 23 people exhumed since July from mass graves near Zubin Potok in northern Kosovo. Roughly 1,600 people remain missing from the war overall.",
+      "category": "society",
+      "severity": 2,
+      "lat": 42.92,
+      "lon": 20.69,
+      "locationName": "Zubin Potok, northern Kosovo",
+      "countryCode": "XK",
+      "sources": [
+        {
+          "url": "https://balkaninsight.com/2026/11/04/kosovo-identifies-three-more-wartime-missing-persons/btj/",
+          "domain": "balkaninsight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://prishtinainsight.com/remains-of-23-wartime-victims-unearthed-from-mass-graves-in-kosovo/",
+          "domain": "prishtinainsight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bb8cf4c6e29b",
+      "headline": "Magnitude 5.9 Earthquake Strikes Off Ibaraki Prefecture, Shakes Tokyo Region",
+      "summary": "A preliminary magnitude 5.9 earthquake struck off Ibaraki Prefecture northeast of Tokyo, registering intensity 3 (of 7) in Miyagi, Ibaraki, Fukushima and Tochigi, with tremors felt in Tokyo. No tsunami warning was issued and no casualties or damage were reported.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 36.3418,
+      "lon": 140.9468,
+      "locationName": "Off Ibaraki Prefecture, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.aa.com.tr/en/asia-pacific/magnitude-59-earthquake-strikes-off-eastern-japan-shakes-tokyo/4116482",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.chinadailyasia.com/hk/article/642439",
+          "domain": "chinadailyasia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8a7f23a1ca3a",
+      "headline": "Nepal Police Detain Three Journalists in Kathmandu Newsroom Raids Over PM Corruption Reporting",
+      "summary": "Plainclothes police raided several Kathmandu newsrooms and detained three journalists after their outlets reported that PM Balendra Shah sought the resignation of the police inspector general over alleged money-laundering ties; all three were released the same evening amid public backlash, and press-freedom groups held protest rallies demanding guarantees against future crackdowns.",
+      "category": "society",
+      "severity": 2,
+      "lat": 27.7172,
+      "lon": 85.324,
+      "locationName": "Kathmandu, Nepal",
+      "countryCode": "NP",
+      "sources": [
+        {
+          "url": "https://kathmandupost.com/national/2026/11/01/who-ordered-the-police-crackdown-on-journalists",
+          "domain": "kathmandupost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.deccanchronicle.com/world/kathmandu-rally-protests-media-crackdown-demands-press-freedom-2002557",
+          "domain": "deccanchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e13a9771f52f",
+      "headline": "Bangladesh Reiterates Extradition Request for Ousted PM Sheikh Hasina From India",
+      "summary": "Bangladesh's Law Minister Md Asaduzzaman publicly reiterated a formal extradition request to India for ousted Prime Minister Sheikh Hasina on Nov 8, calling her a 'convicted criminal.' India has not announced a decision on the request.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 23.8103,
+      "lon": 90.4125,
+      "locationName": "Dhaka, Bangladesh",
+      "countryCode": "BD",
+      "sources": [
+        {
+          "url": "https://www.tribuneindia.com/news/world/examining-bangladeshs-request-for-sheikh-hasinas-extradition-mea/amp",
+          "domain": "tribuneindia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.siasat.com/bangladesh-calls-hasina-convicted-criminal-seeks-extradition-3571711/",
+          "domain": "siasat.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-09T06:07:51.346Z",
+      "expiresAt": "2026-11-10T18:07:51.346Z",
       "isBreaking": false
     },
     {
@@ -3978,136 +4105,71 @@
       "isBreaking": false
     },
     {
-      "id": "e13a9771f52f",
-      "headline": "Bangladesh Reiterates Extradition Request for Ousted PM Sheikh Hasina From India",
-      "summary": "Bangladesh's Law Minister Md Asaduzzaman publicly reiterated a formal extradition request to India for ousted Prime Minister Sheikh Hasina on Nov 8, calling her a 'convicted criminal.' India has not announced a decision on the request.",
-      "category": "politics",
+      "id": "5ed87c81d5c1",
+      "headline": "Chile's Inflation Hits 4.5%, Highest in Over a Year, as President Kast's Approval Sinks to Record Low",
+      "summary": "Chile's annual inflation rose to 4.5% in October, above the central bank's target, driven by fuel and food costs. President José Antonio Kast's approval has sunk to roughly 26-29%, driven by anger over the early release of convicted child sex offenders and a stagnant economy.",
+      "category": "economy",
       "severity": 2,
-      "lat": 23.8103,
-      "lon": 90.4125,
-      "locationName": "Dhaka, Bangladesh",
-      "countryCode": "BD",
+      "lat": -33.4489,
+      "lon": -70.6693,
+      "locationName": "Santiago, Chile",
+      "countryCode": "CL",
       "sources": [
         {
-          "url": "https://www.tribuneindia.com/news/world/examining-bangladeshs-request-for-sheikh-hasinas-extradition-mea/amp",
-          "domain": "tribuneindia.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.siasat.com/bangladesh-calls-hasina-convicted-criminal-seeks-extradition-3571711/",
-          "domain": "siasat.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-09T06:07:51.346Z",
-      "expiresAt": "2026-11-10T18:07:51.346Z",
-      "isBreaking": false
-    },
-    {
-      "id": "17633d416770",
-      "headline": "Bosnian Court Sentences Six Ex-Army of Republika Srpska Members to 83 Years for 1992 War Crimes",
-      "summary": "Bosnia's state court sentenced six former Second Romanija Brigade members to a combined 83 years for crimes against humanity near Sokolac in 1992, including the murder of 44 men. Two co-defendants were acquitted; it is a first-instance verdict subject to appeal.",
-      "category": "society",
-      "severity": 2,
-      "lat": 43.93,
-      "lon": 18.8,
-      "locationName": "Sokolac, Bosnia and Herzegovina",
-      "countryCode": "BA",
-      "sources": [
-        {
-          "url": "https://balkaninsight.com/2026/11/03/bosnian-serb-army-ex-members-jailed-for-83-years-for-sokolac-crimes/btj/btj-bosnia-and-herzegovina/",
-          "domain": "balkaninsight.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://sarajevotimes.com/six-former-vrs-members-sentenced-to-83-years-in-prison-for-crimes-in-novoseoci/",
-          "domain": "sarajevotimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a958edf78078",
-      "headline": "Attacks on Opposition Rally in Delta State, Nigeria Destroy 30+ Campaign Buses",
-      "summary": "A rally by supporters of Peter Obi and Rabiu Kwankwaso came under attack in Asaba on Nov 7, with suspected thugs destroying more than 30 campaign vehicles ahead of 2027 elections. Police reported one death and five injuries; Peter Obi condemned the attacks and Delta State's governor ordered an investigation.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 6.2,
-      "lon": 6.73,
-      "locationName": "Asaba, Delta State, Nigeria",
-      "countryCode": "NG",
-      "sources": [
-        {
-          "url": "https://www.vanguardngr.com/2026/11/delta-political-tension-injuries-destruction-as-another-obi-kwankwaso-rally-comes-under-attack/",
-          "domain": "vanguardngr.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://thenigerialawyer.com/political-violence-has-no-place-in-democracy-peter-obi-condemns-attacks-on-ndc-supporters-in-delta-as-oborevwori-orders-investigation-prosecution/",
-          "domain": "thenigerialawyer.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "32f4d8049a21",
-      "headline": "Pakistan-Afghan Taliban Border Clashes Continue Near Angoor Adda, South Waziristan",
-      "summary": "Cross-border mortar fire and skirmishes near the Angoor Adda crossing killed at least one civilian and injured several others in late-October and early-November incidents. Pakistan and the Afghan Taliban traded accusations over who initiated the firing; Pakistan says it destroyed seven Afghan border posts in response.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 32.32,
-      "lon": 69.36,
-      "locationName": "Angoor Adda, South Waziristan, Pakistan",
-      "countryCode": "PK",
-      "sources": [
-        {
-          "url": "https://tribune.com.pk/story/2638119/pakistani-forces-respond-to-unprovoked-firing-from-afghan-border-posts-says-dc",
-          "domain": "tribune.com.pk",
-          "reliability": 68,
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/chile-annual-inflation-speeds-up-to-highest-level-in-over-a-year",
+          "domain": "bloomberg.com",
+          "reliability": 88,
           "bias": "center"
         }
       ],
       "trustScore": 40,
-      "firstSeen": "2026-11-08T06:05:19.540Z",
-      "lastUpdated": "2026-11-08T06:05:19.540Z",
-      "expiresAt": "2026-11-09T18:05:19.540Z",
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6b0f2f548046",
+      "headline": "Magnitude 6.4 Earthquake Strikes Near Lata, Solomon Islands; No Casualties Reported",
+      "summary": "A shallow magnitude 6.4 earthquake struck about 27km southwest of Lata, Temotu Province, Solomon Islands. USGS issued a Green alert indicating low likelihood of casualties or damage; an estimated 12,000 people felt strong shaking, but no casualties or damage were reported.",
+      "category": "disaster",
+      "severity": 1,
+      "lat": -10.9,
+      "lon": 165.6,
+      "locationName": "Lata, Temotu Province, Solomon Islands",
+      "countryCode": "SB",
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx16",
+          "domain": "usgs.gov",
+          "reliability": 95,
+          "bias": "center"
+        },
+        {
+          "url": "https://watchers.news/2026/11/09/strong-and-shallow-m6-4-earthquake-hits-santa-cruz-islands-solomon-islands/",
+          "domain": "watchers.news",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 52,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T06:07:21.759Z",
       "isBreaking": false
     }
   ],
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 104,
-    "carried": 80,
-    "updated": 0,
-    "expired": 13,
+    "multiSource": 103,
+    "carried": 70,
+    "updated": 12,
+    "expired": 23,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 4.75,
-    "budgetUsd": 8
+    "costUsd": 5.9,
+    "budgetUsd": 12
   }
 }
