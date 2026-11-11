@@ -1,0 +1,4577 @@
+{
+  "generatedAt": "2026-11-11T15:27:29.990Z",
+  "mode": "daily",
+  "events": [
+    {
+      "id": "22ca32586157",
+      "headline": "Israel's President Gives Eisenkot First Chance to Form Next Government Over Netanyahu",
+      "summary": "President Isaac Herzog formally gave Yashar party leader Gadi Eisenkot the mandate to form Israel's next government, after 67 members of the Knesset backed him versus 46 for Netanyahu. Eisenkot has up to 28 days, extendable by 14, and has called for an 'emergency government.'",
+      "category": "politics",
+      "severity": 4,
+      "lat": 31.7683,
+      "lon": 35.2137,
+      "locationName": "Jerusalem, Israel",
+      "countryCode": "IL",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-07/israel-president-to-give-eisenkot-a-chance-to-form-government",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/israels-president-formally-gives-eisenkot-the-first-chance-to-form-the-next-government",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/israel/israels-president-taps-gadi-eisenkot-rcna608033",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 89,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-09T06:07:51.346Z",
+      "expiresAt": "2026-11-13T06:07:51.346Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6a885e614bc2",
+      "headline": "Iran Warns It Will 'Rain Down Hell' if US Resumes Strikes Amid Qeshm Island Tensions",
+      "summary": "Iran threatened to retaliate forcefully if the US resumes military strikes, following earlier US action near Qeshm Island. The US has evacuated aircraft from a second UK base as tensions between Washington and Tehran persist.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 26.8095,
+      "lon": 55.9783,
+      "locationName": "Qeshm Island, Iran",
+      "countryCode": "IR",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/8/iran-threatens-to-rain-down-hell-if-us-escalates-war",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/02/politics/us-strikes-iran-qeshm-island",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "http://www.jpost.com/international/article-914408",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        },
+        {
+          "url": "https://www.arabnews.com/world/us-aircraft-evacuated-from-second-uk-base-due-to-iran-threat-wsj-reports-3010869",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/iran/us-conducted-defensive-strikes-iranian-targets-strait-hormuz-us-offici-rcna607161",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://english.alarabiya.net/amp/News/middle-east/2026/11/05/iran-says-two-tankers-and-tugboat-caught-fire-in-strait-of-hormuz",
+          "domain": "alarabiya.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/irans-irgc-says-two-tankers-042107548.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/International/us-carries-defensive-airstrikes-irans-qeshm-island-officials/story?id=137792518",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 84,
+      "firstSeen": "2026-11-03T06:07:11.564Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-15T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4b2fc87eee43",
+      "headline": "Former Paraguayan President Peña Charged, Detained at Military Facility Over Ueno Bank Collapse",
+      "summary": "Following his Senate removal on Nov 6, prosecutors charged former President Santiago Peña with breach of trust and misuse of public funds tied to the Ueno Bank collapse. A judge ordered him held at a military facility pending trial; Peña denies wrongdoing and is appealing.",
+      "category": "politics",
+      "severity": 4,
+      "lat": -25.2637,
+      "lon": -57.5759,
+      "locationName": "Asunción, Paraguay",
+      "countryCode": "PY",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/paraguay-senators-remove-pena-from-office-after-bank-scandal",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.timesofisrael.com/paraguays-pro-israel-ex-president-taken-into-custody-over-alleged-bank-crisis-role/",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/07/judge-orders-paraguays-ex-president-pena-held-befo/",
+          "domain": "spokesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/economy/2026/11/5/paraguay-president-pena-resigns-in-wake-of-bank-collapse",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/05/americas/president-paraguay-resigns-latam-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/south-america/paraguay-president-pen-resigns-mounting-pressure-bank-collapse-rcna607754",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.opb.org/article/2026/11/05/paraguay-president-impeached-minutes-after-resigning-following-bank-collapse/",
+          "domain": "opb.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 84,
+      "firstSeen": "2026-11-06T06:05:32.623Z",
+      "lastUpdated": "2026-11-08T06:05:19.540Z",
+      "expiresAt": "2026-11-12T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
+      "id": "31653a8f2799",
+      "headline": "Death Toll From Russian Strike on Komyshuvakha Aid Site Rises to 55",
+      "summary": "The Nov 2 Russian strike on a school used as a humanitarian aid-distribution point in Komyshuvakha has seen its confirmed death toll climb to 55 per Ukraine's State Emergency Service, up from nearly 40 reported Nov 3. Rescuers continue pulling bodies from rubble in what is now the deadliest single attack on Zaporizhzhia Oblast civilians of the war.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 47.65,
+      "lon": 35.88,
+      "locationName": "Komyshuvakha, Zaporizhzhia Oblast, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://kyivindependent.com/ukraine-war-latest-komyshuvakha-search-operation-enters-5th-day-as-death-toll-rises-to-53/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/death-toll-russian-attack-komyshuvakha-064900412.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/4/ukraine-raises-death-toll-from-russian-strike-on-zaporizhia-to-40-people",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/ukraine/-russian-strike-ukrainian-aid-site-komyushuvakha-rcna607191",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-03/russia-strikes-ukrainian-aid-outpost/107339274",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.france24.com/en/europe/20261102-live-russia-and-ukraine-trade-blame-cyber-attacks-fragile-ceasefire-ends",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://euromaidanpress.com/2026/11/02/russia-strikes-school-where-civilians-recieve-aid-in-zaporizhzhia-oblast-days-after-oleshky-truce-nine-more-bombs-hit-its-shelter-killing-at-least-26/",
+          "domain": "euromaidanpress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 83,
+      "firstSeen": "2026-11-03T06:07:11.564Z",
+      "lastUpdated": "2026-11-08T06:05:19.540Z",
+      "expiresAt": "2026-11-12T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
+      "id": "792e310370f0",
+      "headline": "ADF Militants Kill 33 Civilians in DRC Raid, Scattering Ebola Patients and Risking Further Spread",
+      "summary": "Islamist ADF militants killed at least 33 civilians in a raid in North Kivu's Cantine-Aloya area, forcing Ebola patients to flee treatment centers. Health officials fear the disruption could worsen an outbreak that has already killed over 5,000 people across the DRC, Kenya and Nigeria.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 0.4983,
+      "lon": 29.4714,
+      "locationName": "North Kivu, Democratic Republic of Congo",
+      "countryCode": "CD",
+      "sources": [
+        {
+          "url": "https://www.timeslive.co.za/news/world/2026-11-08-islamist-militants-force-ebola-patients-to-flee-in-deadly-drc-raid/",
+          "domain": "timeslive.co.za",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://citizen.digital/article/militants-kill-33-in-drc-raid-force-ebola-patients-to-flee-n393500",
+          "domain": "citizen.digital",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/armed-men-kill-least-33-190706831.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625",
+          "domain": "who.int",
+          "reliability": 92,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.premiumtimesng.com/news/headlines/923526-ebola-outbreak-in-dr-congo-becomes-largest-in-countrys-history.html",
+          "domain": "premiumtimesng.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/3/ebola-outbreak-kills-more-than-5300-people-in-dr-congo",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026",
+          "domain": "europa.eu",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/eboladrc2026-scenarioassessment.html",
+          "domain": "cdc.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.trtworld.com/article/93412f8e33bb",
+          "domain": "trtworld.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.npr.org/2026/10/27/g-s1-150136/ebola-outbreak-milestone-democratic-republic-congo-vaccine",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 82,
+      "firstSeen": "2026-10-29T06:23:58.774Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-15T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a3bf1ee3d3ab",
+      "headline": "China Conducts Large-Scale Naval Drills With Liaoning Carrier Near Taiwan, Toward Guam",
+      "summary": "China's military conducted large-scale 'area denial' naval and air exercises involving the Liaoning carrier group near Taiwan and extending toward Guam. The drills follow a tense coast guard standoff with Taiwan near the Pratas Islands that the US called 'deeply destabilizing.'",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 25.033,
+      "lon": 121.5654,
+      "locationName": "Taiwan Strait",
+      "countryCode": "TW",
+      "sources": [
+        {
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/10/2003867493",
+          "domain": "taipeitimes.com",
+          "reliability": 72,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/11/10/asia-pacific/taiwan-china-area-denial-pacific/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/01/china-taiwan-coast-guard-pratas-islands/daa6c00e-d5f5-11f1-930a-e08f8086f5ac_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-31/taiwan-says-china-harassing-shipping-with-east-coast-patrol",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 79,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-15T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "10315f1bca2c",
+      "headline": "Myanmar Junta Airstrikes Kill Civilians in Rakhine State as Arakan Army Advances Near Sittwe",
+      "summary": "Myanmar military airstrikes across four Rakhine townships killed at least 12 civilians and injured 32 on Nov 1, part of an intensifying junta offensive launched in September. The Arakan Army has advanced to within roughly 2km of Sittwe, pressing an assault on the junta's naval base there.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 20.15,
+      "lon": 92.9,
+      "locationName": "Sittwe, Rakhine State, Myanmar",
+      "countryCode": "MM",
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/asia-pacific/20261105-myanmar-civilians-under-fire-from-military-junta",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/09/1168488",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 67,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-08T06:05:19.540Z",
+      "expiresAt": "2026-11-12T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ba3e24da6639",
+      "headline": "COP31 World Leaders' Summit Opens in Antalya as Climate Talks Enter Key Phase",
+      "summary": "The COP31 World Leaders' Summit opened in Antalya, Turkey, bringing heads of state into climate negotiations that are scheduled to run through November 20. The summit follows the formal opening of the broader UN climate conference earlier in the week.",
+      "category": "climate",
+      "severity": 4,
+      "lat": 36.8969,
+      "lon": 30.7133,
+      "locationName": "Antalya, Turkey",
+      "countryCode": "TR",
+      "sources": [
+        {
+          "url": "https://unfccc.int/cop31/high-level",
+          "domain": "unfccc.int",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://cop31.tr/leader-summit",
+          "domain": "cop31.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.climateandcapitalmedia.com/cop31-antalya-preview/",
+          "domain": "climateandcapitalmedia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.genevaenvironmentnetwork.org/resources/updates/climate-action-from-geneva-to-antalya-un-climate-change-conference-cop31/",
+          "domain": "genevaenvironmentnetwork.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-15T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "97cb23fbbce8",
+      "headline": "Haiti Hunger Crisis Deepens: Nearly 6 Million Face Severe Food Insecurity",
+      "summary": "A new IPC analysis finds 5.94 million Haitians face severe food insecurity amid spreading gang violence and high food prices. The World Food Programme says it needs $78 million to sustain operations through March 2027.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 18.9712,
+      "lon": -72.2852,
+      "locationName": "Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2025/10/11/six-million-people-in-haiti-face-acute-hunger-as-gang-violence-spreads",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/hunger-surges-haiti-gang-violence-high-food-prices-137654749",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://haitiantimes.com/2026/11/02/haiti-hunger-crisis-gang-violence-el-nino-food-insecurity/",
+          "domain": "haitiantimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 59,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-15T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "31c63fe2ec34",
+      "headline": "Houthis Capture Al-Majza'a in Lahej as Airstrike on Taiz Market Kills About 30",
+      "summary": "Airstrikes hit the al-Hadara market in al-Waziyah, Taiz, killing at least 30 people; Houthi officials blamed Saudi-led coalition aircraft, while the Yemeni government blamed a Houthi ballistic missile and called it a war crime. Separately, Houthi forces captured the town of Al-Majza'a in Lahej Governorate, expanding their territorial control.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 13.5795,
+      "lon": 44.0209,
+      "locationName": "Taiz, Yemen",
+      "countryCode": "YE",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/world/yemen/airstrikes-market-southwestern-yemen-kill-least-30-houthis-say-rcna607908",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/06/yemen-airstrikes-market-houthis/c753be6c-d9e7-11f1-930a-e08f8086f5ac_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f0a56a50b55b",
+      "headline": "WHO Warns Violence in Northern Ethiopia Is Pushing Health System Toward Collapse",
+      "summary": "WHO Director-General Tedros warned that renewed fighting between Tigrayan forces and Addis Ababa, plus drone strikes, is pushing Ethiopia's health system in the north toward collapse. He cited shortages of health workers and medicine and limited ambulance access, amid deteriorating Ethiopia-Eritrea relations over reported Eritrean military incursions.",
+      "category": "health",
+      "severity": 4,
+      "lat": 12,
+      "lon": 39.5,
+      "locationName": "Amhara region, Ethiopia",
+      "countryCode": "ET",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/2/violence-in-northern-ethiopia-pushing-health-system-towards-collapse-who",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/11/1168720",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-08T06:05:19.540Z",
+      "expiresAt": "2026-11-12T06:05:19.540Z",
+      "isBreaking": false
+    },
+    {
+      "id": "adcc57286118",
+      "headline": "Simultaneous El Niño and La Niña Flooding Displaces Over 158,000 Across Argentina, Paraguay, Uruguay and Colombia",
+      "summary": "El Niño-driven Paraná and Uruguay River flooding has forced mass evacuations across northeastern Argentina, Paraguay and Uruguay, while La Niña-driven rains simultaneously flood much of Colombia. Combined, the disasters have displaced more than 158,000 people and killed at least 16; Argentina's Entre Ríos province saw the Uruguay River reach its highest level in nearly a century.",
+      "category": "climate",
+      "severity": 4,
+      "lat": -38.4,
+      "lon": -63.6,
+      "locationName": "Argentina, Paraguay, Uruguay & Colombia",
+      "countryCode": "AR",
+      "sources": [
+        {
+          "url": "https://abcnews.com/International/wireStory/el-nio-rains-flood-south-america-sending-residents-fleeing-and-cattle-137330862",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.latintimes.com/colombia-argentina-floods-displace-158000-people-600843",
+          "domain": "latintimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-14T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5d063f5872a5",
+      "headline": "Pope Leo XIV Draws Record 2.5 Million to Buenos Aires Mass, Urges Milei to Protect Vulnerable",
+      "summary": "Pope Leo XIV concluded his Argentina visit with a Mass drawing an estimated 2.5 million people in Buenos Aires, one of the largest crowds of his papacy. He renewed calls for President Milei's government to protect vulnerable populations amid austerity measures.",
+      "category": "society",
+      "severity": 3,
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "locationName": "Buenos Aires, Argentina",
+      "countryCode": "AR",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/americas/pope-visit-argentina-latam-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-10/pope-argentina-milei-crowd-record/107366696",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/09/latam-argentina-pope-mass/8271794244018/",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.france24.com/en/americas/20261108-pope-leo-argentina-visit-milei",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/09/pope-leo-delivers-veiled-rebuke-austerity-measures-argentina/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/pope-arrives-in-argentina-and-tells-milei-that-people-not-the-economy-should-come-first",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/8/5/pope-leo-xiv-to-visit-peru-argentina-and-uruguay-in-november",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.batimes.com.ar/news/argentina/milei-welcome-broadcasts-and-a-vp-thaw-quirno-confirms-details-of-pope-leos-visit-to-argentina.phtml",
+          "domain": "batimes.com.ar",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6026702/pope-leo-begins-12-day-3-country-tour-after-cancer-surgery",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 88,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c80b6c062c2f",
+      "headline": "Zelensky Says Russian Negotiators Overstated Donbas Control in Abu Dhabi Peace Talks",
+      "summary": "Ukrainian President Zelensky said Russian negotiators exaggerated their territorial control of the Donbas region during nearly four hours of US-mediated talks in Abu Dhabi. The trilateral talks are the first between the US, Russia and Ukraine since February.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 24.4539,
+      "lon": 54.3773,
+      "locationName": "Abu Dhabi, United Arab Emirates",
+      "countryCode": "AE",
+      "sources": [
+        {
+          "url": "https://www.pbs.org/newshour/world/russia-and-ukraine-hold-nearly-4-hours-of-u-s-mediated-talks-in-abu-dhabi",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kyivpost.com/post/89736",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/2026/11/09/ukraine-russia-zelensky-putin-peace-abu-dhabi",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/03/russia-ukraine-peace-talks-abu-dhabi-trump-putin-xi.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/05/nx-s1-6030662/melania-trump-touts-rare-agreement-she-brokered-between-russia-and-ukraine",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/trump-meets-putin-envoy-kirill-dmitriev-at-the-white-house",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/ukraine/melania-trump-host-russia-ukraine-representatives-white-house-rare-mee-rcna607390",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-to-convene-russian-and-ukrainian-representatives-at-the-white-house/",
+          "domain": "whitehouse.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 88,
+      "firstSeen": "2026-11-06T06:05:32.623Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0501667445d7",
+      "headline": "US House Blocks Floor Vote on Hegseth Impeachment, Refers Articles to Judiciary Committee",
+      "summary": "The US House of Representatives voted to refer articles of impeachment against Defense Secretary Pete Hegseth to the Judiciary Committee, effectively blocking an immediate floor vote. The move comes as lawmakers also face a December 11 government shutdown deadline.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "Washington, D.C., United States",
+      "countryCode": "US",
+      "subdivision": "US-DC",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6034588/house-could-vote-this-week-on-articles-of-impeachment-against-hegseth",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/trump-administration/thomas-massie-pete-hegseth-impeachment-house-defense-rcna597989",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/09/congress-senioritis-lame-duck-shutdown-2026",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/congress-returns-brutal-lame-duck-stretch-shutdown-deadline-leadership-races-closet-full-s",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
+        }
+      ],
+      "trustScore": 87,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "123c0d98f532",
+      "headline": "Indonesia's VP Gibran Offers Resignation Amid Eligibility Probe, Deepening Political Crisis",
+      "summary": "Indonesian Vice President Gibran Rakabuming Raka offered to resign as questions mount over his eligibility to hold office. The development adds to a widening political crisis in Jakarta that has already seen a fourth wiretapping suspect named and over 20,000 troops deployed to secure the capital.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -6.2088,
+      "lon": 106.8456,
+      "locationName": "Jakarta, Indonesia",
+      "countryCode": "ID",
+      "sources": [
+        {
+          "url": "https://abcnews.com/International/wireStory/indonesias-vice-president-offers-resignation-questions-mount-eligibility-138005690",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/10/g-s1-152788/indonesias-vp-offers-resignation-as-questions-mount-over-his-eligibility",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.thejakartapost.com/indonesia/2026/11/11/gibran-offers-to-resign",
+          "domain": "thejakartapost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/6/indonesia-names-fourth-wiretapping-suspect-as-political-intrigue-deepens",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/04/indonesia-security-forces-deployment-wiretapping/d5747440-d817-11f1-930a-e08f8086f5ac_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://en.tempo.co/read/2122975/prabowo-ousts-listyo-sigit-taps-ariyo-as-acting-chief-of-staff",
+          "domain": "tempo.co",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://asia.nikkei.com/politics/indonesia-chief-of-staff-sacked-for-allegedly-wiretapping-president-prabowo",
+          "domain": "nikkei.com",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-04/indonesian-police-detained-over-alleged-wiretapping-of-president/107344464",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 86,
+      "firstSeen": "2026-11-04T06:07:32.098Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f44e6a94ea89",
+      "headline": "Haiti's '400 Mawozo' Gang Leader Formally Reaches Out to UN and Disarmament Commission for Peace Talks",
+      "summary": "400 Mawozo gang leader Wilson Joseph wrote to the UN Secretary-General and Haiti's National Disarmament, Demobilization and Reintegration Commission requesting dialogue and a pause in operations, amid an intensified security push involving 2,500 Salvadoran troops deployed since late October. A rival gang leader, Mathias Saintil, was separately killed Nov 5 in a strike by Haitian police and allied forces.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 18.5944,
+      "lon": -72.3074,
+      "locationName": "Port-au-Prince, Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-02/haiti-gang-leader-calls-for-peace-after-el-salvador-sends-troops",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.taipeitimes.com/News/world/archives/2026/11/08/2003867378",
+          "domain": "taipeitimes.com",
+          "reliability": 72,
+          "bias": "center"
+        },
+        {
+          "url": "https://haitiantimes.com/2026/11/09/haiti-400-mawozo-gang-disarmament-peace-talks/",
+          "domain": "haitiantimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/06/haiti-400-mawozo-gang-disarmament-bukele-salvador/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/powerful-haitian-gang-reaches-state-disarmament-group-gunfights-137932356",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/amp/news/2026/11/7/one-less-gang-leader-haitis-prime-minister-celebrates-police-operation",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-06/haiti-pm-says-gang-leader-mathias-saintil-dead",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.foxnews.com/world/bukeles-warning-haitian-gang-leaders-forces-finish-el-salvador",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/11/1168728",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/03/latam-un-haiti-gang-salvadoran/1191793729403/",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 86,
+      "firstSeen": "2026-10-20T02:10:00.145Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "12904e2994a0",
+      "headline": "US Measles Outbreak Tops 5,000 Cases With 8 Deaths, Risking Loss of Elimination Status",
+      "summary": "The CDC reported the US measles outbreak has surpassed 5,000 cases, the highest since 1991, with at least eight deaths recorded. Health officials warn the outbreak could cost the United States its measles elimination status if transmission continues past a one-year threshold.",
+      "category": "health",
+      "severity": 3,
+      "lat": 38.9637,
+      "lon": -95.7129,
+      "locationName": "United States",
+      "countryCode": "US",
+      "subdivision": "US-KS",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/us-measles-cases-top-5-000-for-the-first-time-since-the-1990s",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/measles-outbreak-us-map-2026/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/06/us-measles-cases-exceed-5000-in-2026-reaching-their-highest-level-in-35-years",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 81,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2d79be8effe2",
+      "headline": "Ukrainian Drones Strike Ust-Luga Baltic Port as Russia Claims 146 Drones Downed Over Leningrad",
+      "summary": "Ukraine reportedly struck Russia's Ust-Luga port on the Baltic Sea, extending its campaign against Russian energy and logistics infrastructure. Russia claimed its air defenses intercepted 146 drones over the Leningrad region overnight.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 60,
+      "lon": 90,
+      "locationName": "Ust-Luga, Russia",
+      "countryCode": "RU",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/11/russia-claims-interception-of-146-drones-in-leningrad-region",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://kyivindependent.com/ukraine-reportedly-strikes-ust-luga-baltic-sea-port-as-drones-attack-regions-across-russia/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-09/ukrainian-drone-attack-at-russia-kirishi-refinery-woman-dies/107365888",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.ukrinform.net/rubric-ato/4182343-saratov-oil-refinery-on-fire-after-drone-attack-in-russia-media.html",
+          "domain": "ukrinform.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://meduza.io/en/news/2026/11/05/ukrainian-drones-strike-russia-s-ryazan-region-with-fires-reported-at-oil-refinery-and-wildberries-warehouse",
+          "domain": "meduza.io",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-03/drones-hit-russia-s-yanos-refinery-as-ukraine-steps-up-strikes",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162",
+          "domain": "themoscowtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-11-04T06:07:32.098Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ea512854c85d",
+      "headline": "Russian Drone Attack Knocks Out Power and Heating in Kryvyi Rih as Grid Strikes Continue",
+      "summary": "A Russian drone attack cut power and heating to parts of Kryvyi Rih overnight, the latest in a sustained campaign against Ukraine's energy grid. The EU has activated its emergency civil protection mechanism in response to the escalating strikes.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 47.9105,
+      "lon": 33.3918,
+      "locationName": "Kryvyi Rih, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.yahoo.com/news/articles/drone-attack-leaves-part-ukraines-235304125.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kyivpost.com/post/89737",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/09/8061955/",
+          "domain": "pravda.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cp24.com/news/world/2026/11/09/russia-and-ukraine-batter-each-other-with-long-range-strikes-a-day-before-us-brokered-talks/",
+          "domain": "cp24.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/zelenskyy-russia-attacks-us-talks/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 79,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c2b3e24db7f4",
+      "headline": "Qatari PM Makes Unscheduled G7 Stop to Brief Europeans on Iran-US Mediation After Trump Talks",
+      "summary": "Qatar's Prime Minister made an unscheduled stop in Paris to brief G7 counterparts on mediation efforts between the US and Iran, following his meeting with President Trump. European officials expressed cautious optimism about progress on both Iran diplomacy and the Gaza peace plan.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.thenationalnews.com/news/europe/2026/11/10/europeans-upbeat-after-qatari-pms-update-on-us-iran-peace-talks-and-trump-meeting/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/10/qatari-pm-makes-unscheduled-stop-at-g7-to-brief-europeans-post-trump-talks",
+          "domain": "internazionale.it",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-pm-brief-g7-and-saudi-arabia-iran-war-after-trump-talks",
+          "domain": "middleeasteye.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/trump-to-meet-qatars-prime-minister-as-iran-diplomacy-faces-hurdles-3010661",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.jpost.com/international/article-914285",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/08/trump-netanyahu-implement-gaza-peace-plan",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 79,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "cdac0c2563bf",
+      "headline": "Syria and Saudi Arabia Sign Defense Pact and $403 Million in Loans",
+      "summary": "Syria and Saudi Arabia signed a defense cooperation agreement and $403 million in loans, deepening ties as Damascus rebuilds after years of civil war. Syrian officials separately said they foiled a Hezbollah-linked plot to bomb an oil refinery near Homs.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 24.7136,
+      "lon": 46.6753,
+      "locationName": "Riyadh, Saudi Arabia",
+      "countryCode": "SA",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/5/syria-saudi-arabia-sign-defence-cooperation-deal-agree-403m-in-loans",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.jpost.com/middle-east/article-914202",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        },
+        {
+          "url": "https://english.alarabiya.net/News/middle-east/2026/11/03/syria-says-foiled-hezbollahlinked-plot-to-bomb-oil-refinery",
+          "domain": "alarabiya.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.semafor.com/article/11/06/2026/saudi-arabia-signs-defense-deal-with-syria",
+          "domain": "semafor.com",
+          "reliability": 78,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 75,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "47907ff8c64c",
+      "headline": "US Military Conducts New Lethal Strikes on Suspected Drug Boats in Caribbean",
+      "summary": "US forces carried out additional strikes against vessels suspected of smuggling narcotics in the Caribbean near Venezuela, continuing SOUTHCOM's 'Southern Spear' campaign that has killed over 235 people in 70+ strikes since September 2025. Lawmakers and Colombian/Venezuelan officials have disputed the intelligence behind the targeting claims.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 11,
+      "lon": -66,
+      "locationName": "Caribbean Sea, near Venezuela",
+      "countryCode": "XX",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/politics/trump-administration/us-military-says-latest-strike-alleged-drug-smuggling-boat-caribbean-k-rcna601550",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/u-s-kills-2-during-latest-strike-on-alleged-drug-boats-traveling-in-the-caribbean-sea",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6100257-us-strike-caribbean-boat-deaths/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 73,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b00e5318d9ec",
+      "headline": "Senegal Migrant Boat Disaster Death Toll Rises to 39",
+      "summary": "The death toll from a migrant boat that capsized off Senegal's coast near Kébémer rose to 39. The vessel was reportedly attempting the dangerous Atlantic route toward Spain's Canary Islands.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 15.39,
+      "lon": -16.45,
+      "locationName": "Kébémer, Senegal",
+      "countryCode": "SN",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/09/senegal-migration-boat-capsize-kebemer-spain-dakar/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-09/death-toll-rises-to-39-after-migrant-boat-capsizes-off-senegal",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/death-toll-rises-39-after-migrant-boat-capsizes-137968623",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 72,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bb3fa3ead8a5",
+      "headline": "Colombia Confirms Three Soldiers Dead, 16 Wounded in ELN Drone Attack on Army Base",
+      "summary": "Colombian authorities confirmed three soldiers were killed and 16 wounded in a drone attack on a military base in Santa Rosa del Sur, Bolívar. Officials attribute the strike to the ELN, linking it to new reconnaissance drone operations in the region.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 7.9633,
+      "lon": -74.0486,
+      "locationName": "Santa Rosa del Sur, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aa.com.tr/en/americas/at-least-3-colombian-soldiers-killed-8-seriously-injured-in-drone-attack-on-military-base/4115623",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cp24.com/news/world/2026/11/07/drone-attack-on-a-colombian-military-base-leaves-3-soldiers-dead/",
+          "domain": "cp24.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dronexl.co/2026/11/09/colombia-eln-drone-strike-santa-rosa-del-sur-us-reapers/",
+          "domain": "dronexl.co",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/drone-attack-colombian-military-base-leaves-3-soldiers-137945487",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.infobae.com/colombia/2026/11/07/ataque-terrorista-con-drones-contra-canton-militar-en-santa-rosa-del-sur-bolivar-3-uniformados-muertos-y-8-heridos/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "251e6918e81d",
+      "headline": "US Treasury Secretary Bessent Relocated to Military Base Over Iranian Assassination Threats",
+      "summary": "US Treasury Secretary Scott Bessent was moved to a military base after US officials assessed credible Iranian assassination threats against him. The move comes amid rising tensions between the US and Iran over recent strikes and regional escalation.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "locationName": "Washington, D.C., United States",
+      "countryCode": "US",
+      "subdivision": "US-DC",
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-10/us-treasury-chief-bessent-moved-to-military-base-after-iranian-threats-nyt-reports",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.jpost.com/middle-east/iran-news/article-914534",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e19f7ecd983c",
+      "headline": "Venezuela Ends State Monopoly, Opens Power Sector to Private Investment",
+      "summary": "Venezuela's National Assembly passed a law ending the state's decades-old monopoly over electricity generation, allowing private investors contracts of up to 25 years. The move aims to attract capital to rebuild the country's ailing power grid.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 10.4806,
+      "lon": -66.9036,
+      "locationName": "Caracas, Venezuela",
+      "countryCode": "VE",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-10/venezuela-passes-power-law-to-spur-investment-in-ailing-grid",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.france24.com/en/live-news/20261111-venezuela-opens-electricity-sector-to-private-investment",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bangkokpost.com/world/3352779/venezuela-opens-electricity-sector-to-private-investment",
+          "domain": "bangkokpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a47ad86c2348",
+      "headline": "Myanmar Junta Airstrikes Kill Civilians in Kani and Taze Townships, Sagaing Region",
+      "summary": "Myanmar's military conducted airstrikes killing civilians, including children, in Kani and Taze townships in Sagaing Region. The UN says junta airstrikes have targeted civilians at least 58 times in two weeks, following an earlier strike on a resistance-run hospital in Kawlin.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 22,
+      "lon": 95.5,
+      "locationName": "Sagaing Region, Myanmar",
+      "countryCode": "MM",
+      "sources": [
+        {
+          "url": "https://news.un.org/en/story/2026/11/1168729",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.rfa.org/english/myanmar/2026/11/10/starlink-burma-civil-war-scam-center/",
+          "domain": "rfa.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.irrawaddy.com/news/burma/58-myanmar-junta-airstrikes-target-civilians-in-two-weeks.html",
+          "domain": "irrawaddy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://myanmar-now.org/en/news/myanmar-regime-kills-three-in-airstrikes-on-hospital-in-resistance-stronghold/",
+          "domain": "myanmar-now.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://euro-burma.eu/junta-airstrike-kills-senior-doctor-4-healthcare-workers-at-hospital-in-sagaing-region/",
+          "domain": "euro-burma.eu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "20f5232b140d",
+      "headline": "Boeing to Cut About 2,500 Jobs from Commercial Airplanes Division Amid Production Slowdown",
+      "summary": "Boeing Commercial Airplanes CEO Stephanie Pope told employees November 9 the company will slow production ramp-ups and cut about 5%, roughly 2,500 jobs, from the division's 50,500 workers through layoffs and attrition. It is Boeing's first commercial-division cuts in nearly two years, with affected staff to be notified in December.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 47.4829,
+      "lon": -122.2171,
+      "locationName": "Renton, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/boeing-cuts-5-of-commercial-workforce-amid-factory-ramp-delays",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/09/boeing-will-cut-5-of-its-commercial-airplane-workf/",
+          "domain": "spokesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5a30729ba893",
+      "headline": "Portugal Declares Nationwide State of Alert as Storm Charles Makes Landfall After Battering Madeira",
+      "summary": "Portugal declared a nationwide state of alert as Storm Charles approached with winds up to 130km/h, following Storm Bruna, which had already left Madeira residents homeless. Authorities urged maximum caution as the storm threatened flooding across mainland Portugal and Spain.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 38.7223,
+      "lon": -9.1393,
+      "locationName": "Lisbon, Portugal",
+      "countryCode": "PT",
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/11/10/depression-charles-to-hit-madeira-and-portugal-as-government-urges-maximum-caution",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.portugalresident.com/state-of-alert-declared-as-storm-charles-bears-down-on-portugal/",
+          "domain": "portugalresident.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.netweather.tv/weather-forecasts/news/13650-storm-charles-brings-red-warnings-a-nationwide-state-of-alert-to-portugal-on-wednesday",
+          "domain": "netweather.tv",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.tsf.pt/sociedade/artigo/depressao-bruna-traz-chuva-vento-e-agitacao-maritima-continente-madeira-e-grupo-oriental-dos-acores-sob-avisos/18145182",
+          "domain": "tsf.pt",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.theportugalnews.com/news/2026-11-06/weather-warning-issued-in-portugal-as-storms-are-coming/1112047",
+          "domain": "theportugalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thespanisheye.com/2026/11/07/storm-bruna-sparks-weather-alerts-in-malaga-cadiz-sevilla-and-huelva/",
+          "domain": "thespanisheye.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "162626d5d4ac",
+      "headline": "Airstrikes Near Yemen's Capital Sanaa Kill at Least 27 Amid Houthi-Government Fighting",
+      "summary": "Airstrikes near Sanaa killed at least 27 people in Al-Shariya village, as Yemeni government forces reported battlefield advances. Houthi officials said missile and drone attacks also struck Saudi oil sites and Riyadh's airport.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 15.3694,
+      "lon": 44.191,
+      "locationName": "Al-Shariya, Yemen",
+      "countryCode": "YE",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-07/an-airstrike-has-killed-22-people-near-yemens-capital-houthi-official-says",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286",
+          "domain": "wionews.com",
+          "reliability": 65,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "faa66019dc2d",
+      "headline": "Israel Widens Strikes on Hezbollah Positions Across Five Southern Lebanon Villages",
+      "summary": "Israel intensified airstrikes on suspected Hezbollah positions across five villages in southern Lebanon, days after a strike killed three sisters and their grandmother in Aynata. Lebanese residents are stocking up on supplies amid fears of further escalation despite a framework ceasefire deal.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 33.1208,
+      "lon": 35.4294,
+      "locationName": "Southern Lebanon",
+      "countryCode": "LB",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/6/lebanese-pack-bags-and-stock-up-amid-fears-of-new-israeli-escalation",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.naharnet.com/stories/en/323567-israeli-strikes-target-tallousa-aita-al-jabal-and-hadatha-harees",
+          "domain": "naharnet.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.middleeastmonitor.com/20261107-israeli-army-continues-strikes-in-southern-lebanon-despite-framework-deal/",
+          "domain": "middleeastmonitor.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.middleeasteye.net/news/israel-lebanon-children-grandmother-killed-israel-strike",
+          "domain": "middleeasteye.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ynetnews.com/article/hkfjlib76",
+          "domain": "ynetnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aa.com.tr/en/middle-east/israeli-army-continues-strikes-in-southern-lebanon-despite-framework-deal/4115101",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://shafaq.com/en/Middle-East/Israeli-shelling-demolitions-hit-southern-Lebanon",
+          "domain": "shafaq.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 67,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "096794d89fc4",
+      "headline": "Sudanese Army Reports Gains Against RSF in West Kordofan Offensive",
+      "summary": "Sudan's army said it made territorial gains against the Rapid Support Forces in the El-Khwei area of West Kordofan, as fighting in the region intensifies. The advance follows weeks of escalating clashes that prompted Ethiopia to expel Sudanese diplomats.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 13.0833,
+      "lon": 29.2667,
+      "locationName": "West Kordofan, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://sudantribune.com/article/321005",
+          "domain": "sudantribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.radiotamazuj.org/en/news/article/sudanese-army-reports-gains-in-west-kordofan-offensive",
+          "domain": "radiotamazuj.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.middleeastmonitor.com/20261108-sudanese-army-takes-control-of-key-area-in-west-kordofan/",
+          "domain": "middleeastmonitor.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aa.com.tr/en/middle-east/sudanese-army-downs-4th-drone-in-week-as-troops-advance-against-rsf-in-west-kordofan/4116366",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.streetinsider.com/Reuters/Ethiopia+expels+Sudanese+diplomats+after+fresh+allegations+of+support+for+RSF/27285393.html",
+          "domain": "streetinsider.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/ethiopia-expels-sudanese-diplomats-after-fresh-allegations-of-support-for-rsf-3009806",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e13a9771f52f",
+      "headline": "Bangladesh Rejects Sheikh Hasina's Passport Request Ahead of Planned December Return",
+      "summary": "Bangladesh's government denied ousted Prime Minister Sheikh Hasina's request for a new passport from its High Commission in Delhi, where she has sought refuge in India. Officials said they would not provide travel documents to a 'terrorist' ahead of her reportedly planned December return.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 23.8103,
+      "lon": 90.4125,
+      "locationName": "Dhaka, Bangladesh",
+      "countryCode": "BD",
+      "sources": [
+        {
+          "url": "https://www.yahoo.com/news/world/articles/bangladesh-rebuffs-hasinas-bid-passport-170342843.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://theprint.in/world/exclusive-sheikh-hasina-seeks-new-passport-to-return-to-bangladesh-government-denies-request/3094138/",
+          "domain": "theprint.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.deccanherald.com/world/rest-of-world/doesnt-provide-passport-to-a-terrorist-sheikh-hasina-seeks-new-passport-to-return-to-bangladesh-govt-denies-request-4212650",
+          "domain": "deccanherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.tribuneindia.com/news/world/examining-bangladeshs-request-for-sheikh-hasinas-extradition-mea/amp",
+          "domain": "tribuneindia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.siasat.com/bangladesh-calls-hasina-convicted-criminal-seeks-extradition-3571711/",
+          "domain": "siasat.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "96a426113634",
+      "headline": "Train Collision Near El Ayyat, Giza Kills Seven, Injures Over 100 in Egypt",
+      "summary": "A passenger train from Giza to Faiyum collided with the rear of a stationary train on the Cairo-Aswan line near El Ayyat, derailing multiple cars. At least 7 people were killed, including the driver, and more than 100 injured; President Sisi ordered an investigation amid domestic calls for the transport minister's resignation.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 29.61,
+      "lon": 31.26,
+      "locationName": "El Ayyat, Giza, Egypt",
+      "countryCode": "EG",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/news/trains-collision-egypt-giza/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/collision-between-2-trains-in-egypt-kills-7-and-injures-more-than-100",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b1a5a45b6121",
+      "headline": "France Formally Blames Iran for Cyberattack on Supermarket Refrigeration Systems",
+      "summary": "France formally accused Iran of orchestrating a cyberattack that disrupted refrigeration systems at supermarkets across the country. The incident adds to a string of alleged Iranian cyber operations against European infrastructure amid rising tensions over Iran's nuclear and regional activities.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/europe/france-accuses-iran-of-fridge-cyberattack-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/09/france-cyberattack-supermarket-refrigerators-iran/3b8de2d2-dc61-11f1-912c-4fbb80d73f7f_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/9/france-accuses-iran-of-cyberattack-on-european-fridges",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 64,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "97a55abbbdd5",
+      "headline": "Le Pen and Mélenchon Lead Early 2027 French Presidential Polling as Lecornu Accelerates Minimum-Wage Hike",
+      "summary": "A new poll shows Marine Le Pen (34-36%) and Jean-Luc Mélenchon (18-19%) consolidating leads for the first round of France's 2027 presidential race. Separately, PM Sébastien Lecornu, facing weeks of cost-of-living protests, announced bringing forward a 1.6% minimum-wage increase from January to December after talks with unions, though unions called the raise insufficient.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/france/20261109-french-pm-lecornu-announces-increase-minimum-wage-bid-to-calm-protests",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-09/le-pen-and-melenchon-ahead-in-2027-french-presidential-race-poll-shows",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 64,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0d18d08f09b6",
+      "headline": "US Army Officer Arrested in UK on Suspicion of Spying for Russia",
+      "summary": "British authorities arrested a US Army officer near Gloucester on suspicion of espionage for Russia. The arrest adds to heightened concerns about Russian intelligence activity in the UK amid the ongoing war in Ukraine.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 51.8642,
+      "lon": -2.2382,
+      "locationName": "Gloucester, United Kingdom",
+      "countryCode": "GB",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/10/us-soldier-arrested-in-uk-over-alleged-russian-espionage",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/International/us-soldier-accused-spying-russia-arrested-uk-officials/story?id=138023103",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 63,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5406d84588f7",
+      "headline": "Lawsuit Filed to Block Washington State's Transgender Student-Athlete Initiative 638",
+      "summary": "On Nov. 9, TransFamilies, the Washington Education Association, ACLU of Washington, and parents of both cisgender and transgender student-athletes filed suit in King County Superior Court seeking to block voter-approved Initiative 638, which requires sex verification for girls' school sports before its Dec. 3 effective date. The suit alleges violations of the state constitution's privacy, equal-rights, and education-access provisions.",
+      "category": "society",
+      "severity": 3,
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "locationName": "Seattle, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.cascadiadaily.com/2026/nov/10/parents-groups-sue-over-transgender-student-athletes-initiative/",
+          "domain": "cascadiadaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/10/lawsuit-filed-to-block-washingtons-recently-passed/",
+          "domain": "spokesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/local/seattle/2026/11/10/washington-i638-lawsuit-student-sex-verification-privacy",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/10/parents-groups-sue-over-transgender-student-athletes-initiative/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3e63d6d1a654",
+      "headline": "Poland Orders Review of Gun Laws After Kraków's First Mass Shooting",
+      "summary": "Polish Prime Minister Tusk ordered a review of the country's gun laws following a mass shooting in Kraków described as the country's first, which authorities are treating as a terrorist attack. Ministers have floated tighter firearm controls in response.",
+      "category": "society",
+      "severity": 3,
+      "lat": 50.0647,
+      "lon": 19.945,
+      "locationName": "Kraków, Poland",
+      "countryCode": "PL",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-10/polish-premier-orders-gun-laws-review-after-first-mass-shooting",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://edition.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://notesfrompoland.com/2026/11/09/polish-government-ministers-suggest-tighter-gun-controls-after-deadly-terrorist-shooting/",
+          "domain": "notesfrompoland.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 60,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "83f33249cacd",
+      "headline": "More Than 50,000 Flee Into Kenya as Ethiopia's Oromia-Somali Border Clashes Escalate",
+      "summary": "More than 50,000 people have fled into Kenya to escape deadly clashes along the Oromia-Somali regional border near Moyale, Ethiopia. The violence is distinct from the separate conflict-driven health crisis in Ethiopia's Amhara region.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 3.5167,
+      "lon": 39.05,
+      "locationName": "Moyale, Ethiopia",
+      "countryCode": "ET",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/9/more-than-50000-displaced-by-deadly-ethiopia-border-clashes",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/sporadic-gunfire-sends-ethiopians-fleeing-kenya-trucks-remain-137699895",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.latintimes.com/ethiopia-moyale-conflict-displacement-kenya-601108",
+          "domain": "latintimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 59,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f75915a1e5d7",
+      "headline": "Spain Holds First Joint General Strike Since 2012 Over Housing Costs Ahead of Election",
+      "summary": "Spanish unions CCOO and UGT led a nationwide general strike over soaring housing costs and cost-of-living pressures, the first joint walkout of its kind since 2012. The action comes two weeks before Spain's November 29 snap election.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "locationName": "Madrid, Spain",
+      "countryCode": "ES",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/10/spain-braces-for-nationwide-walkout-as-anger-over-housing-costs-boils-over",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-10-07/spanish-unions-call-general-strike-for-november-11-weeks-before-snap-election",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thelocal.es/20261110/spain-faces-general-strike-over-housing-ahead-of-election",
+          "domain": "thelocal.es",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bb894b6cb523",
+      "headline": "St. Louis House Fire Kills 2-Year-Old Girl, Five Hospitalized in Carondelet Neighborhood",
+      "summary": "A predawn fire around 4 a.m. Nov. 11 in the Carondelet neighborhood killed a 2-year-old girl and sent two adults and three children to the hospital for smoke exposure. The home reportedly had no electricity, residents were using candles and a small heater, and there were no working smoke detectors.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 38.567,
+      "lon": -90.2634,
+      "locationName": "St. Louis, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.kfvs12.com/2026/11/11/1-child-dead-5-people-taken-hospital-following-fire-south-city/",
+          "domain": "kfvs12.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.firstalert4.com/2026/11/11/1-child-dead-5-people-taken-hospital-following-fire-south-city/",
+          "domain": "firstalert4.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://fox2now.com/news/missouri/emergency-crews-respond-to-south-st-louis-house-fire/",
+          "domain": "fox2now.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ksdk.com/video/news/local/2-year-old-killed-in-south-st-louis-house-fire/63-25c316ae-1df5-4f57-aefe-bd23b6aa0fbc",
+          "domain": "ksdk.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fbd382f6358c",
+      "headline": "Oklahoma Supreme Court Strikes Down Initiative-Petition Restriction Law SB 1027",
+      "summary": "In a 5-4 ruling issued Nov. 10, the Oklahoma Supreme Court held SB 1027 unconstitutional and void in its entirety. The court found its registered-voter requirement for petition circulators, county signature caps, and ban on incentive pay for circulators violated First Amendment protections for political speech and the right to petition.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.kosu.org/politics/2026-11-10/oklahoma-supreme-court-strikes-down-restrictions-on-citizen-initiative-petitions",
+          "domain": "kosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nondoc.com/2026/11/10/prior-restraints-and-compelled-speech-burdens-supreme-court-strikes-sb-1027-on-initiative-petitions/",
+          "domain": "nondoc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.news9.com/oklahoma-politics/oklahoma-supreme-court-sb-1027-unconstitutional",
+          "domain": "news9.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ktul.com/news/local/oklahoma-supreme-court-strikes-down-law-adding-restrictions-to-ballot-petitions-11-10-2026",
+          "domain": "ktul.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "08fd27e76424",
+      "headline": "Ninth Circuit Partially Blocks California's SB 253/SB 261 Climate-Disclosure Laws",
+      "summary": "A divided Ninth Circuit panel ruled Nov. 9 in Chamber of Commerce v. Sanchez that SB 253's Scope 1 and Scope 2 greenhouse-gas reporting may proceed, but found SB 253's Scope 3 supply-chain emissions reporting and SB 261's climate-risk financial disclosure requirement likely unconstitutional as compelled speech. The case returns to district court on severability; this is a preliminary-injunction ruling, not a final judgment.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "locationName": "San Francisco, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.courtlistener.com/opinion/11057787/united-states-of-america-chamber-of-commerce-v-sanchez/",
+          "domain": "courtlistener.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/25-5327/25-5327-2026-11-09.html",
+          "domain": "justia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://environmentalhealthsafetybrief.sidley.com/2026/11/10/sb-253-sb-261-update-ninth-circuit-lets-scope-1-and-scope-2-disclosures-proceed-finds-scope-3-and-sb-261-likely-unconstitutional/",
+          "domain": "sidley.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://natlawreview.com/article/split-decision-ninth-circuit-lets-californias-scope-1-and-2-emissions-reporting",
+          "domain": "natlawreview.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "edb21a97ede1",
+      "headline": "Salvadoran Troops and Haitian Police Kill 20 in Raid on '400 Mawozo' Gang Headquarters",
+      "summary": "Haitian police backed by roughly 2,000 Salvadoran troops destroyed the headquarters of the '400 Mawozo' gang near Port-au-Prince, killing 20 people. Amnesty International urged security forces to comply with international human rights law during the operation.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 18.5944,
+      "lon": -72.3074,
+      "locationName": "Port-au-Prince, Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/10/salvadoran-troops-target-haitian-gang-leaving-20-dead",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.france24.com/en/americas/20261111-haiti-pm-bukele-salvadoran-troops-gang-headquarters",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e17e55d55aba",
+      "headline": "Taiwan Closes Representative Office in Papua New Guinea, Ends LNG Purchases",
+      "summary": "Taiwan announced it is closing its representative office in Papua New Guinea and ending LNG purchases from the country, blaming Chinese pressure. The move marks a further contraction of Taiwan's diplomatic footprint in the Pacific.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -9.4438,
+      "lon": 147.1803,
+      "locationName": "Port Moresby, Papua New Guinea",
+      "countryCode": "PG",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/6/taiwan-to-close-representative-office-in-papua-new-guinea-blames-china",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.abc.net.au/pacific/taiwan-shuts-papua-new-guinea-office-and-ends-lng-buying/107362812",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1cc6192e86c2",
+      "headline": "Israeli Strikes Kill at Least Seven Palestinians in Gaza Despite Ceasefire",
+      "summary": "Israeli attacks killed at least seven Palestinians in Gaza, including a father and son, despite a ceasefire agreement in place. Medics in Gaza City reported continued casualties from sporadic strikes.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 31.5017,
+      "lon": 34.4668,
+      "locationName": "Gaza City, Gaza",
+      "countryCode": "PS",
+      "sources": [
+        {
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/11/father-and-son-among-at-least-seven-killed-in-israeli-attacks-on-gaza/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/10/israeli-attacks-kill-at-least-six-in-gaza-including-father-and-son",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/israeli-fire-kills-father-and-son-in-gaza-medics-say-3010957",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 56,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "69f37cc6d58e",
+      "headline": "Shapiro Pledges $15 Minimum Wage, Abortion-Rights Codification After Democrats Win Pennsylvania Trifecta",
+      "summary": "Pennsylvania Democrats won control of the governorship, House and Senate for the first time since 1993. Gov. Josh Shapiro pledged his first priority bills will raise the minimum wage from $7.25 to $15 an hour and codify abortion rights into state law.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.2732,
+      "lon": -76.8867,
+      "locationName": "Harrisburg, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://thehill.com/homenews/state-watch/6209350-shapiro-promises-minimum-wage-hike/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.inquirer.com/politics/pennsylvania/minimum-wage-pennsylvania-shapiro-house-senate-democrats-20261105.html",
+          "domain": "inquirer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://whyy.org/articles/pennsylvania-democrats-trifecta/",
+          "domain": "whyy.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 53,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b742e7a683f2",
+      "headline": "Auto Supplier Dakkota to Close Detroit Plant, Cutting 397 Jobs",
+      "summary": "Dakkota Integrated Systems is closing its Detroit instrument-panel plant in two phases, on December 31, 2026 and March 31, 2027, after losing Stellantis contracts for the Jeep Grand Cherokee and Dodge Durango. The closure will eliminate 397 jobs.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 42.3314,
+      "lon": -83.0458,
+      "locationName": "Detroit, Michigan, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MI",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/economy/policy/articles/dakkota-closing-kettering-dash-panel-124500764.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.plasticstoday.com/automotive-mobility/dakkota-to-close-detroit-plant-cut-397-jobs",
+          "domain": "plasticstoday.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.motorbiscuit.com/supplier-dakkota-closing-detroit-plant-cutting-397-jobs-following-stellantis-contract-loss/",
+          "domain": "motorbiscuit.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8c2164505949",
+      "headline": "Brazil's Real Slides as Lula Government Readies Fiscal-Adjustment Package",
+      "summary": "Brazil's currency weakened as President Lula's economic team prepared a fiscal-adjustment package worth an estimated 50-60 billion reais for 2027 to calm market concerns over high interest rates and spending. Lula pledged budget discipline amid investor jitters.",
+      "category": "economy",
+      "severity": 3,
+      "lat": -15.7939,
+      "lon": -47.8828,
+      "locationName": "Brasília, Brazil",
+      "countryCode": "BR",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/lula-team-readies-brazil-fiscal-plan-in-bid-to-calm-market-jitters",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.investing.com/news/economy-news/brazils-lula-worried-about-high-interest-rates-pledges-budget-discipline-5010375",
+          "domain": "investing.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7ba19d8af274",
+      "headline": "Kraft Group's Proposed $16 Billion Data Center Campus Draws Resident Pushback in Sutton, Massachusetts",
+      "summary": "The Kraft Group and Unified Global Packaging Group proposed a roughly $16 billion, 900MW, multi-building data center campus in Sutton. At a Nov. 10 Select Board meeting, residents voiced noise concerns and pushed for a possible moratorium; the board deferred a vote pending further public forums.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 42.1515,
+      "lon": -71.7623,
+      "locationName": "Sutton, Massachusetts, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MA",
+      "sources": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/10/business/kraft-group-data-centers-sutton-mass/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcvb.com/article/sutton-select-board-to-review-16-billion-data-center-proposal/74384942",
+          "domain": "wcvb.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://whdh.com/news/sutton-to-discuss-plans-to-build-data-center-in-16-billion-project-proposed-in-part-by-the-kraft-group/",
+          "domain": "whdh.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8acbe40c319f",
+      "headline": "Federal Government Blocks About $113 Million in Minnesota Medicaid Reimbursements Over Fraud Concerns",
+      "summary": "CMS, under the Trump administration, will not reimburse Minnesota for nearly $113 million spent on Medicaid provider payments flagged as high fraud-risk, denying 78 of 330 claims reviewed for issues like missing documentation and unsigned provider agreements. It is part of a larger $550 million in frozen Medicaid funds; Minnesota AG Keith Ellison's office is challenging the deferrals in court.",
+      "category": "health",
+      "severity": 3,
+      "lat": 44.9537,
+      "lon": -93.09,
+      "locationName": "St. Paul, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.startribune.com/minnesota-medicaid-113-million-withheld/601903238",
+          "domain": "startribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.willmarradio.com/news/feds-deny-minnesota-113-million-in-medicaid-reimbursements/article_65f453f4-ddd6-4a9b-b7b1-79df4cecedc6.html",
+          "domain": "willmarradio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtonsun.com/health/trump-administration-strips-minnesota-medicaid-funds",
+          "domain": "washingtonsun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f2c4cb32ed7a",
+      "headline": "Cherokee Nation Council Votes Unanimously to Oppose $4 Billion Inola, Oklahoma Aluminum Smelter",
+      "summary": "The 17-member Cherokee Nation Tribal Council unanimously passed a resolution, reported Nov. 11, backing the neighboring Muscogee Nation's opposition to the proposed $4 billion Century Aluminum/Emirates Global Aluminum smelter near Inola. The resolution cites cross-border pollution concerns and calls for full tribal consultation; the project has support from Oklahoma Gov. Kevin Stitt and the state government.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 36.1559,
+      "lon": -95.5155,
+      "locationName": "Inola, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.kgou.org/indigenous-news/2026-11-11/cherokee-nation-issues-resolution-to-oppose-inola-smelter",
+          "domain": "kgou.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kosu.org/kosudaily/2026-11-11/headlines-initiative-petition-restrictions-cherokees-oppose-smelter-route-66-centennial",
+          "domain": "kosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://okenergytoday.com/2026/11/cherokee-nation-takes-stand-against-inola-smelter/",
+          "domain": "okenergytoday.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bea1b4e24616",
+      "headline": "Montana Regulators Approve $15.4 Billion NorthWestern Energy-Black Hills Corp. Merger",
+      "summary": "The Montana Public Service Commission voted 3-2 on Nov. 10 to approve the $15.4 billion merger of NorthWestern Energy and Black Hills Corp., creating a new parent company called Bright Horizon Energy Corp. A majority of public commenters had opposed the deal.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 46.5891,
+      "lon": -112.0391,
+      "locationName": "Helena, Montana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MT",
+      "sources": [
+        {
+          "url": "https://dailymontanan.com/2026/11/10/public-service-commission-approves-northwestern-energy-black-hills-corp-merger/",
+          "domain": "dailymontanan.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/montana-psc-approves-northwestern-energy-merger-with-black-hills",
+          "domain": "nbcmontana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://rapidcitypost.com/southdakotasearchlight-government-f827f9e647",
+          "domain": "rapidcitypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4b3607d272b5",
+      "headline": "Three Washington School Districts Prepare to Sue State Over $800 Million Funding Shortfall",
+      "summary": "Lake Washington and Tacoma school boards passed resolutions Oct. 22, and Yakima followed Nov. 2, authorizing participation in a prospective lawsuit alleging the state has fallen out of compliance with its McCleary-era obligation to fully fund basic education. The districts cite an estimated $800 million shortfall forcing layoffs, larger class sizes, and reliance on local levies; no lawsuit has been filed yet as of Nov. 9.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 47.2529,
+      "lon": -122.4443,
+      "locationName": "Tacoma, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/09/washington-schools-prepare-to-sue-the-state-for-failing-to-fund-public-education/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cascadiadaily.com/2026/nov/09/3-major-school-districts-prepare-to-sue-state-over-funding-shortfall/",
+          "domain": "cascadiadaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yakimaherald.com/news/local/education/yakima-school-district-will-join-education-funding-lawsuit-against-the-state/article_f3438245-d348-4a39-b6a5-13b8c4325e19.html",
+          "domain": "yakimaherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "62c7b33866e0",
+      "headline": "Teamsters Strike at Associated Grocers Northeast Disrupts New England Grocery Deliveries",
+      "summary": "More than 250 Teamsters Local 633 members have been on strike since early November at Associated Grocers Northeast's Pembroke, New Hampshire distribution center after their contract expired October 17, with pensions a key sticking point. The strike has caused delivery delays and shelf shortages at grocery stores across New Hampshire, Vermont, Maine and upstate New York.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 43.2334,
+      "lon": -71.3978,
+      "locationName": "Pembroke, New Hampshire, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NH",
+      "sources": [
+        {
+          "url": "https://www.nhpr.org/nh-news/2026-11-06/teamsters-union-strike-associated-grocers-newhampshire",
+          "domain": "nhpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.concordmonitor.com/2026/11/05/strike-is-on-at-associated-grocers-in-pembroke-effect-on-stores-unclear/",
+          "domain": "concordmonitor.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcax.com/2026/11/06/major-new-england-strike-leaves-grocery-store-shelves-empty/",
+          "domain": "wcax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "41f444a8602e",
+      "headline": "Pennsylvania Secures Record $7.8 Million Child-Labor Settlement with Walmart",
+      "summary": "The Shapiro administration announced a $7.8 million settlement with Walmart, the largest child-labor enforcement action in Pennsylvania history, after audits found an average of 65 violations at each of eight stores. The deal requires compliance reforms across Walmart's Pennsylvania locations.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 40.2732,
+      "lon": -76.8867,
+      "locationName": "Harrisburg, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.inquirer.com/business/walmart-settlement-pennsylvania-child-labor-law-20261109.html",
+          "domain": "inquirer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://penncapital-star.com/labor/walmart-settles-pa-child-labor-violations-for-7-8-million/",
+          "domain": "penncapital-star.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/walmart-agrees-to-7-8-million-settlement-for-violating-pa-s-child-labor-laws/",
+          "domain": "nbcphiladelphia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5c1ce506abe7",
+      "headline": "West Virginia State Auditor Faces Federal Grand Jury Subpoena Over Tax Deed Scandal",
+      "summary": "State Auditor Mark Hunt confirmed he received a federal grand jury subpoena after a WV Watch investigation found he personally signed nine tax deeds benefiting a friend's company. West Virginia Democrats are calling for an immediate investigation.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://www.newsandsentinel.com/news/local-news/2026/11/state-auditor-hunt-defends-personal-involvement-in-deeds-for-friend-former-employee/",
+          "domain": "newsandsentinel.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://westvirginiawatch.com/2026/11/09/wv-democratic-party-calls-for-immediate-investigation-of-auditor-mark-hunt/",
+          "domain": "westvirginiawatch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wvgazettemail.com/news/mccuskey-pushes-back-on-auditor-hunt-s-claim-wv-dems-call-for-immediate-investigation/article_ad0b6062-944c-5918-b40d-db2397808dd3.html",
+          "domain": "wvgazettemail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7ef0b55d443e",
+      "headline": "Suniva Begins Construction on $600 Million Solar Cell Plant in Laurens County, South Carolina",
+      "summary": "Suniva broke ground on a 4.5 GW solar-cell manufacturing facility backed by an $835 million capital raise, expected to create about 560 jobs by 2028. The expansion would bring Suniva's total US production capacity to 5.5 GW.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 34.5098,
+      "lon": -82.0229,
+      "locationName": "Laurens County, South Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-SC",
+      "sources": [
+        {
+          "url": "https://www.stocktitan.net/news/SUNE/update-suniva-begins-expansion-to-increase-u-s-solar-cell-capacity-ujaye9j1r8ul.html",
+          "domain": "stocktitan.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://americanfactorytracker.com/projects/suniva-laurens-county-solar-cell-manufacturing-facility",
+          "domain": "americanfactorytracker.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "http://pv-magazine-usa.com/2026/09/09/suniva-raises-835-million-to-drive-4-5-gw-in-new-domestic-cell-capacity/",
+          "domain": "pv-magazine-usa.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "55b68a727670",
+      "headline": "Peace River Flooding Inundates Homes in Arcadia, Florida's DeSoto County",
+      "summary": "The Peace River crested at major flood stage of about 16 feet 4 inches, sending waist-high water into the River Acres neighborhood of Arcadia and flooding dozens of homes, buildings and vehicles. About 100 animals were evacuated from a nearby wildlife park as floodwaters began to recede.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 27.2153,
+      "lon": -81.8581,
+      "locationName": "Arcadia, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.wjhg.com/2026/11/09/arcadia-cleaning-up-peace-river-floodwaters-recede/",
+          "domain": "wjhg.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox13news.com/news/peace-river-flooding-threatening-dozens-neighborhood-homes-noaa",
+          "domain": "fox13news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.gulfcoastnewsnow.com/article/peace-river-flood-rain-crest-arcadia-desoto/74350970",
+          "domain": "gulfcoastnewsnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1f43bf6b73ce",
+      "headline": "Kansas Governor's Race Remains Uncalled a Week After Election as Mandatory Audit Proceeds",
+      "summary": "Democrat Cindy Holscher leads Republican Ty Masterson by about 7,000 votes, a margin under 1% that triggered a mandatory close-race audit in the Kansas governor's race. The recount deadline is November 17, with five other races also under audit.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.0473,
+      "lon": -95.6752,
+      "locationName": "Topeka, Kansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-KS",
+      "sources": [
+        {
+          "url": "https://www.kwch.com/2026/11/10/nearly-week-after-midterm-election-governors-race-is-still-too-close-call/",
+          "domain": "kwch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://kansasreflector.com/2026/11/04/trailing-by-less-than-1-ty-masterson-calls-for-another-look-at-results-in-kansas-governors-race/",
+          "domain": "kansasreflector.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kake.com/news/politics/close-race-audits-for-6-kansas-races-including-governor-race/article_4af3e433-06ba-41eb-9eba-3cf1fa6648a4.html",
+          "domain": "kake.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "cab85ee8cb1e",
+      "headline": "Illinois Governor Pritzker Appeals FEMA's Denial of Disaster Aid for Flood-Hit Counties",
+      "summary": "Gov. JB Pritzker appealed FEMA's denial of disaster assistance for eight Illinois counties hit by August flooding, tornadoes and high winds, submitting updated damage estimates of $43 million versus FEMA's $24.9 million threshold. The appeal has bipartisan support from 18 state lawmakers.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.7817,
+      "lon": -89.6501,
+      "locationName": "Springfield, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://capitolnewsillinois.com/news/pritzker-appeals-femas-decision-to-deny-illinois-disaster-aid/",
+          "domain": "capitolnewsillinois.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.dailyherald.com/20261108/article/illinois-appeals-fema-denial-of-disaster-assistance-from-summer-storms/",
+          "domain": "dailyherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.shawlocal.com/news/2026/11/08/pritzker-appeals-femas-decision-to-deny-illinois-disaster-aid/",
+          "domain": "shawlocal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "de63140db9ab",
+      "headline": "Trona Workers Rally Against WE Soda's Plan to Cut 350 Jobs in Sweetwater County, Wyoming",
+      "summary": "WE Soda plans to cut about 350 jobs, shrinking its Westvaco trona mine workforce from roughly 850 to 500 over two years, as it shifts from underground to in-situ solution mining amid cheap Chinese soda-ash exports. More than 100 workers and community members rallied on November 9, saying no severance has been offered.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 41.5288,
+      "lon": -109.4664,
+      "locationName": "Green River, Wyoming, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WY",
+      "sources": [
+        {
+          "url": "https://wyofile.com/wyoming-trona-workers-demonstrate-amid-pending-layoffs-lives-are-at-risk-here/",
+          "domain": "wyofile.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://cowboystatedaily.com/2026/11/04/a-sucker-punch-we-soda-to-cut-350-jobs-in-shift-away-from-underground-mining/",
+          "domain": "cowboystatedaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sweetwaternow.com/we-soda-to-cut-about-350-wyoming-jobs-shift-westvaco-to-solution-mining/",
+          "domain": "sweetwaternow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "199cd5f92c40",
+      "headline": "Powerful Windstorm Cuts Power to Over 100,000 in Western Washington as Second Atmospheric River Approaches",
+      "summary": "A cold front brought wind gusts up to 69-95 mph overnight November 7-8, knocking out power to between 100,000 and 115,000 customers across western Washington. A second, stronger atmospheric river was moving into the Puget Sound region November 9-10 with warnings of major flooding risk.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "locationName": "Seattle, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://komonews.com/news/local/strong-winds-heavy-rain-knock-out-power-to-thousands-in-seattle",
+          "domain": "komonews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox13seattle.com/news/power-outages-wa",
+          "domain": "fox13seattle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://emeraldcityweather.com/pacific-northwest-windstorm-cold-front-seattle-weather-november-7-2026/",
+          "domain": "emeraldcityweather.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f3104355b458",
+      "headline": "Ransomware Attack Disrupts All 66 Queens Public Library Branches in New York City",
+      "summary": "A ransomware attack discovered around Nov. 4 took down Queens Public Library's website, Wi-Fi, checkout systems, app and digital media across all 66 branches. Branches remained open while the NYPD and FBI investigate; restoration work is ongoing.",
+      "category": "society",
+      "severity": 3,
+      "lat": 40.7282,
+      "lon": -73.7949,
+      "locationName": "Queens, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://gothamist.com/news/queens-public-library-online-system-downed-by-ransomware-hack-officials-said",
+          "domain": "gothamist.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ny1.com/nyc/all-boroughs/news/2026/11/05/ransomware-attack-disrupts-queens-public-library-services",
+          "domain": "ny1.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.theregister.com/cyber-crime/2026/11/05/new-yorks-queens-public-library-battles-ransomware-crims-wi-fi-checkouts-and-website-go-dark/5307796",
+          "domain": "theregister.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8c525e6c71c5",
+      "headline": "Four People Killed in House Fire in Grand Meadow, Minnesota",
+      "summary": "A fire at a single-family home in Grand Meadow killed four people on the morning of Nov. 8. The Mower County Sheriff's Office, state fire marshal and Minnesota Bureau of Criminal Apprehension are investigating; victims had not yet been identified.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 43.7102,
+      "lon": -92.5724,
+      "locationName": "Grand Meadow, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/minnesota/news/4-dead-in-grand-meadow-house-fire-sheriff-says/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kttc.com/2026/11/09/four-dead-after-grand-meadow-house-fire/",
+          "domain": "kttc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4e5d234e313c",
+      "headline": "Record Flooding Causes Major Highway Damage Near Pagosa Springs, Colorado",
+      "summary": "October 2026 storms pushed the San Juan River to its highest level since 1911, destroying or damaging bridges and causing more than $65 million in damage across roughly 100 miles of US-160 between Durango and South Fork. Recovery efforts are continuing into November.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 37.2696,
+      "lon": -107.0101,
+      "locationName": "Pagosa Springs, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://coloradosun.com/2026/11/03/flooding-southwestern-colorado-recovery/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/amp/colorado/news/pagosa-springs-colorado-extreme-flooding-evacuations",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1046f5538563",
+      "headline": "Colombia Probes Alleged Plan by Intelligence Agency to Spy on Ex-Presidents Under Petro",
+      "summary": "Leaked documents allege Colombia's DNI intelligence agency planned to spy on former presidents and interfere in elections during the Petro administration. Prosecutors have opened an investigation into the allegations.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 4.711,
+      "lon": -74.0721,
+      "locationName": "Bogotá, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://colombiaone.com/2026/11/09/colombia-probes-election-misuse-petro-era-intelligence-agency/",
+          "domain": "colombiaone.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.elheraldo.co/colombia/2026/11/09/escandalo-de-irregularidades-en-la-dni-durante-el-gobierno-de-petro-hubo-intentos-de-interferir-en-procesos-electorales/",
+          "domain": "elheraldo.co",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.infobae.com/colombia/2026/11/09/documentos-secretos-de-la-dni-revelarian-plan-para-espiar-a-expresidentes-e-interferir-en-elecciones-durante-el-gobierno-petro/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "adbb2888a192",
+      "headline": "Record Rainfall Triggers Deadly Floods and Landslides Across Central Vietnam",
+      "summary": "Record-breaking rainfall triggered widespread flooding and landslides across central Vietnam, affecting Da Nang, Hue and Quang Tri provinces. Authorities ordered flood preparations as rainfall records were shattered in multiple provinces.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 16.0544,
+      "lon": 108.2022,
+      "locationName": "Da Nang, Vietnam",
+      "countryCode": "VN",
+      "sources": [
+        {
+          "url": "https://e.vnexpress.net/news/news/environment/14-rain-records-shattered-as-november-storms-devastate-central-vietnam-4989705.html",
+          "domain": "vnexpress.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.tuoitre.vn/heavy-downpours-hit-central-vietnam-but-miss-the-hydropower-dams-that-need-them-most-103261110141523338.htm",
+          "domain": "tuoitre.vn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.netnewsledger.com/2026/11/08/international-weather-vietnam-orders-flood-preparations-as-central-coast-faces-extreme-rain/",
+          "domain": "netnewsledger.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7fd6b8b6e921",
+      "headline": "Virginia Becomes First Southern State to Repeal Same-Sex Marriage Ban",
+      "summary": "Virginia voters repealed the 2006 Marshall-Newman Amendment on Nov. 3, passing a replacement recognizing marriage as a fundamental right by roughly 57%-43%. The change takes effect Jan. 1, 2027 upon certification, making Virginia the first Southern state to enshrine marriage equality.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 37.5407,
+      "lon": -77.436,
+      "locationName": "Richmond, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
+      "sources": [
+        {
+          "url": "https://thehill.com/homenews/campaign/6185173-virginia-repeals-same-sex-marriage-ban-2026/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.metroweekly.com/2026/11/virginia-voters-repeal-same-sex-marriage-ban/",
+          "domain": "metroweekly.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 48,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b88c5131b1f8",
+      "headline": "Ecuador: Thousands Protest Pretrial Detention of Opposition Leader Luisa González; Flooding Forces Evacuations in Milagro",
+      "summary": "Thousands marched in Quito, Guayaquil and Cuenca on Nov 7 demanding President Daniel Noboa's resignation and the release of opposition leader Luisa González, held in pretrial detention since late October in a money-laundering case she calls political persecution. Separately, flooding from overflowing rivers forced evacuations and school closures in Milagro, Guayas province, prompting a government aid delivery.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -0.1807,
+      "lon": -78.4678,
+      "locationName": "Quito, Ecuador",
+      "countryCode": "EC",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/23/ecuador-judge-orders-pre-trial-detention-of-leftist-presidential-candidate",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.elcomercio.com/actualidad/ecuador/lluvias-inundaciones-manabi-santa-elena-milagro-familias-evacuadas/",
+          "domain": "elcomercio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 48,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d9e900a07916",
+      "headline": "Gunmen Kill 11 Relatives of Vigilante, Abduct 13 Others in Zamfara, Nigeria",
+      "summary": "Gunmen attacked the home of a government-backed vigilante volunteer in Gidan Taba village, Maradun LGA, after he helped security forces resist gang incursions, barricading and setting the home ablaze, killing 11 occupants. Thirteen others were abducted; security forces have since deployed to the area.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 12.8,
+      "lon": 6.4,
+      "locationName": "Gidan Taba, Zamfara State, Nigeria",
+      "countryCode": "NG",
+      "sources": [
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-09/gunmen-kill-11-relatives-of-security-volunteer-in-northwest-nigeria-abduct-13",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://saharareporters.com/2026/11/09/gunmen-kill-11-family-members-vigilante-zamfara-abduct-13-others",
+          "domain": "saharareporters.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 47,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5f5e95461641",
+      "headline": "Indiana Child Welfare Agency Says It Needs $300 Million Emergency State Infusion",
+      "summary": "DCS Director Jennifer Dorfmeyer told Indiana's State Budget Committee on Nov. 11 that the agency expects to need a $300 million infusion to its main account for fiscal year 2027, continuing a pattern of recent-year shortfalls. She described a new service-utilization review team as a mitigation step.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.7684,
+      "lon": -86.1581,
+      "locationName": "Indianapolis, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
+      "sources": [
+        {
+          "url": "https://indianacapitalchronicle.com/2026/11/11/indiana-child-welfare-agency-to-need-300m-state-infusion/",
+          "domain": "indianacapitalchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/indiana-child-welfare-agency-300m-100030206.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 44,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1024dad8b323",
+      "headline": "Jury Deliberates in Federal Murder Trial of Ex-Officer Over Sandra Birchmore Death",
+      "summary": "A federal jury began deliberating Nov. 6 in the trial of former Stoughton, Massachusetts officer Matthew Farwell, accused of killing pregnant 23-year-old Sandra Birchmore in 2021 and staging her death as a suicide. Deliberations resumed Nov. 9 in Boston.",
+      "category": "society",
+      "severity": 3,
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "locationName": "Boston, Massachusetts, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MA",
+      "sources": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/09/metro/sandra-birchmore-jury-deliberations/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcboston.com/news/local/matthew-farwell-trial-live-updates-as-closing-arguments-begin-in-sandra-birchmore-case/4044906/",
+          "domain": "nbcboston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9730da2469fc",
+      "headline": "Audi Weighs $3 Billion Expansion of Planned EV Plant Near Macon, Georgia",
+      "summary": "Georgia state documents show Audi is considering a second phase, worth about $3 billion and 3,000 jobs, at its planned $4 billion EV plant near Macon. The expansion would push the total investment toward roughly $7 billion.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 32.8407,
+      "lon": -83.6324,
+      "locationName": "Macon, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
+      "sources": [
+        {
+          "url": "https://www.detroitnews.com/story/business/autos/2026/11/06/audi-may-boost-size-of-new-us-auto-plant-add-3000-jobs/92640114007",
+          "domain": "detroitnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.just-auto.com/news/audi-may-add-3bn-georgia-assembly-plant/",
+          "domain": "just-auto.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f4d6151726c9",
+      "headline": "South Carolina Democrats Flip 10 House Seats, Breaking GOP Supermajority",
+      "summary": "In the Nov. 3-4 election, South Carolina Democrats flipped 10 state House seats, including ousting Majority Leader Micah Caskey, ending the Republican supermajority in the chamber. The result shifts the balance of power in Columbia heading into 2027.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 34.0007,
+      "lon": -81.0348,
+      "locationName": "Columbia, South Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-SC",
+      "sources": [
+        {
+          "url": "https://scdailygazette.com/2026/11/04/sc-democrats-flip-10-state-house-seats-undoing-gop-supermajority/",
+          "domain": "scdailygazette.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wistv.com/2026/11/04/democrats-break-gop-house-supermajority-south-carolina/",
+          "domain": "wistv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e8181bfed327",
+      "headline": "Illinois House Speaker Chris Welch to Step Aside Amid Democratic Caucus Revolt",
+      "summary": "Facing a revolt from 26 current and incoming House Democrats over his handling of sexual harassment allegations, Illinois House Speaker Chris Welch announced Nov. 5 he will not seek another term. Welch will step aside as speaker when the new legislature convenes in January.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.7817,
+      "lon": -89.6501,
+      "locationName": "Springfield, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://news.wttw.com/2026/11/05/welch-step-aside-illinois-house-speaker-after-26-illinois-democrats-called-new-top",
+          "domain": "wttw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abc7chicago.com/post/dozens-current-incoming-illinois-lawmakers-seek-oust-emanuel-chris-welch-state-house-speaker/20018202/",
+          "domain": "abc7chicago.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7e6f4ff9ccc3",
+      "headline": "Arkansas Democrats Break Decade-Long GOP Supermajority in State House",
+      "summary": "In the Nov. 3 midterms, Arkansas Democrats flipped seats, reducing the Republican House majority from 80-20 to roughly 69-30 and ending a three-fourths supermajority held since 2016. The shift gives Democrats new leverage over budget legislation.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 34.7465,
+      "lon": -92.2896,
+      "locationName": "Little Rock, Arkansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AR",
+      "sources": [
+        {
+          "url": "https://arkansasadvocate.com/2026/11/04/live-coverage-arkansas-2026-election/",
+          "domain": "arkansasadvocate.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arkansasonline.com/news/2026/nov/04/arkansas-democrats-flip-seats-in-state-house-causing-gop-to-lose-its-supermajority/",
+          "domain": "arkansasonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e95a3d443ca8",
+      "headline": "Bill Filing Opens for Texas's 2027 Legislature Under First Divided Government in Decades",
+      "summary": "Bill filing opened Nov. 9 for the 90th Texas Legislature's 2027 session, the first under Democratic Governor-elect Gina Hinojosa, with Democrats now controlling the House and Republicans retaining the Senate. The divided government marks a major shift in Texas politics.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 30.2672,
+      "lon": -97.7431,
+      "locationName": "Austin, Texas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TX",
+      "sources": [
+        {
+          "url": "https://www.texastribune.org/2026/11/09/texas-legislature-90th-session-bill-filing-begins/",
+          "domain": "texastribune.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kera.org/2026/11/09/bill-filing-begins-today-for-a-divided-texas-legislatures-2027-session/",
+          "domain": "kera.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "afd26b112880",
+      "headline": "About 800 Portland City Workers Begin Strike Over Pay",
+      "summary": "Roughly 800 members of the City of Portland Professional Workers Union, including 911 dispatchers and emergency management and police/fire support staff, went on strike at 12:01 a.m. Nov. 9 after mediation failed. The dispute centers on pay, with the union seeking about 7% versus the city's lower offer.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 45.5152,
+      "lon": -122.6784,
+      "locationName": "Portland, Oregon, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OR",
+      "sources": [
+        {
+          "url": "https://www.kptv.com/2026/11/09/800-portland-city-employees-strike-starting-monday/",
+          "domain": "kptv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.koin.com/news/oregon/its-disappointing-over-800-portland-workers-set-to-go-on-strike-monday-heres-what-to-know/",
+          "domain": "koin.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5625db63409b",
+      "headline": "Washington Judge Orders Albertsons to Pay $900 Million Over Opioid Crisis Role",
+      "summary": "King County Superior Court Judge Janet Helson ruled that Albertsons must pay $800 million in abatement funds plus a $100 million civil penalty, the largest verdict in Washington state history. The case centered on pharmacies dispensing more than 641 million opioid pills from 2006 to 2022 without adequate monitoring.",
+      "category": "health",
+      "severity": 3,
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "locationName": "Seattle, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.knkx.org/public-health/2026-11-07/washington-wins-verdict-albertsons-opioid-trial-nick-brown",
+          "domain": "knkx.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/05/albertsons-must-pay-900m-for-role-in-wa-opioid-crisis-judge-rules/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e81727ccafaa",
+      "headline": "Court Strikes Down Approval of California's First Major Carbon Capture Project",
+      "summary": "A Kern County Superior Court judge ruled Nov. 3 that the county's approval of California Resources Corp's Carbon TerraVault I project violated the California Environmental Quality Act. The court ordered the county to withdraw its certification pending adequate environmental review.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 35.3034,
+      "lon": -119.4532,
+      "locationName": "Elk Hills, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://calmatters.org/environment/climate-change/2026/11/kern-county-carbon-storage-ruling/",
+          "domain": "calmatters.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.courthousenews.com/environmentalists-successfully-block-californias-first-carbon-capture-project/",
+          "domain": "courthousenews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-09T15:30:49.548Z",
+      "lastUpdated": "2026-11-09T15:30:49.548Z",
+      "expiresAt": "2026-11-11T15:30:49.548Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0ba6357effa1",
+      "headline": "Russian Strike Kills Three at Odesa Food Warehouse Day Before Abu Dhabi Peace Talks",
+      "summary": "A Russian strike on Odesa killed three people and wounded one, setting ablaze a warehouse storing food supplies for the city's kindergartens and schools, roughly 24 hours before the start of US-brokered trilateral peace talks in Abu Dhabi.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 46.4825,
+      "lon": 30.7233,
+      "locationName": "Odesa, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://euromaidanpress.com/2026/11/09/russian-attack-kills-three-in-odesa-and-sets-a-warehouse-of-food-for-schools-ablaze-a-day-before-abu-dhabi-peace-talks/",
+          "domain": "euromaidanpress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kyivpost.com/post/89546",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1a38a4d1f94f",
+      "headline": "Serbia's New Parliament to Convene Nov 17 After Student List Election Win; Vučić's Last-Day Pardons Face Legal Challenge",
+      "summary": "Serbia's new 250-seat parliament, in which the student-led 'Student List' won 140 seats against the SNS-led list's 103, will hold its first session Nov 17. Separately, 49 pardons issued by Aleksandar Vučić on his last day as president — including of a man charged with attempted murder of a protester — are under investigation by Serbia's organized-crime prosecutor.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 44.7866,
+      "lon": 20.4489,
+      "locationName": "Belgrade, Serbia",
+      "countryCode": "RS",
+      "sources": [
+        {
+          "url": "https://wtop.com/national/2026/11/serbias-parliament-to-meet-on-nov-17-after-student-led-movement-won-election-over-strongman-vucic",
+          "domain": "wtop.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://balkaninsight.com/2026/11/06/serbian-presidents-controversial-last-minute-pardons-face-legal-challenges/bi/",
+          "domain": "balkaninsight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a1c95dacf49a",
+      "headline": "China's October Trade Surplus Tops $1 Trillion for Second Straight Year as Exports Surge 35.2%",
+      "summary": "China's October exports rose 35.2% year-on-year, beating forecasts, driven by AI-hardware and integrated-circuit shipments, pushing the year-to-date trade surplus above $1.04 trillion for a second consecutive year; imports also surged 41.6%, narrowing the monthly surplus from September's level.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969",
+          "domain": "investing.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.theglobeandmail.com/investing/markets/indices/NXTQ/pressreleases/8747559/china-s-trade-surplus-surpasses-1-trillion-for-a-2nd-straight-year-as-exports-surge-35/",
+          "domain": "theglobeandmail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9143fccfead8",
+      "headline": "Asian Stocks Rally Sharply as Semiconductor Rebound Lifts Nikkei, KOSPI After Taiwan's Earlier 5% Surge",
+      "summary": "Japan's Nikkei rose roughly 2.5-3% and South Korea's KOSPI climbed as much as 4-5%, triggering a circuit breaker in one session, driven by a rebound in AI/semiconductor stocks following a surge in the Philadelphia Semiconductor Index; SoftBank, SK Hynix and Samsung all gained strongly, extending the tech-led rally that had already lifted Taiwan's market 5% earlier in the week.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "locationName": "Tokyo, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.fxstreet.com/news/asia-stocks-rally-sharply-amid-tech-surge-and-iran-jitters-ahead-of-us-cpi-202611100521",
+          "domain": "fxstreet.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.zeebiz.com/market-news/news-kospi-and-nikkei-gain-up-to-5-softbank-jumps-15-whats-behind-tuesdays-asian-market-rally-405352",
+          "domain": "zeebiz.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/08/nvidia-opens-investigation-into-ceo-over-relationship-with-suspected-chinese-spy/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6034036/nvidia-launches-investigation-into-ceos-alleged-relationship-with-chinese-spy",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/economy/2026/11/9/asian-stock-markets-climb-after-earlier-tech-rout",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/taiwan-to-deploy-market-stabilization-fund-after-stock-rout",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 85,
+      "firstSeen": "2026-11-08T06:05:19.540Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "30c8151f9128",
+      "headline": "Second Firefighting Helicopter Crashes in Indonesia's Worst Wildfire Season in a Decade, One Killed",
+      "summary": "A BNPB-operated Super Puma helicopter crashed into the Barito River in South Kalimantan while collecting water for wildfire operations, killing one Indonesian crew member while two foreign pilots survived. It is a second, distinct crash in Indonesia's wildfire season after an earlier Mi-17 crash in Central Kalimantan killed three; South Kalimantan has since suspended aerial firefighting.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": -3.2,
+      "lon": 114.6,
+      "locationName": "Barito River, South Kalimantan, Indonesia",
+      "countryCode": "ID",
+      "sources": [
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/09/indonesia-fatal-helicopter-crash/4861794204618",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://en.antaranews.com/news/441139/bnpbs-super-puma-crashes-in-barito-river",
+          "domain": "antaranews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-08/indonesia-helicopter-crash-borneo-australians/107361384",
+          "domain": "abc.net.au",
+          "reliability": 86,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thejakartapost.com/world/2026/11/06/australia-to-join-indonesias-wildfire-waterbombing-operations",
+          "domain": "thejakartapost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arabnews.com/world/australia-to-join-indonesias-wildfire-waterbombing-operations-3010064",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 81,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7d2b215e4022",
+      "headline": "Ohio State Fraternity Suspended After Video Shows Two Men Engulfed in Flames at Party",
+      "summary": "Ohio State University placed its Sigma Alpha Epsilon chapter on interim suspension after video circulated showing two men catching fire during a fraternity party in Columbus. The university's arson unit and campus police are investigating the incident.",
+      "category": "society",
+      "severity": 2,
+      "lat": 39.9612,
+      "lon": -83.0007,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://edition.cnn.com/2026/11/09/us/ohio-state-fraternity-sigma-alpha-epsilon-fire-fight",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/US/2026/11/09/ohio-state-sigma-alpha-epsilon-fraternity-fire-video/7951794255437/",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://thehill.com/homenews/education/6208411-ohio-state-sigma-alpha-epsilon-interim-suspension/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 71,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T03:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0d0d36c1ecdb",
+      "headline": "North Korea's Kim Yo Jong Rejects UN Chief's Call for Inter-Korean Dialogue",
+      "summary": "Kim Yo Jong, sister of North Korean leader Kim Jong Un, rejected UN Secretary-General Antonio Guterres' call for renewed inter-Korean dialogue. The rebuff follows a landmine blast incident near the DMZ and comes amid a series of recent North Korean weapons tests.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 39.0392,
+      "lon": 125.7625,
+      "locationName": "Pyongyang, North Korea",
+      "countryCode": "KP",
+      "sources": [
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/10/Kim-Yo-Jong-Antonio-Guterres-reject-dialogue-DMZ/3251794301537/",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/11/1168750",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261110/n-korea-rejects-un-chiefs-call-for-inter-korean-dialogue-after-mine-blast",
+          "domain": "koreatimes.co.kr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "31b82c0a97a2",
+      "headline": "Japan's Household Spending Plunges 6.8% in September, Steepest Drop Since 2020",
+      "summary": "Japan's household spending fell 6.8% year-on-year in September, far below expectations, marking a 10th consecutive monthly decline and the sharpest drop since 2020, driven by weakness in transport, education, utilities and healthcare spending; officials partly blamed poor weather, while markets still expect a BOJ rate hike in December.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "locationName": "Tokyo, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/japan-household-outlays-fall-for-10th-month-as-inflation-lingers",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/business/2026/11/10/economy/japan-household-spending-sept-plunge/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 67,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "42f59b5f0e58",
+      "headline": "France Confirms First-Ever Human Case of Shamonda Virus, Previously Found Only in Livestock",
+      "summary": "French health authorities reported the first-ever human infection with Shamonda virus in a severely immunocompromised patient who died in early October, believed infected via a midge bite in eastern France, where the virus has circulated in livestock since spring 2026. ECDC says no risk to the general population has been identified to date.",
+      "category": "health",
+      "severity": 2,
+      "lat": 48.5734,
+      "lon": 7.7521,
+      "locationName": "Eastern France (Grand Est region)",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.ecdc.europa.eu/en/news-events/severely-ill-patient-france-becomes-first-ever-human-infected-shamonda-virus",
+          "domain": "europa.eu",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.euronews.com/2026/10/22/france-confirms-first-human-case-of-shamonda-virus-previously-found-only-in-animals",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5fc2ae9b1f46",
+      "headline": "Germany's Merz Warns of 'Historic Test' Over Rising Antisemitism on Kristallnacht Anniversary",
+      "summary": "Speaking at Munich's Ohel Jakob Synagogue on the 88th anniversary of Kristallnacht, Chancellor Friedrich Merz said Germany faces a 'historic test' over antisemitism he called 'once again omnipresent' in schools, streets and parliaments, decrying the need for armed protection at synagogues and kindergartens and pledging stronger government action.",
+      "category": "society",
+      "severity": 2,
+      "lat": 48.1351,
+      "lon": 11.582,
+      "locationName": "Munich, Germany",
+      "countryCode": "DE",
+      "sources": [
+        {
+          "url": "https://www.timesofisrael.com/liveblog_entry/merz-decries-horrifying-antisemitism-in-germany-reiterates-commitment-to-protecting-countrys-jews-on-kristallnacht-anniversary/",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-09/merz-says-germany-faces-historic-test-over-rise-in-antisemitism",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 62,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1ff0fdaf536f",
+      "headline": "New York Launches AI Safety Research Center at SUNY Binghamton, Announces $100M Road Repaving",
+      "summary": "On Nov. 10, Gov. Hochul launched the New York Center for AI Responsibility and Research at SUNY Binghamton, involving 80+ researchers co-led by Cornell Tech's Greg Morrisett and Columbia's Jeannette Wing. She separately announced $100 million for repaving 642 lane-miles statewide via the Harsh Winter Paving program.",
+      "category": "science",
+      "severity": 2,
+      "lat": 42.0987,
+      "lon": -75.918,
+      "locationName": "Binghamton, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-governor-hochul-declares-ny-will-lead-nation-ai-science-and",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wbng.com/2026/11/10/new-york-launches-ai-safety-research-center-binghamton-university/",
+          "domain": "wbng.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.cornell.edu/stories/2026/11/greg-morrisett-co-lead-new-nys-ai-safety-research-center",
+          "domain": "cornell.edu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.timesunion.com/capitol/article/hochul-launches-new-institute-ai-safety-amid-22523366.php",
+          "domain": "timesunion.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "63a6510c8d89",
+      "headline": "Maryland Prison Inmate Death at North Branch Correctional Institution Investigated as Possible Homicide",
+      "summary": "An inmate was pronounced dead just before midnight Nov. 9 at the 'hypermax' North Branch Correctional Institution in Cumberland. The Maryland State Police Homicide Unit is investigating, with two fellow inmates identified as suspects but not yet charged pending autopsy results.",
+      "category": "society",
+      "severity": 2,
+      "lat": 39.6528,
+      "lon": -78.7625,
+      "locationName": "Cumberland, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
+      "sources": [
+        {
+          "url": "https://mdsp.maryland.gov/about-us/newsroom/police-investigating-death-state-prison-allegany-county-0",
+          "domain": "maryland.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://wjla.com/news/local/maryland-state-police-probe-inmate-death-at-north-branch-prison-in-cumberland-allegany-county-homicide",
+          "domain": "wjla.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thebanner.com/community/criminal-justice/cumberland-hypermax-prison-killing-2026-YOOOUEH2ABBVFKOINSKI733QTI/",
+          "domain": "thebanner.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbaltv.com/article/msp-police-investigating-death-inmate-north-branch-facility/71153090",
+          "domain": "wbaltv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d889b020bc01",
+      "headline": "Italy's Governing Coalition Splits Over Continued Aid to Ukraine Amid Abu Dhabi Talks",
+      "summary": "Italy's ruling coalition is divided over whether to continue military aid to Ukraine, as debate intensifies alongside US-mediated peace talks in Abu Dhabi. The disagreement reflects wider European uncertainty over the war's endgame.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "locationName": "Rome, Italy",
+      "countryCode": "IT",
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/11/10/italian-government-debates-aid-to-kyiv-while-abu-dhabi-holds-talks-on-ukraines-future",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://au.news.yahoo.com/italian-government-debates-aid-kyiv-162330437.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 59,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1664c63bbc97",
+      "headline": "Wisconsin Democrats Elect Greta Neubauer First Female Assembly Speaker; GOP Names Julian Bradley Senate Minority Leader",
+      "summary": "On Nov. 11, Wisconsin Democrats elected Dianne Hesselbein Senate Majority Leader and Greta Neubauer the Assembly's first-ever female Speaker, giving women the top posts in both chambers for the first time. Republicans named Julian Bradley Senate Minority Leader, the first Black lawmaker to lead a caucus in either chamber.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://www.wsaw.com/2026/11/11/wisconsin-democrats-elect-hesselbein-senate-majority-leader-neubauer-assembly-speaker/",
+          "domain": "wsaw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wpr.org/news/democrats-leadership-wisconsin-legislature-neubauer-hesselbein",
+          "domain": "wpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wisconsinexaminer.com/2026/11/11/wisconsin-democratic-lawmakers-step-into-new-era-with-election-of-two-women-leaders/",
+          "domain": "wisconsinexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wtmj.com/news/2026/11/11/democrats-republicans-name-new-leaders-for-wisconsin-legislature-as-power-shifts-in-madison/",
+          "domain": "wtmj.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "476b0ab3517b",
+      "headline": "North Kingstown, Rhode Island Police Officer Indicted on Sexual Assault Charges, Resigns",
+      "summary": "Officer Cyress Harrison, 27, was indicted by a statewide grand jury on three counts of second-degree sexual assault tied to an alleged Aug. 22, 2026 incident. He was arraigned Nov. 10 in Washington County Superior Court, pleaded not guilty, was released on personal recognizance, and has since resigned from the department.",
+      "category": "society",
+      "severity": 2,
+      "lat": 41.5834,
+      "lon": -71.4817,
+      "locationName": "North Kingstown, Rhode Island, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-RI",
+      "sources": [
+        {
+          "url": "https://riag.ri.gov/press-releases/north-kingstown-police-officer-indicted-sexual-assault",
+          "domain": "ri.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wpri.com/news/local-news/south-county/north-kingstown-officer-indicted-sexual-assault/",
+          "domain": "wpri.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://turnto10.com/news/local/north-kingstown-police-officer-charged-with-sexual-assault-second-degree-washington-county-court-state-police-attorney-general-november-10-2026",
+          "domain": "turnto10.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "49fce3fb271d",
+      "headline": "Settler Attack Injures Six Civil Rights Activists in West Bank Village of Qusra",
+      "summary": "Israeli settlers attacked and injured six civil rights activists in the West Bank village of Qusra, according to rights groups. The incident is part of a continuing pattern of settler violence against Palestinians and activists in the occupied territory.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 32.0833,
+      "lon": 35.3333,
+      "locationName": "Qusra, West Bank",
+      "countryCode": "PS",
+      "sources": [
+        {
+          "url": "https://www.timesofisrael.com/six-injured-in-settler-attack-on-civil-rights-activists-in-west-bank-group-says/",
+          "domain": "timesofisrael.com",
+          "reliability": 78,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.jpost.com/israel-news/article-914444",
+          "domain": "jpost.com",
+          "reliability": 72,
+          "bias": "center-right"
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f25da3a4e169",
+      "headline": "Two Egyptian Border Guard Officers Killed Near Sudan Border in Clash With Illegal Gold Miners",
+      "summary": "Two Egyptian army border-guard officers were killed in an exchange of fire during an operation targeting illegal gold-mining groups near Egypt's southern border with Sudan in the Halayeb/Shalateen area. Saudi Arabia, Qatar, Jordan and the Arab League issued condemnations and condolences.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 23.5,
+      "lon": 35.5,
+      "locationName": "Halayeb-Shalateen border area, Egypt",
+      "countryCode": "EG",
+      "sources": [
+        {
+          "url": "https://www.spa.gov.sa/en/N2719572",
+          "domain": "spa.gov.sa",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://egyptianstreets.com/2026/11/07/saudi-arabia-qatar-and-jordan-condemn-attack-on-egyptian-border-guards/",
+          "domain": "egyptianstreets.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "58ba3718b02b",
+      "headline": "ELN Bomb Threats Force Evacuation of Major Colombian TV and Radio Outlets",
+      "summary": "Colombia's Caracol Television and Radio evacuated staff after bomb threats attributed to the ELN guerrilla group targeting major media outlets. The Committee to Protect Journalists called on authorities to ensure the safety of newsroom staff.",
+      "category": "society",
+      "severity": 2,
+      "lat": 4.711,
+      "lon": -74.0721,
+      "locationName": "Bogotá, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://cpj.org/2026/11/guerrilla-group-threatens-3-colombian-media-outlets-with-bomb-threats/",
+          "domain": "cpj.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://colombiareports.com/de-la-espriella-claims-eln-plans-to-attack-colombias-corporate-media/",
+          "domain": "colombiareports.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.mundiario.com/sociedad/colombia-evacua-caracol-television-amenaza-atentado/20261108174435451660.html",
+          "domain": "mundiario.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5f9a051b427d",
+      "headline": "Ecuador's Assembly Grants President Noboa Leave to Campaign Ahead of Nov 29 Local Elections",
+      "summary": "Ecuador's National Assembly approved a campaign leave for President Daniel Noboa ahead of the November 29 local and provincial elections. The move comes amid ongoing political tension, including protests over the detention of opposition leader Luisa González.",
+      "category": "politics",
+      "severity": 2,
+      "lat": -0.1807,
+      "lon": -78.4678,
+      "locationName": "Quito, Ecuador",
+      "countryCode": "EC",
+      "sources": [
+        {
+          "url": "https://www.riotimesonline.com/ecuador-noboa-campaign-leave-approved",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.elcomercio.com/elecciones/asamblea-aprueba-licencia-daniel-noboa-campana-elecciones-seccionales/",
+          "domain": "elcomercio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.prensa-latina.cu/2026/11/10/parlamento-de-ecuador-concede-licencia-a-noboa-para-hacer-campana/",
+          "domain": "prensa-latina.cu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e34b69160b45",
+      "headline": "Lima Bus Companies Suspend Routes in Mass Protest Against Extortion Violence",
+      "summary": "More than 50 transport companies suspended service in Lima to protest rampant extortion, which Peruvian authorities say has killed 93 transit workers since January. The strike disrupted commuting across the capital.",
+      "category": "society",
+      "severity": 2,
+      "lat": -12.0464,
+      "lon": -77.0428,
+      "locationName": "Lima, Peru",
+      "countryCode": "PE",
+      "sources": [
+        {
+          "url": "https://www.riotimesonline.com/peru-lima-transport-march-extortion-10-november",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://larepublica.pe/sociedad/2026/11/09/paro-confirmado-mas-de-50-empresas-de-transporte-suspenderan-servicio-este-martes-por-extorsiones-641538",
+          "domain": "larepublica.pe",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.inkl.com/news/limas-transit-workers-are-being-murdered-one-by-one-and-now-over-50-firms-are-walking-off",
+          "domain": "inkl.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e09beaaeb6a2",
+      "headline": "Brazil's Supreme Court Closes Seven-Year 'Fake News' Inquiry at Prosecutor-General's Request",
+      "summary": "Brazil's Prosecutor-General Paulo Gonet asked the Supreme Federal Court (STF) to archive the seven-year 'fake news' inquiry opened in 2019 to probe threats against the Court, arguing its objective had been exhausted; STF President Edson Fachin granted the request the same day. The closure does not nullify evidence already gathered or invalidate derivative criminal cases still proceeding separately.",
+      "category": "politics",
+      "severity": 2,
+      "lat": -15.7975,
+      "lon": -47.8919,
+      "locationName": "Brasília, Brazil",
+      "countryCode": "BR",
+      "sources": [
+        {
+          "url": "https://www.brasildefato.com.br/2026/11/09/stf-fachin-arquiva-definitivamente-inquerito-das-fake-news-mas-mantem-processos-derivados/",
+          "domain": "brasildefato.com.br",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://jurinews.com.br/en/destaque-nacional/upon-the-request-of-pgr-fachin-closes-the-investigation-of-fake-news",
+          "domain": "jurinews.com.br",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://correiobraziliense.com.br/politica/2026/11/7535584-pgr-solicita-a-fachin-o-arquivamento-do-inquerito-das-fake-news.html",
+          "domain": "correiobraziliense.com.br",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "308f8f60c4ef",
+      "headline": "Thailand Keeps Cambodia Border Closed Indefinitely, Steps Up Security Patrols",
+      "summary": "Thailand announced it will keep its border with Cambodia closed indefinitely, citing continued security concerns, while increasing military patrols in the area. The closure extends a standoff between the two neighbors following earlier border clashes.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 13.6532,
+      "lon": 102.5209,
+      "locationName": "Thailand-Cambodia border",
+      "countryCode": "TH",
+      "sources": [
+        {
+          "url": "https://www.bangkokpost.com/thailand/general/3346169/border-with-cambodia-to-remain-shut-amid-concerns",
+          "domain": "bangkokpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.chiangraitimes.com/border-transport/thailand-cambodia-border-closed/",
+          "domain": "chiangraitimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2666e87432a0",
+      "headline": "DNA Testing Identifies Three More 1999 Kosovo War Disappearance Victims From Mass Grave",
+      "summary": "Kosovo PM Albin Kurti confirmed DNA analysis conducted at The Hague identified three more victims of enforced disappearance from the 1998-99 war — Adem Ademi, Fatmir Fazlija and Ali Haliti — among at least 23 people exhumed since July from mass graves near Zubin Potok in northern Kosovo. Roughly 1,600 people remain missing from the war overall.",
+      "category": "society",
+      "severity": 2,
+      "lat": 42.92,
+      "lon": 20.69,
+      "locationName": "Zubin Potok, northern Kosovo",
+      "countryCode": "XK",
+      "sources": [
+        {
+          "url": "https://balkaninsight.com/2026/11/04/kosovo-identifies-three-more-wartime-missing-persons/btj/",
+          "domain": "balkaninsight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://prishtinainsight.com/remains-of-23-wartime-victims-unearthed-from-mass-graves-in-kosovo/",
+          "domain": "prishtinainsight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bb8cf4c6e29b",
+      "headline": "Magnitude 5.9 Earthquake Strikes Off Ibaraki Prefecture, Shakes Tokyo Region",
+      "summary": "A preliminary magnitude 5.9 earthquake struck off Ibaraki Prefecture northeast of Tokyo, registering intensity 3 (of 7) in Miyagi, Ibaraki, Fukushima and Tochigi, with tremors felt in Tokyo. No tsunami warning was issued and no casualties or damage were reported.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 36.3418,
+      "lon": 140.9468,
+      "locationName": "Off Ibaraki Prefecture, Japan",
+      "countryCode": "JP",
+      "sources": [
+        {
+          "url": "https://www.aa.com.tr/en/asia-pacific/magnitude-59-earthquake-strikes-off-eastern-japan-shakes-tokyo/4116482",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.chinadailyasia.com/hk/article/642439",
+          "domain": "chinadailyasia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8a7f23a1ca3a",
+      "headline": "Nepal Police Detain Three Journalists in Kathmandu Newsroom Raids Over PM Corruption Reporting",
+      "summary": "Plainclothes police raided several Kathmandu newsrooms and detained three journalists after their outlets reported that PM Balendra Shah sought the resignation of the police inspector general over alleged money-laundering ties; all three were released the same evening amid public backlash, and press-freedom groups held protest rallies demanding guarantees against future crackdowns.",
+      "category": "society",
+      "severity": 2,
+      "lat": 27.7172,
+      "lon": 85.324,
+      "locationName": "Kathmandu, Nepal",
+      "countryCode": "NP",
+      "sources": [
+        {
+          "url": "https://kathmandupost.com/national/2026/11/01/who-ordered-the-police-crackdown-on-journalists",
+          "domain": "kathmandupost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.deccanchronicle.com/world/kathmandu-rally-protests-media-crackdown-demands-press-freedom-2002557",
+          "domain": "deccanchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5ed87c81d5c1",
+      "headline": "Chile's Inflation Hits 4.5%, Highest in Over a Year, as President Kast's Approval Sinks to Record Low",
+      "summary": "Chile's annual inflation rose to 4.5% in October, above the central bank's target, driven by fuel and food costs. President José Antonio Kast's approval has sunk to roughly 26-29%, driven by anger over the early release of convicted child sex offenders and a stagnant economy.",
+      "category": "economy",
+      "severity": 2,
+      "lat": -33.4489,
+      "lon": -70.6693,
+      "locationName": "Santiago, Chile",
+      "countryCode": "CL",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/chile-annual-inflation-speeds-up-to-highest-level-in-over-a-year",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 40,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-11T18:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "af762b5c1f80",
+      "headline": "Solomon Islands PM Matthew Wale Recovering in Australia After Medical Treatment",
+      "summary": "Solomon Islands Prime Minister Matthew Wale was flown to Australia for urgent medical treatment and is now recovering, while his government advances constitutional reforms aimed at ending unstable coalition politics. The event is unrelated to a recent magnitude 6.4 earthquake that struck the Solomon Islands.",
+      "category": "society",
+      "severity": 2,
+      "lat": -9.428,
+      "lon": 159.9498,
+      "locationName": "Honiara, Solomon Islands",
+      "countryCode": "SB",
+      "sources": [
+        {
+          "url": "https://www.rnz.co.nz/news/pacific/2207962/solomon-islands-pm-matthew-wale-flown-to-australia-for-urgent-medical-treatment",
+          "domain": "rnz.co.nz",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 33,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    }
+  ],
+  "stats": {
+    "imagesResolved": 0,
+    "sourcesWithImages": 0,
+    "multiSource": 108,
+    "carried": 96,
+    "updated": 0,
+    "expired": 11,
+    "severityDefaulted": 0,
+    "enrichment": "deferred",
+    "costUsd": 4.34,
+    "budgetUsd": 8
+  }
+}

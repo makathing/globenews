@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T06:09:06.519Z",
+  "generatedAt": "2026-11-11T15:27:29.990Z",
   "mode": "daily",
   "events": [
     {
@@ -405,68 +405,6 @@
       "firstSeen": "2026-11-08T06:05:19.540Z",
       "lastUpdated": "2026-11-08T06:05:19.540Z",
       "expiresAt": "2026-11-12T06:05:19.540Z",
-      "isBreaking": false
-    },
-    {
-      "id": "8fe5e3876d2a",
-      "headline": "Oregon's Record 2026 Wildfire Season Officially Ends After Burning 2.5 Million Acres at $311.5 Million Cost",
-      "summary": "The Oregon Department of Forestry lifted fire restrictions statewide around Nov. 5, closing the state's record-breaking 2026 wildfire season at a final tally of roughly 2.5 million acres burned (up from the ~2 million acre figure reported earlier in the season) and gross suppression costs of about $311.5 million. Two firefighters died this season battling the Austin Fire and Wrights Springs Fire in Klamath County.",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 44.9429,
-      "lon": -123.0351,
-      "locationName": "Salem, Oregon, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OR",
-      "sources": [
-        {
-          "url": "https://capitalpress.com/2026/11/05/oregon-declares-end-to-record-breaking-fire-season/",
-          "domain": "capitalpress.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.koin.com/news/oregon/2-5m-acres-scorched-oregons-record-breaking-2026-wildfire-season-comes-to-an-end/",
-          "domain": "koin.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kdrv.com/news/firewatch/oregons-2026-fire-season-ends-after-record-2-5m-acres-burned/article_aafbc920-c107-4759-9f41-013e4e564dbd.html",
-          "domain": "kdrv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kgw.com/article/news/local/wildfire/2026-oregon-worst-wildfire-season-on-record-1-99m-acres-burned/283-176b718c-4df4-418f-bfd5-257bebc5a3f7",
-          "domain": "kgw.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://katu.com/news/local/oregon-2026-wildfire-season-burns-2-point-3-million-acres-topping-2024-record-wildfires-rowe-creek-haye",
-          "domain": "katu.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.klcc.org/news-briefs/2026-08-02/fema-reverses-decision-on-rowe-creek-complex-west-zone-funding",
-          "domain": "klcc.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-03T15:27:52.809Z",
-      "lastUpdated": "2026-11-07T15:26:24.806Z",
-      "expiresAt": "2026-11-11T15:26:24.806Z",
       "isBreaking": false
     },
     {
@@ -1499,6 +1437,45 @@
       "isBreaking": false
     },
     {
+      "id": "20f5232b140d",
+      "headline": "Boeing to Cut About 2,500 Jobs from Commercial Airplanes Division Amid Production Slowdown",
+      "summary": "Boeing Commercial Airplanes CEO Stephanie Pope told employees November 9 the company will slow production ramp-ups and cut about 5%, roughly 2,500 jobs, from the division's 50,500 workers through layoffs and attrition. It is Boeing's first commercial-division cuts in nearly two years, with affected staff to be notified in December.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 47.4829,
+      "lon": -122.2171,
+      "locationName": "Renton, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/boeing-cuts-5-of-commercial-workforce-amid-factory-ramp-delays",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/09/boeing-will-cut-5-of-its-commercial-airplane-workf/",
+          "domain": "spokesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-10T15:30:04.779Z",
+      "lastUpdated": "2026-11-10T15:30:04.779Z",
+      "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
       "id": "5a30729ba893",
       "headline": "Portugal Declares Nationwide State of Alert as Storm Charles Makes Landfall After Battering Madeira",
       "summary": "Portugal declared a nationwide state of alert as Storm Charles approached with winds up to 130km/h, following Storm Bruna, which had already left Madeira residents homeless. Authorities urged maximum caution as the storm threatened flooding across mainland Portugal and Spain.",
@@ -1591,45 +1568,6 @@
       "firstSeen": "2026-11-11T06:09:06.519Z",
       "lastUpdated": "2026-11-11T06:09:06.519Z",
       "expiresAt": "2026-11-13T06:09:06.519Z",
-      "isBreaking": false
-    },
-    {
-      "id": "20f5232b140d",
-      "headline": "Boeing to Cut About 2,500 Jobs from Commercial Airplanes Division Amid Production Slowdown",
-      "summary": "Boeing Commercial Airplanes CEO Stephanie Pope told employees November 9 the company will slow production ramp-ups and cut about 5%, roughly 2,500 jobs, from the division's 50,500 workers through layoffs and attrition. It is Boeing's first commercial-division cuts in nearly two years, with affected staff to be notified in December.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 47.4829,
-      "lon": -122.2171,
-      "locationName": "Renton, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-09/boeing-cuts-5-of-commercial-workforce-amid-factory-ramp-delays",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/09/boeing-will-cut-5-of-its-commercial-airplane-workf/",
-          "domain": "spokesman.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T15:30:04.779Z",
       "isBreaking": false
     },
     {
@@ -1942,6 +1880,53 @@
       "isBreaking": false
     },
     {
+      "id": "5406d84588f7",
+      "headline": "Lawsuit Filed to Block Washington State's Transgender Student-Athlete Initiative 638",
+      "summary": "On Nov. 9, TransFamilies, the Washington Education Association, ACLU of Washington, and parents of both cisgender and transgender student-athletes filed suit in King County Superior Court seeking to block voter-approved Initiative 638, which requires sex verification for girls' school sports before its Dec. 3 effective date. The suit alleges violations of the state constitution's privacy, equal-rights, and education-access provisions.",
+      "category": "society",
+      "severity": 3,
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "locationName": "Seattle, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.cascadiadaily.com/2026/nov/10/parents-groups-sue-over-transgender-student-athletes-initiative/",
+          "domain": "cascadiadaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/10/lawsuit-filed-to-block-washingtons-recently-passed/",
+          "domain": "spokesman.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/local/seattle/2026/11/10/washington-i638-lawsuit-student-sex-verification-privacy",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/10/parents-groups-sue-over-transgender-student-athletes-initiative/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
       "id": "3e63d6d1a654",
       "headline": "Poland Orders Review of Gun Laws After Kraków's First Mass Shooting",
       "summary": "Polish Prime Minister Tusk ordered a review of the country's gun laws following a mass shooting in Kraków described as the country's first, which authorities are treating as a terrorist attack. Ministers have floated tighter firearm controls in response.",
@@ -2050,6 +2035,150 @@
       "firstSeen": "2026-11-11T06:09:06.519Z",
       "lastUpdated": "2026-11-11T06:09:06.519Z",
       "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bb894b6cb523",
+      "headline": "St. Louis House Fire Kills 2-Year-Old Girl, Five Hospitalized in Carondelet Neighborhood",
+      "summary": "A predawn fire around 4 a.m. Nov. 11 in the Carondelet neighborhood killed a 2-year-old girl and sent two adults and three children to the hospital for smoke exposure. The home reportedly had no electricity, residents were using candles and a small heater, and there were no working smoke detectors.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 38.567,
+      "lon": -90.2634,
+      "locationName": "St. Louis, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.kfvs12.com/2026/11/11/1-child-dead-5-people-taken-hospital-following-fire-south-city/",
+          "domain": "kfvs12.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.firstalert4.com/2026/11/11/1-child-dead-5-people-taken-hospital-following-fire-south-city/",
+          "domain": "firstalert4.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://fox2now.com/news/missouri/emergency-crews-respond-to-south-st-louis-house-fire/",
+          "domain": "fox2now.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ksdk.com/video/news/local/2-year-old-killed-in-south-st-louis-house-fire/63-25c316ae-1df5-4f57-aefe-bd23b6aa0fbc",
+          "domain": "ksdk.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fbd382f6358c",
+      "headline": "Oklahoma Supreme Court Strikes Down Initiative-Petition Restriction Law SB 1027",
+      "summary": "In a 5-4 ruling issued Nov. 10, the Oklahoma Supreme Court held SB 1027 unconstitutional and void in its entirety. The court found its registered-voter requirement for petition circulators, county signature caps, and ban on incentive pay for circulators violated First Amendment protections for political speech and the right to petition.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.kosu.org/politics/2026-11-10/oklahoma-supreme-court-strikes-down-restrictions-on-citizen-initiative-petitions",
+          "domain": "kosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nondoc.com/2026/11/10/prior-restraints-and-compelled-speech-burdens-supreme-court-strikes-sb-1027-on-initiative-petitions/",
+          "domain": "nondoc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.news9.com/oklahoma-politics/oklahoma-supreme-court-sb-1027-unconstitutional",
+          "domain": "news9.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ktul.com/news/local/oklahoma-supreme-court-strikes-down-law-adding-restrictions-to-ballot-petitions-11-10-2026",
+          "domain": "ktul.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "08fd27e76424",
+      "headline": "Ninth Circuit Partially Blocks California's SB 253/SB 261 Climate-Disclosure Laws",
+      "summary": "A divided Ninth Circuit panel ruled Nov. 9 in Chamber of Commerce v. Sanchez that SB 253's Scope 1 and Scope 2 greenhouse-gas reporting may proceed, but found SB 253's Scope 3 supply-chain emissions reporting and SB 261's climate-risk financial disclosure requirement likely unconstitutional as compelled speech. The case returns to district court on severability; this is a preliminary-injunction ruling, not a final judgment.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "locationName": "San Francisco, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.courtlistener.com/opinion/11057787/united-states-of-america-chamber-of-commerce-v-sanchez/",
+          "domain": "courtlistener.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/25-5327/25-5327-2026-11-09.html",
+          "domain": "justia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://environmentalhealthsafetybrief.sidley.com/2026/11/10/sb-253-sb-261-update-ninth-circuit-lets-scope-1-and-scope-2-disclosures-proceed-finds-scope-3-and-sb-261-likely-unconstitutional/",
+          "domain": "sidley.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://natlawreview.com/article/split-decision-ninth-circuit-lets-californias-scope-1-and-2-emissions-reporting",
+          "domain": "natlawreview.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
       "isBreaking": false
     },
     {
@@ -2190,37 +2319,6 @@
       "isBreaking": false
     },
     {
-      "id": "8c2164505949",
-      "headline": "Brazil's Real Slides as Lula Government Readies Fiscal-Adjustment Package",
-      "summary": "Brazil's currency weakened as President Lula's economic team prepared a fiscal-adjustment package worth an estimated 50-60 billion reais for 2027 to calm market concerns over high interest rates and spending. Lula pledged budget discipline amid investor jitters.",
-      "category": "economy",
-      "severity": 3,
-      "lat": -15.7939,
-      "lon": -47.8828,
-      "locationName": "Brasília, Brazil",
-      "countryCode": "BR",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/lula-team-readies-brazil-fiscal-plan-in-bid-to-calm-market-jitters",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.investing.com/news/economy-news/brazils-lula-worried-about-high-interest-rates-pledges-budget-discipline-5010375",
-          "domain": "investing.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-11T06:09:06.519Z",
-      "expiresAt": "2026-11-13T06:09:06.519Z",
-      "isBreaking": false
-    },
-    {
       "id": "b742e7a683f2",
       "headline": "Auto Supplier Dakkota to Close Detroit Plant, Cutting 397 Jobs",
       "summary": "Dakkota Integrated Systems is closing its Detroit instrument-panel plant in two phases, on December 31, 2026 and March 31, 2027, after losing Stellantis contracts for the Jeep Grand Cherokee and Dodge Durango. The closure will eliminate 397 jobs.",
@@ -2261,81 +2359,239 @@
       "isBreaking": false
     },
     {
-      "id": "1046f5538563",
-      "headline": "Colombia Probes Alleged Plan by Intelligence Agency to Spy on Ex-Presidents Under Petro",
-      "summary": "Leaked documents allege Colombia's DNI intelligence agency planned to spy on former presidents and interfere in elections during the Petro administration. Prosecutors have opened an investigation into the allegations.",
-      "category": "politics",
+      "id": "8c2164505949",
+      "headline": "Brazil's Real Slides as Lula Government Readies Fiscal-Adjustment Package",
+      "summary": "Brazil's currency weakened as President Lula's economic team prepared a fiscal-adjustment package worth an estimated 50-60 billion reais for 2027 to calm market concerns over high interest rates and spending. Lula pledged budget discipline amid investor jitters.",
+      "category": "economy",
       "severity": 3,
-      "lat": 4.711,
-      "lon": -74.0721,
-      "locationName": "Bogotá, Colombia",
-      "countryCode": "CO",
+      "lat": -15.7939,
+      "lon": -47.8828,
+      "locationName": "Brasília, Brazil",
+      "countryCode": "BR",
       "sources": [
         {
-          "url": "https://colombiaone.com/2026/11/09/colombia-probes-election-misuse-petro-era-intelligence-agency/",
-          "domain": "colombiaone.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/lula-team-readies-brazil-fiscal-plan-in-bid-to-calm-market-jitters",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
         },
         {
-          "url": "https://www.elheraldo.co/colombia/2026/11/09/escandalo-de-irregularidades-en-la-dni-durante-el-gobierno-de-petro-hubo-intentos-de-interferir-en-procesos-electorales/",
-          "domain": "elheraldo.co",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.infobae.com/colombia/2026/11/09/documentos-secretos-de-la-dni-revelarian-plan-para-espiar-a-expresidentes-e-interferir-en-elecciones-durante-el-gobierno-petro/",
-          "domain": "infobae.com",
+          "url": "https://www.investing.com/news/economy-news/brazils-lula-worried-about-high-interest-rates-pledges-budget-discipline-5010375",
+          "domain": "investing.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 49,
+      "trustScore": 51,
       "firstSeen": "2026-11-11T06:09:06.519Z",
       "lastUpdated": "2026-11-11T06:09:06.519Z",
       "expiresAt": "2026-11-13T06:09:06.519Z",
       "isBreaking": false
     },
     {
-      "id": "adbb2888a192",
-      "headline": "Record Rainfall Triggers Deadly Floods and Landslides Across Central Vietnam",
-      "summary": "Record-breaking rainfall triggered widespread flooding and landslides across central Vietnam, affecting Da Nang, Hue and Quang Tri provinces. Authorities ordered flood preparations as rainfall records were shattered in multiple provinces.",
-      "category": "disaster",
+      "id": "7ba19d8af274",
+      "headline": "Kraft Group's Proposed $16 Billion Data Center Campus Draws Resident Pushback in Sutton, Massachusetts",
+      "summary": "The Kraft Group and Unified Global Packaging Group proposed a roughly $16 billion, 900MW, multi-building data center campus in Sutton. At a Nov. 10 Select Board meeting, residents voiced noise concerns and pushed for a possible moratorium; the board deferred a vote pending further public forums.",
+      "category": "economy",
       "severity": 3,
-      "lat": 16.0544,
-      "lon": 108.2022,
-      "locationName": "Da Nang, Vietnam",
-      "countryCode": "VN",
+      "lat": 42.1515,
+      "lon": -71.7623,
+      "locationName": "Sutton, Massachusetts, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MA",
       "sources": [
         {
-          "url": "https://e.vnexpress.net/news/news/environment/14-rain-records-shattered-as-november-storms-devastate-central-vietnam-4989705.html",
-          "domain": "vnexpress.net",
+          "url": "https://www.bostonglobe.com/2026/11/10/business/kraft-group-data-centers-sutton-mass/",
+          "domain": "bostonglobe.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://news.tuoitre.vn/heavy-downpours-hit-central-vietnam-but-miss-the-hydropower-dams-that-need-them-most-103261110141523338.htm",
-          "domain": "tuoitre.vn",
+          "url": "https://www.wcvb.com/article/sutton-select-board-to-review-16-billion-data-center-proposal/74384942",
+          "domain": "wcvb.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.netnewsledger.com/2026/11/08/international-weather-vietnam-orders-flood-preparations-as-central-coast-faces-extreme-rain/",
-          "domain": "netnewsledger.com",
+          "url": "https://whdh.com/news/sutton-to-discuss-plans-to-build-data-center-in-16-billion-project-proposed-in-part-by-the-kraft-group/",
+          "domain": "whdh.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-11T06:09:06.519Z",
-      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8acbe40c319f",
+      "headline": "Federal Government Blocks About $113 Million in Minnesota Medicaid Reimbursements Over Fraud Concerns",
+      "summary": "CMS, under the Trump administration, will not reimburse Minnesota for nearly $113 million spent on Medicaid provider payments flagged as high fraud-risk, denying 78 of 330 claims reviewed for issues like missing documentation and unsigned provider agreements. It is part of a larger $550 million in frozen Medicaid funds; Minnesota AG Keith Ellison's office is challenging the deferrals in court.",
+      "category": "health",
+      "severity": 3,
+      "lat": 44.9537,
+      "lon": -93.09,
+      "locationName": "St. Paul, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.startribune.com/minnesota-medicaid-113-million-withheld/601903238",
+          "domain": "startribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.willmarradio.com/news/feds-deny-minnesota-113-million-in-medicaid-reimbursements/article_65f453f4-ddd6-4a9b-b7b1-79df4cecedc6.html",
+          "domain": "willmarradio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtonsun.com/health/trump-administration-strips-minnesota-medicaid-funds",
+          "domain": "washingtonsun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f2c4cb32ed7a",
+      "headline": "Cherokee Nation Council Votes Unanimously to Oppose $4 Billion Inola, Oklahoma Aluminum Smelter",
+      "summary": "The 17-member Cherokee Nation Tribal Council unanimously passed a resolution, reported Nov. 11, backing the neighboring Muscogee Nation's opposition to the proposed $4 billion Century Aluminum/Emirates Global Aluminum smelter near Inola. The resolution cites cross-border pollution concerns and calls for full tribal consultation; the project has support from Oklahoma Gov. Kevin Stitt and the state government.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 36.1559,
+      "lon": -95.5155,
+      "locationName": "Inola, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.kgou.org/indigenous-news/2026-11-11/cherokee-nation-issues-resolution-to-oppose-inola-smelter",
+          "domain": "kgou.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kosu.org/kosudaily/2026-11-11/headlines-initiative-petition-restrictions-cherokees-oppose-smelter-route-66-centennial",
+          "domain": "kosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://okenergytoday.com/2026/11/cherokee-nation-takes-stand-against-inola-smelter/",
+          "domain": "okenergytoday.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bea1b4e24616",
+      "headline": "Montana Regulators Approve $15.4 Billion NorthWestern Energy-Black Hills Corp. Merger",
+      "summary": "The Montana Public Service Commission voted 3-2 on Nov. 10 to approve the $15.4 billion merger of NorthWestern Energy and Black Hills Corp., creating a new parent company called Bright Horizon Energy Corp. A majority of public commenters had opposed the deal.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 46.5891,
+      "lon": -112.0391,
+      "locationName": "Helena, Montana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MT",
+      "sources": [
+        {
+          "url": "https://dailymontanan.com/2026/11/10/public-service-commission-approves-northwestern-energy-black-hills-corp-merger/",
+          "domain": "dailymontanan.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/montana-psc-approves-northwestern-energy-merger-with-black-hills",
+          "domain": "nbcmontana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://rapidcitypost.com/southdakotasearchlight-government-f827f9e647",
+          "domain": "rapidcitypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4b3607d272b5",
+      "headline": "Three Washington School Districts Prepare to Sue State Over $800 Million Funding Shortfall",
+      "summary": "Lake Washington and Tacoma school boards passed resolutions Oct. 22, and Yakima followed Nov. 2, authorizing participation in a prospective lawsuit alleging the state has fallen out of compliance with its McCleary-era obligation to fully fund basic education. The districts cite an estimated $800 million shortfall forcing layoffs, larger class sizes, and reliance on local levies; no lawsuit has been filed yet as of Nov. 9.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 47.2529,
+      "lon": -122.4443,
+      "locationName": "Tacoma, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/09/washington-schools-prepare-to-sue-the-state-for-failing-to-fund-public-education/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cascadiadaily.com/2026/nov/09/3-major-school-districts-prepare-to-sue-state-over-funding-shortfall/",
+          "domain": "cascadiadaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yakimaherald.com/news/local/education/yakima-school-district-will-join-education-funding-lawsuit-against-the-state/article_f3438245-d348-4a39-b6a5-13b8c4325e19.html",
+          "domain": "yakimaherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
       "isBreaking": false
     },
     {
@@ -2815,34 +3071,81 @@
       "isBreaking": false
     },
     {
-      "id": "b88c5131b1f8",
-      "headline": "Ecuador: Thousands Protest Pretrial Detention of Opposition Leader Luisa González; Flooding Forces Evacuations in Milagro",
-      "summary": "Thousands marched in Quito, Guayaquil and Cuenca on Nov 7 demanding President Daniel Noboa's resignation and the release of opposition leader Luisa González, held in pretrial detention since late October in a money-laundering case she calls political persecution. Separately, flooding from overflowing rivers forced evacuations and school closures in Milagro, Guayas province, prompting a government aid delivery.",
+      "id": "1046f5538563",
+      "headline": "Colombia Probes Alleged Plan by Intelligence Agency to Spy on Ex-Presidents Under Petro",
+      "summary": "Leaked documents allege Colombia's DNI intelligence agency planned to spy on former presidents and interfere in elections during the Petro administration. Prosecutors have opened an investigation into the allegations.",
       "category": "politics",
       "severity": 3,
-      "lat": -0.1807,
-      "lon": -78.4678,
-      "locationName": "Quito, Ecuador",
-      "countryCode": "EC",
+      "lat": 4.711,
+      "lon": -74.0721,
+      "locationName": "Bogotá, Colombia",
+      "countryCode": "CO",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/10/23/ecuador-judge-orders-pre-trial-detention-of-leftist-presidential-candidate",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
+          "url": "https://colombiaone.com/2026/11/09/colombia-probes-election-misuse-petro-era-intelligence-agency/",
+          "domain": "colombiaone.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.elcomercio.com/actualidad/ecuador/lluvias-inundaciones-manabi-santa-elena-milagro-familias-evacuadas/",
-          "domain": "elcomercio.com",
+          "url": "https://www.elheraldo.co/colombia/2026/11/09/escandalo-de-irregularidades-en-la-dni-durante-el-gobierno-de-petro-hubo-intentos-de-interferir-en-procesos-electorales/",
+          "domain": "elheraldo.co",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.infobae.com/colombia/2026/11/09/documentos-secretos-de-la-dni-revelarian-plan-para-espiar-a-expresidentes-e-interferir-en-elecciones-durante-el-gobierno-petro/",
+          "domain": "infobae.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 48,
-      "firstSeen": "2026-11-10T06:07:21.759Z",
-      "lastUpdated": "2026-11-10T06:07:21.759Z",
-      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "adbb2888a192",
+      "headline": "Record Rainfall Triggers Deadly Floods and Landslides Across Central Vietnam",
+      "summary": "Record-breaking rainfall triggered widespread flooding and landslides across central Vietnam, affecting Da Nang, Hue and Quang Tri provinces. Authorities ordered flood preparations as rainfall records were shattered in multiple provinces.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 16.0544,
+      "lon": 108.2022,
+      "locationName": "Da Nang, Vietnam",
+      "countryCode": "VN",
+      "sources": [
+        {
+          "url": "https://e.vnexpress.net/news/news/environment/14-rain-records-shattered-as-november-storms-devastate-central-vietnam-4989705.html",
+          "domain": "vnexpress.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.tuoitre.vn/heavy-downpours-hit-central-vietnam-but-miss-the-hydropower-dams-that-need-them-most-103261110141523338.htm",
+          "domain": "tuoitre.vn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.netnewsledger.com/2026/11/08/international-weather-vietnam-orders-flood-preparations-as-central-coast-faces-extreme-rain/",
+          "domain": "netnewsledger.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
       "isBreaking": false
     },
     {
@@ -2879,6 +3182,37 @@
       "isBreaking": false
     },
     {
+      "id": "b88c5131b1f8",
+      "headline": "Ecuador: Thousands Protest Pretrial Detention of Opposition Leader Luisa González; Flooding Forces Evacuations in Milagro",
+      "summary": "Thousands marched in Quito, Guayaquil and Cuenca on Nov 7 demanding President Daniel Noboa's resignation and the release of opposition leader Luisa González, held in pretrial detention since late October in a money-laundering case she calls political persecution. Separately, flooding from overflowing rivers forced evacuations and school closures in Milagro, Guayas province, prompting a government aid delivery.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -0.1807,
+      "lon": -78.4678,
+      "locationName": "Quito, Ecuador",
+      "countryCode": "EC",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/23/ecuador-judge-orders-pre-trial-detention-of-leftist-presidential-candidate",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.elcomercio.com/actualidad/ecuador/lluvias-inundaciones-manabi-santa-elena-milagro-familias-evacuadas/",
+          "domain": "elcomercio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 48,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
       "id": "d9e900a07916",
       "headline": "Gunmen Kill 11 Relatives of Vigilante, Abduct 13 Others in Zamfara, Nigeria",
       "summary": "Gunmen attacked the home of a government-backed vigilante volunteer in Gidan Taba village, Maradun LGA, after he helped security forces resist gang incursions, barricading and setting the home ablaze, killing 11 occupants. Thirteen others were abducted; security forces have since deployed to the area.",
@@ -2910,99 +3244,36 @@
       "isBreaking": false
     },
     {
-      "id": "0ba6357effa1",
-      "headline": "Russian Strike Kills Three at Odesa Food Warehouse Day Before Abu Dhabi Peace Talks",
-      "summary": "A Russian strike on Odesa killed three people and wounded one, setting ablaze a warehouse storing food supplies for the city's kindergartens and schools, roughly 24 hours before the start of US-brokered trilateral peace talks in Abu Dhabi.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 46.4825,
-      "lon": 30.7233,
-      "locationName": "Odesa, Ukraine",
-      "countryCode": "UA",
-      "sources": [
-        {
-          "url": "https://euromaidanpress.com/2026/11/09/russian-attack-kills-three-in-odesa-and-sets-a-warehouse-of-food-for-schools-ablaze-a-day-before-abu-dhabi-peace-talks/",
-          "domain": "euromaidanpress.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kyivpost.com/post/89546",
-          "domain": "kyivpost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-10T06:07:21.759Z",
-      "lastUpdated": "2026-11-10T06:07:21.759Z",
-      "expiresAt": "2026-11-12T06:07:21.759Z",
-      "isBreaking": false
-    },
-    {
-      "id": "1a38a4d1f94f",
-      "headline": "Serbia's New Parliament to Convene Nov 17 After Student List Election Win; Vučić's Last-Day Pardons Face Legal Challenge",
-      "summary": "Serbia's new 250-seat parliament, in which the student-led 'Student List' won 140 seats against the SNS-led list's 103, will hold its first session Nov 17. Separately, 49 pardons issued by Aleksandar Vučić on his last day as president — including of a man charged with attempted murder of a protester — are under investigation by Serbia's organized-crime prosecutor.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 44.7866,
-      "lon": 20.4489,
-      "locationName": "Belgrade, Serbia",
-      "countryCode": "RS",
-      "sources": [
-        {
-          "url": "https://wtop.com/national/2026/11/serbias-parliament-to-meet-on-nov-17-after-student-led-movement-won-election-over-strongman-vucic",
-          "domain": "wtop.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://balkaninsight.com/2026/11/06/serbian-presidents-controversial-last-minute-pardons-face-legal-challenges/bi/",
-          "domain": "balkaninsight.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-10T06:07:21.759Z",
-      "lastUpdated": "2026-11-10T06:07:21.759Z",
-      "expiresAt": "2026-11-12T06:07:21.759Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a1c95dacf49a",
-      "headline": "China's October Trade Surplus Tops $1 Trillion for Second Straight Year as Exports Surge 35.2%",
-      "summary": "China's October exports rose 35.2% year-on-year, beating forecasts, driven by AI-hardware and integrated-circuit shipments, pushing the year-to-date trade surplus above $1.04 trillion for a second consecutive year; imports also surged 41.6%, narrowing the monthly surplus from September's level.",
+      "id": "5f5e95461641",
+      "headline": "Indiana Child Welfare Agency Says It Needs $300 Million Emergency State Infusion",
+      "summary": "DCS Director Jennifer Dorfmeyer told Indiana's State Budget Committee on Nov. 11 that the agency expects to need a $300 million infusion to its main account for fiscal year 2027, continuing a pattern of recent-year shortfalls. She described a new service-utilization review team as a mitigation step.",
       "category": "economy",
       "severity": 3,
-      "lat": 39.9042,
-      "lon": 116.4074,
-      "locationName": "Beijing, China",
-      "countryCode": "CN",
+      "lat": 39.7684,
+      "lon": -86.1581,
+      "locationName": "Indianapolis, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
       "sources": [
         {
-          "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969",
-          "domain": "investing.com",
+          "url": "https://indianacapitalchronicle.com/2026/11/11/indiana-child-welfare-agency-to-need-300m-state-infusion/",
+          "domain": "indianacapitalchronicle.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.theglobeandmail.com/investing/markets/indices/NXTQ/pressreleases/8747559/china-s-trade-surplus-surpasses-1-trillion-for-a-2nd-straight-year-as-exports-surge-35/",
-          "domain": "theglobeandmail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.yahoo.com/news/us/articles/indiana-child-welfare-agency-300m-100030206.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
         }
       ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-10T06:07:21.759Z",
-      "lastUpdated": "2026-11-10T06:07:21.759Z",
-      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "trustScore": 44,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T15:27:29.990Z",
       "isBreaking": false
     },
     {
@@ -3312,6 +3583,102 @@
       "isBreaking": false
     },
     {
+      "id": "0ba6357effa1",
+      "headline": "Russian Strike Kills Three at Odesa Food Warehouse Day Before Abu Dhabi Peace Talks",
+      "summary": "A Russian strike on Odesa killed three people and wounded one, setting ablaze a warehouse storing food supplies for the city's kindergartens and schools, roughly 24 hours before the start of US-brokered trilateral peace talks in Abu Dhabi.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 46.4825,
+      "lon": 30.7233,
+      "locationName": "Odesa, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://euromaidanpress.com/2026/11/09/russian-attack-kills-three-in-odesa-and-sets-a-warehouse-of-food-for-schools-ablaze-a-day-before-abu-dhabi-peace-talks/",
+          "domain": "euromaidanpress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kyivpost.com/post/89546",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1a38a4d1f94f",
+      "headline": "Serbia's New Parliament to Convene Nov 17 After Student List Election Win; Vučić's Last-Day Pardons Face Legal Challenge",
+      "summary": "Serbia's new 250-seat parliament, in which the student-led 'Student List' won 140 seats against the SNS-led list's 103, will hold its first session Nov 17. Separately, 49 pardons issued by Aleksandar Vučić on his last day as president — including of a man charged with attempted murder of a protester — are under investigation by Serbia's organized-crime prosecutor.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 44.7866,
+      "lon": 20.4489,
+      "locationName": "Belgrade, Serbia",
+      "countryCode": "RS",
+      "sources": [
+        {
+          "url": "https://wtop.com/national/2026/11/serbias-parliament-to-meet-on-nov-17-after-student-led-movement-won-election-over-strongman-vucic",
+          "domain": "wtop.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://balkaninsight.com/2026/11/06/serbian-presidents-controversial-last-minute-pardons-face-legal-challenges/bi/",
+          "domain": "balkaninsight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a1c95dacf49a",
+      "headline": "China's October Trade Surplus Tops $1 Trillion for Second Straight Year as Exports Surge 35.2%",
+      "summary": "China's October exports rose 35.2% year-on-year, beating forecasts, driven by AI-hardware and integrated-circuit shipments, pushing the year-to-date trade surplus above $1.04 trillion for a second consecutive year; imports also surged 41.6%, narrowing the monthly surplus from September's level.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969",
+          "domain": "investing.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.theglobeandmail.com/investing/markets/indices/NXTQ/pressreleases/8747559/china-s-trade-surplus-surpasses-1-trillion-for-a-2nd-straight-year-as-exports-surge-35/",
+          "domain": "theglobeandmail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-10T06:07:21.759Z",
+      "lastUpdated": "2026-11-10T06:07:21.759Z",
+      "expiresAt": "2026-11-12T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
       "id": "9143fccfead8",
       "headline": "Asian Stocks Rally Sharply as Semiconductor Rebound Lifts Nikkei, KOSPI After Taiwan's Earlier 5% Surge",
       "summary": "Japan's Nikkei rose roughly 2.5-3% and South Korea's KOSPI climbed as much as 4-5%, triggering a circuit breaker in one session, driven by a rebound in AI/semiconductor stocks following a surge in the Philadelphia Semiconductor Index; SoftBank, SK Hynix and Samsung all gained strongly, extending the tech-led rally that had already lifted Taiwan's market 5% earlier in the week.",
@@ -3589,6 +3956,100 @@
       "isBreaking": false
     },
     {
+      "id": "1ff0fdaf536f",
+      "headline": "New York Launches AI Safety Research Center at SUNY Binghamton, Announces $100M Road Repaving",
+      "summary": "On Nov. 10, Gov. Hochul launched the New York Center for AI Responsibility and Research at SUNY Binghamton, involving 80+ researchers co-led by Cornell Tech's Greg Morrisett and Columbia's Jeannette Wing. She separately announced $100 million for repaving 642 lane-miles statewide via the Harsh Winter Paving program.",
+      "category": "science",
+      "severity": 2,
+      "lat": 42.0987,
+      "lon": -75.918,
+      "locationName": "Binghamton, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-governor-hochul-declares-ny-will-lead-nation-ai-science-and",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wbng.com/2026/11/10/new-york-launches-ai-safety-research-center-binghamton-university/",
+          "domain": "wbng.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.cornell.edu/stories/2026/11/greg-morrisett-co-lead-new-nys-ai-safety-research-center",
+          "domain": "cornell.edu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.timesunion.com/capitol/article/hochul-launches-new-institute-ai-safety-amid-22523366.php",
+          "domain": "timesunion.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "63a6510c8d89",
+      "headline": "Maryland Prison Inmate Death at North Branch Correctional Institution Investigated as Possible Homicide",
+      "summary": "An inmate was pronounced dead just before midnight Nov. 9 at the 'hypermax' North Branch Correctional Institution in Cumberland. The Maryland State Police Homicide Unit is investigating, with two fellow inmates identified as suspects but not yet charged pending autopsy results.",
+      "category": "society",
+      "severity": 2,
+      "lat": 39.6528,
+      "lon": -78.7625,
+      "locationName": "Cumberland, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
+      "sources": [
+        {
+          "url": "https://mdsp.maryland.gov/about-us/newsroom/police-investigating-death-state-prison-allegany-county-0",
+          "domain": "maryland.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://wjla.com/news/local/maryland-state-police-probe-inmate-death-at-north-branch-prison-in-cumberland-allegany-county-homicide",
+          "domain": "wjla.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thebanner.com/community/criminal-justice/cumberland-hypermax-prison-killing-2026-YOOOUEH2ABBVFKOINSKI733QTI/",
+          "domain": "thebanner.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbaltv.com/article/msp-police-investigating-death-inmate-north-branch-facility/71153090",
+          "domain": "wbaltv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
+      "isBreaking": false
+    },
+    {
       "id": "d889b020bc01",
       "headline": "Italy's Governing Coalition Splits Over Continued Aid to Ukraine Amid Abu Dhabi Talks",
       "summary": "Italy's ruling coalition is divided over whether to continue military aid to Ukraine, as debate intensifies alongside US-mediated peace talks in Abu Dhabi. The disagreement reflects wider European uncertainty over the war's endgame.",
@@ -3619,83 +4080,91 @@
       "isBreaking": false
     },
     {
-      "id": "e6d1d618030b",
-      "headline": "Wild River Fire in New Hampshire's White Mountains Reaches 29% Containment After Rain",
-      "summary": "A human-caused wildfire that has burned roughly 821 acres in White Mountain National Forest since November 1 is now 29% contained after weekend rain helped firefighters. It is the largest fire recorded in the forest since 1918.",
-      "category": "climate",
+      "id": "1664c63bbc97",
+      "headline": "Wisconsin Democrats Elect Greta Neubauer First Female Assembly Speaker; GOP Names Julian Bradley Senate Minority Leader",
+      "summary": "On Nov. 11, Wisconsin Democrats elected Dianne Hesselbein Senate Majority Leader and Greta Neubauer the Assembly's first-ever female Speaker, giving women the top posts in both chambers for the first time. Republicans named Julian Bradley Senate Minority Leader, the first Black lawmaker to lead a caucus in either chamber.",
+      "category": "politics",
       "severity": 2,
-      "lat": 44.3806,
-      "lon": -71.1792,
-      "locationName": "Gorham, New Hampshire, USA",
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-NH",
+      "subdivision": "US-WI",
       "sources": [
         {
-          "url": "https://www.wcax.com/2026/11/09/white-mountain-national-forest-wildfire-29-contained-after-rain/",
-          "domain": "wcax.com",
+          "url": "https://www.wsaw.com/2026/11/11/wisconsin-democrats-elect-hesselbein-senate-majority-leader-neubauer-assembly-speaker/",
+          "domain": "wsaw.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.wmur.com/article/wild-river-fire-20-percent-contained-11072026/74365658",
-          "domain": "wmur.com",
+          "url": "https://www.wpr.org/news/democrats-leadership-wisconsin-legislature-neubauer-hesselbein",
+          "domain": "wpr.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.fs.usda.gov/r09/whitemountain/alerts/wild-river-fire-androscoggin-ranger-district",
-          "domain": "usda.gov",
-          "reliability": 85,
-          "bias": "center"
+          "url": "https://wisconsinexaminer.com/2026/11/11/wisconsin-democratic-lawmakers-step-into-new-era-with-election-of-two-women-leaders/",
+          "domain": "wisconsinexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wtmj.com/news/2026/11/11/democrats-republicans-name-new-leaders-for-wisconsin-legislature-as-power-shifts-in-madison/",
+          "domain": "wtmj.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
+      "trustScore": 57,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
       "isBreaking": false
     },
     {
-      "id": "2077aeded0e9",
-      "headline": "New Jersey Gets First Female Governor-Lieutenant Governor Pair in State History",
-      "summary": "Gov. Mikie Sherrill appointed Shirley U. Emehelu as lieutenant governor and secretary of state, sworn in November 9, making her the state's first immigrant lieutenant governor. The appointment fills a vacancy left after Dale Caldwell resigned amid harassment findings.",
-      "category": "politics",
+      "id": "476b0ab3517b",
+      "headline": "North Kingstown, Rhode Island Police Officer Indicted on Sexual Assault Charges, Resigns",
+      "summary": "Officer Cyress Harrison, 27, was indicted by a statewide grand jury on three counts of second-degree sexual assault tied to an alleged Aug. 22, 2026 incident. He was arraigned Nov. 10 in Washington County Superior Court, pleaded not guilty, was released on personal recognizance, and has since resigned from the department.",
+      "category": "society",
       "severity": 2,
-      "lat": 40.2206,
-      "lon": -74.7597,
-      "locationName": "Trenton, New Jersey, USA",
+      "lat": 41.5834,
+      "lon": -71.4817,
+      "locationName": "North Kingstown, Rhode Island, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-NJ",
+      "subdivision": "US-RI",
       "sources": [
         {
-          "url": "https://www.nj.gov/governor/news/2026/approved/20261109a.shtml",
-          "domain": "nj.gov",
+          "url": "https://riag.ri.gov/press-releases/north-kingstown-police-officer-indicted-sexual-assault",
+          "domain": "ri.gov",
           "reliability": 85,
           "bias": "center"
         },
         {
-          "url": "https://abc7ny.com/post/governor-mikie-sherrill-names-shirley-emehelu-new-jerseys-lieutenant/20026863/",
-          "domain": "abc7ny.com",
+          "url": "https://www.wpri.com/news/local-news/south-county/north-kingstown-officer-indicted-sexual-assault/",
+          "domain": "wpri.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://newjerseymonitor.com/2026/11/09/ex-prosecutor-becomes-njs-new-lieutenant-governor/",
-          "domain": "newjerseymonitor.com",
+          "url": "https://turnto10.com/news/local/north-kingstown-police-officer-charged-with-sexual-assault-second-degree-washington-county-court-state-police-attorney-general-november-10-2026",
+          "domain": "turnto10.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 55,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-11T15:27:29.990Z",
+      "expiresAt": "2026-11-13T03:27:29.990Z",
       "isBreaking": false
     },
     {
@@ -3916,252 +4385,6 @@
       "isBreaking": false
     },
     {
-      "id": "765862b0f88b",
-      "headline": "Lake Lanier Hits Lowest Level Since 2017 as Army Corps Begins Drought Operations",
-      "summary": "The Army Corps of Engineers began drought operations on the Chattahoochee-Flint river basin after Lake Lanier dropped roughly 8 feet below full pool, its lowest level since January 2017. Officials are warning boaters about low-water hazards as the drought continues.",
-      "category": "climate",
-      "severity": 2,
-      "lat": 34.2979,
-      "lon": -83.8241,
-      "locationName": "Gainesville, Georgia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-GA",
-      "sources": [
-        {
-          "url": "https://www.wsbtv.com/news/local/low-water-levels-lake-lanier-prompt-safety-warning-boaters-drought-continues/WJFTHL3YE5DVTIU7ZKIBFTRO54/",
-          "domain": "wsbtv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.gainesvilletimes.com/news/lake-lanier/army-corps-of-engineers-begins-drought-operations-as-lake-lanier-drops-to-lowest-level-in-nearly-a-decade/",
-          "domain": "gainesvilletimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://accessnorthga.com/news/officials-monitoring-drought-conditions-effects-on-lake-lanier",
-          "domain": "accessnorthga.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
-      "id": "2cfe9d95d648",
-      "headline": "Montgomery County Council Votes on Fate of Dickerson Trash Incinerator",
-      "summary": "The Montgomery County, Maryland council is voting on whether to close the Reworld-operated Dickerson trash incinerator or spend about $356 million to refurbish it. County Executive Marc Elrich is urging the council to close the facility.",
-      "category": "climate",
-      "severity": 2,
-      "lat": 39.2068,
-      "lon": -77.4317,
-      "locationName": "Dickerson, Maryland, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MD",
-      "sources": [
-        {
-          "url": "https://wtop.com/maryland/2026/11/on-eve-of-vote-on-incinerator-montgomery-co-executive-urges-council-to-close-it/",
-          "domain": "wtop.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://bethesdamagazine.com/2026/11/09/county-council-adopt-position-dickerson-incinerator/",
-          "domain": "bethesdamagazine.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.fox5dc.com/news/montgomery-county-council-vote-trash-incinerator-options",
-          "domain": "fox5dc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
-      "id": "8360b7feeb44",
-      "headline": "Virginia Draft Permit Omits PFAS Discharge Limits for Richmond Airport Despite High Contamination",
-      "summary": "A Virginia DEQ draft stormwater permit renewal for Richmond International Airport requires PFAS monitoring but sets no discharge cap, despite elevated 'forever chemical' levels found entering Gillies Creek and White Oak Swamp. Environmental groups including the Southern Environmental Law Center and Chesapeake Bay Foundation are pushing for stricter limits.",
-      "category": "climate",
-      "severity": 2,
-      "lat": 37.5052,
-      "lon": -77.3197,
-      "locationName": "Richmond, Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-VA",
-      "sources": [
-        {
-          "url": "https://www.bayjournal.com/news/pollution/virginia-tells-richmond-airport-to-reduce-its-use-of-forever-chemicals/article_3c52455f-d817-4f59-bc53-059fffead1bb.html",
-          "domain": "bayjournal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.henricocitizen.com/deq-weighs-new-pfas-requirements-for-richmond-airport-as-residents-seek-tougher-limits/",
-          "domain": "henricocitizen.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.selc.org/press-release/deq-issues-draft-stormwater-permit-without-pfas-limits-for-richmond-international-airport/",
-          "domain": "selc.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
-      "id": "39ab8185cf08",
-      "headline": "City of Eagan, Minnesota Sues Data Center Operator Over Unpermitted Chillers",
-      "summary": "Eagan sued Eagan Capital LLC, operator of the IronGate data center, over four unpermitted temporary chillers installed after noise complaints from nearby residents. The company had separately sued the city in June over a data-center development moratorium.",
-      "category": "society",
-      "severity": 2,
-      "lat": 44.8041,
-      "lon": -93.167,
-      "locationName": "Eagan, Minnesota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MN",
-      "sources": [
-        {
-          "url": "https://www.startribune.com/data-center-moratorium-lawsuit-eagan-minnesota/601865008",
-          "domain": "startribune.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.hometownsource.com/sun_thisweek/community/eagan/city-of-eagan-sues-irongate-data-center/article_841f5c31-e58e-49bf-94c9-871d039328d5.html",
-          "domain": "hometownsource.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://blandinonbroadband.org/2026/11/04/city-of-eagan-is-suing-irongate-data-center-dakota-county/",
-          "domain": "blandinonbroadband.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ad0df6442089",
-      "headline": "First of Six Civil Trials Over Alleged Abuse at Wyoming Boys' School Begins in Worland",
-      "summary": "The first of six civil trials over alleged abuse, including solitary confinement and excessive force, at the state-run Wyoming Boys' School began November 10 in Worland. The case was brought by former resident Blaise Chivers-King after a judge denied staff qualified immunity.",
-      "category": "society",
-      "severity": 2,
-      "lat": 44.0169,
-      "lon": -107.9558,
-      "locationName": "Worland, Wyoming, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WY",
-      "sources": [
-        {
-          "url": "https://wyofile.com/the-first-wyoming-boys-school-trial-starts-today-follow-along-with-our-coverage/",
-          "domain": "wyofile.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.eastidahonews.com/2026/11/the-first-wyoming-boys-school-trial-starts-today/",
-          "domain": "eastidahonews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wyodaily.com/story/2026/10/08/news/judge-denies-qualified-immunity-to-wyoming-boys-school-staff-in-abuse-lawsuit/18314.html",
-          "domain": "wyodaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
-      "id": "7e7e4a3acae6",
-      "headline": "Conservation Group Threatens Lawsuit Over Alleged Mismanagement of Alaska Salmon Fisheries",
-      "summary": "The Wild Fish Conservancy issued a formal notice of intent to sue the Alaska Department of Fish and Game, NMFS, and the Department of Commerce on November 9, alleging violations of the Endangered Species Act, Magnuson-Stevens Act and NEPA tied to Chinook salmon harvest management near Kodiak and the Chignik and South Alaska Peninsula fisheries. The agencies have 60 days to respond before a suit can be filed.",
-      "category": "climate",
-      "severity": 2,
-      "lat": 57.79,
-      "lon": -152.4072,
-      "locationName": "Kodiak, Alaska, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AK",
-      "sources": [
-        {
-          "url": "https://www.kucb.org/regional/2026-11-09/wild-fish-conservancy-issues-notice-of-intent-to-sue-over-alleged-mismanagement-of-alaska-fisheries",
-          "domain": "kucb.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ktoo.org/2026/11/09/wild-fish-conservancy-issues-notice-of-intent-to-sue-over-alleged-mismanagement-of-alaska-fisheries/",
-          "domain": "ktoo.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://alaskapublic.org/news/alaska-desk/2026-11-09/wild-fish-conservancy-says-it-intends-to-sue-over-alleged-mismanagement-of-alaska-fisheries",
-          "domain": "alaskapublic.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
       "id": "308f8f60c4ef",
       "headline": "Thailand Keeps Cambodia Border Closed Indefinitely, Steps Up Security Patrols",
       "summary": "Thailand announced it will keep its border with Cambodia closed indefinitely, citing continued security concerns, while increasing military patrols in the area. The closure extends a standoff between the two neighbors following earlier border clashes.",
@@ -4290,74 +4513,6 @@
       "isBreaking": false
     },
     {
-      "id": "a8e48a6710f9",
-      "headline": "Healthcare Firm Founded by Sitting Stratford, Connecticut Mayor Files for Bankruptcy Amid Medicare Fraud Probe",
-      "summary": "TapestryHealth, founded by Stratford Mayor David Chess, filed for Chapter 11 bankruptcy on November 6 after federal regulators suspended its Medicare payments during a billing review. The company's financial collapse has raised questions about the mayor's continued role.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 41.1845,
-      "lon": -73.1332,
-      "locationName": "Stratford, Connecticut, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CT",
-      "sources": [
-        {
-          "url": "https://www.ctpost.com/news/article/stratford-mayor-david-chess-tapestry-health-probe-22521681.php",
-          "domain": "ctpost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://patch.com/connecticut/stratford/company-founded-stratford-mayor-files-bankruptcy",
-          "domain": "patch.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4d0caa4fce72",
-      "headline": "Flood Warnings Issued for Llano and Devils Rivers as Rain Hits Texas Hill Country",
-      "summary": "The National Weather Service issued flood warnings from November 9-11 for the Llano River, which was forecast to crest near 14.1 feet at Llano, and for the Devils River near Comstock and Juno. Low-water crossings flooded but impacts were moderate rather than catastrophic.",
-      "category": "climate",
-      "severity": 2,
-      "lat": 30.7596,
-      "lon": -98.6756,
-      "locationName": "Llano, Texas, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TX",
-      "sources": [
-        {
-          "url": "https://www.ksat.com/weather/alerts/",
-          "domain": "ksat.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.defconlevel.com/alert/2026-11-10-nws-noaa-weather-flood-warning-issued-november-10-at-6-33am-cst-until-november-11-at-4-00am-cst-by-nws-austin-san-antonio-tx",
-          "domain": "defconlevel.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-10T15:30:04.779Z",
-      "lastUpdated": "2026-11-10T15:30:04.779Z",
-      "expiresAt": "2026-11-12T03:30:04.779Z",
-      "isBreaking": false
-    },
-    {
       "id": "5ed87c81d5c1",
       "headline": "Chile's Inflation Hits 4.5%, Highest in Over a Year, as President Kast's Approval Sinks to Record Low",
       "summary": "Chile's annual inflation rose to 4.5% in October, above the central bank's target, driven by fuel and food costs. President José Antonio Kast's approval has sunk to roughly 26-29%, driven by anger over the early release of convicted child sex offenders and a stagnant economy.",
@@ -4410,13 +4565,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 105,
-    "carried": 64,
-    "updated": 18,
-    "expired": 22,
+    "multiSource": 108,
+    "carried": 96,
+    "updated": 0,
+    "expired": 11,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 6.88,
-    "budgetUsd": 12
+    "costUsd": 4.34,
+    "budgetUsd": 8
   }
 }
