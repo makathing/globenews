@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T06:08:11.410Z",
+  "generatedAt": "2026-11-12T15:29:21.541Z",
   "mode": "daily",
   "events": [
     {
@@ -438,6 +438,46 @@
       "firstSeen": "2026-11-10T06:07:21.759Z",
       "lastUpdated": "2026-11-10T06:07:21.759Z",
       "expiresAt": "2026-11-14T06:07:21.759Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5c4237c03652",
+      "headline": "Alaska US Senate Race: Peltola Extends Lead Over Sullivan Ahead of Ranked-Choice Tabulation",
+      "summary": "With about 245,470 first-choice ballots counted (roughly 84% of expected total), Democrat Mary Peltola leads Republican Sen. Dan Sullivan 48.8% to 47.1%, a roughly 4,250-vote margin. Since neither candidate cleared 50%, the race heads to Alaska's official ranked-choice tabulation on Nov. 18, a contest with national implications for Senate control.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 61.2181,
+      "lon": -149.9003,
+      "locationName": "Anchorage, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://alaskabeacon.com/2026/11/11/with-25000-more-votes-counted-peltola-jkt-and-begich-near-victory-in-alaska-election/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.adn.com/politics/2026/11/09/mary-peltola-inches-further-ahead-of-sen-sullivan-in-alaskas-senate-race/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://thehill.com/homenews/campaign/6210538-peltola-expands-alaska-senate-lead/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 53,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-16T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -1576,42 +1616,6 @@
       "isBreaking": false
     },
     {
-      "id": "162626d5d4ac",
-      "headline": "Airstrikes Near Yemen's Capital Sanaa Kill at Least 27 Amid Houthi-Government Fighting",
-      "summary": "Airstrikes near Sanaa killed at least 27 people in Al-Shariya village, as Yemeni government forces reported battlefield advances. Houthi officials said missile and drone attacks also struck Saudi oil sites and Riyadh's airport.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 15.3694,
-      "lon": 44.191,
-      "locationName": "Al-Shariya, Yemen",
-      "countryCode": "YE",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-07/an-airstrike-has-killed-22-people-near-yemens-capital-houthi-official-says",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286",
-          "domain": "wionews.com",
-          "reliability": 65,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-11T06:09:06.519Z",
-      "expiresAt": "2026-11-13T06:09:06.519Z",
-      "isBreaking": false
-    },
-    {
       "id": "20f5232b140d",
       "headline": "Boeing to Cut About 2,500 Jobs from Commercial Airplanes Division Amid Production Slowdown",
       "summary": "Boeing Commercial Airplanes CEO Stephanie Pope told employees November 9 the company will slow production ramp-ups and cut about 5%, roughly 2,500 jobs, from the division's 50,500 workers through layoffs and attrition. It is Boeing's first commercial-division cuts in nearly two years, with affected staff to be notified in December.",
@@ -1648,6 +1652,42 @@
       "firstSeen": "2026-11-10T15:30:04.779Z",
       "lastUpdated": "2026-11-10T15:30:04.779Z",
       "expiresAt": "2026-11-12T15:30:04.779Z",
+      "isBreaking": false
+    },
+    {
+      "id": "162626d5d4ac",
+      "headline": "Airstrikes Near Yemen's Capital Sanaa Kill at Least 27 Amid Houthi-Government Fighting",
+      "summary": "Airstrikes near Sanaa killed at least 27 people in Al-Shariya village, as Yemeni government forces reported battlefield advances. Houthi officials said missile and drone attacks also struck Saudi oil sites and Riyadh's airport.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 15.3694,
+      "lon": 44.191,
+      "locationName": "Al-Shariya, Yemen",
+      "countryCode": "YE",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-07/an-airstrike-has-killed-22-people-near-yemens-capital-houthi-official-says",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286",
+          "domain": "wionews.com",
+          "reliability": 65,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
       "isBreaking": false
     },
     {
@@ -1961,6 +2001,68 @@
       "isBreaking": false
     },
     {
+      "id": "bea1b4e24616",
+      "headline": "Montana DOJ Investigates Alleged Vote-Tampering by Public Service Commission in Energy Rate Case",
+      "summary": "Montana's Department of Justice is reviewing whether a Public Service Commission vote in a NorthWestern Energy rate case — involving the same commission that approved NorthWestern's $15.4B merger with Black Hills Corp. — was improperly recorded. Commissioner Pinocci alleges his 'no' vote was changed to 'yes' without consent, while PSC President Welborn denies any vote was altered, raising a fresh credibility controversy for the commission.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 46.5891,
+      "lon": -112.0391,
+      "locationName": "Helena, Montana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MT",
+      "sources": [
+        {
+          "url": "https://www.kulr8.com/news/doj-reviews-psc-vote-dispute-in-northwestern-rate-case/article_7f7d88e7-1b0f-409a-80ac-182f3bca642a.html",
+          "domain": "kulr8.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ktvq.com/news/montana-psc-commissioner-says-vote-was-counted-wrong-in-key-rate-hike-decision",
+          "domain": "ktvq.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://missoulacurrent.com/voting-questioned-energy/",
+          "domain": "missoulacurrent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dailymontanan.com/2026/11/10/public-service-commission-approves-northwestern-energy-black-hills-corp-merger/",
+          "domain": "dailymontanan.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/montana-psc-approves-northwestern-energy-merger-with-black-hills",
+          "domain": "nbcmontana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://rapidcitypost.com/southdakotasearchlight-government-f827f9e647",
+          "domain": "rapidcitypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
       "id": "85919d912880",
       "headline": "Fog Triggers Fatal 86-Vehicle Pile-Up on Bulgaria's Trakia Motorway, 12 Dead",
       "summary": "Dense fog caused two multi-vehicle pile-ups involving about 86 vehicles near Zimnitsa and Yambol on the morning of November 10, 2026. Twelve people were killed and 46 to 51 injured, prompting Bulgaria to declare a day of national mourning.",
@@ -2103,6 +2205,45 @@
       "firstSeen": "2026-11-12T06:08:11.410Z",
       "lastUpdated": "2026-11-12T06:08:11.410Z",
       "expiresAt": "2026-11-14T06:08:11.410Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5bf3f525dbbe",
+      "headline": "New Mexico Flood Recovery Costs Top $200 Million After Record San Juan River Flooding",
+      "summary": "Late-October/early-November flooding sent the San Juan River at Farmington from about 3.5 feet to 14 feet in roughly a day, destroying at least 64 homes and damaging hundreds more, with more than 5,000 residents evacuated. Gov. Michelle Lujan Grisham has signed 73 emergency executive orders and released over $54 million in state recovery funds; total recovery costs could reach $200-300 million.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 36.7281,
+      "lon": -108.2187,
+      "locationName": "Farmington, New Mexico, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NM",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019352/southwest-flood-damage-estimates-are-hundreds-of-millions-for-new-mexico-alone",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/nation/as-many-as-200-homes-damaged-as-officials-survey-aftermath-of-deadly-new-mexico-flood",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kdnk.org/rocky-mountain-community-radio/2026-11-06/after-torrential-flooding-san-juan-county-new-mexico-faces-new-hazards-and-millions-in-recovery-costs",
+          "domain": "kdnk.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -2683,37 +2824,6 @@
       "isBreaking": false
     },
     {
-      "id": "8c2164505949",
-      "headline": "Brazil's Real Slides as Lula Government Readies Fiscal-Adjustment Package",
-      "summary": "Brazil's currency weakened as President Lula's economic team prepared a fiscal-adjustment package worth an estimated 50-60 billion reais for 2027 to calm market concerns over high interest rates and spending. Lula pledged budget discipline amid investor jitters.",
-      "category": "economy",
-      "severity": 3,
-      "lat": -15.7939,
-      "lon": -47.8828,
-      "locationName": "Brasília, Brazil",
-      "countryCode": "BR",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/lula-team-readies-brazil-fiscal-plan-in-bid-to-calm-market-jitters",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.investing.com/news/economy-news/brazils-lula-worried-about-high-interest-rates-pledges-budget-discipline-5010375",
-          "domain": "investing.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-11T06:09:06.519Z",
-      "expiresAt": "2026-11-13T06:09:06.519Z",
-      "isBreaking": false
-    },
-    {
       "id": "b742e7a683f2",
       "headline": "Auto Supplier Dakkota to Close Detroit Plant, Cutting 397 Jobs",
       "summary": "Dakkota Integrated Systems is closing its Detroit instrument-panel plant in two phases, on December 31, 2026 and March 31, 2027, after losing Stellantis contracts for the Jeep Grand Cherokee and Dodge Durango. The closure will eliminate 397 jobs.",
@@ -2754,81 +2864,321 @@
       "isBreaking": false
     },
     {
-      "id": "1046f5538563",
-      "headline": "Colombia Probes Alleged Plan by Intelligence Agency to Spy on Ex-Presidents Under Petro",
-      "summary": "Leaked documents allege Colombia's DNI intelligence agency planned to spy on former presidents and interfere in elections during the Petro administration. Prosecutors have opened an investigation into the allegations.",
-      "category": "politics",
+      "id": "8c2164505949",
+      "headline": "Brazil's Real Slides as Lula Government Readies Fiscal-Adjustment Package",
+      "summary": "Brazil's currency weakened as President Lula's economic team prepared a fiscal-adjustment package worth an estimated 50-60 billion reais for 2027 to calm market concerns over high interest rates and spending. Lula pledged budget discipline amid investor jitters.",
+      "category": "economy",
       "severity": 3,
-      "lat": 4.711,
-      "lon": -74.0721,
-      "locationName": "Bogotá, Colombia",
-      "countryCode": "CO",
+      "lat": -15.7939,
+      "lon": -47.8828,
+      "locationName": "Brasília, Brazil",
+      "countryCode": "BR",
       "sources": [
         {
-          "url": "https://colombiaone.com/2026/11/09/colombia-probes-election-misuse-petro-era-intelligence-agency/",
-          "domain": "colombiaone.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/lula-team-readies-brazil-fiscal-plan-in-bid-to-calm-market-jitters",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
         },
         {
-          "url": "https://www.elheraldo.co/colombia/2026/11/09/escandalo-de-irregularidades-en-la-dni-durante-el-gobierno-de-petro-hubo-intentos-de-interferir-en-procesos-electorales/",
-          "domain": "elheraldo.co",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.infobae.com/colombia/2026/11/09/documentos-secretos-de-la-dni-revelarian-plan-para-espiar-a-expresidentes-e-interferir-en-elecciones-durante-el-gobierno-petro/",
-          "domain": "infobae.com",
+          "url": "https://www.investing.com/news/economy-news/brazils-lula-worried-about-high-interest-rates-pledges-budget-discipline-5010375",
+          "domain": "investing.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 49,
+      "trustScore": 51,
       "firstSeen": "2026-11-11T06:09:06.519Z",
       "lastUpdated": "2026-11-11T06:09:06.519Z",
       "expiresAt": "2026-11-13T06:09:06.519Z",
       "isBreaking": false
     },
     {
-      "id": "adbb2888a192",
-      "headline": "Record Rainfall Triggers Deadly Floods and Landslides Across Central Vietnam",
-      "summary": "Record-breaking rainfall triggered widespread flooding and landslides across central Vietnam, affecting Da Nang, Hue and Quang Tri provinces. Authorities ordered flood preparations as rainfall records were shattered in multiple provinces.",
-      "category": "disaster",
+      "id": "89e4c4653665",
+      "headline": "Democrat Joe Madge Ousts Incoming South Carolina House Majority Leader Caskey After Recount",
+      "summary": "A mandatory recount certified Nov. 11 confirmed Democrat Joe Madge defeated Republican incumbent and incoming House Majority Leader Micah Caskey by 106 votes (7,263 to 7,157) in deep-red Lexington County's House District 89.",
+      "category": "politics",
       "severity": 3,
-      "lat": 16.0544,
-      "lon": 108.2022,
-      "locationName": "Da Nang, Vietnam",
-      "countryCode": "VN",
+      "lat": 33.9815,
+      "lon": -81.2362,
+      "locationName": "Lexington, South Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-SC",
       "sources": [
         {
-          "url": "https://e.vnexpress.net/news/news/environment/14-rain-records-shattered-as-november-storms-devastate-central-vietnam-4989705.html",
-          "domain": "vnexpress.net",
+          "url": "https://www.wistv.com/2026/11/11/democrat-joe-madge-defeats-incoming-sc-house-majority-leader-micah-caskey/",
+          "domain": "wistv.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://news.tuoitre.vn/heavy-downpours-hit-central-vietnam-but-miss-the-hydropower-dams-that-need-them-most-103261110141523338.htm",
-          "domain": "tuoitre.vn",
+          "url": "https://www.wrdw.com/2026/11/12/democrat-joe-madge-defeats-sc-house-majority-leader-micah-caskey/",
+          "domain": "wrdw.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.netnewsledger.com/2026/11/08/international-weather-vietnam-orders-flood-preparations-as-central-coast-faces-extreme-rain/",
-          "domain": "netnewsledger.com",
+          "url": "https://www.wtoc.com/2026/11/11/recounts-progress-south-carolina-election-races/",
+          "domain": "wtoc.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-11T06:09:06.519Z",
-      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c3a9531fd14a",
+      "headline": "Florida Democrats Break GOP House Supermajority After Brevard County Recount",
+      "summary": "A machine recount finalized this week confirmed Democrat Dan McDow defeated Republican incumbent Monique Miller by 286 votes in Florida House District 33, flipping a seat Republicans had held for over a decade and giving Democrats 50 of 120 Florida House seats, ending the GOP supermajority.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 28.0836,
+      "lon": -80.6081,
+      "locationName": "Melbourne, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.fox35orlando.com/news/democrat-dan-mcdow-flips-florida-house-district-33-seat-after-close-recount",
+          "domain": "fox35orlando.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cfpublic.org/politics/2026-11-10/after-recount-brevard-county-sends-democrat-no-50-to-the-florida-house",
+          "domain": "cfpublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://spacecoastdaily.com/2026/11/former-west-melbourne-city-council-member-dan-mcdow-wins-florida-house-seat-by-286-votes-after-recount/",
+          "domain": "spacecoastdaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ab5d675d9364",
+      "headline": "Ohio Governor DeWine Weighing Clemency for 13 Death Row Inmates Before Leaving Office",
+      "summary": "Ohio's parole board is reviewing clemency recommendations for 13 death row inmates at Gov. Mike DeWine's request before he leaves office. DeWine, who helped write Ohio's 1981 capital punishment law, called for abolishing the death penalty in June and has commuted only one sentence in nearly eight years in office; prosecutors in multiple counties oppose the effort.",
+      "category": "society",
+      "severity": 3,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://www.nbc4i.com/news/local-news/columbus/ohio-governor-to-consider-commuting-death-sentences-before-leaving-office/",
+          "domain": "nbc4i.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.springfieldnewssun.com/local/crime/ohio-prosecutors-oppose-dewine-s-efforts-to-commute-death-sentences/article_168f6068-6053-51b8-980c-b14e5028d447.html",
+          "domain": "springfieldnewssun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://fox8.com/news/ohio-governor-to-consider-commuting-death-sentences-before-leaving-office/",
+          "domain": "fox8.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5c0e2f814d58",
+      "headline": "Dozens of Immigrant Children in Kansas City Face Fast-Tracked Deportation",
+      "summary": "At least two dozen immigrant children in the Kansas City area, ages 9-17, are in active removal proceedings after USCIS rescinded deferred-action protections for new/renewal Special Immigrant Juvenile status applications effective May 2026. Some hearings originally docketed for 2027 have been moved up to mid-November; nationwide roughly 150,000 youths with SIJ status may be affected.",
+      "category": "society",
+      "severity": 3,
+      "lat": 39.0997,
+      "lon": -94.5786,
+      "locationName": "Kansas City, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.kcur.org/news/2026-11-11/dozens-of-immigrant-children-in-kansas-city-lost-protections-and-face-fast-tracked-deportation",
+          "domain": "kcur.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kbia.org/missouri-news/2026-11-11/dozens-of-immigrant-children-in-kc-face-fast-tracked-deportation-after-losing-protections",
+          "domain": "kbia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.newstribune.com/news/2026/nov/12/dozens-of-immigrant-children-in-kc-face-fast/",
+          "domain": "newstribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f10599665425",
+      "headline": "Arizona New World Screwworm Outbreak Grows to Six Confirmed Cases",
+      "summary": "Since the first case was confirmed Oct. 28 in Elfrida, Arizona has confirmed six New World screwworm cases (in horses, dogs, and a ram) across Cochise, Graham and Greenlee counties, most recently a horse near Pearce on Nov. 10. USDA is releasing millions of sterile flies and counties have established quarantine zones with travel restrictions for pets and livestock.",
+      "category": "health",
+      "severity": 3,
+      "lat": 31.5455,
+      "lon": -110.2773,
+      "locationName": "Sierra Vista, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
+      "sources": [
+        {
+          "url": "https://ktar.com/arizona-news/arizona-confirms-6th-screwworm-case",
+          "domain": "ktar.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kjzz.org/fronteras-desk/2026-11-08/officials-identify-5th-case-of-new-world-screwworm-in-arizona",
+          "domain": "kjzz.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kgun9.com/news/state/5th-new-world-screwworm-case-reported-in-graham-county",
+          "domain": "kgun9.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0719a95e2d9f",
+      "headline": "Texas Governor-Elect Hinojosa's Agenda Takes Shape as GOP Supreme Court Justice Weighs Retirement",
+      "summary": "Gov.-elect Gina Hinojosa is pushing a $1,500-per-household rebate from the Rainy Day Fund, a cost-of-living emergency declaration, and an electricity-rate freeze, while a separate Democratic-filed bill would pursue a high-speed rail public-private partnership along I-35. Republican Texas Supreme Court Justice Debra Lehrmann is reportedly considering early retirement, which, combined with other GOP justices' election losses, could let Hinojosa flip the court's majority to Democrats.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 30.2672,
+      "lon": -97.7431,
+      "locationName": "Austin, Texas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TX",
+      "sources": [
+        {
+          "url": "https://www.texastribune.org/2026/11/10/texas-1500-check-gina-hinojosa-bill/",
+          "domain": "texastribune.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sacurrent.com/news/texas-news/gop-texas-supreme-court-justice-weighs-early-retirement-likely-giving-democrats-the-majority/",
+          "domain": "sacurrent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kera.org/2026/11/12/texas-top-courts-have-democrats-for-first-time-in-years-they-could-reshape-the-legal-system/",
+          "domain": "kera.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ad2acb90d27b",
+      "headline": "Utah Governor Cox Says GOP Suffered 'Historic Defeat' as Democrats End Republican Supermajority",
+      "summary": "Utah's Republican legislative supermajority, held since 1998, was broken in the Nov. 2026 election, with roughly 16 GOP seats lost to Democrats and unaffiliated candidates — the largest partisan swing of any state. Gov. Spencer Cox called it a 'historic defeat,' attributing it partly to the legislature ignoring voters on redistricting.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.7608,
+      "lon": -111.891,
+      "locationName": "Salt Lake City, Utah, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-UT",
+      "sources": [
+        {
+          "url": "https://utahnewsdispatch.com/2026/11/09/utah-gov-cox-republicans-have-to-listen-after-historic-defeat-blue-wave/",
+          "domain": "utahnewsdispatch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.deseret.com/politics/2026/11/10/utah-blue-wave-lost-republican-supermajority-in-legislature-governor-spencer-cox-responds/",
+          "domain": "deseret.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sltrib.com/news/politics/2026/11/09/utah-elections-cox-points-gop/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -2943,47 +3293,6 @@
         {
           "url": "https://okenergytoday.com/2026/11/cherokee-nation-takes-stand-against-inola-smelter/",
           "domain": "okenergytoday.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
-      "isBreaking": false
-    },
-    {
-      "id": "bea1b4e24616",
-      "headline": "Montana Regulators Approve $15.4 Billion NorthWestern Energy-Black Hills Corp. Merger",
-      "summary": "The Montana Public Service Commission voted 3-2 on Nov. 10 to approve the $15.4 billion merger of NorthWestern Energy and Black Hills Corp., creating a new parent company called Bright Horizon Energy Corp. A majority of public commenters had opposed the deal.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 46.5891,
-      "lon": -112.0391,
-      "locationName": "Helena, Montana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MT",
-      "sources": [
-        {
-          "url": "https://dailymontanan.com/2026/11/10/public-service-commission-approves-northwestern-energy-black-hills-corp-merger/",
-          "domain": "dailymontanan.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://nbcmontana.com/news/local/montana-psc-approves-northwestern-energy-merger-with-black-hills",
-          "domain": "nbcmontana.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://rapidcitypost.com/southdakotasearchlight-government-f827f9e647",
-          "domain": "rapidcitypost.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
@@ -3406,6 +3715,84 @@
       "isBreaking": false
     },
     {
+      "id": "1046f5538563",
+      "headline": "Colombia Probes Alleged Plan by Intelligence Agency to Spy on Ex-Presidents Under Petro",
+      "summary": "Leaked documents allege Colombia's DNI intelligence agency planned to spy on former presidents and interfere in elections during the Petro administration. Prosecutors have opened an investigation into the allegations.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 4.711,
+      "lon": -74.0721,
+      "locationName": "Bogotá, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://colombiaone.com/2026/11/09/colombia-probes-election-misuse-petro-era-intelligence-agency/",
+          "domain": "colombiaone.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.elheraldo.co/colombia/2026/11/09/escandalo-de-irregularidades-en-la-dni-durante-el-gobierno-de-petro-hubo-intentos-de-interferir-en-procesos-electorales/",
+          "domain": "elheraldo.co",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.infobae.com/colombia/2026/11/09/documentos-secretos-de-la-dni-revelarian-plan-para-espiar-a-expresidentes-e-interferir-en-elecciones-durante-el-gobierno-petro/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "adbb2888a192",
+      "headline": "Record Rainfall Triggers Deadly Floods and Landslides Across Central Vietnam",
+      "summary": "Record-breaking rainfall triggered widespread flooding and landslides across central Vietnam, affecting Da Nang, Hue and Quang Tri provinces. Authorities ordered flood preparations as rainfall records were shattered in multiple provinces.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 16.0544,
+      "lon": 108.2022,
+      "locationName": "Da Nang, Vietnam",
+      "countryCode": "VN",
+      "sources": [
+        {
+          "url": "https://e.vnexpress.net/news/news/environment/14-rain-records-shattered-as-november-storms-devastate-central-vietnam-4989705.html",
+          "domain": "vnexpress.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.tuoitre.vn/heavy-downpours-hit-central-vietnam-but-miss-the-hydropower-dams-that-need-them-most-103261110141523338.htm",
+          "domain": "tuoitre.vn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.netnewsledger.com/2026/11/08/international-weather-vietnam-orders-flood-preparations-as-central-coast-faces-extreme-rain/",
+          "domain": "netnewsledger.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-11T06:09:06.519Z",
+      "lastUpdated": "2026-11-11T06:09:06.519Z",
+      "expiresAt": "2026-11-13T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
       "id": "5f5e95461641",
       "headline": "Indiana Child Welfare Agency Says It Needs $300 Million Emergency State Infusion",
       "summary": "DCS Director Jennifer Dorfmeyer told Indiana's State Budget Committee on Nov. 11 that the agency expects to need a $300 million infusion to its main account for fiscal year 2027, continuing a pattern of recent-year shortfalls. She described a new service-utilization review team as a mitigation step.",
@@ -3436,6 +3823,74 @@
       "firstSeen": "2026-11-11T15:27:29.990Z",
       "lastUpdated": "2026-11-11T15:27:29.990Z",
       "expiresAt": "2026-11-13T15:27:29.990Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1602a1e23911",
+      "headline": "West Virginia Governor Announces $17B Gas Plants, $7.5B Coal Plant Upgrades",
+      "summary": "Gov. Patrick Morrisey announced Nov. 12 that Appalachian Power will invest $17 billion in three new natural gas-fired plants (3 GW total, operational by 2031) and $7.5 billion to upgrade coal-fired plants through 2050. The gas buildout is projected to create about 2,050 construction jobs and 100 permanent jobs across multiple West Virginia sites.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://wvmetronews.com/2026/11/12/governor-announces-17-billion-in-gas-generation-and-7-5-billion-in-coal-upgrades/",
+          "domain": "wvmetronews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wvgazettemail.com/news/energy_and_environment/morrisey-administration-blocks-coal-project-information-out-of-step-on-energy-shifts/article_d9e83dac-bb1b-481b-a980-8c00cf1232e8.html",
+          "domain": "wvgazettemail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "28452577068a",
+      "headline": "Wisconsin Supreme Court Agrees 5-1 to Hear Union Challenge to Act 10",
+      "summary": "The Wisconsin Supreme Court ruled 5-1 to hear a lawsuit, led by the Abbotsford Education Association, challenging 2011's Act 10 collective-bargaining restrictions, arguing carve-outs exempting some public-safety unions violate the state constitution's equal protection clause. Briefing is due Dec. 11, with a decision expected before next summer.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://wisconsinexaminer.com/2026/11/11/state-supreme-court-to-consider-lawsuit-that-challenges-act-10/",
+          "domain": "wisconsinexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbay.com/2026/11/11/wisconsin-supreme-court-hear-case-involving-act-10/",
+          "domain": "wbay.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -3646,39 +4101,50 @@
       "isBreaking": false
     },
     {
-      "id": "f70be0ffea54",
-      "headline": "Israeli Settlers Seize Eight Palestinian Homes Near Jericho, Displacing Dozens",
-      "summary": "About 30 armed settlers affiliated with the Nachala movement took over eight Palestinian homes in Ein al-Duyuk al-Tahta, near Jericho, on November 4-5, 2026, displacing roughly 70 residents. Settlers claim the properties were legally purchased, while the Palestinian Authority says the documents were forged; Peace Now reports settlers assaulted two Israeli activists and shot a Palestinian man, and the UN has condemned the seizure.",
-      "category": "conflict",
+      "id": "590b94eaabd2",
+      "headline": "Philadelphia Teachers Union Proposes $25M Alternative Plan to Keep 17 Schools Open",
+      "summary": "The Philadelphia Federation of Teachers released a facilities plan proposing roughly $25.35 million in immediate repairs, maintenance and cleaning to keep 17 schools open, versus the district's closure plan. The union's plan targets 'fair' building condition by 2029 and 'good' condition by 2031; the district says the proposal falls short given declining enrollment and a $298M repair need at those buildings.",
+      "category": "society",
       "severity": 2,
-      "lat": 31.87,
-      "lon": 35.44,
-      "locationName": "Jericho, West Bank",
-      "countryCode": "PS",
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "locationName": "Philadelphia, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/6/israeli-settlers-seize-8-palestinian-homes-in-jericho-displacing-dozens",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
+          "url": "https://www.chalkbeat.org/philadelphia/2026/11/11/teachers-union-proposes-alternative-to-philly-school-closures/",
+          "domain": "chalkbeat.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.haaretz.com/west-bank/2026-11-04/ty-article/.premium/settlers-move-into-palestinian-homes-residents-reportedly-flee-fearing-attacks/000001a1-a806-d041-a5f9-ed27de9f0000",
-          "domain": "haaretz.com",
-          "reliability": 80,
-          "bias": "center-left"
+          "url": "https://www.inquirer.com/education/philadelphia-federation-teachers-union-school-closings-facilities-plan-20261111.html",
+          "domain": "inquirer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.arabnews.com/middle-east/israeli-settlers-move-into-homes-near-west-bank-city-3010020",
-          "domain": "arabnews.com",
-          "reliability": 64,
+          "url": "https://www.cbsnews.com/philadelphia/news/pft-union-plan-save-philadelphia-schools-closing/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
+        },
+        {
+          "url": "https://6abc.com/post/teachers-union-proposes-new-plan-save-17-philadelphia-schools-set-close/20033977/",
+          "domain": "6abc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
       "trustScore": 61,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-13T18:08:11.410Z",
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T03:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -3776,6 +4242,42 @@
       "isBreaking": false
     },
     {
+      "id": "f70be0ffea54",
+      "headline": "Israeli Settlers Seize Eight Palestinian Homes Near Jericho, Displacing Dozens",
+      "summary": "About 30 armed settlers affiliated with the Nachala movement took over eight Palestinian homes in Ein al-Duyuk al-Tahta, near Jericho, on November 4-5, 2026, displacing roughly 70 residents. Settlers claim the properties were legally purchased, while the Palestinian Authority says the documents were forged; Peace Now reports settlers assaulted two Israeli activists and shot a Palestinian man, and the UN has condemned the seizure.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 31.87,
+      "lon": 35.44,
+      "locationName": "Jericho, West Bank",
+      "countryCode": "PS",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/6/israeli-settlers-seize-8-palestinian-homes-in-jericho-displacing-dozens",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.haaretz.com/west-bank/2026-11-04/ty-article/.premium/settlers-move-into-palestinian-homes-residents-reportedly-flee-fearing-attacks/000001a1-a806-d041-a5f9-ed27de9f0000",
+          "domain": "haaretz.com",
+          "reliability": 80,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/israeli-settlers-move-into-homes-near-west-bank-city-3010020",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-12T06:08:11.410Z",
+      "lastUpdated": "2026-11-12T06:08:11.410Z",
+      "expiresAt": "2026-11-13T18:08:11.410Z",
+      "isBreaking": false
+    },
+    {
       "id": "d889b020bc01",
       "headline": "Italy's Governing Coalition Splits Over Continued Aid to Ukraine Amid Abu Dhabi Talks",
       "summary": "Italy's ruling coalition is divided over whether to continue military aid to Ukraine, as debate intensifies alongside US-mediated peace talks in Abu Dhabi. The disagreement reflects wider European uncertainty over the war's endgame.",
@@ -3803,6 +4305,54 @@
       "firstSeen": "2026-11-11T06:09:06.519Z",
       "lastUpdated": "2026-11-11T06:09:06.519Z",
       "expiresAt": "2026-11-12T18:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c55d6e747800",
+      "headline": "Wild River Fire in New Hampshire's White Mountain National Forest Now Over Half Contained",
+      "summary": "The Wild River Fire, burning since Nov. 1 about 7 miles southeast of Gorham, NH, is now roughly 53-59% contained after burning 817-821 acres, aided by wet weather. The U.S. Forest Service says it is the largest wildfire in the White Mountain National Forest since 1918 and is human-caused, under investigation; the area remains closed to visitors.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 44.3886,
+      "lon": -71.1773,
+      "locationName": "Gorham, New Hampshire, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NH",
+      "sources": [
+        {
+          "url": "https://www.pressherald.com/2026/11/10/wildfire-in-white-mountain-national-forest-more-than-50-contained/",
+          "domain": "pressherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wmtw.com/article/white-mountains-wild-river-wildfire-half-contained/74386823",
+          "domain": "wmtw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.concordmonitor.com/2026/11/10/wild-river-fire-appears-increasingly-under-control/",
+          "domain": "concordmonitor.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nhpr.org/nh-news/2026-11-09/abnormally-dry-conditions-warm-temps-intensified-wild-river-fire-in-nhs-white-mountains",
+          "domain": "nhpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T03:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -3854,43 +4404,83 @@
       "isBreaking": false
     },
     {
-      "id": "476b0ab3517b",
-      "headline": "North Kingstown, Rhode Island Police Officer Indicted on Sexual Assault Charges, Resigns",
-      "summary": "Officer Cyress Harrison, 27, was indicted by a statewide grand jury on three counts of second-degree sexual assault tied to an alleged Aug. 22, 2026 incident. He was arraigned Nov. 10 in Washington County Superior Court, pleaded not guilty, was released on personal recognizance, and has since resigned from the department.",
-      "category": "society",
+      "id": "96a42d506f1e",
+      "headline": "Oklahoma Awarded $227M in Year-Two Federal Rural Health Transformation Funding",
+      "summary": "CMS/HHS announced $10 billion in second-year Rural Health Transformation Program awards to all 50 states on Nov. 9, with Oklahoma receiving approximately $227.1 million, up from $223.5 million in year one. The program will support 29 programs and more than 500 organizations statewide.",
+      "category": "health",
       "severity": 2,
-      "lat": 41.5834,
-      "lon": -71.4817,
-      "locationName": "North Kingstown, Rhode Island, USA",
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-RI",
+      "subdivision": "US-OK",
       "sources": [
         {
-          "url": "https://riag.ri.gov/press-releases/north-kingstown-police-officer-indicted-sexual-assault",
-          "domain": "ri.gov",
+          "url": "https://www.hhs.gov/press-room/trump-administration-awards-10-billion-rural-health-transformation-program-year-two.html",
+          "domain": "hhs.gov",
           "reliability": 85,
           "bias": "center"
         },
         {
-          "url": "https://www.wpri.com/news/local-news/south-county/north-kingstown-officer-indicted-sexual-assault/",
-          "domain": "wpri.com",
+          "url": "https://oklahomavoice.com/2026/11/09/oklahoma-awarded-227m-for-rural-health-programs-one-of-largest-allocations-in-us/",
+          "domain": "oklahomavoice.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://turnto10.com/news/local/north-kingstown-police-officer-charged-with-sexual-assault-second-degree-washington-county-court-state-police-attorney-general-november-10-2026",
-          "domain": "turnto10.com",
+          "url": "https://www.kosu.org/health/2026-11-11/oklahoma-receives-227m-in-second-year-of-federal-rural-health-transformation-program",
+          "domain": "kosu.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 55,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T03:27:29.990Z",
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T03:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "cb235c2d4932",
+      "headline": "Washington Lands Commissioner Seeks Permanent $60M/Year Wildfire Funding After Historic 2026 Fire Season",
+      "summary": "As Washington's 2026 wildfire season officially ended, Commissioner of Public Lands Dave Upthegrove and the Department of Natural Resources are pressing the legislature to fully fund 2027 fire prevention and suppression efforts, seeking to lock in a $60 million annual commitment following one of the state's most severe fire seasons in recent years.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 47.0379,
+      "lon": -122.9007,
+      "locationName": "Olympia, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.spokanepublicradio.org/regional-news/2026-11-11/after-historic-wildfire-season-dnr-asks-state-to-fully-fund-2027-fire-prevention-suppression",
+          "domain": "spokanepublicradio.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.columbian.com/news/2026/nov/11/wildfire-season-officially-ends-in-washington-state-lands-commissioner-seeks-future-funding/",
+          "domain": "columbian.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dnr.wa.gov/news/2026/commissioner-upthegrove-applauds-legislature-restoring-wildfire-funding",
+          "domain": "wa.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T03:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -4311,13 +4901,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 98,
-    "carried": 62,
-    "updated": 12,
-    "expired": 36,
+    "multiSource": 112,
+    "carried": 97,
+    "updated": 1,
+    "expired": 1,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 6.89,
-    "budgetUsd": 12
+    "costUsd": 4.47,
+    "budgetUsd": 8
   }
 }
