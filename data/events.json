@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T06:09:56.557Z",
+  "generatedAt": "2026-11-13T16:17:51.471Z",
   "mode": "daily",
   "events": [
     {
@@ -463,6 +463,53 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-17T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "eb3224adf2f0",
+      "headline": "Federal Report Finds Communication Gaps, Extreme Fire Behavior Led to Deaths of 4 Firefighters in Colorado's Knowles Fire",
+      "summary": "A joint federal investigation released Nov. 12 found extraordinary fire behavior, strained communications, incomplete situational awareness and gaps in aerial supervision contributed to the deaths of firefighters Nick Hutcherson, Emily Barker, Sydney Watson and Nathan Matthews on June 27. The fire ran about 7.5 miles in under three hours, with only nine seconds between a radio call that a helicopter could not land and a report that crews had deployed emergency shelters.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 40.0381,
+      "lon": -107.9114,
+      "locationName": "Meeker, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://www.doi.gov/pressreleases/interior-releases-findings-investigation-firefighter-fatalities-and-injury-knowles",
+          "domain": "doi.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://coloradosun.com/2026/11/12/knowles-snyder-fire-report-firefighters-killed/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sltrib.com/news/2026/11/13/firefighters-died-when-wildfire/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://kutv.com/news/local/federal-report-details-factors-in-knowles-fire-entrapment-that-killed-four-firefighters",
+          "domain": "kutv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-17T16:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -2104,43 +2151,6 @@
       "isBreaking": false
     },
     {
-      "id": "9f625f37ff0a",
-      "headline": "Democrat Scott Colom Wins Mississippi Senate Race, First Black Senator From State Since 1874",
-      "summary": "AP called Mississippi's Senate race for Scott Colom over incumbent Cindy Hyde-Smith on November 11. Colom is the first Black senator from Mississippi since 1874 and the eighth Senate seat Democrats have flipped in the 2026 midterms.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 32.35,
-      "lon": -89.4,
-      "locationName": "Mississippi, United States",
-      "countryCode": "US",
-      "subdivision": "US-MS",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/11/democrat-scott-colom-wins-mississippi-senate-race/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/mississippi-2026-senate-scott-colom-cindy-hyde-smith/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/2026-election/scott-colom-mississippi-senate-election-win-democrat-hyde-smith-rcna605729",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
       "id": "bea1b4e24616",
       "headline": "Montana DOJ Investigates Alleged Vote-Tampering by Public Service Commission in Energy Rate Case",
       "summary": "Montana's Department of Justice is reviewing whether a Public Service Commission vote in a NorthWestern Energy rate case — involving the same commission that approved NorthWestern's $15.4B merger with Black Hills Corp. — was improperly recorded. Commissioner Pinocci alleges his 'no' vote was changed to 'yes' without consent, while PSC President Welborn denies any vote was altered, raising a fresh credibility controversy for the commission.",
@@ -2200,6 +2210,43 @@
       "firstSeen": "2026-11-11T15:27:29.990Z",
       "lastUpdated": "2026-11-12T15:29:21.541Z",
       "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9f625f37ff0a",
+      "headline": "Democrat Scott Colom Wins Mississippi Senate Race, First Black Senator From State Since 1874",
+      "summary": "AP called Mississippi's Senate race for Scott Colom over incumbent Cindy Hyde-Smith on November 11. Colom is the first Black senator from Mississippi since 1874 and the eighth Senate seat Democrats have flipped in the 2026 midterms.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 32.35,
+      "lon": -89.4,
+      "locationName": "Mississippi, United States",
+      "countryCode": "US",
+      "subdivision": "US-MS",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/11/democrat-scott-colom-wins-mississippi-senate-race/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/mississippi-2026-senate-scott-colom-cindy-hyde-smith/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/scott-colom-mississippi-senate-election-win-democrat-hyde-smith-rcna605729",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
       "isBreaking": false
     },
     {
@@ -2284,6 +2331,100 @@
       "isBreaking": false
     },
     {
+      "id": "ee43af9d0aee",
+      "headline": "North Carolina Regulators Demand Broader Chemours PFAS Cleanup Plan at Fayetteville Works",
+      "summary": "North Carolina's environmental agency told Chemours its PFAS cleanup plan for the Fayetteville Works site is deficient and must be expanded to test for all PFAS compounds, with a revised plan due within 60 days. The order follows a $590 million settlement in September and roughly $1.2 billion already spent on consent-order compliance.",
+      "category": "health",
+      "severity": 3,
+      "lat": 35.0527,
+      "lon": -78.8784,
+      "locationName": "Fayetteville, North Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NC",
+      "sources": [
+        {
+          "url": "https://www.deq.nc.gov/news/press-releases/2026/11/09/ncdeq-directs-chemours-address-deficiencies-its-plans-clean-pfas-contamination",
+          "domain": "nc.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://portcitydaily.com/latest-news/2026/11/12/state-demands-chemours-conduct-broader-pfas-cleanup-testing-in-cape-fear/",
+          "domain": "portcitydaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wect.com/2026/11/11/north-carolina-regulators-tell-chemours-expand-pfas-cleanup-plan/",
+          "domain": "wect.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ncnewsline.com/2026/11/12/north-carolina-vows-to-hold-chemours-accountable-for-contamination-no-matter-how-long-it-takes/",
+          "domain": "ncnewsline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2e3f5d2a5af0",
+      "headline": "Teacher, Two Students Stabbed at Missouri Middle School; Student Suspect in Custody",
+      "summary": "A student allegedly stabbed two classmates and a teacher at Black Hawk Middle School in Warrenton, Missouri, on the morning of Nov. 12. One student was airlifted in serious condition, the teacher was taken by ambulance in serious condition, and a second student suffered superficial wounds. The suspect, a student, was taken into custody and officials say there is no further public threat.",
+      "category": "society",
+      "severity": 3,
+      "lat": 38.8142,
+      "lon": -91.1446,
+      "locationName": "Warrenton, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://abcnews.com/US/2-students-teacher-injured-stabbing-middle-school-student/story?id=138088979",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://abc17news.com/news/crime/2026/11/12/warrenton-community-rallies-behind-teacher-2-students-who-were-stabbed-at-middle-school/",
+          "domain": "abc17news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/",
+          "domain": "fox2now.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.stltoday.com/news/local/crime-courts/article_cdcafdd7-dbcb-43a5-9ed1-21e708c9127f.html",
+          "domain": "stltoday.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
+      "isBreaking": false
+    },
+    {
       "id": "5bf3f525dbbe",
       "headline": "New Mexico Flood Recovery Costs Top $200 Million After Record San Juan River Flooding",
       "summary": "Late-October/early-November flooding sent the San Juan River at Farmington from about 3.5 feet to 14 feet in roughly a day, destroying at least 64 homes and damaging hundreds more, with more than 5,000 residents evacuated. Gov. Michelle Lujan Grisham has signed 73 emergency executive orders and released over $54 million in state recovery funds; total recovery costs could reach $200-300 million.",
@@ -2320,53 +2461,6 @@
       "firstSeen": "2026-11-12T15:29:21.541Z",
       "lastUpdated": "2026-11-12T15:29:21.541Z",
       "expiresAt": "2026-11-14T15:29:21.541Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5406d84588f7",
-      "headline": "Lawsuit Filed to Block Washington State's Transgender Student-Athlete Initiative 638",
-      "summary": "On Nov. 9, TransFamilies, the Washington Education Association, ACLU of Washington, and parents of both cisgender and transgender student-athletes filed suit in King County Superior Court seeking to block voter-approved Initiative 638, which requires sex verification for girls' school sports before its Dec. 3 effective date. The suit alleges violations of the state constitution's privacy, equal-rights, and education-access provisions.",
-      "category": "society",
-      "severity": 3,
-      "lat": 47.6062,
-      "lon": -122.3321,
-      "locationName": "Seattle, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://www.cascadiadaily.com/2026/nov/10/parents-groups-sue-over-transgender-student-athletes-initiative/",
-          "domain": "cascadiadaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/10/lawsuit-filed-to-block-washingtons-recently-passed/",
-          "domain": "spokesman.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.axios.com/local/seattle/2026/11/10/washington-i638-lawsuit-student-sex-verification-privacy",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://washingtonstatestandard.com/2026/11/10/parents-groups-sue-over-transgender-student-athletes-initiative/",
-          "domain": "washingtonstatestandard.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
       "isBreaking": false
     },
     {
@@ -2415,147 +2509,195 @@
       "isBreaking": false
     },
     {
-      "id": "bb894b6cb523",
-      "headline": "St. Louis House Fire Kills 2-Year-Old Girl, Five Hospitalized in Carondelet Neighborhood",
-      "summary": "A predawn fire around 4 a.m. Nov. 11 in the Carondelet neighborhood killed a 2-year-old girl and sent two adults and three children to the hospital for smoke exposure. The home reportedly had no electricity, residents were using candles and a small heater, and there were no working smoke detectors.",
-      "category": "disaster",
+      "id": "8f0ebec01050",
+      "headline": "Vanderbilt University Hit With Second Class-Action Lawsuit Over Cyberattack",
+      "summary": "A ransomware group claimed to have breached Vanderbilt University's systems on Nov. 9, alleging access to over a million Social Security numbers and records, though the university has not independently confirmed the scope. A second class-action lawsuit was filed Nov. 11 alleging inadequate data security, and Vanderbilt has ordered password resets.",
+      "category": "society",
       "severity": 3,
-      "lat": 38.567,
-      "lon": -90.2634,
-      "locationName": "St. Louis, Missouri, USA",
+      "lat": 36.1627,
+      "lon": -86.7816,
+      "locationName": "Nashville, Tennessee, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-MO",
+      "subdivision": "US-TN",
       "sources": [
         {
-          "url": "https://www.kfvs12.com/2026/11/11/1-child-dead-5-people-taken-hospital-following-fire-south-city/",
-          "domain": "kfvs12.com",
+          "url": "https://www.wkrn.com/news/local-news/nashville/lawsuit-filed-over-vanderbilt-university-cyberattack/",
+          "domain": "wkrn.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.firstalert4.com/2026/11/11/1-child-dead-5-people-taken-hospital-following-fire-south-city/",
-          "domain": "firstalert4.com",
+          "url": "https://nashvillebanner.com/2026/11/12/vanderbilt-cyberattack-lawsuit-lightning-100-mnpd/",
+          "domain": "nashvillebanner.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://fox2now.com/news/missouri/emergency-crews-respond-to-south-st-louis-house-fire/",
-          "domain": "fox2now.com",
+          "url": "https://newschannel9.com/news/local/vanderbilt-lawsuit-alleges-data-security-failures-as-university-orders-password-updates",
+          "domain": "newschannel9.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.ksdk.com/video/news/local/2-year-old-killed-in-south-st-louis-house-fire/63-25c316ae-1df5-4f57-aefe-bd23b6aa0fbc",
-          "domain": "ksdk.com",
+          "url": "https://fox17.com/news/local/vanderbilt-lawsuit-alleges-data-security-failures-as-university-orders-password-updates",
+          "domain": "fox17.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 57,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
       "isBreaking": false
     },
     {
-      "id": "fbd382f6358c",
-      "headline": "Oklahoma Supreme Court Strikes Down Initiative-Petition Restriction Law SB 1027",
-      "summary": "In a 5-4 ruling issued Nov. 10, the Oklahoma Supreme Court held SB 1027 unconstitutional and void in its entirety. The court found its registered-voter requirement for petition circulators, county signature caps, and ban on incentive pay for circulators violated First Amendment protections for political speech and the right to petition.",
-      "category": "politics",
+      "id": "5a596ea665e3",
+      "headline": "Central Minnesota Measles Outbreak Grows to About 160 Cases, Largest Since 1990",
+      "summary": "An outbreak centered in Todd County since mid-September has become Minnesota's largest measles year since 1990, with the county accounting for roughly 85% of cases. The statewide total reached about 160 by Nov. 12-13, with most cases among unvaccinated residents and spread confirmed to seven other counties.",
+      "category": "health",
       "severity": 3,
-      "lat": 35.4676,
-      "lon": -97.5164,
-      "locationName": "Oklahoma City, Oklahoma, USA",
+      "lat": 45.9752,
+      "lon": -94.8669,
+      "locationName": "Long Prairie, Minnesota, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-OK",
+      "subdivision": "US-MN",
       "sources": [
         {
-          "url": "https://www.kosu.org/politics/2026-11-10/oklahoma-supreme-court-strikes-down-restrictions-on-citizen-initiative-petitions",
-          "domain": "kosu.org",
+          "url": "https://www.mprnews.org/episode/2026/11/12/doctor-on-frontlines-of-todd-county-measles-outbreak-says-it-could-overwhelm-health-system",
+          "domain": "mprnews.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://nondoc.com/2026/11/10/prior-restraints-and-compelled-speech-burdens-supreme-court-strikes-sb-1027-on-initiative-petitions/",
-          "domain": "nondoc.com",
+          "url": "https://www.kaxe.org/minnesota-news/2026-11-10/mn-records-59-weekly-measles-cases-2026-hits-record-high",
+          "domain": "kaxe.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.news9.com/oklahoma-politics/oklahoma-supreme-court-sb-1027-unconstitutional",
-          "domain": "news9.com",
+          "url": "https://www.health.state.mn.us/diseases/measles/stats.html",
+          "domain": "mn.us",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://ktul.com/news/local/oklahoma-supreme-court-strikes-down-law-adding-restrictions-to-ballot-petitions-11-10-2026",
-          "domain": "ktul.com",
+          "url": "https://www.valleynewslive.com/2026/11/06/minnesota-measles-count-soars/",
+          "domain": "valleynewslive.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 57,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
       "isBreaking": false
     },
     {
-      "id": "08fd27e76424",
-      "headline": "Ninth Circuit Partially Blocks California's SB 253/SB 261 Climate-Disclosure Laws",
-      "summary": "A divided Ninth Circuit panel ruled Nov. 9 in Chamber of Commerce v. Sanchez that SB 253's Scope 1 and Scope 2 greenhouse-gas reporting may proceed, but found SB 253's Scope 3 supply-chain emissions reporting and SB 261's climate-risk financial disclosure requirement likely unconstitutional as compelled speech. The case returns to district court on severability; this is a preliminary-injunction ruling, not a final judgment.",
-      "category": "climate",
+      "id": "d8f2dbbe6089",
+      "headline": "Audit Finds Choking Death, Operational Failures at North Dakota Veterans Home",
+      "summary": "A state legislative audit found a resident at the North Dakota Veterans Home died after choking because staff did not follow a physician-ordered dietary plan, and that disciplinary records failed to reflect the incident. The audit also flagged over $9.7 million in expenditures approved solely by an administrative assistant and inconsistent overtime logging; findings will be discussed at a Nov. 30 legislative committee meeting.",
+      "category": "society",
       "severity": 3,
-      "lat": 37.7749,
-      "lon": -122.4194,
-      "locationName": "San Francisco, California, USA",
+      "lat": 46.4425,
+      "lon": -97.6773,
+      "locationName": "Lisbon, North Dakota, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-CA",
+      "subdivision": "US-ND",
       "sources": [
         {
-          "url": "https://www.courtlistener.com/opinion/11057787/united-states-of-america-chamber-of-commerce-v-sanchez/",
-          "domain": "courtlistener.com",
+          "url": "https://www.inforum.com/news/north-dakota/audit-raises-concerns-at-the-north-dakota-veterans-home-including-choking-death-caused-by-improper-meal",
+          "domain": "inforum.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/25-5327/25-5327-2026-11-09.html",
-          "domain": "justia.com",
+          "url": "https://www.kfyrtv.com/2026/11/12/state-auditor-uncovers-several-concerns-north-dakota-veterans-home/",
+          "domain": "kfyrtv.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://environmentalhealthsafetybrief.sidley.com/2026/11/10/sb-253-sb-261-update-ninth-circuit-lets-scope-1-and-scope-2-disclosures-proceed-finds-scope-3-and-sb-261-likely-unconstitutional/",
-          "domain": "sidley.com",
+          "url": "https://kfgo.com/2026/11/12/1374075/",
+          "domain": "kfgo.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://natlawreview.com/article/split-decision-ninth-circuit-lets-californias-scope-1-and-2-emissions-reporting",
-          "domain": "natlawreview.com",
+          "url": "https://www.kxnet.com/north-dakota-news/audit-at-north-dakota-veterans-home-raises-some-concerns/",
+          "domain": "kxnet.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 57,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7f79223a1f64",
+      "headline": "SpaceX Plans $24 Billion Data Center Near Brownsville After Land Deannexed to Bypass City Moratorium",
+      "summary": "SpaceX is planning a $24 billion, 444-acre data center and gas-fired power plant near the Port of Brownsville, Texas, on land the city deannexed at SpaceX's request and then annexed into Starbase, sidestepping a 90-day data-center moratorium the city had just passed. SpaceX pledged $220 million toward water and wastewater infrastructure, but the move has drawn criticism from residents and officials over loss of local control.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 25.9017,
+      "lon": -97.4975,
+      "locationName": "Brownsville, Texas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TX",
+      "sources": [
+        {
+          "url": "https://www.texastribune.org/2026/11/10/texas-spacex-data-center-power-plant/",
+          "domain": "texastribune.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ksat.com/news/texas/2026/11/10/spacex-to-build-24-billion-data-center-in-south-texas-sidestepping-moratorium/",
+          "domain": "ksat.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://myrgv.com/local-news/2026/11/11/spacex-planning-24-billion-data-center-on-property-disannexed-by-brownsville/",
+          "domain": "myrgv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox26houston.com/news/spacex-plans-24-billion-data-center-land-brownsville-removed-from-city-limits",
+          "domain": "fox26houston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -2863,190 +3005,125 @@
       "isBreaking": false
     },
     {
-      "id": "72177938896f",
-      "headline": "Armenian Court Orders One-Month Pretrial Detention of Opposition Leader Samvel Karapetyan",
-      "summary": "Karapetyan, a Russian-Armenian billionaire and leader of the 'Strong Armenia' party, was detained November 4 amid an investigation into alleged losses of about $179-180 million at Electric Networks of Armenia. A court ordered one month of pretrial detention; his lawyers call it politically motivated.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 40.1792,
-      "lon": 44.4991,
-      "locationName": "Yerevan, Armenia",
-      "countryCode": "AM",
-      "sources": [
-        {
-          "url": "https://en.armradio.am/2026/11/05/businessman-samvel-karapetyan-remanded-in-custody-for-one-month/",
-          "domain": "armradio.am",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://en.apa.az/cis-countries/strong-armenia-party-leader-samvel-karapetyan-arrested-for-one-month-534150",
-          "domain": "apa.az",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.intellinews.com/armenia-detains-opposition-leader-karapetyan-over-alleged-179mn-power-utility-losses-481938/",
-          "domain": "intellinews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9809209aadcf",
-      "headline": "Georgia's Constitutional Court Continues Hearings on Bid to Ban Five Opposition Parties",
-      "summary": "Georgia's Constitutional Court is hearing a petition by 88 Georgian Dream-aligned lawmakers to ban five opposition entities, alleging they seek to overthrow the constitutional order. Hearings continue to November 17 after two opposition leaders were removed from the courtroom on November 11.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 41.7151,
-      "lon": 44.8271,
-      "locationName": "Tbilisi, Georgia",
-      "countryCode": "GE",
-      "sources": [
-        {
-          "url": "https://georgiatoday.ge/constitutional-court-to-resume-hearing-on-georgian-dream-petition-to-ban-five-opposition-parties/",
-          "domain": "georgiatoday.ge",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://oc-media.org/explainer-what-you-need-to-know-about-the-lawsuit-to-ban-georgias-opposition/",
-          "domain": "oc-media.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://jam-news.net/georgia-opposition-ban-trial-court-removes-leaders-of-coalition-for-change/",
-          "domain": "jam-news.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "bc8ad46591aa",
-      "headline": "Bandits Burn 12 Family Members to Death in Zamfara State Village Attack",
-      "summary": "Suspected bandits attacked Gidan Taba village in Zamfara State on the night of November 7, locking 12 members of a vigilante's family in a room and setting it ablaze, killing all of them. Other residents were kidnapped in an apparent act of retaliation.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 12.47,
-      "lon": 6.3,
-      "locationName": "Zamfara, Nigeria",
-      "countryCode": "NG",
-      "sources": [
-        {
-          "url": "https://allafrica.com/stories/202611090023.html",
-          "domain": "allafrica.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thisdaylive.com/2026/11/09/bandits-burn-11-family-members-to-death-in-zamfara/",
-          "domain": "thisdaylive.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://muslimnews.com.ng/2026/11/09/zamfara-bandits-burn-12-members-of-muslim-family-alive-abduct-seven/",
-          "domain": "muslimnews.com.ng",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c6eace9cf023",
-      "headline": "Israel Intensifies Incursions in Southern Syria, Resumes Fortified Road Construction; Sparks Damascus Protests",
-      "summary": "Between November 1-7, the Syrian Observatory documented 35 Israeli ground incursions in southern Syria, including resumed construction of a fortified military road toward the Jordan border, escalating from bulldozing to artillery fire. Israel also struck Lebanon in parallel, and protests were held near the UN building in Damascus.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 33.13,
-      "lon": 35.82,
-      "locationName": "Quneitra, Syria",
-      "countryCode": "SY",
-      "sources": [
-        {
-          "url": "https://www.syriahr.com/en/388002/",
-          "domain": "syriahr.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://shafaq.com/en/Middle-East/Over-60-Israeli-violations-reported-in-Syria-since-November-1",
-          "domain": "shafaq.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-strike-targets-syria-and-lebanon-simultaneously",
-          "domain": "middleeasteye.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "cb6c0d8446ac",
-      "headline": "China's October Exports Jump 35.2%; 10-Month Trade Surplus Tops $1.04 Trillion",
-      "summary": "China's customs data showed October 2026 exports rose 35.2% year-on-year to $412.33 billion, driven by semiconductor and AI-hardware demand. The October trade surplus was $105.3 billion, bringing the January-October cumulative surplus to $1.043 trillion.",
+      "id": "ef4af83693d0",
+      "headline": "Boeing to Cut About 2,500 Commercial Airplanes Jobs in Washington State",
+      "summary": "Boeing announced it will cut about 5%, or roughly 2,500 of 50,000, jobs in its Commercial Airplanes division, citing the need to reset the pace of production ramp-ups amid supply-chain and factory stability issues. The cuts, via attrition and layoffs starting in December, come about a month after the company averted a machinists' strike; the division posted a $697 million quarterly loss despite generating 44% of company revenue.",
       "category": "economy",
       "severity": 3,
-      "lat": 39.9,
-      "lon": 116.41,
-      "locationName": "Beijing, China",
-      "countryCode": "CN",
+      "lat": 47.4829,
+      "lon": -122.2171,
+      "locationName": "Renton, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
       "sources": [
         {
-          "url": "https://www.nbcnews.com/world/asia/chinas-trade-surplus-surpasses-1-trillion-2nd-straight-year-exports-rcna608493",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
+          "url": "https://www.washingtontimes.com/news/2026/nov/10/boeing-lays-5-commercial-airplanes-division-axing-roughly-2500-jobs/",
+          "domain": "washingtontimes.com",
+          "reliability": 58,
+          "bias": "right"
         },
         {
-          "url": "https://en.sedaily.com/world/2026/11/11/chinas-trade-surplus-tops-1-trillion-for-second-straight",
-          "domain": "sedaily.com",
+          "url": "https://www.business-standard.com/world-news/boeing-to-cut-5-of-commercial-aircraft-workforce-amid-production-delay-126111000092_1.html",
+          "domain": "business-standard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.audacy.com/knss/news/local/boeing-2678355722",
+          "domain": "audacy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5cf38ca3c10a",
+      "headline": "Indiana Measles Outbreak Tops 160 Cases, Concentrated in LaGrange and Elkhart Counties",
+      "summary": "Indiana's statewide measles case count reached 162 as of Nov. 13, with LaGrange County as the epicenter at 36 confirmed cases, up from 25 the prior week. More than half of all cases are in northeast Indiana, 31 patients have been hospitalized, and most cases involve unvaccinated people under 30, described by officials as the worst outbreak in decades.",
+      "category": "health",
+      "severity": 3,
+      "lat": 41.6559,
+      "lon": -85.4166,
+      "locationName": "LaGrange, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
+      "sources": [
+        {
+          "url": "https://www.wndu.com/2026/11/13/indiana-measles-cases-reach-162-nine-more-than-nov-10-report/",
+          "domain": "wndu.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wboi.org/health-science/2026-11-11/northeast-indiana-is-states-measles-hotspot",
+          "domain": "wboi.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbiw.com/2026/11/10/indiana-health-officials-implement-response-plan-as-measles-cases-rise-statewide/",
+          "domain": "wbiw.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3f87b3efff99",
+      "headline": "Jonathan Kreiss-Tomkins Wins Alaska Governor's Race, Becomes State's First Democratic Governor in Two Decades",
+      "summary": "Democrat Jonathan Kreiss-Tomkins, a former Sitka state legislator, won Alaska's governorship with 50.2% of the vote, clearing the threshold needed to avoid a ranked-choice runoff and defeating Republican Bernadette Wilson and other candidates by a wide margin. He becomes the state's first Democratic governor in about two decades, aided by a cross-party endorsement from Republican Sen. Lisa Murkowski.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 58.3019,
+      "lon": -134.4197,
+      "locationName": "Juneau, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.adn.com/politics/2026/11/09/kreiss-tomkins-grows-his-lead-in-alaska-governors-race/",
+          "domain": "adn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/11/03/jonathan-kreiss-tomkins-leading-in-alaskas-gubernatorial-race-in-early-results/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.multistate.us/elections/governor-race/alaska-2026",
+          "domain": "multistate.us",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T16:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -3337,167 +3414,190 @@
       "isBreaking": false
     },
     {
-      "id": "7ba19d8af274",
-      "headline": "Kraft Group's Proposed $16 Billion Data Center Campus Draws Resident Pushback in Sutton, Massachusetts",
-      "summary": "The Kraft Group and Unified Global Packaging Group proposed a roughly $16 billion, 900MW, multi-building data center campus in Sutton. At a Nov. 10 Select Board meeting, residents voiced noise concerns and pushed for a possible moratorium; the board deferred a vote pending further public forums.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 42.1515,
-      "lon": -71.7623,
-      "locationName": "Sutton, Massachusetts, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MA",
-      "sources": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/10/business/kraft-group-data-centers-sutton-mass/",
-          "domain": "bostonglobe.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wcvb.com/article/sutton-select-board-to-review-16-billion-data-center-proposal/74384942",
-          "domain": "wcvb.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://whdh.com/news/sutton-to-discuss-plans-to-build-data-center-in-16-billion-project-proposed-in-part-by-the-kraft-group/",
-          "domain": "whdh.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
-      "isBreaking": false
-    },
-    {
-      "id": "8acbe40c319f",
-      "headline": "Federal Government Blocks About $113 Million in Minnesota Medicaid Reimbursements Over Fraud Concerns",
-      "summary": "CMS, under the Trump administration, will not reimburse Minnesota for nearly $113 million spent on Medicaid provider payments flagged as high fraud-risk, denying 78 of 330 claims reviewed for issues like missing documentation and unsigned provider agreements. It is part of a larger $550 million in frozen Medicaid funds; Minnesota AG Keith Ellison's office is challenging the deferrals in court.",
-      "category": "health",
-      "severity": 3,
-      "lat": 44.9537,
-      "lon": -93.09,
-      "locationName": "St. Paul, Minnesota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MN",
-      "sources": [
-        {
-          "url": "https://www.startribune.com/minnesota-medicaid-113-million-withheld/601903238",
-          "domain": "startribune.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.willmarradio.com/news/feds-deny-minnesota-113-million-in-medicaid-reimbursements/article_65f453f4-ddd6-4a9b-b7b1-79df4cecedc6.html",
-          "domain": "willmarradio.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.washingtonsun.com/health/trump-administration-strips-minnesota-medicaid-funds",
-          "domain": "washingtonsun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
-      "isBreaking": false
-    },
-    {
-      "id": "f2c4cb32ed7a",
-      "headline": "Cherokee Nation Council Votes Unanimously to Oppose $4 Billion Inola, Oklahoma Aluminum Smelter",
-      "summary": "The 17-member Cherokee Nation Tribal Council unanimously passed a resolution, reported Nov. 11, backing the neighboring Muscogee Nation's opposition to the proposed $4 billion Century Aluminum/Emirates Global Aluminum smelter near Inola. The resolution cites cross-border pollution concerns and calls for full tribal consultation; the project has support from Oklahoma Gov. Kevin Stitt and the state government.",
-      "category": "climate",
-      "severity": 3,
-      "lat": 36.1559,
-      "lon": -95.5155,
-      "locationName": "Inola, Oklahoma, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OK",
-      "sources": [
-        {
-          "url": "https://www.kgou.org/indigenous-news/2026-11-11/cherokee-nation-issues-resolution-to-oppose-inola-smelter",
-          "domain": "kgou.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kosu.org/kosudaily/2026-11-11/headlines-initiative-petition-restrictions-cherokees-oppose-smelter-route-66-centennial",
-          "domain": "kosu.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://okenergytoday.com/2026/11/cherokee-nation-takes-stand-against-inola-smelter/",
-          "domain": "okenergytoday.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4b3607d272b5",
-      "headline": "Three Washington School Districts Prepare to Sue State Over $800 Million Funding Shortfall",
-      "summary": "Lake Washington and Tacoma school boards passed resolutions Oct. 22, and Yakima followed Nov. 2, authorizing participation in a prospective lawsuit alleging the state has fallen out of compliance with its McCleary-era obligation to fully fund basic education. The districts cite an estimated $800 million shortfall forcing layoffs, larger class sizes, and reliance on local levies; no lawsuit has been filed yet as of Nov. 9.",
+      "id": "72177938896f",
+      "headline": "Armenian Court Orders One-Month Pretrial Detention of Opposition Leader Samvel Karapetyan",
+      "summary": "Karapetyan, a Russian-Armenian billionaire and leader of the 'Strong Armenia' party, was detained November 4 amid an investigation into alleged losses of about $179-180 million at Electric Networks of Armenia. A court ordered one month of pretrial detention; his lawyers call it politically motivated.",
       "category": "politics",
       "severity": 3,
-      "lat": 47.2529,
-      "lon": -122.4443,
-      "locationName": "Tacoma, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
+      "lat": 40.1792,
+      "lon": 44.4991,
+      "locationName": "Yerevan, Armenia",
+      "countryCode": "AM",
       "sources": [
         {
-          "url": "https://washingtonstatestandard.com/2026/11/09/washington-schools-prepare-to-sue-the-state-for-failing-to-fund-public-education/",
-          "domain": "washingtonstatestandard.com",
+          "url": "https://en.armradio.am/2026/11/05/businessman-samvel-karapetyan-remanded-in-custody-for-one-month/",
+          "domain": "armradio.am",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.cascadiadaily.com/2026/nov/09/3-major-school-districts-prepare-to-sue-state-over-funding-shortfall/",
-          "domain": "cascadiadaily.com",
+          "url": "https://en.apa.az/cis-countries/strong-armenia-party-leader-samvel-karapetyan-arrested-for-one-month-534150",
+          "domain": "apa.az",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yakimaherald.com/news/local/education/yakima-school-district-will-join-education-funding-lawsuit-against-the-state/article_f3438245-d348-4a39-b6a5-13b8c4325e19.html",
-          "domain": "yakimaherald.com",
+          "url": "https://www.intellinews.com/armenia-detains-opposition-leader-karapetyan-over-alleged-179mn-power-utility-losses-481938/",
+          "domain": "intellinews.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9809209aadcf",
+      "headline": "Georgia's Constitutional Court Continues Hearings on Bid to Ban Five Opposition Parties",
+      "summary": "Georgia's Constitutional Court is hearing a petition by 88 Georgian Dream-aligned lawmakers to ban five opposition entities, alleging they seek to overthrow the constitutional order. Hearings continue to November 17 after two opposition leaders were removed from the courtroom on November 11.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 41.7151,
+      "lon": 44.8271,
+      "locationName": "Tbilisi, Georgia",
+      "countryCode": "GE",
+      "sources": [
+        {
+          "url": "https://georgiatoday.ge/constitutional-court-to-resume-hearing-on-georgian-dream-petition-to-ban-five-opposition-parties/",
+          "domain": "georgiatoday.ge",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://oc-media.org/explainer-what-you-need-to-know-about-the-lawsuit-to-ban-georgias-opposition/",
+          "domain": "oc-media.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://jam-news.net/georgia-opposition-ban-trial-court-removes-leaders-of-coalition-for-change/",
+          "domain": "jam-news.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bc8ad46591aa",
+      "headline": "Bandits Burn 12 Family Members to Death in Zamfara State Village Attack",
+      "summary": "Suspected bandits attacked Gidan Taba village in Zamfara State on the night of November 7, locking 12 members of a vigilante's family in a room and setting it ablaze, killing all of them. Other residents were kidnapped in an apparent act of retaliation.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 12.47,
+      "lon": 6.3,
+      "locationName": "Zamfara, Nigeria",
+      "countryCode": "NG",
+      "sources": [
+        {
+          "url": "https://allafrica.com/stories/202611090023.html",
+          "domain": "allafrica.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thisdaylive.com/2026/11/09/bandits-burn-11-family-members-to-death-in-zamfara/",
+          "domain": "thisdaylive.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://muslimnews.com.ng/2026/11/09/zamfara-bandits-burn-12-members-of-muslim-family-alive-abduct-seven/",
+          "domain": "muslimnews.com.ng",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c6eace9cf023",
+      "headline": "Israel Intensifies Incursions in Southern Syria, Resumes Fortified Road Construction; Sparks Damascus Protests",
+      "summary": "Between November 1-7, the Syrian Observatory documented 35 Israeli ground incursions in southern Syria, including resumed construction of a fortified military road toward the Jordan border, escalating from bulldozing to artillery fire. Israel also struck Lebanon in parallel, and protests were held near the UN building in Damascus.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 33.13,
+      "lon": 35.82,
+      "locationName": "Quneitra, Syria",
+      "countryCode": "SY",
+      "sources": [
+        {
+          "url": "https://www.syriahr.com/en/388002/",
+          "domain": "syriahr.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://shafaq.com/en/Middle-East/Over-60-Israeli-violations-reported-in-Syria-since-November-1",
+          "domain": "shafaq.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-strike-targets-syria-and-lebanon-simultaneously",
+          "domain": "middleeasteye.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "cb6c0d8446ac",
+      "headline": "China's October Exports Jump 35.2%; 10-Month Trade Surplus Tops $1.04 Trillion",
+      "summary": "China's customs data showed October 2026 exports rose 35.2% year-on-year to $412.33 billion, driven by semiconductor and AI-hardware demand. The October trade surplus was $105.3 billion, bringing the January-October cumulative surplus to $1.043 trillion.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.9,
+      "lon": 116.41,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/world/asia/chinas-trade-surplus-surpasses-1-trillion-2nd-straight-year-exports-rcna608493",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://en.sedaily.com/world/2026/11/11/chinas-trade-surplus-tops-1-trillion-for-second-straight",
+          "domain": "sedaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
       "isBreaking": false
     },
     {
@@ -3532,36 +3632,71 @@
       "isBreaking": false
     },
     {
-      "id": "5f5e95461641",
-      "headline": "Indiana Child Welfare Agency Says It Needs $300 Million Emergency State Infusion",
-      "summary": "DCS Director Jennifer Dorfmeyer told Indiana's State Budget Committee on Nov. 11 that the agency expects to need a $300 million infusion to its main account for fiscal year 2027, continuing a pattern of recent-year shortfalls. She described a new service-utilization review team as a mitigation step.",
+      "id": "1602a1e23911",
+      "headline": "West Virginia Governor Announces $17B Gas Plants, $7.5B Coal Plant Upgrades",
+      "summary": "Gov. Patrick Morrisey announced Nov. 12 that Appalachian Power will invest $17 billion in three new natural gas-fired plants (3 GW total, operational by 2031) and $7.5 billion to upgrade coal-fired plants through 2050. The gas buildout is projected to create about 2,050 construction jobs and 100 permanent jobs across multiple West Virginia sites.",
       "category": "economy",
       "severity": 3,
-      "lat": 39.7684,
-      "lon": -86.1581,
-      "locationName": "Indianapolis, Indiana, USA",
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-IN",
+      "subdivision": "US-WV",
       "sources": [
         {
-          "url": "https://indianacapitalchronicle.com/2026/11/11/indiana-child-welfare-agency-to-need-300m-state-infusion/",
-          "domain": "indianacapitalchronicle.com",
+          "url": "https://wvmetronews.com/2026/11/12/governor-announces-17-billion-in-gas-generation-and-7-5-billion-in-coal-upgrades/",
+          "domain": "wvmetronews.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/indiana-child-welfare-agency-300m-100030206.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
+          "url": "https://www.wvgazettemail.com/news/energy_and_environment/morrisey-administration-blocks-coal-project-information-out-of-step-on-energy-shifts/article_d9e83dac-bb1b-481b-a980-8c00cf1232e8.html",
+          "domain": "wvgazettemail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 44,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-11T15:27:29.990Z",
-      "expiresAt": "2026-11-13T15:27:29.990Z",
+      "trustScore": 41,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "28452577068a",
+      "headline": "Wisconsin Supreme Court Agrees 5-1 to Hear Union Challenge to Act 10",
+      "summary": "The Wisconsin Supreme Court ruled 5-1 to hear a lawsuit, led by the Abbotsford Education Association, challenging 2011's Act 10 collective-bargaining restrictions, arguing carve-outs exempting some public-safety unions violate the state constitution's equal protection clause. Briefing is due Dec. 11, with a decision expected before next summer.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://wisconsinexaminer.com/2026/11/11/state-supreme-court-to-consider-lawsuit-that-challenges-act-10/",
+          "domain": "wisconsinexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbay.com/2026/11/11/wisconsin-supreme-court-hear-case-involving-act-10/",
+          "domain": "wbay.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -3821,74 +3956,6 @@
       "isBreaking": false
     },
     {
-      "id": "1602a1e23911",
-      "headline": "West Virginia Governor Announces $17B Gas Plants, $7.5B Coal Plant Upgrades",
-      "summary": "Gov. Patrick Morrisey announced Nov. 12 that Appalachian Power will invest $17 billion in three new natural gas-fired plants (3 GW total, operational by 2031) and $7.5 billion to upgrade coal-fired plants through 2050. The gas buildout is projected to create about 2,050 construction jobs and 100 permanent jobs across multiple West Virginia sites.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 38.3498,
-      "lon": -81.6326,
-      "locationName": "Charleston, West Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WV",
-      "sources": [
-        {
-          "url": "https://wvmetronews.com/2026/11/12/governor-announces-17-billion-in-gas-generation-and-7-5-billion-in-coal-upgrades/",
-          "domain": "wvmetronews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wvgazettemail.com/news/energy_and_environment/morrisey-administration-blocks-coal-project-information-out-of-step-on-energy-shifts/article_d9e83dac-bb1b-481b-a980-8c00cf1232e8.html",
-          "domain": "wvgazettemail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-12T15:29:21.541Z",
-      "lastUpdated": "2026-11-12T15:29:21.541Z",
-      "expiresAt": "2026-11-14T15:29:21.541Z",
-      "isBreaking": false
-    },
-    {
-      "id": "28452577068a",
-      "headline": "Wisconsin Supreme Court Agrees 5-1 to Hear Union Challenge to Act 10",
-      "summary": "The Wisconsin Supreme Court ruled 5-1 to hear a lawsuit, led by the Abbotsford Education Association, challenging 2011's Act 10 collective-bargaining restrictions, arguing carve-outs exempting some public-safety unions violate the state constitution's equal protection clause. Briefing is due Dec. 11, with a decision expected before next summer.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 43.0731,
-      "lon": -89.4012,
-      "locationName": "Madison, Wisconsin, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WI",
-      "sources": [
-        {
-          "url": "https://wisconsinexaminer.com/2026/11/11/state-supreme-court-to-consider-lawsuit-that-challenges-act-10/",
-          "domain": "wisconsinexaminer.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wbay.com/2026/11/11/wisconsin-supreme-court-hear-case-involving-act-10/",
-          "domain": "wbay.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-12T15:29:21.541Z",
-      "lastUpdated": "2026-11-12T15:29:21.541Z",
-      "expiresAt": "2026-11-14T15:29:21.541Z",
-      "isBreaking": false
-    },
-    {
       "id": "61efcece10a2",
       "headline": "UNIFIL Patrol Comes Under Fire Near Wadi Jilu in Southern Lebanon",
       "summary": "A UNIFIL patrol came under fire — about a dozen rounds — on the evening of November 10, 2026 near Wadi Jilu in Lebanon's Tyre district. Peacekeepers returned fire after seeing a muzzle flash; no casualties were reported, and UNIFIL called the incident a violation of UN Security Council Resolution 1701, urging a Lebanese investigation. No group has claimed responsibility.",
@@ -3929,6 +3996,52 @@
       "firstSeen": "2026-11-12T06:08:11.410Z",
       "lastUpdated": "2026-11-12T06:08:11.410Z",
       "expiresAt": "2026-11-13T18:08:11.410Z",
+      "isBreaking": false
+    },
+    {
+      "id": "cbe6735dce73",
+      "headline": "Brigham and Women's Hospital Nurses Reach Tentative Deal, Averting Boston Strike",
+      "summary": "About 4,000 nurses at Brigham and Women's Hospital reached a tentative contract agreement with Mass General Brigham, averting what would have been the largest open-ended nurses strike in Massachusetts history. The strike had been scheduled to begin Thursday; the deal is subject to ratification.",
+      "category": "health",
+      "severity": 2,
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "locationName": "Boston, Massachusetts, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MA",
+      "sources": [
+        {
+          "url": "https://www.nbcboston.com/news/local/brigham-nurses-strike-bwh-mna-tentative-deal/4048185/",
+          "domain": "nbcboston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbur.org/news/2026/11/12/brigham-nurses-tentative-contract-open-ended-strike",
+          "domain": "wbur.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/boston/news/boston-brigham-womens-hospital-nurses-agreement-strike-averted/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/Health/indefinite-strike-averted-after-brigham-womens-hospital-nurses/story?id=138007926",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 73,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -4094,39 +4207,97 @@
       "isBreaking": false
     },
     {
-      "id": "f70be0ffea54",
-      "headline": "Israeli Settlers Seize Eight Palestinian Homes Near Jericho, Displacing Dozens",
-      "summary": "About 30 armed settlers affiliated with the Nachala movement took over eight Palestinian homes in Ein al-Duyuk al-Tahta, near Jericho, on November 4-5, 2026, displacing roughly 70 residents. Settlers claim the properties were legally purchased, while the Palestinian Authority says the documents were forged; Peace Now reports settlers assaulted two Israeli activists and shot a Palestinian man, and the UN has condemned the seizure.",
-      "category": "conflict",
+      "id": "9c44a103a46f",
+      "headline": "Paul LePage Confirmed Winner of Maine's 2nd Congressional District After Ranked-Choice Tabulation",
+      "summary": "Maine's Secretary of State completed ranked-choice tabulation confirming Republican Paul LePage defeated Democrat Jim Dunlap 50.81% to 49.18% in the 2nd Congressional District. Other statewide recounts remain pending.",
+      "category": "politics",
       "severity": 2,
-      "lat": 31.87,
-      "lon": 35.44,
-      "locationName": "Jericho, West Bank",
-      "countryCode": "PS",
+      "lat": 44.3106,
+      "lon": -69.7795,
+      "locationName": "Augusta, Maine, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-ME",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/6/israeli-settlers-seize-8-palestinian-homes-in-jericho-displacing-dozens",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.haaretz.com/west-bank/2026-11-04/ty-article/.premium/settlers-move-into-palestinian-homes-residents-reportedly-flee-fearing-attacks/000001a1-a806-d041-a5f9-ed27de9f0000",
-          "domain": "haaretz.com",
-          "reliability": 80,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.arabnews.com/middle-east/israeli-settlers-move-into-homes-near-west-bank-city-3010020",
-          "domain": "arabnews.com",
-          "reliability": 64,
+          "url": "https://www.maine.gov/sos/news/ranked-choice-voting-tabulation-results-announced-maine-congressional-district-2",
+          "domain": "maine.gov",
+          "reliability": 85,
           "bias": "center"
+        },
+        {
+          "url": "https://mainemorningstar.com/2026/11/12/lepage-prevails-in-2nd-district-ranked-choice-runoff/",
+          "domain": "mainemorningstar.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bangordailynews.com/2026/11/12/politics/elections/paul-lepage-wins-maine-2nd-district-ranked-choice/",
+          "domain": "bangordailynews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wmtw.com/article/maine-2nd-district-ranked-choice-results-winner/74412112",
+          "domain": "wmtw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
       "trustScore": 61,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-13T18:08:11.410Z",
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dce5cbe00309",
+      "headline": "Michigan Attorney General Sues Mackinac Island Ferry Operator Over Alleged Monopoly",
+      "summary": "Attorney General Dana Nessel filed an antitrust suit against the Hoffmann Family of Companies, alleging it created an illegal monopoly over Mackinac Island ferry service and parking after acquiring Shepler's in 2022 and Mackinac Island Ferry Company in 2024. The suit alleges inflated prices and threats to halt service when the city tried to regulate pricing, and could result in court-ordered divestiture.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 45.8492,
+      "lon": -84.6189,
+      "locationName": "Mackinac Island, Michigan, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MI",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/detroit/news/michigan-ag-sues-mackinac-island-ferry-service-over-monopoly/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://bridgemi.com/business-watch/michigan-sues-mackinac-island-ferry-operator-claims-its-a-monopoly/",
+          "domain": "bridgemi.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.woodtv.com/news/michigan/michigan-sues-mackinac-island-ferry-service-over-monopoly/",
+          "domain": "woodtv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcmu.org/local-regional-news/2026-11-12/michigan-sues-mackinac-island-ferry-operator-claiming-its-a-monopoly",
+          "domain": "wcmu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -4171,6 +4342,376 @@
         }
       ],
       "trustScore": 61,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T03:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f70be0ffea54",
+      "headline": "Israeli Settlers Seize Eight Palestinian Homes Near Jericho, Displacing Dozens",
+      "summary": "About 30 armed settlers affiliated with the Nachala movement took over eight Palestinian homes in Ein al-Duyuk al-Tahta, near Jericho, on November 4-5, 2026, displacing roughly 70 residents. Settlers claim the properties were legally purchased, while the Palestinian Authority says the documents were forged; Peace Now reports settlers assaulted two Israeli activists and shot a Palestinian man, and the UN has condemned the seizure.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 31.87,
+      "lon": 35.44,
+      "locationName": "Jericho, West Bank",
+      "countryCode": "PS",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/6/israeli-settlers-seize-8-palestinian-homes-in-jericho-displacing-dozens",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.haaretz.com/west-bank/2026-11-04/ty-article/.premium/settlers-move-into-palestinian-homes-residents-reportedly-flee-fearing-attacks/000001a1-a806-d041-a5f9-ed27de9f0000",
+          "domain": "haaretz.com",
+          "reliability": 80,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/israeli-settlers-move-into-homes-near-west-bank-city-3010020",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-12T06:08:11.410Z",
+      "lastUpdated": "2026-11-12T06:08:11.410Z",
+      "expiresAt": "2026-11-13T18:08:11.410Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8d533f5f2e77",
+      "headline": "Walmart Settles Record $7.8 Million Child Labor Violations Case in Pennsylvania",
+      "summary": "Pennsylvania's Department of Labor and Industry secured a $7.68 million penalty plus $142,785 in prior fines from Walmart after audits found an average of 65 child-labor violations per location. It is the largest such enforcement action in state history. Walmart agreed to manager training, workplace notices and doubled penalties for future violations.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 40.2732,
+      "lon": -76.8867,
+      "locationName": "Harrisburg, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/small-business/articles/walmart-agrees-pay-7-8m-200325800.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.sungazette.com/news/2026/11/walmart-to-pay-7-8-million-in-pennsylvania-child-labor-violations-settlement/",
+          "domain": "sungazette.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/walmart-agrees-to-7-8-million-settlement-for-violating-pa-s-child-labor-laws/4494397/",
+          "domain": "nbcphiladelphia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abc27.com/pennsylvania/walmart-to-pay-pennsylvania-record-7-8-million-child-labor-violation-settlement/",
+          "domain": "abc27.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "343014009bf0",
+      "headline": "Arizona Legislative District 27 House Race Heads to Automatic Recount After 311-Vote Margin",
+      "summary": "In Arizona's Legislative District 27 House race, Democrat Deborah Howard won one seat outright, while Republican incumbents Lisa Fink (33,724 votes) and Tony Rivero (33,413 votes) are separated by just 311 votes for the second seat. The margin is within the 0.5% threshold that triggers an automatic recount under a 2022 law, pending county and state certification.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 33.4484,
+      "lon": -112.074,
+      "locationName": "Phoenix, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
+      "sources": [
+        {
+          "url": "https://www.azfamily.com/2026/11/12/311-votes-separate-arizona-house-candidates-recount-looms/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ktar.com/arizona-politics-news/election/recount-trigger-district-27-house",
+          "domain": "ktar.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox10phoenix.com/news/maricopa-county-legislative-district-27-race-headed-automatic-recount",
+          "domain": "fox10phoenix.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/close-arizona-race-headed-recount-002459902.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b6827ca34632",
+      "headline": "Georgia House Democrats Nominate Carolyn Hugley as First Black Woman Speaker Nominee",
+      "summary": "After winning a House majority for the first time since 2004, Georgia House Democrats nominated Rep. Carolyn Hugley for speaker and Rep. Billy Mitchell for speaker pro tem on Nov. 12. If confirmed by the full House in January, Hugley would become the first Black woman to lead the chamber in Georgia's 238-year history.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 33.749,
+      "lon": -84.388,
+      "locationName": "Atlanta, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
+      "sources": [
+        {
+          "url": "https://www.wtvm.com/2026/11/12/georgia-house-democrats-nominate-columbus-rep-carolyn-hugley-speaker/",
+          "domain": "wtvm.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://georgiarecorder.com/2026/11/12/hugley-is-officially-nominated-as-georgia-house-speaker-as-democrats-choose-their-leaders/",
+          "domain": "georgiarecorder.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.atlantanewsfirst.com/2026/11/12/georgias-historic-election-sets-stage-another-first-state-capitol/",
+          "domain": "atlantanewsfirst.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ajc.com/politics/2026/11/georgia-house-democrats-set-to-elect-leaders-for-their-new-majority/",
+          "domain": "ajc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "47dcd199118e",
+      "headline": "Maryland Gov. Wes Moore Loses Two More Cabinet Secretaries",
+      "summary": "Gov. Wes Moore announced that Environment Secretary Serena McIlwain will depart Dec. 31 after 39 years in public service and Emergency Management Secretary Russell Strickland will retire Dec. 8 after a 50-year public-safety career. The departures follow an earlier wave of cabinet exits since Moore's reelection.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 38.9784,
+      "lon": -76.4922,
+      "locationName": "Annapolis, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
+      "sources": [
+        {
+          "url": "https://www.baltimoresun.com/2026/11/12/wes-moore-cabinet-departures-mcilwain-strickland/",
+          "domain": "baltimoresun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://marylandmatters.org/2026/11/12/maryland-environment-secretary-mcilwain-resigns/",
+          "domain": "marylandmatters.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://thedailyrecord.com/2026/11/12/wes-moore-cabinet-maryland-environment-emergency-management/",
+          "domain": "thedailyrecord.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://hanfordsentinel.com/news/national/2-more-members-of-maryland-gov-wes-moore-s-cabinet-are-leaving/article_1104065c-2d08-5bce-bfa9-cc8e2a10b1c1.html",
+          "domain": "hanfordsentinel.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "01024877b5cc",
+      "headline": "Montana Republicans Elect Katie Zolnikov as First Woman House Speaker Ahead of 2027 Session",
+      "summary": "Montana House Republicans selected Rep. Katie Zolnikov, 29, as their choice for House speaker for the 2027 session on Nov. 11, making her the first woman to hold the post in state history. Full chamber confirmation is pending in January, and Gov. Greg Gianforte previewed a budget with further income tax cuts.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 46.5891,
+      "lon": -112.0391,
+      "locationName": "Helena, Montana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MT",
+      "sources": [
+        {
+          "url": "https://dailymontanan.com/2026/11/11/republican-katie-zolnikov-becomes-first-woman-elected-montana-house-speaker/",
+          "domain": "dailymontanan.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://montanafreepress.org/2026/11/11/zolnikov-elected-first-female-speaker-montana-house/",
+          "domain": "montanafreepress.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.mtpr.org/montana-news/2026-11-12/state-lawmakers-elect-new-leaders-ahead-of-january-legislative-session",
+          "domain": "mtpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/republicans-elect-rep-katie-zolnikov-montanas-first-female-speaker-of-the-house",
+          "domain": "nbcmontana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9c6a2856d0f0",
+      "headline": "Hawaii's New Business Registration System Leaves 40,000 Filings Backlogged; Salesforce Assisting",
+      "summary": "Hawaii's Business Express system, run by the state Department of Commerce and Consumer Affairs and live since July 2026, has left roughly 40,000 filings backlogged, including incorporations and certificates needed for loans, real estate deals and grants. Salesforce is providing free assistance, with interim fixes targeted by year's end and full stabilization expected to take about 11 weeks at no cost to the state.",
+      "category": "society",
+      "severity": 2,
+      "lat": 21.3069,
+      "lon": -157.8583,
+      "locationName": "Honolulu, Hawaii, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-HI",
+      "sources": [
+        {
+          "url": "https://www.staradvertiser.com/2026/11/11/hawaii-news/software-firm-salesforce-is-helping-free-up-roughly-40000-backlogged-filings/",
+          "domain": "staradvertiser.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.hawaiinewsnow.com/2026/11/11/hawaii-business-registration-backlog-hits-40000-amid-system-failure/",
+          "domain": "hawaiinewsnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://bigislandnow.com/2026/11/12/state-working-to-improve-flawed-online-business-registration-system-that-went-live-in-july/",
+          "domain": "bigislandnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://mauinow.com/2026/11/12/dcca-outlines-steps-to-improve-the-hawai%CA%BBis-business-registration-system-address-processing-delays/",
+          "domain": "mauinow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c55d6e747800",
+      "headline": "Wild River Fire in New Hampshire's White Mountain National Forest Now Over Half Contained",
+      "summary": "The Wild River Fire, burning since Nov. 1 about 7 miles southeast of Gorham, NH, is now roughly 53-59% contained after burning 817-821 acres, aided by wet weather. The U.S. Forest Service says it is the largest wildfire in the White Mountain National Forest since 1918 and is human-caused, under investigation; the area remains closed to visitors.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 44.3886,
+      "lon": -71.1773,
+      "locationName": "Gorham, New Hampshire, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NH",
+      "sources": [
+        {
+          "url": "https://www.pressherald.com/2026/11/10/wildfire-in-white-mountain-national-forest-more-than-50-contained/",
+          "domain": "pressherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wmtw.com/article/white-mountains-wild-river-wildfire-half-contained/74386823",
+          "domain": "wmtw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.concordmonitor.com/2026/11/10/wild-river-fire-appears-increasingly-under-control/",
+          "domain": "concordmonitor.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nhpr.org/nh-news/2026-11-09/abnormally-dry-conditions-warm-temps-intensified-wild-river-fire-in-nhs-white-mountains",
+          "domain": "nhpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
       "firstSeen": "2026-11-12T15:29:21.541Z",
       "lastUpdated": "2026-11-12T15:29:21.541Z",
       "expiresAt": "2026-11-14T03:29:21.541Z",
@@ -4223,51 +4764,163 @@
       "isBreaking": false
     },
     {
-      "id": "c55d6e747800",
-      "headline": "Wild River Fire in New Hampshire's White Mountain National Forest Now Over Half Contained",
-      "summary": "The Wild River Fire, burning since Nov. 1 about 7 miles southeast of Gorham, NH, is now roughly 53-59% contained after burning 817-821 acres, aided by wet weather. The U.S. Forest Service says it is the largest wildfire in the White Mountain National Forest since 1918 and is human-caused, under investigation; the area remains closed to visitors.",
-      "category": "climate",
+      "id": "1b169634f521",
+      "headline": "New York Seeks Federal Disaster Aid for Long Island, NYC Coastal Storm Damage",
+      "summary": "Gov. Kathy Hochul directed state officials to request federal funding to repair coastal storm-risk reduction projects damaged by a late-September nor'easter that brought winds over 80 mph and stripped more than four feet of sand from Long Island's south shore. The request is separate from an earlier bid for a major disaster declaration covering Nassau and Suffolk counties.",
+      "category": "disaster",
       "severity": 2,
-      "lat": 44.3886,
-      "lon": -71.1773,
-      "locationName": "Gorham, New Hampshire, USA",
+      "lat": 40.7062,
+      "lon": -73.6187,
+      "locationName": "Hempstead, New York, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-NH",
+      "subdivision": "US-NY",
       "sources": [
         {
-          "url": "https://www.pressherald.com/2026/11/10/wildfire-in-white-mountain-national-forest-more-than-50-contained/",
-          "domain": "pressherald.com",
+          "url": "https://www.governor.ny.gov/news/governor-hochul-announces-state-requests-federal-assistance-coastal-storm-damage-long-island",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fingerlakes1.com/2026/11/05/new-york-requests-federal-help-to-repair-storm-damaged-coastal-projects/",
+          "domain": "fingerlakes1.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.wmtw.com/article/white-mountains-wild-river-wildfire-half-contained/74386823",
-          "domain": "wmtw.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.concordmonitor.com/2026/11/10/wild-river-fire-appears-increasingly-under-control/",
-          "domain": "concordmonitor.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nhpr.org/nh-news/2026-11-09/abnormally-dry-conditions-warm-temps-intensified-wild-river-fire-in-nhs-white-mountains",
-          "domain": "nhpr.org",
+          "url": "https://www.longisland.com/news/11-05-26/governor-hochul-announces-state-requests-federal-assistance-for-coastal-storm-damage-on-long-island-and-in-new-york-city.html",
+          "domain": "longisland.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-12T15:29:21.541Z",
-      "lastUpdated": "2026-11-12T15:29:21.541Z",
-      "expiresAt": "2026-11-14T03:29:21.541Z",
+      "trustScore": 55,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6cbaf20981d7",
+      "headline": "West Virginia Launches 20-Year Data Center Planning Council",
+      "summary": "Gov. Patrick Morrisey named Chris Morris to chair a new roughly 15-member advisory council tasked with recommending a 20-year statewide plan for data-center siting, utility capacity, community impact and water protection. The council's first meeting is planned before year's end.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://governor.wv.gov/article/governor-morrisey-names-chris-morris-lead-advisory-council-responsible-digital",
+          "domain": "wv.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.mybuckhannon.com/chris-morris-to-lead-council-recommending-20-year-plan-for-west-virginia-data-centers/",
+          "domain": "mybuckhannon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wvmetronews.com/2026/08/11/west-virginia-officials-describe-pillars-for-data-center-development/",
+          "domain": "wvmetronews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3335728cd122",
+      "headline": "Powerful Pacific Storm Brings 30-35 Foot Surf, High Wind Warnings to Oregon and Washington Coasts",
+      "summary": "The National Weather Service issued high surf warnings through the weekend for Oregon's coast and southern Washington, forecasting 30-to-35-foot breaking waves generated by 20-to-25-foot swells along with gale-force winds. Officials warned of destructive waves washing over beaches, jetties and structures, sneaker-wave drowning risk, and severe beach erosion.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 44.6368,
+      "lon": -124.0535,
+      "locationName": "Newport, Oregon, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OR",
+      "sources": [
+        {
+          "url": "https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=PQR&wwa=high+surf+warning",
+          "domain": "weather.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kptv.com/2026/11/13/first-alert-weather-day-beach-plans-need-attention/",
+          "domain": "kptv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.beachconnection.net/news/large-gnarly-waves-more-safety-warnings-oregon-washington.php",
+          "domain": "beachconnection.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "isBreaking": false
+    },
+    {
+      "id": "09e9d954cc9c",
+      "headline": "California Watchdog Finds Prison System Failed to Complete Timely Reviews of 3,500 Misconduct Complaints",
+      "summary": "A semiannual report from California's Office of the Inspector General found the state prison system's Allegation Investigation Unit left about 3,500 misconduct complaints without timely investigation during the first half of 2026, a performance the report called a dramatic decline. Of 228 disciplinary and criminal cases the OIG monitored or closed, only 124 were rated adequate, 48 needed improvement, and 56 were rated inadequate.",
+      "category": "society",
+      "severity": 2,
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.kqed.org/news/12109304/state-prison-officials-failed-to-complete-thousands-of-misconduct-investigations-inspector-general-finds",
+          "domain": "kqed.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.prisonlegalnews.org/news/2026/may/1/watchdog-finds-barely-1-in-10-complaints-against-california-prison-staff-handled-adequately/",
+          "domain": "prisonlegalnews.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.oig.ca.gov/publications/",
+          "domain": "ca.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -4348,6 +5001,46 @@
       "firstSeen": "2026-11-12T15:29:21.541Z",
       "lastUpdated": "2026-11-12T15:29:21.541Z",
       "expiresAt": "2026-11-14T03:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4ede4b55e113",
+      "headline": "Sioux Falls Democrat Seeks Recount in State Senate Race Amid Historic Low Turnout",
+      "summary": "Democrat Aaron Matson filed a petition for a recount in South Dakota Senate District 11 after losing by 35 votes out of 8,385 cast to Republican incumbent Senate President Pro Tem Chris Karr. The recount, which must conclude within 14 days, comes amid historically low statewide turnout even as Democrats made their first legislative gains since 2008.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 43.5446,
+      "lon": -96.7311,
+      "locationName": "Sioux Falls, South Dakota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-SD",
+      "sources": [
+        {
+          "url": "https://southdakotasearchlight.com/2026/11/12/sioux-falls-democrat-seeks-recount-in-state-senate-race/",
+          "domain": "southdakotasearchlight.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/sioux-falls-democrat-seeks-recount-145856392.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://rapidcitypost.com/southdakotasearchlight-government-6ae19e83e3",
+          "domain": "rapidcitypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-15T04:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -4800,13 +5493,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 113,
-    "carried": 57,
-    "updated": 17,
-    "expired": 39,
+    "multiSource": 128,
+    "carried": 104,
+    "updated": 0,
+    "expired": 9,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 7.12,
-    "budgetUsd": 12
+    "costUsd": 3.97,
+    "budgetUsd": 8
   }
 }
