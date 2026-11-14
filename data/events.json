@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T06:07:44.722Z",
+  "generatedAt": "2026-11-14T15:27:06.287Z",
   "mode": "daily",
   "events": [
     {
@@ -463,6 +463,51 @@
       "isBreaking": false
     },
     {
+      "id": "f35a7776b31a",
+      "headline": "Cindy Holscher Confirmed Winner of Closest Kansas Governor's Race in Decades",
+      "summary": "The AP called Kansas's governor's race for Democratic state Sen. Cindy Holscher over Republican Senate President Ty Masterson on Nov. 12, more than a week after election day, as her lead grew past 7,000 votes. Masterson conceded, giving Democrats a third consecutive gubernatorial win in Kansas, succeeding term-limited Gov. Laura Kelly.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 39.0473,
+      "lon": -95.6752,
+      "locationName": "Topeka, Kansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-KS",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/11/12/g-s1-151187/holscher-kansas-masterson-governor-midterms",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/cindy-holscher-wins-election-for-kansas-governor-extending-democrats-wave-of-victories",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/democrat-cindy-holscher-wins-kansas-governors-race-extending-partys-hold-governors-mansion",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
+        },
+        {
+          "url": "https://www.ksn.com/news/your-local-election-hq/cindy-holscher-wins-kansas-governors-race/",
+          "domain": "ksn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 76,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-18T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
       "id": "162626d5d4ac",
       "headline": "Yemen Fighting Intensifies as Houthi-Saudi Cross-Border Tensions Escalate; 320,000+ Displaced Since August",
       "summary": "Heavy clashes continue between Houthi and Saudi-backed Yemeni government forces, with Saudi forces intercepting Houthi missiles and drones aimed toward the Riyadh/Mecca region on November 12; Houthis deny targeting Mecca. More than 320,000 people have been displaced inside Yemen since August 1.",
@@ -558,6 +603,100 @@
       "isBreaking": false
     },
     {
+      "id": "2db245751f3d",
+      "headline": "North Carolina Congressional Delegation Flips to 11-3 Democratic After Canvasses",
+      "summary": "Finalized county canvasses show North Carolina Democrats flipped seven U.S. House seats, shifting the state's delegation from 10-4 Republican to 11-3 Democratic. In the 5th District, Democrat Chuck Hubbard's lead over longtime GOP Rep. Virginia Foxx grew to about 335 votes after provisional and cured ballots were counted, though a recount remains possible.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 35.7796,
+      "lon": -78.6382,
+      "locationName": "Raleigh, North Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NC",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/11/05/nx-s1-6031719/north-carolina-democrats-flip-house-seats-republican-districts",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.wral.com/news/nccapitol/democrats-flip-nc-congressional-seats-november-2026/",
+          "domain": "wral.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ncnewsline.com/2026/11/11/hubbard-appears-to-defeat-foxx-in-nc-05-as-provisionals-cured-ballots-counted/",
+          "domain": "ncnewsline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.carolinajournal.com/democrats-flip-multiple-nc-congressional-seats/",
+          "domain": "carolinajournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 62,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-18T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
+      "id": "eb3224adf2f0",
+      "headline": "Federal Report Finds Communication Gaps, Extreme Fire Behavior Led to Deaths of 4 Firefighters in Colorado's Knowles Fire",
+      "summary": "A joint federal investigation released Nov. 12 found extraordinary fire behavior, strained communications, incomplete situational awareness and gaps in aerial supervision contributed to the deaths of firefighters Nick Hutcherson, Emily Barker, Sydney Watson and Nathan Matthews on June 27. The fire ran about 7.5 miles in under three hours, with only nine seconds between a radio call that a helicopter could not land and a report that crews had deployed emergency shelters.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 40.0381,
+      "lon": -107.9114,
+      "locationName": "Meeker, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://www.doi.gov/pressreleases/interior-releases-findings-investigation-firefighter-fatalities-and-injury-knowles",
+          "domain": "doi.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://coloradosun.com/2026/11/12/knowles-snyder-fire-report-firefighters-killed/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sltrib.com/news/2026/11/13/firefighters-died-when-wildfire/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://kutv.com/news/local/federal-report-details-factors-in-knowles-fire-entrapment-that-killed-four-firefighters",
+          "domain": "kutv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-17T16:17:51.471Z",
+      "isBreaking": false
+    },
+    {
       "id": "a3055ce1ef9b",
       "headline": "Israeli Strike on Gaza's Nasser Hospital Kills at Least Eight, Including a Surgeon",
       "summary": "An Israeli airstrike overnight on November 11-12 hit a surgical ward building at Nasser Hospital in Khan Younis, killing at least eight people including surgeon Rezik Abushira and wounding about 20. Israel said it targeted a senior Hamas commander; Hamas denies this, and it is the first strike on the hospital since the October 2025 ceasefire.",
@@ -632,53 +771,6 @@
       "isBreaking": false
     },
     {
-      "id": "eb3224adf2f0",
-      "headline": "Federal Report Finds Communication Gaps, Extreme Fire Behavior Led to Deaths of 4 Firefighters in Colorado's Knowles Fire",
-      "summary": "A joint federal investigation released Nov. 12 found extraordinary fire behavior, strained communications, incomplete situational awareness and gaps in aerial supervision contributed to the deaths of firefighters Nick Hutcherson, Emily Barker, Sydney Watson and Nathan Matthews on June 27. The fire ran about 7.5 miles in under three hours, with only nine seconds between a radio call that a helicopter could not land and a report that crews had deployed emergency shelters.",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 40.0381,
-      "lon": -107.9114,
-      "locationName": "Meeker, Colorado, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CO",
-      "sources": [
-        {
-          "url": "https://www.doi.gov/pressreleases/interior-releases-findings-investigation-firefighter-fatalities-and-injury-knowles",
-          "domain": "doi.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://coloradosun.com/2026/11/12/knowles-snyder-fire-report-firefighters-killed/",
-          "domain": "coloradosun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.sltrib.com/news/2026/11/13/firefighters-died-when-wildfire/",
-          "domain": "sltrib.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://kutv.com/news/local/federal-report-details-factors-in-knowles-fire-entrapment-that-killed-four-firefighters",
-          "domain": "kutv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-17T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
       "id": "97cb23fbbce8",
       "headline": "Haiti Hunger Crisis Deepens: Nearly 6 Million Face Severe Food Insecurity",
       "summary": "A new IPC analysis finds 5.94 million Haitians face severe food insecurity amid spreading gang violence and high food prices. The World Food Programme says it needs $78 million to sustain operations through March 2027.",
@@ -713,6 +805,53 @@
       "firstSeen": "2026-11-11T06:09:06.519Z",
       "lastUpdated": "2026-11-11T06:09:06.519Z",
       "expiresAt": "2026-11-15T06:09:06.519Z",
+      "isBreaking": false
+    },
+    {
+      "id": "10fe85f78abe",
+      "headline": "Second Child Dies in Wisconsin Measles Outbreak as Cases Near 650",
+      "summary": "Wisconsin health officials confirmed a second measles-associated death of a Grant County child on Nov. 13, weeks after the state's first measles death in 36 years. The outbreak, which began in July, has reached 651 cases across 22 counties, with nine counties newly reporting cases in the past week.",
+      "category": "health",
+      "severity": 4,
+      "lat": 42.8481,
+      "lon": -90.7101,
+      "locationName": "Lancaster, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://wisconsinexaminer.com/2026/11/13/state-health-officials-report-second-childs-death-from-measles-in-wisconsin/",
+          "domain": "wisconsinexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbay.com/2026/11/13/wisconsin-dhs-reports-second-death-linked-measles-outbreak/",
+          "domain": "wbay.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wisn.com/article/child-dies-measles-outbrak-in-southwest-wisconsin/74426599",
+          "domain": "wisn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/wisconsin-reports-second-measles-associated-204711062.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-18T15:27:06.287Z",
       "isBreaking": false
     },
     {
@@ -849,6 +988,46 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-17T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ff6f4062d7ce",
+      "headline": "California Supreme Court Sets Nov. 24 Deadline for Briefs on Newsom's Death-Row Commutations",
+      "summary": "The California Supreme Court formally invited amicus briefs from prosecutors, defense groups and victims' families on the legality of Gov. Gavin Newsom's bid to commute all 548 death sentences to life without parole. Briefs are due Nov. 24, with Newsom's consolidated response due Dec. 4; advocacy groups have already filed supporting briefs while prosecutors signal opposition.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/news/us-news/california-gov-gavin-newsom-commutes-death-sentences-rcna607727",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.horvitzlevy.com/supreme-court-invites-amicus-briefs-on-death-sentence-commutations-one-brief-has-already-been-filed/",
+          "domain": "horvitzlevy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://davisvanguard.org/2026/11/california-supreme-court-commutation-briefing/",
+          "domain": "davisvanguard.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-18T15:27:06.287Z",
       "isBreaking": false
     },
     {
@@ -1065,129 +1244,6 @@
       "isBreaking": false
     },
     {
-      "id": "123c0d98f532",
-      "headline": "Indonesia's VP Gibran Formally Resigns, Hands Letter to Assembly",
-      "summary": "Vice President Gibran Rakabuming Raka personally delivered his resignation letter to the People's Consultative Assembly leadership on November 12, 2026, becoming Indonesia's first directly elected vice president to resign mid-term, hours before the House was due to debate an impeachment petition signed by more than 120 lawmakers. President Prabowo now has 14 days to nominate two successor candidates, and the Assembly's process may take up to 60 days.",
-      "category": "politics",
-      "severity": 3,
-      "lat": -6.2088,
-      "lon": 106.8456,
-      "locationName": "Jakarta, Indonesia",
-      "countryCode": "ID",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/jokowi-son-gibran-rakabuming-raka-resigns-indonesia-vice-president-prabowo",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.abc.net.au/news/2026-11-12/indonesia-vice-president-gibran-rakabuming-raka-resigns/107370802",
-          "domain": "abc.net.au",
-          "reliability": 86,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.thejakartapost.com/indonesia/2026/11/12/breaking-gibran-hands-resignation-letter-to-assembly",
-          "domain": "thejakartapost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://abcnews.com/International/wireStory/indonesias-vice-president-offers-resignation-questions-mount-eligibility-138005690",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/10/g-s1-152788/indonesias-vp-offers-resignation-as-questions-mount-over-his-eligibility",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/6/indonesia-names-fourth-wiretapping-suspect-as-political-intrigue-deepens",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/04/indonesia-security-forces-deployment-wiretapping/d5747440-d817-11f1-930a-e08f8086f5ac_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://en.tempo.co/read/2122975/prabowo-ousts-listyo-sigit-taps-ariyo-as-acting-chief-of-staff",
-          "domain": "tempo.co",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://asia.nikkei.com/politics/indonesia-chief-of-staff-sacked-for-allegedly-wiretapping-president-prabowo",
-          "domain": "nikkei.com",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 86,
-      "firstSeen": "2026-11-04T06:07:32.098Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
-      "id": "47907ff8c64c",
-      "headline": "US Boat Strikes on Alleged Drug Vessels Continue, Cumulative Toll Passes 238",
-      "summary": "The US military's campaign against alleged drug-trafficking vessels in the Caribbean and Eastern Pacific, ongoing since September 2025, has killed at least 238 people cumulatively as of mid-November 2026, with additional strikes conducted on November 6 and 10.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 12,
-      "lon": -70,
-      "locationName": "Caribbean Sea, near Venezuela",
-      "countryCode": "VE",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/10/27/us-says-it-killed-five-people-in-strike-on-alleged-drug-boat",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/world/u-s-military-kills-6-in-another-strike-on-alleged-drug-boat-in-the-eastern-pacific",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.justsecurity.org/124002/timeline-vessel-strikes-related-actions/",
-          "domain": "justsecurity.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/trump-administration/us-military-says-latest-strike-alleged-drug-smuggling-boat-caribbean-k-rcna601550",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://thehill.com/policy/defense/6100257-us-strike-caribbean-boat-deaths/",
-          "domain": "thehill.com",
-          "reliability": 76,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 85,
-      "firstSeen": "2026-11-10T06:07:21.759Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
       "id": "a3bf1ee3d3ab",
       "headline": "G7 Foreign Ministers Issue Strongest Joint Warning Yet on China's Military Activity Near Taiwan",
       "summary": "Following a Paris meeting, G7 foreign ministers issued a joint statement on November 11-12 calling China's assertive activity in waters east of Taiwan a threat to regional stability and freedom of navigation, described as the strongest unified G7 language to date. Taiwan's Presidential Office welcomed it.",
@@ -1240,56 +1296,6 @@
       "firstSeen": "2026-11-09T06:07:51.346Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "0d0d36c1ecdb",
-      "headline": "North Korea Publishes Revised Constitution Dropping Reunification Goal",
-      "summary": "North Korea posted a revised constitution on its Naenara website on November 11, 2026, removing references to reunification and defining South Korea as a separate foreign state. The change reflects the 2023 'two hostile states' declaration and reportedly expands Kim Jong Un's direct authority over the nuclear arsenal, though it stops short of explicitly labeling South Korea 'hostile.'",
-      "category": "politics",
-      "severity": 3,
-      "lat": 39.0392,
-      "lon": 125.7625,
-      "locationName": "Pyongyang, North Korea",
-      "countryCode": "KP",
-      "sources": [
-        {
-          "url": "https://www.upi.com/Top_News/World-News/2026/11/11/North-Korea-revised-constitution-reunification-Naenara/2891794386175",
-          "domain": "upi.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/north-korea-posts-revised-constitution-090420819.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.koreajoongangdaily.com/korea/north-korea-unveils-revised-constitution-reflecting-two-hostile-states-policy/12967144",
-          "domain": "koreajoongangdaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://news.un.org/en/story/2026/11/1168750",
-          "domain": "un.org",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261110/n-korea-rejects-un-chiefs-call-for-inter-korean-dialogue-after-mine-blast",
-          "domain": "koreatimes.co.kr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 81,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
       "isBreaking": false
     },
     {
@@ -1500,48 +1506,6 @@
       "isBreaking": false
     },
     {
-      "id": "e17e55d55aba",
-      "headline": "PNG Police Identify Chinese Artillery Shell Found in Shipping Container at Port Moresby Wharf",
-      "summary": "A 32kg object found in a shipping container at a Port Moresby wharf construction site around November 3, 2026 was identified by PNG police as an undetonated 130mm Chinese Type 59 artillery projectile containing chemical explosives and a fuse. Four Chinese nationals were arrested; China's embassy claimed the object was a 'wine bottle.' The incident is seen as background to Taiwan's subsequent closure of its PNG representative office.",
-      "category": "politics",
-      "severity": 3,
-      "lat": -9.4438,
-      "lon": 147.1803,
-      "locationName": "Port Moresby, Papua New Guinea",
-      "countryCode": "PG",
-      "sources": [
-        {
-          "url": "https://www.abc.net.au/news/2026-11-03/papua-new-guinea-artillery-shell-wine-bottle/107342264",
-          "domain": "abc.net.au",
-          "reliability": 86,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3373143/china-rejects-png-artillery-claim-says-object-wine-bottle-poses-no-danger",
-          "domain": "scmp.com",
-          "reliability": 76,
-          "bias": "center"
-        },
-        {
-          "url": "https://sg.news.yahoo.com/china-says-object-resembling-artillery-072039298.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/6/taiwan-to-close-representative-office-in-papua-new-guinea-blames-china",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 78,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
       "id": "d70b7d6bf035",
       "headline": "Trump Says He Would Consider Military Action to 'Get Cuba Done' Before Leaving Office",
       "summary": "In remarks to radio host Hugh Hewitt, Trump said he wants to resolve the Cuba situation before leaving office in 2029 and, when asked directly, said he would \"certainly consider\" a short US military campaign against Cuba's government, a more explicit escalation than earlier rhetoric focused on sanctions and the oil blockade.",
@@ -1589,49 +1553,6 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-14T06:07:44.722Z",
       "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6ac43a65c594",
-      "headline": "Drone Attack on Iraqi Kurdistan's Khor Mor Gas Field Cuts Regional Power",
-      "summary": "A suspected drone attack on the night of November 8, 2026 sparked a fire and halted production at the Khor Mor gas field, cutting about 2.8 gigawatts — roughly 70-80% of the Kurdistan Region's power supply — affecting Erbil, Sulaimaniyah, Duhok and other cities. No group has claimed responsibility, though Iran-aligned Kataib Hezbollah had referenced the field the day before.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 34.95,
-      "lon": 44.87,
-      "locationName": "Khor Mor, Kurdistan Region, Iraq",
-      "countryCode": "IQ",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/9/drone-attack-suspends-production-at-iraqs-khor-mor-gasfield",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.scmp.com/news/world/middle-east/article/3373721/attack-iraq-gas-complex-disrupts-supply-regions-power-plants-authorities-say",
-          "domain": "scmp.com",
-          "reliability": 76,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.al-monitor.com/originals/2026/11/iraqs-khor-mor-gas-field-suspends-output-after-drone-attack-operator-says",
-          "domain": "al-monitor.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://gulfnews.com/world/mena/drone-strike-on-iraqs-khor-mor-gas-field-cuts-power-production-by-28-gw-ministry-1.500740627",
-          "domain": "gulfnews.com",
-          "reliability": 66,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 74,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
       "isBreaking": false
     },
     {
@@ -1805,43 +1726,6 @@
       "isBreaking": false
     },
     {
-      "id": "bab366d8c200",
-      "headline": "ICJ Nears Final Ruling on Guyana-Venezuela Essequibo Border Dispute",
-      "summary": "The International Court of Justice is expected to issue a final, binding ruling on the Guyana-Venezuela Essequibo border dispute in late November 2026 or early 2027, after oral hearings concluded in May. Guyana is seeking regional backing from Brazil and Colombia, while Venezuela may not accept a ruling upholding the 1899 Arbitral Award.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 6.8013,
-      "lon": -58.1551,
-      "locationName": "Georgetown, Guyana",
-      "countryCode": "GY",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-10-30/guyana-seeks-regional-support-ahead-of-venezuela-border-ruling",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://oilnow.gy/featured/guyana-government-expects-world-court-ruling-as-early-as-november-2026-in-essequibo-border-case/",
-          "domain": "oilnow.gy",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://dpi.gov.gy/press-statement-guyana-stands-firm-on-sovereignty-as-icj-prepares-final-judgment-in-border-case",
-          "domain": "dpi.gov.gy",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 69,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
       "id": "58ba3718b02b",
       "headline": "Colombia Launches Military Offensive on Venezuela Border After ELN Bomb Threats, Attack on RCN Cali",
       "summary": "After bomb threats against Colombian broadcasters and a November 11 explosive attack on RCN's Cali offices, President de la Espriella deployed about 1,200 troops in offensive 'Esparta' against ELN and FARC dissidents near Cucuta.",
@@ -1974,79 +1858,6 @@
       "isBreaking": false
     },
     {
-      "id": "a47ad86c2348",
-      "headline": "Myanmar Junta Airstrike on Resistance Hospital Kills Five Health Workers",
-      "summary": "A junta airstrike on a resistance-run hospital in Hlyawhpyukone village, Kawlin Township, Sagaing Region, killed five health workers on November 4, 2026, including senior physician Dr. Zar Ni Tun. WHO Director-General Tedros confirmed the attack, noting Myanmar's 2026 total of attacks on healthcare has reached 65, with 63 deaths; further junta strikes on schools in Sagaing killed 11 people on November 10.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 23.7833,
-      "lon": 95.75,
-      "locationName": "Kawlin Township, Sagaing Region, Myanmar",
-      "countryCode": "MM",
-      "sources": [
-        {
-          "url": "https://www.aa.com.tr/en/asia-pacific/myanmar-military-airstrikes-kill-at-least-15-civilians-including-12-in-rakhine-state-report/4108750",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://english.dvb.no/myanmar-air-force-launches-30-airstrikes-in-sagaing-region-killing-civilians-and-destroying-historic-monastery/",
-          "domain": "dvb.no",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.bnionline.net/en/news/12-killed-including-newborn-myanmar-junta-airstrikes-hit-four-rakhine-townships",
-          "domain": "bnionline.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://news.un.org/en/story/2026/11/1168729",
-          "domain": "un.org",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.rfa.org/english/myanmar/2026/11/10/starlink-burma-civil-war-scam-center/",
-          "domain": "rfa.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.irrawaddy.com/news/burma/58-myanmar-junta-airstrikes-target-civilians-in-two-weeks.html",
-          "domain": "irrawaddy.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://myanmar-now.org/en/news/myanmar-regime-kills-three-in-airstrikes-on-hospital-in-resistance-stronghold/",
-          "domain": "myanmar-now.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://euro-burma.eu/junta-airstrike-kills-senior-doctor-4-healthcare-workers-at-hospital-in-sagaing-region/",
-          "domain": "euro-burma.eu",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 67,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
       "id": "096794d89fc4",
       "headline": "Sudanese Army Captures Al-Khuwai and Serif Ankoush, Extending West Kordofan Advance",
       "summary": "Sudan's army and allied forces captured the towns of Serif Ankoush and Al-Khuwai (El Khuwei) in West Kordofan, their first full locality taken in the state, building on the earlier capture of Iyal Bakhit on Nov 9. The gains open a strategic road toward the RSF's regional stronghold of En Nahud.",
@@ -2150,33 +1961,65 @@
       "isBreaking": false
     },
     {
-      "id": "8f66246eb980",
-      "headline": "Eurozone Inflation Hits 4% in October, Double the ECB's Target",
-      "summary": "Eurostat data showed annual eurozone inflation rose to 4% in October from 3.8% in September, the highest since September 2023, driven by a 20.8% year-on-year jump in energy prices. The reading strengthens the case for an ECB rate hike in December after the bank held rates at 2.5% on October 29.",
-      "category": "economy",
+      "id": "bea1b4e24616",
+      "headline": "Montana DOJ Investigates Alleged Vote-Tampering by Public Service Commission in Energy Rate Case",
+      "summary": "Montana's Department of Justice is reviewing whether a Public Service Commission vote in a NorthWestern Energy rate case — involving the same commission that approved NorthWestern's $15.4B merger with Black Hills Corp. — was improperly recorded. Commissioner Pinocci alleges his 'no' vote was changed to 'yes' without consent, while PSC President Welborn denies any vote was altered, raising a fresh credibility controversy for the commission.",
+      "category": "politics",
       "severity": 3,
-      "lat": 50.1109,
-      "lon": 8.6821,
-      "locationName": "Frankfurt, Germany",
-      "countryCode": "DE",
+      "lat": 46.5891,
+      "lon": -112.0391,
+      "locationName": "Helena, Montana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MT",
       "sources": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-04/euro-zone-inflation-accelerates-to-double-the-ecb-s-target",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
+          "url": "https://www.kulr8.com/news/doj-reviews-psc-vote-dispute-in-northwestern-rate-case/article_7f7d88e7-1b0f-409a-80ac-182f3bca642a.html",
+          "domain": "kulr8.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.euronews.com/2026/11/04/eurozone-inflation-hits-4-which-countries-saw-prices-jump-the-most",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
+          "url": "https://www.ktvq.com/news/montana-psc-commissioner-says-vote-was-counted-wrong-in-key-rate-hike-decision",
+          "domain": "ktvq.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://missoulacurrent.com/voting-questioned-energy/",
+          "domain": "missoulacurrent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dailymontanan.com/2026/11/10/public-service-commission-approves-northwestern-energy-black-hills-corp-merger/",
+          "domain": "dailymontanan.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/montana-psc-approves-northwestern-energy-merger-with-black-hills",
+          "domain": "nbcmontana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://rapidcitypost.com/southdakotasearchlight-government-f827f9e647",
+          "domain": "rapidcitypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
+      "trustScore": 65,
+      "firstSeen": "2026-11-11T15:27:29.990Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -2253,68 +2096,6 @@
       "isBreaking": false
     },
     {
-      "id": "bea1b4e24616",
-      "headline": "Montana DOJ Investigates Alleged Vote-Tampering by Public Service Commission in Energy Rate Case",
-      "summary": "Montana's Department of Justice is reviewing whether a Public Service Commission vote in a NorthWestern Energy rate case — involving the same commission that approved NorthWestern's $15.4B merger with Black Hills Corp. — was improperly recorded. Commissioner Pinocci alleges his 'no' vote was changed to 'yes' without consent, while PSC President Welborn denies any vote was altered, raising a fresh credibility controversy for the commission.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 46.5891,
-      "lon": -112.0391,
-      "locationName": "Helena, Montana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MT",
-      "sources": [
-        {
-          "url": "https://www.kulr8.com/news/doj-reviews-psc-vote-dispute-in-northwestern-rate-case/article_7f7d88e7-1b0f-409a-80ac-182f3bca642a.html",
-          "domain": "kulr8.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ktvq.com/news/montana-psc-commissioner-says-vote-was-counted-wrong-in-key-rate-hike-decision",
-          "domain": "ktvq.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://missoulacurrent.com/voting-questioned-energy/",
-          "domain": "missoulacurrent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://dailymontanan.com/2026/11/10/public-service-commission-approves-northwestern-energy-black-hills-corp-merger/",
-          "domain": "dailymontanan.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://nbcmontana.com/news/local/montana-psc-approves-northwestern-energy-merger-with-black-hills",
-          "domain": "nbcmontana.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://rapidcitypost.com/southdakotasearchlight-government-f827f9e647",
-          "domain": "rapidcitypost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-11T15:27:29.990Z",
-      "lastUpdated": "2026-11-12T15:29:21.541Z",
-      "expiresAt": "2026-11-14T15:29:21.541Z",
-      "isBreaking": false
-    },
-    {
       "id": "d454b10b61c6",
       "headline": "FAA Issues Nationwide Ground Stop After Air Traffic Control Data Overload",
       "summary": "The FAA ordered a rare nationwide ground stop lasting roughly 4.5 hours after air-route traffic control center equipment became overloaded with data and gave inconsistent readings. Over 10,000 flights were delayed or canceled; officials said there was no evidence of a cyberattack.",
@@ -2349,42 +2130,6 @@
       "firstSeen": "2026-11-14T06:07:44.722Z",
       "lastUpdated": "2026-11-14T06:07:44.722Z",
       "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "85919d912880",
-      "headline": "Fog Triggers Fatal 86-Vehicle Pile-Up on Bulgaria's Trakia Motorway, 12 Dead",
-      "summary": "Dense fog caused two multi-vehicle pile-ups involving about 86 vehicles near Zimnitsa and Yambol on the morning of November 10, 2026. Twelve people were killed and 46 to 51 injured, prompting Bulgaria to declare a day of national mourning.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 42.45,
-      "lon": 26.35,
-      "locationName": "Yambol, Bulgaria",
-      "countryCode": "BG",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/10/bulgaria-motorway-crashes-accidents-burgas/0b499684-dcf7-11f1-912c-4fbb80d73f7f_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/10/at-least-12-people-killed-in-motorway-crash-in-southeastern-bulgaria",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-10/at-least-10-die-in-bulgarian-motorway-pile-up",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 64,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
       "isBreaking": false
     },
     {
@@ -2430,6 +2175,53 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ed6212f1f012",
+      "headline": "Pacific Storm Triggers Coastal Evacuation Warnings in Santa Cruz County as Surf Nears 50 Feet",
+      "summary": "Santa Cruz County and Capitola police issued evacuation warnings for low-lying coastal areas from Capitola Village to Aptos ahead of a storm expected to bring 25-35 foot waves, with surf near 50 feet forecast at Mavericks. The city of Santa Cruz closed all beaches and its wharf, with a second storm and swell expected Sunday into Monday.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 36.9752,
+      "lon": -121.953,
+      "locationName": "Capitola, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.ksbw.com/article/santa-cruz-evacuations-waves-weather-ocean-flooding/74427680",
+          "domain": "ksbw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://lookout.co/santa-cruz-county-issues-evacuation-warning-for-low-lying-coastal-areas-from-capitola-village-to-aptos-as-surf-builds/story",
+          "domain": "lookout.co",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/amp/sanfrancisco/news/lingering-rains-soak-bay-area-high-surf-triggers-santa-cruz-evacuation-warning",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://abc7news.com/live-updates/live-updates-level-2-storm-making-bay-area-rain-winds-dangerous-high-surf-forecast/20037281/",
+          "domain": "abc7news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
       "isBreaking": false
     },
     {
@@ -2566,6 +2358,100 @@
       "isBreaking": false
     },
     {
+      "id": "e21537c4a900",
+      "headline": "St. Johns River Flooding Reaches Major Stage, Threatens Brevard County Homes",
+      "summary": "After up to two feet of rain in two days, the St. Johns River near Cocoa rose to major flood stage, with a crest near 17.1 feet forecast, nearly matching the 2008 Tropical Storm Fay record. Rising water is approaching homes in Rockledge's Silver Pines neighborhood, with flooding expected to persist for weeks.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 28.3861,
+      "lon": -80.742,
+      "locationName": "Cocoa, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.clickorlando.com/weather/2026/11/05/st-johns-river-in-brevard-to-crest-in-major-flood-stage/",
+          "domain": "clickorlando.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://weatherboy.com/brevard-county-dries-out-from-historic-deluge-as-slow-moving-st-johns-river-flood-worsens/",
+          "domain": "weatherboy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cfpublic.org/environment/2026-11-04/after-heavy-rain-counties-prepare-for-more-flooding-from-the-st-johns-river",
+          "domain": "cfpublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/st-johns-river-flooding-nears-164235381.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9dce951a6837",
+      "headline": "Three Washington School Districts Prepare to Sue State Over Funding Shortfall",
+      "summary": "Lake Washington and Tacoma school boards authorized lawsuit preparation against Washington state in October, joined by Yakima in November, arguing the state again failed its constitutional 'basic education' funding obligation. The shortfall is forcing districts to use local levy dollars for operating costs and has already driven layoffs and larger class sizes, echoing the earlier McCleary case.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 47.2529,
+      "lon": -122.4443,
+      "locationName": "Tacoma, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/09/washington-schools-prepare-to-sue-the-state-for-failing-to-fund-public-education/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cascadiadaily.com/2026/nov/09/3-major-school-districts-prepare-to-sue-state-over-funding-shortfall/",
+          "domain": "cascadiadaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/3-wa-school-districts-prepare-113039002.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.seattleschild.com/washington-school-funding-lawsuit-2026/",
+          "domain": "seattleschild.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
       "id": "e119f39f647f",
       "headline": "Spain's First General Strike in 14 Years Turns Violent in Barcelona and Madrid",
       "summary": "More than three million workers joined Spain's first 24-hour general strike since 2012, called over housing costs and prices weeks ahead of an early election; peaceful marches turned violent in Barcelona, with dozens arrested nationwide in clashes with police.",
@@ -2596,48 +2482,99 @@
       "isBreaking": false
     },
     {
-      "id": "96d69fac530e",
-      "headline": "Suspected Al-Shabaab Ambush Kills Eight Road Workers in Mandera, Kenya",
-      "summary": "Gunmen ambushed a security escort guarding a road construction project on the Mandera-Arabia-Lafey road around 7am on November 10, 2026, killing five road workers, two national police reservists and a driver. Attackers are believed to have crossed from neighboring Somalia.",
-      "category": "conflict",
+      "id": "17b76cfc53ce",
+      "headline": "Rare November Tornado Hits Newark, Delaware, Damages Hospital Helicopters",
+      "summary": "A confirmed EF-1 tornado struck near Newark, Delaware, on Nov. 12, knocking a hotel sign onto cars, overturning a tractor-trailer on I-95, and damaging two ChristianaCare medical helicopters at its Newark campus. No injuries were reported in what was only the third November tornado recorded in Delaware since 1950.",
+      "category": "disaster",
       "severity": 3,
-      "lat": -3.8,
-      "lon": 41.5,
-      "locationName": "Mandera County, Kenya",
-      "countryCode": "KE",
+      "lat": 39.6837,
+      "lon": -75.7497,
+      "locationName": "Newark, Delaware, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-DE",
       "sources": [
         {
-          "url": "https://nation.africa/kenya/counties/mandera/killed-in-cold-blood-mandera-terror-attack-that-left-eight-dead-5665798",
-          "domain": "nation.africa",
+          "url": "https://www.delawarepublic.org/delaware-headlines/2026-11-13/national-weather-service-offers-details-on-thursday-tornado-near-newark",
+          "domain": "delawarepublic.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.timeslive.co.za/news/africa/2026-11-10-eight-killed-in-suspected-al-shabaab-attack-in-kenya/",
-          "domain": "timeslive.co.za",
+          "url": "https://weather.com/2026/11/13/storms/tornado/video/november-tornado-newark-delaware-hotel-sign-video",
+          "domain": "weather.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://allafrica.com/stories/202611100528.html",
-          "domain": "allafrica.com",
+          "url": "https://www.wboc.com/news/christianacare-reports-minor-storm-damage-at-newark-campus-confirmed-tornado/article_9ca61a52-a27a-5d5a-9da7-cd7967ab7fe5.html",
+          "domain": "wboc.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yahoo.com/news/articles/eight-people-killed-kenyas-northeast-115906479.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
+          "url": "https://6abc.com/live-updates/funnel-clouds-hail-fallen-trees-severe-storms-strike-philadelphia-region/20036438/entry/20037004/",
+          "domain": "6abc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
+      "trustScore": 57,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
+      "id": "67b61ce8f90e",
+      "headline": "Wisconsin Gov. Evers Grants First Prison Commutations Since 1995",
+      "summary": "Gov. Tony Evers commuted sentences for 14 of 24 applicants on Nov. 13-14, marking Wisconsin's first commutations in roughly 25 years, including for several people serving life sentences for homicide. The move comes amid record overcrowding in the state's prison system.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://wisconsinwatch.org/2026/11/evers-shortens-prison-sentences-for-14-people-in-wisconsins-first-commutations-in-25-years/",
+          "domain": "wisconsinwatch.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wtmj.com/news/2026/11/13/evers-grants-wisconsins-first-prison-sentence-commutations-in-decades/",
+          "domain": "wtmj.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://urbanmilwaukee.com/2026/11/13/evers-revives-commutations-but-wisconsin-prisons-hit-record-high/",
+          "domain": "urbanmilwaukee.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wisn.com/article/wisconsin-governor-tony-evers-commutes-sentences/74424629",
+          "domain": "wisn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
       "isBreaking": false
     },
     {
@@ -2870,6 +2807,46 @@
       "isBreaking": false
     },
     {
+      "id": "2a791e490f28",
+      "headline": "GlobalFoundries Breaks Ground on $10 Billion Chip Fab in Malta, New York",
+      "summary": "GlobalFoundries and Gov. Kathy Hochul marked the Nov. 13 groundbreaking of a $10 billion, 300mm semiconductor fab in Malta as part of a U.S.-Japan chip initiative. The project is expected to create about 1,000 manufacturing jobs and 27,000 construction and ecosystem jobs, with production starting in 2029.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 43.0028,
+      "lon": -73.7913,
+      "locationName": "Malta, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.governor.ny.gov/news/governor-hochul-celebrates-groundbreaking-globalfoundries-new-10-billion-semiconductor",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://spectrumlocalnews.com/nys/central-ny/news/2026/11/13/globalfoundries-starts-malta-expansion-with-u-s--japan-fab",
+          "domain": "spectrumlocalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.dailygazette.com/spotlightnews/news/malta-semiconductor-fab-groundbreaking/article_99d285bc-cbbf-469c-af5e-53ec547eeee1.html",
+          "domain": "dailygazette.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
       "id": "5f5d76c3b76b",
       "headline": "State Department: US Returned Over $12 Billion in Venezuelan Oil Proceeds Since Maduro's Ouster",
       "summary": "A State Department report says the US collected $12.26 billion from Venezuelan oil, gold and mineral sales since Maduro's January 2026 ouster, returning about 99% to Venezuelan individuals and businesses, with $168.6 million left in escrow.",
@@ -3022,83 +2999,6 @@
       "isBreaking": false
     },
     {
-      "id": "8844327cc0b2",
-      "headline": "Americas Region Risks Losing Measles Elimination Status Amid Regional Resurgence",
-      "summary": "A PAHO commission is reviewing through November 13 whether the US, Mexico, Guatemala, Peru and Bolivia retain their measles elimination status after 57,666 confirmed cases were recorded across 17 countries in the Americas from January to October 2026.",
-      "category": "health",
-      "severity": 3,
-      "lat": 38.9072,
-      "lon": -77.0369,
-      "locationName": "Americas (regional, PAHO review in Washington, D.C.)",
-      "countryCode": "US",
-      "subdivision": "US-VA",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/12/why-the-us-mexico-and-guatemala-may-lose-their-measles-free-status",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cidrap.umn.edu/measles/us-poised-lose-measles-elimination-status-what-does-mean",
-          "domain": "umn.edu",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.paho.org/en/measles-multi-country-outbreak-2026",
-          "domain": "paho.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5ef565fb61af",
-      "headline": "Indonesia Police Chief Says Illegal Wiretapping of Prabowo Extended to Many Others",
-      "summary": "Police chief Gen. Suyudi Ario Seto told a parliamentary hearing on November 12, 2026 that illegal wiretapping targeting President Prabowo also extended to cabinet officials, politicians, activists, journalists and law enforcement figures. The scandal emerged after three senior generals, including Gen. Listyo Sigit Prabowo, the president's chief of staff, were detained.",
-      "category": "politics",
-      "severity": 3,
-      "lat": -6.2088,
-      "lon": 106.8456,
-      "locationName": "Jakarta, Indonesia",
-      "countryCode": "ID",
-      "sources": [
-        {
-          "url": "https://www.ksat.com/news/world/2026/11/12/police-chief-says-illegal-wiretapping-of-indonesias-president-extended-to-many-others/",
-          "domain": "ksat.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://abcnews.com/International/wireStory/indonesian-lawmakers-question-police-chief-wiretaps-alleged-target-138065101",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://wtop.com/world/2026/11/indonesian-lawmakers-question-police-chief-about-prabowo-wiretaps",
-          "domain": "wtop.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
       "id": "7d68fa5bbd2d",
       "headline": "Bus-Truck Collision Near Kaziranga National Park Kills at Least 23 in Assam, India",
       "summary": "A passenger minibus collided head-on with a container truck on a highway near Kaziranga National Park in Assam, killing at least 23 people including three children; police suspect speeding in a restricted park-area zone caused the driver to lose control.",
@@ -3126,6 +3026,126 @@
       "firstSeen": "2026-11-14T06:07:44.722Z",
       "lastUpdated": "2026-11-14T06:07:44.722Z",
       "expiresAt": "2026-11-16T06:07:44.722Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d774d8013a36",
+      "headline": "West Virginia Supreme Court Bars 'Deliberate Indifference' Claims in Prison Suits",
+      "summary": "In a 3-2 ruling, West Virginia's Supreme Court held that 'deliberate indifference' is not a cognizable common-law claim, granting writs of prohibition that limit legal recourse for families of inmates who died in custody. The same court separately struck down a 2025 law expanding the legislature's power over the state Board of Education.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://westvirginiawatch.com/2026/11/13/west-virginia-supreme-court-rules-deliberate-indifference-in-prison-lawsuits-cant-be-used-in-court/",
+          "domain": "westvirginiawatch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/wv-supreme-court-rules-deliberate-165137341.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://law.justia.com/cases/west-virginia/supreme-court/2026/25-328-0.html",
+          "domain": "justia.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3a8512ccf9f1",
+      "headline": "Record Fentanyl Lab Uncovered in Baton Rouge, Suspect Arrested",
+      "summary": "The East Baton Rouge Parish Sheriff's Office uncovered a clandestine fentanyl synthesis lab with professional-grade equipment worth about $250,000, capable of producing roughly 127 pounds of fentanyl powder, enough for nearly 569,000 potentially fatal doses. It is the largest such lab found in the DEA's four-state New Orleans Field Division; Torrey Lewis Jr., 34, was arrested.",
+      "category": "society",
+      "severity": 3,
+      "lat": 30.4515,
+      "lon": -91.1871,
+      "locationName": "Baton Rouge, Louisiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-LA",
+      "sources": [
+        {
+          "url": "https://www.wafb.com/2026/11/14/record-setting-fentanyl-lab-uncovered-baton-rouge-man-arrested/",
+          "domain": "wafb.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbrz.com/news/ebrso-man-arrested-after-fentanyl-lab-fit-to-make-568-960-likely-fatal-doses-uncovered-in-baton-rouge",
+          "domain": "wbrz.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/baton-rouge-man-arrested-accused-033347876.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7736092d5db4",
+      "headline": "Montana's GOP Delegation Breaks With Trump Administration Over Public Land Sales",
+      "summary": "The Interior Department's 2026-2030 strategic plan under Secretary Doug Burgum proposes offering public lands for sale or transfer to states, localities and tribes, including for energy production. Montana's entire congressional delegation, including Sens. Tim Sheehy and Steve Daines and Rep. Ryan Zinke, publicly opposed the plan, with Sheehy vowing to block any Montana land sale.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 46.5891,
+      "lon": -112.0391,
+      "locationName": "Helena, Montana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MT",
+      "sources": [
+        {
+          "url": "https://www.bozemandailychronicle.com/news/politics/montana-delegation-breaks-with-trumps-plan-to-sell-public-lands/article_9271399a-d96d-4401-8c6b-29613e75a691.html",
+          "domain": "bozemandailychronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/sheehy-daines-oppose-federal-land-sales-as-interior-weighs-offers-to-states",
+          "domain": "nbcmontana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtontimes.com/news/2026/nov/11/interior-department-pursue-public-land-sales-decrease-federal/",
+          "domain": "washingtontimes.com",
+          "reliability": 58,
+          "bias": "right"
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T15:27:06.287Z",
       "isBreaking": false
     },
     {
@@ -3166,263 +3186,6 @@
       "firstSeen": "2026-11-13T16:17:51.471Z",
       "lastUpdated": "2026-11-13T16:17:51.471Z",
       "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "790a3782682d",
-      "headline": "Salvadoran-Backed Haitian Forces Recapture National Stadium From Gangs in Port-au-Prince",
-      "summary": "Haitian police and armed forces, backed by El Salvador's deployed special forces, recaptured Stade Sylvio Cator, Haiti's national stadium, after roughly two years of gang control; Salvadoran troops have begun using it as a forward operating base. Human skulls were found at the site, pointing to gang atrocities.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 18.5944,
-      "lon": -72.3074,
-      "locationName": "Port-au-Prince, Haiti",
-      "countryCode": "HT",
-      "sources": [
-        {
-          "url": "https://ticotimes.net/2026/11/13/bukele-haiti-stadium-base-sylvio-cator",
-          "domain": "ticotimes.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://haitiantimes.com/2026/11/12/haiti-el-salvador-forces-retake-sylvio-cator-stadium/",
-          "domain": "haitiantimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.latintimes.com/salvadoran-haitian-forces-seize-haiti-stadium-601282",
-          "domain": "latintimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6c5acec24e2e",
-      "headline": "Leaked Colombian Intelligence Report Alleges Petro-Era Spying on Rivals, Election Meddling",
-      "summary": "A leaked 26-page DNI handover report alleges Colombia's intelligence agency, under the Petro administration, spied on former presidents, infiltrated rival 2026 presidential campaigns under a covert operation, and planned to target the electoral authority's systems. The allegations are unadjudicated and Petro has not responded.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 4.711,
-      "lon": -74.0721,
-      "locationName": "Bogota, Colombia",
-      "countryCode": "CO",
-      "sources": [
-        {
-          "url": "https://www.infobae.com/colombia/2026/11/13/el-general-r-eduardo-zapateiro-denuncio-un-presunto-plan-de-espionaje-durante-la-administracion-petro-conversaciones-de-politicos-funcionarios-y-oficiales-habrian-sido-interceptadas/",
-          "domain": "infobae.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://colombiaone.com/2026/11/13/dni-report-petro-surveillance-election-meddling/",
-          "domain": "colombiaone.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://semana.com/politica/articulo/la-dni-infiltro-campanas-presidenciales-en-2026-segun-informe-reservado/202635",
-          "domain": "semana.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "509901c2ae29",
-      "headline": "China Warns US Against New Chip Export Controls Following Nvidia-Huang Scandal",
-      "summary": "China's Foreign Ministry warned the United States against imposing additional semiconductor export controls, after Nvidia CEO Jensen Huang resigned amid allegations tied to a relationship with an executive US intelligence linked to China's Ministry of State Security; the episode comes ahead of an expected Trump-Xi meeting at the APEC summit in Shenzhen.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 39.9042,
-      "lon": 116.4074,
-      "locationName": "Beijing, China",
-      "countryCode": "CN",
-      "sources": [
-        {
-          "url": "https://www.euronews.com/2026/11/13/china-warns-us-over-chip-curbs-as-suspected-spys-firm-got-banned-chips",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.malaymail.com/news/world/2026/11/13/china-warns-us-against-more-chip-export-controls-after-nvidia-scandal/243121",
-          "domain": "malaymail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "72177938896f",
-      "headline": "Armenian Court Orders One-Month Pretrial Detention of Opposition Leader Samvel Karapetyan",
-      "summary": "Karapetyan, a Russian-Armenian billionaire and leader of the 'Strong Armenia' party, was detained November 4 amid an investigation into alleged losses of about $179-180 million at Electric Networks of Armenia. A court ordered one month of pretrial detention; his lawyers call it politically motivated.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 40.1792,
-      "lon": 44.4991,
-      "locationName": "Yerevan, Armenia",
-      "countryCode": "AM",
-      "sources": [
-        {
-          "url": "https://en.armradio.am/2026/11/05/businessman-samvel-karapetyan-remanded-in-custody-for-one-month/",
-          "domain": "armradio.am",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://en.apa.az/cis-countries/strong-armenia-party-leader-samvel-karapetyan-arrested-for-one-month-534150",
-          "domain": "apa.az",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.intellinews.com/armenia-detains-opposition-leader-karapetyan-over-alleged-179mn-power-utility-losses-481938/",
-          "domain": "intellinews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9809209aadcf",
-      "headline": "Georgia's Constitutional Court Continues Hearings on Bid to Ban Five Opposition Parties",
-      "summary": "Georgia's Constitutional Court is hearing a petition by 88 Georgian Dream-aligned lawmakers to ban five opposition entities, alleging they seek to overthrow the constitutional order. Hearings continue to November 17 after two opposition leaders were removed from the courtroom on November 11.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 41.7151,
-      "lon": 44.8271,
-      "locationName": "Tbilisi, Georgia",
-      "countryCode": "GE",
-      "sources": [
-        {
-          "url": "https://georgiatoday.ge/constitutional-court-to-resume-hearing-on-georgian-dream-petition-to-ban-five-opposition-parties/",
-          "domain": "georgiatoday.ge",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://oc-media.org/explainer-what-you-need-to-know-about-the-lawsuit-to-ban-georgias-opposition/",
-          "domain": "oc-media.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://jam-news.net/georgia-opposition-ban-trial-court-removes-leaders-of-coalition-for-change/",
-          "domain": "jam-news.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "bc8ad46591aa",
-      "headline": "Bandits Burn 12 Family Members to Death in Zamfara State Village Attack",
-      "summary": "Suspected bandits attacked Gidan Taba village in Zamfara State on the night of November 7, locking 12 members of a vigilante's family in a room and setting it ablaze, killing all of them. Other residents were kidnapped in an apparent act of retaliation.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 12.47,
-      "lon": 6.3,
-      "locationName": "Zamfara, Nigeria",
-      "countryCode": "NG",
-      "sources": [
-        {
-          "url": "https://allafrica.com/stories/202611090023.html",
-          "domain": "allafrica.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thisdaylive.com/2026/11/09/bandits-burn-11-family-members-to-death-in-zamfara/",
-          "domain": "thisdaylive.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://muslimnews.com.ng/2026/11/09/zamfara-bandits-burn-12-members-of-muslim-family-alive-abduct-seven/",
-          "domain": "muslimnews.com.ng",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "cb6c0d8446ac",
-      "headline": "China's October Exports Jump 35.2%; 10-Month Trade Surplus Tops $1.04 Trillion",
-      "summary": "China's customs data showed October 2026 exports rose 35.2% year-on-year to $412.33 billion, driven by semiconductor and AI-hardware demand. The October trade surplus was $105.3 billion, bringing the January-October cumulative surplus to $1.043 trillion.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 39.9,
-      "lon": 116.41,
-      "locationName": "Beijing, China",
-      "countryCode": "CN",
-      "sources": [
-        {
-          "url": "https://www.nbcnews.com/world/asia/chinas-trade-surplus-surpasses-1-trillion-2nd-straight-year-exports-rcna608493",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://en.sedaily.com/world/2026/11/11/chinas-trade-surplus-tops-1-trillion-for-second-straight",
-          "domain": "sedaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-15T06:09:56.557Z",
       "isBreaking": false
     },
     {
@@ -3795,6 +3558,263 @@
       "isBreaking": false
     },
     {
+      "id": "790a3782682d",
+      "headline": "Salvadoran-Backed Haitian Forces Recapture National Stadium From Gangs in Port-au-Prince",
+      "summary": "Haitian police and armed forces, backed by El Salvador's deployed special forces, recaptured Stade Sylvio Cator, Haiti's national stadium, after roughly two years of gang control; Salvadoran troops have begun using it as a forward operating base. Human skulls were found at the site, pointing to gang atrocities.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 18.5944,
+      "lon": -72.3074,
+      "locationName": "Port-au-Prince, Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://ticotimes.net/2026/11/13/bukele-haiti-stadium-base-sylvio-cator",
+          "domain": "ticotimes.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://haitiantimes.com/2026/11/12/haiti-el-salvador-forces-retake-sylvio-cator-stadium/",
+          "domain": "haitiantimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.latintimes.com/salvadoran-haitian-forces-seize-haiti-stadium-601282",
+          "domain": "latintimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-14T06:07:44.722Z",
+      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6c5acec24e2e",
+      "headline": "Leaked Colombian Intelligence Report Alleges Petro-Era Spying on Rivals, Election Meddling",
+      "summary": "A leaked 26-page DNI handover report alleges Colombia's intelligence agency, under the Petro administration, spied on former presidents, infiltrated rival 2026 presidential campaigns under a covert operation, and planned to target the electoral authority's systems. The allegations are unadjudicated and Petro has not responded.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 4.711,
+      "lon": -74.0721,
+      "locationName": "Bogota, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.infobae.com/colombia/2026/11/13/el-general-r-eduardo-zapateiro-denuncio-un-presunto-plan-de-espionaje-durante-la-administracion-petro-conversaciones-de-politicos-funcionarios-y-oficiales-habrian-sido-interceptadas/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://colombiaone.com/2026/11/13/dni-report-petro-surveillance-election-meddling/",
+          "domain": "colombiaone.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://semana.com/politica/articulo/la-dni-infiltro-campanas-presidenciales-en-2026-segun-informe-reservado/202635",
+          "domain": "semana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-14T06:07:44.722Z",
+      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "isBreaking": false
+    },
+    {
+      "id": "509901c2ae29",
+      "headline": "China Warns US Against New Chip Export Controls Following Nvidia-Huang Scandal",
+      "summary": "China's Foreign Ministry warned the United States against imposing additional semiconductor export controls, after Nvidia CEO Jensen Huang resigned amid allegations tied to a relationship with an executive US intelligence linked to China's Ministry of State Security; the episode comes ahead of an expected Trump-Xi meeting at the APEC summit in Shenzhen.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/11/13/china-warns-us-over-chip-curbs-as-suspected-spys-firm-got-banned-chips",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.malaymail.com/news/world/2026/11/13/china-warns-us-against-more-chip-export-controls-after-nvidia-scandal/243121",
+          "domain": "malaymail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-14T06:07:44.722Z",
+      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "isBreaking": false
+    },
+    {
+      "id": "72177938896f",
+      "headline": "Armenian Court Orders One-Month Pretrial Detention of Opposition Leader Samvel Karapetyan",
+      "summary": "Karapetyan, a Russian-Armenian billionaire and leader of the 'Strong Armenia' party, was detained November 4 amid an investigation into alleged losses of about $179-180 million at Electric Networks of Armenia. A court ordered one month of pretrial detention; his lawyers call it politically motivated.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.1792,
+      "lon": 44.4991,
+      "locationName": "Yerevan, Armenia",
+      "countryCode": "AM",
+      "sources": [
+        {
+          "url": "https://en.armradio.am/2026/11/05/businessman-samvel-karapetyan-remanded-in-custody-for-one-month/",
+          "domain": "armradio.am",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://en.apa.az/cis-countries/strong-armenia-party-leader-samvel-karapetyan-arrested-for-one-month-534150",
+          "domain": "apa.az",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.intellinews.com/armenia-detains-opposition-leader-karapetyan-over-alleged-179mn-power-utility-losses-481938/",
+          "domain": "intellinews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9809209aadcf",
+      "headline": "Georgia's Constitutional Court Continues Hearings on Bid to Ban Five Opposition Parties",
+      "summary": "Georgia's Constitutional Court is hearing a petition by 88 Georgian Dream-aligned lawmakers to ban five opposition entities, alleging they seek to overthrow the constitutional order. Hearings continue to November 17 after two opposition leaders were removed from the courtroom on November 11.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 41.7151,
+      "lon": 44.8271,
+      "locationName": "Tbilisi, Georgia",
+      "countryCode": "GE",
+      "sources": [
+        {
+          "url": "https://georgiatoday.ge/constitutional-court-to-resume-hearing-on-georgian-dream-petition-to-ban-five-opposition-parties/",
+          "domain": "georgiatoday.ge",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://oc-media.org/explainer-what-you-need-to-know-about-the-lawsuit-to-ban-georgias-opposition/",
+          "domain": "oc-media.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://jam-news.net/georgia-opposition-ban-trial-court-removes-leaders-of-coalition-for-change/",
+          "domain": "jam-news.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "bc8ad46591aa",
+      "headline": "Bandits Burn 12 Family Members to Death in Zamfara State Village Attack",
+      "summary": "Suspected bandits attacked Gidan Taba village in Zamfara State on the night of November 7, locking 12 members of a vigilante's family in a room and setting it ablaze, killing all of them. Other residents were kidnapped in an apparent act of retaliation.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 12.47,
+      "lon": 6.3,
+      "locationName": "Zamfara, Nigeria",
+      "countryCode": "NG",
+      "sources": [
+        {
+          "url": "https://allafrica.com/stories/202611090023.html",
+          "domain": "allafrica.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thisdaylive.com/2026/11/09/bandits-burn-11-family-members-to-death-in-zamfara/",
+          "domain": "thisdaylive.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://muslimnews.com.ng/2026/11/09/zamfara-bandits-burn-12-members-of-muslim-family-alive-abduct-seven/",
+          "domain": "muslimnews.com.ng",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "cb6c0d8446ac",
+      "headline": "China's October Exports Jump 35.2%; 10-Month Trade Surplus Tops $1.04 Trillion",
+      "summary": "China's customs data showed October 2026 exports rose 35.2% year-on-year to $412.33 billion, driven by semiconductor and AI-hardware demand. The October trade surplus was $105.3 billion, bringing the January-October cumulative surplus to $1.043 trillion.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.9,
+      "lon": 116.41,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/world/asia/chinas-trade-surplus-surpasses-1-trillion-2nd-straight-year-exports-rcna608493",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://en.sedaily.com/world/2026/11/11/chinas-trade-surplus-tops-1-trillion-for-second-straight",
+          "domain": "sedaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-13T06:09:56.557Z",
+      "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
       "id": "a28630a2c1cf",
       "headline": "Turkey and Qatar Sign Mutual Defense Pact",
       "summary": "Erdogan and Qatar's Emir Sheikh Tamim bin Hamad Al Thani signed a mutual defense pact in Istanbul pledging a unified response to any external armed attack on either country, part of five agreements reached at the 12th Turkey-Qatar High Strategic Committee meeting.",
@@ -3854,6 +3874,74 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-15T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1602a1e23911",
+      "headline": "West Virginia Governor Announces $17B Gas Plants, $7.5B Coal Plant Upgrades",
+      "summary": "Gov. Patrick Morrisey announced Nov. 12 that Appalachian Power will invest $17 billion in three new natural gas-fired plants (3 GW total, operational by 2031) and $7.5 billion to upgrade coal-fired plants through 2050. The gas buildout is projected to create about 2,050 construction jobs and 100 permanent jobs across multiple West Virginia sites.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://wvmetronews.com/2026/11/12/governor-announces-17-billion-in-gas-generation-and-7-5-billion-in-coal-upgrades/",
+          "domain": "wvmetronews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wvgazettemail.com/news/energy_and_environment/morrisey-administration-blocks-coal-project-information-out-of-step-on-energy-shifts/article_d9e83dac-bb1b-481b-a980-8c00cf1232e8.html",
+          "domain": "wvgazettemail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
+      "isBreaking": false
+    },
+    {
+      "id": "28452577068a",
+      "headline": "Wisconsin Supreme Court Agrees 5-1 to Hear Union Challenge to Act 10",
+      "summary": "The Wisconsin Supreme Court ruled 5-1 to hear a lawsuit, led by the Abbotsford Education Association, challenging 2011's Act 10 collective-bargaining restrictions, arguing carve-outs exempting some public-safety unions violate the state constitution's equal protection clause. Briefing is due Dec. 11, with a decision expected before next summer.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://wisconsinexaminer.com/2026/11/11/state-supreme-court-to-consider-lawsuit-that-challenges-act-10/",
+          "domain": "wisconsinexaminer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wbay.com/2026/11/11/wisconsin-supreme-court-hear-case-involving-act-10/",
+          "domain": "wbay.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-12T15:29:21.541Z",
+      "lastUpdated": "2026-11-12T15:29:21.541Z",
+      "expiresAt": "2026-11-14T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -4142,106 +4230,6 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-15T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e35c5f22a98f",
-      "headline": "Chad-Niger Drone Strike Dispute Escalates; Algeria Sends Mediator",
-      "summary": "Niger accuses Chad, and alleges French support, of an October 24 drone strike that killed two civilians in Emi Lulu, Agadez region; Chad denies involvement and is demanding evidence or an independent probe. Algeria's President Tebboune dispatched Foreign Minister Attaf as an envoy to N'Djamena and Niamey on November 3-4, and Niger has also raised the issue at the UN Security Council.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 19,
-      "lon": 10,
-      "locationName": "Agadez Region, Niger",
-      "countryCode": "NE",
-      "sources": [
-        {
-          "url": "https://www.riotimesonline.com/algeria-envoy-niger-chad-tension-tebboune-letters-2026/",
-          "domain": "riotimesonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wavn.org/chad-challenges-niger-over-drone-strike-allegations/",
-          "domain": "wavn.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-12T06:08:11.410Z",
-      "expiresAt": "2026-11-14T06:08:11.410Z",
-      "isBreaking": false
-    },
-    {
-      "id": "1602a1e23911",
-      "headline": "West Virginia Governor Announces $17B Gas Plants, $7.5B Coal Plant Upgrades",
-      "summary": "Gov. Patrick Morrisey announced Nov. 12 that Appalachian Power will invest $17 billion in three new natural gas-fired plants (3 GW total, operational by 2031) and $7.5 billion to upgrade coal-fired plants through 2050. The gas buildout is projected to create about 2,050 construction jobs and 100 permanent jobs across multiple West Virginia sites.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 38.3498,
-      "lon": -81.6326,
-      "locationName": "Charleston, West Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WV",
-      "sources": [
-        {
-          "url": "https://wvmetronews.com/2026/11/12/governor-announces-17-billion-in-gas-generation-and-7-5-billion-in-coal-upgrades/",
-          "domain": "wvmetronews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wvgazettemail.com/news/energy_and_environment/morrisey-administration-blocks-coal-project-information-out-of-step-on-energy-shifts/article_d9e83dac-bb1b-481b-a980-8c00cf1232e8.html",
-          "domain": "wvgazettemail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-12T15:29:21.541Z",
-      "lastUpdated": "2026-11-12T15:29:21.541Z",
-      "expiresAt": "2026-11-14T15:29:21.541Z",
-      "isBreaking": false
-    },
-    {
-      "id": "28452577068a",
-      "headline": "Wisconsin Supreme Court Agrees 5-1 to Hear Union Challenge to Act 10",
-      "summary": "The Wisconsin Supreme Court ruled 5-1 to hear a lawsuit, led by the Abbotsford Education Association, challenging 2011's Act 10 collective-bargaining restrictions, arguing carve-outs exempting some public-safety unions violate the state constitution's equal protection clause. Briefing is due Dec. 11, with a decision expected before next summer.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 43.0731,
-      "lon": -89.4012,
-      "locationName": "Madison, Wisconsin, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WI",
-      "sources": [
-        {
-          "url": "https://wisconsinexaminer.com/2026/11/11/state-supreme-court-to-consider-lawsuit-that-challenges-act-10/",
-          "domain": "wisconsinexaminer.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wbay.com/2026/11/11/wisconsin-supreme-court-hear-case-involving-act-10/",
-          "domain": "wbay.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-12T15:29:21.541Z",
-      "lastUpdated": "2026-11-12T15:29:21.541Z",
-      "expiresAt": "2026-11-14T15:29:21.541Z",
       "isBreaking": false
     },
     {
@@ -4564,36 +4552,6 @@
       "isBreaking": false
     },
     {
-      "id": "9a636621d565",
-      "headline": "Taiwan Indicts Couple Over Chinese-Origin Chips Found in Military Drones",
-      "summary": "Taichung prosecutors indicted Align Corp. director Tu Ta-sen and his wife, seeking at least five-year sentences, for allegedly supplying Chinese-origin chips in drones under four Taiwanese military procurement contracts that explicitly barred Chinese components; the chips were found in training drones and explosive-dropping drones.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 24.1477,
-      "lon": 120.6736,
-      "locationName": "Taichung, Taiwan",
-      "countryCode": "TW",
-      "sources": [
-        {
-          "url": "https://focustaiwan.tw/society/202611130017",
-          "domain": "focustaiwan.tw",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/14/2003867711",
-          "domain": "taipeitimes.com",
-          "reliability": 72,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
       "id": "9c44a103a46f",
       "headline": "Paul LePage Confirmed Winner of Maine's 2nd Congressional District After Ranked-Choice Tabulation",
       "summary": "Maine's Secretary of State completed ranked-choice tabulation confirming Republican Paul LePage defeated Democrat Jim Dunlap 50.81% to 49.18% in the 2nd Congressional District. Other statewide recounts remain pending.",
@@ -4688,6 +4646,36 @@
       "isBreaking": false
     },
     {
+      "id": "9a636621d565",
+      "headline": "Taiwan Indicts Couple Over Chinese-Origin Chips Found in Military Drones",
+      "summary": "Taichung prosecutors indicted Align Corp. director Tu Ta-sen and his wife, seeking at least five-year sentences, for allegedly supplying Chinese-origin chips in drones under four Taiwanese military procurement contracts that explicitly barred Chinese components; the chips were found in training drones and explosive-dropping drones.",
+      "category": "conflict",
+      "severity": 2,
+      "lat": 24.1477,
+      "lon": 120.6736,
+      "locationName": "Taichung, Taiwan",
+      "countryCode": "TW",
+      "sources": [
+        {
+          "url": "https://focustaiwan.tw/society/202611130017",
+          "domain": "focustaiwan.tw",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/14/2003867711",
+          "domain": "taipeitimes.com",
+          "reliability": 72,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-14T06:07:44.722Z",
+      "expiresAt": "2026-11-15T18:07:44.722Z",
+      "isBreaking": false
+    },
+    {
       "id": "161f24a0b220",
       "headline": "Lebanese Army Seizes Large Weapons Cache in Raid on Beirut's Southern Suburbs",
       "summary": "Lebanese army military intelligence raided a weapons warehouse in the Msharafieh area of Beirut's southern suburbs, a Hezbollah stronghold, seizing rifles, machine guns, rocket and grenade launchers and explosives, and detaining one suspect, as the state pushes to assert control over weapons in the area.",
@@ -4718,40 +4706,40 @@
       "isBreaking": false
     },
     {
-      "id": "8d533f5f2e77",
-      "headline": "Walmart Settles Record $7.8 Million Child Labor Violations Case in Pennsylvania",
-      "summary": "Pennsylvania's Department of Labor and Industry secured a $7.68 million penalty plus $142,785 in prior fines from Walmart after audits found an average of 65 child-labor violations per location. It is the largest such enforcement action in state history. Walmart agreed to manager training, workplace notices and doubled penalties for future violations.",
-      "category": "economy",
+      "id": "da05e5fea9cf",
+      "headline": "19 Inches of Hail Blankets Delaware County, Pennsylvania Amid Tornado Watch",
+      "summary": "A severe Nov. 12 storm dumped roughly 19 inches of hail in Parkside Borough and Brookhaven, Delaware County, Pennsylvania, burying streets like a snowstorm. A tornado watch and flash flooding also triggered water rescues in nearby Chester Township and Aston; no injuries were reported.",
+      "category": "disaster",
       "severity": 2,
-      "lat": 40.2732,
-      "lon": -76.8867,
-      "locationName": "Harrisburg, Pennsylvania, USA",
+      "lat": 39.9129,
+      "lon": -75.361,
+      "locationName": "Parkside, Pennsylvania, USA",
       "countryCode": "US",
       "scope": "us",
       "subdivision": "US-PA",
       "sources": [
         {
-          "url": "https://finance.yahoo.com/small-business/articles/walmart-agrees-pay-7-8m-200325800.html",
+          "url": "https://6abc.com/post/heavy-hail-piles-like-snow-parkside-borough-pennsylvania/20036746/",
+          "domain": "6abc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dailyvoice.com/article/19-inches-of-hail-turns-pennsylvania-streets-into-winter-wonderland-during-november-storm/",
+          "domain": "dailyvoice.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/heavy-hail-piles-snow-parkside-221928817.html",
           "domain": "yahoo.com",
           "reliability": 60,
           "bias": "center"
         },
         {
-          "url": "https://www.sungazette.com/news/2026/11/walmart-to-pay-7-8-million-in-pennsylvania-child-labor-violations-settlement/",
-          "domain": "sungazette.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/walmart-agrees-to-7-8-million-settlement-for-violating-pa-s-child-labor-laws/4494397/",
-          "domain": "nbcphiladelphia.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.abc27.com/pennsylvania/walmart-to-pay-pennsylvania-record-7-8-million-child-labor-violation-settlement/",
+          "url": "https://www.abc27.com/news/hail-creates-winter-like-scene-in-delaware-county/",
           "domain": "abc27.com",
           "reliability": 50,
           "bias": "unknown",
@@ -4759,56 +4747,56 @@
         }
       ],
       "trustScore": 58,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T03:27:06.287Z",
       "isBreaking": false
     },
     {
-      "id": "343014009bf0",
-      "headline": "Arizona Legislative District 27 House Race Heads to Automatic Recount After 311-Vote Margin",
-      "summary": "In Arizona's Legislative District 27 House race, Democrat Deborah Howard won one seat outright, while Republican incumbents Lisa Fink (33,724 votes) and Tony Rivero (33,413 votes) are separated by just 311 votes for the second seat. The margin is within the 0.5% threshold that triggers an automatic recount under a 2022 law, pending county and state certification.",
-      "category": "politics",
+      "id": "03edd10ed413",
+      "headline": "Nevada Lawmakers Brace for $1 Billion-Plus Budget Boost Ahead of 2027 Session",
+      "summary": "Forecasters project Nevada's 2027-2029 biennial budget could grow $900 million to $1.64 billion above the current $49.5 billion budget, driven by rising sales and gaming tax revenue. Democratic Sen. Edgar Flores was selected as the new Senate Majority Leader after Democrats expanded their legislative majority in the Nov. 2026 elections; an official forecast is set for approval Nov. 16.",
+      "category": "economy",
       "severity": 2,
-      "lat": 33.4484,
-      "lon": -112.074,
-      "locationName": "Phoenix, Arizona, USA",
+      "lat": 39.1638,
+      "lon": -119.7674,
+      "locationName": "Carson City, Nevada, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-AZ",
+      "subdivision": "US-NV",
       "sources": [
         {
-          "url": "https://www.azfamily.com/2026/11/12/311-votes-separate-arizona-house-candidates-recount-looms/",
-          "domain": "azfamily.com",
+          "url": "https://www.reviewjournal.com/news/politics-and-government/nevada/flores-selected-as-new-senate-majority-leader-in-nevada-legislature-3910272/",
+          "domain": "reviewjournal.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://ktar.com/arizona-politics-news/election/recount-trigger-district-27-house",
-          "domain": "ktar.com",
+          "url": "https://thenevadaindependent.com/article/nevadas-next-budget-could-see-at-least-1-billion-boost-heres-why",
+          "domain": "thenevadaindependent.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.fox10phoenix.com/news/maricopa-county-legislative-district-27-race-headed-automatic-recount",
-          "domain": "fox10phoenix.com",
+          "url": "https://www.fox5vegas.com/2026/11/05/nevada-senate-democrats-select-edgar-flores-majority-leader/",
+          "domain": "fox5vegas.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yahoo.com/news/politics/articles/close-arizona-race-headed-recount-002459902.html",
+          "url": "https://www.yahoo.com/news/politics/articles/nevada-expects-1-billion-surplus-231000400.html",
           "domain": "yahoo.com",
           "reliability": 60,
           "bias": "center"
         }
       ],
       "trustScore": 58,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-14T15:27:06.287Z",
+      "expiresAt": "2026-11-16T03:27:06.287Z",
       "isBreaking": false
     },
     {
@@ -4858,198 +4846,6 @@
       "isBreaking": false
     },
     {
-      "id": "b6827ca34632",
-      "headline": "Georgia House Democrats Nominate Carolyn Hugley as First Black Woman Speaker Nominee",
-      "summary": "After winning a House majority for the first time since 2004, Georgia House Democrats nominated Rep. Carolyn Hugley for speaker and Rep. Billy Mitchell for speaker pro tem on Nov. 12. If confirmed by the full House in January, Hugley would become the first Black woman to lead the chamber in Georgia's 238-year history.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 33.749,
-      "lon": -84.388,
-      "locationName": "Atlanta, Georgia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-GA",
-      "sources": [
-        {
-          "url": "https://www.wtvm.com/2026/11/12/georgia-house-democrats-nominate-columbus-rep-carolyn-hugley-speaker/",
-          "domain": "wtvm.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://georgiarecorder.com/2026/11/12/hugley-is-officially-nominated-as-georgia-house-speaker-as-democrats-choose-their-leaders/",
-          "domain": "georgiarecorder.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.atlantanewsfirst.com/2026/11/12/georgias-historic-election-sets-stage-another-first-state-capitol/",
-          "domain": "atlantanewsfirst.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ajc.com/politics/2026/11/georgia-house-democrats-set-to-elect-leaders-for-their-new-majority/",
-          "domain": "ajc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "47dcd199118e",
-      "headline": "Maryland Gov. Wes Moore Loses Two More Cabinet Secretaries",
-      "summary": "Gov. Wes Moore announced that Environment Secretary Serena McIlwain will depart Dec. 31 after 39 years in public service and Emergency Management Secretary Russell Strickland will retire Dec. 8 after a 50-year public-safety career. The departures follow an earlier wave of cabinet exits since Moore's reelection.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 38.9784,
-      "lon": -76.4922,
-      "locationName": "Annapolis, Maryland, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MD",
-      "sources": [
-        {
-          "url": "https://www.baltimoresun.com/2026/11/12/wes-moore-cabinet-departures-mcilwain-strickland/",
-          "domain": "baltimoresun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://marylandmatters.org/2026/11/12/maryland-environment-secretary-mcilwain-resigns/",
-          "domain": "marylandmatters.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://thedailyrecord.com/2026/11/12/wes-moore-cabinet-maryland-environment-emergency-management/",
-          "domain": "thedailyrecord.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://hanfordsentinel.com/news/national/2-more-members-of-maryland-gov-wes-moore-s-cabinet-are-leaving/article_1104065c-2d08-5bce-bfa9-cc8e2a10b1c1.html",
-          "domain": "hanfordsentinel.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "01024877b5cc",
-      "headline": "Montana Republicans Elect Katie Zolnikov as First Woman House Speaker Ahead of 2027 Session",
-      "summary": "Montana House Republicans selected Rep. Katie Zolnikov, 29, as their choice for House speaker for the 2027 session on Nov. 11, making her the first woman to hold the post in state history. Full chamber confirmation is pending in January, and Gov. Greg Gianforte previewed a budget with further income tax cuts.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 46.5891,
-      "lon": -112.0391,
-      "locationName": "Helena, Montana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MT",
-      "sources": [
-        {
-          "url": "https://dailymontanan.com/2026/11/11/republican-katie-zolnikov-becomes-first-woman-elected-montana-house-speaker/",
-          "domain": "dailymontanan.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://montanafreepress.org/2026/11/11/zolnikov-elected-first-female-speaker-montana-house/",
-          "domain": "montanafreepress.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.mtpr.org/montana-news/2026-11-12/state-lawmakers-elect-new-leaders-ahead-of-january-legislative-session",
-          "domain": "mtpr.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://nbcmontana.com/news/local/republicans-elect-rep-katie-zolnikov-montanas-first-female-speaker-of-the-house",
-          "domain": "nbcmontana.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9c6a2856d0f0",
-      "headline": "Hawaii's New Business Registration System Leaves 40,000 Filings Backlogged; Salesforce Assisting",
-      "summary": "Hawaii's Business Express system, run by the state Department of Commerce and Consumer Affairs and live since July 2026, has left roughly 40,000 filings backlogged, including incorporations and certificates needed for loans, real estate deals and grants. Salesforce is providing free assistance, with interim fixes targeted by year's end and full stabilization expected to take about 11 weeks at no cost to the state.",
-      "category": "society",
-      "severity": 2,
-      "lat": 21.3069,
-      "lon": -157.8583,
-      "locationName": "Honolulu, Hawaii, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-HI",
-      "sources": [
-        {
-          "url": "https://www.staradvertiser.com/2026/11/11/hawaii-news/software-firm-salesforce-is-helping-free-up-roughly-40000-backlogged-filings/",
-          "domain": "staradvertiser.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.hawaiinewsnow.com/2026/11/11/hawaii-business-registration-backlog-hits-40000-amid-system-failure/",
-          "domain": "hawaiinewsnow.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://bigislandnow.com/2026/11/12/state-working-to-improve-flawed-online-business-registration-system-that-went-live-in-july/",
-          "domain": "bigislandnow.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://mauinow.com/2026/11/12/dcca-outlines-steps-to-improve-the-hawai%CA%BBis-business-registration-system-address-processing-delays/",
-          "domain": "mauinow.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
-      "isBreaking": false
-    },
-    {
       "id": "8729c1fef29a",
       "headline": "Eight-Storey Building Under Construction Collapses Near Nairobi, Killing Six",
       "summary": "An eight-storey building under construction collapsed in Syokimau on Mombasa Road outside Nairobi while workers were pouring a ninth-floor concrete slab, killing six people; all other workers on site were accounted for. It is the second deadly Nairobi-area building collapse in three weeks.",
@@ -5077,166 +4873,6 @@
       "firstSeen": "2026-11-14T06:07:44.722Z",
       "lastUpdated": "2026-11-14T06:07:44.722Z",
       "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "1b169634f521",
-      "headline": "New York Seeks Federal Disaster Aid for Long Island, NYC Coastal Storm Damage",
-      "summary": "Gov. Kathy Hochul directed state officials to request federal funding to repair coastal storm-risk reduction projects damaged by a late-September nor'easter that brought winds over 80 mph and stripped more than four feet of sand from Long Island's south shore. The request is separate from an earlier bid for a major disaster declaration covering Nassau and Suffolk counties.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 40.7062,
-      "lon": -73.6187,
-      "locationName": "Hempstead, New York, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NY",
-      "sources": [
-        {
-          "url": "https://www.governor.ny.gov/news/governor-hochul-announces-state-requests-federal-assistance-coastal-storm-damage-long-island",
-          "domain": "ny.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.fingerlakes1.com/2026/11/05/new-york-requests-federal-help-to-repair-storm-damaged-coastal-projects/",
-          "domain": "fingerlakes1.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.longisland.com/news/11-05-26/governor-hochul-announces-state-requests-federal-assistance-for-coastal-storm-damage-on-long-island-and-in-new-york-city.html",
-          "domain": "longisland.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6cbaf20981d7",
-      "headline": "West Virginia Launches 20-Year Data Center Planning Council",
-      "summary": "Gov. Patrick Morrisey named Chris Morris to chair a new roughly 15-member advisory council tasked with recommending a 20-year statewide plan for data-center siting, utility capacity, community impact and water protection. The council's first meeting is planned before year's end.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 38.3498,
-      "lon": -81.6326,
-      "locationName": "Charleston, West Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WV",
-      "sources": [
-        {
-          "url": "https://governor.wv.gov/article/governor-morrisey-names-chris-morris-lead-advisory-council-responsible-digital",
-          "domain": "wv.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.mybuckhannon.com/chris-morris-to-lead-council-recommending-20-year-plan-for-west-virginia-data-centers/",
-          "domain": "mybuckhannon.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://wvmetronews.com/2026/08/11/west-virginia-officials-describe-pillars-for-data-center-development/",
-          "domain": "wvmetronews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "3335728cd122",
-      "headline": "Powerful Pacific Storm Brings 30-35 Foot Surf, High Wind Warnings to Oregon and Washington Coasts",
-      "summary": "The National Weather Service issued high surf warnings through the weekend for Oregon's coast and southern Washington, forecasting 30-to-35-foot breaking waves generated by 20-to-25-foot swells along with gale-force winds. Officials warned of destructive waves washing over beaches, jetties and structures, sneaker-wave drowning risk, and severe beach erosion.",
-      "category": "climate",
-      "severity": 2,
-      "lat": 44.6368,
-      "lon": -124.0535,
-      "locationName": "Newport, Oregon, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OR",
-      "sources": [
-        {
-          "url": "https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=PQR&wwa=high+surf+warning",
-          "domain": "weather.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.kptv.com/2026/11/13/first-alert-weather-day-beach-plans-need-attention/",
-          "domain": "kptv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.beachconnection.net/news/large-gnarly-waves-more-safety-warnings-oregon-washington.php",
-          "domain": "beachconnection.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "09e9d954cc9c",
-      "headline": "California Watchdog Finds Prison System Failed to Complete Timely Reviews of 3,500 Misconduct Complaints",
-      "summary": "A semiannual report from California's Office of the Inspector General found the state prison system's Allegation Investigation Unit left about 3,500 misconduct complaints without timely investigation during the first half of 2026, a performance the report called a dramatic decline. Of 228 disciplinary and criminal cases the OIG monitored or closed, only 124 were rated adequate, 48 needed improvement, and 56 were rated inadequate.",
-      "category": "society",
-      "severity": 2,
-      "lat": 38.5816,
-      "lon": -121.4944,
-      "locationName": "Sacramento, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.kqed.org/news/12109304/state-prison-officials-failed-to-complete-thousands-of-misconduct-investigations-inspector-general-finds",
-          "domain": "kqed.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.prisonlegalnews.org/news/2026/may/1/watchdog-finds-barely-1-in-10-complaints-against-california-prison-staff-handled-adequately/",
-          "domain": "prisonlegalnews.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.oig.ca.gov/publications/",
-          "domain": "ca.gov",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -5299,46 +4935,6 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-14T18:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4ede4b55e113",
-      "headline": "Sioux Falls Democrat Seeks Recount in State Senate Race Amid Historic Low Turnout",
-      "summary": "Democrat Aaron Matson filed a petition for a recount in South Dakota Senate District 11 after losing by 35 votes out of 8,385 cast to Republican incumbent Senate President Pro Tem Chris Karr. The recount, which must conclude within 14 days, comes amid historically low statewide turnout even as Democrats made their first legislative gains since 2008.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 43.5446,
-      "lon": -96.7311,
-      "locationName": "Sioux Falls, South Dakota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-SD",
-      "sources": [
-        {
-          "url": "https://southdakotasearchlight.com/2026/11/12/sioux-falls-democrat-seeks-recount-in-state-senate-race/",
-          "domain": "southdakotasearchlight.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/sioux-falls-democrat-seeks-recount-145856392.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://rapidcitypost.com/southdakotasearchlight-government-6ae19e83e3",
-          "domain": "rapidcitypost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T04:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -5735,49 +5331,18 @@
       "lastUpdated": "2026-11-14T06:07:44.722Z",
       "expiresAt": "2026-11-15T06:07:44.722Z",
       "isBreaking": false
-    },
-    {
-      "id": "3daa6c19af8c",
-      "headline": "Magnitude 5.0 Earthquake Strikes Near Ancud, Chiloe Island, Chile",
-      "summary": "USGS recorded a magnitude 5.0 earthquake 48km northwest of Ancud in Chile's Los Lagos Region on November 11, at a depth of about 35km. It was felt lightly in Ancud with no reported casualties or damage.",
-      "category": "disaster",
-      "severity": 1,
-      "lat": -41.5,
-      "lon": -74.2,
-      "locationName": "Ancud, Chile",
-      "countryCode": "CL",
-      "sources": [
-        {
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txmq",
-          "domain": "usgs.gov",
-          "reliability": 95,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.volcanodiscovery.com/earthquakes/quake-info/23630410/quake-felt-Nov-11-2026-Near-Puerto-Montt-Los-Lagos-Region-Chile.html",
-          "domain": "volcanodiscovery.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 52,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-14T06:09:56.557Z",
-      "isBreaking": false
     }
   ],
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 136,
-    "carried": 102,
-    "updated": 12,
-    "expired": 14,
+    "multiSource": 126,
+    "carried": 111,
+    "updated": 0,
+    "expired": 25,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 7.33,
-    "budgetUsd": 12
+    "costUsd": 4.45,
+    "budgetUsd": 8
   }
 }
