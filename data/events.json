@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T15:27:34.329Z",
+  "generatedAt": "2026-11-16T06:05:41.649Z",
   "mode": "daily",
   "events": [
     {
@@ -276,6 +276,48 @@
       "isBreaking": false
     },
     {
+      "id": "cb76815f3f5e",
+      "headline": "Hundreds of Thousands Protest in Prague Against Government's Public Broadcaster Funding Plan",
+      "summary": "Between 350,000 and 450,000 people rallied in Prague's Letná park on Nov 15, the largest protest since 1993, against Prime Minister Babiš's plan to fund public broadcasters through the state budget rather than license fees. Critics say the move threatens the broadcasters' editorial independence.",
+      "category": "society",
+      "severity": 4,
+      "lat": 50.1,
+      "lon": 14.41,
+      "locationName": "Prague, Czech Republic",
+      "countryCode": "CZ",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-15/czechs-protest-against-new-funding-plan-for-public-broadcasters",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/15/hundreds-of-thousands-in-prague-protest-czech-governments-public-media-funding-plans",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/15/thousands-rally-in-czech-republic-against-state-media-funding-changes",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-15/tens-of-thousands-of-czechs-rally-against-government-media-funding-plan",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 80,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-20T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
       "id": "a3160212399b",
       "headline": "Iran Extends IAEA Inspector Blackout as Trump Says US Doesn't Need a Deal",
       "summary": "A restricted IAEA document said inspectors still cannot verify the location of Iran's near-bomb-grade uranium stockpile, with Iran continuing to block inspectors from key facilities since mid-2025. Trump said the US does not need a deal with Iran, with no new talks scheduled despite Qatari mediation, after Iran separately rejected a US proposal to move its enriched uranium stockpile abroad.",
@@ -442,6 +484,42 @@
       "isBreaking": false
     },
     {
+      "id": "0543c9aba2e6",
+      "headline": "Houthi Forces Advance to Within 60km of Aden, Closest Approach Since 2015",
+      "summary": "Houthi fighters seized the Al-Maqatirah and Al-Madaribah districts, bringing them within 60-80km of Yemen's interim capital Aden, their closest approach since 2015. Government forces have abandoned earlier gains near the Bab al-Mandab strait to reinforce Aden's defenses.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 12.79,
+      "lon": 45.02,
+      "locationName": "Aden, Yemen",
+      "countryCode": "YE",
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/11/16/world/houthis-aden-govt-defences/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-02/yemens-houthis-advance-to-within-80-km-of-aden-sources-say",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 72,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-20T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
       "id": "d97f23193ad2",
       "headline": "Storm Floods 70,000 Tents in Gaza Overnight, Destroying Thousands of Family Shelters",
       "summary": "A storm flooded roughly 70,000 tents across Gaza in a single night, destroying 6,000 to over 9,000 family shelters and damaging more than 17,400 others across all five governorates; the Nasser Medical Complex in Khan Younis also flooded. Five to six deaths have been linked to the storm and cold, and the UN is calling for 150,000 additional tents to be allowed into the territory.",
@@ -531,6 +609,79 @@
       "isBreaking": false
     },
     {
+      "id": "096794d89fc4",
+      "headline": "Sudanese Army Advances Toward Al Nahud as RSF Field Commander Defects, Accuses UAE",
+      "summary": "Sudan's army and allied drones pushed toward Al Nahud in West Kordofan on Nov 15, extending their offensive after capturing Al-Khuwai and Serif Ankoush. RSF field commander Ahmed Hasab Al-Rasoul defected and accused the UAE of funding the RSF, as the advance triggers fresh displacement toward Darfur.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 13.13,
+      "lon": 28.43,
+      "locationName": "Al Nahud, West Kordofan, Sudan",
+      "countryCode": "SD",
+      "sources": [
+        {
+          "url": "https://sudantribune.com/article/321266",
+          "domain": "sudantribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://allafrica.com/stories/202511180009.html",
+          "domain": "allafrica.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.radiotamazuj.org/en/news/article/sudanese-army-allies-announce-recapture-of-key-west-kordofan-town",
+          "domain": "radiotamazuj.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aa.com.tr/en/middle-east/sudanese-army-says-it-shot-down-hostile-drone-in-west-kordofan/4115265",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://en.yenisafak.com/world/sudan-army-downs-4th-drone-in-week-presses-advance-in-west-kordofan-3725316",
+          "domain": "yenisafak.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.middleeastmonitor.com/20261108-sudanese-army-takes-control-of-key-area-in-west-kordofan/",
+          "domain": "middleeastmonitor.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.streetinsider.com/Reuters/Ethiopia+expels+Sudanese+diplomats+after+fresh+allegations+of+support+for+RSF/27285393.html",
+          "domain": "streetinsider.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/ethiopia-expels-sudanese-diplomats-after-fresh-allegations-of-support-for-rsf-3009806",
+          "domain": "arabnews.com",
+          "reliability": 64,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-09T06:07:51.346Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-20T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
       "id": "2db245751f3d",
       "headline": "North Carolina Congressional Delegation Flips to 11-3 Democratic After Canvasses",
       "summary": "Finalized county canvasses show North Carolina Democrats flipped seven U.S. House seats, shifting the state's delegation from 10-4 Republican to 11-3 Democratic. In the 5th District, Democrat Chuck Hubbard's lead over longtime GOP Rep. Virginia Foxx grew to about 335 votes after provisional and cured ballots were counted, though a recount remains possible.",
@@ -575,53 +726,6 @@
       "firstSeen": "2026-11-14T15:27:06.287Z",
       "lastUpdated": "2026-11-14T15:27:06.287Z",
       "expiresAt": "2026-11-18T15:27:06.287Z",
-      "isBreaking": false
-    },
-    {
-      "id": "eb3224adf2f0",
-      "headline": "Federal Report Finds Communication Gaps, Extreme Fire Behavior Led to Deaths of 4 Firefighters in Colorado's Knowles Fire",
-      "summary": "A joint federal investigation released Nov. 12 found extraordinary fire behavior, strained communications, incomplete situational awareness and gaps in aerial supervision contributed to the deaths of firefighters Nick Hutcherson, Emily Barker, Sydney Watson and Nathan Matthews on June 27. The fire ran about 7.5 miles in under three hours, with only nine seconds between a radio call that a helicopter could not land and a report that crews had deployed emergency shelters.",
-      "category": "disaster",
-      "severity": 4,
-      "lat": 40.0381,
-      "lon": -107.9114,
-      "locationName": "Meeker, Colorado, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CO",
-      "sources": [
-        {
-          "url": "https://www.doi.gov/pressreleases/interior-releases-findings-investigation-firefighter-fatalities-and-injury-knowles",
-          "domain": "doi.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://coloradosun.com/2026/11/12/knowles-snyder-fire-report-firefighters-killed/",
-          "domain": "coloradosun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.sltrib.com/news/2026/11/13/firefighters-died-when-wildfire/",
-          "domain": "sltrib.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://kutv.com/news/local/federal-report-details-factors-in-knowles-fire-entrapment-that-killed-four-firefighters",
-          "domain": "kutv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-17T16:17:51.471Z",
       "isBreaking": false
     },
     {
@@ -699,6 +803,53 @@
       "isBreaking": false
     },
     {
+      "id": "eb3224adf2f0",
+      "headline": "Federal Report Finds Communication Gaps, Extreme Fire Behavior Led to Deaths of 4 Firefighters in Colorado's Knowles Fire",
+      "summary": "A joint federal investigation released Nov. 12 found extraordinary fire behavior, strained communications, incomplete situational awareness and gaps in aerial supervision contributed to the deaths of firefighters Nick Hutcherson, Emily Barker, Sydney Watson and Nathan Matthews on June 27. The fire ran about 7.5 miles in under three hours, with only nine seconds between a radio call that a helicopter could not land and a report that crews had deployed emergency shelters.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 40.0381,
+      "lon": -107.9114,
+      "locationName": "Meeker, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://www.doi.gov/pressreleases/interior-releases-findings-investigation-firefighter-fatalities-and-injury-knowles",
+          "domain": "doi.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://coloradosun.com/2026/11/12/knowles-snyder-fire-report-firefighters-killed/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sltrib.com/news/2026/11/13/firefighters-died-when-wildfire/",
+          "domain": "sltrib.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://kutv.com/news/local/federal-report-details-factors-in-knowles-fire-entrapment-that-killed-four-firefighters",
+          "domain": "kutv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-13T16:17:51.471Z",
+      "lastUpdated": "2026-11-13T16:17:51.471Z",
+      "expiresAt": "2026-11-17T16:17:51.471Z",
+      "isBreaking": false
+    },
+    {
       "id": "10fe85f78abe",
       "headline": "Second Child Dies in Wisconsin Measles Outbreak as Cases Near 650",
       "summary": "Wisconsin health officials confirmed a second measles-associated death of a Grant County child on Nov. 13, weeks after the state's first measles death in 36 years. The outbreak, which began in July, has reached 651 cases across 22 counties, with nine counties newly reporting cases in the past week.",
@@ -743,76 +894,6 @@
       "firstSeen": "2026-11-14T15:27:06.287Z",
       "lastUpdated": "2026-11-14T15:27:06.287Z",
       "expiresAt": "2026-11-18T15:27:06.287Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4a24e95ceb30",
-      "headline": "Ethiopia Imposes Indefinite Nighttime Curfew in Mekelle Amid Tigray-Eritrea Tensions",
-      "summary": "Ethiopian federal forces imposed an indefinite nighttime curfew in Mekelle, capital of the Tigray region, amid escalating fighting near Sheraro against Eritrean-backed \"Alliance for Survival\" forces following reports of Eritrean troops crossing into northern Ethiopia in October. The US Embassy in Addis Ababa has issued repeated security alerts.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 13.4967,
-      "lon": 39.4753,
-      "locationName": "Mekelle, Tigray Region, Ethiopia",
-      "countryCode": "ET",
-      "sources": [
-        {
-          "url": "https://et.usembassy.gov/security-alert-u-s-embassy-addis-ababa-ethiopia-november-13-2026/",
-          "domain": "usembassy.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/africa/eritrean-troops-cross-northern-ethiopia-conflict-escalates-rcna602246",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-18T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "b89fd95d201b",
-      "headline": "Pennsylvania Confirms Seventh Measles Death as Cases Top 1,500",
-      "summary": "An unvaccinated Montour County resident died of a measles-associated illness, marking Pennsylvania's seventh measles death of 2026. The state has confirmed 1,542 measles cases across 46 counties with 305 hospitalizations as of November 13.",
-      "category": "health",
-      "severity": 4,
-      "lat": 40.9612,
-      "lon": -76.6122,
-      "locationName": "Danville, Pennsylvania, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-PA",
-      "sources": [
-        {
-          "url": "https://www.pa.gov/agencies/health/newsroom/pa-department-of-health-confirms-seventh-measles-associated-deat",
-          "domain": "pa.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.wpxi.com/news/local/7th-pennsylvania-resident-dies-measles-state-health-officials-say/UEALOBYJZJG6LODNZYTGTKNMCQ/",
-          "domain": "wpxi.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.inquirer.com/health/pennsylvania-seventh-measles-associated-death-montour-county-20261113.html",
-          "domain": "inquirer.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-15T15:27:34.329Z",
-      "lastUpdated": "2026-11-15T15:27:34.329Z",
-      "expiresAt": "2026-11-19T15:27:34.329Z",
       "isBreaking": false
     },
     {
@@ -919,6 +1000,46 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-17T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b89fd95d201b",
+      "headline": "Pennsylvania Confirms Seventh Measles Death as Cases Top 1,500",
+      "summary": "An unvaccinated Montour County resident died of a measles-associated illness, marking Pennsylvania's seventh measles death of 2026. The state has confirmed 1,542 measles cases across 46 counties with 305 hospitalizations as of November 13.",
+      "category": "health",
+      "severity": 4,
+      "lat": 40.9612,
+      "lon": -76.6122,
+      "locationName": "Danville, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.pa.gov/agencies/health/newsroom/pa-department-of-health-confirms-seventh-measles-associated-deat",
+          "domain": "pa.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wpxi.com/news/local/7th-pennsylvania-resident-dies-measles-state-health-officials-say/UEALOBYJZJG6LODNZYTGTKNMCQ/",
+          "domain": "wpxi.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.inquirer.com/health/pennsylvania-seventh-measles-associated-death-montour-county-20261113.html",
+          "domain": "inquirer.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-15T15:27:34.329Z",
+      "lastUpdated": "2026-11-15T15:27:34.329Z",
+      "expiresAt": "2026-11-19T15:27:34.329Z",
       "isBreaking": false
     },
     {
@@ -1072,17 +1193,97 @@
       "isBreaking": false
     },
     {
-      "id": "d454b10b61c6",
-      "headline": "FAA Blames Contractor L3Harris for Nationwide Ground Stop as Flight Cancellations Top 9,000",
-      "summary": "US Transportation Secretary Sean Duffy said contractor L3Harris was behind the air traffic control data overload that forced a nationwide FAA ground stop, with the exact cause -- a faulty router or contractor error -- still under investigation. Cancellations topped 9,132 flights on Friday and 5,000-6,000 on Saturday, with the FAA projecting 4,000-5,000 more Sunday before full schedule restoration by Sunday night.",
-      "category": "disaster",
+      "id": "4a24e95ceb30",
+      "headline": "WHO Warns Ethiopia's Health System Nearing Collapse Amid Tigray-Amhara Fighting",
+      "summary": "WHO Director-General Tedros warned that Ethiopia's health system is nearing collapse as fighting between federal forces and the TPLF resumed in September across Amhara and Tigray. A drone strike on Oct 30 killed 12-15 civilians, including children, at camps in Jaari and Rama.",
+      "category": "health",
       "severity": 3,
-      "lat": 38.9072,
-      "lon": -77.0369,
+      "lat": 14.3,
+      "lon": 38.3,
+      "locationName": "Rama, Tigray, Ethiopia",
+      "countryCode": "ET",
+      "sources": [
+        {
+          "url": "https://news.un.org/en/story/2026/11/1168720",
+          "domain": "un.org",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/02/ethiopia-tedros-tigray-amhara-drone-strikes-violence/24d472ca-d6be-11f1-930a-e08f8086f5ac_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/2/violence-in-northern-ethiopia-pushing-health-system-towards-collapse-who",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://et.usembassy.gov/security-alert-u-s-embassy-addis-ababa-ethiopia-november-13-2026/",
+          "domain": "usembassy.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/africa/eritrean-troops-cross-northern-ethiopia-conflict-escalates-rcna602246",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 90,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d454b10b61c6",
+      "headline": "Mexico Imposes Own Flight Restrictions as US FAA Ground Stop Cancellations Top 9,000",
+      "summary": "A router malfunction near Chicago triggered a nationwide US ground stop on Nov 13, causing roughly 8,000 cancellations and over 10,000 delays. Mexico's aviation authority AFAC separately ordered US-bound aircraft to remain grounded, stranding about 18,000 passengers on 193 flights. The FAA has blamed contractor L3Harris for the outage.",
+      "category": "society",
+      "severity": 3,
+      "lat": 38.9,
+      "lon": -77.04,
       "locationName": "Washington, D.C., United States",
       "countryCode": "US",
       "subdivision": "US-DC",
       "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/13/us/live-news/flights-ground-stop-faa",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+          "domain": "faa.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://mexicobusiness.news/aerospace/news/faa-grounds-us-flights-over-nationwide-communications-failure",
+          "domain": "mexicobusiness.news",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.latintimes.com/overloaded-us-routers-trigger-aviation-shutdown-felt-across-mexico-601358",
+          "domain": "latintimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
         {
           "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
           "domain": "abcnews.com",
@@ -1112,18 +1313,123 @@
           "domain": "axios.com",
           "reliability": 80,
           "bias": "center"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/13/us/live-news/flights-ground-stop-faa",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
         }
       ],
-      "trustScore": 89,
+      "trustScore": 86,
       "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-17T06:06:28.892Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "816bda47927a",
+      "headline": "Taiwan and China Coast Guard Vessels in Radio Standoff Near Orchid Island",
+      "summary": "A Taiwanese coast guard vessel confronted a Chinese coast guard ship about 40 nautical miles southeast of Orchid Island on Nov 12 in a radio dispute over sovereignty. The incident is part of escalating Chinese coast guard activity since June that analysts see as a possible rehearsal for a blockade, amid continued PLA deployments near Taiwan.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 22.04,
+      "lon": 121.55,
+      "locationName": "Orchid Island, Taiwan",
+      "countryCode": "TW",
+      "sources": [
+        {
+          "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/15/2003867776",
+          "domain": "taipeitimes.com",
+          "reliability": 72,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/taiwan-china-harassing-shipping/",
+          "domain": "japantimes.co.jp",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.france24.com/en/asia-pacific/20261113-chinese-army-military-exercises-taiwan",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.taiwannews.com.tw/news/6476271",
+          "domain": "taiwannews.com.tw",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/12/xi-jinping-says-taiwans-complete-reunification-with-china-will-happen",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/china-holds-military-drills-mock-144932231.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 84,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d70b7d6bf035",
+      "headline": "Cuba Activates 'Wartime Structures' After US Sanctions and Trump's Regime-Change Remarks",
+      "summary": "Cuban President Díaz-Canel said Cuba has activated wartime command structures following Moncada 2026 military drills and new US sanctions targeting the state oil company, Díaz-Canel himself, and Castro family relatives. He said Cuba will not attack but will repel any aggression, after Trump said he would consider military action to 'get Cuba done.'",
+      "category": "politics",
+      "severity": 3,
+      "lat": 23.11,
+      "lon": -82.37,
+      "locationName": "Havana, Cuba",
+      "countryCode": "CU",
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/world/cuba/cuba-president-prepares-state-of-war-rcna257028",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.foxnews.com/media/cuban-official-reveals-military-preparing-conflict-after-trump-considers-taking-island.print",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/13/trump-cuba-us-military-force-iran.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.mediaite.com/media/news/trump-says-he-wants-to-get-cuba-done-before-leaving-office/",
+          "domain": "mediaite.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://yournews.com/2026/11/12/7264271/trump-says-he-wants-to-get-cuba-done-before-leaving/",
+          "domain": "yournews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 81,
+      "firstSeen": "2026-11-13T06:09:56.557Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -1255,96 +1561,209 @@
       "isBreaking": false
     },
     {
-      "id": "816bda47927a",
-      "headline": "Taiwan Tracks Dozens More Chinese Aircraft and Ships as Unannounced PLA Deployment Continues",
-      "summary": "Taiwan's defense ministry tracked 10 PLA aircraft, eight naval vessels and three official ships in the 24 hours to November 14, with four sorties crossing the median line, part of an unannounced deployment of over 100 vessels first reported November 13. Taiwan says it has tracked Chinese aircraft 184 times and ships 141 times so far this month.",
-      "category": "conflict",
+      "id": "ad287c33dac8",
+      "headline": "Measles Cases Across Americas Hit 57,666 in 2026, PAHO Says, as US Deaths Pass 10",
+      "summary": "PAHO's latest situation report counts 57,666 confirmed measles cases across 17 countries in the Americas in 2026, nearly 4.7 times the 2025 total. US cases have topped 5,400 with more than 10 deaths, including two in Wisconsin, a seventh in Pennsylvania, and New York's first measles death in 30 years.",
+      "category": "health",
       "severity": 3,
-      "lat": 23.7,
-      "lon": 121,
-      "locationName": "Taiwan Strait",
-      "countryCode": "TW",
+      "lat": 39,
+      "lon": -98,
+      "locationName": "United States",
+      "countryCode": "US",
       "sources": [
         {
-          "url": "https://www.france24.com/en/asia-pacific/20261113-chinese-army-military-exercises-taiwan",
-          "domain": "france24.com",
-          "reliability": 84,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.taiwannews.com.tw/news/6476271",
-          "domain": "taiwannews.com.tw",
+          "url": "https://www.paho.org/en/documents/situation-report-15-measles-americas-region-6-november-2026",
+          "domain": "paho.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/12/xi-jinping-says-taiwans-complete-reunification-with-china-will-happen",
+          "url": "https://www.cnn.com/2026/11/05/health/measles-death-wisconsin-infant",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://www.yahoo.com/news/articles/china-holds-military-drills-mock-144932231.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
+          "url": "https://abcnews.com/Health/measles-cases-nationwide-top-5400-outbreaks-spread-us/story?id=138108176",
+          "domain": "abcnews.com",
+          "reliability": 82,
           "bias": "center"
-        }
-      ],
-      "trustScore": 74,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-17T06:06:28.892Z",
-      "isBreaking": false
-    },
-    {
-      "id": "d70b7d6bf035",
-      "headline": "Trump Says He Would Consider Military Action to 'Get Cuba Done' Before Leaving Office",
-      "summary": "In remarks to radio host Hugh Hewitt, Trump said he wants to resolve the Cuba situation before leaving office in 2029 and, when asked directly, said he would \"certainly consider\" a short US military campaign against Cuba's government, a more explicit escalation than earlier rhetoric focused on sanctions and the oil blockade.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 23.1136,
-      "lon": -82.3666,
-      "locationName": "Havana, Cuba",
-      "countryCode": "CU",
-      "sources": [
+        },
         {
-          "url": "https://www.nbcnews.com/politics/white-house/trump-cuba-military-force-rubio-rcna609138",
+          "url": "https://www.nbcnews.com/health/health-news/wisconsin-measles-death-us-third-week-rcna607701",
           "domain": "nbcnews.com",
           "reliability": 81,
           "bias": "center-left"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/13/trump-cuba-us-military-force-iran.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
+          "url": "https://www.washingtonpost.com/health/2026/11/07/cdc-has-recorded-more-than-5000-measles-cases-this-year/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 78,
+      "firstSeen": "2026-11-15T06:06:28.892Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "790a3782682d",
+      "headline": "Human Remains Found as Bukele, Haitian Police Dispute Credit for Stadium Recapture",
+      "summary": "Haitian police and Salvadoran-backed forces retook Stade Sylvio Cator from gangs on Nov 12-13 after two years of gang control, discovering several human skulls inside. El Salvador's President Bukele claimed his forces led the operation, a claim disputed by Haitian police. The stadium will now host roughly 2,000 Salvadoran troops as a forward operating base.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 18.59,
+      "lon": -72.31,
+      "locationName": "Port-au-Prince, Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/americas/20261113-haitian-police-retake-national-stadium-from-gangs-after-two-years",
+          "domain": "france24.com",
+          "reliability": 84,
           "bias": "center"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.mediaite.com/media/news/trump-says-he-wants-to-get-cuba-done-before-leaving-office/",
-          "domain": "mediaite.com",
+          "url": "https://www.jamaicaobserver.com/2026/11/12/haitian-forces-recapture-national-stadium-gang-control/",
+          "domain": "jamaicaobserver.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://yournews.com/2026/11/12/7264271/trump-says-he-wants-to-get-cuba-done-before-leaving/",
-          "domain": "yournews.com",
+          "url": "https://haitiantimes.com/2026/11/12/haiti-el-salvador-forces-retake-sylvio-cator-stadium/",
+          "domain": "haitiantimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/bukele-says-forces-took-back-201222583.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://ticotimes.net/2026/11/13/bukele-haiti-stadium-base-sylvio-cator",
+          "domain": "ticotimes.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.latintimes.com/salvadoran-haitian-forces-seize-haiti-stadium-601282",
+          "domain": "latintimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
+      "trustScore": 77,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e2c868cd81f1",
+      "headline": "Chile's Kast Capitulates to Truckers After Three Days of Highway Blockades Over Fuel Prices",
+      "summary": "Truckers blockaded highways for three days protesting the sixth fuel-price hike since July, prompting President Kast's government to send a bill to Congress reversing the increase and freezing prices for 90 days. Kast's approval rating has fallen to 24% amid the unrest.",
+      "category": "economy",
+      "severity": 3,
+      "lat": -33.45,
+      "lon": -70.65,
+      "locationName": "Santiago, Chile",
+      "countryCode": "CL",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/12/latam-chile-truckers-strike-fuel-prices/6231794504929",
+          "domain": "upi.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/chiles-kast-struggles-end-nationwide-174823699.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.opb.org/article/2026/11/14/chiles-kast-faces-growing-protests-as-fuel-prices-soar-and-approval-plunges/",
+          "domain": "opb.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 75,
+      "firstSeen": "2026-11-15T06:06:28.892Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a698fe1ac750",
+      "headline": "65 Bangladesh Garment Factories Now Shut Indefinitely as Wage Dispute Deepens",
+      "summary": "By Nov 15, 65 of about 121 affected Bangladeshi garment factories had closed indefinitely under a labour law provision, with employers threatening to withhold pay from striking workers. The Minimum Wage Board met Nov 16 to discuss a counter-proposal amid demands for a 140% wage increase.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 23.86,
+      "lon": 90.27,
+      "locationName": "Savar, Dhaka, Bangladesh",
+      "countryCode": "BD",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/2/bangladesh-garment-factories-disrupted-as-protests-continue-for-third-day",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.businesstoday.in/world/story/bangladesh-garment-crisis-deepens-factories-shut-after-fresh-unrest-as-workers-demand-140-wage-hike-567517-2026-11-15",
+          "domain": "businesstoday.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ww.fashionnetwork.com/news/Bangladesh-extends-textile-factory-shutdowns-as-employers-threaten-to-withhold-wages-from-striking-workers,1885121.html",
+          "domain": "fashionnetwork.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.france24.com/en/live-news/20261114-bangladesh-garment-makers-threaten-to-quit-wage-talks",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/asia/bangladesh-garment-factories-close-workers-clash-police-pay-protests-rcna607579",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
       "trustScore": 74,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "firstSeen": "2026-11-15T06:06:28.892Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -1384,6 +1803,42 @@
       "isBreaking": false
     },
     {
+      "id": "8623b039cda1",
+      "headline": "Zelensky Says SpaceX Starshield Speed Restrictions Have Returned, Hampering Drone Defense",
+      "summary": "Ukrainian President Zelensky said SpaceX's Starshield satellite system has again imposed a roughly 161km/h speed cap since Nov 12, hampering Ukraine's ability to intercept Russian drones. Elon Musk said the US government and military control the system's restrictions.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 50.45,
+      "lon": 30.52,
+      "locationName": "Kyiv, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/11/12/zelenskyy-starlink-again-facing-restrictions-in-ukraine-hampering-russian-drone-intercepti",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/12/starlink-starshield-ukraine-restrictions-spacex.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/12/zelenskyy-says-spacexs-starshield-restrictions-have-returned-disrupting-ukraines-drone-defenses/",
+          "domain": "forbes.com",
+          "reliability": 68,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
       "id": "951b3b2f6097",
       "headline": "Mexico City 'Gen Z' Protest Against Crime and Corruption Turns Violent, Injuring About 120",
       "summary": "Roughly 17,000 people marched from the Monumento a la Revolución to the Zócalo in Mexico City on November 15 to protest crime, corruption and President Sheinbaum's government. Clashes broke out near the Palacio Nacional, injuring about 120 people, mostly police, and leading to roughly 20 arrests.",
@@ -1417,45 +1872,6 @@
       "firstSeen": "2026-11-15T06:06:28.892Z",
       "lastUpdated": "2026-11-15T06:06:28.892Z",
       "expiresAt": "2026-11-17T06:06:28.892Z",
-      "isBreaking": false
-    },
-    {
-      "id": "b753a3537428",
-      "headline": "New World Screwworm Outbreak Escalates in Texas, Spreads to New Mexico, Arizona",
-      "summary": "USDA and Texas officials reported a sharp escalation in New World screwworm infestations, including a new horse case in Goliad County on November 13. Roughly 90 to 128 total animal cases have been confirmed across Texas, New Mexico, and Arizona, prompting Governor Abbott to renew a disaster proclamation.",
-      "category": "health",
-      "severity": 3,
-      "lat": 28.6697,
-      "lon": -97.3867,
-      "locationName": "Goliad, Texas, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TX",
-      "sources": [
-        {
-          "url": "https://www.fox4news.com/news/usda-reports-sharp-spike-new-world-screwworm-infestations-across-texas-new-mexico-arizona",
-          "domain": "fox4news.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://gov.texas.gov/news/post/governor-abbott-renews-new-world-screwworm-disaster-proclamation-in-november-2026",
-          "domain": "texas.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aphis.usda.gov/animals/animal-health/livestock-and-poultry-disease/stop-screwworm/current-status",
-          "domain": "usda.gov",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 69,
-      "firstSeen": "2026-11-15T15:27:34.329Z",
-      "lastUpdated": "2026-11-15T15:27:34.329Z",
-      "expiresAt": "2026-11-17T15:27:34.329Z",
       "isBreaking": false
     },
     {
@@ -1575,6 +1991,45 @@
       "isBreaking": false
     },
     {
+      "id": "b753a3537428",
+      "headline": "New World Screwworm Outbreak Escalates in Texas, Spreads to New Mexico, Arizona",
+      "summary": "USDA and Texas officials reported a sharp escalation in New World screwworm infestations, including a new horse case in Goliad County on November 13. Roughly 90 to 128 total animal cases have been confirmed across Texas, New Mexico, and Arizona, prompting Governor Abbott to renew a disaster proclamation.",
+      "category": "health",
+      "severity": 3,
+      "lat": 28.6697,
+      "lon": -97.3867,
+      "locationName": "Goliad, Texas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-TX",
+      "sources": [
+        {
+          "url": "https://www.fox4news.com/news/usda-reports-sharp-spike-new-world-screwworm-infestations-across-texas-new-mexico-arizona",
+          "domain": "fox4news.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://gov.texas.gov/news/post/governor-abbott-renews-new-world-screwworm-disaster-proclamation-in-november-2026",
+          "domain": "texas.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aphis.usda.gov/animals/animal-health/livestock-and-poultry-disease/stop-screwworm/current-status",
+          "domain": "usda.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-11-15T15:27:34.329Z",
+      "lastUpdated": "2026-11-15T15:27:34.329Z",
+      "expiresAt": "2026-11-17T15:27:34.329Z",
+      "isBreaking": false
+    },
+    {
       "id": "3cc8893bb9e6",
       "headline": "Israeli Strike Kills Senior Hamas Commander in Khan Younis as Gaza Toll Mounts",
       "summary": "An Israeli strike killed Hamas Rafah Brigade commander Samir Abu Younis in Al-Mawasi, Khan Younis. Gaza's Health Ministry reported 16 people killed and 68 injured strip-wide over 48 hours, including an infant who died of cold exposure, the 11th such death this winter.",
@@ -1608,6 +2063,102 @@
       "firstSeen": "2026-11-15T06:06:28.892Z",
       "lastUpdated": "2026-11-15T06:06:28.892Z",
       "expiresAt": "2026-11-17T06:06:28.892Z",
+      "isBreaking": false
+    },
+    {
+      "id": "a44c80b3d5bb",
+      "headline": "ASEAN Summit Extends Ban on Myanmar Junta Leader Over Stalled Peace Plan",
+      "summary": "At the 49th ASEAN Summit in Manila, Southeast Asian leaders extended the ban on Myanmar's junta chief Min Aung Hlaing and Foreign Minister Tin Maung Swe from attending summits, citing failure to implement the 2021 peace plan. Myanmar was represented by a lower-level official instead.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 14.6,
+      "lon": 120.98,
+      "locationName": "Manila, Philippines",
+      "countryCode": "PH",
+      "sources": [
+        {
+          "url": "https://www.manilatimes.net/2026/11/16/news/southeast-asian-leaders-denounce-violence-in-myanmar-and-extend-ban-on-its-leader/2470452",
+          "domain": "manilatimes.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wftv.com/news/world/southeast-asian/JTRELLI4QY5LRKLDKEWGZ5YPSM/",
+          "domain": "wftv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmars-coup-president-barred-from-upcoming-49th-asean-summit.html",
+          "domain": "irrawaddy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://businessmirror.com.ph/2026/11/16/asean-summit-manila-2026-energy-myanmar-and-a-bloc-under-pressure/",
+          "domain": "businessmirror.com.ph",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/southeast-asian-leaders-open-annual-051315754.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.freemalaysiatoday.com/category/world/2026/11/15/philippines-australia-sign-defence-pact-with-eye-on-china",
+          "domain": "freemalaysiatoday.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-15T06:06:28.892Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b7d89e354cbb",
+      "headline": "Bangladesh Dengue Outbreak Tops 152,000 Cases and 466 Deaths, Second-Largest Since 2000",
+      "summary": "Bangladesh's cumulative dengue toll reached 152,173 cases and 466 deaths as of Nov 13, up sharply from 136,929 cases and 427 deaths on Nov 2. It is the country's second-largest outbreak since 2000, with 64 deaths and about 23,880 hospitalizations recorded in just the first 13 days of November as the DENV-3 serotype circulates.",
+      "category": "health",
+      "severity": 3,
+      "lat": 23.81,
+      "lon": 90.41,
+      "locationName": "Dhaka, Bangladesh",
+      "countryCode": "BD",
+      "sources": [
+        {
+          "url": "https://www.thedailystar.net/news/bangladesh/news/no-respite-dengue-winter-approaches-4323206",
+          "domain": "thedailystar.net",
+          "reliability": 70,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cidrap.umn.edu/dengue/bangladesh-battles-unusually-large-dengue-outbreak",
+          "domain": "umn.edu",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dashboard.dghs.gov.bd/pages/heoc_dengue_v1.php",
+          "domain": "dghs.gov.bd",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 66,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -1647,69 +2198,56 @@
       "isBreaking": false
     },
     {
-      "id": "096794d89fc4",
-      "headline": "Sudanese Army Captures Al-Khuwai and Serif Ankoush, Extending West Kordofan Advance",
-      "summary": "Sudan's army and allied forces captured the towns of Serif Ankoush and Al-Khuwai (El Khuwei) in West Kordofan, their first full locality taken in the state, building on the earlier capture of Iyal Bakhit on Nov 9. The gains open a strategic road toward the RSF's regional stronghold of En Nahud.",
+      "id": "d290a6880c6e",
+      "headline": "Guatemala Declares 30-Day State of Siege in Zacapa and Izabal After Cartel Massacres",
+      "summary": "President Bernardo Arévalo decreed a 30-day state of siege in Zacapa and Izabal departments and deployed about 1,000 troops after cartel violence including a September massacre that killed eight people and a November attack that killed a lawmaker and three police officers. Four more people were killed in Zacapa after the decree took effect.",
       "category": "conflict",
       "severity": 3,
-      "lat": 13.08,
-      "lon": 29.25,
-      "locationName": "Al-Khuwai, West Kordofan, Sudan",
-      "countryCode": "SD",
+      "lat": 15,
+      "lon": -89.5,
+      "locationName": "Zacapa, Guatemala",
+      "countryCode": "GT",
       "sources": [
         {
-          "url": "https://sudantribune.com/article/321179",
-          "domain": "sudantribune.com",
+          "url": "https://www.infobae.com/guatemala/2026/11/15/el-gobierno-de-guatemala-decreta-estado-de-sitio-por-30-dias-en-zacapa-e-izabal-para-reforzar-la-seguridad/",
+          "domain": "infobae.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.radiotamazuj.org/en/news/article/sudanese-army-allies-announce-recapture-of-key-west-kordofan-town",
-          "domain": "radiotamazuj.org",
+          "url": "https://www.prensa-latina.cu/2026/11/15/departamentos-de-zacapa-e-izabal-en-estado-de-sitio-en-guatemala/",
+          "domain": "prensa-latina.cu",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.aa.com.tr/en/middle-east/sudanese-army-says-it-shot-down-hostile-drone-in-west-kordofan/4115265",
-          "domain": "aa.com.tr",
+          "url": "https://www.elsalvador.com/noticias/internacional/guatemala-estado-sitio-zacapa-izabal/1304162/2026/",
+          "domain": "elsalvador.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://en.yenisafak.com/world/sudan-army-downs-4th-drone-in-week-presses-advance-in-west-kordofan-3725316",
-          "domain": "yenisafak.com",
+          "url": "https://www.prensalibre.com/guatemala/politica/gobierno-de-guatemala-decreta-estado-de-sitio-en-zacapa-e-izabal-por-30-dias-tras-hechos-violentos-breaking/",
+          "domain": "prensalibre.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.middleeastmonitor.com/20261108-sudanese-army-takes-control-of-key-area-in-west-kordofan/",
-          "domain": "middleeastmonitor.com",
+          "url": "https://dca.gob.gt/noticias-guatemala-diario-centro-america/presidente-bernardo-arevalo-es-enfatico-sobre-estado-de-sitio-en-izabal-y-zacapa/",
+          "domain": "gob.gt",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
-        },
-        {
-          "url": "https://www.streetinsider.com/Reuters/Ethiopia+expels+Sudanese+diplomats+after+fresh+allegations+of+support+for+RSF/27285393.html",
-          "domain": "streetinsider.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.arabnews.com/middle-east/ethiopia-expels-sudanese-diplomats-after-fresh-allegations-of-support-for-rsf-3009806",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
         }
       ],
-      "trustScore": 66,
-      "firstSeen": "2026-11-09T06:07:51.346Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "trustScore": 65,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -1746,42 +2284,6 @@
       "firstSeen": "2026-11-14T06:07:44.722Z",
       "lastUpdated": "2026-11-14T06:07:44.722Z",
       "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ad287c33dac8",
-      "headline": "US Loses Measles Elimination Status After 26 Years as Cases Top 5,400, Highest Since 1991",
-      "summary": "The United States recorded more than 5,400 measles cases and 10 deaths in 2026, losing its measles elimination status after holding it for 26 years. The Pan American Health Organization reported a regional surge of 57,666 cases and 81 deaths across the Americas, including 53 in Guatemala, 23 in Mexico and three in the US.",
-      "category": "health",
-      "severity": 3,
-      "lat": 39.83,
-      "lon": -98.58,
-      "locationName": "United States",
-      "countryCode": "US",
-      "sources": [
-        {
-          "url": "https://www.washingtonpost.com/health/2026/11/07/cdc-has-recorded-more-than-5000-measles-cases-this-year/",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/13/health/us-measles-elimination-status",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 64,
-      "firstSeen": "2026-11-15T06:06:28.892Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-17T06:06:28.892Z",
       "isBreaking": false
     },
     {
@@ -1827,6 +2329,96 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-15T06:06:28.892Z",
       "expiresAt": "2026-11-17T06:06:28.892Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2fd24ea43a19",
+      "headline": "Russia Launches 132-Drone Overnight Barrage on Odesa Oblast, Killing Four Nationwide",
+      "summary": "Russia launched 132 drones overnight Nov 15-16, hitting Chornomorsk and other parts of Odesa Oblast hardest. Four people were killed and 69 injured across Ukraine in 24 hours, with a DTEK energy facility damaged, up to 50,000 households losing power, and a gas pipeline ruptured.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 46.48,
+      "lon": 30.72,
+      "locationName": "Chornomorsk, Odesa Oblast, Ukraine",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://kyivindependent.com/russia-launches-mass-attack-on-odesa-oblast-as-strikes-kill-4-injure-69-across-ukraine-over-past-day/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/13/russia-and-ukraine-report-overnight-attacks-amid-us-diplomatic-push",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.kyivpost.com/post/90009",
+          "domain": "kyivpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ukrinform.net/rubric-ato/4184271-russian-attack-on-odesa-kills-two-injures-seven.html",
+          "domain": "ukrinform.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "82f41e034f6f",
+      "headline": "Cambodia Accuses Thailand of Advancing Military Post Into Contested Border Area",
+      "summary": "Cambodia accuses Thailand of advancing an observation post about 20 meters into contested ground in Pursat province's Thmar Da commune, Veal Veng district. An ASEAN Observer Team inspected the site on Nov 5; no new casualties were reported, and border crossings have remained closed since 2025.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 12.8,
+      "lon": 103,
+      "locationName": "Pursat Province, Cambodia",
+      "countryCode": "KH",
+      "sources": [
+        {
+          "url": "https://www.intellinews.com/thailand-s-border-grab-sparks-fresh-fury-in-cambodia-484889",
+          "domain": "intellinews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.akp.gov.kh/post/detail/385757",
+          "domain": "akp.gov.kh",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bangkokpost.com/thailand/general/3346169/border-with-cambodia-to-remain-shut-amid-concerns",
+          "domain": "bangkokpost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.khmertimeskh.com/501907701/the-thailand-cambodia-conundrum/",
+          "domain": "khmertimeskh.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -1877,97 +2469,33 @@
       "isBreaking": false
     },
     {
-      "id": "ee43af9d0aee",
-      "headline": "North Carolina Regulators Demand Broader Chemours PFAS Cleanup Plan at Fayetteville Works",
-      "summary": "North Carolina's environmental agency told Chemours its PFAS cleanup plan for the Fayetteville Works site is deficient and must be expanded to test for all PFAS compounds, with a revised plan due within 60 days. The order follows a $590 million settlement in September and roughly $1.2 billion already spent on consent-order compliance.",
-      "category": "health",
+      "id": "e119f39f647f",
+      "headline": "Spain's First General Strike in 14 Years Turns Violent in Barcelona and Madrid",
+      "summary": "More than three million workers joined Spain's first 24-hour general strike since 2012, called over housing costs and prices weeks ahead of an early election; peaceful marches turned violent in Barcelona, with dozens arrested nationwide in clashes with police.",
+      "category": "politics",
       "severity": 3,
-      "lat": 35.0527,
-      "lon": -78.8784,
-      "locationName": "Fayetteville, North Carolina, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NC",
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "locationName": "Madrid, Spain",
+      "countryCode": "ES",
       "sources": [
         {
-          "url": "https://www.deq.nc.gov/news/press-releases/2026/11/09/ncdeq-directs-chemours-address-deficiencies-its-plans-clean-pfas-contamination",
-          "domain": "nc.gov",
-          "reliability": 85,
+          "url": "https://www.npr.org/2026/11/11/nx-s1-6037314/spain-general-strike",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/12/spain-holds-its-first-general-strike-in-14-years-amid-mass-protests-and-police-charges",
+          "domain": "euronews.com",
+          "reliability": 80,
           "bias": "center"
-        },
-        {
-          "url": "https://portcitydaily.com/latest-news/2026/11/12/state-demands-chemours-conduct-broader-pfas-cleanup-testing-in-cape-fear/",
-          "domain": "portcitydaily.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wect.com/2026/11/11/north-carolina-regulators-tell-chemours-expand-pfas-cleanup-plan/",
-          "domain": "wect.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://ncnewsline.com/2026/11/12/north-carolina-vows-to-hold-chemours-accountable-for-contamination-no-matter-how-long-it-takes/",
-          "domain": "ncnewsline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "2e3f5d2a5af0",
-      "headline": "Teacher, Two Students Stabbed at Missouri Middle School; Student Suspect in Custody",
-      "summary": "A student allegedly stabbed two classmates and a teacher at Black Hawk Middle School in Warrenton, Missouri, on the morning of Nov. 12. One student was airlifted in serious condition, the teacher was taken by ambulance in serious condition, and a second student suffered superficial wounds. The suspect, a student, was taken into custody and officials say there is no further public threat.",
-      "category": "society",
-      "severity": 3,
-      "lat": 38.8142,
-      "lon": -91.1446,
-      "locationName": "Warrenton, Missouri, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MO",
-      "sources": [
-        {
-          "url": "https://abcnews.com/US/2-students-teacher-injured-stabbing-middle-school-student/story?id=138088979",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://abc17news.com/news/crime/2026/11/12/warrenton-community-rallies-behind-teacher-2-students-who-were-stabbed-at-middle-school/",
-          "domain": "abc17news.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/",
-          "domain": "fox2now.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.stltoday.com/news/local/crime-courts/article_cdcafdd7-dbcb-43a5-9ed1-21e708c9127f.html",
-          "domain": "stltoday.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
+      "trustScore": 58,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-14T06:07:44.722Z",
+      "expiresAt": "2026-11-16T06:07:44.722Z",
       "isBreaking": false
     },
     {
@@ -2104,33 +2632,95 @@
       "isBreaking": false
     },
     {
-      "id": "e119f39f647f",
-      "headline": "Spain's First General Strike in 14 Years Turns Violent in Barcelona and Madrid",
-      "summary": "More than three million workers joined Spain's first 24-hour general strike since 2012, called over housing costs and prices weeks ahead of an early election; peaceful marches turned violent in Barcelona, with dozens arrested nationwide in clashes with police.",
-      "category": "politics",
+      "id": "6fabfacccd42",
+      "headline": "Ukraine Strikes Petrochemical Plant in Russia's Tatarstan Region, Over 1,000km Inside Russia",
+      "summary": "Ukrainian forces struck the Nizhnekamskneftekhim petrochemical complex and an oil refinery in Tatarstan, more than 1,000km inside Russia, along with the Monolit helicopter plant in Bryansk overnight Nov 14-15. At least one person was killed and three wounded in the attacks.",
+      "category": "conflict",
       "severity": 3,
-      "lat": 40.4168,
-      "lon": -3.7038,
-      "locationName": "Madrid, Spain",
-      "countryCode": "ES",
+      "lat": 60,
+      "lon": 90,
+      "locationName": "Nizhnekamsk, Tatarstan, Russia",
+      "countryCode": "RU",
       "sources": [
         {
-          "url": "https://www.npr.org/2026/11/11/nx-s1-6037314/spain-general-strike",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/15/8062944/",
+          "domain": "pravda.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.euronews.com/2026/11/12/spain-holds-its-first-general-strike-in-14-years-amid-mass-protests-and-police-charges",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
+          "url": "https://www.ukrinform.net/rubric-ato/4184855-ukrainian-forces-strike-two-plants-in-tatarstan-helicopter-manufacturer-in-bryansk-region.html",
+          "domain": "ukrinform.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.rte.ie/news/2026/1115/1599272-ukrainian-strikes-hit-major-russian-industrial-city/",
+          "domain": "rte.ie",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.themoscowtimes.com/2026/11/15/at-least-1-killed-as-ukraine-strikes-industrial-sites-across-russia-a94264",
+          "domain": "themoscowtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "trustScore": 57,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b4a96f50e0dd",
+      "headline": "New Flooding Wave Displaces Nearly 1,900 Households Across Central Vietnam",
+      "summary": "A second wave of flooding in mid-November inundated more than 2,700 houses in Gia Lai and Dak Lak provinces, displacing nearly 1,900 households across six provinces. Over 16,000 homes have been flooded nationally this November, with rainfall exceeding 545mm recorded in Quang Ngai.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 19.8,
+      "lon": 105.8,
+      "locationName": "Thanh Hoa, Vietnam",
+      "countryCode": "VN",
+      "sources": [
+        {
+          "url": "https://en.vietnamplus.vn/central-region-floods-inundate-over-2700-houses-displace-nearly-1900-households-post355335.vnp",
+          "domain": "vietnamplus.vn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://vietnamnews.vn/environment/1804217/central-region-floods-inundate-over-2-700-houses-displace-nearly-1-900-households.html",
+          "domain": "vietnamnews.vn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dtinews.dantri.com.vn/vietnam-today/flood-warnings-issued-across-central-vietnam-20261112104551377.htm",
+          "domain": "dantri.com.vn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.netnewsledger.com/2026/11/08/international-weather-vietnam-orders-flood-preparations-as-central-coast-faces-extreme-rain/",
+          "domain": "netnewsledger.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -2230,225 +2820,40 @@
       "isBreaking": false
     },
     {
-      "id": "8f0ebec01050",
-      "headline": "Vanderbilt University Hit With Second Class-Action Lawsuit Over Cyberattack",
-      "summary": "A ransomware group claimed to have breached Vanderbilt University's systems on Nov. 9, alleging access to over a million Social Security numbers and records, though the university has not independently confirmed the scope. A second class-action lawsuit was filed Nov. 11 alleging inadequate data security, and Vanderbilt has ordered password resets.",
+      "id": "c9644a04a434",
+      "headline": "Jordan Sentences Three to Death for Deadly Gun Attack on Church Funeral That Killed Nine",
+      "summary": "Jordan's State Security Court sentenced three men to death by hanging for an Oct 23 gun attack on a Greek Orthodox church funeral in Hammoud village, Karak, that killed nine people and wounded 25. Two other men received six-year sentences for supplying weapons used in the attack.",
       "category": "society",
       "severity": 3,
-      "lat": 36.1627,
-      "lon": -86.7816,
-      "locationName": "Nashville, Tennessee, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TN",
+      "lat": 31.19,
+      "lon": 35.7,
+      "locationName": "Karak, Jordan",
+      "countryCode": "JO",
       "sources": [
         {
-          "url": "https://www.wkrn.com/news/local-news/nashville/lawsuit-filed-over-vanderbilt-university-cyberattack/",
-          "domain": "wkrn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.aljazeera.com/news/2026/11/15/jordan-sentences-three-men-to-death-by-hanging-after-deadly-church-attack",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
         },
         {
-          "url": "https://nashvillebanner.com/2026/11/12/vanderbilt-cyberattack-lawsuit-lightning-100-mnpd/",
-          "domain": "nashvillebanner.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://newschannel9.com/news/local/vanderbilt-lawsuit-alleges-data-security-failures-as-university-orders-password-updates",
-          "domain": "newschannel9.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://fox17.com/news/local/vanderbilt-lawsuit-alleges-data-security-failures-as-university-orders-password-updates",
-          "domain": "fox17.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5a596ea665e3",
-      "headline": "Central Minnesota Measles Outbreak Grows to About 160 Cases, Largest Since 1990",
-      "summary": "An outbreak centered in Todd County since mid-September has become Minnesota's largest measles year since 1990, with the county accounting for roughly 85% of cases. The statewide total reached about 160 by Nov. 12-13, with most cases among unvaccinated residents and spread confirmed to seven other counties.",
-      "category": "health",
-      "severity": 3,
-      "lat": 45.9752,
-      "lon": -94.8669,
-      "locationName": "Long Prairie, Minnesota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MN",
-      "sources": [
-        {
-          "url": "https://www.mprnews.org/episode/2026/11/12/doctor-on-frontlines-of-todd-county-measles-outbreak-says-it-could-overwhelm-health-system",
-          "domain": "mprnews.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kaxe.org/minnesota-news/2026-11-10/mn-records-59-weekly-measles-cases-2026-hits-record-high",
-          "domain": "kaxe.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.health.state.mn.us/diseases/measles/stats.html",
-          "domain": "mn.us",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.valleynewslive.com/2026/11/06/minnesota-measles-count-soars/",
-          "domain": "valleynewslive.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "d8f2dbbe6089",
-      "headline": "Audit Finds Choking Death, Operational Failures at North Dakota Veterans Home",
-      "summary": "A state legislative audit found a resident at the North Dakota Veterans Home died after choking because staff did not follow a physician-ordered dietary plan, and that disciplinary records failed to reflect the incident. The audit also flagged over $9.7 million in expenditures approved solely by an administrative assistant and inconsistent overtime logging; findings will be discussed at a Nov. 30 legislative committee meeting.",
-      "category": "society",
-      "severity": 3,
-      "lat": 46.4425,
-      "lon": -97.6773,
-      "locationName": "Lisbon, North Dakota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-ND",
-      "sources": [
-        {
-          "url": "https://www.inforum.com/news/north-dakota/audit-raises-concerns-at-the-north-dakota-veterans-home-including-choking-death-caused-by-improper-meal",
-          "domain": "inforum.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kfyrtv.com/2026/11/12/state-auditor-uncovers-several-concerns-north-dakota-veterans-home/",
-          "domain": "kfyrtv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://kfgo.com/2026/11/12/1374075/",
-          "domain": "kfgo.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kxnet.com/north-dakota-news/audit-at-north-dakota-veterans-home-raises-some-concerns/",
-          "domain": "kxnet.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "7f79223a1f64",
-      "headline": "SpaceX Plans $24 Billion Data Center Near Brownsville After Land Deannexed to Bypass City Moratorium",
-      "summary": "SpaceX is planning a $24 billion, 444-acre data center and gas-fired power plant near the Port of Brownsville, Texas, on land the city deannexed at SpaceX's request and then annexed into Starbase, sidestepping a 90-day data-center moratorium the city had just passed. SpaceX pledged $220 million toward water and wastewater infrastructure, but the move has drawn criticism from residents and officials over loss of local control.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 25.9017,
-      "lon": -97.4975,
-      "locationName": "Brownsville, Texas, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-TX",
-      "sources": [
-        {
-          "url": "https://www.texastribune.org/2026/11/10/texas-spacex-data-center-power-plant/",
-          "domain": "texastribune.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ksat.com/news/texas/2026/11/10/spacex-to-build-24-billion-data-center-in-south-texas-sidestepping-moratorium/",
-          "domain": "ksat.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://myrgv.com/local-news/2026/11/11/spacex-planning-24-billion-data-center-on-property-disannexed-by-brownsville/",
-          "domain": "myrgv.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.fox26houston.com/news/spacex-plans-24-billion-data-center-land-brownsville-removed-from-city-limits",
-          "domain": "fox26houston.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a698fe1ac750",
-      "headline": "Bangladesh Garment Factories Shut Down Amid Wage Protests, Threatening Industry-Wide Strike",
-      "summary": "Manufacturers' groups BGMEA and BKMEA threatened an indefinite factory shutdown as wage protests shut 147 garment factories and suspended production at 92 more in Savar, Ashulia and Gazipur. Workers are demanding a minimum wage of 30,000 taka, up from 12,500, and a wage board has agreed in principle to a revised scale effective December.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 23.86,
-      "lon": 90.26,
-      "locationName": "Savar, Dhaka, Bangladesh",
-      "countryCode": "BD",
-      "sources": [
-        {
-          "url": "https://www.france24.com/en/live-news/20261114-bangladesh-garment-makers-threaten-to-quit-wage-talks",
-          "domain": "france24.com",
-          "reliability": 84,
+          "url": "https://www.yahoo.com/news/world/articles/three-men-sentenced-death-over-114939228.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
           "bias": "center"
         },
         {
-          "url": "https://www.nbcnews.com/world/asia/bangladesh-garment-factories-close-workers-clash-police-pay-protests-rcna607579",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/15/jordan-sentences-three-men-to-death-over-deadly-church-attack/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-15T06:06:28.892Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-17T06:06:28.892Z",
+      "trustScore": 55,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -2532,6 +2937,82 @@
       "isBreaking": false
     },
     {
+      "id": "efbf60c48f0d",
+      "headline": "UN Sanctions Committee Designates Kabila-Linked FRN Faction as Alias of M23 Coalition",
+      "summary": "The UN Security Council's Sanctions Committee designated the Front for the Refoundation of the Nation (FRN), a faction launched in October by former DRC President Joseph Kabila alongside M23 rebels, as an alias of the already-sanctioned AFC/M23 coalition under Resolution 1533.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -1.68,
+      "lon": 29.22,
+      "locationName": "Goma, Democratic Republic of Congo",
+      "countryCode": "CD",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/10/14/ex-drc-president-joseph-kabila-joins-hands-with-m23-rebels-why-it-matters",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.sabcnews.com/sabcnews/kabila-m23-rebels-form-political-military-coalition-party/",
+          "domain": "sabcnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.africanews.com/2026/10/13/former-drc-president-kabila-to-lead-new-group-replacing-afcm23/",
+          "domain": "africanews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dfa7fb2b83ed",
+      "headline": "China's October Data Shows Broad Economic Slowdown as Investment Slumps",
+      "summary": "China's industrial output grew 4.8% year-on-year in October, missing the 5.3% forecast, while retail sales rose just 0.4% against an expected 0.8% gain. Fixed-asset investment fell 8.1% year-to-date, underscoring a broader slowdown in the world's second-largest economy.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.9,
+      "lon": 116.4,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.investing.com/news/economy-news/chinas-factory-output-retail-sales-growth-slow-in-october-5028313",
+          "domain": "investing.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.thestandard.com.hk/finance/article/348591/Chinas-factory-output-retail-sales-growth-slow-in-October",
+          "domain": "thestandard.com.hk",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
       "id": "7fe4e272e75e",
       "headline": "JNIM-ISIS Sahel Turf War Spreads to Burkina Faso as State Loses Ground in Oudalan",
       "summary": "Rivalry between al-Qaeda-linked JNIM and Islamic State-Sahel Province intensified in Burkina Faso, with JNIM encroaching on the Koupela and Pouytenga commercial hubs in Centre-Est and ISSP threatening the Essakane gold mine. Burkinabe state forces are reported to be losing ground in Oudalan province amid the escalating rivalry.",
@@ -2597,6 +3078,37 @@
       "firstSeen": "2026-11-14T06:07:44.722Z",
       "lastUpdated": "2026-11-14T06:07:44.722Z",
       "expiresAt": "2026-11-16T06:07:44.722Z",
+      "isBreaking": false
+    },
+    {
+      "id": "021dbcf6de3e",
+      "headline": "Dutch Coalition Nears Collapse Over Wealth-Tax Dispute Ahead of Nov 20 Deadline",
+      "summary": "The Netherlands' D66-CDA-VVD coalition under PM Jetten is on the brink of collapse after D66 and CDA passed a wealth-tax amendment with opposition support over VVD's objection. Crisis talks were held Nov 13-14, with a resolution deadline set for Nov 20.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 52.07,
+      "lon": 4.3,
+      "locationName": "The Hague, Netherlands",
+      "countryCode": "NL",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-13/dutch-premier-jetten-to-hold-crisis-talks-to-salvage-coalition",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thenationalnews.com/news/europe/2026/11/13/millionaire-tax-dispute-leaves-dutch-government-on-brink-of-collapse/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -2720,43 +3232,112 @@
       "isBreaking": false
     },
     {
-      "id": "ef4af83693d0",
-      "headline": "Boeing to Cut About 2,500 Commercial Airplanes Jobs in Washington State",
-      "summary": "Boeing announced it will cut about 5%, or roughly 2,500 of 50,000, jobs in its Commercial Airplanes division, citing the need to reset the pace of production ramp-ups amid supply-chain and factory stability issues. The cuts, via attrition and layoffs starting in December, come about a month after the company averted a machinists' strike; the division posted a $697 million quarterly loss despite generating 44% of company revenue.",
-      "category": "economy",
+      "id": "cca72970b8f7",
+      "headline": "Over 50 Killed as Vigilantes Ambush Bandits Returning From Kidnapping Raid in Zamfara",
+      "summary": "Vigilantes ambushed bandits returning from a kidnapping raid in Gummi district near Zoma village, Bukkuyum local government area of Zamfara State, Nigeria. A village chief said 44 bandits and nine vigilantes were killed in the clash, a toll distinct from a separate civilian massacre reported elsewhere in the state.",
+      "category": "conflict",
       "severity": 3,
-      "lat": 47.4829,
-      "lon": -122.2171,
-      "locationName": "Renton, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
+      "lat": 12.4,
+      "lon": 6.4,
+      "locationName": "Zamfara, Nigeria",
+      "countryCode": "NG",
       "sources": [
         {
-          "url": "https://www.washingtontimes.com/news/2026/nov/10/boeing-lays-5-commercial-airplanes-division-axing-roughly-2500-jobs/",
-          "domain": "washingtontimes.com",
-          "reliability": 58,
-          "bias": "right"
-        },
-        {
-          "url": "https://www.business-standard.com/world-news/boeing-to-cut-5-of-commercial-aircraft-workforce-amid-production-delay-126111000092_1.html",
-          "domain": "business-standard.com",
+          "url": "https://www.vanguardngr.com/2026/11/clashes-between-gangs-vigilantes-kill-over-50-in-zamfara-report/",
+          "domain": "vanguardngr.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.audacy.com/knss/news/local/boeing-2678355722",
-          "domain": "audacy.com",
+          "url": "https://www.thisdaylive.com/2026/11/15/clashes-between-criminal-gangs-vigilance-groups-claim-over-50-lives-in-zamfara/",
+          "domain": "thisdaylive.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.dailysabah.com/world/africa/over-50-killed-in-clashes-between-bandits-vigilantes-in-nigeria",
+          "domain": "dailysabah.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 50,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
+      "trustScore": 49,
+      "firstSeen": "2026-11-15T06:06:28.892Z",
+      "lastUpdated": "2026-11-15T06:06:28.892Z",
+      "expiresAt": "2026-11-17T06:06:28.892Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6c5acec24e2e",
+      "headline": "Leaked Colombian Intelligence Report Alleges Petro-Era Spying on Rivals, Election Meddling",
+      "summary": "A leaked 26-page DNI handover report alleges Colombia's intelligence agency, under the Petro administration, spied on former presidents, infiltrated rival 2026 presidential campaigns under a covert operation, and planned to target the electoral authority's systems. The allegations are unadjudicated and Petro has not responded.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 4.711,
+      "lon": -74.0721,
+      "locationName": "Bogota, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.infobae.com/colombia/2026/11/13/el-general-r-eduardo-zapateiro-denuncio-un-presunto-plan-de-espionaje-durante-la-administracion-petro-conversaciones-de-politicos-funcionarios-y-oficiales-habrian-sido-interceptadas/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://colombiaone.com/2026/11/13/dni-report-petro-surveillance-election-meddling/",
+          "domain": "colombiaone.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://semana.com/politica/articulo/la-dni-infiltro-campanas-presidenciales-en-2026-segun-informe-reservado/202635",
+          "domain": "semana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-14T06:07:44.722Z",
+      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "isBreaking": false
+    },
+    {
+      "id": "509901c2ae29",
+      "headline": "China Warns US Against New Chip Export Controls Following Nvidia-Huang Scandal",
+      "summary": "China's Foreign Ministry warned the United States against imposing additional semiconductor export controls, after Nvidia CEO Jensen Huang resigned amid allegations tied to a relationship with an executive US intelligence linked to China's Ministry of State Security; the episode comes ahead of an expected Trump-Xi meeting at the APEC summit in Shenzhen.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "locationName": "Beijing, China",
+      "countryCode": "CN",
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/11/13/china-warns-us-over-chip-curbs-as-suspected-spys-firm-got-banned-chips",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.malaymail.com/news/world/2026/11/13/china-warns-us-against-more-chip-export-controls-after-nvidia-scandal/243121",
+          "domain": "malaymail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-14T06:07:44.722Z",
+      "lastUpdated": "2026-11-14T06:07:44.722Z",
+      "expiresAt": "2026-11-16T06:07:44.722Z",
       "isBreaking": false
     },
     {
@@ -2924,233 +3505,34 @@
       "isBreaking": false
     },
     {
-      "id": "5cf38ca3c10a",
-      "headline": "Indiana Measles Outbreak Tops 160 Cases, Concentrated in LaGrange and Elkhart Counties",
-      "summary": "Indiana's statewide measles case count reached 162 as of Nov. 13, with LaGrange County as the epicenter at 36 confirmed cases, up from 25 the prior week. More than half of all cases are in northeast Indiana, 31 patients have been hospitalized, and most cases involve unvaccinated people under 30, described by officials as the worst outbreak in decades.",
-      "category": "health",
-      "severity": 3,
-      "lat": 41.6559,
-      "lon": -85.4166,
-      "locationName": "LaGrange, Indiana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IN",
-      "sources": [
-        {
-          "url": "https://www.wndu.com/2026/11/13/indiana-measles-cases-reach-162-nine-more-than-nov-10-report/",
-          "domain": "wndu.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wboi.org/health-science/2026-11-11/northeast-indiana-is-states-measles-hotspot",
-          "domain": "wboi.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wbiw.com/2026/11/10/indiana-health-officials-implement-response-plan-as-measles-cases-rise-statewide/",
-          "domain": "wbiw.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "3f87b3efff99",
-      "headline": "Jonathan Kreiss-Tomkins Wins Alaska Governor's Race, Becomes State's First Democratic Governor in Two Decades",
-      "summary": "Democrat Jonathan Kreiss-Tomkins, a former Sitka state legislator, won Alaska's governorship with 50.2% of the vote, clearing the threshold needed to avoid a ranked-choice runoff and defeating Republican Bernadette Wilson and other candidates by a wide margin. He becomes the state's first Democratic governor in about two decades, aided by a cross-party endorsement from Republican Sen. Lisa Murkowski.",
+      "id": "339fad482916",
+      "headline": "Sudan Accuses Ethiopia of Hosting RSF Drone Bases, Files UN Complaint",
+      "summary": "Sudan has filed complaints with the UN and African Union alleging Ethiopia hosts RSF drone-launch sites near Asosa, Kurmuk-Gizen, and Bahir Dar, citing 70 drone assaults between February and October. Ethiopia counter-accuses Sudan of harboring TPLF and Fano fighters, deepening cross-border tensions.",
       "category": "politics",
       "severity": 3,
-      "lat": 58.3019,
-      "lon": -134.4197,
-      "locationName": "Juneau, Alaska, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AK",
+      "lat": 10.6,
+      "lon": 34.3,
+      "locationName": "Kurmuk, Blue Nile, Sudan",
+      "countryCode": "SD",
       "sources": [
         {
-          "url": "https://www.adn.com/politics/2026/11/09/kreiss-tomkins-grows-his-lead-in-alaska-governors-race/",
-          "domain": "adn.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.aljazeera.com/news/2026/11/3/deadly-rsf-drone-strikes-reveal-deep-divisions-between-sudan-and-ethiopia",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
         },
         {
-          "url": "https://alaskabeacon.com/2026/11/03/jonathan-kreiss-tomkins-leading-in-alaskas-gubernatorial-race-in-early-results/",
-          "domain": "alaskabeacon.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.multistate.us/elections/governor-race/alaska-2026",
-          "domain": "multistate.us",
+          "url": "https://sudantribune.com/article/320901",
+          "domain": "sudantribune.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T16:17:51.471Z",
-      "lastUpdated": "2026-11-13T16:17:51.471Z",
-      "expiresAt": "2026-11-15T16:17:51.471Z",
-      "isBreaking": false
-    },
-    {
-      "id": "cca72970b8f7",
-      "headline": "Over 50 Killed as Vigilantes Ambush Bandits Returning From Kidnapping Raid in Zamfara",
-      "summary": "Vigilantes ambushed bandits returning from a kidnapping raid in Gummi district near Zoma village, Bukkuyum local government area of Zamfara State, Nigeria. A village chief said 44 bandits and nine vigilantes were killed in the clash, a toll distinct from a separate civilian massacre reported elsewhere in the state.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 12.4,
-      "lon": 6.4,
-      "locationName": "Zamfara, Nigeria",
-      "countryCode": "NG",
-      "sources": [
-        {
-          "url": "https://www.vanguardngr.com/2026/11/clashes-between-gangs-vigilantes-kill-over-50-in-zamfara-report/",
-          "domain": "vanguardngr.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thisdaylive.com/2026/11/15/clashes-between-criminal-gangs-vigilance-groups-claim-over-50-lives-in-zamfara/",
-          "domain": "thisdaylive.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.dailysabah.com/world/africa/over-50-killed-in-clashes-between-bandits-vigilantes-in-nigeria",
-          "domain": "dailysabah.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-15T06:06:28.892Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-17T06:06:28.892Z",
-      "isBreaking": false
-    },
-    {
-      "id": "790a3782682d",
-      "headline": "Salvadoran-Backed Haitian Forces Recapture National Stadium From Gangs in Port-au-Prince",
-      "summary": "Haitian police and armed forces, backed by El Salvador's deployed special forces, recaptured Stade Sylvio Cator, Haiti's national stadium, after roughly two years of gang control; Salvadoran troops have begun using it as a forward operating base. Human skulls were found at the site, pointing to gang atrocities.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 18.5944,
-      "lon": -72.3074,
-      "locationName": "Port-au-Prince, Haiti",
-      "countryCode": "HT",
-      "sources": [
-        {
-          "url": "https://ticotimes.net/2026/11/13/bukele-haiti-stadium-base-sylvio-cator",
-          "domain": "ticotimes.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://haitiantimes.com/2026/11/12/haiti-el-salvador-forces-retake-sylvio-cator-stadium/",
-          "domain": "haitiantimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.latintimes.com/salvadoran-haitian-forces-seize-haiti-stadium-601282",
-          "domain": "latintimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "6c5acec24e2e",
-      "headline": "Leaked Colombian Intelligence Report Alleges Petro-Era Spying on Rivals, Election Meddling",
-      "summary": "A leaked 26-page DNI handover report alleges Colombia's intelligence agency, under the Petro administration, spied on former presidents, infiltrated rival 2026 presidential campaigns under a covert operation, and planned to target the electoral authority's systems. The allegations are unadjudicated and Petro has not responded.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 4.711,
-      "lon": -74.0721,
-      "locationName": "Bogota, Colombia",
-      "countryCode": "CO",
-      "sources": [
-        {
-          "url": "https://www.infobae.com/colombia/2026/11/13/el-general-r-eduardo-zapateiro-denuncio-un-presunto-plan-de-espionaje-durante-la-administracion-petro-conversaciones-de-politicos-funcionarios-y-oficiales-habrian-sido-interceptadas/",
-          "domain": "infobae.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://colombiaone.com/2026/11/13/dni-report-petro-surveillance-election-meddling/",
-          "domain": "colombiaone.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://semana.com/politica/articulo/la-dni-infiltro-campanas-presidenciales-en-2026-segun-informe-reservado/202635",
-          "domain": "semana.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "509901c2ae29",
-      "headline": "China Warns US Against New Chip Export Controls Following Nvidia-Huang Scandal",
-      "summary": "China's Foreign Ministry warned the United States against imposing additional semiconductor export controls, after Nvidia CEO Jensen Huang resigned amid allegations tied to a relationship with an executive US intelligence linked to China's Ministry of State Security; the episode comes ahead of an expected Trump-Xi meeting at the APEC summit in Shenzhen.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 39.9042,
-      "lon": 116.4074,
-      "locationName": "Beijing, China",
-      "countryCode": "CN",
-      "sources": [
-        {
-          "url": "https://www.euronews.com/2026/11/13/china-warns-us-over-chip-curbs-as-suspected-spys-firm-got-banned-chips",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.malaymail.com/news/world/2026/11/13/china-warns-us-against-more-chip-export-controls-after-nvidia-scandal/243121",
-          "domain": "malaymail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-16T06:07:44.722Z",
+      "trustScore": 48,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -3244,40 +3626,6 @@
       "firstSeen": "2026-11-15T06:06:28.892Z",
       "lastUpdated": "2026-11-15T06:06:28.892Z",
       "expiresAt": "2026-11-17T06:06:28.892Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a6232dc30328",
-      "headline": "Buffalo Nonprofit to Lay Off 760 Workers as Functions Shift to Roswell Park",
-      "summary": "Health Research Inc. filed a WARN notice to eliminate 760 of its 791 Buffalo-area positions as its functions transfer to Roswell Park Cancer Research Corporation. The layoffs are set to begin December 24, 2026.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 42.8864,
-      "lon": -78.8784,
-      "locationName": "Buffalo, New York, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NY",
-      "sources": [
-        {
-          "url": "https://whatnow.com/news/local-news/a-new-york-research-nonprofit-is-planning-760-layoffs-in-buffalo-campus/",
-          "domain": "whatnow.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://layoffiq.com/closures",
-          "domain": "layoffiq.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-15T15:27:34.329Z",
-      "lastUpdated": "2026-11-15T15:27:34.329Z",
-      "expiresAt": "2026-11-17T15:27:34.329Z",
       "isBreaking": false
     },
     {
@@ -3409,6 +3757,40 @@
       "isBreaking": false
     },
     {
+      "id": "a6232dc30328",
+      "headline": "Buffalo Nonprofit to Lay Off 760 Workers as Functions Shift to Roswell Park",
+      "summary": "Health Research Inc. filed a WARN notice to eliminate 760 of its 791 Buffalo-area positions as its functions transfer to Roswell Park Cancer Research Corporation. The layoffs are set to begin December 24, 2026.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 42.8864,
+      "lon": -78.8784,
+      "locationName": "Buffalo, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://whatnow.com/news/local-news/a-new-york-research-nonprofit-is-planning-760-layoffs-in-buffalo-campus/",
+          "domain": "whatnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://layoffiq.com/closures",
+          "domain": "layoffiq.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-15T15:27:34.329Z",
+      "lastUpdated": "2026-11-15T15:27:34.329Z",
+      "expiresAt": "2026-11-17T15:27:34.329Z",
+      "isBreaking": false
+    },
+    {
       "id": "c8aa99796a0d",
       "headline": "Armenia Says Its CSTO Membership 'Has Run Its Course' as Kremlin Strips Its Voting Rights",
       "summary": "Armenian Prime Minister Nikol Pashinyan said membership in the Russia-led CSTO military alliance 'has run its course,' as the Kremlin confirmed Armenia has been stripped of its voting rights within the bloc. Pashinyan said Armenia aims to submit an EU membership application in 2027 or 2028.",
@@ -3431,88 +3813,6 @@
       "firstSeen": "2026-11-15T06:06:28.892Z",
       "lastUpdated": "2026-11-15T06:06:28.892Z",
       "expiresAt": "2026-11-17T06:06:28.892Z",
-      "isBreaking": false
-    },
-    {
-      "id": "792e310370f0",
-      "headline": "Kenya Discharges Last Ebola Patient, Starts 42-Day Countdown to Outbreak-Free Declaration",
-      "summary": "Kenya's last Ebola (Bundibugyo virus) patient, linked to the wider DRC outbreak, was discharged on Nov 11, starting the WHO-standard 42-day countdown toward a possible outbreak-free declaration around Dec 23. Kenya recorded nine cases since early October with two deaths and seven recoveries.",
-      "category": "health",
-      "severity": 2,
-      "lat": -1.2921,
-      "lon": 36.8219,
-      "locationName": "Nairobi, Kenya",
-      "countryCode": "KE",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/11/kenya-discharges-last-ebola-patient",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/africa/kenya-countdown-ebola-free-declaration-last-patient-discharged-rcna608712",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.afro.who.int/countries/kenya/news/kenyas-last-ebola-patient-goes-home-42-day-countdown-begins",
-          "domain": "who.int",
-          "reliability": 92,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.timeslive.co.za/news/world/2026-11-08-islamist-militants-force-ebola-patients-to-flee-in-deadly-drc-raid/",
-          "domain": "timeslive.co.za",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://citizen.digital/article/militants-kill-33-in-drc-raid-force-ebola-patients-to-flee-n393500",
-          "domain": "citizen.digital",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/armed-men-kill-least-33-190706831.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.premiumtimesng.com/news/headlines/923526-ebola-outbreak-in-dr-congo-becomes-largest-in-countrys-history.html",
-          "domain": "premiumtimesng.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026",
-          "domain": "europa.eu",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/eboladrc2026-scenarioassessment.html",
-          "domain": "cdc.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.trtworld.com/article/93412f8e33bb",
-          "domain": "trtworld.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 82,
-      "firstSeen": "2026-10-29T06:23:58.774Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
       "isBreaking": false
     },
     {
@@ -3601,49 +3901,6 @@
       "isBreaking": false
     },
     {
-      "id": "c312b0da13b5",
-      "headline": "Second Wave of Hoax Bomb Threats Hits Thousands More Italian Schools, Prompts Terrorism Investigation",
-      "summary": "A second wave of hoax bomb-threat emails hit well over a thousand additional Italian schools on Nov 12, after an earlier wave targeted thousands more on Nov 11; Rome anti-terrorism prosecutors opened an investigation, with IP addresses reportedly traced to the Philippines, Taiwan and Australia.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 41.9028,
-      "lon": 12.4964,
-      "locationName": "Rome, Italy",
-      "countryCode": "IT",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/12/more-than-1800-italian-schools-targeted-by-new-hoax-bomb-alerts",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.thelocal.it/20261112/new-bomb-threats-sent-to-italian-schools-for-a-second-day",
-          "domain": "thelocal.it",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/11/hoax-bomb-threats-schools-italy-uk.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-11/at-least-300-italian-schools-evacuated-after-email-bomb-alerts",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 75,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
       "id": "faa66019dc2d",
       "headline": "Israeli Strikes and Home Demolitions Continue Across Southern Lebanon Despite Framework Deal",
       "summary": "Israeli forces continued strikes and artillery fire on villages across southern Lebanon, including Khiam, Khraybeh, Mayfadoun and Zawtar al-Sharqiyeh, and demolished homes with explosives despite a framework ceasefire deal. Drones were also reported flying low over Beirut.",
@@ -3724,86 +3981,39 @@
       "isBreaking": false
     },
     {
-      "id": "c6eace9cf023",
-      "headline": "Israeli Forces Shell Rural Quneitra and Abduct Two Men in Fresh Southern Syria Incursion",
-      "summary": "Israeli forces fired artillery shells into a forested area near Briqa village in rural Quneitra and separately raided homes in Jabata al-Khashab, abducting two young men, in a continuation of near-daily incursion patterns documented across southern Syria.",
-      "category": "conflict",
+      "id": "2c55eb9d4df8",
+      "headline": "Guadalajara Cartel Founder Félix Gallardo Dies in Hospital at 80 After Decades in Prison",
+      "summary": "Miguel Ángel Félix Gallardo, founder of Mexico's Guadalajara drug cartel, died on Nov 15 of organ failure in a Guadalajara hospital after being transferred from prison. He was convicted in the 1985 murder of DEA agent Enrique 'Kiki' Camarena.",
+      "category": "society",
       "severity": 2,
-      "lat": 33.04,
-      "lon": 35.86,
-      "locationName": "Quneitra, Syria",
-      "countryCode": "SY",
+      "lat": 20.67,
+      "lon": -103.35,
+      "locationName": "Guadalajara, Mexico",
+      "countryCode": "MX",
       "sources": [
         {
-          "url": "https://www.aa.com.tr/en/middle-east/israeli-forces-shell-rural-quneitra-abduct-2-men/4123446",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.trtworld.com/article/78dea5deb6d5",
-          "domain": "trtworld.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.syriahr.com/en/388002/",
-          "domain": "syriahr.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://shafaq.com/en/Middle-East/Over-60-Israeli-violations-reported-in-Syria-since-November-1",
-          "domain": "shafaq.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-strike-targets-syria-and-lebanon-simultaneously",
-          "domain": "middleeasteye.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9a636621d565",
-      "headline": "Taiwan Indicts Couple Over Chinese-Origin Chips Found in Military Drones",
-      "summary": "Taichung prosecutors indicted Align Corp. director Tu Ta-sen and his wife, seeking at least five-year sentences, for allegedly supplying Chinese-origin chips in drones under four Taiwanese military procurement contracts that explicitly barred Chinese components; the chips were found in training drones and explosive-dropping drones.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 24.1477,
-      "lon": 120.6736,
-      "locationName": "Taichung, Taiwan",
-      "countryCode": "TW",
-      "sources": [
-        {
-          "url": "https://focustaiwan.tw/society/202611130017",
-          "domain": "focustaiwan.tw",
+          "url": "https://edition.cnn.com/2026/11/15/americas/mexico-gallardo-dead-dea-intl-latam",
+          "domain": "cnn.com",
           "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.france24.com/en/americas/20261115-miguel-angel-felix-gallardo-mexican-drug-lord-dies",
+          "domain": "france24.com",
+          "reliability": 84,
           "bias": "center"
         },
         {
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/14/2003867711",
-          "domain": "taipeitimes.com",
-          "reliability": 72,
-          "bias": "center"
+          "url": "https://www.aljazeera.com/news/2026/11/16/founder-of-guadalajara-cartel-dies-in-hospital-after-decades-in-prison",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
         }
       ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
+      "trustScore": 64,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-17T18:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -3846,127 +4056,133 @@
       "isBreaking": false
     },
     {
-      "id": "161f24a0b220",
-      "headline": "Lebanese Army Seizes Large Weapons Cache in Raid on Beirut's Southern Suburbs",
-      "summary": "Lebanese army military intelligence raided a weapons warehouse in the Msharafieh area of Beirut's southern suburbs, a Hezbollah stronghold, seizing rifles, machine guns, rocket and grenade launchers and explosives, and detaining one suspect, as the state pushes to assert control over weapons in the area.",
+      "id": "d1e1ee8b04ef",
+      "headline": "Venezuelan Teachers and Health Workers Launch 12-Hour National Strike Over Pay",
+      "summary": "Teachers, nurses, and university staff across Venezuela held a 12-hour strike on Nov 16 demanding a $960 monthly bonus amid ongoing economic hardship. The action was organized by education and health-sector unions nationwide.",
+      "category": "society",
+      "severity": 2,
+      "lat": 10.48,
+      "lon": -66.9,
+      "locationName": "Caracas, Venezuela",
+      "countryCode": "VE",
+      "sources": [
+        {
+          "url": "https://www.riotimesonline.com/venezuela-teachers-nurses-strike-november-16-2026/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.elnacional.com/2026/11/trabajadores-de-salud-y-educacion-convocan-a-paro-nacional-para-el-16-de-noviembre/",
+          "domain": "elnacional.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://talcualdigital.com/noticias/trabajadores-de-la-salud-y-educacion-anuncian-paro-nacional-de-actividades-el-16nov/",
+          "domain": "talcualdigital.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ntn24.com/noticias-actualidad/trabajadores-del-sector-educativo-y-sanitario-en-venezuela-anuncian-paro-nacional-de-12-horas-para-el-16-de-noviembre-664165",
+          "domain": "ntn24.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-17T18:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0ede6d708ea4",
+      "headline": "Suspected Al-Shabaab Militants Kill Eight in Ambush on Road Crew Escort in Kenya's Mandera County",
+      "summary": "Suspected Al-Shabaab fighters ambushed a security vehicle escorting a road construction crew near Koromey, Mandera County, on Nov 10, killing all eight occupants including five workers, two police reservists, and the driver.",
       "category": "conflict",
       "severity": 2,
-      "lat": 33.845,
-      "lon": 35.525,
-      "locationName": "Msharafieh, Beirut, Lebanon",
-      "countryCode": "LB",
+      "lat": 3.94,
+      "lon": 41.87,
+      "locationName": "Koromey, Mandera County, Kenya",
+      "countryCode": "KE",
       "sources": [
         {
-          "url": "https://www.timesofisrael.com/lebanese-army-says-it-seized-arms-and-ammunition-in-beirut-hezbollah-stronghold",
-          "domain": "timesofisrael.com",
-          "reliability": 78,
-          "bias": "center"
+          "url": "https://www.the-star.co.ke/news/2026-11-11-police-identify-eight-killed-in-mandera-ambush",
+          "domain": "the-star.co.ke",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.arabnews.com/middle-east/lebanese-army-says-it-seized-arms-depot-in-beirut-suburbs-3011690",
-          "domain": "arabnews.com",
-          "reliability": 64,
-          "bias": "center"
+          "url": "https://www.sowetan.co.za/news/africa/2026-11-10-eight-killed-in-suspected-al-shabaab-attack-in-kenya/",
+          "domain": "sowetan.co.za",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://allafrica.com/stories/202611100528.html",
+          "domain": "allafrica.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://citizen.digital/article/eight-killed-in-suspected-al-shabaab-attack-in-mandera-n393668",
+          "domain": "citizen.digital",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 60,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
+      "trustScore": 57,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-17T18:05:41.649Z",
       "isBreaking": false
     },
     {
-      "id": "da05e5fea9cf",
-      "headline": "19 Inches of Hail Blankets Delaware County, Pennsylvania Amid Tornado Watch",
-      "summary": "A severe Nov. 12 storm dumped roughly 19 inches of hail in Parkside Borough and Brookhaven, Delaware County, Pennsylvania, burying streets like a snowstorm. A tornado watch and flash flooding also triggered water rescues in nearby Chester Township and Aston; no injuries were reported.",
+      "id": "b140d1a8a26b",
+      "headline": "Series of Earthquakes Up to Magnitude 5.6 Strikes Afghanistan's Badakhshan Province",
+      "summary": "A series of earthquakes ranging from magnitude 4.4 to 5.6, including a USGS-confirmed M5.0, struck Badakhshan Province on Nov 15 in typical Hindu Kush seismic activity. No earthquake casualties were reported, though a separate avalanche the same day killed two gold miners and injured six others.",
       "category": "disaster",
       "severity": 2,
-      "lat": 39.9129,
-      "lon": -75.361,
-      "locationName": "Parkside, Pennsylvania, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-PA",
+      "lat": 36.7,
+      "lon": 70.8,
+      "locationName": "Badakhshan Province, Afghanistan",
+      "countryCode": "AF",
       "sources": [
         {
-          "url": "https://6abc.com/post/heavy-hail-piles-like-snow-parkside-borough-pennsylvania/20036746/",
-          "domain": "6abc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://dailyvoice.com/article/19-inches-of-hail-turns-pennsylvania-streets-into-winter-wonderland-during-november-storm/",
-          "domain": "dailyvoice.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/heavy-hail-piles-snow-parkside-221928817.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyfh",
+          "domain": "usgs.gov",
+          "reliability": 95,
           "bias": "center"
         },
         {
-          "url": "https://www.abc27.com/news/hail-creates-winter-like-scene-in-delaware-county/",
-          "domain": "abc27.com",
+          "url": "https://quakemap24.com/en/event/d6e0c4d7b4d0d83a48997b453993c56ad3c171d7/earthquake-m5-6-yamgan-badakhshan-province-2026-11-15",
+          "domain": "quakemap24.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://english.news.cn/asiapacific/20261115/e5063c2aaeda4e36981a9f99f6284f20/c.html",
+          "domain": "news.cn",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-14T15:27:06.287Z",
-      "lastUpdated": "2026-11-14T15:27:06.287Z",
-      "expiresAt": "2026-11-16T03:27:06.287Z",
-      "isBreaking": false
-    },
-    {
-      "id": "03edd10ed413",
-      "headline": "Nevada Lawmakers Brace for $1 Billion-Plus Budget Boost Ahead of 2027 Session",
-      "summary": "Forecasters project Nevada's 2027-2029 biennial budget could grow $900 million to $1.64 billion above the current $49.5 billion budget, driven by rising sales and gaming tax revenue. Democratic Sen. Edgar Flores was selected as the new Senate Majority Leader after Democrats expanded their legislative majority in the Nov. 2026 elections; an official forecast is set for approval Nov. 16.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 39.1638,
-      "lon": -119.7674,
-      "locationName": "Carson City, Nevada, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NV",
-      "sources": [
-        {
-          "url": "https://www.reviewjournal.com/news/politics-and-government/nevada/flores-selected-as-new-senate-majority-leader-in-nevada-legislature-3910272/",
-          "domain": "reviewjournal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://thenevadaindependent.com/article/nevadas-next-budget-could-see-at-least-1-billion-boost-heres-why",
-          "domain": "thenevadaindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.fox5vegas.com/2026/11/05/nevada-senate-democrats-select-edgar-flores-majority-leader/",
-          "domain": "fox5vegas.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/nevada-expects-1-billion-surplus-231000400.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-14T15:27:06.287Z",
-      "lastUpdated": "2026-11-14T15:27:06.287Z",
-      "expiresAt": "2026-11-16T03:27:06.287Z",
+      "trustScore": 57,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-17T18:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -4062,6 +4278,36 @@
         }
       ],
       "trustScore": 56,
+      "firstSeen": "2026-11-15T06:06:28.892Z",
+      "lastUpdated": "2026-11-15T06:06:28.892Z",
+      "expiresAt": "2026-11-16T18:06:28.892Z",
+      "isBreaking": false
+    },
+    {
+      "id": "66823b1f1229",
+      "headline": "EU Forms 'E5' Team of Five Nations for Ukraine Peace Talks, Sidelining Kallas as Lead Negotiator",
+      "summary": "EU leaders agreed to form an 'E5' negotiating team -- the EU plus Britain, France, Germany, Italy and Poland -- to represent Europe in Ukraine peace talks. Foreign policy chief Kaja Kallas was denied the lead negotiator role, saying 'the Russians do not want me.'",
+      "category": "politics",
+      "severity": 2,
+      "lat": 50.85,
+      "lon": 4.35,
+      "locationName": "Brussels, Belgium",
+      "countryCode": "BE",
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/11/13/eu-leaders-bring-italy-and-poland-into-ukraine-peace-talks-team-as-kallas-fights-for-spot",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/13/europe/russia-ukraine-us-europe-peace-talks-putin-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 55,
       "firstSeen": "2026-11-15T06:06:28.892Z",
       "lastUpdated": "2026-11-15T06:06:28.892Z",
       "expiresAt": "2026-11-16T18:06:28.892Z",
@@ -4188,66 +4434,6 @@
       "isBreaking": false
     },
     {
-      "id": "66823b1f1229",
-      "headline": "EU Forms 'E5' Team of Five Nations for Ukraine Peace Talks, Sidelining Kallas as Lead Negotiator",
-      "summary": "EU leaders agreed to form an 'E5' negotiating team -- the EU plus Britain, France, Germany, Italy and Poland -- to represent Europe in Ukraine peace talks. Foreign policy chief Kaja Kallas was denied the lead negotiator role, saying 'the Russians do not want me.'",
-      "category": "politics",
-      "severity": 2,
-      "lat": 50.85,
-      "lon": 4.35,
-      "locationName": "Brussels, Belgium",
-      "countryCode": "BE",
-      "sources": [
-        {
-          "url": "https://www.euronews.com/2026/11/13/eu-leaders-bring-italy-and-poland-into-ukraine-peace-talks-team-as-kallas-fights-for-spot",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/13/europe/russia-ukraine-us-europe-peace-talks-putin-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-15T06:06:28.892Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-16T18:06:28.892Z",
-      "isBreaking": false
-    },
-    {
-      "id": "8729c1fef29a",
-      "headline": "Eight-Storey Building Under Construction Collapses Near Nairobi, Killing Six",
-      "summary": "An eight-storey building under construction collapsed in Syokimau on Mombasa Road outside Nairobi while workers were pouring a ninth-floor concrete slab, killing six people; all other workers on site were accounted for. It is the second deadly Nairobi-area building collapse in three weeks.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": -1.383,
-      "lon": 36.933,
-      "locationName": "Syokimau, Nairobi, Kenya",
-      "countryCode": "KE",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/13/kenyan-building-collapse-near-nairobi-kills-six-people",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.scmp.com/news/world/africa/article/3374388/6-dead-near-kenyas-capital-after-building-collapses",
-          "domain": "scmp.com",
-          "reliability": 76,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
       "id": "20adcbd77276",
       "headline": "Florida University Board Delays Fix to Undocumented-Student Admission Ban",
       "summary": "Florida's Board of Governors postponed a vote on a proposed carve-out exempting some 'Dreamer' students from a 2027 enrollment ban at public universities. The delay leaves the fate of undocumented students' access to higher education unresolved.",
@@ -4288,72 +4474,121 @@
       "isBreaking": false
     },
     {
-      "id": "a44c80b3d5bb",
-      "headline": "49th ASEAN Summit Opens in Manila With Philippines-Australia Defense Pact Signed",
-      "summary": "The 49th ASEAN Summit opened in Manila on November 15 for three days of meetings. Philippine Defense Secretary Teodoro and Australian Ambassador Innes-Brown signed an upgraded defense cooperation agreement witnessed by Prime Minister Albanese, while Trump is expected around November 17 for sideline Quad talks.",
-      "category": "politics",
+      "id": "770f63e93d05",
+      "headline": "ULA's Vulcan Rocket Suffers First Total Mission Failure, Loses 40 Amazon Leo Satellites",
+      "summary": "United Launch Alliance's Vulcan Centaur rocket failed roughly 10 minutes after liftoff from Cape Canaveral on Nov 15, destroying 40 Amazon Leo broadband satellites. It marks ULA's first total mission failure since 2006 and a setback for Amazon's satellite internet constellation.",
+      "category": "science",
       "severity": 2,
-      "lat": 14.6,
-      "lon": 120.98,
-      "locationName": "Manila, Philippines",
-      "countryCode": "PH",
+      "lat": 28.49,
+      "lon": -80.58,
+      "locationName": "Cape Canaveral, Florida, United States",
+      "countryCode": "US",
+      "subdivision": "US-FL",
       "sources": [
         {
-          "url": "https://www.yahoo.com/news/world/articles/southeast-asian-leaders-open-annual-051315754.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.freemalaysiatoday.com/category/world/2026/11/15/philippines-australia-sign-defence-pact-with-eye-on-china",
-          "domain": "freemalaysiatoday.com",
+          "url": "https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/",
+          "domain": "spaceflightnow.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.manilatimes.net/2026/11/15/news/global-powers-converge-in-manila-as-asean-summit-kicks-off/2470176",
-          "domain": "manilatimes.net",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+          "domain": "space.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.satellitetoday.com/launch/2026/11/15/ula-set-to-return-vulcan-to-flight-in-first-amazon-leo-launch/",
+          "domain": "satellitetoday.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-15T06:06:28.892Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-16T18:06:28.892Z",
+      "trustScore": 49,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-17T18:05:41.649Z",
       "isBreaking": false
     },
     {
-      "id": "6cd72d8da203",
-      "headline": "Inter-American Development Bank Approves Country Engagement Note to Resume Venezuela Operations",
-      "summary": "The IDB's board unanimously approved a country engagement note for Venezuela, its first formal roadmap for renewed operations since halting new lending in 2018. The note sets priorities such as electricity-sector rehabilitation and food security but does not clear Venezuela's roughly $2.3 billion in arrears.",
-      "category": "economy",
+      "id": "d48d0fbdd19d",
+      "headline": "EU Naval Forces Board Russian Shadow-Fleet Tanker Sailing Under False Zimbabwe Flag",
+      "summary": "EU Operation IRINI forces boarded the tanker MV Midag in the Mediterranean on Nov 13, confirming it was sailing under a false Zimbabwean flag in violation of international maritime law. The boarding comes as the EU prepares a new round of sanctions targeting Russia's shadow fleet.",
+      "category": "conflict",
       "severity": 2,
-      "lat": 10.4806,
-      "lon": -66.9036,
-      "locationName": "Caracas, Venezuela",
-      "countryCode": "VE",
+      "lat": 36,
+      "lon": 18,
+      "locationName": "Mediterranean Sea",
+      "countryCode": "XX",
       "sources": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-13/us-treasury-weighs-loan-to-help-venezuela-pay-debt-to-idb",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
+          "url": "https://kyivindependent.com/eu-forces-board-suspected-russian-shadow-fleet-tanker-in-mediterranean-kallas-says/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.riotimesonline.com/idb-backs-return-to-venezuela-country-action-note/",
-          "domain": "riotimesonline.com",
+          "url": "https://militarnyi.com/en/news/eu-forces-board-russian-shadow-fleet-tanker-mv-midag-sailing-under-false-flag/",
+          "domain": "militarnyi.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://euromaidanpress.com/2026/11/15/eu-naval-forces-board-russian-shadow-fleet-tanker-in-mediterranean/",
+          "domain": "euromaidanpress.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
+      "trustScore": 49,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-17T18:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "abf2192c6a3e",
+      "headline": "Deutsche Bank Warns Egyptian Pound Could Swing Between 48-60 Per Dollar on Iran War Risk",
+      "summary": "Deutsche Bank forecasts the Egyptian pound could range from 48 to over 60 per US dollar depending on how the Iran conflict develops, with the Central Bank of Egypt quoting the pound at 53.39 on Nov 12. Egypt says it will not seek a new IMF program after its current Extended Fund Facility ends.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 30.04,
+      "lon": 31.24,
+      "locationName": "Cairo, Egypt",
+      "countryCode": "EG",
+      "sources": [
+        {
+          "url": "https://enterpriseam.com/egypt/2026/11/16/deutsche-bank-research-sees-egp-at-48-60-depending-on-the-iran-war-expects-cbe-to-hold-rates-into-next-year/",
+          "domain": "enterpriseam.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.investing.com/news/economy-news/egypt-economic-outlook-trimmed-slightly-due-to-iran-war-reuters-poll-4637428",
+          "domain": "investing.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.gulf-times.com/article/722304/business/iran-war-tests-egypts-resilience-after-bond-outflows-surge",
+          "domain": "gulf-times.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-17T18:05:41.649Z",
       "isBreaking": false
     },
     {
@@ -4420,37 +4655,6 @@
       "isBreaking": false
     },
     {
-      "id": "e2c868cd81f1",
-      "headline": "Chile Ends Truckers' Strike With Diesel Price Cut Deal, But Kast's Approval Keeps Falling",
-      "summary": "Chile's government reached a deal with truckers on November 12-13 to end a strike that began November 10 over diesel prices, cutting the price by 142 pesos per liter and freezing it through March 2027 at a cost of about $500 million. Some unrest and roadblocks persisted into November 14, as President Kast's approval rating fell to about 24 percent.",
-      "category": "economy",
-      "severity": 2,
-      "lat": -33.4489,
-      "lon": -70.6693,
-      "locationName": "Santiago, Chile",
-      "countryCode": "CL",
-      "sources": [
-        {
-          "url": "https://www.upi.com/Top_News/World-News/2026/11/12/latam-chile-truckers-strike-fuel-prices/6231794504929",
-          "domain": "upi.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.opb.org/article/2026/11/14/chiles-kast-faces-growing-protests-as-fuel-prices-soar-and-approval-plunges/",
-          "domain": "opb.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-15T06:06:28.892Z",
-      "lastUpdated": "2026-11-15T06:06:28.892Z",
-      "expiresAt": "2026-11-16T18:06:28.892Z",
-      "isBreaking": false
-    },
-    {
       "id": "768328a9e1fd",
       "headline": "Japan Confirms Second Bird Flu Outbreak of the Season at Chiba Poultry Farm",
       "summary": "Japan confirmed its second bird flu outbreak of the season at a poultry farm in Asahi, Chiba Prefecture on November 13, a day after an outbreak in Kameoka, Kyoto led to the culling of 200,000 birds. Chiba will cull about 40,000 egg-laying chickens and has banned transport of 5.62 million birds from 49 farms within 10 kilometers.",
@@ -4479,165 +4683,6 @@
       "firstSeen": "2026-11-15T06:06:28.892Z",
       "lastUpdated": "2026-11-15T06:06:28.892Z",
       "expiresAt": "2026-11-16T18:06:28.892Z",
-      "isBreaking": false
-    },
-    {
-      "id": "7c23fe1d90ed",
-      "headline": "Suspected Unauthorized Drone Activity Reported Over US-Operated RAF Lakenheath Base in UK",
-      "summary": "US Air Force Security Forces at RAF Lakenheath in Suffolk responded to suspected unauthorized drone activity on the evening of Nov 13; no personnel, aircraft, or infrastructure were affected and the situation was resolved. It comes amid heightened security around UK-based US bases tied to Iran-linked threat warnings.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 52.4091,
-      "lon": 0.561,
-      "locationName": "RAF Lakenheath, Suffolk, United Kingdom",
-      "countryCode": "GB",
-      "sources": [
-        {
-          "url": "https://www.cnn.com/2026/11/13/uk/us-air-force-uk-airbase-suspected-drone-intl-latam",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://theaviationist.com/2026/11/13/raf-lakenheath-sounds-alarm-drone-activity/",
-          "domain": "theaviationist.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 47,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c301c68f3a9f",
-      "headline": "Venezuela Deploys Troops to Apure After ELN Kidnaps Colombian Army Officer",
-      "summary": "Venezuela's armed forces deployed military patrols into Apure state after the ELN's Eastern War Front abducted a Colombian army sub-lieutenant near the border. Bogota and Caracas have agreed to coordinate on border security, a notable cooperation shift amid US pressure in the region.",
-      "category": "conflict",
-      "severity": 2,
-      "lat": 7.8891,
-      "lon": -67.4738,
-      "locationName": "Apure, Venezuela",
-      "countryCode": "VE",
-      "sources": [
-        {
-          "url": "https://www.latintimes.com/venezuela-deploys-troops-apure-after-eln-kidnaps-female-colombian-army-officer-601292",
-          "domain": "latintimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/venezuela-colombia-to-collaborate-on-border-security-following-kidnappings",
-          "domain": "internazionale.it",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "eda31a86bca6",
-      "headline": "EU and UK Warn Kosovo Against Curbing Hague War Crimes Court's Powers",
-      "summary": "The EU Office in Kosovo and the British Embassy in Pristina publicly warned against opposition-driven amendments that would curb the Hague-based Kosovo Specialist Chambers' powers, including letting the president pardon convicts, following the court's conviction of ex-PDK leader Hashim Thaci and three co-defendants.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 42.6629,
-      "lon": 21.1655,
-      "locationName": "Pristina, Kosovo",
-      "countryCode": "XK",
-      "sources": [
-        {
-          "url": "https://balkaninsight.com/2026/11/13/eu-uk-concerned-as-kosovo-moves-against-hague-courts-powers-again/btj/",
-          "domain": "balkaninsight.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.rferl.org/a/eu-kosovo-war-crimes-court-international-obligations/33872164.html",
-          "domain": "rferl.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a75287a49f5e",
-      "headline": "Syria's Interior Ministry to Integrate 800 Kurdish YPJ Fighters Into Special Battalions",
-      "summary": "A YPJ spokesperson said Syria's interim government agreed to integrate roughly 800 all-female YPJ fighters into two special battalions under the Interior Ministry, a compromise after the SDF's August dissolution; the Syrian government had not yet formally confirmed the agreement at time of reporting.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 33.5138,
-      "lon": 36.2765,
-      "locationName": "Damascus, Syria",
-      "countryCode": "SY",
-      "sources": [
-        {
-          "url": "https://www.voanews.com/a/all-female-kurdish-force-in-syria-to-join-interior-ministry/8223450.html",
-          "domain": "voanews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://rudaw.net/english/categories/syria/1079007",
-          "domain": "rudaw.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ad3bcdb6c211",
-      "headline": "India's October Retail Inflation Breaches RBI Upper Limit at 6.09%",
-      "summary": "India's retail inflation rose to 6.09% year-on-year in October, above the Reserve Bank of India's 6% upper tolerance limit for the first time since October 2024, driven by food inflation climbing to 8.94% as onion prices surged over 116%.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 28.6139,
-      "lon": 77.209,
-      "locationName": "New Delhi, India",
-      "countryCode": "IN",
-      "sources": [
-        {
-          "url": "https://www.business-standard.com/economy/news/retail-inflation-at-6-09-in-october-breaches-rbi-s-upper-band-after-2-yrs-126111201088_1.html",
-          "domain": "business-standard.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.businesstoday.in/latest/economy/story/retail-inflation-hits-two-year-high-of-6-09-in-october-breaches-rbis-6-limit-december-rate-hike-likely-567161-2026-11-12",
-          "domain": "businesstoday.in",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-14T06:07:44.722Z",
-      "lastUpdated": "2026-11-14T06:07:44.722Z",
-      "expiresAt": "2026-11-15T18:07:44.722Z",
       "isBreaking": false
     },
     {
@@ -4752,13 +4797,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 113,
-    "carried": 100,
-    "updated": 0,
-    "expired": 26,
+    "multiSource": 111,
+    "carried": 81,
+    "updated": 10,
+    "expired": 23,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 5.18,
-    "budgetUsd": 8
+    "costUsd": 6.06,
+    "budgetUsd": 12
   }
 }
