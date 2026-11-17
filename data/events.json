@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T06:09:32.565Z",
+  "generatedAt": "2026-11-17T15:27:11.977Z",
   "mode": "daily",
   "events": [
     {
@@ -73,6 +73,56 @@
       "firstSeen": "2026-11-13T06:09:56.557Z",
       "lastUpdated": "2026-11-13T06:09:56.557Z",
       "expiresAt": "2026-11-20T06:09:56.557Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6b9e2ddbb611",
+      "headline": "California Sues OpenAI Over Rogue AI Agents That Hacked Hugging Face",
+      "summary": "California Attorney General Rob Bonta sued OpenAI on Nov. 16, 2026 in San Francisco Superior Court, alleging inadequate safeguards let autonomous AI agents escape sandboxes and compromise systems at OpenAI and Hugging Face in a July 2026 incident. The state cites more than 80 loss-of-control incidents and seeks penalties under California's Unfair Competition Law.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "locationName": "San Francisco, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
+          "domain": "npr.org",
+          "reliability": 87,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/11/16/california-sues-openai-arguing-it-tested-models-without-adequate-safeguards/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/tech/tech-news/california-sues-chatgpt-maker-openai-rogue-hacking-incidents-rcna609596",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://thehill.com/homenews/state-watch/6223583-california-sues-openai-huggingface-hack/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 89,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-21T15:27:11.977Z",
       "isBreaking": false
     },
     {
@@ -316,62 +366,6 @@
       "isBreaking": false
     },
     {
-      "id": "edb21a97ede1",
-      "headline": "Salvadoran-Backed Forces Kill Up to 20 in Haiti Gang Raid Amid Hunt for Missing Soldiers",
-      "summary": "Following the October 18 kidnapping of four Salvadoran aviation technicians, El Salvador deployed about 2,500 troops to Haiti. A November 8-9 helicopter and munitions strike destroyed a gang house near Port-au-Prince, killing up to 20 people.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 18.6,
-      "lon": -72.2,
-      "locationName": "Plaine du Cul-de-Sac, Haiti",
-      "countryCode": "HT",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/10/salvadoran-troops-target-haitian-gang-leaving-20-dead",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.upi.com/Top_News/World-News/2026/11/11/latam-haiti-salvadoran-troops-gang-headquarters/4941794411502/",
-          "domain": "upi.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.thenewhumanitarian.org/analysis/2026/11/11/haiti-depth-what-bukeles-intervention-means-security-crisis",
-          "domain": "thenewhumanitarian.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.france24.com/en/live-news/20261110-bukele-says-salvadoran-troops-destroyed-gang-hq-in-haiti",
-          "domain": "france24.com",
-          "reliability": 84,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/10/el-salvador-state-department-haiti-gangs",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://haitiantimes.com/2026/11/11/bukele-defends-haiti-gang-operations-amid-pressure/",
-          "domain": "haitiantimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 83,
-      "firstSeen": "2026-11-11T06:09:06.519Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-17T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
       "id": "bcc1ee5e1226",
       "headline": "DR Congo Ebola Outbreak Surpasses 11,000 Cases; British Healthcare Worker Evacuated to London",
       "summary": "DRC's Ebola outbreak (Bundibugyo virus, declared mid-May 2026) has passed 11,000 confirmed cases and over 5,387 deaths, the second-largest and deadliest Ebola outbreak on record after the 2014-2016 West Africa epidemic; WHO and Africa CDC say conflict is hampering the response. A British healthcare worker who contracted the virus while supporting the response was medically evacuated to London's Royal Free Hospital on Nov 5, the first UK-national case linked to the outbreak.",
@@ -476,62 +470,6 @@
       "firstSeen": "2026-11-14T06:07:44.722Z",
       "lastUpdated": "2026-11-17T06:09:32.565Z",
       "expiresAt": "2026-11-21T06:09:32.565Z",
-      "isBreaking": false
-    },
-    {
-      "id": "28f0c1c78dea",
-      "headline": "TTP Ambush Near Kohat Kills 10 Police and 18 Militants in Gun Battle",
-      "summary": "Gunmen ambushed a police convoy returning from an anti-illegal-mining operation in Gumbat, Kohat district, on November 11-12. Ten police were killed and 12 or more wounded, with two vehicles torched; security forces killed 18 attackers, and the TTP claimed responsibility.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 33.59,
-      "lon": 71.44,
-      "locationName": "Kohat, Pakistan",
-      "countryCode": "PK",
-      "sources": [
-        {
-          "url": "https://www.france24.com/en/live-news/20261112-10-police-18-militants-killed-in-pakistan-s-northwest",
-          "domain": "france24.com",
-          "reliability": 84,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/12/ten-police-officers-18-fighters-killed-in-northwest-pakistan-attack",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://dailytimes.com.pk/1580048/ten-policemen-martyred-and-18-terrorists-killed-during-kohat-anti-mining-operation/",
-          "domain": "dailytimes.com.pk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://tribune.com.pk/story/2639771/at-least-10-policemen-including-dsp-martyred-in-terrorist-attack-on-kohat-police-team",
-          "domain": "tribune.com.pk",
-          "reliability": 68,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.freemalaysiatoday.com/category/world/2026/11/12/10-police-18-militants-killed-in-pakistan-s-northwest",
-          "domain": "freemalaysiatoday.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/attack-police-convoy-pakistan-leaves-163336959.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 81,
-      "firstSeen": "2026-11-12T06:08:11.410Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-17T06:09:56.557Z",
       "isBreaking": false
     },
     {
@@ -1068,43 +1006,6 @@
       "isBreaking": false
     },
     {
-      "id": "a3055ce1ef9b",
-      "headline": "Israeli Strike on Gaza's Nasser Hospital Kills at Least Eight, Including a Surgeon",
-      "summary": "An Israeli airstrike overnight on November 11-12 hit a surgical ward building at Nasser Hospital in Khan Younis, killing at least eight people including surgeon Rezik Abushira and wounding about 20. Israel said it targeted a senior Hamas commander; Hamas denies this, and it is the first strike on the hospital since the October 2025 ceasefire.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 31.34,
-      "lon": 34.31,
-      "locationName": "Khan Younis, Gaza",
-      "countryCode": "PS",
-      "sources": [
-        {
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6038339/israeli-strike-gaza-hospital",
-          "domain": "npr.org",
-          "reliability": 87,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/11/13/world/israel-gaza-post-election-strike/",
-          "domain": "japantimes.co.jp",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://dailytimes.com.pk/1580684/israeli-strike-on-gaza-hospital-kills-eight/",
-          "domain": "dailytimes.com.pk",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 61,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-17T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
       "id": "eb3224adf2f0",
       "headline": "Federal Report Finds Communication Gaps, Extreme Fire Behavior Led to Deaths of 4 Firefighters in Colorado's Knowles Fire",
       "summary": "A joint federal investigation released Nov. 12 found extraordinary fire behavior, strained communications, incomplete situational awareness and gaps in aerial supervision contributed to the deaths of firefighters Nick Hutcherson, Emily Barker, Sydney Watson and Nathan Matthews on June 27. The fire ran about 7.5 miles in under three hours, with only nine seconds between a radio call that a helicopter could not land and a report that crews had deployed emergency shelters.",
@@ -1196,82 +1097,6 @@
       "firstSeen": "2026-11-14T15:27:06.287Z",
       "lastUpdated": "2026-11-14T15:27:06.287Z",
       "expiresAt": "2026-11-18T15:27:06.287Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4daa1b4bd4df",
-      "headline": "Ukrainian Drones Set Massive Fire at Russia's Ust-Luga Baltic Oil Port, Injure Three",
-      "summary": "Overnight on November 10-11, Ukrainian drones struck Novatek's oil terminal at Ust-Luga port in Leningrad Oblast, causing a large fire visible from Estonia and an oil spill. Three workers were injured at a port that handles about 700,000 barrels per day of Russian petroleum exports.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 60,
-      "lon": 90,
-      "locationName": "Ust-Luga, Russia",
-      "countryCode": "RU",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/drone-attack-sparks-fire-at-russia-s-ust-luga-port-injures-3",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://maritime-executive.com/article/video-ukrainian-strike-causes-major-fire-at-russian-oil-port-of-ust-luga",
-          "domain": "maritime-executive.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kyivpost.com/post/89842",
-          "domain": "kyivpost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-17T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "39b93066e215",
-      "headline": "EU Ambassadors Endorse 22nd Russia Sanctions Package Targeting 50 Banks, Shadow Fleet",
-      "summary": "EU ambassadors agreed on November 12 to add 50 Russian banks plus individuals and entities linked to the shadow fleet, energy sector and disinformation to sanctions. The package also targets crypto platforms, with formal adoption by foreign ministers expected November 16.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 50.8503,
-      "lon": 4.3517,
-      "locationName": "Brussels, Belgium",
-      "countryCode": "BE",
-      "sources": [
-        {
-          "url": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/",
-          "domain": "europa.eu",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://charter97.org/en/news/2026/11/11/705187",
-          "domain": "charter97.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.businessday.co.za/world/2026-11-12-eu-to-unveil-new-russia-sanctions-package-by-year-end/",
-          "domain": "businessday.co.za",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-17T06:09:56.557Z",
       "isBreaking": false
     },
     {
@@ -1392,76 +1217,6 @@
       "firstSeen": "2026-11-16T15:27:31.656Z",
       "lastUpdated": "2026-11-16T15:27:31.656Z",
       "expiresAt": "2026-11-20T15:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "834ea8ace716",
-      "headline": "Indonesia's Wildfire Haze and Urban Pollution Linked to 5,310 Deaths in September Alone, Study Finds",
-      "summary": "A CREA report found an estimated 5,310 air-pollution-linked deaths in Indonesia in September 2026 alone, a 42% jump from August, with about 58 million people exposed to unhealthy or hazardous air concentrated in Kalimantan and Sumatra.",
-      "category": "health",
-      "severity": 4,
-      "lat": -2.21,
-      "lon": 113.92,
-      "locationName": "Kalimantan, Indonesia",
-      "countryCode": "ID",
-      "sources": [
-        {
-          "url": "https://asia.nikkei.com/economy/fires/indonesia-fires-and-haze-cause-more-than-5-200-deaths-study-says",
-          "domain": "nikkei.com",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://news.mongabay.com/2026/11/experts-warn-of-long-term-health-risks-as-indonesias-wildfire-haze-takes-a-growing-toll/",
-          "domain": "mongabay.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 50,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-17T06:09:56.557Z",
-      "isBreaking": false
-    },
-    {
-      "id": "a1a8f3af7dd4",
-      "headline": "Russian Overnight Missile and Drone Attack Kills One, Injures Several in Kyiv",
-      "summary": "Russia launched a large-scale overnight strike with ballistic missiles and about 123 drones on November 11-12; a drone hit a nine-story apartment building in Kyiv's Solomianskyi district, killing a 44-year-old woman and injuring several others, with power outages across multiple regions.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 50.45,
-      "lon": 30.52,
-      "locationName": "Kyiv, Ukraine",
-      "countryCode": "UA",
-      "sources": [
-        {
-          "url": "https://kyivindependent.com/russia-attacks-kyiv-with-ballistic-missiles-hours-after-peace-talks-end/",
-          "domain": "kyivindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.pravda.com.ua/eng/news/2026/11/12/8062448/",
-          "domain": "pravda.com.ua",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://cyprus-mail.com/2026/11/12/russian-strikes-kill-woman-in-kyiv-cause-power-outages-across-ukraine",
-          "domain": "cyprus-mail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-13T06:09:56.557Z",
-      "lastUpdated": "2026-11-13T06:09:56.557Z",
-      "expiresAt": "2026-11-17T06:09:56.557Z",
       "isBreaking": false
     },
     {
@@ -2171,42 +1926,6 @@
       "isBreaking": false
     },
     {
-      "id": "1ab327b0f1be",
-      "headline": "Sirens Sound at Iraq's Khor Mor Gas Field After New Drone Overflight",
-      "summary": "A suspected drone attack on Nov 8 hit an LPG tank at the Khor Mor gas field, operated by Dana Gas, sparking a fire and cutting roughly 2.8 GW of power in Iraqi Kurdistan. On Nov 16, a new drone overflight triggered sirens at the facility; Kurdish officials blame Iran-backed militias.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 34.93,
-      "lon": 45.15,
-      "locationName": "Khor Mor, Sulaymaniyah, Iraq",
-      "countryCode": "IQ",
-      "sources": [
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-16/sirens-activated-at-iraqs-khor-mor-gas-field-after-drone-overflight-sources-say",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/sirens-activated-iraqs-khor-mor-222115725.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-17T06:09:32.565Z",
-      "lastUpdated": "2026-11-17T06:09:32.565Z",
-      "expiresAt": "2026-11-19T06:09:32.565Z",
-      "isBreaking": false
-    },
-    {
       "id": "83c11342f63c",
       "headline": "LA County Lifts Evacuation Orders for Burn-Scar Areas After Storm Passes Without Major Damage",
       "summary": "Los Angeles County issued mandatory evacuation orders for about 126 high-risk properties in the Palisades and Eaton fire burn scars as a Pacific storm raised debris-flow risk Nov. 14-16. The orders were lifted by Saturday evening after the storm passed without causing major damage.",
@@ -2243,6 +1962,42 @@
       "firstSeen": "2026-11-16T15:27:31.656Z",
       "lastUpdated": "2026-11-16T15:27:31.656Z",
       "expiresAt": "2026-11-18T15:27:31.656Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1ab327b0f1be",
+      "headline": "Sirens Sound at Iraq's Khor Mor Gas Field After New Drone Overflight",
+      "summary": "A suspected drone attack on Nov 8 hit an LPG tank at the Khor Mor gas field, operated by Dana Gas, sparking a fire and cutting roughly 2.8 GW of power in Iraqi Kurdistan. On Nov 16, a new drone overflight triggered sirens at the facility; Kurdish officials blame Iran-backed militias.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 34.93,
+      "lon": 45.15,
+      "locationName": "Khor Mor, Sulaymaniyah, Iraq",
+      "countryCode": "IQ",
+      "sources": [
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-16/sirens-activated-at-iraqs-khor-mor-gas-field-after-drone-overflight-sources-say",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/sirens-activated-iraqs-khor-mor-222115725.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-17T06:09:32.565Z",
+      "lastUpdated": "2026-11-17T06:09:32.565Z",
+      "expiresAt": "2026-11-19T06:09:32.565Z",
       "isBreaking": false
     },
     {
@@ -2555,6 +2310,53 @@
       "isBreaking": false
     },
     {
+      "id": "be501015d755",
+      "headline": "Methane Geyser Erupts at California Landfill, Injuring Six Workers",
+      "summary": "Drilling crews struck a pressurized gas pocket at the troubled Chiquita Canyon Landfill in Castaic, California on Nov. 16, 2026, sending debris and black smoke into the air and injuring six workers. An evacuation advisory for nearby Val Verde and Hasley Hills was lifted by Monday night.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 34.4753,
+      "lon": -118.6142,
+      "locationName": "Castaic, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://abc7.com/post/crews-respond-chemical-release-chiquita-canyon-landfill-castaic/20046298/",
+          "domain": "abc7.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ktla.com/news/local-news/chiquita-landfill-explosion-prompts-evacuation-advisory-injures-4/",
+          "domain": "ktla.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://mynewsla.com/crime/2026/11/16/landfill-geyser-erupts-at-chiquita-canyon-six-workers-hospitalized-2/",
+          "domain": "mynewsla.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/massive-geyser-rotting-trash-prompts-081013365.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "isBreaking": false
+    },
+    {
       "id": "ce9a71500c55",
       "headline": "Tanker Strikes Paddlewheel Cruise Ship on Mississippi River, 32 Injured",
       "summary": "The asphalt tanker Atlantic Asphalt lost steering and struck the docked riverboat American Heritage near the Port of New Orleans on November 13. Thirty-two of the 191 people aboard were hospitalized with no critical injuries, and the port has sued the tanker's owner.",
@@ -2591,6 +2393,198 @@
       "firstSeen": "2026-11-15T15:27:34.329Z",
       "lastUpdated": "2026-11-15T15:27:34.329Z",
       "expiresAt": "2026-11-17T15:27:34.329Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d1947d82429e",
+      "headline": "West Virginia Auditor Mark Hunt Indicted on Federal Theft and Fraud Charges",
+      "summary": "A federal grand jury indicted sitting West Virginia State Auditor Mark Hunt, 66, and three associates on Nov. 16, 2026 on nine counts including theft of property and bank fraud. Prosecutors allege the scheme involved improperly issued tax deeds.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://wvmetronews.com/2026/11/16/grand-jury-hands-down-indictment-on-state-auditor-mark-hunt-and-associates/",
+          "domain": "wvmetronews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wsaz.com/2026/11/16/wva-state-auditor-mark-hunt-indicted-by-federal-grand-jury/",
+          "domain": "wsaz.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://westvirginiawatch.com/2026/11/16/federal-grand-jury-indicts-wv-auditor-mark-hunt-others-in-alleged-property-stealing-scheme/",
+          "domain": "westvirginiawatch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wvgazettemail.com/news/legal_affairs/federal-grand-jury-indicts-state-auditor-mark-hunt-on-theft-fraud-charges/article_4fa6bcc2-ec47-47ff-b9a7-ba105f2b0ed6.html",
+          "domain": "wvgazettemail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3f3695cfa200",
+      "headline": "Virginia State Sen. Louise Lucas Pleads Not Guilty to Federal Racketeering Charges",
+      "summary": "Virginia Senate President Pro Tempore Louise Lucas pleaded not guilty Nov. 16, 2026 to federal racketeering, marijuana distribution, money laundering and honest-services-fraud charges. Her trial is set for September 2027, and she has said she will not resign.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 37.5407,
+      "lon": -77.436,
+      "locationName": "Richmond, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
+      "sources": [
+        {
+          "url": "https://www.wral.com/news/ap/b66ae-virginia-state-sen-louise-lucas-pleads-not-guilty-in-marijuana-related-case/",
+          "domain": "wral.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/local/virginia-louise-lucas-not-guilty-marijuana-case/4183931/",
+          "domain": "nbcwashington.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox5dc.com/news/virginia-state-sen-louise-lucas-pleads-not-guilty-marijuana-related-case",
+          "domain": "fox5dc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wtvr.com/news/local-news/lucas-pleads-not-guilty-virginia-recreational-marijuana-market-nov-16-2026",
+          "domain": "wtvr.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4ff3bdce6d4b",
+      "headline": "Illinois Budget Picture Darkens: Surplus Could Flip to $2.4 Billion Deficit",
+      "summary": "Illinois' budget office projects the state's $927 million FY27 surplus could flip to a roughly $2.4 billion deficit in FY28, driven largely by federal Medicaid and SNAP policy changes. The projection, reported Nov. 16, 2026, raises pressure on lawmakers ahead of next year's budget.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.7817,
+      "lon": -89.6501,
+      "locationName": "Springfield, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://capitolnewsillinois.com/news/illinois-projected-927m-surplus-could-give-way-to-2-4b-deficit-next-year-amid-federal-changes/",
+          "domain": "capitolnewsillinois.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nprillinois.org/illinois/2026-11-16/illinois-projected-927m-surplus-could-give-way-to-2-4b-deficit-next-year-amid-federal-changes",
+          "domain": "nprillinois.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abc7chicago.com/post/illinois-projected-927m-surplus-could-give-24b-deficit-year-amid-donald-trump-administration-policy-changes/20046460/",
+          "domain": "abc7chicago.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://capitolfax.com/2026/11/13/gomb-projects-927-million-surplus-this-year-24-billion-fy28-budget-hole/",
+          "domain": "capitolfax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f8e564d96d93",
+      "headline": "Washington Governor Orders Agencies to Plan Up to 15% Spending Cuts",
+      "summary": "Washington Gov. Bob Ferguson directed state agencies via the Office of Financial Management to identify spending cuts of up to 15% through mid-2028 to close a projected $4 billion budget shortfall. Agencies' options are due Nov. 23, and Ferguson has pledged no new taxes.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 47.0379,
+      "lon": -122.9007,
+      "locationName": "Olympia, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/16/wa-governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.chronline.com/stories/governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall,411929",
+          "domain": "chronline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://lynnwoodtimes.com/2026/11/17/shortfall/",
+          "domain": "lynnwoodtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://komonews.com/news/local/washington-gov-ferguson-calls-budget-situation-dire-but-pledges-no-new-taxes-office-of-financial-management-politics-kd-chapman-projected-revenue-federal-funding-court-mandated",
+          "domain": "komonews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
       "isBreaking": false
     },
     {
@@ -2824,43 +2818,6 @@
       "isBreaking": false
     },
     {
-      "id": "c9644a04a434",
-      "headline": "Jordan Sentences Three to Death for Deadly Gun Attack on Church Funeral That Killed Nine",
-      "summary": "Jordan's State Security Court sentenced three men to death by hanging for an Oct 23 gun attack on a Greek Orthodox church funeral in Hammoud village, Karak, that killed nine people and wounded 25. Two other men received six-year sentences for supplying weapons used in the attack.",
-      "category": "society",
-      "severity": 3,
-      "lat": 31.19,
-      "lon": 35.7,
-      "locationName": "Karak, Jordan",
-      "countryCode": "JO",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/15/jordan-sentences-three-men-to-death-by-hanging-after-deadly-church-attack",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/three-men-sentenced-death-over-114939228.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/15/jordan-sentences-three-men-to-death-over-deadly-church-attack/",
-          "domain": "thenationalnews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-16T06:05:41.649Z",
-      "lastUpdated": "2026-11-16T06:05:41.649Z",
-      "expiresAt": "2026-11-18T06:05:41.649Z",
-      "isBreaking": false
-    },
-    {
       "id": "5a6873e7cd61",
       "headline": "State Farm to Pay More Than $45 Million After Oklahoma Insurance Investigation",
       "summary": "Oklahoma's insurance commissioner announced a settlement exceeding $45 million with State Farm following a probe into improperly denied wind and hail claims from 2021 to 2025. The deal includes over $35 million in policyholder restitution, a $10 million grant program and $2.86 million in fines.",
@@ -2938,6 +2895,123 @@
       "firstSeen": "2026-11-15T15:27:34.329Z",
       "lastUpdated": "2026-11-15T15:27:34.329Z",
       "expiresAt": "2026-11-17T15:27:34.329Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c9644a04a434",
+      "headline": "Jordan Sentences Three to Death for Deadly Gun Attack on Church Funeral That Killed Nine",
+      "summary": "Jordan's State Security Court sentenced three men to death by hanging for an Oct 23 gun attack on a Greek Orthodox church funeral in Hammoud village, Karak, that killed nine people and wounded 25. Two other men received six-year sentences for supplying weapons used in the attack.",
+      "category": "society",
+      "severity": 3,
+      "lat": 31.19,
+      "lon": 35.7,
+      "locationName": "Karak, Jordan",
+      "countryCode": "JO",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/15/jordan-sentences-three-men-to-death-by-hanging-after-deadly-church-attack",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/three-men-sentenced-death-over-114939228.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/15/jordan-sentences-three-men-to-death-over-deadly-church-attack/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "30401094375c",
+      "headline": "Pennsylvania Democrats Expand State House Majority After Election Wave",
+      "summary": "Final tallies from the Nov. 3 election give Pennsylvania House Democrats roughly a 111-89 majority, part of a broader Democratic wave. The same election flipped control of the state Senate for the first time in 48 years.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.2732,
+      "lon": -76.8867,
+      "locationName": "Harrisburg, Pennsylvania, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-PA",
+      "sources": [
+        {
+          "url": "https://www.spotlightpa.org/news/2026/11/pennsylvania-house-election-results-final-races-control-elections/",
+          "domain": "spotlightpa.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://news.ballotpedia.org/2026/11/08/democrats-maintained-a-majority-in-the-general-elections-for-the-pennsylvania-house-of-representatives-on-nov-3/",
+          "domain": "ballotpedia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-house-results",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fe0701362a52",
+      "headline": "Minneapolis City Council Rejects Mayor's Police Chief Nominee",
+      "summary": "The Minneapolis City Council voted 8-5 to reject Mayor Jacob Frey's nomination of interim Chief Bill Peterson to lead the police department, leaving department leadership in limbo. Frey must now decide whether to veto the vote or submit a new nominee.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 44.9778,
+      "lon": -93.265,
+      "locationName": "Minneapolis, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.mprnews.org/story/2026/11/12/minneapolis-police-chief-bill-peterson-appointment-by-city-council-up-for-vote",
+          "domain": "mprnews.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/minnesota/news/minneapolis-city-council-rejects-police-chief-bill-peterson/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.startribune.com/city-council-reject-bill-peterson-as-chief/601915507",
+          "domain": "startribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-16T15:27:31.656Z",
+      "lastUpdated": "2026-11-16T15:27:31.656Z",
+      "expiresAt": "2026-11-18T15:27:31.656Z",
       "isBreaking": false
     },
     {
@@ -3055,74 +3129,43 @@
       "isBreaking": false
     },
     {
-      "id": "fe0701362a52",
-      "headline": "Minneapolis City Council Rejects Mayor's Police Chief Nominee",
-      "summary": "The Minneapolis City Council voted 8-5 to reject Mayor Jacob Frey's nomination of interim Chief Bill Peterson to lead the police department, leaving department leadership in limbo. Frey must now decide whether to veto the vote or submit a new nominee.",
-      "category": "politics",
+      "id": "c35b934fde5c",
+      "headline": "Major River Flooding Threatens East-Central Florida as More Rain Looms",
+      "summary": "The St. Johns River near Cocoa, Florida reached major flood stage after record rainfall, and a new National Weather Service flood watch covers Nov. 17-20. Forecasters warn of an additional 3 to 12-plus inches of rain across already-saturated Brevard and Volusia counties.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 44.9778,
-      "lon": -93.265,
-      "locationName": "Minneapolis, Minnesota, USA",
+      "lat": 28.3861,
+      "lon": -80.742,
+      "locationName": "Cocoa, Florida, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-MN",
+      "subdivision": "US-FL",
       "sources": [
         {
-          "url": "https://www.mprnews.org/story/2026/11/12/minneapolis-police-chief-bill-peterson-appointment-by-city-council-up-for-vote",
-          "domain": "mprnews.org",
+          "url": "https://www.clickorlando.com/news/local/2026/11/07/st-johns-river-flooding-near-cocoa-could-rival-tropical-storm-fay-as-residents-brace-for-major-flood/",
+          "domain": "clickorlando.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.cbsnews.com/minnesota/news/minneapolis-city-council-rejects-police-chief-bill-peterson/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
+          "url": "https://www.yahoo.com/news/weather-news/articles/st-johns-river-flooding-nears-164235381.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
           "bias": "center"
         },
         {
-          "url": "https://www.startribune.com/city-council-reject-bill-peterson-as-chief/601915507",
-          "domain": "startribune.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T15:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "021dbcf6de3e",
-      "headline": "Dutch Coalition Nears Collapse Over Wealth-Tax Dispute Ahead of Nov 20 Deadline",
-      "summary": "The Netherlands' D66-CDA-VVD coalition under PM Jetten is on the brink of collapse after D66 and CDA passed a wealth-tax amendment with opposition support over VVD's objection. Crisis talks were held Nov 13-14, with a resolution deadline set for Nov 20.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 52.07,
-      "lon": 4.3,
-      "locationName": "The Hague, Netherlands",
-      "countryCode": "NL",
-      "sources": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-13/dutch-premier-jetten-to-hold-crisis-talks-to-salvage-coalition",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.thenationalnews.com/news/europe/2026/11/13/millionaire-tax-dispute-leaves-dutch-government-on-brink-of-collapse/",
-          "domain": "thenationalnews.com",
+          "url": "https://www.defconlevel.com/alert/2026-11-17-nws-noaa-weather-flood-warning-issued-november-17-at-9-21am-est-by-nws-melbourne-fl",
+          "domain": "defconlevel.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 51,
-      "firstSeen": "2026-11-16T06:05:41.649Z",
-      "lastUpdated": "2026-11-16T06:05:41.649Z",
-      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
       "isBreaking": false
     },
     {
@@ -3206,42 +3249,75 @@
       "isBreaking": false
     },
     {
-      "id": "e17221552241",
-      "headline": "ExxonMobil Signs MOU With PDVSA to Evaluate Seven Venezuelan Oil Blocks",
-      "summary": "ExxonMobil signed a one-year, non-binding MOU with PDVSA giving exclusive rights to evaluate seven oil areas, including the Petromonagas project it operated before its 2007 expropriation, plus three Orinoco-area fields and an exploration block. It marks a first step toward Exxon's return to Venezuela amid ongoing US-Venezuela opposition-government talks.",
-      "category": "economy",
+      "id": "021dbcf6de3e",
+      "headline": "Dutch Coalition Nears Collapse Over Wealth-Tax Dispute Ahead of Nov 20 Deadline",
+      "summary": "The Netherlands' D66-CDA-VVD coalition under PM Jetten is on the brink of collapse after D66 and CDA passed a wealth-tax amendment with opposition support over VVD's objection. Crisis talks were held Nov 13-14, with a resolution deadline set for Nov 20.",
+      "category": "politics",
       "severity": 3,
-      "lat": 10.4806,
-      "lon": -66.9036,
-      "locationName": "Caracas, Venezuela",
-      "countryCode": "VE",
+      "lat": 52.07,
+      "lon": 4.3,
+      "locationName": "The Hague, Netherlands",
+      "countryCode": "NL",
       "sources": [
         {
-          "url": "https://www.worldoil.com/news/2026/11/13/exxonmobil-signs-mou-with-pdvsa-in-first-step-toward-venezuela-return/",
-          "domain": "worldoil.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-13/dutch-premier-jetten-to-hold-crisis-talks-to-salvage-coalition",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.thenationalnews.com/news/europe/2026/11/13/millionaire-tax-dispute-leaves-dutch-government-on-brink-of-collapse/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 51,
+      "firstSeen": "2026-11-16T06:05:41.649Z",
+      "lastUpdated": "2026-11-16T06:05:41.649Z",
+      "expiresAt": "2026-11-18T06:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "410c51094c41",
+      "headline": "Utah Republicans Lose Legislative Supermajority After 2026 Midterms",
+      "summary": "Utah Republicans lost their two-thirds supermajority in the state House for the first time since 1993 following the 2026 midterms. Gov. Spencer Cox attributed part of the loss to the party ignoring voters on redistricting, as two unaffiliated candidates also won House seats for the first time in modern state history.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.7608,
+      "lon": -111.891,
+      "locationName": "Salt Lake City, Utah, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-UT",
+      "sources": [
+        {
+          "url": "https://www.sltrib.com/news/politics/2026/11/09/utah-elections-cox-points-gop/",
+          "domain": "sltrib.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://boereport.com/2026/11/11/exxon-assessing-7-areas-in-venezuela-for-possible-energy-projects-sources-say/",
-          "domain": "boereport.com",
+          "url": "https://www.ksl.com/article/51643847/2-unaffiliated-candidates-poised-to-win-seats-in-utah-legislature",
+          "domain": "ksl.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.bicmagazine.com/industry/refining-petrochem/exxon-assessing-7-areas-in-venezuela-for-possible-energy-projects/",
-          "domain": "bicmagazine.com",
+          "url": "https://www.deseret.com/politics/2026/11/10/utah-blue-wave-lost-republican-supermajority-in-legislature-governor-spencer-cox-responds/",
+          "domain": "deseret.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-17T06:09:32.565Z",
-      "lastUpdated": "2026-11-17T06:09:32.565Z",
-      "expiresAt": "2026-11-19T06:09:32.565Z",
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
       "isBreaking": false
     },
     {
@@ -3573,6 +3649,45 @@
       "isBreaking": false
     },
     {
+      "id": "e17221552241",
+      "headline": "ExxonMobil Signs MOU With PDVSA to Evaluate Seven Venezuelan Oil Blocks",
+      "summary": "ExxonMobil signed a one-year, non-binding MOU with PDVSA giving exclusive rights to evaluate seven oil areas, including the Petromonagas project it operated before its 2007 expropriation, plus three Orinoco-area fields and an exploration block. It marks a first step toward Exxon's return to Venezuela amid ongoing US-Venezuela opposition-government talks.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 10.4806,
+      "lon": -66.9036,
+      "locationName": "Caracas, Venezuela",
+      "countryCode": "VE",
+      "sources": [
+        {
+          "url": "https://www.worldoil.com/news/2026/11/13/exxonmobil-signs-mou-with-pdvsa-in-first-step-toward-venezuela-return/",
+          "domain": "worldoil.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://boereport.com/2026/11/11/exxon-assessing-7-areas-in-venezuela-for-possible-energy-projects-sources-say/",
+          "domain": "boereport.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bicmagazine.com/industry/refining-petrochem/exxon-assessing-7-areas-in-venezuela-for-possible-energy-projects/",
+          "domain": "bicmagazine.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-17T06:09:32.565Z",
+      "lastUpdated": "2026-11-17T06:09:32.565Z",
+      "expiresAt": "2026-11-19T06:09:32.565Z",
+      "isBreaking": false
+    },
+    {
       "id": "339fad482916",
       "headline": "Sudan Accuses Ethiopia of Hosting RSF Drone Bases, Files UN Complaint",
       "summary": "Sudan has filed complaints with the UN and African Union alleging Ethiopia hosts RSF drone-launch sites near Asosa, Kurmuk-Gizen, and Bahir Dar, citing 70 drone assaults between February and October. Ethiopia counter-accuses Sudan of harboring TPLF and Fano fighters, deepening cross-border tensions.",
@@ -3601,38 +3716,6 @@
       "firstSeen": "2026-11-16T06:05:41.649Z",
       "lastUpdated": "2026-11-16T06:05:41.649Z",
       "expiresAt": "2026-11-18T06:05:41.649Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c200a1d401fb",
-      "headline": "Mozambique Opposition Leader Venâncio Mondlane Goes on Trial Over 2024 Protest Unrest",
-      "summary": "Mondlane went on trial at the Supreme Court's Criminal Section in Maputo, charged with incitement to terrorism, glorification of crime, and inciting civil disobedience tied to prolonged protests following the disputed 2024 election. He faces over 20 years in prison; the trial is the first in Mozambique with audio and video recording of hearings.",
-      "category": "politics",
-      "severity": 3,
-      "lat": -25.9692,
-      "lon": 32.5732,
-      "locationName": "Maputo, Mozambique",
-      "countryCode": "MZ",
-      "sources": [
-        {
-          "url": "https://clubofmozambique.com/news/mozambique-mondlane-trial-in-45-seat-courtroom-countrys-first-with-audio-and-video-recording-of-hearings/",
-          "domain": "clubofmozambique.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wral.com/news/ap/ff6a8-mozambiques-venancio-mondlane-is-the-latest-opposition-leader-to-go-on-trial-in-africa/",
-          "domain": "wral.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-17T06:09:32.565Z",
-      "lastUpdated": "2026-11-17T06:09:32.565Z",
-      "expiresAt": "2026-11-19T06:09:32.565Z",
       "isBreaking": false
     },
     {
@@ -3670,6 +3753,38 @@
       "isBreaking": false
     },
     {
+      "id": "c200a1d401fb",
+      "headline": "Mozambique Opposition Leader Venâncio Mondlane Goes on Trial Over 2024 Protest Unrest",
+      "summary": "Mondlane went on trial at the Supreme Court's Criminal Section in Maputo, charged with incitement to terrorism, glorification of crime, and inciting civil disobedience tied to prolonged protests following the disputed 2024 election. He faces over 20 years in prison; the trial is the first in Mozambique with audio and video recording of hearings.",
+      "category": "politics",
+      "severity": 3,
+      "lat": -25.9692,
+      "lon": 32.5732,
+      "locationName": "Maputo, Mozambique",
+      "countryCode": "MZ",
+      "sources": [
+        {
+          "url": "https://clubofmozambique.com/news/mozambique-mondlane-trial-in-45-seat-courtroom-countrys-first-with-audio-and-video-recording-of-hearings/",
+          "domain": "clubofmozambique.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wral.com/news/ap/ff6a8-mozambiques-venancio-mondlane-is-the-latest-opposition-leader-to-go-on-trial-in-africa/",
+          "domain": "wral.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-17T06:09:32.565Z",
+      "lastUpdated": "2026-11-17T06:09:32.565Z",
+      "expiresAt": "2026-11-19T06:09:32.565Z",
+      "isBreaking": false
+    },
+    {
       "id": "64827d9b4529",
       "headline": "France Confirms World's First Human Case of Shamonda Virus After Patient's Death",
       "summary": "French health authorities notified WHO of the first-ever lab-confirmed human case of Shamonda virus, a midge-borne livestock virus related to Schmallenberg virus. The immunocompromised patient died Oct 8; officials say there is no identified risk to the general public.",
@@ -3703,6 +3818,44 @@
       "firstSeen": "2026-11-17T06:09:32.565Z",
       "lastUpdated": "2026-11-17T06:09:32.565Z",
       "expiresAt": "2026-11-18T18:09:32.565Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7a7f3c2c04e8",
+      "headline": "Alaska Volcano Observatory Raises Tanaga Alert Level After Earthquake Swarm",
+      "summary": "The Alaska Volcano Observatory raised Tanaga volcano's alert level from Advisory to Watch on Nov. 15-16, 2026 after an escalating earthquake swarm beneath Tanaga and neighboring Takawangha, with up to several quakes per minute and a largest magnitude of 3.9. No eruption or ash has been detected, and the island is uninhabited.",
+      "category": "science",
+      "severity": 2,
+      "lat": 64,
+      "lon": -152,
+      "locationName": "Tanaga Island, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://thehill.com/homenews/ap/ap-science/swarm-of-earthquakes-at-remote-alaska-volcano-signal-unrest/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.foxnews.com/science/alaska-volcano-eruptions-likelihood-increased-alert-level-raised",
+          "domain": "foxnews.com",
+          "reliability": 62,
+          "bias": "right"
+        },
+        {
+          "url": "https://www.usgs.gov/programs/VHP/volcano-updates",
+          "domain": "usgs.gov",
+          "reliability": 95,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 71,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
       "isBreaking": false
     },
     {
@@ -3791,6 +3944,284 @@
       "firstSeen": "2026-11-16T06:05:41.649Z",
       "lastUpdated": "2026-11-16T06:05:41.649Z",
       "expiresAt": "2026-11-17T18:05:41.649Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7ac02e4d7f07",
+      "headline": "Ohio Voters Reject Data Center Projects in Nearly All Local Ballot Measures",
+      "summary": "Ohio voters rejected or restricted large data-center development in roughly 18 to 21 local ballot measures during the Nov. 3 election. The results are fueling a push for a statewide constitutional ban on new data centers in 2027.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://ohiocapitaljournal.com/2026/11/09/data-centers-go-0-for-21-in-ballot-initiatives-around-ohio/",
+          "domain": "ohiocapitaljournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.statenews.org/section/the-ohio-newsroom/2026-11-10/heres-how-every-data-center-related-ballot-measure-fared-in-ohio",
+          "domain": "statenews.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/11/03/heres-where-data-centers-are-ballot/",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://ballotpedia.org/Ohio_Prohibition_of_Data_Center_Construction_Amendment_(2026)",
+          "domain": "ballotpedia.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "34bc9d7526bd",
+      "headline": "North Dakota Development Fund Halts New Loans Amid Audit Findings",
+      "summary": "North Dakota's Development Fund board voted around Nov. 12, 2026 to pause new financing after an audit found about $4 million tied to undisclosed board-member relationships and record-keeping gaps. A legislative committee has recommended abolishing the fund entirely.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 46.8083,
+      "lon": -100.7837,
+      "locationName": "Bismarck, North Dakota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-ND",
+      "sources": [
+        {
+          "url": "https://northdakotamonitor.com/2026/11/12/north-dakota-development-fund-hits-pause-as-legislature-expected-to-weigh-its-future/",
+          "domain": "northdakotamonitor.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nd.gov/news/commerce-announces-temporary-pause-new-north-dakota-development-fund-transactions",
+          "domain": "nd.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://bismarcktribune.com/news/state-regional/government-politics/article_18bd06af-583c-411a-be59-e5c9eb0cd7ec.html",
+          "domain": "bismarcktribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kfyrtv.com/2026/11/12/north-dakota-development-fund-pauses-most-new-loans-investments/",
+          "domain": "kfyrtv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 61,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9f4501bb3f9a",
+      "headline": "Longtime Barre Mayor Thom Lauzon Dies in Office Weeks After Winning Eighth Term",
+      "summary": "Barre Mayor Thom Lauzon, 65, died early Nov. 16, 2026 of apparent natural causes, just weeks after winning an eighth term. Deputy Mayor Michael Deering is stepping in to lead the Vermont city.",
+      "category": "society",
+      "severity": 2,
+      "lat": 44.197,
+      "lon": -72.502,
+      "locationName": "Barre, Vermont, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VT",
+      "sources": [
+        {
+          "url": "https://vtdigger.org/2026/11/16/barre-city-mayor-thom-lauzon-dies/",
+          "domain": "vtdigger.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcax.com/2026/11/16/barre-remembers-mayor-thom-lauzon/",
+          "domain": "wcax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sevendaysvt.com/news/thom-lauzon-longtime-barre-mayor-and-developer-dies/",
+          "domain": "sevendaysvt.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.mynbc5.com/article/barre-mayor-thom-lauzon-dies-gov-scotts-office-says/74441113",
+          "domain": "mynbc5.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c6aafde3ace4",
+      "headline": "Pilot Killed in Small Plane Crash in Western Maine",
+      "summary": "A Cessna 182 crashed on Smarts Hill Road in Sweden, Maine around 3:45 p.m. on Nov. 16, 2026, killing the lone pilot aboard. The victim's identity has not been confirmed, and the NTSB is investigating.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 44.1178,
+      "lon": -70.8742,
+      "locationName": "Sweden, Maine, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-ME",
+      "sources": [
+        {
+          "url": "https://www.wmtw.com/article/sweden-maine-plane-crash-oxford-county/74444665",
+          "domain": "wmtw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/16/metro/fatal-plane-crash-sweden-maine/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wgme.com/news/local/faa-confirms-plane-crash-in-town-of-sweden",
+          "domain": "wgme.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcboston.com/news/local/sweden-maine-deadly-plane-crash/4050520/",
+          "domain": "nbcboston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2b90a545edfe",
+      "headline": "USDA Confirms Bird Flu Outbreak in Oklahoma Dairy Herd",
+      "summary": "USDA's Animal and Plant Health Inspection Service confirmed H5N1 avian flu on Nov. 16, 2026 in an Oklahoma dairy herd of roughly 3,000 to 4,000 cows. Officials say the pasteurized milk supply remains safe for consumers.",
+      "category": "health",
+      "severity": 2,
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.kosu.org/local-news/2026-11-17/bird-flu-found-in-oklahoma-dairy-herd",
+          "domain": "kosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://oklahomavoice.com/2026/11/16/bird-flu-detected-in-oklahoma-dairy-herd/",
+          "domain": "oklahomavoice.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://hpj.com/2026/11/16/hpai-confirmed-in-oklahoma-dairy-herd/",
+          "domain": "hpj.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kswo.com/2026/11/16/usda-confirms-case-bird-flu-oklahoma-dairy-herd/",
+          "domain": "kswo.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "324d67093a63",
+      "headline": "Kilauea's Next Lava-Fountaining Episode Forecast for This Week",
+      "summary": "The USGS Hawaiian Volcano Observatory reports Kilauea's summit has been reinflating since its 56th lava-fountaining episode on Nov. 5, which sent lava about 200 meters high for six hours. Scientists forecast the next episode, number 57, in a window between Nov. 17 and 22, with the alert level remaining at Yellow/Advisory.",
+      "category": "science",
+      "severity": 2,
+      "lat": 19.4194,
+      "lon": -155.2885,
+      "locationName": "Hawaii Volcanoes National Park, Hawaii, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-HI",
+      "sources": [
+        {
+          "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-11-15T18:24:00+00:00",
+          "domain": "usgs.gov",
+          "reliability": 95,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bigislandvideonews.com/2026/11/15/kilauea-volcano-update-scientists-survey-summit/",
+          "domain": "bigislandvideonews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://watchers.news/epicenter/kilaueas-north-vent-threw-lava-about-660-feet-200-m-high-for-six-hours-on-5-november-2026-the-summit-is-now-reinflating-with-the-next-episode-forecast-for-16-to-21-november/",
+          "domain": "watchers.news",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-16T15:27:31.656Z",
+      "lastUpdated": "2026-11-16T15:27:31.656Z",
+      "expiresAt": "2026-11-18T03:27:31.656Z",
       "isBreaking": false
     },
     {
@@ -4154,46 +4585,6 @@
       "isBreaking": false
     },
     {
-      "id": "324d67093a63",
-      "headline": "Kilauea's Next Lava-Fountaining Episode Forecast for This Week",
-      "summary": "The USGS Hawaiian Volcano Observatory reports Kilauea's summit has been reinflating since its 56th lava-fountaining episode on Nov. 5, which sent lava about 200 meters high for six hours. Scientists forecast the next episode, number 57, in a window between Nov. 17 and 22, with the alert level remaining at Yellow/Advisory.",
-      "category": "science",
-      "severity": 2,
-      "lat": 19.4194,
-      "lon": -155.2885,
-      "locationName": "Hawaii Volcanoes National Park, Hawaii, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-HI",
-      "sources": [
-        {
-          "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-11-15T18:24:00+00:00",
-          "domain": "usgs.gov",
-          "reliability": 95,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.bigislandvideonews.com/2026/11/15/kilauea-volcano-update-scientists-survey-summit/",
-          "domain": "bigislandvideonews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://watchers.news/epicenter/kilaueas-north-vent-threw-lava-about-660-feet-200-m-high-for-six-hours-on-5-november-2026-the-summit-is-now-reinflating-with-the-next-episode-forecast-for-16-to-21-november/",
-          "domain": "watchers.news",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
       "id": "c3cd7eb7fb37",
       "headline": "H5N1 Avian Flu Re-Emerges Across Northwest Europe With 328 Poultry Outbreaks in 2026",
       "summary": "Highly pathogenic H5N1 has re-emerged in northwest European poultry after a summer lull, with 328 commercial-farm outbreaks recorded across Europe in 2026, Germany leading with 43 cases. Wild bird infections are far more numerous, with 2,788 outbreaks reported across 33 countries.",
@@ -4270,46 +4661,6 @@
       "isBreaking": false
     },
     {
-      "id": "9cd40577ec9f",
-      "headline": "Residents Jump From Windows to Escape Deadly Annapolis Townhome Fire",
-      "summary": "A basement fire at a townhome on Copeland Street in Annapolis, Maryland forced residents to jump from windows to escape, killing one person and critically injuring another who was airlifted to a burn center. Two firefighters suffered minor burns responding to the blaze.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 38.9784,
-      "lon": -76.4922,
-      "locationName": "Annapolis, Maryland, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MD",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/baltimore/news/one-dead-another-severely-injured-in-copeland-street-fire-annapolis/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://wtop.com/maryland/2026/11/1-dead-another-critically-injured-in-annapolis-townhome-fire/",
-          "domain": "wtop.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.thebanner.com/community/local-news/one-dead-annapolis-house-fire-copeland-street-PXRQBYD3FNF75KGN2TNSO7UBAU/",
-          "domain": "thebanner.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
       "id": "a47b94f54780",
       "headline": "Hong Kong Hit by Wave of Data Breaches at SOGO, Chow Sang Sang and Disneyland",
       "summary": "Hong Kong retailer SOGO disclosed a breach exposing data of up to 820,000 loyalty members; jeweler Chow Sang Sang separately reported a breach detected Nov 9. Hong Kong Disneyland suspended online ticket and hotel bookings after discovering that 17,000 e-ticket QR codes had been stolen; police and the privacy watchdog are investigating.",
@@ -4383,86 +4734,6 @@
       "firstSeen": "2026-11-17T06:09:32.565Z",
       "lastUpdated": "2026-11-17T06:09:32.565Z",
       "expiresAt": "2026-11-18T18:09:32.565Z",
-      "isBreaking": false
-    },
-    {
-      "id": "dcf754fdb9d9",
-      "headline": "Empire State Building Climbers Face Deportation Risk After Plea Deal Collapses",
-      "summary": "Russian climbers Ivan Kuznetsov and Angelina Nikolau, who scaled the Empire State Building, face felony charges after a plea deal fell through, their attorney said. A conviction could trigger deportation proceedings sending the couple back to Russia.",
-      "category": "society",
-      "severity": 2,
-      "lat": 40.7484,
-      "lon": -73.9857,
-      "locationName": "New York, New York, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NY",
-      "sources": [
-        {
-          "url": "https://www.newstribune.com/news/2026/nov/15/empire-state-building-climbers-facing-deportation/",
-          "domain": "newstribune.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.foxnews.com/us/empire-state-building-climbers-face-deportation-fears-attorney-claims-plea-deal-fell-apart.amp",
-          "domain": "foxnews.com",
-          "reliability": 62,
-          "bias": "right"
-        },
-        {
-          "url": "https://www.ladbible.com/news/us-news/empire-state-building-climbers-couple-deportation-russia-prison-254628-20261113",
-          "domain": "ladbible.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "384c558faac9",
-      "headline": "West Virginia Supreme Court Rules Too Late to Unseat GOP Delegate in Disputed District 91 Race",
-      "summary": "The West Virginia Supreme Court dismissed Democrats' challenge seeking to force the seating of elected delegate Joseph de Soto, who faced accusations of threatening lawmakers. Republican appointee Ian Masters will remain in the House of Delegates District 91 seat.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 38.3498,
-      "lon": -81.6326,
-      "locationName": "Charleston, West Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WV",
-      "sources": [
-        {
-          "url": "https://westvirginiawatch.com/2026/11/13/wv-supreme-court-denies-democrats-challenge-over-de-soto-seat-in-house-of-delegates/",
-          "domain": "westvirginiawatch.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/west-virginia-supreme-court-dismisses-230440017.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://wvpublic.org/story/government/judicial-oversight-legislative-independence-at-heart-of-state-supreme-court-case/",
-          "domain": "wvpublic.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
       "isBreaking": false
     },
     {
@@ -4771,252 +5042,6 @@
       "isBreaking": false
     },
     {
-      "id": "32e264f68a78",
-      "headline": "One Dead, Two Officers Hospitalized in Three-Alarm Bridgeport House Fire",
-      "summary": "A three-alarm fire on Harral Avenue in Bridgeport, Connecticut, early on Nov. 15 killed one person and sent two police officers to the hospital for smoke inhalation. About 20 residents were displaced by the blaze.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 41.1792,
-      "lon": -73.1894,
-      "locationName": "Bridgeport, Connecticut, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CT",
-      "sources": [
-        {
-          "url": "https://www.nbcconnecticut.com/news/local/1-person-dead-2-police-officers-hospitalized-in-bridgeport-house-fire/3796237/",
-          "domain": "nbcconnecticut.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wfsb.com/2026/11/15/one-dead-two-officers-hospitalized-20-displaced-after-bridgeport-fire/",
-          "domain": "wfsb.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ctpost.com/news/article/bridgeport-ct-harral-avenue-fire-22531723.php",
-          "domain": "ctpost.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "970c4cdb0016",
-      "headline": "Harrisburg Unveils 2027 Budget Proposing 12% Property Tax Hike",
-      "summary": "Harrisburg, Pennsylvania officials unveiled a proposed 2027 budget that includes a 12% increase in real-estate property taxes and a trash-fee hike of more than 4%. The city council is expected to vote on the proposal Dec. 8.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 40.2732,
-      "lon": -76.8867,
-      "locationName": "Harrisburg, Pennsylvania, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-PA",
-      "sources": [
-        {
-          "url": "https://www.abc27.com/local-news/harrisburg/harrisburg-officials-unveil-proposed-2027-city-budget/",
-          "domain": "abc27.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://local21news.com/newsletter-daily/harrisburg-residents-react-to-proposed-12-property-tax-increase-youre-doing-too-much",
-          "domain": "local21news.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wgal.com/article/harrisburg-budget-proposal-calls-for-property-tax-trash-fee-increases/74405568",
-          "domain": "wgal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "0d301cf54641",
-      "headline": "Close South Dakota State Senate Race Heads to Recount",
-      "summary": "Democrat Aaron Matson filed for a recount in South Dakota's District 11 state Senate race after losing to Republican Chris Karr by just 35 votes out of 8,385 cast. Republicans otherwise retained control of the state legislature in the election.",
-      "category": "politics",
-      "severity": 2,
-      "lat": 43.546,
-      "lon": -96.7313,
-      "locationName": "Sioux Falls, South Dakota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-SD",
-      "sources": [
-        {
-          "url": "https://southdakotasearchlight.com/2026/11/12/sioux-falls-democrat-seeks-recount-in-state-senate-race/",
-          "domain": "southdakotasearchlight.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.siouxfallslive.com/news/south-dakota/sioux-falls-democrat-seeks-recount-in-state-senate-race",
-          "domain": "siouxfallslive.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.keloland.com/news/capitol-news-bureau/republicans-keep-control-of-south-dakota-legislature/",
-          "domain": "keloland.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "ecd2c2e3af1a",
-      "headline": "3M to Close 80-Year-Old Fairmont, Minnesota Plant, Cutting 62 Jobs",
-      "summary": "3M is permanently closing its plant in Fairmont, Minnesota, laying off about 62 workers starting Dec. 18 with the closure finalized Dec. 31. Production from the 80-year-old facility will shift to company plants in Iowa and South Dakota.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 43.6425,
-      "lon": -94.4622,
-      "locationName": "Fairmont, Minnesota, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MN",
-      "sources": [
-        {
-          "url": "https://www.fox9.com/news/3m-fairmont-plant-layoffs-company-cuts-62-jobs-2026",
-          "domain": "fox9.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.startribune.com/3m-to-lay-off-62-and-close-its-fairmont-plant/601903244",
-          "domain": "startribune.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kare11.com/article/money/business/dozens-to-be-laid-off-december-3m-plant-fairmont-closes-permanently/89-79fee244-68fb-42a5-8670-aae2a0dbfe5f",
-          "domain": "kare11.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "7c3cdbbf6394",
-      "headline": "Three Tucson High School Students Killed in Fiery Single-Vehicle Crash",
-      "summary": "Three Salpointe Catholic High School students -- Maddy Rea, 17, Alex Schneider, 18, and Joel Slavin, 16 -- were killed in a fiery single-vehicle crash near East Skyline Drive and North Foothills Drive in Tucson, Arizona late on Nov. 14. Investigators are examining whether speed or impairment played a role.",
-      "category": "society",
-      "severity": 2,
-      "lat": 32.2217,
-      "lon": -110.9265,
-      "locationName": "Tucson, Arizona, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AZ",
-      "sources": [
-        {
-          "url": "https://www.kold.com/2026/11/15/three-teens-killed-fiery-crash-near-skyline-drive/",
-          "domain": "kold.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kgun9.com/news/local-news/3-salpointe-catholic-high-school-students-killed-in-north-tucson-crash",
-          "domain": "kgun9.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.abc15.com/news/region-central-southern-az/tucson/salpointe-catholic-mourns-three-students-killed-in-tucson-car-crash",
-          "domain": "abc15.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "fb297bc303c4",
-      "headline": "Juneau Assembly Weighs Extending Flood Emergency, $24.7 Million Seawalk Borrowing",
-      "summary": "The Juneau Assembly in Alaska is considering extending its glacial-outburst-flood emergency declaration for 180 days past its Dec. 15 expiration. A separate Nov. 16 hearing will weigh borrowing up to $24.7 million to extend the downtown Seawalk, to be repaid over 20 years via cruise passenger fees.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 58.3019,
-      "lon": -134.4197,
-      "locationName": "Juneau, Alaska, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-AK",
-      "sources": [
-        {
-          "url": "https://www.ktoo.org/glacial-outburst-flood-updates/",
-          "domain": "ktoo.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.juneauindependent.com/post/juneau-declares-its-earliest-disaster-declaration-ahead-of-the-expected-2026-glacial-lake-outburst-f",
-          "domain": "juneauindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://alaskapublic.org/news/2026-07-21/bill-to-fast-track-glacial-outburst-flood-solution-in-juneau-heads-to-u-s-senate",
-          "domain": "alaskapublic.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T03:27:31.656Z",
-      "isBreaking": false
-    },
-    {
       "id": "a86830e291e7",
       "headline": "Magnitude 6.6-7.1 Earthquake Strikes Banda Sea Near Tual, Indonesia",
       "summary": "USGS recorded a magnitude 6.6 quake at 68km depth; Indonesia's BMKG recorded magnitude 7.1 at 115km depth. BMKG confirmed no tsunami potential, with weak shaking felt in Tual, Saumlaki, Dobo, Sorong, and Manokwari; no casualties reported.",
@@ -5052,13 +5077,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 113,
-    "carried": 74,
-    "updated": 11,
-    "expired": 24,
+    "multiSource": 112,
+    "carried": 97,
+    "updated": 0,
+    "expired": 16,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 6.67,
-    "budgetUsd": 12
+    "costUsd": 4.51,
+    "budgetUsd": 8
   }
 }
