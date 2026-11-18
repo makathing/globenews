@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T06:09:06.159Z",
+  "generatedAt": "2026-11-18T15:27:00.971Z",
   "mode": "daily",
   "events": [
     {
@@ -597,46 +597,48 @@
       "isBreaking": false
     },
     {
-      "id": "4fa4a460dd47",
-      "headline": "Section of Crimean Bridge Collapses After Ukrainian Multi-Weapon Strike",
-      "summary": "A section of the Kerch Strait bridge collapsed after Ukraine struck it with a combination of Flamingo cruise missiles, Palianytsia missiles and Neptune missiles overnight, the second consecutive night of strikes on the span. Zelensky described it as a seven-phase operation targeting the key supply link to Crimea.",
-      "category": "conflict",
+      "id": "ee2d9780e090",
+      "headline": "Democrat Mary Peltola Wins Alaska Senate Seat, First Alaska Native Elected to Chamber",
+      "summary": "The Associated Press called Alaska's U.S. Senate race for Mary Peltola, who defeated two-term Republican incumbent Dan Sullivan with 50.1% of first-place votes, avoiding a ranked-choice runoff. She is the first Alaska Native elected to the U.S. Senate and the first Democrat to win an Alaska Senate race since 2008, giving Democrats a 56-seat majority starting in January 2027.",
+      "category": "politics",
       "severity": 4,
-      "lat": 45.3,
-      "lon": 36.65,
-      "locationName": "Kerch Strait, Crimea",
-      "countryCode": "UA",
+      "lat": 61.2181,
+      "lon": -149.9003,
+      "locationName": "Anchorage, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
       "sources": [
         {
-          "url": "https://www.cnn.com/2026/11/17/europe/ukraine-russia-kerch-bridge-intl-hnk",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://abcnews.com/International/ukraine-attacks-crimean-bridge-2nd-consecutive-night-officials/story?id=138201512",
-          "domain": "abcnews.com",
+          "url": "https://www.cbsnews.com/news/alaska-2026-senate-sullivan-peltola/",
+          "domain": "cbsnews.com",
           "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/17/kerch-bridge-ukraine-russia-putin-kyiv.html",
+          "url": "https://www.cnbc.com/2026/11/18/alaska-senate-mary-peltola-wins-election.html",
           "domain": "cnbc.com",
           "reliability": 80,
           "bias": "center"
         },
         {
-          "url": "https://kyivindependent.com/ukraine-war-latest-entire-section-of-crimean-bridge-collapses-after-seven-phase-operation-zelensky-reveals/",
-          "domain": "kyivindependent.com",
+          "url": "https://alaskapublic.org/news/politics/elections/2026-11-17/mary-peltola-wins-u-s-senate-seat-in-alaska",
+          "domain": "alaskapublic.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
+        },
+        {
+          "url": "https://thehill.com/homenews/campaign/6176074-peltola-wins-alaska-senate/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
         }
       ],
       "trustScore": 76,
-      "firstSeen": "2026-11-18T06:09:06.159Z",
-      "lastUpdated": "2026-11-18T06:09:06.159Z",
-      "expiresAt": "2026-11-22T06:09:06.159Z",
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-22T15:27:00.971Z",
       "isBreaking": false
     },
     {
@@ -682,6 +684,49 @@
       "firstSeen": "2026-11-14T15:27:06.287Z",
       "lastUpdated": "2026-11-14T15:27:06.287Z",
       "expiresAt": "2026-11-18T15:27:06.287Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4fa4a460dd47",
+      "headline": "Section of Crimean Bridge Collapses After Ukrainian Multi-Weapon Strike",
+      "summary": "A section of the Kerch Strait bridge collapsed after Ukraine struck it with a combination of Flamingo cruise missiles, Palianytsia missiles and Neptune missiles overnight, the second consecutive night of strikes on the span. Zelensky described it as a seven-phase operation targeting the key supply link to Crimea.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 45.3,
+      "lon": 36.65,
+      "locationName": "Kerch Strait, Crimea",
+      "countryCode": "UA",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/17/europe/ukraine-russia-kerch-bridge-intl-hnk",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/International/ukraine-attacks-crimean-bridge-2nd-consecutive-night-officials/story?id=138201512",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/17/kerch-bridge-ukraine-russia-putin-kyiv.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://kyivindependent.com/ukraine-war-latest-entire-section-of-crimean-bridge-collapses-after-seven-phase-operation-zelensky-reveals/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 76,
+      "firstSeen": "2026-11-18T06:09:06.159Z",
+      "lastUpdated": "2026-11-18T06:09:06.159Z",
+      "expiresAt": "2026-11-22T06:09:06.159Z",
       "isBreaking": false
     },
     {
@@ -1118,46 +1163,6 @@
       "isBreaking": false
     },
     {
-      "id": "ff6f4062d7ce",
-      "headline": "California Supreme Court Sets Nov. 24 Deadline for Briefs on Newsom's Death-Row Commutations",
-      "summary": "The California Supreme Court formally invited amicus briefs from prosecutors, defense groups and victims' families on the legality of Gov. Gavin Newsom's bid to commute all 548 death sentences to life without parole. Briefs are due Nov. 24, with Newsom's consolidated response due Dec. 4; advocacy groups have already filed supporting briefs while prosecutors signal opposition.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 38.5816,
-      "lon": -121.4944,
-      "locationName": "Sacramento, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.nbcnews.com/news/us-news/california-gov-gavin-newsom-commutes-death-sentences-rcna607727",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.horvitzlevy.com/supreme-court-invites-amicus-briefs-on-death-sentence-commutations-one-brief-has-already-been-filed/",
-          "domain": "horvitzlevy.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://davisvanguard.org/2026/11/california-supreme-court-commutation-briefing/",
-          "domain": "davisvanguard.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-14T15:27:06.287Z",
-      "lastUpdated": "2026-11-14T15:27:06.287Z",
-      "expiresAt": "2026-11-18T15:27:06.287Z",
-      "isBreaking": false
-    },
-    {
       "id": "f50adaa93630",
       "headline": "Oregon Supreme Court to Review Multibillion-Dollar PacifiCorp Wildfire Verdict",
       "summary": "The Oregon Supreme Court heard oral arguments reviewing a Court of Appeals decision that wiped out a $1.25 billion jury verdict against utility PacifiCorp over the 2020 Labor Day wildfires. About 2,000 plaintiffs are seeking a total of $2.2 billion in damages.",
@@ -1397,6 +1402,52 @@
       "isBreaking": false
     },
     {
+      "id": "c2a12cbfa3c2",
+      "headline": "Colorado National Guard Rescues More Than 50 People From Historic Southwest Flooding",
+      "summary": "Back-to-back historic floods on the San Juan, Animas, Dolores, Mancos and Navajo rivers pushed the Animas River's flow near Durango to roughly 50 times normal. The Colorado National Guard rescued more than 50 people and 20 pets by helicopter, and at least one death has been confirmed with a second suspected; cleanup continues.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 37.2753,
+      "lon": -107.8801,
+      "locationName": "Durango, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://www.pbs.org/newshour/nation/rain-moves-out-as-flood-risks-remain-in-southwest-following-destructive-storms",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://governorsoffice.colorado.gov/governor/news/governor-polis-provides-update-southwestern-colorado-flooding-state-response-and-voting-access",
+          "domain": "colorado.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://coloradosun.com/2026/11/02/flooding-southwestern-colorado-san-juan-river/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.koaa.com/news/local-news/colorado-national-guard-has-helped-rescue-50-people-and-20-pets-amid-flooding",
+          "domain": "koaa.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 74,
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
+      "isBreaking": false
+    },
+    {
       "id": "0f19b5957aed",
       "headline": "At Least 17 Killed in Two Separate Mass Shootings in South Africa Overnight",
       "summary": "Nine people were shot dead inside a shack in Jeffsville, an informal settlement near Pretoria, while eight men were found dead in a bullet-riddled vehicle in Sweetwaters, roughly 530km away. No arrests have been made and motives remain unestablished.",
@@ -1433,39 +1484,224 @@
       "isBreaking": false
     },
     {
-      "id": "1ab327b0f1be",
-      "headline": "Sirens Sound at Iraq's Khor Mor Gas Field After New Drone Overflight",
-      "summary": "A suspected drone attack on Nov 8 hit an LPG tank at the Khor Mor gas field, operated by Dana Gas, sparking a fire and cutting roughly 2.8 GW of power in Iraqi Kurdistan. On Nov 16, a new drone overflight triggered sirens at the facility; Kurdish officials blame Iran-backed militias.",
-      "category": "conflict",
+      "id": "ff6f4062d7ce",
+      "headline": "California Prosecutors From 30 Counties Petition Supreme Court to Halt Newsom Commutations",
+      "summary": "Prosecutors representing 30 of California's 58 counties formally petitioned the state Supreme Court to halt Governor Newsom's commutation of 548 death sentences, arguing he exceeded his clemency authority and denied victims' families required hearing opportunities. Newsom's office maintains his authority does not trigger individual notice requirements.",
+      "category": "politics",
       "severity": 3,
-      "lat": 34.93,
-      "lon": 45.15,
-      "locationName": "Khor Mor, Sulaymaniyah, Iraq",
-      "countryCode": "IQ",
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
       "sources": [
         {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-16/sirens-activated-at-iraqs-khor-mor-gas-field-after-drone-overflight-sources-say",
-          "domain": "usnews.com",
-          "reliability": 75,
+          "url": "https://www.upi.com/Top_News/US/2026/11/17/california-gavin-newsom-death-row/2601794948267/",
+          "domain": "upi.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
-          "domain": "aljazeera.com",
-          "reliability": 78,
+          "url": "https://calmatters.org/justice/2026/11/death-penalty-commutations-lawsuit/",
+          "domain": "calmatters.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kpbs.org/news/politics/2026/11/17/prosecutors-ask-california-supreme-court-to-halt-newsoms-death-penalty-commutations",
+          "domain": "kpbs.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcnews.com/news/us-news/california-gov-gavin-newsom-commutes-death-sentences-rcna607727",
+          "domain": "nbcnews.com",
+          "reliability": 81,
           "bias": "center-left"
         },
         {
-          "url": "https://www.yahoo.com/news/articles/sirens-activated-iraqs-khor-mor-222115725.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
+          "url": "https://www.horvitzlevy.com/supreme-court-invites-amicus-briefs-on-death-sentence-commutations-one-brief-has-already-been-filed/",
+          "domain": "horvitzlevy.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://davisvanguard.org/2026/11/california-supreme-court-commutation-briefing/",
+          "domain": "davisvanguard.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 70,
+      "firstSeen": "2026-11-14T15:27:06.287Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d1947d82429e",
+      "headline": "Calls Mount for WV Auditor Mark Hunt to Resign; Morrisey Pursues Impeachment",
+      "summary": "Following Mark Hunt's federal indictment on theft and fraud charges, State Treasurer Larry Pack publicly called for his resignation, and Governor Morrisey directed the DMV to refer additional violations tied to Hunt's used-car dealership to federal prosecutors while pursuing impeachment with the House of Delegates. The WV GOP and Democratic Party chairs, Secretary of State and Attorney General have also urged Hunt to resign; he has refused.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.3498,
+      "lon": -81.6326,
+      "locationName": "Charleston, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://wvtreasury.gov/About/Press-Releases/details/treasurer-pack-calls-for-state-auditor-mark-hunt-s-resignation-following-federal-indictment",
+          "domain": "wvtreasury.gov",
+          "reliability": 85,
           "bias": "center"
+        },
+        {
+          "url": "https://www.newsandsentinel.com/news/local-news/2026/11/morrisey-announces-dmv-probe-support-for-auditors-impeachment/",
+          "domain": "newsandsentinel.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wvmetronews.com/2026/11/18/auditor-can-no-longer-fulfill-elected-duties/",
+          "domain": "wvmetronews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wsaz.com/2026/11/16/wva-state-auditor-mark-hunt-indicted-by-federal-grand-jury/",
+          "domain": "wsaz.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://westvirginiawatch.com/2026/11/16/federal-grand-jury-indicts-wv-auditor-mark-hunt-others-in-alleged-property-stealing-scheme/",
+          "domain": "westvirginiawatch.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wvgazettemail.com/news/legal_affairs/federal-grand-jury-indicts-state-auditor-mark-hunt-on-theft-fraud-charges/article_4fa6bcc2-ec47-47ff-b9a7-ba105f2b0ed6.html",
+          "domain": "wvgazettemail.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
       "trustScore": 68,
-      "firstSeen": "2026-11-17T06:09:32.565Z",
-      "lastUpdated": "2026-11-17T06:09:32.565Z",
-      "expiresAt": "2026-11-19T06:09:32.565Z",
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
+      "isBreaking": false
+    },
+    {
+      "id": "53ba30738dd2",
+      "headline": "Minnesota House DFL Picks Stephenson as Speaker-Designate Ahead of Expanded Majority",
+      "summary": "Minnesota House Democrats selected Rep. Zack Stephenson as speaker-designate and Jamie Long as majority leader heading into a projected 77-57 DFL majority, the party's largest since 2009-10. House Republicans elected Rep. Harry Niska as minority leader.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 44.9537,
+      "lon": -93.09,
+      "locationName": "St. Paul, Minnesota, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MN",
+      "sources": [
+        {
+          "url": "https://www.house.mn.gov/sessiondaily/Story/19212",
+          "domain": "mn.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/minnesota/news/minnesota-house-dfl-elects-zack-stephenson-speaker-designate/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://bringmethenews.com/minnesota-news/dfl-gop-pick-their-majority-and-minority-leaders-for-the-minnesota-legislature-in-2027",
+          "domain": "bringmethenews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f8e564d96d93",
+      "headline": "Washington Confirms $4 Billion Budget Shortfall, Orders Up to 15% Cuts",
+      "summary": "Washington's November revenue forecast confirmed a $4 billion shortfall for the next fiscal year, worsened by federal health-care funding cuts. Governor Ferguson directed agency leaders to submit options for up to 15% additional spending cuts by November 23, with hiring, travel and contract freezes continuing and a full budget proposal due December 20.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 47.0379,
+      "lon": -122.9007,
+      "locationName": "Olympia, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://governor.wa.gov/news/2026/governor-ferguson-statement-november-revenue-forecast",
+          "domain": "wa.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/16/wa-governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kuow.org/governing/2026-11-17/wa-governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall",
+          "domain": "kuow.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.chronline.com/stories/governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall,411929",
+          "domain": "chronline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://lynnwoodtimes.com/2026/11/17/shortfall/",
+          "domain": "lynnwoodtimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://komonews.com/news/local/washington-gov-ferguson-calls-budget-situation-dire-but-pledges-no-new-taxes-office-of-financial-management-politics-kd-chapman-projected-revenue-federal-funding-court-mandated",
+          "domain": "komonews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
       "isBreaking": false
     },
     {
@@ -1505,6 +1741,42 @@
       "firstSeen": "2026-11-16T15:27:31.656Z",
       "lastUpdated": "2026-11-16T15:27:31.656Z",
       "expiresAt": "2026-11-18T15:27:31.656Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1ab327b0f1be",
+      "headline": "Sirens Sound at Iraq's Khor Mor Gas Field After New Drone Overflight",
+      "summary": "A suspected drone attack on Nov 8 hit an LPG tank at the Khor Mor gas field, operated by Dana Gas, sparking a fire and cutting roughly 2.8 GW of power in Iraqi Kurdistan. On Nov 16, a new drone overflight triggered sirens at the facility; Kurdish officials blame Iran-backed militias.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 34.93,
+      "lon": 45.15,
+      "locationName": "Khor Mor, Sulaymaniyah, Iraq",
+      "countryCode": "IQ",
+      "sources": [
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-16/sirens-activated-at-iraqs-khor-mor-gas-field-after-drone-overflight-sources-say",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/sirens-activated-iraqs-khor-mor-222115725.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-17T06:09:32.565Z",
+      "lastUpdated": "2026-11-17T06:09:32.565Z",
+      "expiresAt": "2026-11-19T06:09:32.565Z",
       "isBreaking": false
     },
     {
@@ -1698,6 +1970,61 @@
       "isBreaking": false
     },
     {
+      "id": "3f3695cfa200",
+      "headline": "Sen. Louise Lucas Pleads Not Guilty, Seeks Sanctions Against Federal Officials",
+      "summary": "Virginia state Sen. Louise Lucas formally pleaded not guilty to federal racketeering, drug-distribution and money-laundering charges alleging she used her legislative position to protect a marijuana distribution operation. Her legal team has filed a motion seeking sanctions against Attorney General Todd Blanche, FBI Director Kash Patel and a top federal prosecutor over public statements; trial is set for mid-September 2027.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 37.5407,
+      "lon": -77.436,
+      "locationName": "Richmond, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
+      "sources": [
+        {
+          "url": "https://www.wral.com/news/ap/b66ae-virginia-state-sen-louise-lucas-pleads-not-guilty-in-marijuana-related-case/",
+          "domain": "wral.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.hastingstribune.com/ap/national/virginia-lawmaker-louise-lucas-pleads-not-guilty-in-federal-marijuana-conspiracy-case/article_6bb21299-5dc5-55e9-892a-4d24b1e7faef.html",
+          "domain": "hastingstribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wtvr.com/news/local-news/lucas-pleads-not-guilty-virginia-recreational-marijuana-market-nov-16-2026",
+          "domain": "wtvr.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/local/virginia-louise-lucas-not-guilty-marijuana-case/4183931/",
+          "domain": "nbcwashington.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox5dc.com/news/virginia-state-sen-louise-lucas-pleads-not-guilty-marijuana-related-case",
+          "domain": "fox5dc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
+      "isBreaking": false
+    },
+    {
       "id": "1fa6a245e7bf",
       "headline": "Russian Military Aircraft Enter Taiwan's Air Defense Zone, Trigger Regional Alerts",
       "summary": "Two sorties of Russian military aircraft entered Taiwan's air defense identification zone from the northeast and transited east of the island, triggering airspace alerts in Japan and South Korea as well.",
@@ -1809,40 +2136,42 @@
       "isBreaking": false
     },
     {
-      "id": "6befaec4ff93",
-      "headline": "Ecuadorean Fishermen Sue US Over Deadly Pacific Drone Strike on Fishing Vessel",
-      "summary": "Sixteen Ecuadorean fishermen filed a federal lawsuit in Pittsburgh alleging US drones struck and sank their vessel near the Galápagos Islands on March 17, 2026. The suit says Operation Southern Spear has killed more than 235 people in 71 strikes since September 2025.",
+      "id": "a61c32bfe203",
+      "headline": "Port of New Orleans, Tanker Crew File Dueling Suits Over Mississippi River Collision",
+      "summary": "The Port of New Orleans sued tanker owner Nave Shipping and manager Thome Ship Management for more than $1 million after the asphalt tanker Atlantic Asphalt suffered a steering failure and struck the moored riverboat American Heritage on November 13, capsizing it and sending about 100 people into the river. Four tanker crew members filed a separate federal negligence suit; the NTSB is investigating.",
       "category": "society",
       "severity": 3,
-      "lat": -0.95,
-      "lon": -89.6,
-      "locationName": "Galápagos Islands, Ecuador",
-      "countryCode": "EC",
+      "lat": 29.9511,
+      "lon": -90.0715,
+      "locationName": "New Orleans, Louisiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-LA",
       "sources": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/18/ecuadorian-fishermen-sue-trump-administration-over-drone-strike",
-          "domain": "aljazeera.com",
-          "reliability": 78,
+          "url": "https://www.npr.org/2026/11/15/nx-s1-6041677/new-orleans-port-sues-miracle-mississippi-cruise-ship",
+          "domain": "npr.org",
+          "reliability": 87,
           "bias": "center-left"
         },
         {
-          "url": "https://thehill.com/regulation/court-battles/6226715-ecuadorian-fishermen-lawsuit-us-drones/amp/",
-          "domain": "thehill.com",
-          "reliability": 76,
+          "url": "https://www.cbsnews.com/news/port-of-new-orleans-sues-tanker-riverboat-crash/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.hawaiitribune-herald.com/2026/11/17/nation-world-news/ecuadorean-fishermen-sue-trump-administration-over-pacific-drone-attack/",
-          "domain": "hawaiitribune-herald.com",
+          "url": "https://maritime-executive.com/article/four-american-heritage-crewmembers-sue-operator-of-asphalt-tanker",
+          "domain": "maritime-executive.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-18T06:09:06.159Z",
-      "lastUpdated": "2026-11-18T06:09:06.159Z",
-      "expiresAt": "2026-11-20T06:09:06.159Z",
+      "trustScore": 61,
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
       "isBreaking": false
     },
     {
@@ -1887,6 +2216,91 @@
         }
       ],
       "trustScore": 58,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6befaec4ff93",
+      "headline": "Ecuadorean Fishermen Sue US Over Deadly Pacific Drone Strike on Fishing Vessel",
+      "summary": "Sixteen Ecuadorean fishermen filed a federal lawsuit in Pittsburgh alleging US drones struck and sank their vessel near the Galápagos Islands on March 17, 2026. The suit says Operation Southern Spear has killed more than 235 people in 71 strikes since September 2025.",
+      "category": "society",
+      "severity": 3,
+      "lat": -0.95,
+      "lon": -89.6,
+      "locationName": "Galápagos Islands, Ecuador",
+      "countryCode": "EC",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/18/ecuadorian-fishermen-sue-trump-administration-over-drone-strike",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://thehill.com/regulation/court-battles/6226715-ecuadorian-fishermen-lawsuit-us-drones/amp/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.hawaiitribune-herald.com/2026/11/17/nation-world-news/ecuadorean-fishermen-sue-trump-administration-over-pacific-drone-attack/",
+          "domain": "hawaiitribune-herald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-18T06:09:06.159Z",
+      "lastUpdated": "2026-11-18T06:09:06.159Z",
+      "expiresAt": "2026-11-20T06:09:06.159Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4ff3bdce6d4b",
+      "headline": "Illinois Budget Picture Darkens: Surplus Could Flip to $2.4 Billion Deficit",
+      "summary": "Illinois' budget office projects the state's $927 million FY27 surplus could flip to a roughly $2.4 billion deficit in FY28, driven largely by federal Medicaid and SNAP policy changes. The projection, reported Nov. 16, 2026, raises pressure on lawmakers ahead of next year's budget.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.7817,
+      "lon": -89.6501,
+      "locationName": "Springfield, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://capitolnewsillinois.com/news/illinois-projected-927m-surplus-could-give-way-to-2-4b-deficit-next-year-amid-federal-changes/",
+          "domain": "capitolnewsillinois.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nprillinois.org/illinois/2026-11-16/illinois-projected-927m-surplus-could-give-way-to-2-4b-deficit-next-year-amid-federal-changes",
+          "domain": "nprillinois.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abc7chicago.com/post/illinois-projected-927m-surplus-could-give-24b-deficit-year-amid-donald-trump-administration-policy-changes/20046460/",
+          "domain": "abc7chicago.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://capitolfax.com/2026/11/13/gomb-projects-927-million-surplus-this-year-24-billion-fy28-budget-hole/",
+          "domain": "capitolfax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
       "firstSeen": "2026-11-17T15:27:11.977Z",
       "lastUpdated": "2026-11-17T15:27:11.977Z",
       "expiresAt": "2026-11-19T15:27:11.977Z",
@@ -2031,195 +2445,43 @@
       "isBreaking": false
     },
     {
-      "id": "d1947d82429e",
-      "headline": "West Virginia Auditor Mark Hunt Indicted on Federal Theft and Fraud Charges",
-      "summary": "A federal grand jury indicted sitting West Virginia State Auditor Mark Hunt, 66, and three associates on Nov. 16, 2026 on nine counts including theft of property and bank fraud. Prosecutors allege the scheme involved improperly issued tax deeds.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 38.3498,
-      "lon": -81.6326,
-      "locationName": "Charleston, West Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WV",
-      "sources": [
-        {
-          "url": "https://wvmetronews.com/2026/11/16/grand-jury-hands-down-indictment-on-state-auditor-mark-hunt-and-associates/",
-          "domain": "wvmetronews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wsaz.com/2026/11/16/wva-state-auditor-mark-hunt-indicted-by-federal-grand-jury/",
-          "domain": "wsaz.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://westvirginiawatch.com/2026/11/16/federal-grand-jury-indicts-wv-auditor-mark-hunt-others-in-alleged-property-stealing-scheme/",
-          "domain": "westvirginiawatch.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wvgazettemail.com/news/legal_affairs/federal-grand-jury-indicts-state-auditor-mark-hunt-on-theft-fraud-charges/article_4fa6bcc2-ec47-47ff-b9a7-ba105f2b0ed6.html",
-          "domain": "wvgazettemail.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T15:27:11.977Z",
-      "isBreaking": false
-    },
-    {
-      "id": "3f3695cfa200",
-      "headline": "Virginia State Sen. Louise Lucas Pleads Not Guilty to Federal Racketeering Charges",
-      "summary": "Virginia Senate President Pro Tempore Louise Lucas pleaded not guilty Nov. 16, 2026 to federal racketeering, marijuana distribution, money laundering and honest-services-fraud charges. Her trial is set for September 2027, and she has said she will not resign.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 37.5407,
-      "lon": -77.436,
-      "locationName": "Richmond, Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-VA",
-      "sources": [
-        {
-          "url": "https://www.wral.com/news/ap/b66ae-virginia-state-sen-louise-lucas-pleads-not-guilty-in-marijuana-related-case/",
-          "domain": "wral.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbcwashington.com/news/local/virginia-louise-lucas-not-guilty-marijuana-case/4183931/",
-          "domain": "nbcwashington.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.fox5dc.com/news/virginia-state-sen-louise-lucas-pleads-not-guilty-marijuana-related-case",
-          "domain": "fox5dc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wtvr.com/news/local-news/lucas-pleads-not-guilty-virginia-recreational-marijuana-market-nov-16-2026",
-          "domain": "wtvr.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T15:27:11.977Z",
-      "isBreaking": false
-    },
-    {
-      "id": "4ff3bdce6d4b",
-      "headline": "Illinois Budget Picture Darkens: Surplus Could Flip to $2.4 Billion Deficit",
-      "summary": "Illinois' budget office projects the state's $927 million FY27 surplus could flip to a roughly $2.4 billion deficit in FY28, driven largely by federal Medicaid and SNAP policy changes. The projection, reported Nov. 16, 2026, raises pressure on lawmakers ahead of next year's budget.",
+      "id": "5a6873e7cd61",
+      "headline": "State Farm to Pay More Than $45 Million After Oklahoma Insurance Investigation",
+      "summary": "Oklahoma's insurance commissioner announced a settlement exceeding $45 million with State Farm following a probe into improperly denied wind and hail claims from 2021 to 2025. The deal includes over $35 million in policyholder restitution, a $10 million grant program and $2.86 million in fines.",
       "category": "economy",
       "severity": 3,
-      "lat": 39.7817,
-      "lon": -89.6501,
-      "locationName": "Springfield, Illinois, USA",
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-IL",
+      "subdivision": "US-OK",
       "sources": [
         {
-          "url": "https://capitolnewsillinois.com/news/illinois-projected-927m-surplus-could-give-way-to-2-4b-deficit-next-year-amid-federal-changes/",
-          "domain": "capitolnewsillinois.com",
+          "url": "https://www.oid.ok.gov/111226/",
+          "domain": "ok.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kosu.org/politics/2026-11-16/oklahoma-insurance-commissioner-touts-45-million-settlement-with-state-farm",
+          "domain": "kosu.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.nprillinois.org/illinois/2026-11-16/illinois-projected-927m-surplus-could-give-way-to-2-4b-deficit-next-year-amid-federal-changes",
-          "domain": "nprillinois.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://abc7chicago.com/post/illinois-projected-927m-surplus-could-give-24b-deficit-year-amid-donald-trump-administration-policy-changes/20046460/",
-          "domain": "abc7chicago.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://capitolfax.com/2026/11/13/gomb-projects-927-million-surplus-this-year-24-billion-fy28-budget-hole/",
-          "domain": "capitolfax.com",
+          "url": "https://kfor.com/news/local/state-farm-settles-for-more-than-45-million-following-investigation-into-oklahoma-roof-damage-claims/",
+          "domain": "kfor.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T15:27:11.977Z",
-      "isBreaking": false
-    },
-    {
-      "id": "f8e564d96d93",
-      "headline": "Washington Governor Orders Agencies to Plan Up to 15% Spending Cuts",
-      "summary": "Washington Gov. Bob Ferguson directed state agencies via the Office of Financial Management to identify spending cuts of up to 15% through mid-2028 to close a projected $4 billion budget shortfall. Agencies' options are due Nov. 23, and Ferguson has pledged no new taxes.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 47.0379,
-      "lon": -122.9007,
-      "locationName": "Olympia, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://washingtonstatestandard.com/2026/11/16/wa-governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall/",
-          "domain": "washingtonstatestandard.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.chronline.com/stories/governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall,411929",
-          "domain": "chronline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://lynnwoodtimes.com/2026/11/17/shortfall/",
-          "domain": "lynnwoodtimes.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://komonews.com/news/local/washington-gov-ferguson-calls-budget-situation-dire-but-pledges-no-new-taxes-office-of-financial-management-politics-kd-chapman-projected-revenue-federal-funding-court-mandated",
-          "domain": "komonews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "trustScore": 55,
+      "firstSeen": "2026-11-16T15:27:31.656Z",
+      "lastUpdated": "2026-11-16T15:27:31.656Z",
+      "expiresAt": "2026-11-18T15:27:31.656Z",
       "isBreaking": false
     },
     {
@@ -2296,114 +2558,6 @@
       "firstSeen": "2026-11-18T06:09:06.159Z",
       "lastUpdated": "2026-11-18T06:09:06.159Z",
       "expiresAt": "2026-11-20T06:09:06.159Z",
-      "isBreaking": false
-    },
-    {
-      "id": "5a6873e7cd61",
-      "headline": "State Farm to Pay More Than $45 Million After Oklahoma Insurance Investigation",
-      "summary": "Oklahoma's insurance commissioner announced a settlement exceeding $45 million with State Farm following a probe into improperly denied wind and hail claims from 2021 to 2025. The deal includes over $35 million in policyholder restitution, a $10 million grant program and $2.86 million in fines.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 35.4676,
-      "lon": -97.5164,
-      "locationName": "Oklahoma City, Oklahoma, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OK",
-      "sources": [
-        {
-          "url": "https://www.oid.ok.gov/111226/",
-          "domain": "ok.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.kosu.org/politics/2026-11-16/oklahoma-insurance-commissioner-touts-45-million-settlement-with-state-farm",
-          "domain": "kosu.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://kfor.com/news/local/state-farm-settles-for-more-than-45-million-following-investigation-into-oklahoma-roof-damage-claims/",
-          "domain": "kfor.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-16T15:27:31.656Z",
-      "lastUpdated": "2026-11-16T15:27:31.656Z",
-      "expiresAt": "2026-11-18T15:27:31.656Z",
-      "isBreaking": false
-    },
-    {
-      "id": "670526a17df4",
-      "headline": "UN-Backed Board of Peace Warns Gaza Ceasefire Faces Imminent Collapse",
-      "summary": "The Board of Peace warned the UN Security Council that Gaza's ceasefire faces imminent collapse without further action, noting about 1,650 Palestinians have been killed in Gaza since the ceasefire began. No international stabilization force has yet been deployed.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 31.5,
-      "lon": 34.5,
-      "locationName": "Gaza Strip",
-      "countryCode": "PS",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.usnews.com/news/world/articles/2026-11-17/board-of-peace-delivers-bleak-report-on-gaza-warning-of-ceasefire-collapse-without-immediate-action",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-18T06:09:06.159Z",
-      "lastUpdated": "2026-11-18T06:09:06.159Z",
-      "expiresAt": "2026-11-20T06:09:06.159Z",
-      "isBreaking": false
-    },
-    {
-      "id": "1a358afe8cdc",
-      "headline": "Up to 50,000 People Flee Ethnic Clashes in Ethiopia's Moyale Into Northern Kenya",
-      "summary": "Violence tied to an Oromia-Somali administrative dispute over Moyale escalated after an Oct 18 flag-raising incident triggered militia gunfire that killed a 13-year-old girl, spreading unrest across seven districts. UNHCR says up to 50,000 people have crossed into Kenya since late October, and UN agencies have appealed for $8.9 million in emergency aid.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 3.52,
-      "lon": 39.07,
-      "locationName": "Moyale, Kenya",
-      "countryCode": "KE",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/17/ethiopia-moyale-clashes-disrupt-livelihoods-as-territorial-dispute-deepens",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.unrefugees.org/news/2026/11/unhcr-warns-of-growing-humanitarian-needs-as-thousands-flee-ethiopia-to-kenya/",
-          "domain": "unrefugees.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.africanews.com/2026/11/10/up-to-50000-ethiopians-flee-to-kenya-as-clashes-escalate/",
-          "domain": "africanews.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
-      "firstSeen": "2026-11-17T06:09:32.565Z",
-      "lastUpdated": "2026-11-17T06:09:32.565Z",
-      "expiresAt": "2026-11-19T06:09:32.565Z",
       "isBreaking": false
     },
     {
@@ -2487,43 +2641,71 @@
       "isBreaking": false
     },
     {
-      "id": "c35b934fde5c",
-      "headline": "Major River Flooding Threatens East-Central Florida as More Rain Looms",
-      "summary": "The St. Johns River near Cocoa, Florida reached major flood stage after record rainfall, and a new National Weather Service flood watch covers Nov. 17-20. Forecasters warn of an additional 3 to 12-plus inches of rain across already-saturated Brevard and Volusia counties.",
-      "category": "disaster",
+      "id": "670526a17df4",
+      "headline": "UN-Backed Board of Peace Warns Gaza Ceasefire Faces Imminent Collapse",
+      "summary": "The Board of Peace warned the UN Security Council that Gaza's ceasefire faces imminent collapse without further action, noting about 1,650 Palestinians have been killed in Gaza since the ceasefire began. No international stabilization force has yet been deployed.",
+      "category": "conflict",
       "severity": 3,
-      "lat": 28.3861,
-      "lon": -80.742,
-      "locationName": "Cocoa, Florida, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-FL",
+      "lat": 31.5,
+      "lon": 34.5,
+      "locationName": "Gaza Strip",
+      "countryCode": "PS",
       "sources": [
         {
-          "url": "https://www.clickorlando.com/news/local/2026/11/07/st-johns-river-flooding-near-cocoa-could-rival-tropical-storm-fay-as-residents-brace-for-major-flood/",
-          "domain": "clickorlando.com",
+          "url": "https://www.aljazeera.com/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.usnews.com/news/world/articles/2026-11-17/board-of-peace-delivers-bleak-report-on-gaza-warning-of-ceasefire-collapse-without-immediate-action",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-18T06:09:06.159Z",
+      "lastUpdated": "2026-11-18T06:09:06.159Z",
+      "expiresAt": "2026-11-20T06:09:06.159Z",
+      "isBreaking": false
+    },
+    {
+      "id": "1a358afe8cdc",
+      "headline": "Up to 50,000 People Flee Ethnic Clashes in Ethiopia's Moyale Into Northern Kenya",
+      "summary": "Violence tied to an Oromia-Somali administrative dispute over Moyale escalated after an Oct 18 flag-raising incident triggered militia gunfire that killed a 13-year-old girl, spreading unrest across seven districts. UNHCR says up to 50,000 people have crossed into Kenya since late October, and UN agencies have appealed for $8.9 million in emergency aid.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 3.52,
+      "lon": 39.07,
+      "locationName": "Moyale, Kenya",
+      "countryCode": "KE",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/17/ethiopia-moyale-clashes-disrupt-livelihoods-as-territorial-dispute-deepens",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.unrefugees.org/news/2026/11/unhcr-warns-of-growing-humanitarian-needs-as-thousands-flee-ethiopia-to-kenya/",
+          "domain": "unrefugees.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/st-johns-river-flooding-nears-164235381.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.defconlevel.com/alert/2026-11-17-nws-noaa-weather-flood-warning-issued-november-17-at-9-21am-est-by-nws-melbourne-fl",
-          "domain": "defconlevel.com",
+          "url": "https://www.africanews.com/2026/11/10/up-to-50000-ethiopians-flee-to-kenya-as-clashes-escalate/",
+          "domain": "africanews.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 51,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T15:27:11.977Z",
+      "trustScore": 54,
+      "firstSeen": "2026-11-17T06:09:32.565Z",
+      "lastUpdated": "2026-11-17T06:09:32.565Z",
+      "expiresAt": "2026-11-19T06:09:32.565Z",
       "isBreaking": false
     },
     {
@@ -2607,81 +2789,85 @@
       "isBreaking": false
     },
     {
-      "id": "1166e5690486",
-      "headline": "El Niño Floods and Landslides Affect Over 77,000 People Across Ecuador",
-      "summary": "Flooding and landslides linked to El Niño have affected 77,510 people across Ecuador since August 29, killing 14 and damaging more than 21,200 homes. Guayas, El Oro, Galápagos and Manabí provinces are among the hardest hit.",
-      "category": "disaster",
+      "id": "778a0b2ac46c",
+      "headline": "Watchdog: Hochul's NYC Transit Fund Cut Shifts $200M Burden to MTA",
+      "summary": "A watchdog report found New York state's $200 million one-time reduction in New York City's annual payment to the MTA bus division is being absorbed by the MTA rather than backfilled, worsening its structural deficit, projected near $897 million by 2030. The state's three-year budget gap narrowed to $8.9 billion from $14.7 billion, aiding efforts to close NYC's roughly $6.2 billion deficit.",
+      "category": "economy",
       "severity": 3,
-      "lat": -2.19,
-      "lon": -79.89,
-      "locationName": "Guayas Province, Ecuador",
-      "countryCode": "EC",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "locationName": "New York, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
       "sources": [
         {
-          "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-17-november-2026",
-          "domain": "paho.org",
+          "url": "https://www.amny.com/news/watchdog-group-mta-pay-aid-nyc/",
+          "domain": "amny.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.elcomercio.com/actualidad/ecuador/el-nino-deja-fallecidos-y-mas-afectados-en-ecuador-desde-agosto/",
-          "domain": "elcomercio.com",
+          "url": "https://nyc.streetsblog.org/2026/11/16/raid-hochul-leaves-mta-holding-200m-bag",
+          "domain": "streetsblog.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.eldiario.ec/ecuador/lluvias-en-ecuador-dejan-14-muertos-y-mas-de-77500-personas-perjudicadas-17112026/",
-          "domain": "eldiario.ec",
+          "url": "https://www.thecentersquare.com/new_york/article_e61eb5f8-2907-4589-a284-c2d146ad70de.html",
+          "domain": "thecentersquare.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-18T06:09:06.159Z",
-      "lastUpdated": "2026-11-18T06:09:06.159Z",
-      "expiresAt": "2026-11-20T06:09:06.159Z",
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
       "isBreaking": false
     },
     {
-      "id": "de187db0a612",
-      "headline": "Political Violence Flares in Bangladesh as BNP Leader Killed and Police Station Torched",
-      "summary": "A BNP farmers'-wing leader was killed by a bomb in Bhanga, Faridpur, while Awami League activists torched a police station and an MP's house in Tungipara, Sheikh Hasina's hometown. Two crude bombs also exploded near Dhaka's airport, injuring three people.",
-      "category": "conflict",
+      "id": "ae57e59b9db7",
+      "headline": "Chicago Judge Vacates 1992 Murder Conviction, Citing Police Torture",
+      "summary": "Cook County Judge Adrienne Davis vacated Anthony Garrett's conviction in the 1992 killing of 7-year-old Dantrell Davis, finding former detective Richard Zuley tortured Garrett into a coerced confession. The judge ordered a retrial.",
+      "category": "society",
       "severity": 3,
-      "lat": 23.01,
-      "lon": 89.83,
-      "locationName": "Gopalganj, Bangladesh",
-      "countryCode": "BD",
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "locationName": "Chicago, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
       "sources": [
         {
-          "url": "https://www.dhakatribune.com/amp/bangladesh/nation/424935/awami-league-torch-police-station-bnp-mp-house",
-          "domain": "dhakatribune.com",
+          "url": "https://chicago.suntimes.com/crime/2026/11/16/richard-zuley-anthony-garrett-dantrell-davis-torture-guantanamo-bay",
+          "domain": "suntimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://aninews.in/news/world/asia/fresh-unrest-erupts-in-bangladesh8217s-gopalganj-sheikh-hasina8217s-stronghold20261117221618/",
-          "domain": "aninews.in",
+          "url": "https://www.wbez.org/criminal-justice/2026/11/16/richard-zuley-anthony-garrett-dantrell-davis-torture-guantanamo-bay",
+          "domain": "wbez.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.deccanherald.com/world/rest-of-world/fresh-violence-grips-sheikh-hasinas-hometown-amid-brewing-tensions-in-bangladesh-4222167",
-          "domain": "deccanherald.com",
+          "url": "https://news.wttw.com/2026/11/16/citing-torture-claims-judge-overturns-conviction-1992-murder-7-year-old-dantrell-davis",
+          "domain": "wttw.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-18T06:09:06.159Z",
-      "lastUpdated": "2026-11-18T06:09:06.159Z",
-      "expiresAt": "2026-11-20T06:09:06.159Z",
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
       "isBreaking": false
     },
     {
@@ -2890,6 +3076,152 @@
       "isBreaking": false
     },
     {
+      "id": "1166e5690486",
+      "headline": "El Niño Floods and Landslides Affect Over 77,000 People Across Ecuador",
+      "summary": "Flooding and landslides linked to El Niño have affected 77,510 people across Ecuador since August 29, killing 14 and damaging more than 21,200 homes. Guayas, El Oro, Galápagos and Manabí provinces are among the hardest hit.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": -2.19,
+      "lon": -79.89,
+      "locationName": "Guayas Province, Ecuador",
+      "countryCode": "EC",
+      "sources": [
+        {
+          "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-17-november-2026",
+          "domain": "paho.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.elcomercio.com/actualidad/ecuador/el-nino-deja-fallecidos-y-mas-afectados-en-ecuador-desde-agosto/",
+          "domain": "elcomercio.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.eldiario.ec/ecuador/lluvias-en-ecuador-dejan-14-muertos-y-mas-de-77500-personas-perjudicadas-17112026/",
+          "domain": "eldiario.ec",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-18T06:09:06.159Z",
+      "lastUpdated": "2026-11-18T06:09:06.159Z",
+      "expiresAt": "2026-11-20T06:09:06.159Z",
+      "isBreaking": false
+    },
+    {
+      "id": "de187db0a612",
+      "headline": "Political Violence Flares in Bangladesh as BNP Leader Killed and Police Station Torched",
+      "summary": "A BNP farmers'-wing leader was killed by a bomb in Bhanga, Faridpur, while Awami League activists torched a police station and an MP's house in Tungipara, Sheikh Hasina's hometown. Two crude bombs also exploded near Dhaka's airport, injuring three people.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 23.01,
+      "lon": 89.83,
+      "locationName": "Gopalganj, Bangladesh",
+      "countryCode": "BD",
+      "sources": [
+        {
+          "url": "https://www.dhakatribune.com/amp/bangladesh/nation/424935/awami-league-torch-police-station-bnp-mp-house",
+          "domain": "dhakatribune.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://aninews.in/news/world/asia/fresh-unrest-erupts-in-bangladesh8217s-gopalganj-sheikh-hasina8217s-stronghold20261117221618/",
+          "domain": "aninews.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.deccanherald.com/world/rest-of-world/fresh-violence-grips-sheikh-hasinas-hometown-amid-brewing-tensions-in-bangladesh-4222167",
+          "domain": "deccanherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-18T06:09:06.159Z",
+      "lastUpdated": "2026-11-18T06:09:06.159Z",
+      "expiresAt": "2026-11-20T06:09:06.159Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f7f4be254167",
+      "headline": "West Virginia Regulators Approve $2.48 Billion Natural Gas Plant at Fort Martin",
+      "summary": "The West Virginia Public Service Commission approved Mon Power and Potomac Edison's $2.48 billion, 1,200-megawatt combined-cycle gas plant plus $182 million in new solar projects across three counties. Customers will see a monthly surcharge starting at $1.18.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.722,
+      "lon": -79.965,
+      "locationName": "Maidsville, West Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WV",
+      "sources": [
+        {
+          "url": "https://wvmetronews.com/2026/11/17/state-public-service-commission-approves-2-48-billion-natural-gas-plant-project-at-fort-martin-in-monongalia-county/",
+          "domain": "wvmetronews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wdtv.com/2026/11/17/west-virginia-psc-approves-natural-gas-plant-mon-county-three-solar-projects/",
+          "domain": "wdtv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
+      "isBreaking": false
+    },
+    {
+      "id": "67d05ec953cc",
+      "headline": "Ohio Gov. DeWine Reviewing Clemency for More Than a Dozen Death-Row Inmates",
+      "summary": "Governor Mike DeWine initiated clemency reviews for death sentences from at least 10 counties before leaving office in January 2027, though no commutations have been finalized. Prosecutors have objected to the timeline, while the ACLU of Ohio has welcomed the reviews.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.9612,
+      "lon": -82.9988,
+      "locationName": "Columbus, Ohio, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OH",
+      "sources": [
+        {
+          "url": "https://www.wcpo.com/news/state/state-ohio/ohio-gov-dewine-plans-to-commute-more-death-sentences-before-leaving-office",
+          "domain": "wcpo.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wosu.org/2026-11-10/dewines-possible-death-penalty-commutations-have-prosecutors-concerned",
+          "domain": "wosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T15:27:00.971Z",
+      "isBreaking": false
+    },
+    {
       "id": "c200a1d401fb",
       "headline": "Mozambique Opposition Leader Venâncio Mondlane Goes on Trial Over 2024 Protest Unrest",
       "summary": "Mondlane went on trial at the Supreme Court's Criminal Section in Maputo, charged with incitement to terrorism, glorification of crime, and inciting civil disobedience tied to prolonged protests following the disputed 2024 election. He faces over 20 years in prison; the trial is the first in Mozambique with audio and video recording of hearings.",
@@ -2919,6 +3251,59 @@
       "firstSeen": "2026-11-17T06:09:32.565Z",
       "lastUpdated": "2026-11-17T06:09:32.565Z",
       "expiresAt": "2026-11-19T06:09:32.565Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c35b934fde5c",
+      "headline": "Flood Watch Extended, River Flood Warning Issued as More Rain Hits East-Central Florida",
+      "summary": "The National Weather Service extended a flood watch for Brevard County through Friday, forecasting 4-6 more inches of rain, and issued a flood warning for the St. Johns River near Cocoa. Melbourne pre-positioned high-water rescue equipment and the county distributed sandbags to residents.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 28.3861,
+      "lon": -80.742,
+      "locationName": "Cocoa, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.melbourneflorida.org/Services/November-Flood-Event",
+          "domain": "melbourneflorida.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://forecast.weather.gov/showsigwx.php?warnzone=FLZ647&warncounty=FLC009&firewxzone=FLZ647&local_place1=Rockledge+FL&product1=Flood+Watch",
+          "domain": "weather.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.clickorlando.com/news/local/2026/11/07/st-johns-river-flooding-near-cocoa-could-rival-tropical-storm-fay-as-residents-brace-for-major-flood/",
+          "domain": "clickorlando.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/st-johns-river-flooding-nears-164235381.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.defconlevel.com/alert/2026-11-17-nws-noaa-weather-flood-warning-issued-november-17-at-9-21am-est-by-nws-melbourne-fl",
+          "domain": "defconlevel.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 78,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T03:27:00.971Z",
       "isBreaking": false
     },
     {
@@ -3502,6 +3887,150 @@
       "isBreaking": false
     },
     {
+      "id": "9f4501bb3f9a",
+      "headline": "Longtime Barre Mayor Thom Lauzon Dies in Office Weeks After Winning Eighth Term",
+      "summary": "Barre Mayor Thom Lauzon, 65, died early Nov. 16, 2026 of apparent natural causes, just weeks after winning an eighth term. Deputy Mayor Michael Deering is stepping in to lead the Vermont city.",
+      "category": "society",
+      "severity": 2,
+      "lat": 44.197,
+      "lon": -72.502,
+      "locationName": "Barre, Vermont, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VT",
+      "sources": [
+        {
+          "url": "https://vtdigger.org/2026/11/16/barre-city-mayor-thom-lauzon-dies/",
+          "domain": "vtdigger.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcax.com/2026/11/16/barre-remembers-mayor-thom-lauzon/",
+          "domain": "wcax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sevendaysvt.com/news/thom-lauzon-longtime-barre-mayor-and-developer-dies/",
+          "domain": "sevendaysvt.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.mynbc5.com/article/barre-mayor-thom-lauzon-dies-gov-scotts-office-says/74441113",
+          "domain": "mynbc5.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c6aafde3ace4",
+      "headline": "Pilot Killed in Small Plane Crash in Western Maine",
+      "summary": "A Cessna 182 crashed on Smarts Hill Road in Sweden, Maine around 3:45 p.m. on Nov. 16, 2026, killing the lone pilot aboard. The victim's identity has not been confirmed, and the NTSB is investigating.",
+      "category": "disaster",
+      "severity": 2,
+      "lat": 44.1178,
+      "lon": -70.8742,
+      "locationName": "Sweden, Maine, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-ME",
+      "sources": [
+        {
+          "url": "https://www.wmtw.com/article/sweden-maine-plane-crash-oxford-county/74444665",
+          "domain": "wmtw.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/16/metro/fatal-plane-crash-sweden-maine/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wgme.com/news/local/faa-confirms-plane-crash-in-town-of-sweden",
+          "domain": "wgme.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcboston.com/news/local/sweden-maine-deadly-plane-crash/4050520/",
+          "domain": "nbcboston.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
+      "id": "2b90a545edfe",
+      "headline": "USDA Confirms Bird Flu Outbreak in Oklahoma Dairy Herd",
+      "summary": "USDA's Animal and Plant Health Inspection Service confirmed H5N1 avian flu on Nov. 16, 2026 in an Oklahoma dairy herd of roughly 3,000 to 4,000 cows. Officials say the pasteurized milk supply remains safe for consumers.",
+      "category": "health",
+      "severity": 2,
+      "lat": 35.4676,
+      "lon": -97.5164,
+      "locationName": "Oklahoma City, Oklahoma, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OK",
+      "sources": [
+        {
+          "url": "https://www.kosu.org/local-news/2026-11-17/bird-flu-found-in-oklahoma-dairy-herd",
+          "domain": "kosu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://oklahomavoice.com/2026/11/16/bird-flu-detected-in-oklahoma-dairy-herd/",
+          "domain": "oklahomavoice.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://hpj.com/2026/11/16/hpai-confirmed-in-oklahoma-dairy-herd/",
+          "domain": "hpj.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kswo.com/2026/11/16/usda-confirms-case-bird-flu-oklahoma-dairy-herd/",
+          "domain": "kswo.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-17T15:27:11.977Z",
+      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "isBreaking": false
+    },
+    {
       "id": "9ac264dabb14",
       "headline": "Gunmen Attack Bar and Parties in Mazatlán's Zona Dorada, Killing at Least Seven Over Weekend",
       "summary": "Gunmen opened fire at the bar La Malinche in Mazatlán's tourist Zona Dorada district, killing a security guard, and attacked two separate parties in the colonias Pueblo Nuevo and 12 de Mayo. Weekend tallies for Mazatlán range from 3-4 dead in the bar/party attacks up to a cumulative seven dead and nine injured across 11 armed incidents citywide.",
@@ -3732,147 +4261,43 @@
       "isBreaking": false
     },
     {
-      "id": "9f4501bb3f9a",
-      "headline": "Longtime Barre Mayor Thom Lauzon Dies in Office Weeks After Winning Eighth Term",
-      "summary": "Barre Mayor Thom Lauzon, 65, died early Nov. 16, 2026 of apparent natural causes, just weeks after winning an eighth term. Deputy Mayor Michael Deering is stepping in to lead the Vermont city.",
-      "category": "society",
+      "id": "7a1664eb8139",
+      "headline": "Connecticut AG Opposes Avangrid's $256 Million Gas Rate Hike",
+      "summary": "Attorney General William Tong urged state regulators to reject a roughly $212-256 million two-year rate increase request from Avangrid's gas subsidiaries, which would raise customer bills 19-34%. Tong argued the increase unfairly shifts costs tied to past management decisions onto ratepayers.",
+      "category": "economy",
       "severity": 2,
-      "lat": 44.197,
-      "lon": -72.502,
-      "locationName": "Barre, Vermont, USA",
+      "lat": 41.7658,
+      "lon": -72.6734,
+      "locationName": "Hartford, Connecticut, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-VT",
+      "subdivision": "US-CT",
       "sources": [
         {
-          "url": "https://vtdigger.org/2026/11/16/barre-city-mayor-thom-lauzon-dies/",
-          "domain": "vtdigger.org",
+          "url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/attorney-general-tong-statement-on-rate-hike-request-from-cng-and-scg",
+          "domain": "ct.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://ctmirror.org/2026/11/16/ct-avangrid-gas-utilities-rate-increase-request-pura/",
+          "domain": "ctmirror.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.wcax.com/2026/11/16/barre-remembers-mayor-thom-lauzon/",
-          "domain": "wcax.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.sevendaysvt.com/news/thom-lauzon-longtime-barre-mayor-and-developer-dies/",
-          "domain": "sevendaysvt.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.mynbc5.com/article/barre-mayor-thom-lauzon-dies-gov-scotts-office-says/74441113",
-          "domain": "mynbc5.com",
+          "url": "https://hartfordbusiness.com/article/cng-scg-seek-212m-rate-hike-pinning-half-on-gillett-era-decisions/",
+          "domain": "hartfordbusiness.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T03:27:11.977Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c6aafde3ace4",
-      "headline": "Pilot Killed in Small Plane Crash in Western Maine",
-      "summary": "A Cessna 182 crashed on Smarts Hill Road in Sweden, Maine around 3:45 p.m. on Nov. 16, 2026, killing the lone pilot aboard. The victim's identity has not been confirmed, and the NTSB is investigating.",
-      "category": "disaster",
-      "severity": 2,
-      "lat": 44.1178,
-      "lon": -70.8742,
-      "locationName": "Sweden, Maine, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-ME",
-      "sources": [
-        {
-          "url": "https://www.wmtw.com/article/sweden-maine-plane-crash-oxford-county/74444665",
-          "domain": "wmtw.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/16/metro/fatal-plane-crash-sweden-maine/",
-          "domain": "bostonglobe.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://wgme.com/news/local/faa-confirms-plane-crash-in-town-of-sweden",
-          "domain": "wgme.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbcboston.com/news/local/sweden-maine-deadly-plane-crash/4050520/",
-          "domain": "nbcboston.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T03:27:11.977Z",
-      "isBreaking": false
-    },
-    {
-      "id": "2b90a545edfe",
-      "headline": "USDA Confirms Bird Flu Outbreak in Oklahoma Dairy Herd",
-      "summary": "USDA's Animal and Plant Health Inspection Service confirmed H5N1 avian flu on Nov. 16, 2026 in an Oklahoma dairy herd of roughly 3,000 to 4,000 cows. Officials say the pasteurized milk supply remains safe for consumers.",
-      "category": "health",
-      "severity": 2,
-      "lat": 35.4676,
-      "lon": -97.5164,
-      "locationName": "Oklahoma City, Oklahoma, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-OK",
-      "sources": [
-        {
-          "url": "https://www.kosu.org/local-news/2026-11-17/bird-flu-found-in-oklahoma-dairy-herd",
-          "domain": "kosu.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://oklahomavoice.com/2026/11/16/bird-flu-detected-in-oklahoma-dairy-herd/",
-          "domain": "oklahomavoice.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://hpj.com/2026/11/16/hpai-confirmed-in-oklahoma-dairy-herd/",
-          "domain": "hpj.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kswo.com/2026/11/16/usda-confirms-case-bird-flu-oklahoma-dairy-herd/",
-          "domain": "kswo.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-17T15:27:11.977Z",
-      "expiresAt": "2026-11-19T03:27:11.977Z",
+      "trustScore": 55,
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T03:27:00.971Z",
       "isBreaking": false
     },
     {
@@ -3980,6 +4405,46 @@
       "firstSeen": "2026-11-17T06:09:32.565Z",
       "lastUpdated": "2026-11-17T06:09:32.565Z",
       "expiresAt": "2026-11-18T18:09:32.565Z",
+      "isBreaking": false
+    },
+    {
+      "id": "11fe016ea46f",
+      "headline": "Effort to Recall Louisiana Governor Jeff Landry Collapses",
+      "summary": "The petition drive to recall Governor Jeff Landry collapsed after organizer Marian Gbaiwon said she could not submit the roughly 500,000 signatures required by the November 2 deadline, citing concerns for signers' safety since signatures become public record.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 30.4515,
+      "lon": -91.1871,
+      "locationName": "Baton Rouge, Louisiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-LA",
+      "sources": [
+        {
+          "url": "https://www.axios.com/local/new-orleans/2026/11/09/recall-campaign-jeff-landry-liz-murrill",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.wwno.org/show/louisiana-considered/2026-11-17/legal-battle-begins-following-new-orleans-boat-crash-landry-recall-effort-ends-despite-lingering-questions",
+          "domain": "wwno.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://lailluminator.com/2026/11/06/effort-to-recall-louisiana-governor-jeff-landry-fails/",
+          "domain": "lailluminator.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-18T15:27:00.971Z",
+      "lastUpdated": "2026-11-18T15:27:00.971Z",
+      "expiresAt": "2026-11-20T03:27:00.971Z",
       "isBreaking": false
     },
     {
@@ -4490,13 +4955,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 100,
-    "carried": 66,
-    "updated": 11,
-    "expired": 35,
+    "multiSource": 110,
+    "carried": 95,
+    "updated": 5,
+    "expired": 0,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 7.62,
-    "budgetUsd": 12
+    "costUsd": 4.02,
+    "budgetUsd": 8
   }
 }
