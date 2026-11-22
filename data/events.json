@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T06:10:30.703Z",
+  "generatedAt": "2026-11-22T15:28:02.509Z",
   "mode": "daily",
   "events": [
     {
@@ -466,81 +466,47 @@
       "isBreaking": false
     },
     {
-      "id": "c35b934fde5c",
-      "headline": "St. Johns River Shatters 1953 Record in Brevard County; Palm Bay Evacuates, Rescuers Save Horses",
-      "summary": "The St. Johns River near Cocoa rose to 18.66 feet on Nov. 20, a full foot above the previous 1953 record and up from the 17.8-ft level reported Nov. 17. First responders have conducted nearly 100 high-water rescues, Palm Bay issued mandatory evacuations for a mobile home community, and crews rescued dozens of horses from a nearby equestrian center. The river is forecast to stay above flood stage through next Tuesday.",
-      "category": "disaster",
+      "id": "e5398c91405a",
+      "headline": "Mamdani Unveils Plan to Close Rikers Island, Delays Deadline to 2032",
+      "summary": "NYC Mayor Zohran Mamdani released the city's first comprehensive plan to close Rikers Island, proposing four new borough-based jails (Brooklyn opening 2029, Bronx/Queens 2031, Manhattan 2032) and pushing the legally mandated 2027 closure deadline to 2032. The plan includes $50 million for job training, mental health counseling, and drug treatment, and requires legislative approval.",
+      "category": "politics",
       "severity": 4,
-      "lat": 28.3861,
-      "lon": -80.742,
-      "locationName": "Cocoa, Florida, USA",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "locationName": "New York, New York, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-FL",
+      "subdivision": "US-NY",
       "sources": [
         {
-          "url": "https://www.clickorlando.com/news/national/2026/11/20/northeastern-florida-now-under-flood-threats-from-storms-that-have-devastated-coastal-communities/",
-          "domain": "clickorlando.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.cnn.com/2026/11/20/us/mamdani-rikers-island-closure-delay",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
         },
         {
-          "url": "https://abcnews.com/US/wireStory/northeastern-florida-now-flood-threats-storms-devastated-coastal-138320346",
-          "domain": "abcnews.com",
-          "reliability": 82,
+          "url": "https://www.pbs.org/newshour/nation/mamdani-sets-plan-to-close-nycs-notorious-rikers-island-jail-by-2032",
+          "domain": "pbs.org",
+          "reliability": 87,
           "bias": "center"
         },
         {
-          "url": "https://www.cbsnews.com/news/florida-flooding-rain-brevard-county/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
-        },
-        {
-          "url": "https://mynews13.com/fl/orlando/news/2026/11/19/st-johns-river-in-cocoa-rises-above-record-level",
-          "domain": "mynews13.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.newsweek.com/florida-river-highest-level-ever-recorded-extreme-rain-continues-12739088",
-          "domain": "newsweek.com",
-          "reliability": 62,
-          "bias": "center"
-        },
-        {
-          "url": "https://defconlevel.com/alert/2026-11-19-nws-noaa-weather-flood-warning-issued-november-19-at-6-11am-est-by-nws-melbourne-fl",
-          "domain": "defconlevel.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.melbourneflorida.org/Services/November-Flood-Event",
-          "domain": "melbourneflorida.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://forecast.weather.gov/showsigwx.php?warnzone=FLZ647&warncounty=FLC009&firewxzone=FLZ647&local_place1=Rockledge+FL&product1=Flood+Watch",
-          "domain": "weather.gov",
+          "url": "https://www.nyc.gov/mayors-office/news/2026/11/mayor-mamdani-releases-city-s-first-comprehensive-plan-to-close-",
+          "domain": "nyc.gov",
           "reliability": 85,
           "bias": "center"
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/st-johns-river-flooding-nears-164235381.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
+          "url": "https://www.cbsnews.com/newyork/news/zohran-mamdani-rikers-island-closing-plan-nyc/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
           "bias": "center"
         }
       ],
-      "trustScore": 80,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-24T15:27:21.866Z",
+      "trustScore": 81,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-26T15:28:02.509Z",
       "isBreaking": false
     },
     {
@@ -668,6 +634,93 @@
       "isBreaking": false
     },
     {
+      "id": "c35b934fde5c",
+      "headline": "DeSantis Expands Florida Flood Emergency to 21 Counties, Mobilizes National Guard",
+      "summary": "Gov. Ron DeSantis signed Executive Order 26-232, expanding the state of emergency to 21 counties (adding Broward, Duval, Flagler, Miami-Dade, Monroe, Putnam, St. Johns) after Broward saw 10+ inches of rain in 12 hours. The state mobilized the National Guard/State Guard, 200+ Highway Patrol troopers, 235 FWC officers, 750 FDOT crew, 50 high-water vehicles and 60 pumps.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 30.4383,
+      "lon": -84.2807,
+      "locationName": "Tallahassee, Florida, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-FL",
+      "sources": [
+        {
+          "url": "https://www.flgov.com/eog/sites/default/files/executive-orders/2026/EO%2026-232.pdf",
+          "domain": "flgov.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://cbs12.com/news/local/desantis-expands-florida-emergency-order-to-21-counties-amid-flooding-palm-beach-martin-st-lucie-indian-river-okeechobee-brevard-mobilizing-national-guard-fhp-fwc-high-water-vechiles-pumps",
+          "domain": "cbs12.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://wflanews.iheart.com/featured/florida-news/content/2026-11-19-desantis-expands-florida-state-of-emergency-to-21-counties-amid-flooding/",
+          "domain": "iheart.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.clickorlando.com/news/national/2026/11/20/northeastern-florida-now-under-flood-threats-from-storms-that-have-devastated-coastal-communities/",
+          "domain": "clickorlando.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://abcnews.com/US/wireStory/northeastern-florida-now-flood-threats-storms-devastated-coastal-138320346",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/florida-flooding-rain-brevard-county/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://mynews13.com/fl/orlando/news/2026/11/19/st-johns-river-in-cocoa-rises-above-record-level",
+          "domain": "mynews13.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.newsweek.com/florida-river-highest-level-ever-recorded-extreme-rain-continues-12739088",
+          "domain": "newsweek.com",
+          "reliability": 62,
+          "bias": "center"
+        },
+        {
+          "url": "https://defconlevel.com/alert/2026-11-19-nws-noaa-weather-flood-warning-issued-november-19-at-6-11am-est-by-nws-melbourne-fl",
+          "domain": "defconlevel.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.melbourneflorida.org/Services/November-Flood-Event",
+          "domain": "melbourneflorida.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 77,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-26T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
       "id": "5d36418a6c65",
       "headline": "Drone Strikes Kill Over a Dozen at Ethiopian IDP Camp as Fighting Escalates Near Eritrea Border",
       "summary": "Drone strikes on Oct 31 hit the Hayiq Jari 2 Turk displacement camp in Ethiopia's Amhara region, killing 14-16 people including children and pregnant women. Fighting between federal forces, the TDF and Fano fighters intensified near Sheraro and Rama in Tigray, including a drone strike killing 11-12 civilians and direct ENDF-Eritrean exchanges of fire near Badme; the WHO warns Ethiopia's health system is nearing collapse.",
@@ -746,48 +799,48 @@
       "isBreaking": false
     },
     {
-      "id": "ee2d9780e090",
-      "headline": "Democrat Mary Peltola Wins Alaska Senate Seat, First Alaska Native Elected to Chamber",
-      "summary": "The Associated Press called Alaska's U.S. Senate race for Mary Peltola, who defeated two-term Republican incumbent Dan Sullivan with 50.1% of first-place votes, avoiding a ranked-choice runoff. She is the first Alaska Native elected to the U.S. Senate and the first Democrat to win an Alaska Senate race since 2008, giving Democrats a 56-seat majority starting in January 2027.",
+      "id": "03b731665560",
+      "headline": "Washington Governor Condemns 'Out of Control' ICE Operation at SeaTac Airport",
+      "summary": "Masked ICE agents detained two passengers, reportedly including a minor, as they boarded an Alaska Airlines flight at Sea-Tac Airport on Saturday morning. The Port of Seattle and Alaska Airlines said they had no advance notice; Gov. Bob Ferguson called ICE 'completely and totally out of control.'",
       "category": "politics",
       "severity": 4,
-      "lat": 61.2181,
-      "lon": -149.9003,
-      "locationName": "Anchorage, Alaska, USA",
+      "lat": 47.45,
+      "lon": -122.31,
+      "locationName": "SeaTac, Washington, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-AK",
+      "subdivision": "US-WA",
       "sources": [
         {
-          "url": "https://www.cbsnews.com/news/alaska-2026-senate-sullivan-peltola/",
+          "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
           "domain": "cbsnews.com",
           "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/18/alaska-senate-mary-peltola-wins-election.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
+          "url": "https://www.upi.com/Top_News/US/2026/11/21/washington-governor-ferguson-ICE-arrest-seatac/5811795317497/",
+          "domain": "upi.com",
+          "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://alaskapublic.org/news/politics/elections/2026-11-17/mary-peltola-wins-u-s-senate-seat-in-alaska",
-          "domain": "alaskapublic.org",
+          "url": "https://www.kuow.org/immigration/2026-11-21/outraged-port-officials-react-after-ice-arrests-family-at-sea-tac-airport",
+          "domain": "kuow.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://thehill.com/homenews/campaign/6176074-peltola-wins-alaska-senate/",
-          "domain": "thehill.com",
-          "reliability": 76,
+          "url": "https://www.newsweek.com/governor-calls-ice-arrest-of-alaska-airlines-passenger-outrageous-12752822",
+          "domain": "newsweek.com",
+          "reliability": 62,
           "bias": "center"
         }
       ],
-      "trustScore": 76,
-      "firstSeen": "2026-11-18T15:27:00.971Z",
-      "lastUpdated": "2026-11-18T15:27:00.971Z",
-      "expiresAt": "2026-11-22T15:27:00.971Z",
+      "trustScore": 75,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-26T15:28:02.509Z",
       "isBreaking": false
     },
     {
@@ -946,6 +999,46 @@
       "firstSeen": "2026-11-21T06:07:32.512Z",
       "lastUpdated": "2026-11-21T06:07:32.512Z",
       "expiresAt": "2026-11-25T06:07:32.512Z",
+      "isBreaking": false
+    },
+    {
+      "id": "869faebd88cf",
+      "headline": "Virginia Reports First Measles-Associated Death of 2026",
+      "summary": "A child under age 4 died from measles, Virginia's first measles death since 1978, part of a national outbreak that has killed at least 12 in the US in 2026. Virginia has logged 220 confirmed cases this year, 41 since October 17, almost entirely among unvaccinated people.",
+      "category": "health",
+      "severity": 4,
+      "lat": 37.5407,
+      "lon": -77.436,
+      "locationName": "Richmond, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
+      "sources": [
+        {
+          "url": "https://www.vdh.virginia.gov/news/public-relations-contacts/2026-news-releases/vdh-1st-measles-death-2026/",
+          "domain": "virginia.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fox5dc.com/news/first-measles-related-death-reported-virginia-child",
+          "domain": "fox5dc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wsls.com/health/2026/11/21/virginia-reports-young-child-is-the-states-first-measles-death-in-2026/",
+          "domain": "wsls.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-26T15:28:02.509Z",
       "isBreaking": false
     },
     {
@@ -1282,72 +1375,6 @@
       "isBreaking": false
     },
     {
-      "id": "c2a12cbfa3c2",
-      "headline": "Colorado Clears Flood-Damaged Highways for Thanksgiving Reopening; Repair Costs Put at $156 Million",
-      "summary": "CDOT confirmed it is on track to reopen US 160 over Wolf Creek Pass, the Piedra River bridge, and CO 151 ahead of Thanksgiving travel, ending weeks of isolating detours for Pagosa Springs. CDOT's preliminary estimate for reconstructing the flood-damaged highways is $156 million, to be requested from federal emergency funds plus $20 million in state contingency funds.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 37.2696,
-      "lon": -107.0101,
-      "locationName": "Pagosa Springs, Colorado, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CO",
-      "sources": [
-        {
-          "url": "https://www.codot.gov/news/2026/november2026news/cdot-on-track-to-reopen-critical-roads-ahead-of-thanksgiving-travel",
-          "domain": "codot.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cpr.org/2026/11/19/roads-reopening-floods-southwest-colorado/",
-          "domain": "cpr.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.pagosasun.com/stories/cdot-on-track-to-reopen-critical-roads-ahead-of-thanksgiving-travel,160282",
-          "domain": "pagosasun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.pbs.org/newshour/nation/rain-moves-out-as-flood-risks-remain-in-southwest-following-destructive-storms",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://governorsoffice.colorado.gov/governor/news/governor-polis-provides-update-southwestern-colorado-flooding-state-response-and-voting-access",
-          "domain": "colorado.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://coloradosun.com/2026/11/02/flooding-southwestern-colorado-san-juan-river/",
-          "domain": "coloradosun.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.koaa.com/news/local-news/colorado-national-guard-has-helped-rescue-50-people-and-20-pets-amid-flooding",
-          "domain": "koaa.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 81,
-      "firstSeen": "2026-11-18T15:27:00.971Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
-      "isBreaking": false
-    },
-    {
       "id": "a334239161a9",
       "headline": "Mexican Forces Capture Cartel Boss 'El Chapo Isidro' in Sinaloa, Sparking Deadly Retaliation",
       "summary": "Mexican army and National Guard units, coordinating with US intelligence, captured FBI-wanted cartel leader Fausto Isidro Meza Flores ('El Chapo Isidro') in Guasave, Sinaloa. Retaliatory cartel violence including helicopter gunfire and burning vehicles killed at least 11 people, among them four soldiers and seven gunmen.",
@@ -1620,52 +1647,6 @@
       "isBreaking": false
     },
     {
-      "id": "b0f62b6da03a",
-      "headline": "LA Homeless Services Authority Settles With HUD, Agrees to Return $150 Million, Loses Federal Funding",
-      "summary": "LAHSA reached a settlement with HUD requiring it to return approximately $150 million in federal funds and permanently lose access to HUD homelessness funding by the end of 2027, following HUD's suspension of the agency over fraud and mismanagement allegations. LA County will take over administration of the affected funding portfolio.",
-      "category": "society",
-      "severity": 3,
-      "lat": 34.0522,
-      "lon": -118.2437,
-      "locationName": "Los Angeles, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.hud.gov/news/hud-no-26-093",
-          "domain": "hud.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.usnews.com/news/us/articles/2026-11-17/los-angeles-homelessness-agency-reaches-settlement-with-feds-in-dispute-over-spending",
-          "domain": "usnews.com",
-          "reliability": 75,
-          "bias": "center"
-        },
-        {
-          "url": "https://ktla.com/news/local-news/feds-say-that-lahsa-will-never-receive-another-dollar-of-hud-funding-again/",
-          "domain": "ktla.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.nbclosangeles.com/news/local/la-homeless-services-authority-hud-settlement-homelessness/3971818/",
-          "domain": "nbclosangeles.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 73,
-      "firstSeen": "2026-11-20T15:27:21.866Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
-      "isBreaking": false
-    },
-    {
       "id": "84e7086b760b",
       "headline": "Al-Shabaab Ambushes Somali Army Convoy Near Jame'o, Casualty Tolls Sharply Disputed",
       "summary": "Roughly 2,000 Somali army troops conducting Operation Banooda to reopen the Baidoa-Burhakaba-Mogadishu road were ambushed by al-Shabaab near Jame'o. An officer on the scene said about 20 soldiers died, while al-Shabaab's claim of 321 killed is unverified propaganda and Somalia's government claims over 70 militants were killed.",
@@ -1892,42 +1873,91 @@
       "isBreaking": false
     },
     {
-      "id": "34cf44a37697",
-      "headline": "Powerful Storm Triggers Water Rescues and Flooding Across Los Angeles Burn-Scar Areas",
-      "summary": "The season's strongest storm hit Southern California on Nov. 20, 2026, flooding roads and prompting multiple water rescues, including stranded drivers in North Hollywood. Evacuation warnings were issued for the Palisades, Sunset, Hurst, Eaton, Kenneth and Canyon fire burn scars over debris-flow risk, then lifted later the same day.",
-      "category": "disaster",
+      "id": "c8ca2ab0c9b6",
+      "headline": "Tropical Storm Kyle Forms Off North Carolina, Threatens Outer Banks Before Heading Toward New England",
+      "summary": "The National Hurricane Center upgraded a developing coastal low to Tropical Storm Kyle, tracking near or offshore the North Carolina coast through the weekend into Monday with winds up to 60-80 mph on the Outer Banks, 1-3 feet of storm surge and dangerous surf, before pushing north toward New England.",
+      "category": "climate",
       "severity": 3,
-      "lat": 34.0522,
-      "lon": -118.2437,
-      "locationName": "Los Angeles, California, USA",
+      "lat": 35.9573,
+      "lon": -75.6241,
+      "locationName": "Nags Head, North Carolina, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-CA",
+      "subdivision": "US-NC",
       "sources": [
         {
-          "url": "https://abc7.com/live-updates/los-angeles-rain-evacuation-warnings-issued-southern-california-burn-scar-areas-ahead-storm/20051889/",
-          "domain": "abc7.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.cbsnews.com/losangeles/news/rain-southern-california-evacuation-warnings-burn-scar-areas-flooding-storm/",
+          "url": "https://www.cbsnews.com/boston/news/tropical-storm-kyle-new-england-coast-impact",
           "domain": "cbsnews.com",
           "reliability": 82,
           "bias": "center"
         },
         {
-          "url": "https://mayor.lacity.gov/news/mayor-bass-outlines-city-preparedness-measures-ahead-heavy-rain-across-la-region",
-          "domain": "lacity.gov",
-          "reliability": 85,
-          "bias": "center"
+          "url": "https://www.publicradioeast.org/2026-11-20/developing-coastal-storm-could-bring-flooding-dangerous-surf-to-crystal-coast-core-banks",
+          "domain": "publicradioeast.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/future-subtropical-storm-kyle-brews-atlantic-millions-alert",
+          "domain": "foxweather.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wxii12.com/article/north-carolina-beach-kyle-rain-rip-high-surf-weekend/74472944",
+          "domain": "wxii12.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.accuweather.com/en/weather-forecasts/noreaster-to-bring-major-coastal-flooding-potential-for-hurricane-force-gusts-in-new-england/1937400",
+          "domain": "accuweather.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://edition.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/17/metro/new-england-noreaster-coastal-storm/",
+          "domain": "bostonglobe.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wmbfnews.com/2026/11/19/first-alert-coastal-storm-may-become-rare-late-season-named-storm-impacting-carolinas/",
+          "domain": "wmbfnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://houstonchronicle.com/news/houston-weather/article/bahamas-system-could-become-tropical-storm-kyle-22539827.php",
+          "domain": "houstonchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://weather.com/2026/11/19/forecast/regional/video/coastal-low-storm-east-coast-carolina-new-york-rain-winds",
+          "domain": "weather.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
       "trustScore": 68,
-      "firstSeen": "2026-11-20T15:27:21.866Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
+      "firstSeen": "2026-11-19T15:28:20.587Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
       "isBreaking": false
     },
     {
@@ -1997,75 +2027,95 @@
       "isBreaking": false
     },
     {
-      "id": "c8ca2ab0c9b6",
-      "headline": "Coastal Storm Moves Up East Coast, Bringing Major Flooding Risk to New England Before Thanksgiving",
-      "summary": "The storm system tracked earlier this week off Georgia and the Carolinas has pushed up the East Coast as a fast-moving coastal storm, bringing wind gusts of 40-60 mph and major coastal flooding risk from Virginia to Maine. Compounded by astronomical high tides from the full moon, it threatens to disrupt I-95 corridor Thanksgiving travel.",
-      "category": "climate",
+      "id": "d2f2cab0c15b",
+      "headline": "Hawaii Gov. Green Vows Investigation Into H-POWER Diesel Spill Response",
+      "summary": "Gov. Josh Green called the delayed reporting of the roughly 400,000-gallon H-POWER diesel leak 'unacceptable,' vowing a formal investigation into how city and state officials handled disclosure. He said he learned of the leak's full scope only this week and plans an executive order requiring immediate reporting of future fuel spills; the EPA is separately investigating.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 42.3601,
-      "lon": -71.0589,
-      "locationName": "Boston, Massachusetts, USA",
+      "lat": 21.34,
+      "lon": -158.09,
+      "locationName": "Kapolei, Hawaii, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-MA",
+      "subdivision": "US-HI",
       "sources": [
         {
-          "url": "https://www.accuweather.com/en/weather-forecasts/noreaster-to-bring-major-coastal-flooding-potential-for-hurricane-force-gusts-in-new-england/1937400",
-          "domain": "accuweather.com",
+          "url": "https://www.hawaiinewsnow.com/2026/11/22/unacceptable-green-vows-investigation-into-h-power-leak-response/",
+          "domain": "hawaiinewsnow.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://edition.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/17/metro/new-england-noreaster-coastal-storm/",
-          "domain": "bostonglobe.com",
+          "url": "https://www.khon2.com/local-news/green-plans-fuel-spill-order/",
+          "domain": "khon2.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.wmbfnews.com/2026/11/19/first-alert-coastal-storm-may-become-rare-late-season-named-storm-impacting-carolinas/",
-          "domain": "wmbfnews.com",
+          "url": "https://wtop.com/national/2026/11/epa-fines-at-site-preceded-incinerator-fuel-leak-as-questions-mount",
+          "domain": "wtop.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://houstonchronicle.com/news/houston-weather/article/bahamas-system-could-become-tropical-storm-kyle-22539827.php",
-          "domain": "houstonchronicle.com",
+          "url": "https://www.staradvertiser.com/2026/11/20/hawaii-news/massive-h-power-fuel-spill-went-undetected-then-unreported-for-months/",
+          "domain": "staradvertiser.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://weather.com/2026/11/19/forecast/regional/video/coastal-low-storm-east-coast-carolina-new-york-rain-winds",
-          "domain": "weather.com",
+          "url": "https://www.kitv.com/news/local/400k-gallon-fuel-spill-at-leeward-oahu-plant-went-undetected-for-months-mayor-blangiardi-addresses/article_426f942d-0798-4f04-ae63-708413a37fe6.html",
+          "domain": "kitv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-21T15:27:59.884Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "544f3fd1a3a0",
+      "headline": "Tentative Deal Averts Watchmen Strike at Ports of Los Angeles and Long Beach",
+      "summary": "The Pacific Maritime Association and ILWU Local 26, representing about 250 watchmen who secure terminals handling more than half of the two ports' cargo, reached a tentative contract agreement just before their contract was set to expire. The deal includes a $3,200 bonus and raises average full-time pay to about $198,000 a year, pending ratification.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 33.7701,
+      "lon": -118.1937,
+      "locationName": "Long Beach, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.freightwaves.com/news/tentative-union-deal-averts-strike-at-port-of-la-long-beach",
+          "domain": "freightwaves.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.wyff4.com/article/tropical-system-south-carolina-coast/74476224",
-          "domain": "wyff4.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://bloomberg.com/news/articles/2026-11-21/los-angeles-port-strike-threat-resolved-with-tentative-agreement",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/east-coast-storm-rain-wind-160000757.html",
+          "url": "https://www.yahoo.com/news/us/articles/southern-california-port-employers-watchmen-114955689.html",
           "domain": "yahoo.com",
           "reliability": 60,
           "bias": "center"
         }
       ],
-      "trustScore": 67,
-      "firstSeen": "2026-11-19T15:28:20.587Z",
+      "trustScore": 65,
+      "firstSeen": "2026-11-21T15:27:59.884Z",
       "lastUpdated": "2026-11-21T15:27:59.884Z",
       "expiresAt": "2026-11-23T15:27:59.884Z",
       "isBreaking": false
@@ -2165,45 +2215,6 @@
       "firstSeen": "2026-11-21T06:07:32.512Z",
       "lastUpdated": "2026-11-21T06:07:32.512Z",
       "expiresAt": "2026-11-23T06:07:32.512Z",
-      "isBreaking": false
-    },
-    {
-      "id": "544f3fd1a3a0",
-      "headline": "Tentative Deal Averts Watchmen Strike at Ports of Los Angeles and Long Beach",
-      "summary": "The Pacific Maritime Association and ILWU Local 26, representing about 250 watchmen who secure terminals handling more than half of the two ports' cargo, reached a tentative contract agreement just before their contract was set to expire. The deal includes a $3,200 bonus and raises average full-time pay to about $198,000 a year, pending ratification.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 33.7701,
-      "lon": -118.1937,
-      "locationName": "Long Beach, California, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.freightwaves.com/news/tentative-union-deal-averts-strike-at-port-of-la-long-beach",
-          "domain": "freightwaves.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://bloomberg.com/news/articles/2026-11-21/los-angeles-port-strike-threat-resolved-with-tentative-agreement",
-          "domain": "bloomberg.com",
-          "reliability": 88,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/southern-california-port-employers-watchmen-114955689.html",
-          "domain": "yahoo.com",
-          "reliability": 60,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-21T15:27:59.884Z",
-      "lastUpdated": "2026-11-21T15:27:59.884Z",
-      "expiresAt": "2026-11-23T15:27:59.884Z",
       "isBreaking": false
     },
     {
@@ -2461,45 +2472,6 @@
       "isBreaking": false
     },
     {
-      "id": "692b184141b5",
-      "headline": "Pennsylvania Confirms Eighth Measles-Associated Death as Outbreak Reaches 1,589 Cases",
-      "summary": "The Pennsylvania Department of Health confirmed an unvaccinated Clinton County resident died of measles, the state's eighth measles-associated death in 2026. Confirmed cases statewide have reached 1,589 across 46 counties, with 315 hospitalizations; prior deaths occurred in Lancaster, Jefferson, Mifflin, and Montour counties.",
-      "category": "health",
-      "severity": 3,
-      "lat": 41.1385,
-      "lon": -77.4555,
-      "locationName": "Lock Haven, Pennsylvania, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-PA",
-      "sources": [
-        {
-          "url": "https://www.pa.gov/agencies/health/newsroom/pa-department-of-health-confirms-eighth-measles-associated-death",
-          "domain": "pa.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.wvia.org/news/local/2026-11-18/health-department-announces-measles-death-in-clinton-county-pa-s-eighth",
-          "domain": "wvia.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/19/unvaccinated-pennsylvania-resident-dies-amid-historic-us-measles-resurgence",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        }
-      ],
-      "trustScore": 60,
-      "firstSeen": "2026-11-20T15:27:21.866Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
-      "isBreaking": false
-    },
-    {
       "id": "2ea6456e6822",
       "headline": "Floods and Landslides Hit Eight Indonesian Provinces From Sumatra to Sulawesi",
       "summary": "Heavy rain since Nov 17 triggered floods, landslides and strong winds across eight to nine Indonesian provinces from North Sumatra to Central and South Sulawesi. Aceh was hardest hit, with one toddler killed and over 15,000 people affected in Aceh Tamiang; Indonesia's disaster agency has deployed weather-modification operations over Aceh and North Sumatra.",
@@ -2542,6 +2514,54 @@
       "firstSeen": "2026-11-22T06:10:30.703Z",
       "lastUpdated": "2026-11-22T06:10:30.703Z",
       "expiresAt": "2026-11-24T06:10:30.703Z",
+      "isBreaking": false
+    },
+    {
+      "id": "d8b5f14d82e8",
+      "headline": "Loudoun County Adopts Data-Center Pause as Roanoke Seeks Statewide Moratorium",
+      "summary": "Loudoun County's Board of Supervisors voted 7-1-1 to adopt a 12-month pause on new data-center and substation applications, in a county home to the world's largest concentration of data centers. Separately, Roanoke's City Council voted unanimously to ask state legislators to impose a two-year statewide moratorium on new data-center approvals.",
+      "category": "society",
+      "severity": 3,
+      "lat": 39.1157,
+      "lon": -77.5636,
+      "locationName": "Leesburg, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-officially-adopts-12-month-moratorium-on-data-center-development/",
+          "domain": "datacenterdynamics.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.fox5dc.com/news/loudoun-county-leaders-approve-10-month-pause-data-center-applications",
+          "domain": "fox5dc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://cardinalnews.org/2026/11/20/two-year-data-center-moratorium-is-needed-and-is-now-part-of-legislative-wish-list-roanoke-council-decides/",
+          "domain": "cardinalnews.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wdbj7.com/2026/11/20/roanoke-city-council-seeks-statewide-data-center-pause-local-project-moves-forward/",
+          "domain": "wdbj7.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 57,
+      "firstSeen": "2026-11-21T15:27:59.884Z",
+      "lastUpdated": "2026-11-21T15:27:59.884Z",
+      "expiresAt": "2026-11-23T15:27:59.884Z",
       "isBreaking": false
     },
     {
@@ -2667,137 +2687,43 @@
       "isBreaking": false
     },
     {
-      "id": "d8b5f14d82e8",
-      "headline": "Loudoun County Adopts Data-Center Pause as Roanoke Seeks Statewide Moratorium",
-      "summary": "Loudoun County's Board of Supervisors voted 7-1-1 to adopt a 12-month pause on new data-center and substation applications, in a county home to the world's largest concentration of data centers. Separately, Roanoke's City Council voted unanimously to ask state legislators to impose a two-year statewide moratorium on new data-center approvals.",
-      "category": "society",
-      "severity": 3,
-      "lat": 39.1157,
-      "lon": -77.5636,
-      "locationName": "Leesburg, Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-VA",
-      "sources": [
-        {
-          "url": "https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-officially-adopts-12-month-moratorium-on-data-center-development/",
-          "domain": "datacenterdynamics.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.fox5dc.com/news/loudoun-county-leaders-approve-10-month-pause-data-center-applications",
-          "domain": "fox5dc.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://cardinalnews.org/2026/11/20/two-year-data-center-moratorium-is-needed-and-is-now-part-of-legislative-wish-list-roanoke-council-decides/",
-          "domain": "cardinalnews.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.wdbj7.com/2026/11/20/roanoke-city-council-seeks-statewide-data-center-pause-local-project-moves-forward/",
-          "domain": "wdbj7.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-21T15:27:59.884Z",
-      "lastUpdated": "2026-11-21T15:27:59.884Z",
-      "expiresAt": "2026-11-23T15:27:59.884Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9686f992a308",
-      "headline": "GEO Group Sells Tacoma Immigrant Detention Center to Federal Government for $453 Million",
-      "summary": "GEO Group completed the sale of its 1,635-bed Northwest ICE Processing Center in Tacoma to DHS for $453 million on Nov. 18, 2026, far above its roughly $72.6 million assessed value. GEO will continue operating the facility under a new 10-year, approximately $1.5 billion federal contract through October 2036.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 47.2529,
-      "lon": -122.4443,
-      "locationName": "Tacoma, Washington, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-WA",
-      "sources": [
-        {
-          "url": "https://www.kuow.org/immigration/2026-11-18/geo-group-sells-embattled-tacoma-immigrant-detention-center-to-the-feds",
-          "domain": "kuow.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.knkx.org/government/2026-11-18/northwest-immigrant-detention-center-tacoma-geo-sale-federal",
-          "domain": "knkx.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kiro7.com/news/local/department-homeland-security-buys-tacoma-ice-detention-center/VFFRBRHSRNDHFMWPNOJGUBJ65U/",
-          "domain": "kiro7.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://opb.org/article/2026/11/18/geo-sells-tacoma-detention-center",
-          "domain": "opb.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-20T15:27:21.866Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e5e4460df61e",
-      "headline": "Supercell Storm Kills 3, Destroys Thousands of Homes in Tupanciretã, Brazil",
-      "summary": "A supercell thunderstorm with winds up to 114 km/h struck Tupanciretã, Brazil, overnight on November 20, killing at least three people and destroying or damaging about 8,000 of the town's 8,600 buildings. The local hospital lost its roof and diagnostic equipment, forcing a patient evacuation, and officials have not ruled out a tornado touchdown.",
+      "id": "0df8852ca07c",
+      "headline": "Arizona Finalizes FEMA Disaster Declaration Push as Flood Damage Tally Hits 78 Homes Destroyed",
+      "summary": "State assessors tallied 289 Yavapai County homes damaged by early-November flooding; 78 destroyed and 137 with major damage. Arizona and FEMA are racing to finalize a federal disaster declaration request, with damage estimated at $5 million in Yavapai County and $14 million statewide.",
       "category": "disaster",
       "severity": 3,
-      "lat": -14.2,
-      "lon": -51.9,
-      "locationName": "Tupanciretã, Brazil",
-      "countryCode": "BR",
+      "lat": 34.56,
+      "lon": -111.82,
+      "locationName": "Camp Verde, Arizona, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AZ",
       "sources": [
         {
-          "url": "https://www.france24.com/en/live-news/20261120-severe-storm-destroys-thousands-of-homes-in-brazil",
-          "domain": "france24.com",
-          "reliability": 84,
+          "url": "https://www.fox10phoenix.com/news/yavapai-county-flood-recovery-continues-state-reports-78-homes-destroyed",
+          "domain": "fox10phoenix.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.azfamily.com/2026/11/19/will-fema-help-arizona-flood-victims-heres-how-aid-is-decided/",
+          "domain": "azfamily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.yavapaiaz.gov/News-articles/STATE-OF-EMERGENCY-DUE-TO-SEVERE-FLOODING",
+          "domain": "yavapaiaz.gov",
+          "reliability": 85,
           "bias": "center"
-        },
-        {
-          "url": "https://english.news.cn/20261121/41655e8a932947b499c30e9c6fe7b8d5/c.html",
-          "domain": "news.cn",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.riotimesonline.com/storm-strips-roofs-brazilian-town-tupancireta-2026/",
-          "domain": "riotimesonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         }
       ],
       "trustScore": 55,
-      "firstSeen": "2026-11-21T06:07:32.512Z",
-      "lastUpdated": "2026-11-21T06:07:32.512Z",
-      "expiresAt": "2026-11-23T06:07:32.512Z",
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
       "isBreaking": false
     },
     {
@@ -2841,79 +2767,38 @@
       "isBreaking": false
     },
     {
-      "id": "0cbfd4713cdc",
-      "headline": "West Coast Health Officials Urge Measles Vaccination as US Loses Elimination Status",
-      "summary": "The state public health officers of Washington, Oregon, California and Hawaii issued a joint West Coast Health Alliance statement on Nov. 17, 2026 urging MMR vaccination after the U.S. lost its 30-year measles elimination status amid rising case counts. Hawaii's kindergarten MMR vaccination rate has fallen from 94.3% in 2021-22 to 89.3% in 2025-26.",
-      "category": "health",
+      "id": "e5e4460df61e",
+      "headline": "Supercell Storm Kills 3, Destroys Thousands of Homes in Tupanciretã, Brazil",
+      "summary": "A supercell thunderstorm with winds up to 114 km/h struck Tupanciretã, Brazil, overnight on November 20, killing at least three people and destroying or damaging about 8,000 of the town's 8,600 buildings. The local hospital lost its roof and diagnostic equipment, forcing a patient evacuation, and officials have not ruled out a tornado touchdown.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 21.3069,
-      "lon": -157.8583,
-      "locationName": "Honolulu, Hawaii, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-HI",
+      "lat": -14.2,
+      "lon": -51.9,
+      "locationName": "Tupanciretã, Brazil",
+      "countryCode": "BR",
       "sources": [
         {
-          "url": "https://governor.hawaii.gov/newsroom/news-release-west-coast-health-alliance-joint-statement-the-state-public-health-officers-of-washington-oregon-california-and-hawai%CA%BBi-recommend-vaccination-against-the-measles-amid-30-year-hi/",
-          "domain": "hawaii.gov",
-          "reliability": 85,
+          "url": "https://www.france24.com/en/live-news/20261120-severe-storm-destroys-thousands-of-homes-in-brazil",
+          "domain": "france24.com",
+          "reliability": 84,
           "bias": "center"
         },
         {
-          "url": "https://www.staradvertiser.com/2026/11/18/hawaii-news/hawaii-officials-urge-vaccines-after-loss-of-u-s-measles-elimination-status/",
-          "domain": "staradvertiser.com",
+          "url": "https://english.news.cn/20261121/41655e8a932947b499c30e9c6fe7b8d5/c.html",
+          "domain": "news.cn",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.khon2.com/local-news/hawaii-vaccination-rates-drop/",
-          "domain": "khon2.com",
+          "url": "https://www.riotimesonline.com/storm-strips-roofs-brazilian-town-tupancireta-2026/",
+          "domain": "riotimesonline.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 55,
-      "firstSeen": "2026-11-20T15:27:21.866Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
-      "isBreaking": false
-    },
-    {
-      "id": "8bc0e8ddf3f9",
-      "headline": "US Appeals Court Extends Freeze on Venezuelan TPS Restoration for 600,000 Migrants",
-      "summary": "The Ninth Circuit Court of Appeals extended a stay blocking a lower court order that would have restored Temporary Protected Status for roughly 600,000 Venezuelans, until seven days after it issues a full ruling. The Trump administration withdrew its emergency Supreme Court application on November 19 after securing the extended stay.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 37.7749,
-      "lon": -122.4194,
-      "locationName": "San Francisco, United States",
-      "countryCode": "US",
-      "subdivision": "US-CA",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.jurist.org/news/2026/11/trump-administration-withdraws-us-supreme-court-request-over-venezuelan-deportation-protections/",
-          "domain": "jurist.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.scotusblog.com/2026/11/trump-administration-asks-supreme-court-to-block-lower-court-ruling-keeping-protected-status-in-/",
-          "domain": "scotusblog.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 54,
       "firstSeen": "2026-11-21T06:07:32.512Z",
       "lastUpdated": "2026-11-21T06:07:32.512Z",
       "expiresAt": "2026-11-23T06:07:32.512Z",
@@ -2957,6 +2842,45 @@
       "firstSeen": "2026-11-21T15:27:59.884Z",
       "lastUpdated": "2026-11-21T15:27:59.884Z",
       "expiresAt": "2026-11-23T15:27:59.884Z",
+      "isBreaking": false
+    },
+    {
+      "id": "8bc0e8ddf3f9",
+      "headline": "US Appeals Court Extends Freeze on Venezuelan TPS Restoration for 600,000 Migrants",
+      "summary": "The Ninth Circuit Court of Appeals extended a stay blocking a lower court order that would have restored Temporary Protected Status for roughly 600,000 Venezuelans, until seven days after it issues a full ruling. The Trump administration withdrew its emergency Supreme Court application on November 19 after securing the extended stay.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "locationName": "San Francisco, United States",
+      "countryCode": "US",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.jurist.org/news/2026/11/trump-administration-withdraws-us-supreme-court-request-over-venezuelan-deportation-protections/",
+          "domain": "jurist.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.scotusblog.com/2026/11/trump-administration-asks-supreme-court-to-block-lower-court-ruling-keeping-protected-status-in-/",
+          "domain": "scotusblog.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-21T06:07:32.512Z",
+      "lastUpdated": "2026-11-21T06:07:32.512Z",
+      "expiresAt": "2026-11-23T06:07:32.512Z",
       "isBreaking": false
     },
     {
@@ -3040,120 +2964,356 @@
       "isBreaking": false
     },
     {
-      "id": "69564c8a91de",
-      "headline": "Russian Drone Enters Moldova and Suspected Helicopter Breaches Finnish Airspace",
-      "summary": "A jet-powered drone twice crossed into Moldovan airspace near Crocmaz village on Nov 21 amid Russian strikes on Ukraine, while Finland reported a suspected Russian helicopter penetrated about 4km into its airspace near Loviisa the same day. Both incidents followed Russian missile and drone debris landing in Poland a day earlier; no casualties were reported.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 46.52,
-      "lon": 29.67,
-      "locationName": "Moldova and Finland",
-      "countryCode": "MD",
-      "sources": [
-        {
-          "url": "https://kyivindependent.com/moldova-finland-report-russian-airspace-violations-day-after-suspected-russian-missiles-flew-into-poland/",
-          "domain": "kyivindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.ukrinform.net/rubric-emergencies/4187228-finland-suspects-russian-helicopter-of-violating-its-airspace.html",
-          "domain": "ukrinform.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://moldovalive.md/another-drone-violates-moldovas-airspace-ministry-of-defence-says/",
-          "domain": "moldovalive.md",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-22T06:10:30.703Z",
-      "lastUpdated": "2026-11-22T06:10:30.703Z",
-      "expiresAt": "2026-11-24T06:10:30.703Z",
-      "isBreaking": false
-    },
-    {
-      "id": "30f8b6086cb0",
-      "headline": "South Korea's KOSPI Plunges 5.21% in 'Black Friday' Rout Over AI Chip Spending Fears",
-      "summary": "South Korea's KOSPI index fell 5.21% to a 10-month low of 4,869.96 on Nov 20, triggering circuit breakers, while the KOSDAQ fell 5.71%. The sell-off was driven by concerns over AI and semiconductor spending and allegations about US chipmaker China-export compliance, also hitting Japan's Nikkei and Taiwan's TAIEX; opposition lawmakers warned of further declines and blamed leveraged ETF and pension fund exposure.",
+      "id": "ee4688e67c33",
+      "headline": "Buffalo Nonprofit Health Research Inc. to Lay Off 760 Workers",
+      "summary": "Health Research Inc. filed a WARN notice eliminating 760 of its roughly 791 positions at its Buffalo campus, about 96% of its workforce, effective Dec 24. The cuts stem from legislation transferring HRI's Buffalo Division to Roswell Park Cancer Research Corporation.",
       "category": "economy",
       "severity": 3,
-      "lat": 37.5665,
-      "lon": 126.978,
-      "locationName": "Seoul, South Korea",
-      "countryCode": "KR",
+      "lat": 42.8864,
+      "lon": -78.8784,
+      "locationName": "Buffalo, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
       "sources": [
         {
-          "url": "https://en.sedaily.com/economy/2026/11/21/kospi-hits-10-month-low-as-opposition-blames-government",
-          "domain": "sedaily.com",
+          "url": "https://whatnow.com/news/local-news/a-new-york-research-nonprofit-is-planning-760-layoffs-in-buffalo-campus/",
+          "domain": "whatnow.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.ajupress.com/view/20261120161654316",
-          "domain": "ajupress.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://finance.biggo.com/news/80e85cdf-9b45-406e-ba27-c29e22b85cb5",
-          "domain": "biggo.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://dol.ny.gov/warn-businesses",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
         }
       ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-22T06:10:30.703Z",
-      "lastUpdated": "2026-11-22T06:10:30.703Z",
-      "expiresAt": "2026-11-24T06:10:30.703Z",
+      "trustScore": 50,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
       "isBreaking": false
     },
     {
-      "id": "cb30ba66a486",
-      "headline": "South Korea's Ruling Party Adopts Plan to Impeach Supreme Court Chief Justice",
-      "summary": "On November 20, South Korea's ruling Democratic Party formally adopted as party policy a plan to impeach Supreme Court Chief Justice Cho Hee-dae, after the Supreme Court a day earlier partially overturned and remanded the martial-law conviction of former Prime Minister Han Duck-soo. The party plans to file the impeachment motion around December 3, the anniversary of the 2024 martial law declaration.",
+      "id": "d30844df6277",
+      "headline": "Georgia Gov.-elect Bottoms Names Transition Team, Signals Abortion Ban Fight",
+      "summary": "Gov.-elect Keisha Lance Bottoms announced her 'Georgia's Promise' transition effort and named policy committee leaders including Jon Keen, Jason Carter, and Calvin Smyre. She has begun early discussions to repeal or roll back Georgia's six-week abortion ban ahead of the 2027 session; a GOP-controlled Senate signaled resistance.",
       "category": "politics",
       "severity": 3,
-      "lat": 37.5665,
-      "lon": 126.978,
-      "locationName": "Seoul, South Korea",
-      "countryCode": "KR",
+      "lat": 33.749,
+      "lon": -84.388,
+      "locationName": "Atlanta, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
       "sources": [
         {
-          "url": "https://www.koreaherald.com/article/10944466",
-          "domain": "koreaherald.com",
+          "url": "https://www.wsbtv.com/news/local/bottoms-announces-transition-team-priorities/DCQF4VWERBEI5BSIUVJMGML2RE/",
+          "domain": "wsbtv.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.koreatimes.co.kr/southkorea/politics/20261119/dpk-moves-to-impeach-chief-justice-over-martial-law-ruling-on-ex-pm-han",
-          "domain": "koreatimes.co.kr",
+          "url": "https://www.fox5atlanta.com/news/gov-elect-bottoms-announces-georgias-promise-transition-leaders",
+          "domain": "fox5atlanta.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.koreajoongangdaily.com/korea/dp-moves-to-impeach-chief-justice-over-han-ducksoo-martial-law-ruling/12982234",
-          "domain": "koreajoongangdaily.com",
+          "url": "https://www.walb.com/2026/11/17/governor-elect-keisha-lance-bottoms-set-unveil-policy-committees/",
+          "domain": "walb.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-21T06:07:32.512Z",
-      "lastUpdated": "2026-11-21T06:07:32.512Z",
-      "expiresAt": "2026-11-23T06:07:32.512Z",
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "0920a553dc53",
+      "headline": "Missouri Education Board Appoints GOP Senate Leader as Interim Schools Commissioner",
+      "summary": "The Missouri State Board of Education voted to name state Sen. Cindy O'Laughlin interim commissioner of education effective Dec 1, replacing Lisa Sireno. Democratic lawmakers criticized the pick, arguing state law requires public-education administration experience.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.5767,
+      "lon": -92.1735,
+      "locationName": "Jefferson City, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.ksmu.org/news/2026-11-20/missouri-education-board-selects-senate-leader-cindy-olaughlin-as-interim-commissioner",
+          "domain": "ksmu.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://missouriindependent.com/2026/11/20/missouri-education-board-selects-senate-leader-cindy-olaughlin-as-interim-commissioner/",
+          "domain": "missouriindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kctv5.com/2026/11/21/missouri-education-board-names-pro-school-choice-interim-commissioner/",
+          "domain": "kctv5.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f98a4dbe6743",
+      "headline": "Colorado Regulators Probe 705% Surge in Utility Shutoffs",
+      "summary": "The Colorado PUC opened a formal investigation into power disconnections concentrated in low-income and minority communities after residential shutoffs rose 705% to roughly 78,300 between 2023-2025. Bill-assistance demand is up about 40% as Xcel Energy electric rates rose more than 22% since 2023.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 39.74,
+      "lon": -104.99,
+      "locationName": "Denver, Colorado, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CO",
+      "sources": [
+        {
+          "url": "https://coloradosun.com/2026/11/20/utility-bills-gas-electricity-energy-outreach-colorado-puc-probe/",
+          "domain": "coloradosun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/colorado/news/xcel-energy-planned-power-shutoffs-colorado/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "68a67669d81f",
+      "headline": "New Mexico Lawmakers Move to Bar Informal Police-to-ICE Transfers",
+      "summary": "At a Nov 20 legislative hearing, immigrant-rights attorneys presented evidence of local law enforcement conducting informal handoffs of arrestees to ICE despite the state's Immigrant Safety Act. Lawmakers said they intend to draft legislation closing the loophole.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 35.69,
+      "lon": -105.94,
+      "locationName": "Santa Fe, New Mexico, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NM",
+      "sources": [
+        {
+          "url": "https://www.santafenewmexican.com/news/local_news/new-mexico-lawmakers-say-they-intend-to-bar-informal-local-collaboration-with-ice/article_fd863cd2-3194-4310-b2bc-8658806c3372.html",
+          "domain": "santafenewmexican.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.abqjournal.com/news/immigrant-rights-groups-accuse-nm-law-enforcement-of-assisting-ice/3157688",
+          "domain": "abqjournal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://sourcenm.com/2026/11/06/new-mexico-immigrant-groups-urge-legislature-to-crack-down-on-local-police-handoffs-to-ice-agents/",
+          "domain": "sourcenm.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "40500aa26236",
+      "headline": "Fort Smith, Arkansas Still Can't Say Whose Data Was Stolen in July Cyberattack",
+      "summary": "Fort Smith's investigative report, released Nov 19, confirms a phishing-triggered breach from July 24-Aug 16, with attackers claiming about 5 million files and 5.7TB stolen. The city acknowledged personal data of city-service users, including Social Security numbers and health information, may be compromised; it's now a live issue in the mayoral race.",
+      "category": "society",
+      "severity": 3,
+      "lat": 35.39,
+      "lon": -94.4,
+      "locationName": "Fort Smith, Arkansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AR",
+      "sources": [
+        {
+          "url": "https://www.5newsonline.com/article/news/local/fort-smith-releases-full-investigative-report-august-cyberattack-57-terabytes-were-taken/527-6c295539-505b-4e4d-9e05-bb4daff25763",
+          "domain": "5newsonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.4029tv.com/article/fort-smith-cyberattack/74481646",
+          "domain": "4029tv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://talkbusiness.net/2026/11/report-provides-info-about-attack-on-city-of-fort-smith-computer-system",
+          "domain": "talkbusiness.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "df6b90efa569",
+      "headline": "Oregon Confirms First Human Bird Flu Case of 2026, Linked to Morrow County Dairy Cows",
+      "summary": "The Oregon State Public Health Laboratory confirmed a human H5 avian-influenza case tied to a dairy-cattle outbreak in Morrow County, Oregon's first human case of 2026 and second ever. The patient had mild symptoms and received oseltamivir without hospitalization; officials say public risk remains extremely low.",
+      "category": "health",
+      "severity": 3,
+      "lat": 45.36,
+      "lon": -119.55,
+      "locationName": "Heppner, Oregon, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OR",
+      "sources": [
+        {
+          "url": "https://www.opb.org/article/2026/11/19/avian-flu-oregon-health-dairy-cows-influenza/",
+          "domain": "opb.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kptv.com/2026/11/19/oregon-confirms-first-human-case-bird-flu-this-year/",
+          "domain": "kptv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://capitalpress.com/2026/11/20/oregons-first-human-case-of-bird-flu-confirmed-in-morrow-county/",
+          "domain": "capitalpress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fc3bd216d894",
+      "headline": "New, Narrowly Divided Alaska Legislature Takes Shape After Ranked-Choice Tabulation",
+      "summary": "Ranked-choice tabulation completed Nov 18-19 confirmed five Republican legislators lost re-election, with several House seats flipping to candidates aligned with a Democrat-leaning bipartisan coalition. In the state Senate, Republicans retain 11 seats to Democrats' 9, with one independent; the results follow Mary Peltola's separate Senate win.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 58.3,
+      "lon": -134.42,
+      "locationName": "Juneau, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://alaskapublic.org/news/politics/elections/2026-11-19/with-narrow-margins-and-come-from-behind-wins-new-faces-are-set-to-join-the-alaska-legislature",
+          "domain": "alaskapublic.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ktoo.org/2026/11/18/five-republicans-lose-seats-in-legislature-as-election-officials-finish-vote-counting-and-tabulation/",
+          "domain": "ktoo.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/11/19/two-of-alaskas-legislative-races-are-within-five-votes-after-ranked-choice-tabulations/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ec6413724428",
+      "headline": "62 Arrested, $282 Million in Marijuana Seized in Chico Warehouse Raid",
+      "summary": "Butte County Sheriff's deputies, a federal-state narcotics task force, and BLM agents raided warehouses disguised as hemp-processing operations on Contractors Lane in Chico, finding about 235,661 pounds of marijuana valued at roughly $282.8 million and arresting 62 people aged 19-83.",
+      "category": "society",
+      "severity": 3,
+      "lat": 39.73,
+      "lon": -121.84,
+      "locationName": "Chico, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://krcrtv.com/news/local/62-arrested-as-raid-nets-235661-pounds-of-marijuana-at-chico-warehouses",
+          "domain": "krcrtv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ktla.com/news/california/62-arrested-282-million-worth-of-weed-seized-in-massive-raid-at-california-warehouses/",
+          "domain": "ktla.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.actionnewsnow.com/news/top-stories/deputies-seize-282-million-in-marijuana-from-chico-warehouses/article_e5819028-2193-46f9-ac9c-b3fbd6673a88.html",
+          "domain": "actionnewsnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T15:28:02.509Z",
       "isBreaking": false
     },
     {
@@ -3444,77 +3604,120 @@
       "isBreaking": false
     },
     {
-      "id": "d2f2cab0c15b",
-      "headline": "400,000-Gallon Diesel Spill at Honolulu's H-POWER Plant Concealed for Months",
-      "summary": "City and state officials disclosed that roughly 400,000 gallons of diesel fuel leaked from an underground pipeline at the H-POWER waste-to-energy plant in Kapolei between its May 4 discovery and a public announcement on November 19. The full scope was only confirmed to Hawaii's health department in July, and state lawmakers plan hearings into the delayed disclosure.",
-      "category": "disaster",
+      "id": "69564c8a91de",
+      "headline": "Russian Drone Enters Moldova and Suspected Helicopter Breaches Finnish Airspace",
+      "summary": "A jet-powered drone twice crossed into Moldovan airspace near Crocmaz village on Nov 21 amid Russian strikes on Ukraine, while Finland reported a suspected Russian helicopter penetrated about 4km into its airspace near Loviisa the same day. Both incidents followed Russian missile and drone debris landing in Poland a day earlier; no casualties were reported.",
+      "category": "conflict",
       "severity": 3,
-      "lat": 21.3469,
-      "lon": -158.0858,
-      "locationName": "Kapolei, Hawaii, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-HI",
+      "lat": 46.52,
+      "lon": 29.67,
+      "locationName": "Moldova and Finland",
+      "countryCode": "MD",
       "sources": [
         {
-          "url": "https://www.staradvertiser.com/2026/11/20/hawaii-news/massive-h-power-fuel-spill-went-undetected-then-unreported-for-months/",
-          "domain": "staradvertiser.com",
+          "url": "https://kyivindependent.com/moldova-finland-report-russian-airspace-violations-day-after-suspected-russian-missiles-flew-into-poland/",
+          "domain": "kyivindependent.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.khon2.com/local-news/honolulu-hawaii-h-power-fuel-leak/",
-          "domain": "khon2.com",
+          "url": "https://www.ukrinform.net/rubric-emergencies/4187228-finland-suspects-russian-helicopter-of-violating-its-airspace.html",
+          "domain": "ukrinform.net",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.kitv.com/news/local/400k-gallon-fuel-spill-at-leeward-oahu-plant-went-undetected-for-months-mayor-blangiardi-addresses/article_426f942d-0798-4f04-ae63-708413a37fe6.html",
-          "domain": "kitv.com",
+          "url": "https://moldovalive.md/another-drone-violates-moldovas-airspace-ministry-of-defence-says/",
+          "domain": "moldovalive.md",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-21T15:27:59.884Z",
-      "lastUpdated": "2026-11-21T15:27:59.884Z",
-      "expiresAt": "2026-11-23T15:27:59.884Z",
+      "firstSeen": "2026-11-22T06:10:30.703Z",
+      "lastUpdated": "2026-11-22T06:10:30.703Z",
+      "expiresAt": "2026-11-24T06:10:30.703Z",
       "isBreaking": false
     },
     {
-      "id": "868c29b4af33",
-      "headline": "Albemarle County Schools Close After 500-Plus Staff Found Missing Required Abuse-Registry Screening",
-      "summary": "Albemarle County Public Schools closed all schools Nov. 19 after disclosing that more than 500 employees hired over three years passed state police background checks but were never screened against Virginia's Child Protective Services Central Registry as legally required. Governor Abigail Spanberger pledged swift corrective action; schools are expected to reopen Nov. 30.",
-      "category": "society",
+      "id": "30f8b6086cb0",
+      "headline": "South Korea's KOSPI Plunges 5.21% in 'Black Friday' Rout Over AI Chip Spending Fears",
+      "summary": "South Korea's KOSPI index fell 5.21% to a 10-month low of 4,869.96 on Nov 20, triggering circuit breakers, while the KOSDAQ fell 5.71%. The sell-off was driven by concerns over AI and semiconductor spending and allegations about US chipmaker China-export compliance, also hitting Japan's Nikkei and Taiwan's TAIEX; opposition lawmakers warned of further declines and blamed leveraged ETF and pension fund exposure.",
+      "category": "economy",
       "severity": 3,
-      "lat": 38.0293,
-      "lon": -78.4767,
-      "locationName": "Charlottesville, Virginia, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-VA",
+      "lat": 37.5665,
+      "lon": 126.978,
+      "locationName": "Seoul, South Korea",
+      "countryCode": "KR",
       "sources": [
         {
-          "url": "https://www.nbcnews.com/news/us-news/virginia-school-district-shutters-finding-500-staff-members-werent-scr-rcna610140",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
+          "url": "https://en.sedaily.com/economy/2026/11/21/kospi-hits-10-month-low-as-opposition-blames-government",
+          "domain": "sedaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
-          "url": "https://www.29news.com/2026/11/18/albemarle-county-schools-closed-until-background-check-errors-corrected/",
-          "domain": "29news.com",
+          "url": "https://www.ajupress.com/view/20261120161654316",
+          "domain": "ajupress.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://finance.biggo.com/news/80e85cdf-9b45-406e-ba27-c29e22b85cb5",
+          "domain": "biggo.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-20T15:27:21.866Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
+      "firstSeen": "2026-11-22T06:10:30.703Z",
+      "lastUpdated": "2026-11-22T06:10:30.703Z",
+      "expiresAt": "2026-11-24T06:10:30.703Z",
+      "isBreaking": false
+    },
+    {
+      "id": "cb30ba66a486",
+      "headline": "South Korea's Ruling Party Adopts Plan to Impeach Supreme Court Chief Justice",
+      "summary": "On November 20, South Korea's ruling Democratic Party formally adopted as party policy a plan to impeach Supreme Court Chief Justice Cho Hee-dae, after the Supreme Court a day earlier partially overturned and remanded the martial-law conviction of former Prime Minister Han Duck-soo. The party plans to file the impeachment motion around December 3, the anniversary of the 2024 martial law declaration.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 37.5665,
+      "lon": 126.978,
+      "locationName": "Seoul, South Korea",
+      "countryCode": "KR",
+      "sources": [
+        {
+          "url": "https://www.koreaherald.com/article/10944466",
+          "domain": "koreaherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/southkorea/politics/20261119/dpk-moves-to-impeach-chief-justice-over-martial-law-ruling-on-ex-pm-han",
+          "domain": "koreatimes.co.kr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.koreajoongangdaily.com/korea/dp-moves-to-impeach-chief-justice-over-han-ducksoo-martial-law-ruling/12982234",
+          "domain": "koreajoongangdaily.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-21T06:07:32.512Z",
+      "lastUpdated": "2026-11-21T06:07:32.512Z",
+      "expiresAt": "2026-11-23T06:07:32.512Z",
       "isBreaking": false
     },
     {
@@ -3546,40 +3749,6 @@
       "firstSeen": "2026-11-21T06:07:32.512Z",
       "lastUpdated": "2026-11-21T06:07:32.512Z",
       "expiresAt": "2026-11-23T06:07:32.512Z",
-      "isBreaking": false
-    },
-    {
-      "id": "e1bb1a008ceb",
-      "headline": "Judge Rules Nevada Unconstitutionally Seized Coyote Springs Water Rights; Jury to Weigh Damages",
-      "summary": "Clark County District Court Judge Mark Denton ruled that Nevada regulators unconstitutionally took water rights previously granted to developers of the never-built Coyote Springs master-planned community. The case now proceeds to a jury trial to determine damages, with developer Coyote Springs Investment seeking as much as $600 million.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 36.8097,
-      "lon": -114.9522,
-      "locationName": "Coyote Springs, Nevada, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NV",
-      "sources": [
-        {
-          "url": "https://www.reviewjournal.com/news/civil-courts/a-never-built-nevada-city-could-cost-taxpayers-hundreds-of-millions-following-judges-ruling-3916314/",
-          "domain": "reviewjournal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.8newsnow.com/news/local-news/judge-rules-for-coyote-springs-developers-in-water-rights-case-jury-will-decide-states-penalty/",
-          "domain": "8newsnow.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-20T15:27:21.866Z",
-      "lastUpdated": "2026-11-20T15:27:21.866Z",
-      "expiresAt": "2026-11-22T15:27:21.866Z",
       "isBreaking": false
     },
     {
@@ -3726,6 +3895,45 @@
       "firstSeen": "2026-11-21T06:07:32.512Z",
       "lastUpdated": "2026-11-21T06:07:32.512Z",
       "expiresAt": "2026-11-22T18:07:32.512Z",
+      "isBreaking": false
+    },
+    {
+      "id": "5845298291c9",
+      "headline": "Arkansas Joins FTC and 12 States to Block $3.5 Billion Veterinary-Supply Merger",
+      "summary": "Arkansas AG Tim Griffin announced Arkansas joined the FTC and 12 other states in a federal lawsuit to block Covetrus Inc.'s proposed $3.5 billion acquisition of MWI Veterinary Supply, arguing it would reduce competition and raise costs for vet clinics and pet owners.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 34.75,
+      "lon": -92.29,
+      "locationName": "Little Rock, Arkansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AR",
+      "sources": [
+        {
+          "url": "https://arkansasag.gov/news-release/attorney-general-griffin-joins-ftc-and-12-states-on-lawsuit-to-block-veterinary-supplies-distributor-covetruss-3-5-billion-acquisition-of-rival-mwi/",
+          "domain": "arkansasag.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.kark.com/news/arkansas-courts/arkansas-joins-lawsuit-to-block-3-5-billion-veterinary-supply-merger/",
+          "domain": "kark.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2610070-cvet-topcomwi-veterinary-supply",
+          "domain": "ftc.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
       "isBreaking": false
     },
     {
@@ -3893,6 +4101,86 @@
       "isBreaking": false
     },
     {
+      "id": "5f6527fa58cf",
+      "headline": "ZF Automotive Plant Closure Begins Layoffs in Lafayette, Indiana",
+      "summary": "ZF Active Safety & Electronics is permanently closing its Lafayette plant making steering columns, power steering pumps, and pitman arms, cutting 133 jobs starting Nov 30. ZF is offering job-placement aid, severance, and on-site job fairs.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 40.4167,
+      "lon": -86.8753,
+      "locationName": "Lafayette, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
+      "sources": [
+        {
+          "url": "https://www.insideindianabusiness.com/articles/automotive-technology-company-to-close-lafayette-plant-cut-133-jobs",
+          "domain": "insideindianabusiness.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.in.gov/dwd/files/warnnotices/ZF%20Notice%20of%20Layoff.pdf",
+          "domain": "in.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.truckpartsandservice.com/business/article/15836745/zf-to-close-lafayette-plant-affecting-133-employees",
+          "domain": "truckpartsandservice.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "aa0f1e85f558",
+      "headline": "Federal Judge Clears Illinois to Fully Enforce Intoxicating Hemp Product Ban",
+      "summary": "U.S. District Judge Martha Pacold denied a bid by hemp businesses for a restraining order against Illinois's new law restricting delta-8/delta-9 THC sales to licensed dispensaries. The ruling lets Illinois continue enforcing the ban while litigation proceeds; the next hearing is Dec 15.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "locationName": "Chicago, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://www.axios.com/local/chicago/2026/11/20/illinois-hemp-thc-ban-federal-court-ruling",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.shawlocal.com/news/2026/11/20/illinois-ban-on-intoxicating-hemp-products-now-in-effect-after-judge-clears-way/",
+          "domain": "shawlocal.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wandtv.com/2026/11/20/judge-denies-illinois-hemp-businesses-request-temporarily-block-law/",
+          "domain": "wandtv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 54,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
       "id": "8a78442107d0",
       "headline": "Israel Strikes Four Districts in Southern Lebanon, Drones Fly Over Beirut",
       "summary": "On November 20, Israeli aircraft and artillery struck multiple towns across four southern Lebanese districts, including airstrikes on Kfar Tebnit and artillery on Mansouri and Majdal Zoun, while drones flew over Beirut and Sidon. The strikes are separate from and broader than earlier November strikes on a Hezbollah site in the Beqaa Valley.",
@@ -4007,6 +4295,170 @@
       "isBreaking": false
     },
     {
+      "id": "9a2c848e0168",
+      "headline": "Connecticut Orders Hand Recounts in Several Towns After Tabulator and Ballot Errors",
+      "summary": "Secretary of the State Stephanie Thomas ordered hand recanvasses after a tabulator programming error in five towns (East Hartford, Andover, New Hartford, Scotland, Norwalk) may have double-counted votes for cross-endorsed candidates; Wallingford separately recounts about 100 ballots improperly fed into a tabulator. All 169 municipalities were reviewed; no other towns affected.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 41.7658,
+      "lon": -72.6734,
+      "locationName": "Hartford, Connecticut, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CT",
+      "sources": [
+        {
+          "url": "https://ctmirror.org/2026/11/20/ct-orders-recounts-in-five-towns-with-error-in-ballot-tabulators/",
+          "domain": "ctmirror.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://ctnewsjunkie.com/2026/11/20/tabulator-error-recounts-5-ct-towns/",
+          "domain": "ctnewsjunkie.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.nbcconnecticut.com/news/local/wallingford-to-recount-ballots-after-election-day-error/3792605/",
+          "domain": "nbcconnecticut.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e5031dd23d98",
+      "headline": "Vermont State Employees Face 9% Health Insurance Premium Hike for 2027",
+      "summary": "About 26,000 Vermonters on the state employees' health plan will see premiums rise 9% starting January 1, 2027, the same increase imposed for 2026. The union is pressing Gov. Phil Scott to extend new hospital price caps to state employee plans.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 44.2601,
+      "lon": -72.5754,
+      "locationName": "Montpelier, Vermont, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VT",
+      "sources": [
+        {
+          "url": "https://vtdigger.org/2026/11/22/vermont-state-employees-health-insurance-premiums-will-increase-9-percent-next-year/",
+          "domain": "vtdigger.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wcax.com/2026/11/06/vermont-health-insurance-enrollment-opens-premiums-rise/",
+          "domain": "wcax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.mynbc5.com/article/vermont-health-insurance-premiums-rise-2027/73472892",
+          "domain": "mynbc5.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "520f397c1a01",
+      "headline": "NC Water Meter Manufacturer Closing Cleveland, NC Plant, Cutting 70 Jobs",
+      "summary": "Mueller Systems LLC will permanently close its Cleveland, NC plant, laying off 70 workers in phases from March 2027 through March 2028, following parent Mueller Water Products' decision to transition its metering business to Zenner USA.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 35.6107,
+      "lon": -80.6998,
+      "locationName": "Cleveland, North Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NC",
+      "sources": [
+        {
+          "url": "https://www.salisburypost.com/2026/11/16/water-meter-company-announces-layoffs-plant-closure/",
+          "domain": "salisburypost.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.qcnews.com/news/u-s/north-carolina/rowan-county/rowan-county-manufacturing-plant-to-close-70-people-to-lose-jobs/",
+          "domain": "qcnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://whky.com/water-manufacturer-to-close-plant-workers-to-be-laid-off-in-march/",
+          "domain": "whky.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e2e038490de6",
+      "headline": "Hundreds Rally at Illinois Capitol for Data-Center Regulation Bill, the POWER Act",
+      "summary": "Nearly 600 advocates organized by the Illinois Environmental Council rallied at the Capitol for the POWER Act, which would require data centers to pay for energy consumed, disclose water use, limit diesel-generator use and noise, and ensure community benefit agreements.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 39.7817,
+      "lon": -89.6501,
+      "locationName": "Springfield, Illinois, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IL",
+      "sources": [
+        {
+          "url": "https://capitolnewsillinois.com/news/time-is-up-advocates-rally-in-springfield-for-data-center-reforms-in-illinois/",
+          "domain": "capitolnewsillinois.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.dailyherald.com/2026/11/20/time-is-up-advocates-rally-in-springfield-for-data-center-reforms-in-illinois/",
+          "domain": "dailyherald.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.stlpr.org/government-politics-issues/2026-11-19/advocates-rally-in-springfield-for-data-center-reforms-in-illinois",
+          "domain": "stlpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
       "id": "367d5a103216",
       "headline": "Nationwide General Strike in Italy Over Wages and Meloni's 2027 Budget",
       "summary": "Italy's largest union, CGIL, led a nationwide general strike on November 20 against Prime Minister Meloni's €26 billion 2027 budget, drawing an estimated 1.5 million participants across more than 100 towns. A separate 23-hour rail strike by smaller unions began that evening, and clashes between protesters and police were reported in Bologna.",
@@ -4038,6 +4490,74 @@
       "isBreaking": false
     },
     {
+      "id": "40ba3b96d253",
+      "headline": "Georgia Manufacturing Plant Closure Cuts 82 Jobs in Conyers",
+      "summary": "KPS Global LLC filed a WARN notice to permanently close its Conyers plant, eliminating 82 jobs by Jan 31, 2027, following consolidation under parent company Viessmann Generations Group.",
+      "category": "economy",
+      "severity": 2,
+      "lat": 33.6698,
+      "lon": -84.0175,
+      "locationName": "Conyers, Georgia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-GA",
+      "sources": [
+        {
+          "url": "https://whatnow.com/atlanta/local-news/82-workers-face-layoffs-as-major-georgia-manufacturing-plant-is-closing/",
+          "domain": "whatnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.plantservices.com/industry-news/news/55420580/factory-fallout-manufacturing-layoffs-at-intel-qualcomm-and-more",
+          "domain": "plantservices.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e560fa87b52b",
+      "headline": "Independent Audit Finds Wisconsin School District Report Cards Fall Short of State Requirements",
+      "summary": "A Legislative Audit Bureau report found Wisconsin's DPI lacked written policies for some testing procedures and adjusted 2023-24 achievement scores so they wouldn't fall below prior-year results. State Superintendent Jill Underly disputed the audit's significance; a Republican senator said it showed DPI 'turned school report cards into an untrustworthy sham.'",
+      "category": "society",
+      "severity": 2,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://wisconsinwatch.org/2026/11/independent-audit-suggests-several-changes-to-wisconsin-school-district-report-cards/",
+          "domain": "wisconsinwatch.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.channel3000.com/news/audit-faults-department-of-public-instruction-over-school-report-cards-testing-procedures/article_c3c2cfd8-272a-42d9-bda4-e5a2af075c84.html",
+          "domain": "channel3000.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-22T15:28:02.509Z",
+      "lastUpdated": "2026-11-22T15:28:02.509Z",
+      "expiresAt": "2026-11-24T03:28:02.509Z",
+      "isBreaking": false
+    },
+    {
       "id": "200a0284a4b7",
       "headline": "PAHO Director Visits Peru Amid Region-Wide Grade-3 Dengue Outbreak Response",
       "summary": "PAHO Director Jarbas Barbosa concluded his first official visit to Peru, meeting officials on dengue and measles response amid PAHO's ongoing Grade-3 multi-country dengue outbreak declaration. Regional dengue case counts in 2026 are down 53-61% versus prior years overall, though Peru and Ecuador have led recent increases.",
@@ -4066,13 +4586,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 85,
-    "carried": 56,
-    "updated": 10,
-    "expired": 46,
+    "multiSource": 98,
+    "carried": 74,
+    "updated": 3,
+    "expired": 9,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 6.61,
-    "budgetUsd": 12
+    "costUsd": 5.23,
+    "budgetUsd": 8
   }
 }
