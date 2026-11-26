@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T06:08:57.022Z",
+  "generatedAt": "2026-11-26T15:27:26.364Z",
   "mode": "daily",
   "events": [
     {
@@ -550,42 +550,6 @@
       "isBreaking": false
     },
     {
-      "id": "03267c5e5c0e",
-      "headline": "Russia's Novaya Gazeta Newspaper Closes Moscow Office Amid 'Foreign Agent' Crackdown",
-      "summary": "Novaya Gazeta, one of Russia's last major independent newspapers, closed its Moscow office after being designated a 'foreign agent,' fined, blocked online, and cut off from donation-based funding. The UN human rights chief called it another devastating blow to independent media in Russia.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 55.76,
-      "lon": 37.62,
-      "locationName": "Moscow, Russia",
-      "countryCode": "RU",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/9/russian-investigative-newspaper-novaya-gazeta-closes-citing-govt-clampdown",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/09/russian-newspaper-media-novaya-gazeta-closure/3e48d596-dc47-11f1-912c-4fbb80d73f7f_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.euronews.com/2026/11/11/russias-last-openly-critical-newspaper-novaya-gazeta-shuts-its-moscow-office",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-24T06:05:16.230Z",
-      "lastUpdated": "2026-11-24T06:05:16.230Z",
-      "expiresAt": "2026-11-28T06:05:16.230Z",
-      "isBreaking": false
-    },
-    {
       "id": "9095d83518a2",
       "headline": "Jury Convicts Jonathan Rinderknecht of Starting Deadly Palisades Fire",
       "summary": "A federal jury convicted Jonathan Rinderknecht, 30, on Nov. 20 of destruction of property by fire and arson affecting interstate commerce for igniting the Jan. 1, 2025 'Lachman Fire,' which grew into the Palisades Fire. The conviction came in a retrial after an earlier mistrial; sentencing is pending, with each count carrying 5 to 20 years.",
@@ -624,47 +588,78 @@
       "isBreaking": false
     },
     {
-      "id": "69337ad4b46d",
-      "headline": "Russian 'Double-Tap' Strike on Zelensky's Hometown Kryvyi Rih Kills Child, Injures Over 70",
-      "summary": "A Russian ballistic missile and drone strike on Kryvyi Rih on Nov 20 killed a 7-year-old boy and a paramedic, with follow-up drone strikes hitting rescuers. The injury toll rose to about 73, including nine children, and roughly two dozen apartment buildings plus a hospital were damaged.",
-      "category": "conflict",
+      "id": "03267c5e5c0e",
+      "headline": "Russia's Novaya Gazeta Newspaper Closes Moscow Office Amid 'Foreign Agent' Crackdown",
+      "summary": "Novaya Gazeta, one of Russia's last major independent newspapers, closed its Moscow office after being designated a 'foreign agent,' fined, blocked online, and cut off from donation-based funding. The UN human rights chief called it another devastating blow to independent media in Russia.",
+      "category": "politics",
       "severity": 4,
-      "lat": 47.9105,
-      "lon": 33.3918,
-      "locationName": "Kryvyi Rih, Ukraine",
-      "countryCode": "UA",
+      "lat": 55.76,
+      "lon": 37.62,
+      "locationName": "Moscow, Russia",
+      "countryCode": "RU",
       "sources": [
         {
-          "url": "https://edition.cnn.com/2026/11/21/europe/kryvyi-rih-ukraine-russia-attack-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/21/russian-strike-kills-two-wounds-60-in-zelenskyys-hometown",
+          "url": "https://www.aljazeera.com/news/2026/11/9/russian-investigative-newspaper-novaya-gazeta-closes-citing-govt-clampdown",
           "domain": "aljazeera.com",
           "reliability": 78,
           "bias": "center-left"
         },
         {
-          "url": "https://kyivindependent.com/russian-ballistic-missile-strikes-on-kryvyi-rih-kill-7-year-old-paramedic-injure-42-others-in-double-tap-attack/",
-          "domain": "kyivindependent.com",
+          "url": "https://www.washingtonpost.com/world/2026/11/09/russian-newspaper-media-novaya-gazeta-closure/3e48d596-dc47-11f1-912c-4fbb80d73f7f_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/11/russias-last-openly-critical-newspaper-novaya-gazeta-shuts-its-moscow-office",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-24T06:05:16.230Z",
+      "lastUpdated": "2026-11-24T06:05:16.230Z",
+      "expiresAt": "2026-11-28T06:05:16.230Z",
+      "isBreaking": false
+    },
+    {
+      "id": "e10a944a3542",
+      "headline": "Sen. Dan Sullivan Concedes Alaska Senate Race to Mary Peltola",
+      "summary": "Sen. Dan Sullivan conceded Alaska's US Senate race to Democrat Mary Peltola, who won 50.1% to 45.8% and is set to become the first Alaska Native to serve in the US Senate. Sullivan's concession referenced ongoing election-integrity investigations.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 58.3019,
+      "lon": -134.4197,
+      "locationName": "Juneau, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.adn.com/politics/2026/11/24/sen-dan-sullivan-concedes-alaskas-us-senate-race-to-mary-peltola/",
+          "domain": "adn.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.ukrinform.net/rubric-ato/4187248-injury-toll-in-russian-attack-on-kryvyi-rih-rises-to-73-including-nine-children.html",
-          "domain": "ukrinform.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://thehill.com/homenews/campaign/6240650-dan-sullivan-concedes-alaska-senate/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.newsweek.com/dan-sullivan-concedes-alaska-senate-race-while-citing-election-probes-12765980",
+          "domain": "newsweek.com",
+          "reliability": 62,
+          "bias": "center"
         }
       ],
-      "trustScore": 64,
-      "firstSeen": "2026-11-22T06:10:30.703Z",
-      "lastUpdated": "2026-11-22T06:10:30.703Z",
-      "expiresAt": "2026-11-26T06:10:30.703Z",
+      "trustScore": 63,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-30T15:27:26.364Z",
       "isBreaking": false
     },
     {
@@ -827,6 +822,40 @@
       "firstSeen": "2026-11-26T06:08:57.022Z",
       "lastUpdated": "2026-11-26T06:08:57.022Z",
       "expiresAt": "2026-11-30T06:08:57.022Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fe97c4992056",
+      "headline": "Washington Fines Nippon Dynawave Over $10 Million for Fatal Tank Collapse That Killed 11",
+      "summary": "Washington's Department of Labor & Industries cited Nippon Dynawave Packaging for 75 violations and fined it $9.1 million, plus about $961,000 in environmental penalties, over the May 2026 rupture of a caustic tank at its Longview pulp mill that killed 11 workers. State Sen. Jeff Wilson plans a 'Pulp Liquors Safety Act.'",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 46.1381,
+      "lon": -122.9382,
+      "locationName": "Longview, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.opb.org/article/2026/11/20/longview-paper-mill-state-fines-fatal-chemical-tank-implosion/",
+          "domain": "opb.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kiro7.com/news/local/watch-now-investigators-share-update-longview-paper-mill-implosion/FSNOPBOTWJBJ5BWPW5ROI3N7TM/",
+          "domain": "kiro7.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-30T15:27:26.364Z",
       "isBreaking": false
     },
     {
@@ -1263,6 +1292,50 @@
       "isBreaking": false
     },
     {
+      "id": "d6d9aac69a10",
+      "headline": "Eighth Circuit Clears Army to Detonate Toxic Lead Compound at Iowa Ammunition Plant",
+      "summary": "The Eighth Circuit lifted a court stay around Nov. 23-24, clearing the Army to proceed with controlled detonations of about 10,000 lbs of degraded lead azide at the Iowa Army Ammunition Plant, planned for Nov. 25, despite a prior Trump directive pausing the plan pending appellate review. Environmental groups warn the resulting lead-dust plume could reach communities up to 100 miles away.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 40.9995,
+      "lon": -91.1546,
+      "locationName": "Middletown, Iowa, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IA",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/24/us-army-says-detonation-of-lead-explosives-in-iowa-will-proceed",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
+          "domain": "cnbc.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://abcnews.com/Politics/trump-ordered-military-hold-off-iowa-explosives-detonation/story?id=138384845",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 79,
+      "firstSeen": "2026-11-24T15:28:46.855Z",
+      "lastUpdated": "2026-11-24T15:28:46.855Z",
+      "expiresAt": "2026-11-26T15:28:46.855Z",
+      "isBreaking": false
+    },
+    {
       "id": "f0e60573acc6",
       "headline": "NATO Deploys AWACS to Poland After New Russian Drone Incursion Near Dorohusk",
       "summary": "A Russian drone briefly violated Polish airspace overnight, days after three Russian Kh-101 cruise missiles crossed into Poland near Dorohusk. NATO's Supreme Allied Commander Europe authorized forward deployment of an AWACS surveillance aircraft to Poland in response.",
@@ -1389,50 +1462,6 @@
       "isBreaking": false
     },
     {
-      "id": "d6d9aac69a10",
-      "headline": "Eighth Circuit Clears Army to Detonate Toxic Lead Compound at Iowa Ammunition Plant",
-      "summary": "The Eighth Circuit lifted a court stay around Nov. 23-24, clearing the Army to proceed with controlled detonations of about 10,000 lbs of degraded lead azide at the Iowa Army Ammunition Plant, planned for Nov. 25, despite a prior Trump directive pausing the plan pending appellate review. Environmental groups warn the resulting lead-dust plume could reach communities up to 100 miles away.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 40.9995,
-      "lon": -91.1546,
-      "locationName": "Middletown, Iowa, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IA",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/24/us-army-says-detonation-of-lead-explosives-in-iowa-will-proceed",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
-          "domain": "cnbc.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://abcnews.com/Politics/trump-ordered-military-hold-off-iowa-explosives-detonation/story?id=138384845",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 79,
-      "firstSeen": "2026-11-24T15:28:46.855Z",
-      "lastUpdated": "2026-11-24T15:28:46.855Z",
-      "expiresAt": "2026-11-26T15:28:46.855Z",
-      "isBreaking": false
-    },
-    {
       "id": "0543c9aba2e6",
       "headline": "Houthi Drone Strikes Riyadh Financial District Tower for Third Time in Three Weeks, 11 Wounded",
       "summary": "A drone struck a tower in Riyadh's financial district, wounding 11 people including Saudi, Indian, Nepali and Egyptian nationals. This is the third Houthi attack on the district in under three weeks, following strikes on the Aramco Tower on November 8 and the PIF Tower on November 19.",
@@ -1517,11 +1546,11 @@
     },
     {
       "id": "c35b934fde5c",
-      "headline": "FEMA's $400M Florida Disaster Aid Leaves Brevard County Flood Recovery in Limbo",
-      "summary": "More than three weeks after record flooding along the St. Johns River near Cocoa, FEMA announced on Nov. 23 nearly $400 million for 144 Florida disaster-recovery projects, but the award covers prior disasters and does not include approval of Florida's pending Nov. 9 request for aid tied to this month's Brevard County flooding. Florida has completed roughly 500 floodwater rescues; Melbourne and Palm Bay are on pace for their wettest year on record.",
+      "headline": "Trump Approves Major Disaster Declaration, Unlocking Federal Aid for Brevard County Flooding",
+      "summary": "President Trump approved FEMA's major disaster declaration DR-4956-FL, making federal Individual Assistance available to Brevard, Indian River, Martin, Okeechobee, Palm Beach and St. Lucie counties over late October-November flooding. The move resolves an aid-approval limbo that had stalled flood recovery in Brevard County.",
       "category": "disaster",
       "severity": 3,
-      "lat": 28.3862,
+      "lat": 28.3861,
       "lon": -80.742,
       "locationName": "Cocoa, Florida, USA",
       "countryCode": "US",
@@ -1529,10 +1558,24 @@
       "subdivision": "US-FL",
       "sources": [
         {
-          "url": "https://www.fema.gov/press-release/20261123/fema-announces-nearly-400-million-florida-recovery",
+          "url": "https://www.fema.gov/disaster/4956",
           "domain": "fema.gov",
           "reliability": 85,
           "bias": "center"
+        },
+        {
+          "url": "https://mynews13.com/fl/orlando/news/2026/11/25/president-approves-major-disaster-declaration-for-brevard-from-early-november-",
+          "domain": "mynews13.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.clickorlando.com/news/local/2026/11/25/report-president-donald-trump-oks-disaster-declaration-for-brevard-county/",
+          "domain": "clickorlando.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         },
         {
           "url": "https://www.wftv.com/news/local/fema-announces-nearly-400-million-florida-disaster-recovery-projects/W2S36P3BYBE23OXRR7MAV7PN5I/",
@@ -1581,26 +1624,181 @@
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
+        }
+      ],
+      "trustScore": 76,
+      "firstSeen": "2026-11-17T15:27:11.977Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3b2e8cab3505",
+      "headline": "Nor'easter Prompts NY, NJ Emergency Declarations; Macy's Parade Postponed to Saturday",
+      "summary": "Govs. Hochul and Sherrill declared states of emergency ahead of a Thanksgiving coastal storm bringing 60-70 mph gusts and coastal flooding to New York and New Jersey. The storm forced organizers to postpone the 100th Macy's Thanksgiving Day Parade to Saturday, the first postponement in its history.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 40.7128,
+      "lon": -74.006,
+      "locationName": "New York, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.governor.ny.gov/news/governor-hochul-declares-state-emergency-ahead-thanksgiving-coastal-storm",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
         },
         {
-          "url": "https://wflanews.iheart.com/featured/florida-news/content/2026-11-19-desantis-expands-florida-state-of-emergency-to-21-counties-amid-flooding/",
-          "domain": "iheart.com",
+          "url": "https://thehill.com/homenews/state-watch/6243923-nj-governor-declares-emergency/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/US/new-york-declares-emergency-thanksgiving-storm-threatens-east/story?id=138464273",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 73,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "11c3385ba232",
+      "headline": "King Tide Surf Collapses Part of Pacifica Pier; Evacuations Extend to Santa Barbara County",
+      "summary": "Record king tides and swell caused an end section of the Pacifica Municipal Pier to collapse and flooded a beachfront neighborhood near San Francisco. Waymo suspended its autonomous ride service in San Francisco ahead of the storm, and Santa Barbara County issued evacuation warnings for low-lying Montecito, Summerland and Carpinteria.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 37.6138,
+      "lon": -122.4869,
+      "locationName": "Pacifica, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
+      "sources": [
+        {
+          "url": "https://www.nbcbayarea.com/news/local/pacifica-pier-collapse-king-tides-flooding/4181868/",
+          "domain": "nbcbayarea.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.clickorlando.com/news/national/2026/11/20/northeastern-florida-now-under-flood-threats-from-storms-that-have-devastated-coastal-communities/",
-          "domain": "clickorlando.com",
+          "url": "https://www.kcra.com/article/pacifica-pier-collapse-king-tides/74534643",
+          "domain": "kcra.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.sfchronicle.com/weather/article/live-updates-king-tides-sf-bay-area-flooding-waves-22548290.php",
+          "domain": "sfchronicle.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.nbcnews.com/weather/floods/pacific-coast-king-tides-break-records-flood-communities-rcna611051",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 71,
+      "firstSeen": "2026-11-24T15:28:46.855Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "336afc3fc856",
+      "headline": "Alaska Terminates Voter-Records Sharing Agreement With Trump DOJ",
+      "summary": "Alaska Lt. Gov. Nancy Dahlstrom terminated the state's December 2025 memorandum allowing the Justice Department to screen Alaska's voter rolls for noncitizens and ordered DOJ to destroy the data it collected. DOJ never flagged any ineligible voters under the agreement.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 58.3019,
+      "lon": -134.4197,
+      "locationName": "Juneau, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.elections.alaska.gov/lieutenant-governor-dahlstrom-terminates-voter-informationagreement-with-u-s-department-of-justice/",
+          "domain": "alaska.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/alaska-ends-voter-data-agreement-with-justice-department-which-had-been-searching-for-noncitizens",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/11/24/alaska-lt-gov-announces-end-to-contentious-voter-roll-agreement-with-u-s-department-of-justice/",
+          "domain": "alaskabeacon.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 76,
-      "firstSeen": "2026-11-17T15:27:11.977Z",
-      "lastUpdated": "2026-11-24T15:28:46.855Z",
-      "expiresAt": "2026-11-26T15:28:46.855Z",
+      "trustScore": 69,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "6d9111cc1752",
+      "headline": "Indiana Launches Federal-Backed Temporary Housing Program for 2026 Flood Victims",
+      "summary": "Gov. Mike Braun announced the federal government will help fund a travel-trailer temporary housing program for about 250 families still displaced by Indiana's summer 2026 floods. More than $170 million in aid has already been distributed after 50,000-plus applications were filed.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 39.77,
+      "lon": -86.16,
+      "locationName": "Indianapolis, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
+      "sources": [
+        {
+          "url": "https://indianapublicradio.org/news/2026/11/gov-braun-announces-effort-to-house-those-impacted-by-summer-floods/",
+          "domain": "indianapublicradio.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/local/indianapolis/2026/08/17/indiana-launches-emergency-assistance-housing-vouchers-for-flood-victims",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fema.gov/fact-sheet/indiana-recovery-update",
+          "domain": "fema.gov",
+          "reliability": 85,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 68,
+      "firstSeen": "2026-11-25T15:27:08.952Z",
+      "lastUpdated": "2026-11-25T15:27:08.952Z",
+      "expiresAt": "2026-11-27T15:27:08.952Z",
       "isBreaking": false
     },
     {
@@ -1690,45 +1888,6 @@
       "isBreaking": false
     },
     {
-      "id": "6d9111cc1752",
-      "headline": "Indiana Launches Federal-Backed Temporary Housing Program for 2026 Flood Victims",
-      "summary": "Gov. Mike Braun announced the federal government will help fund a travel-trailer temporary housing program for about 250 families still displaced by Indiana's summer 2026 floods. More than $170 million in aid has already been distributed after 50,000-plus applications were filed.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 39.77,
-      "lon": -86.16,
-      "locationName": "Indianapolis, Indiana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IN",
-      "sources": [
-        {
-          "url": "https://indianapublicradio.org/news/2026/11/gov-braun-announces-effort-to-house-those-impacted-by-summer-floods/",
-          "domain": "indianapublicradio.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.axios.com/local/indianapolis/2026/08/17/indiana-launches-emergency-assistance-housing-vouchers-for-flood-victims",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.fema.gov/fact-sheet/indiana-recovery-update",
-          "domain": "fema.gov",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-25T15:27:08.952Z",
-      "lastUpdated": "2026-11-25T15:27:08.952Z",
-      "expiresAt": "2026-11-27T15:27:08.952Z",
-      "isBreaking": false
-    },
-    {
       "id": "d2f2cab0c15b",
       "headline": "Hawaii Governor Orders Formal Review, Immediate-Notification Rule After H-POWER Diesel Spill",
       "summary": "Gov. Josh Green signed an executive order directing a formal review, chaired by Transportation Director Ed Sniffen, into the roughly 403,000-gallon diesel leak at the H-POWER plant that occurred January-May 2026 but was undisclosed until Nov. 19. The order also requires the Department of Health to immediately notify the governor and public of any future oil-release report regardless of volume, with findings due in 30 to 60 days.",
@@ -1808,6 +1967,38 @@
       "firstSeen": "2026-11-21T15:27:59.884Z",
       "lastUpdated": "2026-11-25T15:27:08.952Z",
       "expiresAt": "2026-11-27T15:27:08.952Z",
+      "isBreaking": false
+    },
+    {
+      "id": "b4563d006c21",
+      "headline": "Judge Upholds Mamdani-Backed NYC Rent Freeze, Rejects Landlord Lawsuit",
+      "summary": "Manhattan Supreme Court Justice Brendan Lantry dismissed a landlord coalition's lawsuit against the NYC Rent Guidelines Board's freeze on roughly 1 million rent-stabilized apartments, ruling the freeze had a rational basis. Lantry also criticized Mayor Mamdani's campaign pledge to freeze rents as 'reckless.'",
+      "category": "politics",
+      "severity": 3,
+      "lat": 40.7128,
+      "lon": -74.006,
+      "locationName": "New York, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-25/judge-clears-new-york-city-rent-freeze-backed-by-mayor-mamdani",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.usnews.com/news/politics/articles/2026-11-25/new-york-court-upholds-mayor-mamdanis-rent-freeze",
+          "domain": "usnews.com",
+          "reliability": 75,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
       "isBreaking": false
     },
     {
@@ -2116,39 +2307,48 @@
       "isBreaking": false
     },
     {
-      "id": "11c3385ba232",
-      "headline": "Near-Record King Tides and Storm Threaten San Francisco Bay Area Coast",
-      "summary": "A storm colliding with seasonal king tides is forecast to push San Francisco Bay water levels to roughly 8.6-11.5 feet around Nov. 25, approaching or exceeding the 1983 record. Forecasters warn of 15-20 ft breaking waves and 40-50 mph winds, with flooding risk to SFO and the Embarcadero; Mayor Daniel Lurie called the threat 'extremely serious.'",
-      "category": "disaster",
+      "id": "9c7933e30c2e",
+      "headline": "Montana Judge Blocks Enforcement of Law Defining Sex as Strictly Binary",
+      "summary": "A Missoula County District Court judge granted a preliminary injunction blocking enforcement of Senate Bill 437, a 2025 Montana law defining sex strictly by reproductive biology, finding transgender, intersex, and Two Spirit plaintiffs likely to succeed on state constitutional privacy and equal-protection claims. The law remains blocked while litigation continues; the state plans to appeal.",
+      "category": "politics",
       "severity": 3,
-      "lat": 37.7749,
-      "lon": -122.4194,
-      "locationName": "San Francisco, California, USA",
+      "lat": 46.8787,
+      "lon": -113.9966,
+      "locationName": "Missoula, Montana, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-CA",
+      "subdivision": "US-MT",
       "sources": [
         {
-          "url": "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.sfchronicle.com/weather/article/live-updates-record-high-tides-bay-area-flooding-22546836.php",
-          "domain": "sfchronicle.com",
+          "url": "https://dailymontanan.com/2026/11/19/court-halts-enforcement-of-law-defining-sex-in-montana-code/",
+          "domain": "dailymontanan.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.nbcnews.com/weather/floods/pacific-coast-king-tides-break-records-flood-communities-rcna611051",
-          "domain": "nbcnews.com",
-          "reliability": 81,
-          "bias": "center-left"
+          "url": "https://montanafreepress.org/2026/11/17/judge-blocks-enforcement-montana-sex-definition-bill/",
+          "domain": "montanafreepress.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/montana-judge-blocks-enforcement-of-sb-437-as-state-plans-appeal",
+          "domain": "nbcmontana.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kpax.com/news/missoula-judge-blocks-montana-law-defining-sex-as-binary-citing-likely-constitutional-violations",
+          "domain": "kpax.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
-      "trustScore": 58,
+      "trustScore": 57,
       "firstSeen": "2026-11-24T15:28:46.855Z",
       "lastUpdated": "2026-11-24T15:28:46.855Z",
       "expiresAt": "2026-11-26T15:28:46.855Z",
@@ -2198,54 +2398,6 @@
       "firstSeen": "2026-11-24T06:05:16.230Z",
       "lastUpdated": "2026-11-25T06:06:08.634Z",
       "expiresAt": "2026-11-27T06:06:08.634Z",
-      "isBreaking": false
-    },
-    {
-      "id": "9c7933e30c2e",
-      "headline": "Montana Judge Blocks Enforcement of Law Defining Sex as Strictly Binary",
-      "summary": "A Missoula County District Court judge granted a preliminary injunction blocking enforcement of Senate Bill 437, a 2025 Montana law defining sex strictly by reproductive biology, finding transgender, intersex, and Two Spirit plaintiffs likely to succeed on state constitutional privacy and equal-protection claims. The law remains blocked while litigation continues; the state plans to appeal.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 46.8787,
-      "lon": -113.9966,
-      "locationName": "Missoula, Montana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-MT",
-      "sources": [
-        {
-          "url": "https://dailymontanan.com/2026/11/19/court-halts-enforcement-of-law-defining-sex-in-montana-code/",
-          "domain": "dailymontanan.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://montanafreepress.org/2026/11/17/judge-blocks-enforcement-montana-sex-definition-bill/",
-          "domain": "montanafreepress.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://nbcmontana.com/news/local/montana-judge-blocks-enforcement-of-sb-437-as-state-plans-appeal",
-          "domain": "nbcmontana.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.kpax.com/news/missoula-judge-blocks-montana-law-defining-sex-as-binary-citing-likely-constitutional-violations",
-          "domain": "kpax.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 57,
-      "firstSeen": "2026-11-24T15:28:46.855Z",
-      "lastUpdated": "2026-11-24T15:28:46.855Z",
-      "expiresAt": "2026-11-26T15:28:46.855Z",
       "isBreaking": false
     },
     {
@@ -2540,34 +2692,43 @@
       "isBreaking": false
     },
     {
-      "id": "765cea944ef9",
-      "headline": "Spain Heads to Snap Election November 29 With Right-Wing Bloc Leading Polls",
-      "summary": "Spain votes in a snap general election on November 29, called after parliament rejected PM Sánchez's housing-reform decrees. Polling puts the PP at about 31.5%, PSOE at about 29%, and far-right Vox at about 17.9%, with most polls projecting a PP-Vox combined majority.",
-      "category": "politics",
+      "id": "bbd8162bbfa8",
+      "headline": "Thanksgiving Nor'easter Floods Outer Banks, Knocks Out Power Across Mid-Atlantic",
+      "summary": "A powerful nor'easter brought gusts over 60 mph and severe ocean overwash to North Carolina's Outer Banks, closing sections of Highway 12 and downing trees across NC, VA, WV and MD. The storm tore a roof off a building in Ocean City, Maryland, and caused tens of thousands of power outages.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 40.4168,
-      "lon": -3.7038,
-      "locationName": "Madrid, Spain",
-      "countryCode": "ES",
+      "lat": 35.9573,
+      "lon": -75.624,
+      "locationName": "Nags Head, North Carolina, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NC",
       "sources": [
         {
-          "url": "https://www.france24.com/en/europe/20261109-spain-right-leads-sanchez-socialists-in-polls-for-november-29-snap-election",
-          "domain": "france24.com",
-          "reliability": 84,
-          "bias": "center"
+          "url": "https://www.cnn.com/2026/11/24/us/live-news/thanksgiving-travel",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
         },
         {
-          "url": "https://www.latintimes.com/spain-election-pp-leads-polls-feijoo-debate-601708",
-          "domain": "latintimes.com",
+          "url": "https://www.witn.com/2026/11/25/powerhouse-noreaster-arriving-enc-today/",
+          "domain": "witn.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://foxbaltimore.com/news/local/roof-torn-off-ocean-city-building-as-powerful-thanksgiving-storm-moves-through",
+          "domain": "foxbaltimore.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 50,
-      "firstSeen": "2026-11-26T06:08:57.022Z",
-      "lastUpdated": "2026-11-26T06:08:57.022Z",
-      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "trustScore": 53,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
       "isBreaking": false
     },
     {
@@ -2611,135 +2772,75 @@
       "isBreaking": false
     },
     {
-      "id": "c12f3a8bf799",
-      "headline": "Record Rainfall Triggers Colombia Flood Emergency, 14+ Dead, ~156,000 Affected; Argentina's Paraná River Floods Displace 4,500+",
-      "summary": "Record rainfall in Colombia's Caribbean departments of Córdoba, Sucre and Bolívar has killed at least 14 and affected about 156,000 people; President Petro extended a state of emergency to 22 departments. Separately, El Niño-driven Paraná River flooding has displaced 4,547 people across Argentina's Chaco, Corrientes, Santa Fe and Entre Ríos provinces.",
-      "category": "disaster",
+      "id": "765cea944ef9",
+      "headline": "Spain Heads to Snap Election November 29 With Right-Wing Bloc Leading Polls",
+      "summary": "Spain votes in a snap general election on November 29, called after parliament rejected PM Sánchez's housing-reform decrees. Polling puts the PP at about 31.5%, PSOE at about 29%, and far-right Vox at about 17.9%, with most polls projecting a PP-Vox combined majority.",
+      "category": "politics",
       "severity": 3,
-      "lat": 8.7479,
-      "lon": -75.8814,
-      "locationName": "Montería, Córdoba, Colombia",
-      "countryCode": "CO",
-      "sources": [
-        {
-          "url": "https://www.trtworld.com/article/93351ff3b550",
-          "domain": "trtworld.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.aa.com.tr/en/americas/historic-floods-in-northern-colombia-leave-14-dead-120-000-affected/3825373",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.riotimesonline.com/argentina-litoral-floods-4547-evacuated/",
-          "domain": "riotimesonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-26T06:08:57.022Z",
-      "lastUpdated": "2026-11-26T06:08:57.022Z",
-      "expiresAt": "2026-11-28T06:08:57.022Z",
-      "isBreaking": false
-    },
-    {
-      "id": "66f5e3bbbb0f",
-      "headline": "Record 2,121 Migrants Reach El Hierro, Canary Islands, in Single Day",
-      "summary": "Spanish coastguard recorded 2,121 migrants arriving on 15 boats at El Hierro, a new daily record. Over 10,000 migrants have reached the Canary Islands in a record-breaking November, with El Hierro, population 12,000, overwhelmed.",
-      "category": "society",
-      "severity": 3,
-      "lat": 40.3,
-      "lon": -3.7,
-      "locationName": "El Hierro, Canary Islands, Spain",
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "locationName": "Madrid, Spain",
       "countryCode": "ES",
       "sources": [
         {
-          "url": "https://www.wsls.com/news/world/2026/11/25/almost-2000-migrants-arrive-on-spains-canary-islands-in-a-single-day-breaking-a-record/",
-          "domain": "wsls.com",
+          "url": "https://www.france24.com/en/europe/20261109-spain-right-leads-sanchez-socialists-in-polls-for-november-29-snap-election",
+          "domain": "france24.com",
+          "reliability": 84,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.latintimes.com/spain-election-pp-leads-polls-feijoo-debate-601708",
+          "domain": "latintimes.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
-        },
-        {
-          "url": "https://www.euronews.com/2026/11/23/nearly-300-migrants-reach-el-hierro-in-five-boats-as-canary-route-surge-continues",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
         }
       ],
-      "trustScore": 49,
+      "trustScore": 50,
       "firstSeen": "2026-11-26T06:08:57.022Z",
       "lastUpdated": "2026-11-26T06:08:57.022Z",
       "expiresAt": "2026-11-28T06:08:57.022Z",
       "isBreaking": false
     },
     {
-      "id": "273f5939b9a9",
-      "headline": "North Korea Tests ICBM Engine, Kim Vows More Nuclear Weapons After Ignoring Trump's Meeting Overture",
-      "summary": "Satellite imagery shows signs of a long-range missile engine test at North Korea's Sohae facility around the time Trump sought an unrealized meeting with Kim at APEC. Kim subsequently visited nuclear-material facilities and called for building more nuclear weapons, including expanded battlefield nuclear weapons.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 39.0392,
-      "lon": 125.7625,
-      "locationName": "Sohae Satellite Launching Ground, North Korea",
-      "countryCode": "KP",
-      "sources": [
-        {
-          "url": "https://www.nknews.org/pro/north-korea-appears-to-have-tested-icbm-engine-as-trump-sought-kim-meeting/",
-          "domain": "nknews.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.euronews.com/2026/11/26/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-26T06:08:57.022Z",
-      "lastUpdated": "2026-11-26T06:08:57.022Z",
-      "expiresAt": "2026-11-28T06:08:57.022Z",
-      "isBreaking": false
-    },
-    {
-      "id": "98e68c5ebcea",
-      "headline": "Mass Protests Continue in France and Germany Over Cost of Living, Conscription",
-      "summary": "France saw its sixth consecutive weekend of protests over the cost of living and public services, while Germany experienced demonstrations against conscription plans that included rioting and looting in Frankfurt. The unrest reflects growing public discontent with economic and security policies across Western Europe.",
+      "id": "d7176ebc4e19",
+      "headline": "Medical Examiner Rules Fatal US Park Police Shooting of Eva Lewis a Homicide",
+      "summary": "Maryland's chief medical examiner ruled the death of 32-year-old Eva Marquita Lewis, a passenger in a stolen minivan, a homicide after a US Park Police officer shot and killed her following a PIT maneuver in Suitland. The FBI is investigating and the officer has been placed on administrative leave.",
       "category": "society",
       "severity": 3,
-      "lat": 48.8566,
-      "lon": 2.3522,
-      "locationName": "Paris, France",
-      "countryCode": "FR",
+      "lat": 38.8495,
+      "lon": -76.9208,
+      "locationName": "Suitland, Maryland, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MD",
       "sources": [
         {
-          "url": "https://www.thelocal.fr/20261122/french-protesters-rally-for-sixth-weekend-over-living-costs-public-services",
-          "domain": "thelocal.fr",
+          "url": "https://www.nbcwashington.com/news/local/medical-examiner-rules-deadly-u-s-park-police-shooting-a-homicide/4187248/",
+          "domain": "nbcwashington.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://www.cbsnews.com/news/germany-protest-frankfurt-looting-violence/",
-          "domain": "cbsnews.com",
-          "reliability": 82,
-          "bias": "center"
+          "url": "https://www.fox5dc.com/news/death-woman-fatally-shot-us-park-police-ruled-homicide",
+          "domain": "fox5dc.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wusa9.com/article/news/police/us-park-police-shooting-ruled-homicide-by-medical-examiner/65-bc4054b0-04b2-4f27-ba3a-83b1b779cd7d",
+          "domain": "wusa9.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-25T06:06:08.634Z",
-      "lastUpdated": "2026-11-25T06:06:08.634Z",
-      "expiresAt": "2026-11-27T06:06:08.634Z",
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
       "isBreaking": false
     },
     {
@@ -2989,6 +3090,138 @@
       "isBreaking": false
     },
     {
+      "id": "c12f3a8bf799",
+      "headline": "Record Rainfall Triggers Colombia Flood Emergency, 14+ Dead, ~156,000 Affected; Argentina's Paraná River Floods Displace 4,500+",
+      "summary": "Record rainfall in Colombia's Caribbean departments of Córdoba, Sucre and Bolívar has killed at least 14 and affected about 156,000 people; President Petro extended a state of emergency to 22 departments. Separately, El Niño-driven Paraná River flooding has displaced 4,547 people across Argentina's Chaco, Corrientes, Santa Fe and Entre Ríos provinces.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 8.7479,
+      "lon": -75.8814,
+      "locationName": "Montería, Córdoba, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.trtworld.com/article/93351ff3b550",
+          "domain": "trtworld.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aa.com.tr/en/americas/historic-floods-in-northern-colombia-leave-14-dead-120-000-affected/3825373",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.riotimesonline.com/argentina-litoral-floods-4547-evacuated/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-26T06:08:57.022Z",
+      "lastUpdated": "2026-11-26T06:08:57.022Z",
+      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "isBreaking": false
+    },
+    {
+      "id": "66f5e3bbbb0f",
+      "headline": "Record 2,121 Migrants Reach El Hierro, Canary Islands, in Single Day",
+      "summary": "Spanish coastguard recorded 2,121 migrants arriving on 15 boats at El Hierro, a new daily record. Over 10,000 migrants have reached the Canary Islands in a record-breaking November, with El Hierro, population 12,000, overwhelmed.",
+      "category": "society",
+      "severity": 3,
+      "lat": 40.3,
+      "lon": -3.7,
+      "locationName": "El Hierro, Canary Islands, Spain",
+      "countryCode": "ES",
+      "sources": [
+        {
+          "url": "https://www.wsls.com/news/world/2026/11/25/almost-2000-migrants-arrive-on-spains-canary-islands-in-a-single-day-breaking-a-record/",
+          "domain": "wsls.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/23/nearly-300-migrants-reach-el-hierro-in-five-boats-as-canary-route-surge-continues",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-26T06:08:57.022Z",
+      "lastUpdated": "2026-11-26T06:08:57.022Z",
+      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "isBreaking": false
+    },
+    {
+      "id": "273f5939b9a9",
+      "headline": "North Korea Tests ICBM Engine, Kim Vows More Nuclear Weapons After Ignoring Trump's Meeting Overture",
+      "summary": "Satellite imagery shows signs of a long-range missile engine test at North Korea's Sohae facility around the time Trump sought an unrealized meeting with Kim at APEC. Kim subsequently visited nuclear-material facilities and called for building more nuclear weapons, including expanded battlefield nuclear weapons.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 39.0392,
+      "lon": 125.7625,
+      "locationName": "Sohae Satellite Launching Ground, North Korea",
+      "countryCode": "KP",
+      "sources": [
+        {
+          "url": "https://www.nknews.org/pro/north-korea-appears-to-have-tested-icbm-engine-as-trump-sought-kim-meeting/",
+          "domain": "nknews.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/26/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-26T06:08:57.022Z",
+      "lastUpdated": "2026-11-26T06:08:57.022Z",
+      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "isBreaking": false
+    },
+    {
+      "id": "98e68c5ebcea",
+      "headline": "Mass Protests Continue in France and Germany Over Cost of Living, Conscription",
+      "summary": "France saw its sixth consecutive weekend of protests over the cost of living and public services, while Germany experienced demonstrations against conscription plans that included rioting and looting in Frankfurt. The unrest reflects growing public discontent with economic and security policies across Western Europe.",
+      "category": "society",
+      "severity": 3,
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "locationName": "Paris, France",
+      "countryCode": "FR",
+      "sources": [
+        {
+          "url": "https://www.thelocal.fr/20261122/french-protesters-rally-for-sixth-weekend-over-living-costs-public-services",
+          "domain": "thelocal.fr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.cbsnews.com/news/germany-protest-frankfurt-looting-violence/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-25T06:06:08.634Z",
+      "lastUpdated": "2026-11-25T06:06:08.634Z",
+      "expiresAt": "2026-11-27T06:06:08.634Z",
+      "isBreaking": false
+    },
+    {
       "id": "445120f8e24f",
       "headline": "US Pauses Joint Military Operations With Ecuador Amid Probe Into Lethal September Raid",
       "summary": "The Trump administration paused joint military operations with Ecuador while investigating a lethal September 23 raid by Ecuadorian forces that killed gang member Carlos Germán Muñoz Jara, amid questions over whether suspects were killed while in custody. Ecuador's interior minister said talks with US Defense Secretary Pete Hegseth focused on reviewing operations; the Pentagon says US forces did not participate in the raid itself.",
@@ -3141,6 +3374,210 @@
       "firstSeen": "2026-11-25T06:06:08.634Z",
       "lastUpdated": "2026-11-25T06:06:08.634Z",
       "expiresAt": "2026-11-27T06:06:08.634Z",
+      "isBreaking": false
+    },
+    {
+      "id": "9ba9238502ef",
+      "headline": "Thanksgiving Winter Storm Buries St. Louis; Missouri Leads Nation in Power Outages",
+      "summary": "A Thanksgiving winter storm dropped up to 9 inches of snow on St. Louis, the second-snowiest Thanksgiving on record, leaving more than 125,000 Ameren customers without power. Missouri led all US states in outages as the storm moved through the region.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 38.627,
+      "lon": -90.1994,
+      "locationName": "St. Louis, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.stlpr.org/news-briefs/2026-11-26/thousands-st-louis-region-thanksgiving-day-without-power-ameren-snow",
+          "domain": "stlpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.firstalert4.com/2026/11/26/over-100000-missouri-customers-without-power-snow-falls-across-st-louis-area/",
+          "domain": "firstalert4.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7d599eb2950c",
+      "headline": "Detroit Council Approves $2.2 Billion Renaissance Center and Riverfront Redevelopment",
+      "summary": "Detroit's City Council voted 7-2 to approve a $2.2 billion Bedrock and GM plan to redevelop the Renaissance Center and riverfront. The project will demolish two towers for mixed-income housing, a hotel and public riverfront space, backed by $548 million in tax incentives.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 42.3314,
+      "lon": -83.0458,
+      "locationName": "Detroit, Michigan, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MI",
+      "sources": [
+        {
+          "url": "https://www.clickondetroit.com/news/local/2026/11/24/detroit-city-council-approves-22-billion-rencen-redevelopment-plan/",
+          "domain": "clickondetroit.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://michiganadvance.com/2026/11/25/detroit-city-council-oks-2-2-billion-redevelopment-plan-for-renaissance-center-riverfront/",
+          "domain": "michiganadvance.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "45a96c2cfe6f",
+      "headline": "Indianapolis Mayor Joe Hogsett Announces He Will Not Seek Reelection",
+      "summary": "Three-term Democratic Mayor Joe Hogsett announced he will not seek a fourth term in 2027, ending more than a decade leading Indianapolis. Hogsett declined to endorse any potential successor in the upcoming race.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 39.7684,
+      "lon": -86.1581,
+      "locationName": "Indianapolis, Indiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IN",
+      "sources": [
+        {
+          "url": "https://www.wthr.com/article/news/politics/elections/indianapolis-mayor-joe-hogsett-announces-he-will-not-run-for-reelection-in-2027-elections-democrat-republican/531-9b755696-fe17-41e0-af37-3960354d07b9",
+          "domain": "wthr.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://fox59.com/indianapolitics/hogsett-to-wield-influence-over-next-indianapolis-mayors-race/",
+          "domain": "fox59.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "89204ff0745b",
+      "headline": "Federal Judge Denies SEC's Bid to Block LSU Ahead of Membership Vote",
+      "summary": "A federal judge in Birmingham denied the SEC's request for a restraining order against LSU, allowing the conference's December 3 vote on potentially terminating LSU's membership to proceed. Louisiana Attorney General Liz Murrill vowed to sue the SEC if LSU is expelled.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 30.4515,
+      "lon": -91.1871,
+      "locationName": "Baton Rouge, Louisiana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-LA",
+      "sources": [
+        {
+          "url": "https://www.wbrz.com/news/federal-judge-throws-out-sec-s-request-to-prevent-lsu-from-interfering-with-vote-to-expel-school",
+          "domain": "wbrz.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.wdsu.com/article/judge-denies-sec-bid-block-lsu-dec-3-membership-vote/74533801",
+          "domain": "wdsu.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "646f5a56b123",
+      "headline": "Montana Senate Leaders to Refer Sen. Windy Boy to Ethics Committee Over Misconduct Claims",
+      "summary": "Montana Senate leadership announced plans to refer Sen. Jonathan Windy Boy to the Senate Ethics Committee in January 2027 over allegations he sent sexually inappropriate messages to a minor and showed explicit images to a former staffer. Forty of 50 senators have called for his resignation.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 46.5884,
+      "lon": -112.0245,
+      "locationName": "Helena, Montana, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MT",
+      "sources": [
+        {
+          "url": "https://montanafreepress.org/2026/11/18/montana-senate-to-investigate-windy-boy/",
+          "domain": "montanafreepress.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://dailyinterlake.com/news/2026/nov/20/montana-senate-will-investigate-allegations-against-longtime-legislator-jonathan-windy-boy/",
+          "domain": "dailyinterlake.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c380f95a186e",
+      "headline": "Arkansas Republican Files Bill to End Medicaid Expansion Program",
+      "summary": "Republican state Sen. Bryan King filed SB 9 to wind down Arkansas's Medicaid expansion program, ARHOME, by the end of 2027, shifting roughly 209,000 enrollees to a fee-for-service model. The bill follows the federal government's rejection of Arkansas's request to extend ARHOME.",
+      "category": "health",
+      "severity": 3,
+      "lat": 34.7465,
+      "lon": -92.2896,
+      "locationName": "Little Rock, Arkansas, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AR",
+      "sources": [
+        {
+          "url": "https://arkansasadvocate.com/2026/11/24/republican-lawmaker-files-bill-to-replace-arkansas-medicaid-expansion-program/",
+          "domain": "arkansasadvocate.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.4029tv.com/article/arkansas-bill-proposes-ending-medicaid-expansion-program-arhome/74495587",
+          "domain": "4029tv.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
       "isBreaking": false
     },
     {
@@ -3525,40 +3962,6 @@
       "firstSeen": "2026-11-25T06:06:08.634Z",
       "lastUpdated": "2026-11-25T06:06:08.634Z",
       "expiresAt": "2026-11-27T06:06:08.634Z",
-      "isBreaking": false
-    },
-    {
-      "id": "34f40b422ec9",
-      "headline": "North Carolina Certifies Results: Democrats Win State House Majority, Flip Delegation 11-3",
-      "summary": "North Carolina's State Board of Elections certified 2026 midterm results on Nov. 24, confirming Democrats won a 71-48 state House majority — their first since 2010 — and flipped the state's congressional delegation from 10-4 Republican to 11-3 Democratic, with turnout at 53.8%.",
-      "category": "politics",
-      "severity": 3,
-      "lat": 35.78,
-      "lon": -78.64,
-      "locationName": "Raleigh, North Carolina, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NC",
-      "sources": [
-        {
-          "url": "https://www.wral.com/news/nccapitol/north-carolina-elections-results-certify-november-24/",
-          "domain": "wral.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.carolinajournal.com/democrats-flip-nc-house-ending-15-years-of-republican-control/",
-          "domain": "carolinajournal.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-25T15:27:08.952Z",
-      "lastUpdated": "2026-11-25T15:27:08.952Z",
-      "expiresAt": "2026-11-27T15:27:08.952Z",
       "isBreaking": false
     },
     {
@@ -4168,46 +4571,6 @@
       "isBreaking": false
     },
     {
-      "id": "a8677d0c78ed",
-      "headline": "New York's Infrastructure Grade Falls to C-Minus as Hochul Unveils $228M for Ports",
-      "summary": "The American Society of Civil Engineers' 2026 report card lowered New York's infrastructure grade to C-minus, citing aging water, wastewater and road systems. Separately, Gov. Kathy Hochul announced $228 million for five port and waterfront projects expected to create more than 1,000 jobs.",
-      "category": "economy",
-      "severity": 2,
-      "lat": 42.65,
-      "lon": -73.76,
-      "locationName": "Albany, New York, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NY",
-      "sources": [
-        {
-          "url": "https://www.asce.org/publications-and-news/civil-engineering-source/society-news/article/2026/11/16/new-yorks-infrastructure-drops-to-c-minus-grade",
-          "domain": "asce.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://cbs6albany.com/news/local/new-york-infrastructure-earns-c-minus-in-2026-report-card-down-from-2022",
-          "domain": "cbs6albany.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.governor.ny.gov/news/governor-hochul-announces-228-million-awarded-five-projects-bolster-infrastructure-new-yorks",
-          "domain": "ny.gov",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-25T15:27:08.952Z",
-      "lastUpdated": "2026-11-25T15:27:08.952Z",
-      "expiresAt": "2026-11-27T03:27:08.952Z",
-      "isBreaking": false
-    },
-    {
       "id": "00df113ab711",
       "headline": "Pakistan's First Astronaut Reaches Orbit Aboard China's Shenzhou-24, First Foreigner Aboard Tiangong",
       "summary": "Muhammad Zeeshan Ali became Pakistan's first person in space and the first foreign astronaut to enter China's Tiangong space station, launching aboard Shenzhou-24. He is conducting biotechnology experiments developed by Pakistani universities and is expected to return within about a week.",
@@ -4795,13 +5158,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 112,
-    "carried": 75,
-    "updated": 10,
-    "expired": 28,
+    "multiSource": 122,
+    "carried": 111,
+    "updated": 2,
+    "expired": 3,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 7.08,
-    "budgetUsd": 12
+    "costUsd": 4.29,
+    "budgetUsd": 8
   }
 }
