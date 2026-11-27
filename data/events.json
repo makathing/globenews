@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T06:12:54.043Z",
+  "generatedAt": "2026-11-27T15:26:09.567Z",
   "mode": "daily",
   "events": [
     {
@@ -57,6 +57,62 @@
       "firstSeen": "2026-11-19T06:06:59.835Z",
       "lastUpdated": "2026-11-22T06:10:30.703Z",
       "expiresAt": "2026-11-29T06:10:30.703Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3b2e8cab3505",
+      "headline": "Nor'easter Kills NYCHA Worker in Brooklyn as Power Outages Near 1 Million Across Northeast",
+      "summary": "A NYCHA maintenance worker, Leighton Brown, was killed by a falling tree in East New York, Brooklyn during the Thanksgiving nor'easter. Power outages peaked near 1 million customers across New York, New Jersey, Connecticut, Pennsylvania, Maryland and Virginia, with hundreds of thousands still without power on Nov 27.",
+      "category": "disaster",
+      "severity": 4,
+      "lat": 40.7128,
+      "lon": -74.006,
+      "locationName": "New York, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-27/dangerous-nor-easter-storm-triggers-widespread-power-outages",
+          "domain": "bloomberg.com",
+          "reliability": 88,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.cbsnews.com/newyork/news/nycha-employee-killed-fallen-tree-brooklyn/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/weather/storms/norester-storm-flooding-rcna599961",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.governor.ny.gov/news/governor-hochul-declares-state-emergency-ahead-thanksgiving-coastal-storm",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://thehill.com/homenews/state-watch/6243923-nj-governor-declares-emergency/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/US/new-york-declares-emergency-thanksgiving-storm-threatens-east/story?id=138464273",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 89,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-12-01T15:26:09.567Z",
       "isBreaking": false
     },
     {
@@ -645,42 +701,6 @@
       "isBreaking": false
     },
     {
-      "id": "03267c5e5c0e",
-      "headline": "Russia's Novaya Gazeta Newspaper Closes Moscow Office Amid 'Foreign Agent' Crackdown",
-      "summary": "Novaya Gazeta, one of Russia's last major independent newspapers, closed its Moscow office after being designated a 'foreign agent,' fined, blocked online, and cut off from donation-based funding. The UN human rights chief called it another devastating blow to independent media in Russia.",
-      "category": "politics",
-      "severity": 4,
-      "lat": 55.76,
-      "lon": 37.62,
-      "locationName": "Moscow, Russia",
-      "countryCode": "RU",
-      "sources": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/9/russian-investigative-newspaper-novaya-gazeta-closes-citing-govt-clampdown",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/09/russian-newspaper-media-novaya-gazeta-closure/3e48d596-dc47-11f1-912c-4fbb80d73f7f_story.html",
-          "domain": "washingtonpost.com",
-          "reliability": 85,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.euronews.com/2026/11/11/russias-last-openly-critical-newspaper-novaya-gazeta-shuts-its-moscow-office",
-          "domain": "euronews.com",
-          "reliability": 80,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 65,
-      "firstSeen": "2026-11-24T06:05:16.230Z",
-      "lastUpdated": "2026-11-24T06:05:16.230Z",
-      "expiresAt": "2026-11-28T06:05:16.230Z",
-      "isBreaking": false
-    },
-    {
       "id": "9095d83518a2",
       "headline": "Jury Convicts Jonathan Rinderknecht of Starting Deadly Palisades Fire",
       "summary": "A federal jury convicted Jonathan Rinderknecht, 30, on Nov. 20 of destruction of property by fire and arson affecting interstate commerce for igniting the Jan. 1, 2025 'Lachman Fire,' which grew into the Palisades Fire. The conviction came in a retrial after an earlier mistrial; sentencing is pending, with each count carrying 5 to 20 years.",
@@ -716,6 +736,42 @@
       "firstSeen": "2026-11-23T15:28:31.697Z",
       "lastUpdated": "2026-11-23T15:28:31.697Z",
       "expiresAt": "2026-11-27T15:28:31.697Z",
+      "isBreaking": false
+    },
+    {
+      "id": "03267c5e5c0e",
+      "headline": "Russia's Novaya Gazeta Newspaper Closes Moscow Office Amid 'Foreign Agent' Crackdown",
+      "summary": "Novaya Gazeta, one of Russia's last major independent newspapers, closed its Moscow office after being designated a 'foreign agent,' fined, blocked online, and cut off from donation-based funding. The UN human rights chief called it another devastating blow to independent media in Russia.",
+      "category": "politics",
+      "severity": 4,
+      "lat": 55.76,
+      "lon": 37.62,
+      "locationName": "Moscow, Russia",
+      "countryCode": "RU",
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/9/russian-investigative-newspaper-novaya-gazeta-closes-citing-govt-clampdown",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/09/russian-newspaper-media-novaya-gazeta-closure/3e48d596-dc47-11f1-912c-4fbb80d73f7f_story.html",
+          "domain": "washingtonpost.com",
+          "reliability": 85,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/11/russias-last-openly-critical-newspaper-novaya-gazeta-shuts-its-moscow-office",
+          "domain": "euronews.com",
+          "reliability": 80,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 65,
+      "firstSeen": "2026-11-24T06:05:16.230Z",
+      "lastUpdated": "2026-11-24T06:05:16.230Z",
+      "expiresAt": "2026-11-28T06:05:16.230Z",
       "isBreaking": false
     },
     {
@@ -926,38 +982,6 @@
       "isBreaking": false
     },
     {
-      "id": "3b38651ec8a2",
-      "headline": "Ukrainian Drones Strike Syzran and Kuibyshev Refineries in Russia's Samara Region",
-      "summary": "Ukrainian drones struck the Syzran and Kuibyshev oil refineries in Russia's Samara Oblast, setting them ablaze and reportedly cutting Russia's refining capacity by roughly a third. The strikes are part of Kyiv's intensified campaign against Russian energy infrastructure.",
-      "category": "conflict",
-      "severity": 4,
-      "lat": 60,
-      "lon": 90,
-      "locationName": "Samara Oblast, Russia",
-      "countryCode": "RU",
-      "sources": [
-        {
-          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-oil-refineries-in-massive-attack/",
-          "domain": "kyivindependent.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://censor.net/en/news/4035468/drones-attacked-samara-region-syzran-and-kuibyshev-oil-refineries-are-on-fire",
-          "domain": "censor.net",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-25T06:06:08.634Z",
-      "lastUpdated": "2026-11-25T06:06:08.634Z",
-      "expiresAt": "2026-11-29T06:06:08.634Z",
-      "isBreaking": false
-    },
-    {
       "id": "fe97c4992056",
       "headline": "Washington Fines Nippon Dynawave Over $10 Million for Fatal Tank Collapse That Killed 11",
       "summary": "Washington's Department of Labor & Industries cited Nippon Dynawave Packaging for 75 violations and fined it $9.1 million, plus about $961,000 in environmental penalties, over the May 2026 rupture of a caustic tank at its Longview pulp mill that killed 11 workers. State Sen. Jeff Wilson plans a 'Pulp Liquors Safety Act.'",
@@ -989,6 +1013,38 @@
       "firstSeen": "2026-11-26T15:27:26.364Z",
       "lastUpdated": "2026-11-26T15:27:26.364Z",
       "expiresAt": "2026-11-30T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "3b38651ec8a2",
+      "headline": "Ukrainian Drones Strike Syzran and Kuibyshev Refineries in Russia's Samara Region",
+      "summary": "Ukrainian drones struck the Syzran and Kuibyshev oil refineries in Russia's Samara Oblast, setting them ablaze and reportedly cutting Russia's refining capacity by roughly a third. The strikes are part of Kyiv's intensified campaign against Russian energy infrastructure.",
+      "category": "conflict",
+      "severity": 4,
+      "lat": 60,
+      "lon": 90,
+      "locationName": "Samara Oblast, Russia",
+      "countryCode": "RU",
+      "sources": [
+        {
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-oil-refineries-in-massive-attack/",
+          "domain": "kyivindependent.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://censor.net/en/news/4035468/drones-attacked-samara-region-syzran-and-kuibyshev-oil-refineries-are-on-fire",
+          "domain": "censor.net",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-25T06:06:08.634Z",
+      "lastUpdated": "2026-11-25T06:06:08.634Z",
+      "expiresAt": "2026-11-29T06:06:08.634Z",
       "isBreaking": false
     },
     {
@@ -1715,6 +1771,44 @@
       "isBreaking": false
     },
     {
+      "id": "24a137abdfa4",
+      "headline": "Army Successfully Detonates Over 9,500 Pounds of Unstable Lead Azide at Iowa Army Ammunition Plant",
+      "summary": "The US Army conducted a controlled detonation on Nov 25 of about 9,500 pounds of degraded lead azide at the Iowa Army Ammunition Plant after evacuating a 5-mile zone. Federal officials reported zero airborne lead detected afterward; Illinois had activated its emergency operations center as a precaution.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 40.9742,
+      "lon": -91.1829,
+      "locationName": "Middletown, Iowa, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-IA",
+      "sources": [
+        {
+          "url": "https://www.army.mil/article-amp/297039/public_safety_advisory_controlled_mitigated_detonation_of_unstable_lead_azide_at_iowa_army_ammunition_plant",
+          "domain": "army.mil",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://abcnews.com/US/iowa-detonation-lead-azide-army/story?id=138425051",
+          "domain": "abcnews.com",
+          "reliability": 82,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/nation/live-updates-army-expected-to-detonate-stockpile-of-lead-azide-in-iowa",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 74,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
+      "isBreaking": false
+    },
+    {
       "id": "0da2ae7201ad",
       "headline": "Guyana Rejects Bilateral Talks With Venezuela Over Essequibo After Leaked US Proposal",
       "summary": "Reuters reported that a former US State Department official had floated giving Venezuela partial control of the disputed Essequibo region. Guyana rejected bilateral negotiations with Venezuela, insisting the dispute remain before the International Court of Justice.",
@@ -1802,44 +1896,6 @@
       "isBreaking": false
     },
     {
-      "id": "3b2e8cab3505",
-      "headline": "Nor'easter Prompts NY, NJ Emergency Declarations; Macy's Parade Postponed to Saturday",
-      "summary": "Govs. Hochul and Sherrill declared states of emergency ahead of a Thanksgiving coastal storm bringing 60-70 mph gusts and coastal flooding to New York and New Jersey. The storm forced organizers to postpone the 100th Macy's Thanksgiving Day Parade to Saturday, the first postponement in its history.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 40.7128,
-      "lon": -74.006,
-      "locationName": "New York, New York, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-NY",
-      "sources": [
-        {
-          "url": "https://www.governor.ny.gov/news/governor-hochul-declares-state-emergency-ahead-thanksgiving-coastal-storm",
-          "domain": "ny.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://thehill.com/homenews/state-watch/6243923-nj-governor-declares-emergency/",
-          "domain": "thehill.com",
-          "reliability": 76,
-          "bias": "center"
-        },
-        {
-          "url": "https://abcnews.com/US/new-york-declares-emergency-thanksgiving-storm-threatens-east/story?id=138464273",
-          "domain": "abcnews.com",
-          "reliability": 82,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 73,
-      "firstSeen": "2026-11-26T15:27:26.364Z",
-      "lastUpdated": "2026-11-26T15:27:26.364Z",
-      "expiresAt": "2026-11-28T15:27:26.364Z",
-      "isBreaking": false
-    },
-    {
       "id": "11c3385ba232",
       "headline": "King Tide Surf Collapses Part of Pacifica Pier; Evacuations Extend to Santa Barbara County",
       "summary": "Record king tides and swell caused an end section of the Pacifica Municipal Pier to collapse and flooded a beachfront neighborhood near San Francisco. Waymo suspended its autonomous ride service in San Francisco ahead of the storm, and Santa Barbara County issued evacuation warnings for low-lying Montecito, Summerland and Carpinteria.",
@@ -1888,6 +1944,45 @@
       ],
       "trustScore": 71,
       "firstSeen": "2026-11-24T15:28:46.855Z",
+      "lastUpdated": "2026-11-26T15:27:26.364Z",
+      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "336afc3fc856",
+      "headline": "Alaska Terminates Voter-Records Sharing Agreement With Trump DOJ",
+      "summary": "Alaska Lt. Gov. Nancy Dahlstrom terminated the state's December 2025 memorandum allowing the Justice Department to screen Alaska's voter rolls for noncitizens and ordered DOJ to destroy the data it collected. DOJ never flagged any ineligible voters under the agreement.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 58.3019,
+      "lon": -134.4197,
+      "locationName": "Juneau, Alaska, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-AK",
+      "sources": [
+        {
+          "url": "https://www.elections.alaska.gov/lieutenant-governor-dahlstrom-terminates-voter-informationagreement-with-u-s-department-of-justice/",
+          "domain": "alaska.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/alaska-ends-voter-data-agreement-with-justice-department-which-had-been-searching-for-noncitizens",
+          "domain": "pbs.org",
+          "reliability": 87,
+          "bias": "center"
+        },
+        {
+          "url": "https://alaskabeacon.com/2026/11/24/alaska-lt-gov-announces-end-to-contentious-voter-roll-agreement-with-u-s-department-of-justice/",
+          "domain": "alaskabeacon.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 69,
+      "firstSeen": "2026-11-26T15:27:26.364Z",
       "lastUpdated": "2026-11-26T15:27:26.364Z",
       "expiresAt": "2026-11-28T15:27:26.364Z",
       "isBreaking": false
@@ -2003,42 +2098,42 @@
       "isBreaking": false
     },
     {
-      "id": "336afc3fc856",
-      "headline": "Alaska Terminates Voter-Records Sharing Agreement With Trump DOJ",
-      "summary": "Alaska Lt. Gov. Nancy Dahlstrom terminated the state's December 2025 memorandum allowing the Justice Department to screen Alaska's voter rolls for noncitizens and ordered DOJ to destroy the data it collected. DOJ never flagged any ineligible voters under the agreement.",
-      "category": "politics",
+      "id": "6d9111cc1752",
+      "headline": "Indiana Launches Federal-Backed Temporary Housing Program for 2026 Flood Victims",
+      "summary": "Gov. Mike Braun announced the federal government will help fund a travel-trailer temporary housing program for about 250 families still displaced by Indiana's summer 2026 floods. More than $170 million in aid has already been distributed after 50,000-plus applications were filed.",
+      "category": "disaster",
       "severity": 3,
-      "lat": 58.3019,
-      "lon": -134.4197,
-      "locationName": "Juneau, Alaska, USA",
+      "lat": 39.77,
+      "lon": -86.16,
+      "locationName": "Indianapolis, Indiana, USA",
       "countryCode": "US",
       "scope": "us",
-      "subdivision": "US-AK",
+      "subdivision": "US-IN",
       "sources": [
         {
-          "url": "https://www.elections.alaska.gov/lieutenant-governor-dahlstrom-terminates-voter-informationagreement-with-u-s-department-of-justice/",
-          "domain": "alaska.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/politics/alaska-ends-voter-data-agreement-with-justice-department-which-had-been-searching-for-noncitizens",
-          "domain": "pbs.org",
-          "reliability": 87,
-          "bias": "center"
-        },
-        {
-          "url": "https://alaskabeacon.com/2026/11/24/alaska-lt-gov-announces-end-to-contentious-voter-roll-agreement-with-u-s-department-of-justice/",
-          "domain": "alaskabeacon.com",
+          "url": "https://indianapublicradio.org/news/2026/11/gov-braun-announces-effort-to-house-those-impacted-by-summer-floods/",
+          "domain": "indianapublicradio.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
+        },
+        {
+          "url": "https://www.axios.com/local/indianapolis/2026/08/17/indiana-launches-emergency-assistance-housing-vouchers-for-flood-victims",
+          "domain": "axios.com",
+          "reliability": 80,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.fema.gov/fact-sheet/indiana-recovery-update",
+          "domain": "fema.gov",
+          "reliability": 85,
+          "bias": "center"
         }
       ],
-      "trustScore": 69,
-      "firstSeen": "2026-11-26T15:27:26.364Z",
-      "lastUpdated": "2026-11-26T15:27:26.364Z",
-      "expiresAt": "2026-11-28T15:27:26.364Z",
+      "trustScore": 68,
+      "firstSeen": "2026-11-25T15:27:08.952Z",
+      "lastUpdated": "2026-11-25T15:27:08.952Z",
+      "expiresAt": "2026-11-27T15:27:08.952Z",
       "isBreaking": false
     },
     {
@@ -2094,45 +2189,6 @@
       "isBreaking": false
     },
     {
-      "id": "6d9111cc1752",
-      "headline": "Indiana Launches Federal-Backed Temporary Housing Program for 2026 Flood Victims",
-      "summary": "Gov. Mike Braun announced the federal government will help fund a travel-trailer temporary housing program for about 250 families still displaced by Indiana's summer 2026 floods. More than $170 million in aid has already been distributed after 50,000-plus applications were filed.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 39.77,
-      "lon": -86.16,
-      "locationName": "Indianapolis, Indiana, USA",
-      "countryCode": "US",
-      "scope": "us",
-      "subdivision": "US-IN",
-      "sources": [
-        {
-          "url": "https://indianapublicradio.org/news/2026/11/gov-braun-announces-effort-to-house-those-impacted-by-summer-floods/",
-          "domain": "indianapublicradio.org",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.axios.com/local/indianapolis/2026/08/17/indiana-launches-emergency-assistance-housing-vouchers-for-flood-victims",
-          "domain": "axios.com",
-          "reliability": 80,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.fema.gov/fact-sheet/indiana-recovery-update",
-          "domain": "fema.gov",
-          "reliability": 85,
-          "bias": "center"
-        }
-      ],
-      "trustScore": 68,
-      "firstSeen": "2026-11-25T15:27:08.952Z",
-      "lastUpdated": "2026-11-25T15:27:08.952Z",
-      "expiresAt": "2026-11-27T15:27:08.952Z",
-      "isBreaking": false
-    },
-    {
       "id": "1811e430544d",
       "headline": "Lula Appoints Bradesco Chairman Trabuco as Brazil's Finance Minister, Markets Rally",
       "summary": "President Lula named Bradesco chairman Luiz Carlos Trabuco Cappi as incoming finance minister on Nov 26 in a bid to reassure markets. The Brazilian real and stocks rallied more than 6% on the announcement.",
@@ -2164,17 +2220,38 @@
     },
     {
       "id": "d2f2cab0c15b",
-      "headline": "Hawaii Governor Orders Formal Review, Immediate-Notification Rule After H-POWER Diesel Spill",
-      "summary": "Gov. Josh Green signed an executive order directing a formal review, chaired by Transportation Director Ed Sniffen, into the roughly 403,000-gallon diesel leak at the H-POWER plant that occurred January-May 2026 but was undisclosed until Nov. 19. The order also requires the Department of Health to immediately notify the governor and public of any future oil-release report regardless of volume, with findings due in 30 to 60 days.",
+      "headline": "Honolulu Environmental Services Director Resigns Over Delayed Disclosure of H-POWER Diesel Spill",
+      "summary": "Honolulu Environmental Services Director Roger Babcock resigned Nov 25 after it emerged officials knew since summer about the scale of a roughly 403,000-gallon diesel spill at the H-POWER plant but delayed informing the mayor. Mayor Blangiardi accepted the resignation, named an interim director, and said he will move to terminate contractor Reworld's operating contract.",
       "category": "climate",
       "severity": 3,
-      "lat": 21.307,
-      "lon": -157.858,
+      "lat": 21.3372,
+      "lon": -158.0656,
       "locationName": "Kapolei, Hawaii, USA",
       "countryCode": "US",
       "scope": "us",
       "subdivision": "US-HI",
       "sources": [
+        {
+          "url": "https://www.staradvertiser.com/2026/11/25/breaking-news/honolulu-environmental-services-director-resigns-over-h-power-fuel-spill/",
+          "domain": "staradvertiser.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.hawaiipublicradio.org/local-news/2026-11-25/honolulu-department-of-environmental-services-director-resigns-after-h-power-spill",
+          "domain": "hawaiipublicradio.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.hawaiinewsnow.com/2026/11/26/honolulu-environmental-services-director-resigns-after-h-power-fuel-spill/",
+          "domain": "hawaiinewsnow.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
         {
           "url": "https://www.civilbeat.org/2026/11/green-demands-rapid-notice-of-oil-spills-after-outrageous-delays/",
           "domain": "civilbeat.org",
@@ -2197,24 +2274,10 @@
           "unrated": true
         },
         {
-          "url": "https://www.staradvertiser.com/2026/11/21/hawaii-news/lawmakers-plan-hearing-on-delayed-disclosure-of-h-power-diesel-spill/",
-          "domain": "staradvertiser.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
           "url": "https://www.yahoo.com/news/us/articles/area-lawmakers-look-transparency-accountability-035842231.html",
           "domain": "yahoo.com",
           "reliability": 60,
           "bias": "center"
-        },
-        {
-          "url": "https://www.hawaiinewsnow.com/2026/11/22/unacceptable-green-vows-investigation-into-h-power-leak-response/",
-          "domain": "hawaiinewsnow.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
         },
         {
           "url": "https://www.khon2.com/local-news/green-plans-fuel-spill-order/",
@@ -2240,8 +2303,8 @@
       ],
       "trustScore": 66,
       "firstSeen": "2026-11-21T15:27:59.884Z",
-      "lastUpdated": "2026-11-25T15:27:08.952Z",
-      "expiresAt": "2026-11-27T15:27:08.952Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
       "isBreaking": false
     },
     {
@@ -2407,43 +2470,6 @@
       "isBreaking": false
     },
     {
-      "id": "26d2a8519ef1",
-      "headline": "Eurozone Agrees to Nominate Spain's Hernández de Cos as Next ECB President",
-      "summary": "Eurozone finance ministers and leaders agreed to nominate Pablo Hernández de Cos, currently general manager of the Bank for International Settlements, to succeed Christine Lagarde as ECB president. Lagarde is due to step down in February.",
-      "category": "economy",
-      "severity": 3,
-      "lat": 50.85,
-      "lon": 4.35,
-      "locationName": "Brussels, Belgium",
-      "countryCode": "BE",
-      "sources": [
-        {
-          "url": "https://www.cnn.com/2026/11/26/business/ecb-president-pablo-hernandez-de-cos-intl",
-          "domain": "cnn.com",
-          "reliability": 75,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief",
-          "domain": "aljazeera.com",
-          "reliability": 78,
-          "bias": "center-left"
-        },
-        {
-          "url": "https://english.news.cn/20261127/250460ad0af44bdea5cdc93ea8ddfe7a/c.html",
-          "domain": "news.cn",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 58,
-      "firstSeen": "2026-11-27T06:12:54.043Z",
-      "lastUpdated": "2026-11-27T06:12:54.043Z",
-      "expiresAt": "2026-11-29T06:12:54.043Z",
-      "isBreaking": false
-    },
-    {
       "id": "930425783391",
       "headline": "Judge Orders Fulton County to Give Georgia Election Board Unredacted 2020 Ballot Records",
       "summary": "A judge ordered Fulton County, Georgia to turn over unredacted copies of FBI-seized 2020 election records, including ballot images and voter rolls, to the state election board by a deadline. The county has appealed the order, citing ballot-secrecy concerns.",
@@ -2480,6 +2506,43 @@
       "firstSeen": "2026-11-25T15:27:08.952Z",
       "lastUpdated": "2026-11-25T15:27:08.952Z",
       "expiresAt": "2026-11-27T15:27:08.952Z",
+      "isBreaking": false
+    },
+    {
+      "id": "26d2a8519ef1",
+      "headline": "Eurozone Agrees to Nominate Spain's Hernández de Cos as Next ECB President",
+      "summary": "Eurozone finance ministers and leaders agreed to nominate Pablo Hernández de Cos, currently general manager of the Bank for International Settlements, to succeed Christine Lagarde as ECB president. Lagarde is due to step down in February.",
+      "category": "economy",
+      "severity": 3,
+      "lat": 50.85,
+      "lon": 4.35,
+      "locationName": "Brussels, Belgium",
+      "countryCode": "BE",
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/11/26/business/ecb-president-pablo-hernandez-de-cos-intl",
+          "domain": "cnn.com",
+          "reliability": 75,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief",
+          "domain": "aljazeera.com",
+          "reliability": 78,
+          "bias": "center-left"
+        },
+        {
+          "url": "https://english.news.cn/20261127/250460ad0af44bdea5cdc93ea8ddfe7a/c.html",
+          "domain": "news.cn",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-27T06:12:54.043Z",
+      "lastUpdated": "2026-11-27T06:12:54.043Z",
+      "expiresAt": "2026-11-29T06:12:54.043Z",
       "isBreaking": false
     },
     {
@@ -2597,44 +2660,6 @@
       "isBreaking": false
     },
     {
-      "id": "55cd64229022",
-      "headline": "Suspected FARC Dissidents Destroy Power Towers in Nariño, Blacking Out Five Colombian Departments",
-      "summary": "Suspected FARC dissidents destroyed electrical transmission towers in El Remolino, Taminango on Nov 24, causing blackouts across five Colombian departments. A separate drone attack on a police substation in the same region wounded two police officers and a soldier.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 1.5667,
-      "lon": -77.2833,
-      "locationName": "Taminango, Nariño, Colombia",
-      "countryCode": "CO",
-      "sources": [
-        {
-          "url": "https://co.usembassy.gov/security-alert-u-s-embassy-colombia-november-26-2026/",
-          "domain": "usembassy.gov",
-          "reliability": 85,
-          "bias": "center"
-        },
-        {
-          "url": "https://www.eltiempo.com/colombia/cali/ataque-con-drones-deja-dos-policias-y-un-soldado-heridos-en-narino-es-el-segundo-atentado-en-esta-zona-en-menos-de-un-mes-3603477",
-          "domain": "eltiempo.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://colombiaone.com/2026/11/25/attack-power-tower-blackout-southwestern-colombia/",
-          "domain": "colombiaone.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 55,
-      "firstSeen": "2026-11-27T06:12:54.043Z",
-      "lastUpdated": "2026-11-27T06:12:54.043Z",
-      "expiresAt": "2026-11-29T06:12:54.043Z",
-      "isBreaking": false
-    },
-    {
       "id": "4feebfa37baf",
       "headline": "California Confirms 60 Measles Cases in 2026, Surpassing Prior Two Years Combined",
       "summary": "California health officials confirmed 60 measles cases in 2026, more than the prior two years combined. The largest cluster, 21 cases, is in the Sacramento-Placer region among unvaccinated or unknown-vaccination residents, with about 450 people exposed in Sacramento County alone.",
@@ -2672,6 +2697,44 @@
       "firstSeen": "2026-11-25T15:27:08.952Z",
       "lastUpdated": "2026-11-25T15:27:08.952Z",
       "expiresAt": "2026-11-27T15:27:08.952Z",
+      "isBreaking": false
+    },
+    {
+      "id": "55cd64229022",
+      "headline": "Suspected FARC Dissidents Destroy Power Towers in Nariño, Blacking Out Five Colombian Departments",
+      "summary": "Suspected FARC dissidents destroyed electrical transmission towers in El Remolino, Taminango on Nov 24, causing blackouts across five Colombian departments. A separate drone attack on a police substation in the same region wounded two police officers and a soldier.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 1.5667,
+      "lon": -77.2833,
+      "locationName": "Taminango, Nariño, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://co.usembassy.gov/security-alert-u-s-embassy-colombia-november-26-2026/",
+          "domain": "usembassy.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.eltiempo.com/colombia/cali/ataque-con-drones-deja-dos-policias-y-un-soldado-heridos-en-narino-es-el-segundo-atentado-en-esta-zona-en-menos-de-un-mes-3603477",
+          "domain": "eltiempo.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://colombiaone.com/2026/11/25/attack-power-tower-blackout-southwestern-colombia/",
+          "domain": "colombiaone.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 55,
+      "firstSeen": "2026-11-27T06:12:54.043Z",
+      "lastUpdated": "2026-11-27T06:12:54.043Z",
+      "expiresAt": "2026-11-29T06:12:54.043Z",
       "isBreaking": false
     },
     {
@@ -2795,6 +2858,39 @@
       "isBreaking": false
     },
     {
+      "id": "927703a15535",
+      "headline": "Whitmer Orders State to Freeze Line 5 Great Lakes Tunnel Permits Over Legal Questions",
+      "summary": "Gov. Gretchen Whitmer directed Michigan's EGLE on Nov 24 to suspend action on permits for Enbridge's Great Lakes Tunnel Line 5 replacement project, citing unresolved legal questions after a Michigan Supreme Court decision affecting a related permit.",
+      "category": "climate",
+      "severity": 3,
+      "lat": 42.7325,
+      "lon": -84.5555,
+      "locationName": "Lansing, Michigan, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MI",
+      "sources": [
+        {
+          "url": "https://www.michigan.gov/whitmer/news/press-releases/2026/11/24/governor-whitmer-freezes-egle-line-5-tunnel-project-permits",
+          "domain": "michigan.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://planetdetroit.org/2026/11/whitmer-pauses-line-5-tunnel-permits/",
+          "domain": "planetdetroit.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
+      "isBreaking": false
+    },
+    {
       "id": "765cea944ef9",
       "headline": "Spain Heads to Snap Election November 29 With Right-Wing Bloc Leading Polls",
       "summary": "Spain votes in a snap general election on November 29, called after parliament rejected PM Sánchez's housing-reform decrees. Polling puts the PP at about 31.5%, PSOE at about 29%, and far-right Vox at about 17.9%, with most polls projecting a PP-Vox combined majority.",
@@ -2826,120 +2922,36 @@
       "isBreaking": false
     },
     {
-      "id": "c5e2379c5a12",
-      "headline": "Gang Attack Kills at Least 10 at Kenscoff Market Near Port-au-Prince, Haiti",
-      "summary": "Armed gang members attacked the Bolosse/Bongard market in Kenscoff around 4am on Nov 25, killing at least 10 people and wounding 7 using firearms and machetes. The attack adds to Haiti's escalating gang violence amid a worsening security and humanitarian crisis.",
-      "category": "conflict",
+      "id": "c1ced2addf44",
+      "headline": "California Voters Approve $8.4 Billion Bond for Immunology Research",
+      "summary": "California voters passed Proposition 38 by roughly 54%-46%, authorizing an $8.4 billion state bond for immunology and immunotherapy research. Half of the funds are earmarked for an institute co-founded by the measure's billionaire financier Gary Michelson, prompting scrutiny over self-interest.",
+      "category": "health",
       "severity": 3,
-      "lat": 18.4448,
-      "lon": -72.2863,
-      "locationName": "Kenscoff, Haiti",
-      "countryCode": "HT",
+      "lat": 38.5816,
+      "lon": -121.4944,
+      "locationName": "Sacramento, California, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-CA",
       "sources": [
         {
-          "url": "https://www.haitilibre.com/en/news-48979-haiti-flash-armed-attack-in-kenscoff-at-the-bolosse-market-at-least-17-victims.html",
-          "domain": "haitilibre.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://www.cbsnews.com/losangeles/news/california-proposition-38-state-bonds-immunology-research-passes/",
+          "domain": "cbsnews.com",
+          "reliability": 82,
+          "bias": "center"
         },
         {
-          "url": "https://www.riotimesonline.com/haiti-kenscoff-bongard-market-attack-10-killed-2026",
-          "domain": "riotimesonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.infobae.com/el-salvador/2026/11/26/diez-muertos-en-un-ataque-de-bandas-armadas-contra-un-mercado-de-haiti/",
-          "domain": "infobae.com",
+          "url": "https://calmatters.org/health/2026/11/california-election-2026-prop-38/",
+          "domain": "calmatters.org",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 49,
-      "firstSeen": "2026-11-27T06:12:54.043Z",
-      "lastUpdated": "2026-11-27T06:12:54.043Z",
-      "expiresAt": "2026-11-29T06:12:54.043Z",
-      "isBreaking": false
-    },
-    {
-      "id": "dd1ae1f829fe",
-      "headline": "Ukraine Strikes Russia's Marinovka Airbase With Neptune Missiles, Fourth Airbase Hit in Two Weeks",
-      "summary": "Ukraine's navy struck the Marinovka airbase, which houses Su-34 bombers, with Neptune missiles overnight Nov 25-26. Ukrainian forces also hit a Transneft oil-pumping station in Bashkortostan, marking the fourth Russian airbase targeted in about two weeks.",
-      "category": "conflict",
-      "severity": 3,
-      "lat": 60,
-      "lon": 90,
-      "locationName": "Volgograd Oblast, Russia",
-      "countryCode": "RU",
-      "sources": [
-        {
-          "url": "https://www.pravda.com.ua/eng/news/2026/11/26/8064783/",
-          "domain": "pravda.com.ua",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://militarnyi.com/en/news/ukraine-neptunes-marinovka-air-base-su-34s/",
-          "domain": "militarnyi.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://hromadske.ua/en/war/275040-ukraine-strikes-russias-marinovka-airbase-again-with-neptune-missiles-hits-oil-pumping-station",
-          "domain": "hromadske.ua",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-27T06:12:54.043Z",
-      "lastUpdated": "2026-11-27T06:12:54.043Z",
-      "expiresAt": "2026-11-29T06:12:54.043Z",
-      "isBreaking": false
-    },
-    {
-      "id": "c12f3a8bf799",
-      "headline": "Record Rainfall Triggers Colombia Flood Emergency, 14+ Dead, ~156,000 Affected; Argentina's Paraná River Floods Displace 4,500+",
-      "summary": "Record rainfall in Colombia's Caribbean departments of Córdoba, Sucre and Bolívar has killed at least 14 and affected about 156,000 people; President Petro extended a state of emergency to 22 departments. Separately, El Niño-driven Paraná River flooding has displaced 4,547 people across Argentina's Chaco, Corrientes, Santa Fe and Entre Ríos provinces.",
-      "category": "disaster",
-      "severity": 3,
-      "lat": 8.7479,
-      "lon": -75.8814,
-      "locationName": "Montería, Córdoba, Colombia",
-      "countryCode": "CO",
-      "sources": [
-        {
-          "url": "https://www.trtworld.com/article/93351ff3b550",
-          "domain": "trtworld.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.aa.com.tr/en/americas/historic-floods-in-northern-colombia-leave-14-dead-120-000-affected/3825373",
-          "domain": "aa.com.tr",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        },
-        {
-          "url": "https://www.riotimesonline.com/argentina-litoral-floods-4547-evacuated/",
-          "domain": "riotimesonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
-        }
-      ],
-      "trustScore": 49,
-      "firstSeen": "2026-11-26T06:08:57.022Z",
-      "lastUpdated": "2026-11-26T06:08:57.022Z",
-      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
       "isBreaking": false
     },
     {
@@ -3107,6 +3119,156 @@
       "isBreaking": false
     },
     {
+      "id": "c5e2379c5a12",
+      "headline": "Gang Attack Kills at Least 10 at Kenscoff Market Near Port-au-Prince, Haiti",
+      "summary": "Armed gang members attacked the Bolosse/Bongard market in Kenscoff around 4am on Nov 25, killing at least 10 people and wounding 7 using firearms and machetes. The attack adds to Haiti's escalating gang violence amid a worsening security and humanitarian crisis.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 18.4448,
+      "lon": -72.2863,
+      "locationName": "Kenscoff, Haiti",
+      "countryCode": "HT",
+      "sources": [
+        {
+          "url": "https://www.haitilibre.com/en/news-48979-haiti-flash-armed-attack-in-kenscoff-at-the-bolosse-market-at-least-17-victims.html",
+          "domain": "haitilibre.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.riotimesonline.com/haiti-kenscoff-bongard-market-attack-10-killed-2026",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.infobae.com/el-salvador/2026/11/26/diez-muertos-en-un-ataque-de-bandas-armadas-contra-un-mercado-de-haiti/",
+          "domain": "infobae.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-27T06:12:54.043Z",
+      "lastUpdated": "2026-11-27T06:12:54.043Z",
+      "expiresAt": "2026-11-29T06:12:54.043Z",
+      "isBreaking": false
+    },
+    {
+      "id": "dd1ae1f829fe",
+      "headline": "Ukraine Strikes Russia's Marinovka Airbase With Neptune Missiles, Fourth Airbase Hit in Two Weeks",
+      "summary": "Ukraine's navy struck the Marinovka airbase, which houses Su-34 bombers, with Neptune missiles overnight Nov 25-26. Ukrainian forces also hit a Transneft oil-pumping station in Bashkortostan, marking the fourth Russian airbase targeted in about two weeks.",
+      "category": "conflict",
+      "severity": 3,
+      "lat": 60,
+      "lon": 90,
+      "locationName": "Volgograd Oblast, Russia",
+      "countryCode": "RU",
+      "sources": [
+        {
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/26/8064783/",
+          "domain": "pravda.com.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://militarnyi.com/en/news/ukraine-neptunes-marinovka-air-base-su-34s/",
+          "domain": "militarnyi.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://hromadske.ua/en/war/275040-ukraine-strikes-russias-marinovka-airbase-again-with-neptune-missiles-hits-oil-pumping-station",
+          "domain": "hromadske.ua",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-27T06:12:54.043Z",
+      "lastUpdated": "2026-11-27T06:12:54.043Z",
+      "expiresAt": "2026-11-29T06:12:54.043Z",
+      "isBreaking": false
+    },
+    {
+      "id": "c12f3a8bf799",
+      "headline": "Record Rainfall Triggers Colombia Flood Emergency, 14+ Dead, ~156,000 Affected; Argentina's Paraná River Floods Displace 4,500+",
+      "summary": "Record rainfall in Colombia's Caribbean departments of Córdoba, Sucre and Bolívar has killed at least 14 and affected about 156,000 people; President Petro extended a state of emergency to 22 departments. Separately, El Niño-driven Paraná River flooding has displaced 4,547 people across Argentina's Chaco, Corrientes, Santa Fe and Entre Ríos provinces.",
+      "category": "disaster",
+      "severity": 3,
+      "lat": 8.7479,
+      "lon": -75.8814,
+      "locationName": "Montería, Córdoba, Colombia",
+      "countryCode": "CO",
+      "sources": [
+        {
+          "url": "https://www.trtworld.com/article/93351ff3b550",
+          "domain": "trtworld.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.aa.com.tr/en/americas/historic-floods-in-northern-colombia-leave-14-dead-120-000-affected/3825373",
+          "domain": "aa.com.tr",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.riotimesonline.com/argentina-litoral-floods-4547-evacuated/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 49,
+      "firstSeen": "2026-11-26T06:08:57.022Z",
+      "lastUpdated": "2026-11-26T06:08:57.022Z",
+      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "isBreaking": false
+    },
+    {
+      "id": "fa71d42debe0",
+      "headline": "Federal Education Department Withholds Funding, Opens Civil Rights Probe Into Albemarle County Schools",
+      "summary": "The US Education Department placed Virginia's education department on 'high-risk' status and withheld funds from Albemarle County Public Schools after 524 staff hired over three years were never screened against the state's abuse registry. The district closed all 29 schools Nov 19-30, and several employees face indictments.",
+      "category": "society",
+      "severity": 3,
+      "lat": 38.0293,
+      "lon": -78.4767,
+      "locationName": "Charlottesville, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
+      "sources": [
+        {
+          "url": "https://thehill.com/homenews/education/6239925-doe-withholds-virginia-school-funds/",
+          "domain": "thehill.com",
+          "reliability": 76,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.vpm.org/news/2026-11-23/acps-vdoe-hayes-child-abuse-mcmahon/",
+          "domain": "vpm.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 48,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
+      "isBreaking": false
+    },
+    {
       "id": "445120f8e24f",
       "headline": "US Pauses Joint Military Operations With Ecuador Amid Probe Into Lethal September Raid",
       "summary": "The Trump administration paused joint military operations with Ecuador while investigating a lethal September 23 raid by Ecuadorian forces that killed gang member Carlos Germán Muñoz Jara, amid questions over whether suspects were killed while in custody. Ecuador's interior minister said talks with US Defense Secretary Pete Hegseth focused on reviewing operations; the Pentagon says US forces did not participate in the raid itself.",
@@ -3231,67 +3393,205 @@
       "isBreaking": false
     },
     {
-      "id": "f53953bd4bf9",
-      "headline": "Fourth Round of US-Backed Venezuela Transition Talks Closes Without Election Date",
-      "summary": "The fourth round of US-backed Venezuela political transition talks closed in Caracas having agreed eight points on party and media law, but still without setting an election date. Washington demanded release of all political prisoners; opposition figure María Corina Machado remains excluded and in exile; delegations agreed to resume in December.",
+      "id": "1eb794bdea48",
+      "headline": "Virginia Supreme Court Rules Lifetime Felon Gun Ban Unconstitutional As Applied to One Defendant",
+      "summary": "In a unanimous 7-0 ruling on Nov 25, the Virginia Supreme Court held the state's lifetime felon gun-possession ban unconstitutional as applied to defendant Derek Wade Ginevan, citing the post-Bruen historical-tradition test. The ruling vacates his conviction and opens the door to further as-applied challenges.",
       "category": "politics",
       "severity": 3,
-      "lat": 10.4806,
-      "lon": -66.9036,
-      "locationName": "Caracas, Venezuela",
-      "countryCode": "VE",
+      "lat": 37.5407,
+      "lon": -77.436,
+      "locationName": "Richmond, Virginia, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-VA",
       "sources": [
         {
-          "url": "https://www.riotimesonline.com/venezuela-talks-still-lack-election-date/",
-          "domain": "riotimesonline.com",
-          "reliability": 50,
-          "bias": "unknown",
-          "unrated": true
+          "url": "https://reason.com/volokh/2026/11/25/virginia-s-ct-felons-who-served-their-sentences-regain-second-amendment-rights-unless",
+          "domain": "reason.com",
+          "reliability": 70,
+          "bias": "center-right"
         },
         {
-          "url": "https://www.latintimes.com/trump-calls-rodriguez-machado-election-race-interesting-venezuela-has-no-vote-set-600379",
-          "domain": "latintimes.com",
+          "url": "https://bearingarms.com/camedwards/2026/11/26/va-supreme-court-deals-blow-to-states-lifetime-gun-ban-for-felons-n1234618",
+          "domain": "bearingarms.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
-      "trustScore": 41,
-      "firstSeen": "2026-11-26T06:08:57.022Z",
-      "lastUpdated": "2026-11-26T06:08:57.022Z",
-      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "trustScore": 46,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
       "isBreaking": false
     },
     {
-      "id": "ccf7504ce371",
-      "headline": "Iran Reportedly Halts, Then Disputes, Executions of Two 2022-Protest Prisoners",
-      "summary": "The lawyer for Milad Armoon said his and Navid Najjaran's executions, over a disputed 2022-protest-era conviction, were halted hours before the scheduled time amid international pressure including from a UN Special Rapporteur. Iran's judiciary-linked Mizan news agency later disputed this, saying the death sentences remain in place.",
-      "category": "politics",
+      "id": "d25c6de7c8f8",
+      "headline": "Children's Place Bankruptcy to Close All New Jersey Stores, Cut 732 Jobs",
+      "summary": "The Children's Place filed for Chapter 11 bankruptcy on Nov 8 in New Jersey federal court and is closing all roughly 24 NJ stores by early February 2027, laying off 732 workers statewide. The move is part of a nationwide liquidation of about 500 locations if no buyer emerges by a Dec 9 bid deadline.",
+      "category": "economy",
       "severity": 3,
-      "lat": 35.6892,
-      "lon": 51.389,
-      "locationName": "Tehran, Iran",
-      "countryCode": "IR",
+      "lat": 39.9348,
+      "lon": -75.0307,
+      "locationName": "Cherry Hill, New Jersey, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NJ",
       "sources": [
         {
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/25/iran-suspends-execution-of-two-protesters/",
-          "domain": "thenationalnews.com",
+          "url": "https://www.inquirer.com/business/retail/childrens-place-nj-stores-closing-bankruptcy-reports-20261106.html",
+          "domain": "inquirer.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         },
         {
-          "url": "https://web.matrixnews.in/news/c35war2wg5cxu/iran-says-death-sentences-for-two-protesters-remain-in-place",
-          "domain": "matrixnews.in",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/childrens-place-closing-stores-filing-203700753.html",
+          "domain": "yahoo.com",
+          "reliability": 60,
+          "bias": "center"
+        }
+      ],
+      "trustScore": 44,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4e77ba8f8b18",
+      "headline": "Missouri Prepares SNAP Candy and Soda Purchase Ban as Multi-State Lawsuit Challenges USDA Waivers",
+      "summary": "Missouri is preparing a two-year pilot starting Feb 15, 2027 barring about 5,000 SNAP retailers from selling candy and sugary items to recipients, even as a federal class-action lawsuit filed Nov 18 seeks to block similar USDA waivers across 18 states including Missouri and Kansas.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 38.5767,
+      "lon": -92.1735,
+      "locationName": "Jefferson City, Missouri, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-MO",
+      "sources": [
+        {
+          "url": "https://www.fultonsun.com/news/2026/nov/19/lawsuit-seeks-to-block-missouri-restrictions-on/",
+          "domain": "fultonsun.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://krcgtv.com/news/local/lawsuit-seeks-to-block-missouri-restrictions-on-snap-purchases-of-soda-candy",
+          "domain": "krcgtv.com",
           "reliability": 50,
           "bias": "unknown",
           "unrated": true
         }
       ],
       "trustScore": 41,
-      "firstSeen": "2026-11-26T06:08:57.022Z",
-      "lastUpdated": "2026-11-26T06:08:57.022Z",
-      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
+      "isBreaking": false
+    },
+    {
+      "id": "4c0d3e44cb87",
+      "headline": "Wisconsin Democrats Plan Sweeping Gun Law Overhaul After Flipping Legislature and Governorship",
+      "summary": "For the first time in decades, Wisconsin Democrats control the governorship under Gov.-elect David Crowley and both legislative chambers. Lawmakers plan universal background checks, a red-flag law, a ghost-gun ban, and rolling back the state's firearm preemption law, citing a 20% rise in gun deaths since 2019.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 43.0731,
+      "lon": -89.4012,
+      "locationName": "Madison, Wisconsin, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WI",
+      "sources": [
+        {
+          "url": "https://www.wpr.org/news/democrats-changes-wisconsin-gun-laws-state-legislature",
+          "domain": "wpr.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://urbanmilwaukee.com/2026/11/25/democratic-legislators-plan-big-changes-in-wisconsin-gun-laws/",
+          "domain": "urbanmilwaukee.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
+      "isBreaking": false
+    },
+    {
+      "id": "affb48b832ce",
+      "headline": "Washington AG Hires Outside Law Firm to Defend Voter-Approved Transgender Sports Ban",
+      "summary": "Washington Attorney General Nick Brown declined to personally defend Initiative 638, which bans transgender girls from girls' school sports, citing a conflict of interest, and appointed outside firm Bryan Cave Leighton Paisner to defend it. Student-athlete plaintiffs argue the measure violates the state constitution.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 47.0379,
+      "lon": -122.9007,
+      "locationName": "Olympia, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.opb.org/article/2026/11/13/washington-ag-hires-outside-firm-defend-ban-trans-girls-school-sports/",
+          "domain": "opb.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.kuow.org/law/2026-11-12/washington-ag-hires-outside-firm-to-defend-ban-on-trans-girls-in-girls-school-sports",
+          "domain": "kuow.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
+      "isBreaking": false
+    },
+    {
+      "id": "7469f2d9f60f",
+      "headline": "Portland City Workers' Strike Enters Third Week, Now Longest in City History",
+      "summary": "About 800 City of Portland Professional Workers union members remain on strike over wages after a Nov 24 mediation session ended without a deal, making it the longest city-worker strike in Portland's history. A separate city union reached a tentative deal Nov 26, but CPPW's dispute remains unresolved.",
+      "category": "society",
+      "severity": 3,
+      "lat": 45.5152,
+      "lon": -122.6784,
+      "locationName": "Portland, Oregon, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-OR",
+      "sources": [
+        {
+          "url": "https://www.opb.org/article/2026/11/16/portland-city-strike-stretches-into-second-week/",
+          "domain": "opb.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://cppwunion.org/2026/11/press-release-mayor-wilson-absent-from-negotiations-and-public-appearances-during-longest-city-worker-strike-in-portland-history-now-entering-3rd-week/",
+          "domain": "cppwunion.org",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T15:26:09.567Z",
       "isBreaking": false
     },
     {
@@ -3496,6 +3796,70 @@
       "firstSeen": "2026-11-26T15:27:26.364Z",
       "lastUpdated": "2026-11-26T15:27:26.364Z",
       "expiresAt": "2026-11-28T15:27:26.364Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f53953bd4bf9",
+      "headline": "Fourth Round of US-Backed Venezuela Transition Talks Closes Without Election Date",
+      "summary": "The fourth round of US-backed Venezuela political transition talks closed in Caracas having agreed eight points on party and media law, but still without setting an election date. Washington demanded release of all political prisoners; opposition figure María Corina Machado remains excluded and in exile; delegations agreed to resume in December.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 10.4806,
+      "lon": -66.9036,
+      "locationName": "Caracas, Venezuela",
+      "countryCode": "VE",
+      "sources": [
+        {
+          "url": "https://www.riotimesonline.com/venezuela-talks-still-lack-election-date/",
+          "domain": "riotimesonline.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://www.latintimes.com/trump-calls-rodriguez-machado-election-race-interesting-venezuela-has-no-vote-set-600379",
+          "domain": "latintimes.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T06:08:57.022Z",
+      "lastUpdated": "2026-11-26T06:08:57.022Z",
+      "expiresAt": "2026-11-28T06:08:57.022Z",
+      "isBreaking": false
+    },
+    {
+      "id": "ccf7504ce371",
+      "headline": "Iran Reportedly Halts, Then Disputes, Executions of Two 2022-Protest Prisoners",
+      "summary": "The lawyer for Milad Armoon said his and Navid Najjaran's executions, over a disputed 2022-protest-era conviction, were halted hours before the scheduled time amid international pressure including from a UN Special Rapporteur. Iran's judiciary-linked Mizan news agency later disputed this, saying the death sentences remain in place.",
+      "category": "politics",
+      "severity": 3,
+      "lat": 35.6892,
+      "lon": 51.389,
+      "locationName": "Tehran, Iran",
+      "countryCode": "IR",
+      "sources": [
+        {
+          "url": "https://www.thenationalnews.com/news/mena/2026/11/25/iran-suspends-execution-of-two-protesters/",
+          "domain": "thenationalnews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        },
+        {
+          "url": "https://web.matrixnews.in/news/c35war2wg5cxu/iran-says-death-sentences-for-two-protesters-remain-in-place",
+          "domain": "matrixnews.in",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 41,
+      "firstSeen": "2026-11-26T06:08:57.022Z",
+      "lastUpdated": "2026-11-26T06:08:57.022Z",
+      "expiresAt": "2026-11-28T06:08:57.022Z",
       "isBreaking": false
     },
     {
@@ -4031,6 +4395,38 @@
       "isBreaking": false
     },
     {
+      "id": "1badff9e65b5",
+      "headline": "New York Enacts Five-Year Ban on AI-Chatbot-Embedded Toys",
+      "summary": "Gov. Kathy Hochul signed legislation banning the manufacture and sale of AI-chatbot-embedded toys for five years, effective February 22, 2027, making New York the second state after California to adopt such a ban. Attorney General Letitia James will enforce the law, with penalties up to $15,000 per day.",
+      "category": "politics",
+      "severity": 2,
+      "lat": 42.6526,
+      "lon": -73.7562,
+      "locationName": "Albany, New York, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-NY",
+      "sources": [
+        {
+          "url": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
+          "domain": "ny.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.nbcnews.com/tech/tech-news/new-york-governor-kathy-hochul-sign-ai-toy-ban-law-rcna610962",
+          "domain": "nbcnews.com",
+          "reliability": 81,
+          "bias": "center-left"
+        }
+      ],
+      "trustScore": 58,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T03:26:09.567Z",
+      "isBreaking": false
+    },
+    {
       "id": "ec2beca6ca57",
       "headline": "Record King Tide and El Niño Swell Cause Historic Coastal Flooding in California",
       "summary": "An astronomical king tide combined with El Niño-elevated sea levels produced the highest recorded coastal water levels in over a century at San Diego and Los Angeles, with breaking waves up to 9 meters. A High Surf Advisory remained in effect through Thanksgiving week.",
@@ -4174,6 +4570,72 @@
       "firstSeen": "2026-11-26T06:08:57.022Z",
       "lastUpdated": "2026-11-26T06:08:57.022Z",
       "expiresAt": "2026-11-27T18:08:57.022Z",
+      "isBreaking": false
+    },
+    {
+      "id": "f58a4d814b2e",
+      "headline": "Maine Task Force Proposes Voluntary Measures to Conserve Old-Growth Forests",
+      "summary": "Maine's Department of Agriculture, Conservation and Forestry released the LD 1529 task-force report proposing voluntary strategies, including conservation easements, modified harvest practices and certification, to protect rare old-growth forest. Top-priority conservation is estimated to cost $200-300 million.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 44.3106,
+      "lon": -69.7795,
+      "locationName": "Augusta, Maine, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-ME",
+      "sources": [
+        {
+          "url": "https://www.maine.gov/dacf/mfs/policy_management/lsog-workgroup.shtml",
+          "domain": "maine.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://www.bangordailynews.com/2026/07/10/state/state-environment/saving-maine-old-growth-forests/",
+          "domain": "bangordailynews.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T03:26:09.567Z",
+      "isBreaking": false
+    },
+    {
+      "id": "60c13090d19f",
+      "headline": "Skagit County Adopts Near-Permanent Restrictions on New Data Centers",
+      "summary": "Skagit County commissioners formally adopted rules sharply restricting where data centers can be built in unincorporated areas, limiting new facilities to small-scale server rooms. The move extends a June 2026 moratorium into near-permanent zoning restrictions over water-use and farmland concerns.",
+      "category": "climate",
+      "severity": 2,
+      "lat": 48.4212,
+      "lon": -122.3341,
+      "locationName": "Mount Vernon, Washington, USA",
+      "countryCode": "US",
+      "scope": "us",
+      "subdivision": "US-WA",
+      "sources": [
+        {
+          "url": "https://www.skagitcountywa.gov/news/posts/skagit-county-commissioners-adopt-moratorium-on-new-data-centers",
+          "domain": "skagitcountywa.gov",
+          "reliability": 85,
+          "bias": "center"
+        },
+        {
+          "url": "https://washingtonstatestandard.com/2026/11/10/is-the-honeymoon-over-for-data-centers-in-washington/",
+          "domain": "washingtonstatestandard.com",
+          "reliability": 50,
+          "bias": "unknown",
+          "unrated": true
+        }
+      ],
+      "trustScore": 50,
+      "firstSeen": "2026-11-27T15:26:09.567Z",
+      "lastUpdated": "2026-11-27T15:26:09.567Z",
+      "expiresAt": "2026-11-29T03:26:09.567Z",
       "isBreaking": false
     },
     {
@@ -4337,13 +4799,13 @@
   "stats": {
     "imagesResolved": 0,
     "sourcesWithImages": 0,
-    "multiSource": 98,
-    "carried": 56,
-    "updated": 26,
-    "expired": 44,
+    "multiSource": 111,
+    "carried": 96,
+    "updated": 2,
+    "expired": 0,
     "severityDefaulted": 0,
     "enrichment": "deferred",
-    "costUsd": 9.06,
-    "budgetUsd": 12
+    "costUsd": 4.52,
+    "budgetUsd": 8
   }
 }
